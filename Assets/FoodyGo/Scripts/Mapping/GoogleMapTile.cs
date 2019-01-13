@@ -96,7 +96,6 @@ namespace packt.FoodyGO.Mapping
             print(string.Format("Tile {0}x{1} requested with {2}", TileOffset.x, TileOffset.y, queryString));
 
             print(url + "?" + queryString);
-
 			var req = new WWW(url + "?" + queryString);
 
 

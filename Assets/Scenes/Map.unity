@@ -240,11 +240,31 @@ Prefab:
     - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
         type: 2}
       propertyPath: zoomLevel
-      value: 15
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
         type: 2}
       propertyPath: TileOffset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: gpsLocationService
+      value: 
+      objectReference: {fileID: 854492503}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: worldCenterLocation.Longitude
+      value: -122.4265
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: worldCenterLocation.Latitude
+      value: 37.62814
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: mapType
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -301,11 +321,31 @@ Prefab:
     - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
         type: 2}
       propertyPath: zoomLevel
-      value: 15
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
         type: 2}
       propertyPath: TileOffset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: gpsLocationService
+      value: 
+      objectReference: {fileID: 854492503}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: worldCenterLocation.Longitude
+      value: -122.4265
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: worldCenterLocation.Latitude
+      value: 37.62814
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: mapType
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -362,12 +402,27 @@ Prefab:
     - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
         type: 2}
       propertyPath: zoomLevel
-      value: 15
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
         type: 2}
       propertyPath: mapType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: gpsLocationService
+      value: 
+      objectReference: {fileID: 854492503}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: worldCenterLocation.Longitude
+      value: -122.4265
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: worldCenterLocation.Latitude
+      value: 37.62814
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 223f53743eac1482ba25e279c2608b3e, type: 2}
@@ -418,7 +473,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 74
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -442,13 +497,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 115.3, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!4 &554737638 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4186430086818336, guid: 223f53743eac1482ba25e279c2608b3e,
@@ -459,6 +514,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4186430086818336, guid: 223f53743eac1482ba25e279c2608b3e,
     type: 2}
   m_PrefabInternal: {fileID: 1366074842}
+--- !u!1 &854492501
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 854492502}
+  - component: {fileID: 854492503}
+  m_Layer: 0
+  m_Name: GPS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &854492502
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 854492501}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1970343304}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &854492503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 854492501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bfdcc793b1b7ce49a592039723808d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsServiceStarted: 0
+  Latitude: 0
+  Longitude: 0
+  Altitude: 0
+  Accuracy: 0
+  Timestamp: 0
 --- !u!4 &864046886 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4186430086818336, guid: 223f53743eac1482ba25e279c2608b3e,
@@ -520,7 +621,27 @@ Prefab:
     - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
         type: 2}
       propertyPath: zoomLevel
-      value: 15
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: gpsLocationService
+      value: 
+      objectReference: {fileID: 854492503}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: worldCenterLocation.Longitude
+      value: -122.4265
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: worldCenterLocation.Latitude
+      value: 37.62814
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: mapType
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 223f53743eac1482ba25e279c2608b3e, type: 2}
@@ -586,7 +707,27 @@ Prefab:
     - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
         type: 2}
       propertyPath: zoomLevel
-      value: 15
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: gpsLocationService
+      value: 
+      objectReference: {fileID: 854492503}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: worldCenterLocation.Longitude
+      value: -122.4265
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: worldCenterLocation.Latitude
+      value: 37.62814
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: mapType
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 223f53743eac1482ba25e279c2608b3e, type: 2}
@@ -679,7 +820,7 @@ Prefab:
     - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
         type: 2}
       propertyPath: zoomLevel
-      value: 15
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
         type: 2}
@@ -689,6 +830,26 @@ Prefab:
     - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
         type: 2}
       propertyPath: TileOffset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: gpsLocationService
+      value: 
+      objectReference: {fileID: 854492503}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: worldCenterLocation.Longitude
+      value: -122.4265
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: worldCenterLocation.Latitude
+      value: 37.62814
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: mapType
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -745,11 +906,31 @@ Prefab:
     - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
         type: 2}
       propertyPath: zoomLevel
-      value: 15
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
         type: 2}
       propertyPath: TileOffset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: gpsLocationService
+      value: 
+      objectReference: {fileID: 854492503}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: worldCenterLocation.Longitude
+      value: -122.4265
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: worldCenterLocation.Latitude
+      value: 37.62814
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: mapType
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -806,16 +987,77 @@ Prefab:
     - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
         type: 2}
       propertyPath: zoomLevel
-      value: 15
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
         type: 2}
       propertyPath: TileOffset.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: gpsLocationService
+      value: 
+      objectReference: {fileID: 854492503}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: worldCenterLocation.Longitude
+      value: -122.4265
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: worldCenterLocation.Latitude
+      value: 37.62814
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: mapType
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 223f53743eac1482ba25e279c2608b3e, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1494464000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1494464001}
+  - component: {fileID: 1494464002}
+  m_Layer: 0
+  m_Name: CUDLR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1494464001
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1494464000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1970343304}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1494464002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1494464000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2554b3ff7996402f9ad6253b4909cae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Port: 55055
 --- !u!1001 &1596956429
 Prefab:
   m_ObjectHideFlags: 0
@@ -872,7 +1114,27 @@ Prefab:
     - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
         type: 2}
       propertyPath: zoomLevel
-      value: 15
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: gpsLocationService
+      value: 
+      objectReference: {fileID: 854492503}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: worldCenterLocation.Longitude
+      value: -122.4265
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: worldCenterLocation.Latitude
+      value: 37.62814
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484038864778858, guid: 223f53743eac1482ba25e279c2608b3e,
+        type: 2}
+      propertyPath: mapType
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 223f53743eac1482ba25e279c2608b3e, type: 2}
@@ -882,3 +1144,33 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4186430086818336, guid: 223f53743eac1482ba25e279c2608b3e,
     type: 2}
   m_PrefabInternal: {fileID: 397062239}
+--- !u!1 &1970343303
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1970343304}
+  m_Layer: 0
+  m_Name: Serivces
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1970343304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1970343303}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1494464001}
+  - {fileID: 854492502}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -93,7 +93,7 @@ namespace packt.FoodyGO.Mapping
             queryString += "&style=element:geometry|invert_lightness:true|weight:3.1|hue:0x00ffd5";
             queryString += "&style=element:labels|visibility:off";
 
-            queryString += "&key=AIzaSyCYe7uUeaXTcgpRsAGDTOtISnUB1JV_Pgw";
+            queryString += "&key=AIzaSyBlr9fIHQ4C4lL76oL4Reh6AJpMvU9UzWM";
 
             //check if script is on a mobile device and using a location service 
             var usingSensor = false;

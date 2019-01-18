@@ -66,11 +66,19 @@
     <Compile Include="Assets\CUDLR\Scripts\Console.cs" />
     <Compile Include="Assets\CUDLR\Scripts\Extensions.cs" />
     <Compile Include="Assets\CUDLR\Scripts\Server.cs" />
+    <Compile Include="Assets\FoodyGo\Scripts\Controllers\CharacterGPSCompassController.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\Controllers\CharacterGPSCopmassController.cs" />
+    <Compile Include="Assets\FoodyGo\Scripts\Controllers\MonsterController.cs" />
+    <Compile Include="Assets\FoodyGo\Scripts\Database\Monster.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\Mapping\Geometry.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\Mapping\GoogleMapTile.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\Mapping\GoogleMapUtils.cs" />
+    <Compile Include="Assets\FoodyGo\Scripts\Mapping\MathG.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\Services\GPSLocationService.cs" />
+    <Compile Include="Assets\FoodyGo\Scripts\Services\MonsterService.cs" />
+    <Compile Include="Assets\FoodyGo\Scripts\UI\FootstepTracker.cs" />
+    <Compile Include="Assets\FoodyGo\Scripts\Utils\Epoch.cs" />
+    <None Include="Assets\Max\Document\readme.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/yiheng/Documents/Unity相关/FoodyGoDemo/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

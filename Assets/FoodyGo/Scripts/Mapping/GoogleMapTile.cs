@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-using packt.FoodyGo.Mapping;
-using packt.FoodyGo.Services;
+using packt.FoodyGO.Services;
 
 namespace packt.FoodyGO.Mapping
 {
@@ -16,22 +15,35 @@ namespace packt.FoodyGO.Mapping
 			Hybrid
 		}
 
+		//Google Maps API Staticmap URL
 		private const string GOOGLE_MAPS_URL = "http://maps.googleapis.com/maps/api/staticmap";
 
+		[Header("Map Settings")]
+		[Range(1,20)]
+		[Tooltip("Zoom Level, 1=global - 20=house")]
 		public int zoomLevel = 1;
+		[Tooltip("Type of map, Road, Satellite, Terrain or Hybrid")]
 		public MapType mapType = MapType.RoadMap;
+		[Range(64,1024)]
+		[Tooltip("Size in pixels of the map image")]
 		public int size = 640;
+		[Tooltip("Double the pixel resolution of the image returned")]
 		public bool doubleResolution = true;
+		[Tooltip("Defines the origin of the map")]
+		public MapLocation worldCenterLocation;
 
-        public GPSLocationService gpsLocationService;
-
-        public MapLocation worldCenterLocation;
-        public MapLocation tileCenterLocation;
-
+		[Header("Tile Settings")]
+		[Tooltip("Sets the tiles position in tile units")]        
         public Vector2 TileOffset;
+		[Tooltip("Calculated tile center")]
+		public MapLocation tileCenterLocation;
+		[Tooltip("Calculated tile corners")]
         public Vector2 TopLeftCorner;
         public Vector2 BottomRightCorner;
 
+		[Header("GPS Settings")]
+		[Tooltip("GPS service used to locate world center")]
+		public GPSLocationService gpsLocationService;
         private double lastGPSUpdate;
 
 		// Use this for initialization
@@ -43,6 +55,7 @@ namespace packt.FoodyGO.Mapping
 		// Update is called once per frame
 		void Update ()
 		{
+			//check if a new location has been acquired
             if (gpsLocationService != null &&
                 gpsLocationService.IsServiceStarted && 
                 lastGPSUpdate < gpsLocationService.Timestamp)
@@ -62,12 +75,13 @@ namespace packt.FoodyGO.Mapping
 
 		IEnumerator _RefreshMapTile ()
 		{            
+			//find the center lat/long of the tile
 			tileCenterLocation.Latitude = GoogleMapUtils.adjustLatByPixels(worldCenterLocation.Latitude, (int)(size * 1 * TileOffset.y), zoomLevel);
 			tileCenterLocation.Longitude = GoogleMapUtils.adjustLonByPixels(worldCenterLocation.Longitude, (int)(size * 1 * TileOffset.x), zoomLevel);
 
-			var url = GOOGLE_MAPS_URL;
 			var queryString = "";
 
+			//build the query string parameters for the map tile request
 			queryString += "center=" + WWW.UnEscapeURL (string.Format ("{0},{1}", tileCenterLocation.Latitude, tileCenterLocation.Longitude));
 			queryString += "&zoom=" + zoomLevel.ToString ();
 			queryString += "&size=" + WWW.UnEscapeURL (string.Format ("{0}x{0}", size));
@@ -75,17 +89,21 @@ namespace packt.FoodyGO.Mapping
 			queryString += "&maptype=" + mapType.ToString ().ToLower ();
 			queryString += "&format=" + "png";
 
-            //styles
+            //adding the map styles
             queryString += "&style=element:geometry|invert_lightness:true|weight:3.1|hue:0x00ffd5";
             queryString += "&style=element:labels|visibility:off";
 
+            queryString += "&key=AIzaSyCYe7uUeaXTcgpRsAGDTOtISnUB1JV_Pgw";
+
+            //check if script is on a mobile device and using a location service 
             var usingSensor = false;
 #if MOBILE_INPUT
-            usingSensor = Input.location.isEnabledByUser && Input.location.status == LocationServiceStatus.Running;
+            usingSensor = Input.location.isEnabledByUser 
+							&& Input.location.status == LocationServiceStatus.Running 
+							&& gpsLocationService !=null;
 #endif
-
 			queryString += "&sensor=" + (usingSensor ? "true" : "false");
-            queryString += "&key=AIzaSyCYe7uUeaXTcgpRsAGDTOtISnUB1JV_Pgw";
+
 			//set map bounds rect
 			TopLeftCorner.x = GoogleMapUtils.adjustLonByPixels(tileCenterLocation.Longitude, -size, zoomLevel);
 			TopLeftCorner.y = GoogleMapUtils.adjustLatByPixels(tileCenterLocation.Latitude, size, zoomLevel);
@@ -95,17 +113,19 @@ namespace packt.FoodyGO.Mapping
 
             print(string.Format("Tile {0}x{1} requested with {2}", TileOffset.x, TileOffset.y, queryString));
 
-            print(url + "?" + queryString);
-			var req = new WWW(url + "?" + queryString);
-
-
-
-            //var req = new WWW("https://maps.googleapis.com/maps/api/staticmap?center=50.917316,-114.080923&zoom=17&format=png&sensor=false&size=640x640&scale=2&maptype=roadmap&style=feature:landscape.man_made|visibility:on|invert_lightness:true&key=AIzaSyCYe7uUeaXTcgpRsAGDTOtISnUB1JV_Pgw");
+			//finally, we request the image
+			var req = new WWW(GOOGLE_MAPS_URL + "?" + queryString);
+			//yield until the service responds
 			yield return req;
-            //先释放就得贴图
-            Destroy(GetComponent<Renderer>().material.mainTexture);
+			//first destroy the old texture first
+			Destroy(GetComponent<Renderer>().material.mainTexture);
+			//when the image returns set it as the tile texture
 			GetComponent<Renderer>().material.mainTexture = req.texture;
             print(string.Format("Tile {0}x{1} textured", TileOffset.x, TileOffset.y));
+            if(TileOffset.x == 0 && TileOffset.y == 0)
+            {
+                gpsLocationService.MapRedrawn();
+            }
         }
 	}
 }

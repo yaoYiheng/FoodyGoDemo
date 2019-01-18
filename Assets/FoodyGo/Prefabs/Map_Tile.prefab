@@ -9,20 +9,20 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1627816137823392}
+  m_RootGameObject: {fileID: 1000013983913242}
   m_IsPrefabAsset: 1
---- !u!1 &1627816137823392
+--- !u!1 &1000013983913242
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4186430086818336}
-  - component: {fileID: 33470909226775968}
-  - component: {fileID: 23527727156189158}
-  - component: {fileID: 64068074861727388}
-  - component: {fileID: 114484038864778858}
+  - component: {fileID: 4000012574202474}
+  - component: {fileID: 33000013025946510}
+  - component: {fileID: 64000011208726880}
+  - component: {fileID: 23000010640334314}
+  - component: {fileID: 114000013155656338}
   m_Layer: 0
   m_Name: Map_Tile
   m_TagString: Untagged
@@ -30,12 +30,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4186430086818336
+--- !u!4 &4000012574202474
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1627816137823392}
+  m_GameObject: {fileID: 1000013983913242}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 1, z: 3}
@@ -43,12 +43,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23527727156189158
+--- !u!23 &23000010640334314
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1627816137823392}
+  m_GameObject: {fileID: 1000013983913242}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -66,7 +66,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
+  m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 0
@@ -78,19 +78,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33470909226775968
+--- !u!33 &33000013025946510
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1627816137823392}
+  m_GameObject: {fileID: 1000013983913242}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &64068074861727388
+--- !u!64 &64000011208726880
 MeshCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1627816137823392}
+  m_GameObject: {fileID: 1000013983913242}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -99,12 +99,12 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114484038864778858
+--- !u!114 &114000013155656338
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1627816137823392}
+  m_GameObject: {fileID: 1000013983913242}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f67c340417a804244ac0574171629b89, type: 3}
@@ -114,13 +114,13 @@ MonoBehaviour:
   mapType: 0
   size: 640
   doubleResolution: 1
-  gpsLocationService: {fileID: 0}
   worldCenterLocation:
-    Latitude: 37.62814
-    Longitude: -122.4265
+    Latitude: 37.628136
+    Longitude: -122.42649
+  TileOffset: {x: 0, y: 0}
   tileCenterLocation:
     Latitude: 0
     Longitude: 0
-  TileOffset: {x: -1, y: 1}
   TopLeftCorner: {x: 0, y: 0}
   BottomRightCorner: {x: 0, y: 0}
+  gpsLocationService: {fileID: 0}

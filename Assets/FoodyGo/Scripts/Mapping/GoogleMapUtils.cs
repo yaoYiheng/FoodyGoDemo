@@ -2,6 +2,11 @@
 
 namespace packt.FoodyGO.Mapping
 {
+    /// <summary>
+    /// Original Author - RALPH BARBAGALLO
+    /// https://gist.github.com/flarb/4980598
+    /// Source has been extended
+    /// </summary>
     public class GoogleMapUtils
     {
         static float GOOGLE_OFFSET = 268435456f;
@@ -39,6 +44,24 @@ namespace packt.FoodyGO.Mapping
         {
             return YToLat(LatToY(lat) + (delta << (21 - zoom)));
         }
+
+        public static float CalculateScaleX(float lat, int tileSizePixels, int tileSizeUnits, int zoom)
+        {
+            var offset = adjustLatByPixels(lat, tileSizePixels, zoom);
+            var y0 = LatToY(lat); var y1 = LatToY(offset);
+            var rng = y1 - y0;
+            return (float)tileSizeUnits / (float)rng;
+        }
+
+        public static float CalculateScaleY(float lon, int tileSizePixels, int tileSizeUnits, int zoom)
+        {
+            var offset = adjustLonByPixels(lon, tileSizePixels, zoom);
+            var x0 = LonToX(lon); var x1 = LonToX(offset);
+            var rng = x1 - x0;
+            return (float)tileSizeUnits / (float)rng;
+        }
+
+        
     }
 }
 

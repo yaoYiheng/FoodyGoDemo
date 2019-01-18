@@ -58,8 +58,7 @@ namespace packt.FoodyGO.Managers
             //we could also check if the GPS service was started and running
             //or any other requirement   
             yield return new WaitForSeconds(5);
-            //SceneManager.UnloadScene(SplashScene);      
-            SceneManager.UnloadSceneAsync(SplashScene);
+            SceneManager.UnloadScene(SplashScene);            
         }
 
         // Update is called once per frame

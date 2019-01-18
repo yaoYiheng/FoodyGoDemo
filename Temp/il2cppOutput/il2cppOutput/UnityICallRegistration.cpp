@@ -38,6 +38,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Animation_GetStateCount();
 		Register_UnityEngine_Animation_GetStateCount();
 
+		//UnityEngine.AnimationState UnityEngine.Animation::GetState(System.String)
+		void Register_UnityEngine_Animation_GetState();
+		Register_UnityEngine_Animation_GetState();
+
 		//UnityEngine.AnimationState UnityEngine.Animation::GetStateAtIndex(System.Int32)
 		void Register_UnityEngine_Animation_GetStateAtIndex();
 		Register_UnityEngine_Animation_GetStateAtIndex();
@@ -67,6 +71,14 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_AnimationCurve_Internal_Destroy();
 
 	//End Registrations for type : UnityEngine.AnimationCurve
+
+	//Start Registrations for type : UnityEngine.AnimationState
+
+		//System.Void UnityEngine.AnimationState::set_speed(System.Single)
+		void Register_UnityEngine_AnimationState_set_speed();
+		Register_UnityEngine_AnimationState_set_speed();
+
+	//End Registrations for type : UnityEngine.AnimationState
 
 	//Start Registrations for type : UnityEngine.Animator
 
@@ -305,6 +317,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Camera::ScreenToViewportPoint_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&)
 		void Register_UnityEngine_Camera_ScreenToViewportPoint_Injected();
 		Register_UnityEngine_Camera_ScreenToViewportPoint_Injected();
+
+		//System.Void UnityEngine.Camera::ScreenToWorldPoint_Injected(UnityEngine.Vector3&,UnityEngine.Camera/MonoOrStereoscopicEye,UnityEngine.Vector3&)
+		void Register_UnityEngine_Camera_ScreenToWorldPoint_Injected();
+		Register_UnityEngine_Camera_ScreenToWorldPoint_Injected();
 
 		//System.Void UnityEngine.Camera::WorldToScreenPoint_Injected(UnityEngine.Vector3&,UnityEngine.Camera/MonoOrStereoscopicEye,UnityEngine.Vector3&)
 		void Register_UnityEngine_Camera_WorldToScreenPoint_Injected();
@@ -1686,6 +1702,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Quaternion_AngleAxis_Injected();
 		Register_UnityEngine_Quaternion_AngleAxis_Injected();
 
+		//System.Void UnityEngine.Quaternion::FromToRotation_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Quaternion&)
+		void Register_UnityEngine_Quaternion_FromToRotation_Injected();
+		Register_UnityEngine_Quaternion_FromToRotation_Injected();
+
 		//System.Void UnityEngine.Quaternion::Internal_FromEulerRad_Injected(UnityEngine.Vector3&,UnityEngine.Quaternion&)
 		void Register_UnityEngine_Quaternion_Internal_FromEulerRad_Injected();
 		Register_UnityEngine_Quaternion_Internal_FromEulerRad_Injected();
@@ -1998,6 +2018,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Rigidbody_set_maxAngularVelocity();
 		Register_UnityEngine_Rigidbody_set_maxAngularVelocity();
 
+		//System.Void UnityEngine.Rigidbody::set_useGravity(System.Boolean)
+		void Register_UnityEngine_Rigidbody_set_useGravity();
+		Register_UnityEngine_Rigidbody_set_useGravity();
+
 		//System.Void UnityEngine.Rigidbody::set_velocity_Injected(UnityEngine.Vector3&)
 		void Register_UnityEngine_Rigidbody_set_velocity_Injected();
 		Register_UnityEngine_Rigidbody_set_velocity_Injected();
@@ -2041,6 +2065,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Single UnityEngine.Screen::get_dpi()
 		void Register_UnityEngine_Screen_get_dpi();
 		Register_UnityEngine_Screen_get_dpi();
+
+		//System.Void UnityEngine.Screen::RequestOrientation(UnityEngine.ScreenOrientation)
+		void Register_UnityEngine_Screen_RequestOrientation();
+		Register_UnityEngine_Screen_RequestOrientation();
 
 	//End Registrations for type : UnityEngine.Screen
 
@@ -2579,5 +2607,29 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_Vector3_Slerp_Injected();
 
 	//End Registrations for type : UnityEngine.Vector3
+
+	//Start Registrations for type : UnityEngine.WebCamTexture
+
+		//System.Boolean UnityEngine.WebCamTexture::get_isPlaying()
+		void Register_UnityEngine_WebCamTexture_get_isPlaying();
+		Register_UnityEngine_WebCamTexture_get_isPlaying();
+
+		//System.Boolean UnityEngine.WebCamTexture::get_videoVerticallyMirrored()
+		void Register_UnityEngine_WebCamTexture_get_videoVerticallyMirrored();
+		Register_UnityEngine_WebCamTexture_get_videoVerticallyMirrored();
+
+		//System.Int32 UnityEngine.WebCamTexture::get_videoRotationAngle()
+		void Register_UnityEngine_WebCamTexture_get_videoRotationAngle();
+		Register_UnityEngine_WebCamTexture_get_videoRotationAngle();
+
+		//System.Void UnityEngine.WebCamTexture::INTERNAL_CALL_Play(UnityEngine.WebCamTexture)
+		void Register_UnityEngine_WebCamTexture_INTERNAL_CALL_Play();
+		Register_UnityEngine_WebCamTexture_INTERNAL_CALL_Play();
+
+		//System.Void UnityEngine.WebCamTexture::Internal_CreateWebCamTexture(UnityEngine.WebCamTexture,System.String,System.Int32,System.Int32,System.Int32)
+		void Register_UnityEngine_WebCamTexture_Internal_CreateWebCamTexture();
+		Register_UnityEngine_WebCamTexture_Internal_CreateWebCamTexture();
+
+	//End Registrations for type : UnityEngine.WebCamTexture
 
 }

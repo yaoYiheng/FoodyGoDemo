@@ -397,6 +397,7 @@ extern const uint32_t Transform_Translate_m1990195114_MetadataUsageId;
 extern const uint32_t Transform_get_forward_m747522392_MetadataUsageId;
 extern const uint32_t Transform_get_right_m2535262102_MetadataUsageId;
 extern const uint32_t Transform_get_up_m3972993886_MetadataUsageId;
+extern const uint32_t Transform_set_localEulerAngles_m4202601546_MetadataUsageId;
 extern const uint32_t Transform_set_parent_m786917804_MetadataUsageId;
 extern const uint32_t TypeInferenceRuleAttribute__ctor_m3137488504_MetadataUsageId;
 extern const uint32_t UnhandledExceptionHandler_HandleUnhandledException_m2430609357_MetadataUsageId;
@@ -6593,6 +6594,10 @@ extern "C" IL2CPP_METHOD_ATTR void Transform_set_localPosition_Injected_m2951700
 extern "C" IL2CPP_METHOD_ATTR Quaternion_t2301928331  Transform_get_rotation_m3502953881 (Transform_t3600365921 * __this, const RuntimeMethod* method);
 // UnityEngine.Vector3 UnityEngine.Quaternion::get_eulerAngles()
 extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  Quaternion_get_eulerAngles_m3425202016 (Quaternion_t2301928331 * __this, const RuntimeMethod* method);
+// UnityEngine.Quaternion UnityEngine.Quaternion::Euler(UnityEngine.Vector3)
+extern "C" IL2CPP_METHOD_ATTR Quaternion_t2301928331  Quaternion_Euler_m1803555822 (RuntimeObject * __this /* static, unused */, Vector3_t3722313464  ___euler0, const RuntimeMethod* method);
+// System.Void UnityEngine.Transform::set_localRotation(UnityEngine.Quaternion)
+extern "C" IL2CPP_METHOD_ATTR void Transform_set_localRotation_m19445462 (Transform_t3600365921 * __this, Quaternion_t2301928331  ___value0, const RuntimeMethod* method);
 // UnityEngine.Vector3 UnityEngine.Vector3::get_right()
 extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  Vector3_get_right_m1913784872 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
 // UnityEngine.Vector3 UnityEngine.Quaternion::op_Multiply(UnityEngine.Quaternion,UnityEngine.Vector3)
@@ -6643,8 +6648,6 @@ extern "C" IL2CPP_METHOD_ATTR Quaternion_t2301928331  Quaternion_Euler_m30493094
 extern "C" IL2CPP_METHOD_ATTR Quaternion_t2301928331  Transform_get_localRotation_m3487911431 (Transform_t3600365921 * __this, const RuntimeMethod* method);
 // UnityEngine.Quaternion UnityEngine.Quaternion::op_Multiply(UnityEngine.Quaternion,UnityEngine.Quaternion)
 extern "C" IL2CPP_METHOD_ATTR Quaternion_t2301928331  Quaternion_op_Multiply_m1294064023 (RuntimeObject * __this /* static, unused */, Quaternion_t2301928331  ___lhs0, Quaternion_t2301928331  ___rhs1, const RuntimeMethod* method);
-// System.Void UnityEngine.Transform::set_localRotation(UnityEngine.Quaternion)
-extern "C" IL2CPP_METHOD_ATTR void Transform_set_localRotation_m19445462 (Transform_t3600365921 * __this, Quaternion_t2301928331  ___value0, const RuntimeMethod* method);
 // UnityEngine.Quaternion UnityEngine.Quaternion::Inverse(UnityEngine.Quaternion)
 extern "C" IL2CPP_METHOD_ATTR Quaternion_t2301928331  Quaternion_Inverse_m1311579081 (RuntimeObject * __this /* static, unused */, Quaternion_t2301928331  ___rotation0, const RuntimeMethod* method);
 // System.Void UnityEngine.Transform::set_rotation(UnityEngine.Quaternion)
@@ -8604,6 +8607,23 @@ IL_0015:
 	{
 		Vector3_t3722313464  L_2 = V_1;
 		return L_2;
+	}
+}
+// System.Void UnityEngine.Transform::set_localEulerAngles(UnityEngine.Vector3)
+extern "C" IL2CPP_METHOD_ATTR void Transform_set_localEulerAngles_m4202601546 (Transform_t3600365921 * __this, Vector3_t3722313464  ___value0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Transform_set_localEulerAngles_m4202601546_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Vector3_t3722313464  L_0 = ___value0;
+		IL2CPP_RUNTIME_CLASS_INIT(Quaternion_t2301928331_il2cpp_TypeInfo_var);
+		Quaternion_t2301928331  L_1 = Quaternion_Euler_m1803555822(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		Transform_set_localRotation_m19445462(__this, L_1, /*hidden argument*/NULL);
+		return;
 	}
 }
 // UnityEngine.Vector3 UnityEngine.Transform::get_right()

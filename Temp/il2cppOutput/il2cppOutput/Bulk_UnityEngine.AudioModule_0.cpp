@@ -283,6 +283,10 @@ struct SampleFramesHandler_t3208670351;
 struct Object_t631007953;
 // UnityEngine.ScriptableObject
 struct ScriptableObject_t2528358522;
+// UnityEngine.Texture
+struct Texture_t3661962703;
+// UnityEngine.WebCamTexture
+struct WebCamTexture_t1514609158;
 
 extern RuntimeClass* AudioExtensionManager_t3220897493_il2cpp_TypeInfo_var;
 extern RuntimeClass* AudioListenerExtension_t3242956547_il2cpp_TypeInfo_var;
@@ -303,6 +307,7 @@ extern RuntimeClass* UInt32_t2560061978_il2cpp_TypeInfo_var;
 extern String_t* _stringLiteral3450517380;
 extern String_t* _stringLiteral3452614530;
 extern String_t* _stringLiteral4035105846;
+extern String_t* _stringLiteral757602046;
 extern const RuntimeMethod* Enumerator_Dispose_m3198901590_RuntimeMethod_var;
 extern const RuntimeMethod* Enumerator_Dispose_m405442337_RuntimeMethod_var;
 extern const RuntimeMethod* Enumerator_MoveNext_m1000499844_RuntimeMethod_var;
@@ -344,6 +349,7 @@ extern const uint32_t AudioSource_PlayOneShot_m2678069419_MetadataUsageId;
 extern const uint32_t ConsumeSampleFramesNativeFunction_BeginInvoke_m342678987_MetadataUsageId;
 extern const uint32_t PCMSetPositionCallback_BeginInvoke_m2701134198_MetadataUsageId;
 extern const uint32_t SampleFramesHandler_BeginInvoke_m2992664336_MetadataUsageId;
+extern const uint32_t WebCamTexture__ctor_m3710713058_MetadataUsageId;
 
 struct SingleU5BU5D_t1444911251;
 struct StringU5BU5D_t1281789340;
@@ -2233,6 +2239,26 @@ struct ScriptableObject_t2528358522_marshaled_com : public Object_t631007953_mar
 {
 };
 #endif // SCRIPTABLEOBJECT_T2528358522_H
+#ifndef TEXTURE_T3661962703_H
+#define TEXTURE_T3661962703_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.Texture
+struct  Texture_t3661962703  : public Object_t631007953
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // TEXTURE_T3661962703_H
 #ifndef ASYNCCALLBACK_T3962456242_H
 #define ASYNCCALLBACK_T3962456242_H
 #ifdef __clang__
@@ -2443,6 +2469,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // SAMPLEFRAMESHANDLER_T3208670351_H
+#ifndef WEBCAMTEXTURE_T1514609158_H
+#define WEBCAMTEXTURE_T1514609158_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.WebCamTexture
+struct  WebCamTexture_t1514609158  : public Texture_t3661962703
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // WEBCAMTEXTURE_T1514609158_H
 #ifndef AUDIOBEHAVIOUR_T2879336574_H
 #define AUDIOBEHAVIOUR_T2879336574_H
 #ifdef __clang__
@@ -2855,6 +2901,12 @@ extern "C" IL2CPP_METHOD_ATTR void GC_SuppressFinalize_m1177400158 (RuntimeObjec
 extern "C" IL2CPP_METHOD_ATTR void SampleFramesHandler_Invoke_m544261268 (SampleFramesHandler_t3208670351 * __this, AudioSampleProvider_t3950279772 * ___provider0, uint32_t ___sampleFrameCount1, const RuntimeMethod* method);
 // System.UInt32 UnityEngine.Experimental.Audio.AudioSampleProvider/ConsumeSampleFramesNativeFunction::Invoke(System.UInt32,System.IntPtr,System.UInt32)
 extern "C" IL2CPP_METHOD_ATTR uint32_t ConsumeSampleFramesNativeFunction_Invoke_m1773312795 (ConsumeSampleFramesNativeFunction_t1497769677 * __this, uint32_t ___providerId0, intptr_t ___interleavedSampleFrames1, uint32_t ___sampleFrameCount2, const RuntimeMethod* method);
+// System.Void UnityEngine.Texture::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void Texture__ctor_m3554519797 (Texture_t3661962703 * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.WebCamTexture::Internal_CreateWebCamTexture(UnityEngine.WebCamTexture,System.String,System.Int32,System.Int32,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void WebCamTexture_Internal_CreateWebCamTexture_m2861130443 (RuntimeObject * __this /* static, unused */, WebCamTexture_t1514609158 * ___self0, String_t* ___scriptingDevice1, int32_t ___requestedWidth2, int32_t ___requestedHeight3, int32_t ___maxFramerate4, const RuntimeMethod* method);
+// System.Void UnityEngine.WebCamTexture::INTERNAL_CALL_Play(UnityEngine.WebCamTexture)
+extern "C" IL2CPP_METHOD_ATTR void WebCamTexture_INTERNAL_CALL_Play_m701961556 (RuntimeObject * __this /* static, unused */, WebCamTexture_t1514609158 * ___self0, const RuntimeMethod* method);
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -5948,6 +6000,87 @@ extern "C" IL2CPP_METHOD_ATTR RuntimeObject* SampleFramesHandler_BeginInvoke_m29
 extern "C" IL2CPP_METHOD_ATTR void SampleFramesHandler_EndInvoke_m3715791887 (SampleFramesHandler_t3208670351 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.WebCamTexture::.ctor(System.Int32,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void WebCamTexture__ctor_m3710713058 (WebCamTexture_t1514609158 * __this, int32_t ___requestedWidth0, int32_t ___requestedHeight1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (WebCamTexture__ctor_m3710713058_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Texture__ctor_m3554519797(__this, /*hidden argument*/NULL);
+		int32_t L_0 = ___requestedWidth0;
+		int32_t L_1 = ___requestedHeight1;
+		WebCamTexture_Internal_CreateWebCamTexture_m2861130443(NULL /*static, unused*/, __this, _stringLiteral757602046, L_0, L_1, 0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.WebCamTexture::Internal_CreateWebCamTexture(UnityEngine.WebCamTexture,System.String,System.Int32,System.Int32,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void WebCamTexture_Internal_CreateWebCamTexture_m2861130443 (RuntimeObject * __this /* static, unused */, WebCamTexture_t1514609158 * ___self0, String_t* ___scriptingDevice1, int32_t ___requestedWidth2, int32_t ___requestedHeight3, int32_t ___maxFramerate4, const RuntimeMethod* method)
+{
+	typedef void (*WebCamTexture_Internal_CreateWebCamTexture_m2861130443_ftn) (WebCamTexture_t1514609158 *, String_t*, int32_t, int32_t, int32_t);
+	static WebCamTexture_Internal_CreateWebCamTexture_m2861130443_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (WebCamTexture_Internal_CreateWebCamTexture_m2861130443_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WebCamTexture::Internal_CreateWebCamTexture(UnityEngine.WebCamTexture,System.String,System.Int32,System.Int32,System.Int32)");
+	_il2cpp_icall_func(___self0, ___scriptingDevice1, ___requestedWidth2, ___requestedHeight3, ___maxFramerate4);
+}
+// System.Void UnityEngine.WebCamTexture::Play()
+extern "C" IL2CPP_METHOD_ATTR void WebCamTexture_Play_m3866603461 (WebCamTexture_t1514609158 * __this, const RuntimeMethod* method)
+{
+	{
+		WebCamTexture_INTERNAL_CALL_Play_m701961556(NULL /*static, unused*/, __this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.WebCamTexture::INTERNAL_CALL_Play(UnityEngine.WebCamTexture)
+extern "C" IL2CPP_METHOD_ATTR void WebCamTexture_INTERNAL_CALL_Play_m701961556 (RuntimeObject * __this /* static, unused */, WebCamTexture_t1514609158 * ___self0, const RuntimeMethod* method)
+{
+	typedef void (*WebCamTexture_INTERNAL_CALL_Play_m701961556_ftn) (WebCamTexture_t1514609158 *);
+	static WebCamTexture_INTERNAL_CALL_Play_m701961556_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (WebCamTexture_INTERNAL_CALL_Play_m701961556_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WebCamTexture::INTERNAL_CALL_Play(UnityEngine.WebCamTexture)");
+	_il2cpp_icall_func(___self0);
+}
+// System.Boolean UnityEngine.WebCamTexture::get_isPlaying()
+extern "C" IL2CPP_METHOD_ATTR bool WebCamTexture_get_isPlaying_m3525118025 (WebCamTexture_t1514609158 * __this, const RuntimeMethod* method)
+{
+	typedef bool (*WebCamTexture_get_isPlaying_m3525118025_ftn) (WebCamTexture_t1514609158 *);
+	static WebCamTexture_get_isPlaying_m3525118025_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (WebCamTexture_get_isPlaying_m3525118025_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WebCamTexture::get_isPlaying()");
+	bool retVal = _il2cpp_icall_func(__this);
+	return retVal;
+}
+// System.Int32 UnityEngine.WebCamTexture::get_videoRotationAngle()
+extern "C" IL2CPP_METHOD_ATTR int32_t WebCamTexture_get_videoRotationAngle_m2525477697 (WebCamTexture_t1514609158 * __this, const RuntimeMethod* method)
+{
+	typedef int32_t (*WebCamTexture_get_videoRotationAngle_m2525477697_ftn) (WebCamTexture_t1514609158 *);
+	static WebCamTexture_get_videoRotationAngle_m2525477697_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (WebCamTexture_get_videoRotationAngle_m2525477697_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WebCamTexture::get_videoRotationAngle()");
+	int32_t retVal = _il2cpp_icall_func(__this);
+	return retVal;
+}
+// System.Boolean UnityEngine.WebCamTexture::get_videoVerticallyMirrored()
+extern "C" IL2CPP_METHOD_ATTR bool WebCamTexture_get_videoVerticallyMirrored_m839300021 (WebCamTexture_t1514609158 * __this, const RuntimeMethod* method)
+{
+	typedef bool (*WebCamTexture_get_videoVerticallyMirrored_m839300021_ftn) (WebCamTexture_t1514609158 *);
+	static WebCamTexture_get_videoVerticallyMirrored_m839300021_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (WebCamTexture_get_videoVerticallyMirrored_m839300021_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WebCamTexture::get_videoVerticallyMirrored()");
+	bool retVal = _il2cpp_icall_func(__this);
+	return retVal;
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

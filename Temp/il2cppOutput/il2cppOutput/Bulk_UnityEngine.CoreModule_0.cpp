@@ -875,6 +875,7 @@ extern String_t* _stringLiteral1061665047;
 extern String_t* _stringLiteral1106545623;
 extern String_t* _stringLiteral1121701886;
 extern String_t* _stringLiteral1147544838;
+extern String_t* _stringLiteral1173817491;
 extern String_t* _stringLiteral1200226066;
 extern String_t* _stringLiteral1202628608;
 extern String_t* _stringLiteral1271320478;
@@ -1329,7 +1330,9 @@ extern const uint32_t PropertyName_Equals_m2608649819_MetadataUsageId;
 extern const uint32_t PropertyName_ToString_m3328159423_MetadataUsageId;
 extern const uint32_t Quaternion_AngleAxis_m1767165696_MetadataUsageId;
 extern const uint32_t Quaternion_Equals_m1863659319_MetadataUsageId;
+extern const uint32_t Quaternion_Euler_m1803555822_MetadataUsageId;
 extern const uint32_t Quaternion_Euler_m3049309462_MetadataUsageId;
+extern const uint32_t Quaternion_FromToRotation_m3769621427_MetadataUsageId;
 extern const uint32_t Quaternion_Internal_FromEulerRad_m1647759854_MetadataUsageId;
 extern const uint32_t Quaternion_Internal_ToEulerRad_m1503250752_MetadataUsageId;
 extern const uint32_t Quaternion_Inverse_m1311579081_MetadataUsageId;
@@ -1375,6 +1378,7 @@ extern const uint32_t SceneManager_Internal_SceneUnloaded_m3247148570_MetadataUs
 extern const uint32_t SceneManager_add_sceneLoaded_m3678832055_MetadataUsageId;
 extern const uint32_t SceneManager_remove_sceneLoaded_m2345981904_MetadataUsageId;
 extern const uint32_t Scene_Equals_m581999093_MetadataUsageId;
+extern const uint32_t Screen_set_orientation_m3561207030_MetadataUsageId;
 extern const uint32_t ScriptableObject__ctor_m1310743131_MetadataUsageId;
 extern const uint32_t SendMouseEvents_DoSendMouseEvents_m2140870850_MetadataUsageId;
 extern const uint32_t SendMouseEvents_HitTestLegacyGUI_m579942228_MetadataUsageId;
@@ -14272,6 +14276,35 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // LOADSCENEMODE_T3251202195_H
+#ifndef SCREENORIENTATION_T1705519499_H
+#define SCREENORIENTATION_T1705519499_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.ScreenOrientation
+struct  ScreenOrientation_t1705519499 
+{
+public:
+	// System.Int32 UnityEngine.ScreenOrientation::value__
+	int32_t ___value___1;
+
+public:
+	inline static int32_t get_offset_of_value___1() { return static_cast<int32_t>(offsetof(ScreenOrientation_t1705519499, ___value___1)); }
+	inline int32_t get_value___1() const { return ___value___1; }
+	inline int32_t* get_address_of_value___1() { return &___value___1; }
+	inline void set_value___1(int32_t value)
+	{
+		___value___1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // SCREENORIENTATION_T1705519499_H
 #ifndef SENDMESSAGEOPTIONS_T3580193095_H
 #define SENDMESSAGEOPTIONS_T3580193095_H
 #ifdef __clang__
@@ -18545,8 +18578,12 @@ extern "C" IL2CPP_METHOD_ATTR void Behaviour__ctor_m346897018 (Behaviour_t143789
 extern "C" IL2CPP_METHOD_ATTR void Camera_get_pixelRect_Injected_m2326986893 (Camera_t4157153871 * __this, Rect_t2360479859 * ___ret0, const RuntimeMethod* method);
 // System.Void UnityEngine.Camera::WorldToScreenPoint_Injected(UnityEngine.Vector3&,UnityEngine.Camera/MonoOrStereoscopicEye,UnityEngine.Vector3&)
 extern "C" IL2CPP_METHOD_ATTR void Camera_WorldToScreenPoint_Injected_m3568726256 (Camera_t4157153871 * __this, Vector3_t3722313464 * ___position0, int32_t ___eye1, Vector3_t3722313464 * ___ret2, const RuntimeMethod* method);
+// System.Void UnityEngine.Camera::ScreenToWorldPoint_Injected(UnityEngine.Vector3&,UnityEngine.Camera/MonoOrStereoscopicEye,UnityEngine.Vector3&)
+extern "C" IL2CPP_METHOD_ATTR void Camera_ScreenToWorldPoint_Injected_m3404872010 (Camera_t4157153871 * __this, Vector3_t3722313464 * ___position0, int32_t ___eye1, Vector3_t3722313464 * ___ret2, const RuntimeMethod* method);
 // UnityEngine.Vector3 UnityEngine.Camera::WorldToScreenPoint(UnityEngine.Vector3,UnityEngine.Camera/MonoOrStereoscopicEye)
 extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  Camera_WorldToScreenPoint_m782365797 (Camera_t4157153871 * __this, Vector3_t3722313464  ___position0, int32_t ___eye1, const RuntimeMethod* method);
+// UnityEngine.Vector3 UnityEngine.Camera::ScreenToWorldPoint(UnityEngine.Vector3,UnityEngine.Camera/MonoOrStereoscopicEye)
+extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  Camera_ScreenToWorldPoint_m1371979625 (Camera_t4157153871 * __this, Vector3_t3722313464  ___position0, int32_t ___eye1, const RuntimeMethod* method);
 // System.Void UnityEngine.Camera::ScreenToViewportPoint_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&)
 extern "C" IL2CPP_METHOD_ATTR void Camera_ScreenToViewportPoint_Injected_m1670374446 (Camera_t4157153871 * __this, Vector3_t3722313464 * ___position0, Vector3_t3722313464 * ___ret1, const RuntimeMethod* method);
 // System.Void UnityEngine.Camera::ScreenPointToRay_Injected(UnityEngine.Vector2&,UnityEngine.Camera/MonoOrStereoscopicEye,UnityEngine.Ray&)
@@ -19522,6 +19559,8 @@ extern "C" IL2CPP_METHOD_ATTR String_t* PropertyName_ToString_m3328159423 (Prope
 extern "C" IL2CPP_METHOD_ATTR void PropertyNameUtils_PropertyNameFromString_Injected_m1259736140 (RuntimeObject * __this /* static, unused */, String_t* ___name0, PropertyName_t3749835189 * ___ret1, const RuntimeMethod* method);
 // System.Void UnityEngine.Quaternion::.ctor(System.Single,System.Single,System.Single,System.Single)
 extern "C" IL2CPP_METHOD_ATTR void Quaternion__ctor_m435141806 (Quaternion_t2301928331 * __this, float ___x0, float ___y1, float ___z2, float ___w3, const RuntimeMethod* method);
+// System.Void UnityEngine.Quaternion::FromToRotation_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Quaternion&)
+extern "C" IL2CPP_METHOD_ATTR void Quaternion_FromToRotation_Injected_m2732854426 (RuntimeObject * __this /* static, unused */, Vector3_t3722313464 * ___fromDirection0, Vector3_t3722313464 * ___toDirection1, Quaternion_t2301928331 * ___ret2, const RuntimeMethod* method);
 // System.Void UnityEngine.Quaternion::Inverse_Injected(UnityEngine.Quaternion&,UnityEngine.Quaternion&)
 extern "C" IL2CPP_METHOD_ATTR void Quaternion_Inverse_Injected_m4070500351 (RuntimeObject * __this /* static, unused */, Quaternion_t2301928331 * ___rotation0, Quaternion_t2301928331 * ___ret1, const RuntimeMethod* method);
 // System.Void UnityEngine.Quaternion::Slerp_Injected(UnityEngine.Quaternion&,UnityEngine.Quaternion&,System.Single,UnityEngine.Quaternion&)
@@ -19827,6 +19866,8 @@ inline void UnityAction_2_Invoke_m944492567 (UnityAction_2_t1262235195 * __this,
 {
 	((  void (*) (UnityAction_2_t1262235195 *, Scene_t2348375561 , Scene_t2348375561 , const RuntimeMethod*))UnityAction_2_Invoke_m944492567_gshared)(__this, p0, p1, method);
 }
+// System.Void UnityEngine.Screen::RequestOrientation(UnityEngine.ScreenOrientation)
+extern "C" IL2CPP_METHOD_ATTR void Screen_RequestOrientation_m590940690 (RuntimeObject * __this /* static, unused */, int32_t ___orient0, const RuntimeMethod* method);
 // System.Void UnityEngine.ScriptableObject::CreateScriptableObject(UnityEngine.ScriptableObject)
 extern "C" IL2CPP_METHOD_ATTR void ScriptableObject_CreateScriptableObject_m3504774547 (RuntimeObject * __this /* static, unused */, ScriptableObject_t2528358522 * ___self0, const RuntimeMethod* method);
 // UnityEngine.ScriptableObject UnityEngine.ScriptableObject::CreateScriptableObjectInstanceFromType(System.Type)
@@ -22635,6 +22676,18 @@ extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  Camera_WorldToScreenPoint_m78
 		return L_1;
 	}
 }
+// UnityEngine.Vector3 UnityEngine.Camera::ScreenToWorldPoint(UnityEngine.Vector3,UnityEngine.Camera/MonoOrStereoscopicEye)
+extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  Camera_ScreenToWorldPoint_m1371979625 (Camera_t4157153871 * __this, Vector3_t3722313464  ___position0, int32_t ___eye1, const RuntimeMethod* method)
+{
+	Vector3_t3722313464  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		int32_t L_0 = ___eye1;
+		Camera_ScreenToWorldPoint_Injected_m3404872010(__this, (Vector3_t3722313464 *)(&___position0), L_0, (Vector3_t3722313464 *)(&V_0), /*hidden argument*/NULL);
+		Vector3_t3722313464  L_1 = V_0;
+		return L_1;
+	}
+}
 // UnityEngine.Vector3 UnityEngine.Camera::WorldToScreenPoint(UnityEngine.Vector3)
 extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  Camera_WorldToScreenPoint_m3726311023 (Camera_t4157153871 * __this, Vector3_t3722313464  ___position0, const RuntimeMethod* method)
 {
@@ -22643,6 +22696,24 @@ extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  Camera_WorldToScreenPoint_m37
 	{
 		Vector3_t3722313464  L_0 = ___position0;
 		Vector3_t3722313464  L_1 = Camera_WorldToScreenPoint_m782365797(__this, L_0, 2, /*hidden argument*/NULL);
+		V_0 = L_1;
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		Vector3_t3722313464  L_2 = V_0;
+		return L_2;
+	}
+}
+// UnityEngine.Vector3 UnityEngine.Camera::ScreenToWorldPoint(UnityEngine.Vector3)
+extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  Camera_ScreenToWorldPoint_m3978588570 (Camera_t4157153871 * __this, Vector3_t3722313464  ___position0, const RuntimeMethod* method)
+{
+	Vector3_t3722313464  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Vector3_t3722313464  L_0 = ___position0;
+		Vector3_t3722313464  L_1 = Camera_ScreenToWorldPoint_m1371979625(__this, L_0, 2, /*hidden argument*/NULL);
 		V_0 = L_1;
 		goto IL_000f;
 	}
@@ -22926,6 +22997,15 @@ extern "C" IL2CPP_METHOD_ATTR void Camera_WorldToScreenPoint_Injected_m356872625
 	static Camera_WorldToScreenPoint_Injected_m3568726256_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Camera_WorldToScreenPoint_Injected_m3568726256_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Camera::WorldToScreenPoint_Injected(UnityEngine.Vector3&,UnityEngine.Camera/MonoOrStereoscopicEye,UnityEngine.Vector3&)");
+	_il2cpp_icall_func(__this, ___position0, ___eye1, ___ret2);
+}
+// System.Void UnityEngine.Camera::ScreenToWorldPoint_Injected(UnityEngine.Vector3&,UnityEngine.Camera/MonoOrStereoscopicEye,UnityEngine.Vector3&)
+extern "C" IL2CPP_METHOD_ATTR void Camera_ScreenToWorldPoint_Injected_m3404872010 (Camera_t4157153871 * __this, Vector3_t3722313464 * ___position0, int32_t ___eye1, Vector3_t3722313464 * ___ret2, const RuntimeMethod* method)
+{
+	typedef void (*Camera_ScreenToWorldPoint_Injected_m3404872010_ftn) (Camera_t4157153871 *, Vector3_t3722313464 *, int32_t, Vector3_t3722313464 *);
+	static Camera_ScreenToWorldPoint_Injected_m3404872010_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Camera_ScreenToWorldPoint_Injected_m3404872010_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Camera::ScreenToWorldPoint_Injected(UnityEngine.Vector3&,UnityEngine.Camera/MonoOrStereoscopicEye,UnityEngine.Vector3&)");
 	_il2cpp_icall_func(__this, ___position0, ___eye1, ___ret2);
 }
 // System.Void UnityEngine.Camera::ScreenToViewportPoint_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&)
@@ -39563,6 +39643,24 @@ extern "C"  void Quaternion__ctor_m435141806_AdjustorThunk (RuntimeObject * __th
 	Quaternion_t2301928331 * _thisAdjusted = reinterpret_cast<Quaternion_t2301928331 *>(__this + 1);
 	Quaternion__ctor_m435141806(_thisAdjusted, ___x0, ___y1, ___z2, ___w3, method);
 }
+// UnityEngine.Quaternion UnityEngine.Quaternion::FromToRotation(UnityEngine.Vector3,UnityEngine.Vector3)
+extern "C" IL2CPP_METHOD_ATTR Quaternion_t2301928331  Quaternion_FromToRotation_m3769621427 (RuntimeObject * __this /* static, unused */, Vector3_t3722313464  ___fromDirection0, Vector3_t3722313464  ___toDirection1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Quaternion_FromToRotation_m3769621427_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Quaternion_t2301928331  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Quaternion_t2301928331_il2cpp_TypeInfo_var);
+		Quaternion_FromToRotation_Injected_m2732854426(NULL /*static, unused*/, (Vector3_t3722313464 *)(&___fromDirection0), (Vector3_t3722313464 *)(&___toDirection1), (Quaternion_t2301928331 *)(&V_0), /*hidden argument*/NULL);
+		Quaternion_t2301928331  L_0 = V_0;
+		return L_0;
+	}
+}
 // UnityEngine.Quaternion UnityEngine.Quaternion::Inverse(UnityEngine.Quaternion)
 extern "C" IL2CPP_METHOD_ATTR Quaternion_t2301928331  Quaternion_Inverse_m1311579081 (RuntimeObject * __this /* static, unused */, Quaternion_t2301928331  ___rotation0, const RuntimeMethod* method)
 {
@@ -40133,6 +40231,33 @@ IL_001e:
 		return L_6;
 	}
 }
+// UnityEngine.Quaternion UnityEngine.Quaternion::Euler(UnityEngine.Vector3)
+extern "C" IL2CPP_METHOD_ATTR Quaternion_t2301928331  Quaternion_Euler_m1803555822 (RuntimeObject * __this /* static, unused */, Vector3_t3722313464  ___euler0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Quaternion_Euler_m1803555822_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Quaternion_t2301928331  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Vector3_t3722313464  L_0 = ___euler0;
+		IL2CPP_RUNTIME_CLASS_INIT(Vector3_t3722313464_il2cpp_TypeInfo_var);
+		Vector3_t3722313464  L_1 = Vector3_op_Multiply_m3376773913(NULL /*static, unused*/, L_0, (0.0174532924f), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Quaternion_t2301928331_il2cpp_TypeInfo_var);
+		Quaternion_t2301928331  L_2 = Quaternion_Internal_FromEulerRad_m1647759854(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		goto IL_0017;
+	}
+
+IL_0017:
+	{
+		Quaternion_t2301928331  L_3 = V_0;
+		return L_3;
+	}
+}
 // System.Int32 UnityEngine.Quaternion::GetHashCode()
 extern "C" IL2CPP_METHOD_ATTR int32_t Quaternion_GetHashCode_m2636680144 (Quaternion_t2301928331 * __this, const RuntimeMethod* method)
 {
@@ -40336,6 +40461,15 @@ extern "C" IL2CPP_METHOD_ATTR void Quaternion__cctor_m2965965177 (RuntimeObject 
 		((Quaternion_t2301928331_StaticFields*)il2cpp_codegen_static_fields_for(Quaternion_t2301928331_il2cpp_TypeInfo_var))->set_identityQuaternion_4(L_0);
 		return;
 	}
+}
+// System.Void UnityEngine.Quaternion::FromToRotation_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Quaternion&)
+extern "C" IL2CPP_METHOD_ATTR void Quaternion_FromToRotation_Injected_m2732854426 (RuntimeObject * __this /* static, unused */, Vector3_t3722313464 * ___fromDirection0, Vector3_t3722313464 * ___toDirection1, Quaternion_t2301928331 * ___ret2, const RuntimeMethod* method)
+{
+	typedef void (*Quaternion_FromToRotation_Injected_m2732854426_ftn) (Vector3_t3722313464 *, Vector3_t3722313464 *, Quaternion_t2301928331 *);
+	static Quaternion_FromToRotation_Injected_m2732854426_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Quaternion_FromToRotation_Injected_m2732854426_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Quaternion::FromToRotation_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Quaternion&)");
+	_il2cpp_icall_func(___fromDirection0, ___toDirection1, ___ret2);
 }
 // System.Void UnityEngine.Quaternion::Inverse_Injected(UnityEngine.Quaternion&,UnityEngine.Quaternion&)
 extern "C" IL2CPP_METHOD_ATTR void Quaternion_Inverse_Injected_m4070500351 (RuntimeObject * __this /* static, unused */, Quaternion_t2301928331 * ___rotation0, Quaternion_t2301928331 * ___ret1, const RuntimeMethod* method)
@@ -44496,6 +44630,52 @@ extern "C" IL2CPP_METHOD_ATTR float Screen_get_dpi_m495672463 (RuntimeObject * _
 	float retVal = _il2cpp_icall_func();
 	return retVal;
 }
+// System.Void UnityEngine.Screen::RequestOrientation(UnityEngine.ScreenOrientation)
+extern "C" IL2CPP_METHOD_ATTR void Screen_RequestOrientation_m590940690 (RuntimeObject * __this /* static, unused */, int32_t ___orient0, const RuntimeMethod* method)
+{
+	typedef void (*Screen_RequestOrientation_m590940690_ftn) (int32_t);
+	static Screen_RequestOrientation_m590940690_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Screen_RequestOrientation_m590940690_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Screen::RequestOrientation(UnityEngine.ScreenOrientation)");
+	_il2cpp_icall_func(___orient0);
+}
+// System.Void UnityEngine.Screen::set_orientation(UnityEngine.ScreenOrientation)
+extern "C" IL2CPP_METHOD_ATTR void Screen_set_orientation_m3561207030 (RuntimeObject * __this /* static, unused */, int32_t ___value0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Screen_set_orientation_m3561207030_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		int32_t L_0 = ___value0;
+		if (L_0)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t3317548046_il2cpp_TypeInfo_var);
+		Debug_Log_m4051431634(NULL /*static, unused*/, _stringLiteral1173817491, /*hidden argument*/NULL);
+		___value0 = 5;
+	}
+
+IL_0016:
+	{
+		int32_t L_1 = ___value0;
+		Screen_RequestOrientation_m590940690(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

@@ -2773,6 +2773,8 @@ extern "C" IL2CPP_METHOD_ATTR bool PlayableHandle_IsPlayableOfType_TisAnimatorCo
 // System.Boolean UnityEngine.Playables.PlayableHandle::IsPlayableOfType<UnityEngine.Experimental.Animations.AnimationScriptPlayable>()
 extern "C" IL2CPP_METHOD_ATTR bool PlayableHandle_IsPlayableOfType_TisAnimationScriptPlayable_t1303525964_m1992139667_gshared (PlayableHandle_t1095853803 * __this, const RuntimeMethod* method);
 
+// UnityEngine.AnimationState UnityEngine.Animation::GetState(System.String)
+extern "C" IL2CPP_METHOD_ATTR AnimationState_t1108360407 * Animation_GetState_m2252204496 (Animation_t3648466861 * __this, String_t* ___name0, const RuntimeMethod* method);
 // System.Boolean UnityEngine.Animation::Play(UnityEngine.PlayMode)
 extern "C" IL2CPP_METHOD_ATTR bool Animation_Play_m577412913 (Animation_t3648466861 * __this, int32_t ___mode0, const RuntimeMethod* method);
 // System.Boolean UnityEngine.Animation::PlayDefaultAnimation(UnityEngine.PlayMode)
@@ -2890,6 +2892,23 @@ extern "C" IL2CPP_METHOD_ATTR bool AnimationScriptPlayable_Equals_m534223357 (An
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// UnityEngine.AnimationState UnityEngine.Animation::get_Item(System.String)
+extern "C" IL2CPP_METHOD_ATTR AnimationState_t1108360407 * Animation_get_Item_m2435218778 (Animation_t3648466861 * __this, String_t* ___name0, const RuntimeMethod* method)
+{
+	AnimationState_t1108360407 * V_0 = NULL;
+	{
+		String_t* L_0 = ___name0;
+		AnimationState_t1108360407 * L_1 = Animation_GetState_m2252204496(__this, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		goto IL_000e;
+	}
+
+IL_000e:
+	{
+		AnimationState_t1108360407 * L_2 = V_0;
+		return L_2;
+	}
+}
 // System.Boolean UnityEngine.Animation::Play()
 extern "C" IL2CPP_METHOD_ATTR bool Animation_Play_m2798573761 (Animation_t3648466861 * __this, const RuntimeMethod* method)
 {
@@ -2958,6 +2977,16 @@ IL_000d:
 		RuntimeObject* L_1 = V_0;
 		return L_1;
 	}
+}
+// UnityEngine.AnimationState UnityEngine.Animation::GetState(System.String)
+extern "C" IL2CPP_METHOD_ATTR AnimationState_t1108360407 * Animation_GetState_m2252204496 (Animation_t3648466861 * __this, String_t* ___name0, const RuntimeMethod* method)
+{
+	typedef AnimationState_t1108360407 * (*Animation_GetState_m2252204496_ftn) (Animation_t3648466861 *, String_t*);
+	static Animation_GetState_m2252204496_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Animation_GetState_m2252204496_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Animation::GetState(System.String)");
+	AnimationState_t1108360407 * retVal = _il2cpp_icall_func(__this, ___name0);
+	return retVal;
 }
 // UnityEngine.AnimationState UnityEngine.Animation::GetStateAtIndex(System.Int32)
 extern "C" IL2CPP_METHOD_ATTR AnimationState_t1108360407 * Animation_GetStateAtIndex_m3906320186 (Animation_t3648466861 * __this, int32_t ___index0, const RuntimeMethod* method)
@@ -3137,6 +3166,15 @@ extern "C" IL2CPP_METHOD_ATTR void AnimationState__ctor_m1160185825 (AnimationSt
 		TrackedReference__ctor_m3086593239(__this, /*hidden argument*/NULL);
 		return;
 	}
+}
+// System.Void UnityEngine.AnimationState::set_speed(System.Single)
+extern "C" IL2CPP_METHOD_ATTR void AnimationState_set_speed_m2787468711 (AnimationState_t1108360407 * __this, float ___value0, const RuntimeMethod* method)
+{
+	typedef void (*AnimationState_set_speed_m2787468711_ftn) (AnimationState_t1108360407 *, float);
+	static AnimationState_set_speed_m2787468711_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (AnimationState_set_speed_m2787468711_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.AnimationState::set_speed(System.Single)");
+	_il2cpp_icall_func(__this, ___value0);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

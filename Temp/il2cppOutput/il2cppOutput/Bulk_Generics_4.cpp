@@ -823,6 +823,7 @@ extern const uint32_t UnityEvent_1_Invoke_m3604335408_MetadataUsageId;
 extern const uint32_t UnityEvent_1_Invoke_m3884411426_MetadataUsageId;
 extern const uint32_t UnityEvent_1_Invoke_m933614109_MetadataUsageId;
 extern const uint32_t UnityEvent_2_FindMethod_Impl_m2569180594_MetadataUsageId;
+extern const uint32_t UnityEvent_2_Invoke_m243724720_MetadataUsageId;
 extern const uint32_t UnityEvent_3_FindMethod_Impl_m1640458315_MetadataUsageId;
 extern const uint32_t UnityEvent_4_FindMethod_Impl_m3410547086_MetadataUsageId;
 
@@ -14022,6 +14023,30 @@ IL_0050:
 		return;
 	}
 }
+// System.Void UnityEngine.Events.InvokableCall`2<System.Object,System.Object>::Invoke(T1,T2)
+extern "C" IL2CPP_METHOD_ATTR void InvokableCall_2_Invoke_m1013424127_gshared (InvokableCall_2_t362407658 * __this, RuntimeObject * ___args00, RuntimeObject * ___args11, const RuntimeMethod* method)
+{
+	{
+		UnityAction_2_t3283971887 * L_0 = (UnityAction_2_t3283971887 *)__this->get_Delegate_0();
+		bool L_1 = BaseInvokableCall_AllowInvoke_m878393606(NULL /*static, unused*/, (Delegate_t1188392813 *)L_0, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_001e;
+		}
+	}
+	{
+		UnityAction_2_t3283971887 * L_2 = (UnityAction_2_t3283971887 *)__this->get_Delegate_0();
+		RuntimeObject * L_3 = ___args00;
+		RuntimeObject * L_4 = ___args11;
+		NullCheck((UnityAction_2_t3283971887 *)L_2);
+		((  void (*) (UnityAction_2_t3283971887 *, RuntimeObject *, RuntimeObject *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 6)->methodPointer)((UnityAction_2_t3283971887 *)L_2, (RuntimeObject *)L_3, (RuntimeObject *)L_4, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 6));
+	}
+
+IL_001e:
+	{
+		return;
+	}
+}
 // System.Boolean UnityEngine.Events.InvokableCall`2<System.Object,System.Object>::Find(System.Object,System.Reflection.MethodInfo)
 extern "C" IL2CPP_METHOD_ATTR bool InvokableCall_2_Find_m265590023_gshared (InvokableCall_2_t362407658 * __this, RuntimeObject * ___targetObj0, MethodInfo_t * ___method1, const RuntimeMethod* method)
 {
@@ -17038,6 +17063,131 @@ IL_000e:
 	{
 		BaseInvokableCall_t2703961024 * L_3 = V_0;
 		return L_3;
+	}
+}
+// System.Void UnityEngine.Events.UnityEvent`2<System.Object,System.Object>::Invoke(T0,T1)
+extern "C" IL2CPP_METHOD_ATTR void UnityEvent_2_Invoke_m243724720_gshared (UnityEvent_2_t614268397 * __this, RuntimeObject * ___arg00, RuntimeObject * ___arg11, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UnityEvent_2_Invoke_m243724720_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	List_1_t4176035766 * V_0 = NULL;
+	int32_t V_1 = 0;
+	InvokableCall_2_t362407658 * V_2 = NULL;
+	InvokableCall_t832123510 * V_3 = NULL;
+	BaseInvokableCall_t2703961024 * V_4 = NULL;
+	{
+		NullCheck((UnityEventBase_t3960448221 *)__this);
+		List_1_t4176035766 * L_0 = UnityEventBase_PrepareInvoke_m1785382128((UnityEventBase_t3960448221 *)__this, /*hidden argument*/NULL);
+		V_0 = (List_1_t4176035766 *)L_0;
+		V_1 = (int32_t)0;
+		goto IL_00a0;
+	}
+
+IL_000f:
+	{
+		List_1_t4176035766 * L_1 = V_0;
+		int32_t L_2 = V_1;
+		NullCheck((List_1_t4176035766 *)L_1);
+		BaseInvokableCall_t2703961024 * L_3 = List_1_get_Item_m4156046467((List_1_t4176035766 *)L_1, (int32_t)L_2, /*hidden argument*/List_1_get_Item_m4156046467_RuntimeMethod_var);
+		V_2 = (InvokableCall_2_t362407658 *)((InvokableCall_2_t362407658 *)IsInst((RuntimeObject*)L_3, IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 2)));
+		InvokableCall_2_t362407658 * L_4 = V_2;
+		if (!L_4)
+		{
+			goto IL_0030;
+		}
+	}
+	{
+		InvokableCall_2_t362407658 * L_5 = V_2;
+		RuntimeObject * L_6 = ___arg00;
+		RuntimeObject * L_7 = ___arg11;
+		NullCheck((InvokableCall_2_t362407658 *)L_5);
+		((  void (*) (InvokableCall_2_t362407658 *, RuntimeObject *, RuntimeObject *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 4)->methodPointer)((InvokableCall_2_t362407658 *)L_5, (RuntimeObject *)L_6, (RuntimeObject *)L_7, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 4));
+		goto IL_009b;
+	}
+
+IL_0030:
+	{
+		List_1_t4176035766 * L_8 = V_0;
+		int32_t L_9 = V_1;
+		NullCheck((List_1_t4176035766 *)L_8);
+		BaseInvokableCall_t2703961024 * L_10 = List_1_get_Item_m4156046467((List_1_t4176035766 *)L_8, (int32_t)L_9, /*hidden argument*/List_1_get_Item_m4156046467_RuntimeMethod_var);
+		V_3 = (InvokableCall_t832123510 *)((InvokableCall_t832123510 *)IsInst((RuntimeObject*)L_10, InvokableCall_t832123510_il2cpp_TypeInfo_var));
+		InvokableCall_t832123510 * L_11 = V_3;
+		if (!L_11)
+		{
+			goto IL_004f;
+		}
+	}
+	{
+		InvokableCall_t832123510 * L_12 = V_3;
+		NullCheck((InvokableCall_t832123510 *)L_12);
+		InvokableCall_Invoke_m1437964737((InvokableCall_t832123510 *)L_12, /*hidden argument*/NULL);
+		goto IL_009a;
+	}
+
+IL_004f:
+	{
+		List_1_t4176035766 * L_13 = V_0;
+		int32_t L_14 = V_1;
+		NullCheck((List_1_t4176035766 *)L_13);
+		BaseInvokableCall_t2703961024 * L_15 = List_1_get_Item_m4156046467((List_1_t4176035766 *)L_13, (int32_t)L_14, /*hidden argument*/List_1_get_Item_m4156046467_RuntimeMethod_var);
+		V_4 = (BaseInvokableCall_t2703961024 *)L_15;
+		ObjectU5BU5D_t2843939325* L_16 = (ObjectU5BU5D_t2843939325*)__this->get_m_InvokeArray_4();
+		if (L_16)
+		{
+			goto IL_0070;
+		}
+	}
+	{
+		ObjectU5BU5D_t2843939325* L_17 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)2);
+		__this->set_m_InvokeArray_4(L_17);
+	}
+
+IL_0070:
+	{
+		ObjectU5BU5D_t2843939325* L_18 = (ObjectU5BU5D_t2843939325*)__this->get_m_InvokeArray_4();
+		RuntimeObject * L_19 = ___arg00;
+		NullCheck(L_18);
+		ArrayElementTypeCheck (L_18, L_19);
+		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_19);
+		ObjectU5BU5D_t2843939325* L_20 = (ObjectU5BU5D_t2843939325*)__this->get_m_InvokeArray_4();
+		RuntimeObject * L_21 = ___arg11;
+		NullCheck(L_20);
+		ArrayElementTypeCheck (L_20, L_21);
+		(L_20)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject *)L_21);
+		BaseInvokableCall_t2703961024 * L_22 = V_4;
+		ObjectU5BU5D_t2843939325* L_23 = (ObjectU5BU5D_t2843939325*)__this->get_m_InvokeArray_4();
+		NullCheck((BaseInvokableCall_t2703961024 *)L_22);
+		VirtActionInvoker1< ObjectU5BU5D_t2843939325* >::Invoke(4 /* System.Void UnityEngine.Events.BaseInvokableCall::Invoke(System.Object[]) */, (BaseInvokableCall_t2703961024 *)L_22, (ObjectU5BU5D_t2843939325*)L_23);
+	}
+
+IL_009a:
+	{
+	}
+
+IL_009b:
+	{
+		int32_t L_24 = V_1;
+		V_1 = (int32_t)((int32_t)il2cpp_codegen_add((int32_t)L_24, (int32_t)1));
+	}
+
+IL_00a0:
+	{
+		int32_t L_25 = V_1;
+		List_1_t4176035766 * L_26 = V_0;
+		NullCheck((List_1_t4176035766 *)L_26);
+		int32_t L_27 = List_1_get_Count_m1245201994((List_1_t4176035766 *)L_26, /*hidden argument*/List_1_get_Count_m1245201994_RuntimeMethod_var);
+		if ((((int32_t)L_25) < ((int32_t)L_27)))
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		return;
 	}
 }
 #ifdef __clang__

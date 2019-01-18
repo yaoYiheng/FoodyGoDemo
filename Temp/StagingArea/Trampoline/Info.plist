@@ -29,6 +29,8 @@
       <key>NSAllowsArbitraryLoads</key>
       <true />
     </dict>
+    <key>NSCameraUsageDescription</key>
+    <string>需要使用Camera</string>
     <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
     <string>MY</string>
     <key>NSLocationWhenInUseUsageDescription</key>

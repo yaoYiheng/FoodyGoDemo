@@ -2,9 +2,7 @@ iOS
 PlayerPath?
 /Users/yiheng/Documents/Unity相关/_Builds/FoodyGoDemo
 SceneListBegin?
-Assets/Scenes/Game.unity
-Assets/Scenes/Splash.unity
-Assets/Scenes/Map.unity
+Assets/Scenes/Catch.unity
 SceneListEnd?
 c422dd62785a6d0afa870fbd111886ce Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 7b803eb2910e9b4cd5e521ae07b9f7d6 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
@@ -207,7 +205,7 @@ c8a41ce4eea7677f6dd2aa0e422a2f04 Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehav
 c31ff9acb65f7a15b5c6fd77c3314d83 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 486cd95c82d8305219c352c06b776e1f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 81d6a421cbac2031cd5e35b10c8ac717 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.ActivateTrigger
-f6ed4b2f15e4e6223aac296bbbaf032b Assembly-CSharp.dll:packt.FoodyGO.Controllers.MonsterController
+c44251fbf651367f9a257b6da34a2ea3 Assembly-CSharp.dll:packt.FoodyGO.Controllers.MonsterController
 60e3a31993bab65e1efb2350a900d178 Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.InputAxisScrollbar
 2c7e6666ff54b0db8b35a5d74102118c Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.AxisTouchButton
 f16835701e71dd5d6fb1fed4b7aff1d8 Unity.TextMeshPro.dll:TMPro.TMP_Asset
@@ -348,3 +346,8 @@ c31ff9acb65f7a15b5c6fd77c3314d83 Vuforia.UnityExtensions.dll:Vuforia.WireframeBe
 695c9335429d4798b6f74ca73c042ff4 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMobileShaderSwitch
 2d5613dfea5ebe89d441816537142920 Assembly-CSharp.dll:packt.FoodyGO.TouchInput.CustomTouchPad
 a6923848c0297198dbb93a3468bcc104 Assembly-CSharp.dll:packt.FoodyGO.Managers.GameManager
+b8749ba2d487b745a343b8f20322bc2d Assembly-CSharp.dll:packt.FoodyGO.TouchInput.ThrowTouchPad
+99e00075e717874958ffc4df67d30eb4 Assembly-CSharp.dll:packt.FoodyGO.PhysicsExt.CollisionReaction
+1d951a945a0a797cfb29a6b72f8704be Assembly-CSharp.dll:packt.FoodyGO.UI.CameraTextureOnRawImage
+a9e94c3ea32debde4bf94e953f2757ad Assembly-CSharp.dll:packt.FoodyGO.PhysicsExt.CollisionAction
+e2ef4dac4b024a279e51d61f806e89dc Assembly-CSharp.dll:packt.FoodyGO.Controllers.CatchSceneController

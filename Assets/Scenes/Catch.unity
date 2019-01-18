@@ -266,6 +266,8 @@ GameObject:
   - component: {fileID: 721237972}
   - component: {fileID: 721237974}
   - component: {fileID: 721237973}
+  - component: {fileID: 721237976}
+  - component: {fileID: 721237975}
   m_Layer: 5
   m_Name: Camera_Backdrop
   m_TagString: Untagged
@@ -324,6 +326,33 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 721237971}
   m_CullTransparentMesh: 0
+--- !u!114 &721237975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 721237971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 869f5d8ae38e9ae4e9c90b7eb8a1ecd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rawImage: {fileID: 0}
+  webcamTexture: {fileID: 0}
+  aspectFitter: {fileID: 0}
+--- !u!114 &721237976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 721237971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1254083943, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AspectMode: 2
+  m_AspectRatio: 0.46182266
 --- !u!1 &1236850344
 GameObject:
   m_ObjectHideFlags: 0

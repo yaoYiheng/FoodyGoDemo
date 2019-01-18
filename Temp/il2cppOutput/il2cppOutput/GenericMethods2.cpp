@@ -342,7 +342,7 @@ extern const uint32_t GameObject_AddComponent_TisRuntimeObject_m3469369570_Metad
 extern const uint32_t GameObject_GetComponentInChildren_TisRuntimeObject_m1310240902_MetadataUsageId;
 extern const uint32_t GameObject_GetComponent_TisRuntimeObject_m2049753423_MetadataUsageId;
 extern const uint32_t GameObject_GetComponentsInChildren_TisRuntimeObject_m2621777305_MetadataUsageId;
-extern const uint32_t GameObject_GetComponents_TisRuntimeObject_m1550324888_MetadataUsageId;
+extern const uint32_t GameObject_GetComponents_TisRuntimeObject_m1360663425_MetadataUsageId;
 extern const uint32_t Object_FindObjectOfType_TisRuntimeObject_m4191481190_MetadataUsageId;
 extern const uint32_t Object_FindObjectsOfType_TisRuntimeObject_m1831438261_MetadataUsageId;
 extern const uint32_t Object_Instantiate_TisRuntimeObject_m2446893047_MetadataUsageId;
@@ -8282,12 +8282,12 @@ IL_0013:
 	}
 }
 // T[] UnityEngine.GameObject::GetComponents<System.Object>()
-extern "C" IL2CPP_METHOD_ATTR ObjectU5BU5D_t2843939325* GameObject_GetComponents_TisRuntimeObject_m1550324888_gshared (GameObject_t1113636619 * __this, const RuntimeMethod* method)
+extern "C" IL2CPP_METHOD_ATTR ObjectU5BU5D_t2843939325* GameObject_GetComponents_TisRuntimeObject_m1360663425_gshared (GameObject_t1113636619 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (GameObject_GetComponents_TisRuntimeObject_m1550324888_MetadataUsageId);
+		il2cpp_codegen_initialize_method (GameObject_GetComponents_TisRuntimeObject_m1360663425_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	ObjectU5BU5D_t2843939325* V_0 = NULL;

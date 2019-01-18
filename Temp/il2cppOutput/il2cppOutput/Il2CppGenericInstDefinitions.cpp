@@ -375,6 +375,8 @@ extern const Il2CppType RouteAttribute_t574643108_0_0_0;
 extern const Il2CppType RequestContext_t3602631757_0_0_0;
 extern const Il2CppType KeyValuePair_2_t4030379155_0_0_0;
 extern const Il2CppType GameManager_t3352243792_0_0_0;
+extern const Il2CppType CollisionReaction_t3737494906_0_0_0;
+extern const Il2CppType Collision_t4262080450_0_0_0;
 extern const Il2CppType Monster_t1773341114_0_0_0;
 extern const Il2CppType DefaultExecutionOrder_t3059642329_0_0_0;
 extern const Il2CppType PlayerConnection_t3081694049_0_0_0;
@@ -412,6 +414,8 @@ extern const Il2CppType Animation_t3648466861_0_0_0;
 extern const Il2CppType SpringJoint_t1912369980_0_0_0;
 extern const Il2CppType Ball_t2378314638_0_0_0;
 extern const Il2CppType MonsterController_t3352166224_0_0_0;
+extern const Il2CppType CollisionAction_t3868143941_0_0_0;
+extern const Il2CppType AspectRatioFitter_t3312407083_0_0_0;
 extern const Il2CppType IEnumerable_1_t1615002100_gp_0_0_0_0;
 extern const Il2CppType Array_InternalArray__IEnumerable_GetEnumerator_m370636962_gp_0_0_0_0;
 extern const Il2CppType Array_Sort_m673391272_gp_0_0_0_0;
@@ -1427,6 +1431,10 @@ static const RuntimeType* GenInst_KeyValuePair_2_t2530217319_0_0_0_RuntimeObject
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t2530217319_0_0_0_RuntimeObject_0_0_0 = { 2, GenInst_KeyValuePair_2_t2530217319_0_0_0_RuntimeObject_0_0_0_Types };
 static const RuntimeType* GenInst_GameManager_t3352243792_0_0_0_Types[] = { (&GameManager_t3352243792_0_0_0) };
 extern const Il2CppGenericInst GenInst_GameManager_t3352243792_0_0_0 = { 1, GenInst_GameManager_t3352243792_0_0_0_Types };
+static const RuntimeType* GenInst_CollisionReaction_t3737494906_0_0_0_Types[] = { (&CollisionReaction_t3737494906_0_0_0) };
+extern const Il2CppGenericInst GenInst_CollisionReaction_t3737494906_0_0_0 = { 1, GenInst_CollisionReaction_t3737494906_0_0_0_Types };
+static const RuntimeType* GenInst_GameObject_t1113636619_0_0_0_Collision_t4262080450_0_0_0_Types[] = { (&GameObject_t1113636619_0_0_0), (&Collision_t4262080450_0_0_0) };
+extern const Il2CppGenericInst GenInst_GameObject_t1113636619_0_0_0_Collision_t4262080450_0_0_0 = { 2, GenInst_GameObject_t1113636619_0_0_0_Collision_t4262080450_0_0_0_Types };
 static const RuntimeType* GenInst_Monster_t1773341114_0_0_0_Types[] = { (&Monster_t1773341114_0_0_0) };
 extern const Il2CppGenericInst GenInst_Monster_t1773341114_0_0_0 = { 1, GenInst_Monster_t1773341114_0_0_0_Types };
 static const RuntimeType* GenInst_DefaultExecutionOrder_t3059642329_0_0_0_Types[] = { (&DefaultExecutionOrder_t3059642329_0_0_0) };
@@ -1501,6 +1509,10 @@ static const RuntimeType* GenInst_Ball_t2378314638_0_0_0_Types[] = { (&Ball_t237
 extern const Il2CppGenericInst GenInst_Ball_t2378314638_0_0_0 = { 1, GenInst_Ball_t2378314638_0_0_0_Types };
 static const RuntimeType* GenInst_MonsterController_t3352166224_0_0_0_Types[] = { (&MonsterController_t3352166224_0_0_0) };
 extern const Il2CppGenericInst GenInst_MonsterController_t3352166224_0_0_0 = { 1, GenInst_MonsterController_t3352166224_0_0_0_Types };
+static const RuntimeType* GenInst_CollisionAction_t3868143941_0_0_0_Types[] = { (&CollisionAction_t3868143941_0_0_0) };
+extern const Il2CppGenericInst GenInst_CollisionAction_t3868143941_0_0_0 = { 1, GenInst_CollisionAction_t3868143941_0_0_0_Types };
+static const RuntimeType* GenInst_AspectRatioFitter_t3312407083_0_0_0_Types[] = { (&AspectRatioFitter_t3312407083_0_0_0) };
+extern const Il2CppGenericInst GenInst_AspectRatioFitter_t3312407083_0_0_0 = { 1, GenInst_AspectRatioFitter_t3312407083_0_0_0_Types };
 static const RuntimeType* GenInst_CustomAttributeNamedArgument_t287865710_0_0_0_CustomAttributeNamedArgument_t287865710_0_0_0_Types[] = { (&CustomAttributeNamedArgument_t287865710_0_0_0), (&CustomAttributeNamedArgument_t287865710_0_0_0) };
 extern const Il2CppGenericInst GenInst_CustomAttributeNamedArgument_t287865710_0_0_0_CustomAttributeNamedArgument_t287865710_0_0_0 = { 2, GenInst_CustomAttributeNamedArgument_t287865710_0_0_0_CustomAttributeNamedArgument_t287865710_0_0_0_Types };
 static const RuntimeType* GenInst_CustomAttributeTypedArgument_t2723150157_0_0_0_CustomAttributeTypedArgument_t2723150157_0_0_0_Types[] = { (&CustomAttributeTypedArgument_t2723150157_0_0_0), (&CustomAttributeTypedArgument_t2723150157_0_0_0) };
@@ -1897,7 +1909,7 @@ static const RuntimeType* GenInst_ObjectPool_1_t892185599_gp_0_0_0_0_Types[] = {
 extern const Il2CppGenericInst GenInst_ObjectPool_1_t892185599_gp_0_0_0_0 = { 1, GenInst_ObjectPool_1_t892185599_gp_0_0_0_0_Types };
 static const RuntimeType* GenInst_Singleton_1_t1255030833_gp_0_0_0_0_Types[] = { (&Singleton_1_t1255030833_gp_0_0_0_0) };
 extern const Il2CppGenericInst GenInst_Singleton_1_t1255030833_gp_0_0_0_0 = { 1, GenInst_Singleton_1_t1255030833_gp_0_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[658] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[662] = 
 {
 	&GenInst_RuntimeObject_0_0_0,
 	&GenInst_Int32_t2950945753_0_0_0,
@@ -2322,6 +2334,8 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[658] =
 	&GenInst_KeyValuePair_2_t4030379155_0_0_0_String_t_0_0_0,
 	&GenInst_KeyValuePair_2_t2530217319_0_0_0_RuntimeObject_0_0_0,
 	&GenInst_GameManager_t3352243792_0_0_0,
+	&GenInst_CollisionReaction_t3737494906_0_0_0,
+	&GenInst_GameObject_t1113636619_0_0_0_Collision_t4262080450_0_0_0,
 	&GenInst_Monster_t1773341114_0_0_0,
 	&GenInst_DefaultExecutionOrder_t3059642329_0_0_0,
 	&GenInst_PlayerConnection_t3081694049_0_0_0,
@@ -2359,6 +2373,8 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[658] =
 	&GenInst_SpringJoint_t1912369980_0_0_0,
 	&GenInst_Ball_t2378314638_0_0_0,
 	&GenInst_MonsterController_t3352166224_0_0_0,
+	&GenInst_CollisionAction_t3868143941_0_0_0,
+	&GenInst_AspectRatioFitter_t3312407083_0_0_0,
 	&GenInst_CustomAttributeNamedArgument_t287865710_0_0_0_CustomAttributeNamedArgument_t287865710_0_0_0,
 	&GenInst_CustomAttributeTypedArgument_t2723150157_0_0_0_CustomAttributeTypedArgument_t2723150157_0_0_0,
 	&GenInst_OrderBlock_t1585977831_0_0_0_OrderBlock_t1585977831_0_0_0,

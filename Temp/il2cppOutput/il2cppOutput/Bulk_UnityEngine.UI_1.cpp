@@ -38090,7 +38090,7 @@ extern "C" IL2CPP_METHOD_ATTR void ReflectionMethodsCache__ctor_m3826472948 (Ref
 		RuntimeTypeHandle_t3027515415  L_7 = { reinterpret_cast<intptr_t> (RaycastHit_t1056001966_0_0_0_var) };
 		Type_t * L_8 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
 		NullCheck(L_8);
-		Type_t * L_9 = VirtFuncInvoker0< Type_t * >::Invoke(84 /* System.Type System.Type::MakeByRefType() */, L_8);
+		Type_t * L_9 = VirtFuncInvoker0< Type_t * >::Invoke(85 /* System.Type System.Type::MakeByRefType() */, L_8);
 		NullCheck(L_6);
 		ArrayElementTypeCheck (L_6, L_9);
 		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(1), (Type_t *)L_9);

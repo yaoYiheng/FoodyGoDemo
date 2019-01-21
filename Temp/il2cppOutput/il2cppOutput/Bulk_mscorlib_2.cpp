@@ -688,6 +688,7 @@ extern String_t* _stringLiteral994061267;
 extern String_t* _stringLiteral995745901;
 extern const RuntimeMethod* Console_SetOut_m286050082_RuntimeMethod_var;
 extern const RuntimeMethod* Convert_ChangeType_m739676612_RuntimeMethod_var;
+extern const RuntimeMethod* Convert_ChangeType_m827193029_RuntimeMethod_var;
 extern const RuntimeMethod* Convert_FromBase64String_m3685135396_RuntimeMethod_var;
 extern const RuntimeMethod* Convert_ToBase64String_m1959325926_RuntimeMethod_var;
 extern const RuntimeMethod* Convert_ToBase64String_m3839334935_RuntimeMethod_var;
@@ -951,6 +952,7 @@ extern const uint32_t Console_WriteLine_m4182570127_MetadataUsageId;
 extern const uint32_t Console__cctor_m1860305256_MetadataUsageId;
 extern const uint32_t Console_get_Error_m1839879495_MetadataUsageId;
 extern const uint32_t Convert_ChangeType_m739676612_MetadataUsageId;
+extern const uint32_t Convert_ChangeType_m827193029_MetadataUsageId;
 extern const uint32_t Convert_FromBase64String_m3685135396_MetadataUsageId;
 extern const uint32_t Convert_ToBase64String_m1959325926_MetadataUsageId;
 extern const uint32_t Convert_ToBase64String_m3839334935_MetadataUsageId;
@@ -1004,6 +1006,7 @@ extern const uint32_t Convert_ToDecimal_m889385228_MetadataUsageId;
 extern const uint32_t Convert_ToDecimal_m996138310_MetadataUsageId;
 extern const uint32_t Convert_ToDouble_m1177445661_MetadataUsageId;
 extern const uint32_t Convert_ToDouble_m4017511472_MetadataUsageId;
+extern const uint32_t Convert_ToDouble_m4025515304_MetadataUsageId;
 extern const uint32_t Convert_ToInt16_m1223489986_MetadataUsageId;
 extern const uint32_t Convert_ToInt16_m1336719169_MetadataUsageId;
 extern const uint32_t Convert_ToInt16_m1733792763_MetadataUsageId;
@@ -1137,6 +1140,7 @@ extern const uint32_t DateTime_ParseExact_m1132380469_MetadataUsageId;
 extern const uint32_t DateTime_ParseExact_m2711902273_MetadataUsageId;
 extern const uint32_t DateTime_ParseExact_m317338046_MetadataUsageId;
 extern const uint32_t DateTime_Parse_m1070804416_MetadataUsageId;
+extern const uint32_t DateTime_Parse_m2550724587_MetadataUsageId;
 extern const uint32_t DateTime_Parse_m3729096069_MetadataUsageId;
 extern const uint32_t DateTime_Subtract_m3522513701_MetadataUsageId;
 extern const uint32_t DateTime_System_IConvertible_ToBoolean_m3229932458_MetadataUsageId;
@@ -11596,6 +11600,8 @@ extern "C" IL2CPP_METHOD_ATTR Decimal_t2948259380  Decimal_op_Implicit_m42562344
 extern "C" IL2CPP_METHOD_ATTR double Decimal_op_Explicit_m2816896069 (RuntimeObject * __this /* static, unused */, Decimal_t2948259380  ___value0, const RuntimeMethod* method);
 // System.Double System.Double::Parse(System.String,System.IFormatProvider)
 extern "C" IL2CPP_METHOD_ATTR double Double_Parse_m3456374109 (RuntimeObject * __this /* static, unused */, String_t* ___s0, RuntimeObject* ___provider1, const RuntimeMethod* method);
+// System.Double System.Convert::ToDouble(System.Object,System.IFormatProvider)
+extern "C" IL2CPP_METHOD_ATTR double Convert_ToDouble_m4017511472 (RuntimeObject * __this /* static, unused */, RuntimeObject * ___value0, RuntimeObject* ___provider1, const RuntimeMethod* method);
 // System.Int16 System.Decimal::op_Explicit(System.Decimal)
 extern "C" IL2CPP_METHOD_ATTR int16_t Decimal_op_Explicit_m4231101593 (RuntimeObject * __this /* static, unused */, Decimal_t2948259380  ___value0, const RuntimeMethod* method);
 // System.Int16 System.Int16::Parse(System.String,System.IFormatProvider)
@@ -11926,6 +11932,8 @@ extern "C" IL2CPP_METHOD_ATTR DateTime_t3738529785  DateTime_Subtract_m352251370
 extern "C" IL2CPP_METHOD_ATTR String_t* DateTime_ToString_m2992030064 (DateTime_t3738529785 * __this, String_t* ___format0, RuntimeObject* ___provider1, const RuntimeMethod* method);
 // System.String System.DateTime::ToString()
 extern "C" IL2CPP_METHOD_ATTR String_t* DateTime_ToString_m884486936 (DateTime_t3738529785 * __this, const RuntimeMethod* method);
+// System.String System.DateTime::ToString(System.String)
+extern "C" IL2CPP_METHOD_ATTR String_t* DateTime_ToString_m3718521780 (DateTime_t3738529785 * __this, String_t* ___format0, const RuntimeMethod* method);
 // System.String System.DateTimeUtils::ToString(System.DateTime,System.String,System.Globalization.DateTimeFormatInfo)
 extern "C" IL2CPP_METHOD_ATTR String_t* DateTimeUtils_ToString_m93951406 (RuntimeObject * __this /* static, unused */, DateTime_t3738529785  ___dt0, String_t* ___format1, DateTimeFormatInfo_t2405853701 * ___dfi2, const RuntimeMethod* method);
 // System.TimeSpan System.TimeSpan::op_Addition(System.TimeSpan,System.TimeSpan)
@@ -12003,6 +12011,8 @@ extern "C" IL2CPP_METHOD_ATTR DateTime_t3738529785  DateTimeOffset_get_DateTime_
 extern "C" IL2CPP_METHOD_ATTR DateTime_t3738529785  DateTime_SpecifyKind_m3332658812 (RuntimeObject * __this /* static, unused */, DateTime_t3738529785  ___value0, int32_t ___kind1, const RuntimeMethod* method);
 // System.DateTime System.DateTime::op_Subtraction(System.DateTime,System.TimeSpan)
 extern "C" IL2CPP_METHOD_ATTR DateTime_t3738529785  DateTime_op_Subtraction_m529926081 (RuntimeObject * __this /* static, unused */, DateTime_t3738529785  ___d0, TimeSpan_t881159249  ___t1, const RuntimeMethod* method);
+// System.Int64 System.DateTimeOffset::get_UtcTicks()
+extern "C" IL2CPP_METHOD_ATTR int64_t DateTimeOffset_get_UtcTicks_m3512477945 (DateTimeOffset_t3229287507 * __this, const RuntimeMethod* method);
 // System.String System.String::CreateString(System.Char*,System.Int32,System.Int32)
 extern "C" IL2CPP_METHOD_ATTR String_t* String_CreateString_m3400201881 (String_t* __this, Il2CppChar* ___value0, int32_t ___startIndex1, int32_t ___length2, const RuntimeMethod* method);
 // System.Text.StringBuilder System.Text.StringBuilder::Append(System.String)
@@ -19810,6 +19820,34 @@ extern "C" IL2CPP_METHOD_ATTR double Convert_ToDouble_m1840199900 (RuntimeObject
 		return (((double)((double)L_0)));
 	}
 }
+// System.Double System.Convert::ToDouble(System.Object)
+extern "C" IL2CPP_METHOD_ATTR double Convert_ToDouble_m4025515304 (RuntimeObject * __this /* static, unused */, RuntimeObject * ___value0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Convert_ToDouble_m4025515304_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RuntimeObject * L_0 = ___value0;
+		if (L_0)
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		return (0.0);
+	}
+
+IL_0010:
+	{
+		RuntimeObject * L_1 = ___value0;
+		IL2CPP_RUNTIME_CLASS_INIT(Convert_t2465617642_il2cpp_TypeInfo_var);
+		double L_2 = Convert_ToDouble_m4017511472(NULL /*static, unused*/, L_1, (RuntimeObject*)NULL, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
 // System.Double System.Convert::ToDouble(System.Object,System.IFormatProvider)
 extern "C" IL2CPP_METHOD_ATTR double Convert_ToDouble_m4017511472 (RuntimeObject * __this /* static, unused */, RuntimeObject * ___value0, RuntimeObject* ___provider1, const RuntimeMethod* method)
 {
@@ -22993,6 +23031,45 @@ IL_0040:
 		IL2CPP_RUNTIME_CLASS_INIT(Convert_t2465617642_il2cpp_TypeInfo_var);
 		RuntimeObject * L_14 = Convert_ToType_m2406080310(NULL /*static, unused*/, L_11, L_12, L_13, (bool)1, /*hidden argument*/NULL);
 		return L_14;
+	}
+}
+// System.Object System.Convert::ChangeType(System.Object,System.Type,System.IFormatProvider)
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Convert_ChangeType_m827193029 (RuntimeObject * __this /* static, unused */, RuntimeObject * ___value0, Type_t * ___conversionType1, RuntimeObject* ___provider2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Convert_ChangeType_m827193029_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RuntimeObject * L_0 = ___value0;
+		if (!L_0)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		Type_t * L_1 = ___conversionType1;
+		if (L_1)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_2 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_2, _stringLiteral1255815265, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, NULL, Convert_ChangeType_m827193029_RuntimeMethod_var);
+	}
+
+IL_0017:
+	{
+		RuntimeObject * L_3 = ___value0;
+		Type_t * L_4 = ___conversionType1;
+		RuntimeObject* L_5 = ___provider2;
+		IL2CPP_RUNTIME_CLASS_INIT(Convert_t2465617642_il2cpp_TypeInfo_var);
+		RuntimeObject * L_6 = Convert_ToType_m2406080310(NULL /*static, unused*/, L_3, L_4, L_5, (bool)1, /*hidden argument*/NULL);
+		return L_6;
 	}
 }
 // System.Object System.Convert::ToType(System.Object,System.Type,System.IFormatProvider,System.Boolean)
@@ -26609,6 +26686,22 @@ IL_0035:
 IL_0036:
 	{
 		return (bool)G_B7_0;
+	}
+}
+// System.DateTime System.DateTime::Parse(System.String)
+extern "C" IL2CPP_METHOD_ATTR DateTime_t3738529785  DateTime_Parse_m2550724587 (RuntimeObject * __this /* static, unused */, String_t* ___s0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (DateTime_Parse_m2550724587_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = ___s0;
+		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t3738529785_il2cpp_TypeInfo_var);
+		DateTime_t3738529785  L_1 = DateTime_Parse_m3729096069(NULL /*static, unused*/, L_0, (RuntimeObject*)NULL, /*hidden argument*/NULL);
+		return L_1;
 	}
 }
 // System.DateTime System.DateTime::Parse(System.String,System.IFormatProvider)
@@ -32370,6 +32463,20 @@ extern "C"  String_t* DateTime_ToString_m1916142975_AdjustorThunk (RuntimeObject
 	DateTime_t3738529785 * _thisAdjusted = reinterpret_cast<DateTime_t3738529785 *>(__this + 1);
 	return DateTime_ToString_m1916142975(_thisAdjusted, ___provider0, method);
 }
+// System.String System.DateTime::ToString(System.String)
+extern "C" IL2CPP_METHOD_ATTR String_t* DateTime_ToString_m3718521780 (DateTime_t3738529785 * __this, String_t* ___format0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___format0;
+		String_t* L_1 = DateTime_ToString_m2992030064((DateTime_t3738529785 *)__this, L_0, (RuntimeObject*)NULL, /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+extern "C"  String_t* DateTime_ToString_m3718521780_AdjustorThunk (RuntimeObject * __this, String_t* ___format0, const RuntimeMethod* method)
+{
+	DateTime_t3738529785 * _thisAdjusted = reinterpret_cast<DateTime_t3738529785 *>(__this + 1);
+	return DateTime_ToString_m3718521780(_thisAdjusted, ___format0, method);
+}
 // System.String System.DateTime::ToString(System.String,System.IFormatProvider)
 extern "C" IL2CPP_METHOD_ATTR String_t* DateTime_ToString_m2992030064 (DateTime_t3738529785 * __this, String_t* ___format0, RuntimeObject* ___provider1, const RuntimeMethod* method)
 {
@@ -33442,6 +33549,23 @@ extern "C"  DateTime_t3738529785  DateTimeOffset_get_UtcDateTime_m1021718282_Adj
 {
 	DateTimeOffset_t3229287507 * _thisAdjusted = reinterpret_cast<DateTimeOffset_t3229287507 *>(__this + 1);
 	return DateTimeOffset_get_UtcDateTime_m1021718282(_thisAdjusted, method);
+}
+// System.Int64 System.DateTimeOffset::get_UtcTicks()
+extern "C" IL2CPP_METHOD_ATTR int64_t DateTimeOffset_get_UtcTicks_m3512477945 (DateTimeOffset_t3229287507 * __this, const RuntimeMethod* method)
+{
+	DateTime_t3738529785  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		DateTime_t3738529785  L_0 = DateTimeOffset_get_UtcDateTime_m1021718282((DateTimeOffset_t3229287507 *)__this, /*hidden argument*/NULL);
+		V_0 = L_0;
+		int64_t L_1 = DateTime_get_Ticks_m1550640881((DateTime_t3738529785 *)(&V_0), /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+extern "C"  int64_t DateTimeOffset_get_UtcTicks_m3512477945_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	DateTimeOffset_t3229287507 * _thisAdjusted = reinterpret_cast<DateTimeOffset_t3229287507 *>(__this + 1);
+	return DateTimeOffset_get_UtcTicks_m3512477945(_thisAdjusted, method);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

@@ -205,9 +205,9 @@ struct DSAManaged_t2800260182;
 // Mono.Security.Cryptography.KeyPairPersistence
 struct KeyPairPersistence_t2094547461;
 // Mono.Security.Cryptography.RSAManaged
-struct RSAManaged_t1757093820;
-// Mono.Security.Cryptography.RSAManaged
 struct RSAManaged_t1757093819;
+// Mono.Security.Cryptography.RSAManaged
+struct RSAManaged_t1757093820;
 // Mono.Security.Cryptography.RSAManaged/KeyGeneratedEventHandler
 struct KeyGeneratedEventHandler_t3064139578;
 // Mono.Security.X509.Extensions.AuthorityKeyIdentifierExtension
@@ -318,6 +318,8 @@ struct _Item_t2272350267;
 struct NameValueCollection_t407452768;
 // System.Collections.Stack
 struct Stack_t2329662280;
+// System.ComponentModel.Win32Exception
+struct Win32Exception_t3234146298;
 // System.DelegateData
 struct DelegateData_t1677132599;
 // System.Double
@@ -358,6 +360,8 @@ struct ICredentials_t725721261;
 struct IPAddress_t241777590;
 // System.Net.IWebProxy
 struct IWebProxy_t688979836;
+// System.Net.Sockets.SocketException
+struct SocketException_t3852068672;
 // System.Net.WebException
 struct WebException_t3237156354;
 // System.Net.WebHeaderCollection
@@ -566,8 +570,6 @@ struct Expression_t2722445759;
 struct ExpressionAssertion_t1861210811;
 // System.Text.RegularExpressions.Syntax.ExpressionCollection
 struct ExpressionCollection_t1810289389;
-// System.Text.RegularExpressions.Syntax.Group
-struct Group_t1458537008;
 // System.Text.RegularExpressions.Syntax.Literal
 struct Literal_t434143540;
 // System.Text.RegularExpressions.Syntax.Parser
@@ -1054,8 +1056,6 @@ extern const uint32_t CaptureAssertion_Compile_m1815624462_MetadataUsageId;
 extern const uint32_t CaptureAssertion_get_Alternate_m4172691807_MetadataUsageId;
 extern const uint32_t CaptureCollection__ctor_m357483405_MetadataUsageId;
 extern const uint32_t Capture_get_Value_m538076933_MetadataUsageId;
-extern const uint32_t CapturingGroup_CompareTo_m4265294460_MetadataUsageId;
-extern const uint32_t CapturingGroup_Compile_m1789150976_MetadataUsageId;
 extern const uint32_t CategoryUtils_CategoryFromName_m1352081402_MetadataUsageId;
 extern const uint32_t CategoryUtils_IsCategory_m278753792_MetadataUsageId;
 extern const uint32_t CategoryUtils_IsCategory_m3604944547_MetadataUsageId;
@@ -8340,6 +8340,35 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // ADDRESSFAMILY_T2612549059_H
+#ifndef SOCKETERROR_T3760144386_H
+#define SOCKETERROR_T3760144386_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Net.Sockets.SocketError
+struct  SocketError_t3760144386 
+{
+public:
+	// System.Int32 System.Net.Sockets.SocketError::value__
+	int32_t ___value___1;
+
+public:
+	inline static int32_t get_offset_of_value___1() { return static_cast<int32_t>(offsetof(SocketError_t3760144386, ___value___1)); }
+	inline int32_t get_value___1() const { return ___value___1; }
+	inline int32_t* get_address_of_value___1() { return &___value___1; }
+	inline void set_value___1(int32_t value)
+	{
+		___value___1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // SOCKETERROR_T3760144386_H
 #ifndef SOCKETFLAGS_T2969870452_H
 #define SOCKETFLAGS_T2969870452_H
 #ifdef __clang__
@@ -8789,6 +8818,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // BINDINGFLAGS_T2721792723_H
+#ifndef EXTERNALEXCEPTION_T3544951457_H
+#define EXTERNALEXCEPTION_T3544951457_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Runtime.InteropServices.ExternalException
+struct  ExternalException_t3544951457  : public SystemException_t176217640
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // EXTERNALEXCEPTION_T3544951457_H
 #ifndef SERIALIZATIONEXCEPTION_T3941511869_H
 #define SERIALIZATIONEXCEPTION_T3941511869_H
 #ifdef __clang__
@@ -10213,6 +10262,35 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // ARGUMENTOUTOFRANGEEXCEPTION_T777629997_H
+#ifndef WIN32EXCEPTION_T3234146298_H
+#define WIN32EXCEPTION_T3234146298_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.ComponentModel.Win32Exception
+struct  Win32Exception_t3234146298  : public ExternalException_t3544951457
+{
+public:
+	// System.Int32 System.ComponentModel.Win32Exception::native_error_code
+	int32_t ___native_error_code_11;
+
+public:
+	inline static int32_t get_offset_of_native_error_code_11() { return static_cast<int32_t>(offsetof(Win32Exception_t3234146298, ___native_error_code_11)); }
+	inline int32_t get_native_error_code_11() const { return ___native_error_code_11; }
+	inline int32_t* get_address_of_native_error_code_11() { return &___native_error_code_11; }
+	inline void set_native_error_code_11(int32_t value)
+	{
+		___native_error_code_11 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // WIN32EXCEPTION_T3234146298_H
 #ifndef DATETIME_T3738529785_H
 #define DATETIME_T3738529785_H
 #ifdef __clang__
@@ -12647,6 +12725,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // ASYNCCALLBACK_T3962456242_H
+#ifndef SOCKETEXCEPTION_T3852068672_H
+#define SOCKETEXCEPTION_T3852068672_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Net.Sockets.SocketException
+struct  SocketException_t3852068672  : public Win32Exception_t3234146298
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // SOCKETEXCEPTION_T3852068672_H
 #ifndef X509CHAINPOLICY_T2426922870_H
 #define X509CHAINPOLICY_T2426922870_H
 #ifdef __clang__
@@ -13247,6 +13345,18 @@ extern "C" IL2CPP_METHOD_ATTR bool Dictionary_2_TryGetValue_m3959998165_gshared 
 // System.Int32 System.Array::BinarySearch<System.Int32>(!!0[],System.Int32,System.Int32,!!0)
 extern "C" IL2CPP_METHOD_ATTR int32_t Array_BinarySearch_TisInt32_t2950945753_m3042812452_gshared (RuntimeObject * __this /* static, unused */, Int32U5BU5D_t385246372* p0, int32_t p1, int32_t p2, int32_t p3, const RuntimeMethod* method);
 
+// System.Int32 System.Net.Sockets.SocketException::WSAGetLastError_internal()
+extern "C" IL2CPP_METHOD_ATTR int32_t SocketException_WSAGetLastError_internal_m1236276956 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
+// System.Void System.ComponentModel.Win32Exception::.ctor(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void Win32Exception__ctor_m3118723333 (Win32Exception_t3234146298 * __this, int32_t ___error0, const RuntimeMethod* method);
+// System.Void System.ComponentModel.Win32Exception::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+extern "C" IL2CPP_METHOD_ATTR void Win32Exception__ctor_m3265219078 (Win32Exception_t3234146298 * __this, SerializationInfo_t950877179 * ___info0, StreamingContext_t3711869237  ___context1, const RuntimeMethod* method);
+// System.Void System.ComponentModel.Win32Exception::.ctor(System.Int32,System.String)
+extern "C" IL2CPP_METHOD_ATTR void Win32Exception__ctor_m11747318 (Win32Exception_t3234146298 * __this, int32_t ___error0, String_t* ___message1, const RuntimeMethod* method);
+// System.Int32 System.ComponentModel.Win32Exception::get_NativeErrorCode()
+extern "C" IL2CPP_METHOD_ATTR int32_t Win32Exception_get_NativeErrorCode_m4105802931 (Win32Exception_t3234146298 * __this, const RuntimeMethod* method);
+// System.String System.Exception::get_Message()
+extern "C" IL2CPP_METHOD_ATTR String_t* Exception_get_Message_m3320461627 (Exception_t * __this, const RuntimeMethod* method);
 // System.Void System.InvalidOperationException::.ctor()
 extern "C" IL2CPP_METHOD_ATTR void InvalidOperationException__ctor_m2734335978 (InvalidOperationException_t56020091 * __this, const RuntimeMethod* method);
 // System.Void System.InvalidOperationException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
@@ -14411,10 +14521,83 @@ extern "C" IL2CPP_METHOD_ATTR void Assertion_set_TrueExpression_m530142558 (Asse
 extern "C" IL2CPP_METHOD_ATTR void Assertion_set_FalseExpression_m468310168 (Assertion_t3267412828 * __this, Expression_t2722445759 * ___value0, const RuntimeMethod* method);
 // System.Void System.Text.RegularExpressions.Syntax.ExpressionAssertion::set_TestExpression(System.Text.RegularExpressions.Syntax.Expression)
 extern "C" IL2CPP_METHOD_ATTR void ExpressionAssertion_set_TestExpression_m3544634251 (ExpressionAssertion_t1861210811 * __this, Expression_t2722445759 * ___value0, const RuntimeMethod* method);
-// System.Void System.Text.RegularExpressions.Syntax.Group::.ctor()
-extern "C" IL2CPP_METHOD_ATTR void Group__ctor_m2980794822 (Group_t1458537008 * __this, const RuntimeMethod* method);
-// System.Void System.Text.RegularExpressions.Syntax.Group::Compile(System.Text.RegularExpressions.ICompiler,System.Boolean)
-extern "C" IL2CPP_METHOD_ATTR void Group_Compile_m3355488790 (Group_t1458537008 * __this, RuntimeObject* ___cmp0, bool ___reverse1, const RuntimeMethod* method);
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void System.Net.Sockets.SocketException::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void SocketException__ctor_m480722159 (SocketException_t3852068672 * __this, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = SocketException_WSAGetLastError_internal_m1236276956(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Win32Exception__ctor_m3118723333(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.Net.Sockets.SocketException::.ctor(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void SocketException__ctor_m1369613389 (SocketException_t3852068672 * __this, int32_t ___error0, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___error0;
+		Win32Exception__ctor_m3118723333(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.Net.Sockets.SocketException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+extern "C" IL2CPP_METHOD_ATTR void SocketException__ctor_m3558609746 (SocketException_t3852068672 * __this, SerializationInfo_t950877179 * ___info0, StreamingContext_t3711869237  ___context1, const RuntimeMethod* method)
+{
+	{
+		SerializationInfo_t950877179 * L_0 = ___info0;
+		StreamingContext_t3711869237  L_1 = ___context1;
+		Win32Exception__ctor_m3265219078(__this, L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.Net.Sockets.SocketException::.ctor(System.Int32,System.String)
+extern "C" IL2CPP_METHOD_ATTR void SocketException__ctor_m3042788307 (SocketException_t3852068672 * __this, int32_t ___error0, String_t* ___message1, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___error0;
+		String_t* L_1 = ___message1;
+		Win32Exception__ctor_m11747318(__this, L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Int32 System.Net.Sockets.SocketException::WSAGetLastError_internal()
+extern "C" IL2CPP_METHOD_ATTR int32_t SocketException_WSAGetLastError_internal_m1236276956 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+{
+	typedef int32_t (*SocketException_WSAGetLastError_internal_m1236276956_ftn) ();
+	using namespace il2cpp::icalls;
+	return  ((SocketException_WSAGetLastError_internal_m1236276956_ftn)System::System::Net::Sockets::SocketException::WSAGetLastError) ();
+}
+// System.Net.Sockets.SocketError System.Net.Sockets.SocketException::get_SocketErrorCode()
+extern "C" IL2CPP_METHOD_ATTR int32_t SocketException_get_SocketErrorCode_m2767669540 (SocketException_t3852068672 * __this, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = Win32Exception_get_NativeErrorCode_m4105802931(__this, /*hidden argument*/NULL);
+		return (int32_t)(L_0);
+	}
+}
+// System.String System.Net.Sockets.SocketException::get_Message()
+extern "C" IL2CPP_METHOD_ATTR String_t* SocketException_get_Message_m1742236578 (SocketException_t3852068672 * __this, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = Exception_get_Message_m3320461627(__this, /*hidden argument*/NULL);
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -47745,114 +47928,6 @@ IL_0049:
 	{
 		ExpressionAssertion_t1861210811 * L_8 = __this->get_alternate_1();
 		return L_8;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Text.RegularExpressions.Syntax.CapturingGroup::.ctor()
-extern "C" IL2CPP_METHOD_ATTR void CapturingGroup__ctor_m1932199154 (CapturingGroup_t751358689 * __this, const RuntimeMethod* method)
-{
-	{
-		Group__ctor_m2980794822(__this, /*hidden argument*/NULL);
-		__this->set_gid_1(0);
-		__this->set_name_2((String_t*)NULL);
-		return;
-	}
-}
-// System.Int32 System.Text.RegularExpressions.Syntax.CapturingGroup::get_Index()
-extern "C" IL2CPP_METHOD_ATTR int32_t CapturingGroup_get_Index_m3406974370 (CapturingGroup_t751358689 * __this, const RuntimeMethod* method)
-{
-	{
-		int32_t L_0 = __this->get_gid_1();
-		return L_0;
-	}
-}
-// System.Void System.Text.RegularExpressions.Syntax.CapturingGroup::set_Index(System.Int32)
-extern "C" IL2CPP_METHOD_ATTR void CapturingGroup_set_Index_m1113018009 (CapturingGroup_t751358689 * __this, int32_t ___value0, const RuntimeMethod* method)
-{
-	{
-		int32_t L_0 = ___value0;
-		__this->set_gid_1(L_0);
-		return;
-	}
-}
-// System.String System.Text.RegularExpressions.Syntax.CapturingGroup::get_Name()
-extern "C" IL2CPP_METHOD_ATTR String_t* CapturingGroup_get_Name_m3747712535 (CapturingGroup_t751358689 * __this, const RuntimeMethod* method)
-{
-	{
-		String_t* L_0 = __this->get_name_2();
-		return L_0;
-	}
-}
-// System.Void System.Text.RegularExpressions.Syntax.CapturingGroup::set_Name(System.String)
-extern "C" IL2CPP_METHOD_ATTR void CapturingGroup_set_Name_m3031988208 (CapturingGroup_t751358689 * __this, String_t* ___value0, const RuntimeMethod* method)
-{
-	{
-		String_t* L_0 = ___value0;
-		__this->set_name_2(L_0);
-		return;
-	}
-}
-// System.Boolean System.Text.RegularExpressions.Syntax.CapturingGroup::get_IsNamed()
-extern "C" IL2CPP_METHOD_ATTR bool CapturingGroup_get_IsNamed_m570289083 (CapturingGroup_t751358689 * __this, const RuntimeMethod* method)
-{
-	{
-		String_t* L_0 = __this->get_name_2();
-		return (bool)((((int32_t)((((RuntimeObject*)(String_t*)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-	}
-}
-// System.Void System.Text.RegularExpressions.Syntax.CapturingGroup::Compile(System.Text.RegularExpressions.ICompiler,System.Boolean)
-extern "C" IL2CPP_METHOD_ATTR void CapturingGroup_Compile_m1789150976 (CapturingGroup_t751358689 * __this, RuntimeObject* ___cmp0, bool ___reverse1, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (CapturingGroup_Compile_m1789150976_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		RuntimeObject* L_0 = ___cmp0;
-		int32_t L_1 = __this->get_gid_1();
-		NullCheck(L_0);
-		InterfaceActionInvoker1< int32_t >::Invoke(10 /* System.Void System.Text.RegularExpressions.ICompiler::EmitOpen(System.Int32) */, ICompiler_t118549125_il2cpp_TypeInfo_var, L_0, L_1);
-		RuntimeObject* L_2 = ___cmp0;
-		bool L_3 = ___reverse1;
-		Group_Compile_m3355488790(__this, L_2, L_3, /*hidden argument*/NULL);
-		RuntimeObject* L_4 = ___cmp0;
-		int32_t L_5 = __this->get_gid_1();
-		NullCheck(L_4);
-		InterfaceActionInvoker1< int32_t >::Invoke(11 /* System.Void System.Text.RegularExpressions.ICompiler::EmitClose(System.Int32) */, ICompiler_t118549125_il2cpp_TypeInfo_var, L_4, L_5);
-		return;
-	}
-}
-// System.Boolean System.Text.RegularExpressions.Syntax.CapturingGroup::IsComplex()
-extern "C" IL2CPP_METHOD_ATTR bool CapturingGroup_IsComplex_m4061114763 (CapturingGroup_t751358689 * __this, const RuntimeMethod* method)
-{
-	{
-		return (bool)1;
-	}
-}
-// System.Int32 System.Text.RegularExpressions.Syntax.CapturingGroup::CompareTo(System.Object)
-extern "C" IL2CPP_METHOD_ATTR int32_t CapturingGroup_CompareTo_m4265294460 (CapturingGroup_t751358689 * __this, RuntimeObject * ___other0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (CapturingGroup_CompareTo_m4265294460_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		int32_t L_0 = __this->get_gid_1();
-		RuntimeObject * L_1 = ___other0;
-		NullCheck(((CapturingGroup_t751358689 *)CastclassClass((RuntimeObject*)L_1, CapturingGroup_t751358689_il2cpp_TypeInfo_var)));
-		int32_t L_2 = ((CapturingGroup_t751358689 *)CastclassClass((RuntimeObject*)L_1, CapturingGroup_t751358689_il2cpp_TypeInfo_var))->get_gid_1();
-		return ((int32_t)il2cpp_codegen_subtract((int32_t)L_0, (int32_t)L_2));
 	}
 }
 #ifdef __clang__

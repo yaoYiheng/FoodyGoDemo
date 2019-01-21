@@ -20,22 +20,44 @@
 #include "il2cpp-object-internals.h"
 
 
+// System.ArgumentNullException
+struct ArgumentNullException_t1615371798;
 // System.Char[]
 struct CharU5BU5D_t3528271667;
+// System.Collections.Generic.List`1<UnityEngine.ParticleCollisionEvent>
+struct List_1_t1232140387;
+// System.Collections.IDictionary
+struct IDictionary_t1363984059;
+// System.IntPtr[]
+struct IntPtrU5BU5D_t4013366056;
 // System.String
 struct String_t;
 // System.Void
 struct Void_t1185182177;
 // UnityEngine.AnimationCurve
 struct AnimationCurve_t3046754366;
+// UnityEngine.Component
+struct Component_t1923634451;
+// UnityEngine.GameObject
+struct GameObject_t1113636619;
+// UnityEngine.Object
+struct Object_t631007953;
+// UnityEngine.ParticleCollisionEvent[]
+struct ParticleCollisionEventU5BU5D_t4144522048;
 // UnityEngine.ParticleSystem
 struct ParticleSystem_t1800779281;
 // UnityEngine.ParticleSystemRenderer
 struct ParticleSystemRenderer_t2065813411;
 
 extern RuntimeClass* AnimationCurve_t3046754366_il2cpp_TypeInfo_var;
+extern RuntimeClass* ArgumentNullException_t1615371798_il2cpp_TypeInfo_var;
+extern RuntimeClass* Object_t631007953_il2cpp_TypeInfo_var;
 extern RuntimeClass* Vector3_t3722313464_il2cpp_TypeInfo_var;
+extern String_t* _stringLiteral3454777273;
+extern String_t* _stringLiteral4178700366;
+extern const RuntimeMethod* ParticlePhysicsExtensions_GetCollisionEvents_m1108737549_RuntimeMethod_var;
 extern const uint32_t MinMaxCurve_t1067599125_pinvoke_FromNativeMethodDefinition_MetadataUsageId;
+extern const uint32_t ParticlePhysicsExtensions_GetCollisionEvents_m1108737549_MetadataUsageId;
 extern const uint32_t ParticleSystem_Emit_m497964751_MetadataUsageId;
 extern const uint32_t Particle_set_angularVelocity3D_m3163963446_MetadataUsageId;
 extern const uint32_t Particle_set_rotation3D_m2156157200_MetadataUsageId;
@@ -96,6 +118,278 @@ struct Il2CppArrayBounds;
 #pragma clang diagnostic pop
 #endif
 #endif // RUNTIMEARRAY_H
+#ifndef LIST_1_T1232140387_H
+#define LIST_1_T1232140387_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.List`1<UnityEngine.ParticleCollisionEvent>
+struct  List_1_t1232140387  : public RuntimeObject
+{
+public:
+	// T[] System.Collections.Generic.List`1::_items
+	ParticleCollisionEventU5BU5D_t4144522048* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+
+public:
+	inline static int32_t get_offset_of__items_1() { return static_cast<int32_t>(offsetof(List_1_t1232140387, ____items_1)); }
+	inline ParticleCollisionEventU5BU5D_t4144522048* get__items_1() const { return ____items_1; }
+	inline ParticleCollisionEventU5BU5D_t4144522048** get_address_of__items_1() { return &____items_1; }
+	inline void set__items_1(ParticleCollisionEventU5BU5D_t4144522048* value)
+	{
+		____items_1 = value;
+		Il2CppCodeGenWriteBarrier((&____items_1), value);
+	}
+
+	inline static int32_t get_offset_of__size_2() { return static_cast<int32_t>(offsetof(List_1_t1232140387, ____size_2)); }
+	inline int32_t get__size_2() const { return ____size_2; }
+	inline int32_t* get_address_of__size_2() { return &____size_2; }
+	inline void set__size_2(int32_t value)
+	{
+		____size_2 = value;
+	}
+
+	inline static int32_t get_offset_of__version_3() { return static_cast<int32_t>(offsetof(List_1_t1232140387, ____version_3)); }
+	inline int32_t get__version_3() const { return ____version_3; }
+	inline int32_t* get_address_of__version_3() { return &____version_3; }
+	inline void set__version_3(int32_t value)
+	{
+		____version_3 = value;
+	}
+};
+
+struct List_1_t1232140387_StaticFields
+{
+public:
+	// T[] System.Collections.Generic.List`1::EmptyArray
+	ParticleCollisionEventU5BU5D_t4144522048* ___EmptyArray_4;
+
+public:
+	inline static int32_t get_offset_of_EmptyArray_4() { return static_cast<int32_t>(offsetof(List_1_t1232140387_StaticFields, ___EmptyArray_4)); }
+	inline ParticleCollisionEventU5BU5D_t4144522048* get_EmptyArray_4() const { return ___EmptyArray_4; }
+	inline ParticleCollisionEventU5BU5D_t4144522048** get_address_of_EmptyArray_4() { return &___EmptyArray_4; }
+	inline void set_EmptyArray_4(ParticleCollisionEventU5BU5D_t4144522048* value)
+	{
+		___EmptyArray_4 = value;
+		Il2CppCodeGenWriteBarrier((&___EmptyArray_4), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // LIST_1_T1232140387_H
+#ifndef EXCEPTION_T_H
+#define EXCEPTION_T_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Exception
+struct  Exception_t  : public RuntimeObject
+{
+public:
+	// System.IntPtr[] System.Exception::trace_ips
+	IntPtrU5BU5D_t4013366056* ___trace_ips_0;
+	// System.Exception System.Exception::inner_exception
+	Exception_t * ___inner_exception_1;
+	// System.String System.Exception::message
+	String_t* ___message_2;
+	// System.String System.Exception::help_link
+	String_t* ___help_link_3;
+	// System.String System.Exception::class_name
+	String_t* ___class_name_4;
+	// System.String System.Exception::stack_trace
+	String_t* ___stack_trace_5;
+	// System.String System.Exception::_remoteStackTraceString
+	String_t* ____remoteStackTraceString_6;
+	// System.Int32 System.Exception::remote_stack_index
+	int32_t ___remote_stack_index_7;
+	// System.Int32 System.Exception::hresult
+	int32_t ___hresult_8;
+	// System.String System.Exception::source
+	String_t* ___source_9;
+	// System.Collections.IDictionary System.Exception::_data
+	RuntimeObject* ____data_10;
+
+public:
+	inline static int32_t get_offset_of_trace_ips_0() { return static_cast<int32_t>(offsetof(Exception_t, ___trace_ips_0)); }
+	inline IntPtrU5BU5D_t4013366056* get_trace_ips_0() const { return ___trace_ips_0; }
+	inline IntPtrU5BU5D_t4013366056** get_address_of_trace_ips_0() { return &___trace_ips_0; }
+	inline void set_trace_ips_0(IntPtrU5BU5D_t4013366056* value)
+	{
+		___trace_ips_0 = value;
+		Il2CppCodeGenWriteBarrier((&___trace_ips_0), value);
+	}
+
+	inline static int32_t get_offset_of_inner_exception_1() { return static_cast<int32_t>(offsetof(Exception_t, ___inner_exception_1)); }
+	inline Exception_t * get_inner_exception_1() const { return ___inner_exception_1; }
+	inline Exception_t ** get_address_of_inner_exception_1() { return &___inner_exception_1; }
+	inline void set_inner_exception_1(Exception_t * value)
+	{
+		___inner_exception_1 = value;
+		Il2CppCodeGenWriteBarrier((&___inner_exception_1), value);
+	}
+
+	inline static int32_t get_offset_of_message_2() { return static_cast<int32_t>(offsetof(Exception_t, ___message_2)); }
+	inline String_t* get_message_2() const { return ___message_2; }
+	inline String_t** get_address_of_message_2() { return &___message_2; }
+	inline void set_message_2(String_t* value)
+	{
+		___message_2 = value;
+		Il2CppCodeGenWriteBarrier((&___message_2), value);
+	}
+
+	inline static int32_t get_offset_of_help_link_3() { return static_cast<int32_t>(offsetof(Exception_t, ___help_link_3)); }
+	inline String_t* get_help_link_3() const { return ___help_link_3; }
+	inline String_t** get_address_of_help_link_3() { return &___help_link_3; }
+	inline void set_help_link_3(String_t* value)
+	{
+		___help_link_3 = value;
+		Il2CppCodeGenWriteBarrier((&___help_link_3), value);
+	}
+
+	inline static int32_t get_offset_of_class_name_4() { return static_cast<int32_t>(offsetof(Exception_t, ___class_name_4)); }
+	inline String_t* get_class_name_4() const { return ___class_name_4; }
+	inline String_t** get_address_of_class_name_4() { return &___class_name_4; }
+	inline void set_class_name_4(String_t* value)
+	{
+		___class_name_4 = value;
+		Il2CppCodeGenWriteBarrier((&___class_name_4), value);
+	}
+
+	inline static int32_t get_offset_of_stack_trace_5() { return static_cast<int32_t>(offsetof(Exception_t, ___stack_trace_5)); }
+	inline String_t* get_stack_trace_5() const { return ___stack_trace_5; }
+	inline String_t** get_address_of_stack_trace_5() { return &___stack_trace_5; }
+	inline void set_stack_trace_5(String_t* value)
+	{
+		___stack_trace_5 = value;
+		Il2CppCodeGenWriteBarrier((&___stack_trace_5), value);
+	}
+
+	inline static int32_t get_offset_of__remoteStackTraceString_6() { return static_cast<int32_t>(offsetof(Exception_t, ____remoteStackTraceString_6)); }
+	inline String_t* get__remoteStackTraceString_6() const { return ____remoteStackTraceString_6; }
+	inline String_t** get_address_of__remoteStackTraceString_6() { return &____remoteStackTraceString_6; }
+	inline void set__remoteStackTraceString_6(String_t* value)
+	{
+		____remoteStackTraceString_6 = value;
+		Il2CppCodeGenWriteBarrier((&____remoteStackTraceString_6), value);
+	}
+
+	inline static int32_t get_offset_of_remote_stack_index_7() { return static_cast<int32_t>(offsetof(Exception_t, ___remote_stack_index_7)); }
+	inline int32_t get_remote_stack_index_7() const { return ___remote_stack_index_7; }
+	inline int32_t* get_address_of_remote_stack_index_7() { return &___remote_stack_index_7; }
+	inline void set_remote_stack_index_7(int32_t value)
+	{
+		___remote_stack_index_7 = value;
+	}
+
+	inline static int32_t get_offset_of_hresult_8() { return static_cast<int32_t>(offsetof(Exception_t, ___hresult_8)); }
+	inline int32_t get_hresult_8() const { return ___hresult_8; }
+	inline int32_t* get_address_of_hresult_8() { return &___hresult_8; }
+	inline void set_hresult_8(int32_t value)
+	{
+		___hresult_8 = value;
+	}
+
+	inline static int32_t get_offset_of_source_9() { return static_cast<int32_t>(offsetof(Exception_t, ___source_9)); }
+	inline String_t* get_source_9() const { return ___source_9; }
+	inline String_t** get_address_of_source_9() { return &___source_9; }
+	inline void set_source_9(String_t* value)
+	{
+		___source_9 = value;
+		Il2CppCodeGenWriteBarrier((&___source_9), value);
+	}
+
+	inline static int32_t get_offset_of__data_10() { return static_cast<int32_t>(offsetof(Exception_t, ____data_10)); }
+	inline RuntimeObject* get__data_10() const { return ____data_10; }
+	inline RuntimeObject** get_address_of__data_10() { return &____data_10; }
+	inline void set__data_10(RuntimeObject* value)
+	{
+		____data_10 = value;
+		Il2CppCodeGenWriteBarrier((&____data_10), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // EXCEPTION_T_H
+#ifndef STRING_T_H
+#define STRING_T_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.String
+struct  String_t  : public RuntimeObject
+{
+public:
+	// System.Int32 System.String::length
+	int32_t ___length_0;
+	// System.Char System.String::start_char
+	Il2CppChar ___start_char_1;
+
+public:
+	inline static int32_t get_offset_of_length_0() { return static_cast<int32_t>(offsetof(String_t, ___length_0)); }
+	inline int32_t get_length_0() const { return ___length_0; }
+	inline int32_t* get_address_of_length_0() { return &___length_0; }
+	inline void set_length_0(int32_t value)
+	{
+		___length_0 = value;
+	}
+
+	inline static int32_t get_offset_of_start_char_1() { return static_cast<int32_t>(offsetof(String_t, ___start_char_1)); }
+	inline Il2CppChar get_start_char_1() const { return ___start_char_1; }
+	inline Il2CppChar* get_address_of_start_char_1() { return &___start_char_1; }
+	inline void set_start_char_1(Il2CppChar value)
+	{
+		___start_char_1 = value;
+	}
+};
+
+struct String_t_StaticFields
+{
+public:
+	// System.String System.String::Empty
+	String_t* ___Empty_2;
+	// System.Char[] System.String::WhiteChars
+	CharU5BU5D_t3528271667* ___WhiteChars_3;
+
+public:
+	inline static int32_t get_offset_of_Empty_2() { return static_cast<int32_t>(offsetof(String_t_StaticFields, ___Empty_2)); }
+	inline String_t* get_Empty_2() const { return ___Empty_2; }
+	inline String_t** get_address_of_Empty_2() { return &___Empty_2; }
+	inline void set_Empty_2(String_t* value)
+	{
+		___Empty_2 = value;
+		Il2CppCodeGenWriteBarrier((&___Empty_2), value);
+	}
+
+	inline static int32_t get_offset_of_WhiteChars_3() { return static_cast<int32_t>(offsetof(String_t_StaticFields, ___WhiteChars_3)); }
+	inline CharU5BU5D_t3528271667* get_WhiteChars_3() const { return ___WhiteChars_3; }
+	inline CharU5BU5D_t3528271667** get_address_of_WhiteChars_3() { return &___WhiteChars_3; }
+	inline void set_WhiteChars_3(CharU5BU5D_t3528271667* value)
+	{
+		___WhiteChars_3 = value;
+		Il2CppCodeGenWriteBarrier((&___WhiteChars_3), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // STRING_T_H
 #ifndef VALUETYPE_T3640485471_H
 #define VALUETYPE_T3640485471_H
 #ifdef __clang__
@@ -124,6 +418,46 @@ struct ValueType_t3640485471_marshaled_com
 {
 };
 #endif // VALUETYPE_T3640485471_H
+#ifndef PARTICLEPHYSICSEXTENSIONS_T1867354557_H
+#define PARTICLEPHYSICSEXTENSIONS_T1867354557_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.ParticlePhysicsExtensions
+struct  ParticlePhysicsExtensions_t1867354557  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PARTICLEPHYSICSEXTENSIONS_T1867354557_H
+#ifndef PARTICLESYSTEMEXTENSIONSIMPL_T490859600_H
+#define PARTICLESYSTEMEXTENSIONSIMPL_T490859600_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.ParticleSystemExtensionsImpl
+struct  ParticleSystemExtensionsImpl_t490859600  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PARTICLESYSTEMEXTENSIONSIMPL_T490859600_H
 #ifndef BOOLEAN_T97287965_H
 #define BOOLEAN_T97287965_H
 #ifdef __clang__
@@ -329,6 +663,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // SINGLE_T1397266774_H
+#ifndef SYSTEMEXCEPTION_T176217640_H
+#define SYSTEMEXCEPTION_T176217640_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.SystemException
+struct  SystemException_t176217640  : public Exception_t
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // SYSTEMEXCEPTION_T176217640_H
 #ifndef UINT32_T2560061978_H
 #define UINT32_T2560061978_H
 #ifdef __clang__
@@ -736,6 +1090,36 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // VECTOR3_T3722313464_H
+#ifndef ARGUMENTEXCEPTION_T132251570_H
+#define ARGUMENTEXCEPTION_T132251570_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.ArgumentException
+struct  ArgumentException_t132251570  : public SystemException_t176217640
+{
+public:
+	// System.String System.ArgumentException::param_name
+	String_t* ___param_name_12;
+
+public:
+	inline static int32_t get_offset_of_param_name_12() { return static_cast<int32_t>(offsetof(ArgumentException_t132251570, ___param_name_12)); }
+	inline String_t* get_param_name_12() const { return ___param_name_12; }
+	inline String_t** get_address_of_param_name_12() { return &___param_name_12; }
+	inline void set_param_name_12(String_t* value)
+	{
+		___param_name_12 = value;
+		Il2CppCodeGenWriteBarrier((&___param_name_12), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ARGUMENTEXCEPTION_T132251570_H
 #ifndef ANIMATIONCURVE_T3046754366_H
 #define ANIMATIONCURVE_T3046754366_H
 #ifdef __clang__
@@ -830,6 +1214,65 @@ struct Object_t631007953_marshaled_com
 	intptr_t ___m_CachedPtr_0;
 };
 #endif // OBJECT_T631007953_H
+#ifndef PARTICLECOLLISIONEVENT_T4055032941_H
+#define PARTICLECOLLISIONEVENT_T4055032941_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.ParticleCollisionEvent
+struct  ParticleCollisionEvent_t4055032941 
+{
+public:
+	// UnityEngine.Vector3 UnityEngine.ParticleCollisionEvent::m_Intersection
+	Vector3_t3722313464  ___m_Intersection_0;
+	// UnityEngine.Vector3 UnityEngine.ParticleCollisionEvent::m_Normal
+	Vector3_t3722313464  ___m_Normal_1;
+	// UnityEngine.Vector3 UnityEngine.ParticleCollisionEvent::m_Velocity
+	Vector3_t3722313464  ___m_Velocity_2;
+	// System.Int32 UnityEngine.ParticleCollisionEvent::m_ColliderInstanceID
+	int32_t ___m_ColliderInstanceID_3;
+
+public:
+	inline static int32_t get_offset_of_m_Intersection_0() { return static_cast<int32_t>(offsetof(ParticleCollisionEvent_t4055032941, ___m_Intersection_0)); }
+	inline Vector3_t3722313464  get_m_Intersection_0() const { return ___m_Intersection_0; }
+	inline Vector3_t3722313464 * get_address_of_m_Intersection_0() { return &___m_Intersection_0; }
+	inline void set_m_Intersection_0(Vector3_t3722313464  value)
+	{
+		___m_Intersection_0 = value;
+	}
+
+	inline static int32_t get_offset_of_m_Normal_1() { return static_cast<int32_t>(offsetof(ParticleCollisionEvent_t4055032941, ___m_Normal_1)); }
+	inline Vector3_t3722313464  get_m_Normal_1() const { return ___m_Normal_1; }
+	inline Vector3_t3722313464 * get_address_of_m_Normal_1() { return &___m_Normal_1; }
+	inline void set_m_Normal_1(Vector3_t3722313464  value)
+	{
+		___m_Normal_1 = value;
+	}
+
+	inline static int32_t get_offset_of_m_Velocity_2() { return static_cast<int32_t>(offsetof(ParticleCollisionEvent_t4055032941, ___m_Velocity_2)); }
+	inline Vector3_t3722313464  get_m_Velocity_2() const { return ___m_Velocity_2; }
+	inline Vector3_t3722313464 * get_address_of_m_Velocity_2() { return &___m_Velocity_2; }
+	inline void set_m_Velocity_2(Vector3_t3722313464  value)
+	{
+		___m_Velocity_2 = value;
+	}
+
+	inline static int32_t get_offset_of_m_ColliderInstanceID_3() { return static_cast<int32_t>(offsetof(ParticleCollisionEvent_t4055032941, ___m_ColliderInstanceID_3)); }
+	inline int32_t get_m_ColliderInstanceID_3() const { return ___m_ColliderInstanceID_3; }
+	inline int32_t* get_address_of_m_ColliderInstanceID_3() { return &___m_ColliderInstanceID_3; }
+	inline void set_m_ColliderInstanceID_3(int32_t value)
+	{
+		___m_ColliderInstanceID_3 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PARTICLECOLLISIONEVENT_T4055032941_H
 #ifndef PARTICLE_T1882894987_H
 #define PARTICLE_T1882894987_H
 #ifdef __clang__
@@ -1018,6 +1461,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // PARTICLESYSTEMCURVEMODE_T3859704052_H
+#ifndef ARGUMENTNULLEXCEPTION_T1615371798_H
+#define ARGUMENTNULLEXCEPTION_T1615371798_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.ArgumentNullException
+struct  ArgumentNullException_t1615371798  : public ArgumentException_t132251570
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ARGUMENTNULLEXCEPTION_T1615371798_H
 #ifndef COMPONENT_T1923634451_H
 #define COMPONENT_T1923634451_H
 #ifdef __clang__
@@ -1038,6 +1501,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // COMPONENT_T1923634451_H
+#ifndef GAMEOBJECT_T1113636619_H
+#define GAMEOBJECT_T1113636619_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.GameObject
+struct  GameObject_t1113636619  : public Object_t631007953
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // GAMEOBJECT_T1113636619_H
 #ifndef EMITPARAMS_T2216423628_H
 #define EMITPARAMS_T2216423628_H
 #ifdef __clang__
@@ -1367,10 +1850,26 @@ extern "C" void AnimationCurve_t3046754366_marshal_com_back(const AnimationCurve
 extern "C" void AnimationCurve_t3046754366_marshal_com_cleanup(AnimationCurve_t3046754366_marshaled_com& marshaled);
 
 
+// UnityEngine.Vector3 UnityEngine.ParticleCollisionEvent::get_velocity()
+extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  ParticleCollisionEvent_get_velocity_m1941659151 (ParticleCollisionEvent_t4055032941 * __this, const RuntimeMethod* method);
+// UnityEngine.Component UnityEngine.ParticleCollisionEvent::InstanceIDToColliderComponent(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR Component_t1923634451 * ParticleCollisionEvent_InstanceIDToColliderComponent_m3582923694 (RuntimeObject * __this /* static, unused */, int32_t ___instanceID0, const RuntimeMethod* method);
+// UnityEngine.Component UnityEngine.ParticleCollisionEvent::get_colliderComponent()
+extern "C" IL2CPP_METHOD_ATTR Component_t1923634451 * ParticleCollisionEvent_get_colliderComponent_m1489433520 (ParticleCollisionEvent_t4055032941 * __this, const RuntimeMethod* method);
+// System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)
+extern "C" IL2CPP_METHOD_ATTR bool Object_op_Equality_m1810815630 (RuntimeObject * __this /* static, unused */, Object_t631007953 * p0, Object_t631007953 * p1, const RuntimeMethod* method);
+// System.Void System.ArgumentNullException::.ctor(System.String)
+extern "C" IL2CPP_METHOD_ATTR void ArgumentNullException__ctor_m1170824041 (ArgumentNullException_t1615371798 * __this, String_t* p0, const RuntimeMethod* method);
+// System.Int32 UnityEngine.ParticleSystemExtensionsImpl::GetCollisionEvents(UnityEngine.ParticleSystem,UnityEngine.GameObject,System.Object)
+extern "C" IL2CPP_METHOD_ATTR int32_t ParticleSystemExtensionsImpl_GetCollisionEvents_m2141038518 (RuntimeObject * __this /* static, unused */, ParticleSystem_t1800779281 * ___ps0, GameObject_t1113636619 * ___go1, RuntimeObject * ___collisionEvents2, const RuntimeMethod* method);
 // System.Void UnityEngine.ParticleSystem/MainModule::.ctor(UnityEngine.ParticleSystem)
 extern "C" IL2CPP_METHOD_ATTR void MainModule__ctor_m1745438521 (MainModule_t2320046318 * __this, ParticleSystem_t1800779281 * ___particleSystem0, const RuntimeMethod* method);
 // System.Void UnityEngine.ParticleSystem/EmissionModule::.ctor(UnityEngine.ParticleSystem)
 extern "C" IL2CPP_METHOD_ATTR void EmissionModule__ctor_m3908790904 (EmissionModule_t311448003 * __this, ParticleSystem_t1800779281 * ___particleSystem0, const RuntimeMethod* method);
+// System.Void UnityEngine.ParticleSystem::Play(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void ParticleSystem_Play_m163824593 (ParticleSystem_t1800779281 * __this, bool ___withChildren0, const RuntimeMethod* method);
+// System.Void UnityEngine.ParticleSystem::Clear(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void ParticleSystem_Clear_m2603704560 (ParticleSystem_t1800779281 * __this, bool ___withChildren0, const RuntimeMethod* method);
 // System.Void UnityEngine.ParticleSystem::INTERNAL_CALL_Emit(UnityEngine.ParticleSystem,System.Int32)
 extern "C" IL2CPP_METHOD_ATTR void ParticleSystem_INTERNAL_CALL_Emit_m662166748 (RuntimeObject * __this /* static, unused */, ParticleSystem_t1800779281 * ___self0, int32_t ___count1, const RuntimeMethod* method);
 // System.Void UnityEngine.ParticleSystem::Internal_Emit(UnityEngine.ParticleSystem/EmitParams&,System.Int32)
@@ -1405,8 +1904,38 @@ extern "C" IL2CPP_METHOD_ATTR void EmissionModule_set_enabled_m353945573 (Emissi
 extern "C" IL2CPP_METHOD_ATTR void MainModule_GetStartLifetime_m3113513190 (RuntimeObject * __this /* static, unused */, ParticleSystem_t1800779281 * ___system0, MinMaxCurve_t1067599125 * ___curve1, const RuntimeMethod* method);
 // UnityEngine.ParticleSystem/MinMaxCurve UnityEngine.ParticleSystem/MainModule::get_startLifetime()
 extern "C" IL2CPP_METHOD_ATTR MinMaxCurve_t1067599125  MainModule_get_startLifetime_m2343501481 (MainModule_t2320046318 * __this, const RuntimeMethod* method);
+// System.Single UnityEngine.ParticleSystem/MainModule::GetStartLifetimeMultiplier(UnityEngine.ParticleSystem)
+extern "C" IL2CPP_METHOD_ATTR float MainModule_GetStartLifetimeMultiplier_m2481667184 (RuntimeObject * __this /* static, unused */, ParticleSystem_t1800779281 * ___system0, const RuntimeMethod* method);
+// System.Single UnityEngine.ParticleSystem/MainModule::get_startLifetimeMultiplier()
+extern "C" IL2CPP_METHOD_ATTR float MainModule_get_startLifetimeMultiplier_m1798732576 (MainModule_t2320046318 * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.ParticleSystem/MainModule::SetStartLifetimeMultiplier(UnityEngine.ParticleSystem,System.Single)
+extern "C" IL2CPP_METHOD_ATTR void MainModule_SetStartLifetimeMultiplier_m3747684520 (RuntimeObject * __this /* static, unused */, ParticleSystem_t1800779281 * ___system0, float ___value1, const RuntimeMethod* method);
+// System.Void UnityEngine.ParticleSystem/MainModule::set_startLifetimeMultiplier(System.Single)
+extern "C" IL2CPP_METHOD_ATTR void MainModule_set_startLifetimeMultiplier_m4121815467 (MainModule_t2320046318 * __this, float ___value0, const RuntimeMethod* method);
+// System.Void UnityEngine.ParticleSystem/MainModule::SetStartSpeed(UnityEngine.ParticleSystem,UnityEngine.ParticleSystem/MinMaxCurve&)
+extern "C" IL2CPP_METHOD_ATTR void MainModule_SetStartSpeed_m1242675629 (RuntimeObject * __this /* static, unused */, ParticleSystem_t1800779281 * ___system0, MinMaxCurve_t1067599125 * ___curve1, const RuntimeMethod* method);
+// System.Void UnityEngine.ParticleSystem/MainModule::set_startSpeed(UnityEngine.ParticleSystem/MinMaxCurve)
+extern "C" IL2CPP_METHOD_ATTR void MainModule_set_startSpeed_m3763022313 (MainModule_t2320046318 * __this, MinMaxCurve_t1067599125  ___value0, const RuntimeMethod* method);
+// System.Single UnityEngine.ParticleSystem/MainModule::GetStartSpeedMultiplier(UnityEngine.ParticleSystem)
+extern "C" IL2CPP_METHOD_ATTR float MainModule_GetStartSpeedMultiplier_m1633461692 (RuntimeObject * __this /* static, unused */, ParticleSystem_t1800779281 * ___system0, const RuntimeMethod* method);
+// System.Single UnityEngine.ParticleSystem/MainModule::get_startSpeedMultiplier()
+extern "C" IL2CPP_METHOD_ATTR float MainModule_get_startSpeedMultiplier_m3876540512 (MainModule_t2320046318 * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.ParticleSystem/MainModule::SetStartSpeedMultiplier(UnityEngine.ParticleSystem,System.Single)
+extern "C" IL2CPP_METHOD_ATTR void MainModule_SetStartSpeedMultiplier_m2549987384 (RuntimeObject * __this /* static, unused */, ParticleSystem_t1800779281 * ___system0, float ___value1, const RuntimeMethod* method);
+// System.Void UnityEngine.ParticleSystem/MainModule::set_startSpeedMultiplier(System.Single)
+extern "C" IL2CPP_METHOD_ATTR void MainModule_set_startSpeedMultiplier_m3632924240 (MainModule_t2320046318 * __this, float ___value0, const RuntimeMethod* method);
+// System.Single UnityEngine.ParticleSystem/MainModule::GetStartSizeXMultiplier(UnityEngine.ParticleSystem)
+extern "C" IL2CPP_METHOD_ATTR float MainModule_GetStartSizeXMultiplier_m3834697463 (RuntimeObject * __this /* static, unused */, ParticleSystem_t1800779281 * ___system0, const RuntimeMethod* method);
+// System.Single UnityEngine.ParticleSystem/MainModule::get_startSizeMultiplier()
+extern "C" IL2CPP_METHOD_ATTR float MainModule_get_startSizeMultiplier_m1188945012 (MainModule_t2320046318 * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.ParticleSystem/MainModule::SetStartSizeXMultiplier(UnityEngine.ParticleSystem,System.Single)
+extern "C" IL2CPP_METHOD_ATTR void MainModule_SetStartSizeXMultiplier_m1251507676 (RuntimeObject * __this /* static, unused */, ParticleSystem_t1800779281 * ___system0, float ___value1, const RuntimeMethod* method);
+// System.Void UnityEngine.ParticleSystem/MainModule::set_startSizeMultiplier(System.Single)
+extern "C" IL2CPP_METHOD_ATTR void MainModule_set_startSizeMultiplier_m2700116177 (MainModule_t2320046318 * __this, float ___value0, const RuntimeMethod* method);
 // System.Void UnityEngine.AnimationCurve::.ctor()
 extern "C" IL2CPP_METHOD_ATTR void AnimationCurve__ctor_m3000526466 (AnimationCurve_t3046754366 * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.ParticleSystem/MinMaxCurve::.ctor(System.Single)
+extern "C" IL2CPP_METHOD_ATTR void MinMaxCurve__ctor_m1734431933 (MinMaxCurve_t1067599125 * __this, float ___constant0, const RuntimeMethod* method);
 // System.Single UnityEngine.ParticleSystem/MinMaxCurve::get_constant()
 extern "C" IL2CPP_METHOD_ATTR float MinMaxCurve_get_constant_m2963124720 (MinMaxCurve_t1067599125 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.ParticleSystem/Particle::set_remainingLifetime(System.Single)
@@ -1420,6 +1949,131 @@ extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  Vector3_op_Multiply_m33767739
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// UnityEngine.Vector3 UnityEngine.ParticleCollisionEvent::get_velocity()
+extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  ParticleCollisionEvent_get_velocity_m1941659151 (ParticleCollisionEvent_t4055032941 * __this, const RuntimeMethod* method)
+{
+	Vector3_t3722313464  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Vector3_t3722313464  L_0 = __this->get_m_Velocity_2();
+		V_0 = L_0;
+		goto IL_000d;
+	}
+
+IL_000d:
+	{
+		Vector3_t3722313464  L_1 = V_0;
+		return L_1;
+	}
+}
+extern "C"  Vector3_t3722313464  ParticleCollisionEvent_get_velocity_m1941659151_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	ParticleCollisionEvent_t4055032941 * _thisAdjusted = reinterpret_cast<ParticleCollisionEvent_t4055032941 *>(__this + 1);
+	return ParticleCollisionEvent_get_velocity_m1941659151(_thisAdjusted, method);
+}
+// UnityEngine.Component UnityEngine.ParticleCollisionEvent::get_colliderComponent()
+extern "C" IL2CPP_METHOD_ATTR Component_t1923634451 * ParticleCollisionEvent_get_colliderComponent_m1489433520 (ParticleCollisionEvent_t4055032941 * __this, const RuntimeMethod* method)
+{
+	Component_t1923634451 * V_0 = NULL;
+	{
+		int32_t L_0 = __this->get_m_ColliderInstanceID_3();
+		Component_t1923634451 * L_1 = ParticleCollisionEvent_InstanceIDToColliderComponent_m3582923694(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		goto IL_0012;
+	}
+
+IL_0012:
+	{
+		Component_t1923634451 * L_2 = V_0;
+		return L_2;
+	}
+}
+extern "C"  Component_t1923634451 * ParticleCollisionEvent_get_colliderComponent_m1489433520_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	ParticleCollisionEvent_t4055032941 * _thisAdjusted = reinterpret_cast<ParticleCollisionEvent_t4055032941 *>(__this + 1);
+	return ParticleCollisionEvent_get_colliderComponent_m1489433520(_thisAdjusted, method);
+}
+// UnityEngine.Component UnityEngine.ParticleCollisionEvent::InstanceIDToColliderComponent(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR Component_t1923634451 * ParticleCollisionEvent_InstanceIDToColliderComponent_m3582923694 (RuntimeObject * __this /* static, unused */, int32_t ___instanceID0, const RuntimeMethod* method)
+{
+	typedef Component_t1923634451 * (*ParticleCollisionEvent_InstanceIDToColliderComponent_m3582923694_ftn) (int32_t);
+	static ParticleCollisionEvent_InstanceIDToColliderComponent_m3582923694_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (ParticleCollisionEvent_InstanceIDToColliderComponent_m3582923694_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.ParticleCollisionEvent::InstanceIDToColliderComponent(System.Int32)");
+	Component_t1923634451 * retVal = _il2cpp_icall_func(___instanceID0);
+	return retVal;
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Int32 UnityEngine.ParticlePhysicsExtensions::GetCollisionEvents(UnityEngine.ParticleSystem,UnityEngine.GameObject,System.Collections.Generic.List`1<UnityEngine.ParticleCollisionEvent>)
+extern "C" IL2CPP_METHOD_ATTR int32_t ParticlePhysicsExtensions_GetCollisionEvents_m1108737549 (RuntimeObject * __this /* static, unused */, ParticleSystem_t1800779281 * ___ps0, GameObject_t1113636619 * ___go1, List_1_t1232140387 * ___collisionEvents2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (ParticlePhysicsExtensions_GetCollisionEvents_m1108737549_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		GameObject_t1113636619 * L_0 = ___go1;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
+		bool L_1 = Object_op_Equality_m1810815630(NULL /*static, unused*/, L_0, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_2 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_2, _stringLiteral3454777273, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, NULL, ParticlePhysicsExtensions_GetCollisionEvents_m1108737549_RuntimeMethod_var);
+	}
+
+IL_0018:
+	{
+		List_1_t1232140387 * L_3 = ___collisionEvents2;
+		if (L_3)
+		{
+			goto IL_0029;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_4 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_4, _stringLiteral4178700366, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_4, NULL, ParticlePhysicsExtensions_GetCollisionEvents_m1108737549_RuntimeMethod_var);
+	}
+
+IL_0029:
+	{
+		ParticleSystem_t1800779281 * L_5 = ___ps0;
+		GameObject_t1113636619 * L_6 = ___go1;
+		List_1_t1232140387 * L_7 = ___collisionEvents2;
+		int32_t L_8 = ParticleSystemExtensionsImpl_GetCollisionEvents_m2141038518(NULL /*static, unused*/, L_5, L_6, L_7, /*hidden argument*/NULL);
+		V_0 = L_8;
+		goto IL_0037;
+	}
+
+IL_0037:
+	{
+		int32_t L_9 = V_0;
+		return L_9;
+	}
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -1464,6 +2118,46 @@ IL_000d:
 	{
 		EmissionModule_t311448003  L_1 = V_0;
 		return L_1;
+	}
+}
+// System.Void UnityEngine.ParticleSystem::Play(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void ParticleSystem_Play_m163824593 (ParticleSystem_t1800779281 * __this, bool ___withChildren0, const RuntimeMethod* method)
+{
+	typedef void (*ParticleSystem_Play_m163824593_ftn) (ParticleSystem_t1800779281 *, bool);
+	static ParticleSystem_Play_m163824593_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (ParticleSystem_Play_m163824593_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.ParticleSystem::Play(System.Boolean)");
+	_il2cpp_icall_func(__this, ___withChildren0);
+}
+// System.Void UnityEngine.ParticleSystem::Play()
+extern "C" IL2CPP_METHOD_ATTR void ParticleSystem_Play_m882713458 (ParticleSystem_t1800779281 * __this, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	{
+		V_0 = (bool)1;
+		bool L_0 = V_0;
+		ParticleSystem_Play_m163824593(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.ParticleSystem::Clear(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void ParticleSystem_Clear_m2603704560 (ParticleSystem_t1800779281 * __this, bool ___withChildren0, const RuntimeMethod* method)
+{
+	typedef void (*ParticleSystem_Clear_m2603704560_ftn) (ParticleSystem_t1800779281 *, bool);
+	static ParticleSystem_Clear_m2603704560_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (ParticleSystem_Clear_m2603704560_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.ParticleSystem::Clear(System.Boolean)");
+	_il2cpp_icall_func(__this, ___withChildren0);
+}
+// System.Void UnityEngine.ParticleSystem::Clear()
+extern "C" IL2CPP_METHOD_ATTR void ParticleSystem_Clear_m381529807 (ParticleSystem_t1800779281 * __this, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	{
+		V_0 = (bool)1;
+		bool L_0 = V_0;
+		ParticleSystem_Clear_m2603704560(__this, L_0, /*hidden argument*/NULL);
+		return;
 	}
 }
 // System.Void UnityEngine.ParticleSystem::Emit(System.Int32)
@@ -1829,6 +2523,131 @@ extern "C"  MinMaxCurve_t1067599125  MainModule_get_startLifetime_m2343501481_Ad
 	MainModule_t2320046318 * _thisAdjusted = reinterpret_cast<MainModule_t2320046318 *>(__this + 1);
 	return MainModule_get_startLifetime_m2343501481(_thisAdjusted, method);
 }
+// System.Single UnityEngine.ParticleSystem/MainModule::get_startLifetimeMultiplier()
+extern "C" IL2CPP_METHOD_ATTR float MainModule_get_startLifetimeMultiplier_m1798732576 (MainModule_t2320046318 * __this, const RuntimeMethod* method)
+{
+	float V_0 = 0.0f;
+	{
+		ParticleSystem_t1800779281 * L_0 = __this->get_m_ParticleSystem_0();
+		float L_1 = MainModule_GetStartLifetimeMultiplier_m2481667184(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		goto IL_0012;
+	}
+
+IL_0012:
+	{
+		float L_2 = V_0;
+		return L_2;
+	}
+}
+extern "C"  float MainModule_get_startLifetimeMultiplier_m1798732576_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	MainModule_t2320046318 * _thisAdjusted = reinterpret_cast<MainModule_t2320046318 *>(__this + 1);
+	return MainModule_get_startLifetimeMultiplier_m1798732576(_thisAdjusted, method);
+}
+// System.Void UnityEngine.ParticleSystem/MainModule::set_startLifetimeMultiplier(System.Single)
+extern "C" IL2CPP_METHOD_ATTR void MainModule_set_startLifetimeMultiplier_m4121815467 (MainModule_t2320046318 * __this, float ___value0, const RuntimeMethod* method)
+{
+	{
+		ParticleSystem_t1800779281 * L_0 = __this->get_m_ParticleSystem_0();
+		float L_1 = ___value0;
+		MainModule_SetStartLifetimeMultiplier_m3747684520(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+extern "C"  void MainModule_set_startLifetimeMultiplier_m4121815467_AdjustorThunk (RuntimeObject * __this, float ___value0, const RuntimeMethod* method)
+{
+	MainModule_t2320046318 * _thisAdjusted = reinterpret_cast<MainModule_t2320046318 *>(__this + 1);
+	MainModule_set_startLifetimeMultiplier_m4121815467(_thisAdjusted, ___value0, method);
+}
+// System.Void UnityEngine.ParticleSystem/MainModule::set_startSpeed(UnityEngine.ParticleSystem/MinMaxCurve)
+extern "C" IL2CPP_METHOD_ATTR void MainModule_set_startSpeed_m3763022313 (MainModule_t2320046318 * __this, MinMaxCurve_t1067599125  ___value0, const RuntimeMethod* method)
+{
+	{
+		ParticleSystem_t1800779281 * L_0 = __this->get_m_ParticleSystem_0();
+		MainModule_SetStartSpeed_m1242675629(NULL /*static, unused*/, L_0, (MinMaxCurve_t1067599125 *)(&___value0), /*hidden argument*/NULL);
+		return;
+	}
+}
+extern "C"  void MainModule_set_startSpeed_m3763022313_AdjustorThunk (RuntimeObject * __this, MinMaxCurve_t1067599125  ___value0, const RuntimeMethod* method)
+{
+	MainModule_t2320046318 * _thisAdjusted = reinterpret_cast<MainModule_t2320046318 *>(__this + 1);
+	MainModule_set_startSpeed_m3763022313(_thisAdjusted, ___value0, method);
+}
+// System.Single UnityEngine.ParticleSystem/MainModule::get_startSpeedMultiplier()
+extern "C" IL2CPP_METHOD_ATTR float MainModule_get_startSpeedMultiplier_m3876540512 (MainModule_t2320046318 * __this, const RuntimeMethod* method)
+{
+	float V_0 = 0.0f;
+	{
+		ParticleSystem_t1800779281 * L_0 = __this->get_m_ParticleSystem_0();
+		float L_1 = MainModule_GetStartSpeedMultiplier_m1633461692(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		goto IL_0012;
+	}
+
+IL_0012:
+	{
+		float L_2 = V_0;
+		return L_2;
+	}
+}
+extern "C"  float MainModule_get_startSpeedMultiplier_m3876540512_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	MainModule_t2320046318 * _thisAdjusted = reinterpret_cast<MainModule_t2320046318 *>(__this + 1);
+	return MainModule_get_startSpeedMultiplier_m3876540512(_thisAdjusted, method);
+}
+// System.Void UnityEngine.ParticleSystem/MainModule::set_startSpeedMultiplier(System.Single)
+extern "C" IL2CPP_METHOD_ATTR void MainModule_set_startSpeedMultiplier_m3632924240 (MainModule_t2320046318 * __this, float ___value0, const RuntimeMethod* method)
+{
+	{
+		ParticleSystem_t1800779281 * L_0 = __this->get_m_ParticleSystem_0();
+		float L_1 = ___value0;
+		MainModule_SetStartSpeedMultiplier_m2549987384(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+extern "C"  void MainModule_set_startSpeedMultiplier_m3632924240_AdjustorThunk (RuntimeObject * __this, float ___value0, const RuntimeMethod* method)
+{
+	MainModule_t2320046318 * _thisAdjusted = reinterpret_cast<MainModule_t2320046318 *>(__this + 1);
+	MainModule_set_startSpeedMultiplier_m3632924240(_thisAdjusted, ___value0, method);
+}
+// System.Single UnityEngine.ParticleSystem/MainModule::get_startSizeMultiplier()
+extern "C" IL2CPP_METHOD_ATTR float MainModule_get_startSizeMultiplier_m1188945012 (MainModule_t2320046318 * __this, const RuntimeMethod* method)
+{
+	float V_0 = 0.0f;
+	{
+		ParticleSystem_t1800779281 * L_0 = __this->get_m_ParticleSystem_0();
+		float L_1 = MainModule_GetStartSizeXMultiplier_m3834697463(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		goto IL_0012;
+	}
+
+IL_0012:
+	{
+		float L_2 = V_0;
+		return L_2;
+	}
+}
+extern "C"  float MainModule_get_startSizeMultiplier_m1188945012_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	MainModule_t2320046318 * _thisAdjusted = reinterpret_cast<MainModule_t2320046318 *>(__this + 1);
+	return MainModule_get_startSizeMultiplier_m1188945012(_thisAdjusted, method);
+}
+// System.Void UnityEngine.ParticleSystem/MainModule::set_startSizeMultiplier(System.Single)
+extern "C" IL2CPP_METHOD_ATTR void MainModule_set_startSizeMultiplier_m2700116177 (MainModule_t2320046318 * __this, float ___value0, const RuntimeMethod* method)
+{
+	{
+		ParticleSystem_t1800779281 * L_0 = __this->get_m_ParticleSystem_0();
+		float L_1 = ___value0;
+		MainModule_SetStartSizeXMultiplier_m1251507676(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+extern "C"  void MainModule_set_startSizeMultiplier_m2700116177_AdjustorThunk (RuntimeObject * __this, float ___value0, const RuntimeMethod* method)
+{
+	MainModule_t2320046318 * _thisAdjusted = reinterpret_cast<MainModule_t2320046318 *>(__this + 1);
+	MainModule_set_startSizeMultiplier_m2700116177(_thisAdjusted, ___value0, method);
+}
 // System.Void UnityEngine.ParticleSystem/MainModule::GetStartLifetime(UnityEngine.ParticleSystem,UnityEngine.ParticleSystem/MinMaxCurve&)
 extern "C" IL2CPP_METHOD_ATTR void MainModule_GetStartLifetime_m3113513190 (RuntimeObject * __this /* static, unused */, ParticleSystem_t1800779281 * ___system0, MinMaxCurve_t1067599125 * ___curve1, const RuntimeMethod* method)
 {
@@ -1837,6 +2656,72 @@ extern "C" IL2CPP_METHOD_ATTR void MainModule_GetStartLifetime_m3113513190 (Runt
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (MainModule_GetStartLifetime_m3113513190_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.ParticleSystem/MainModule::GetStartLifetime(UnityEngine.ParticleSystem,UnityEngine.ParticleSystem/MinMaxCurve&)");
 	_il2cpp_icall_func(___system0, ___curve1);
+}
+// System.Void UnityEngine.ParticleSystem/MainModule::SetStartLifetimeMultiplier(UnityEngine.ParticleSystem,System.Single)
+extern "C" IL2CPP_METHOD_ATTR void MainModule_SetStartLifetimeMultiplier_m3747684520 (RuntimeObject * __this /* static, unused */, ParticleSystem_t1800779281 * ___system0, float ___value1, const RuntimeMethod* method)
+{
+	typedef void (*MainModule_SetStartLifetimeMultiplier_m3747684520_ftn) (ParticleSystem_t1800779281 *, float);
+	static MainModule_SetStartLifetimeMultiplier_m3747684520_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (MainModule_SetStartLifetimeMultiplier_m3747684520_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.ParticleSystem/MainModule::SetStartLifetimeMultiplier(UnityEngine.ParticleSystem,System.Single)");
+	_il2cpp_icall_func(___system0, ___value1);
+}
+// System.Single UnityEngine.ParticleSystem/MainModule::GetStartLifetimeMultiplier(UnityEngine.ParticleSystem)
+extern "C" IL2CPP_METHOD_ATTR float MainModule_GetStartLifetimeMultiplier_m2481667184 (RuntimeObject * __this /* static, unused */, ParticleSystem_t1800779281 * ___system0, const RuntimeMethod* method)
+{
+	typedef float (*MainModule_GetStartLifetimeMultiplier_m2481667184_ftn) (ParticleSystem_t1800779281 *);
+	static MainModule_GetStartLifetimeMultiplier_m2481667184_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (MainModule_GetStartLifetimeMultiplier_m2481667184_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.ParticleSystem/MainModule::GetStartLifetimeMultiplier(UnityEngine.ParticleSystem)");
+	float retVal = _il2cpp_icall_func(___system0);
+	return retVal;
+}
+// System.Void UnityEngine.ParticleSystem/MainModule::SetStartSpeed(UnityEngine.ParticleSystem,UnityEngine.ParticleSystem/MinMaxCurve&)
+extern "C" IL2CPP_METHOD_ATTR void MainModule_SetStartSpeed_m1242675629 (RuntimeObject * __this /* static, unused */, ParticleSystem_t1800779281 * ___system0, MinMaxCurve_t1067599125 * ___curve1, const RuntimeMethod* method)
+{
+	typedef void (*MainModule_SetStartSpeed_m1242675629_ftn) (ParticleSystem_t1800779281 *, MinMaxCurve_t1067599125 *);
+	static MainModule_SetStartSpeed_m1242675629_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (MainModule_SetStartSpeed_m1242675629_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.ParticleSystem/MainModule::SetStartSpeed(UnityEngine.ParticleSystem,UnityEngine.ParticleSystem/MinMaxCurve&)");
+	_il2cpp_icall_func(___system0, ___curve1);
+}
+// System.Void UnityEngine.ParticleSystem/MainModule::SetStartSpeedMultiplier(UnityEngine.ParticleSystem,System.Single)
+extern "C" IL2CPP_METHOD_ATTR void MainModule_SetStartSpeedMultiplier_m2549987384 (RuntimeObject * __this /* static, unused */, ParticleSystem_t1800779281 * ___system0, float ___value1, const RuntimeMethod* method)
+{
+	typedef void (*MainModule_SetStartSpeedMultiplier_m2549987384_ftn) (ParticleSystem_t1800779281 *, float);
+	static MainModule_SetStartSpeedMultiplier_m2549987384_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (MainModule_SetStartSpeedMultiplier_m2549987384_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.ParticleSystem/MainModule::SetStartSpeedMultiplier(UnityEngine.ParticleSystem,System.Single)");
+	_il2cpp_icall_func(___system0, ___value1);
+}
+// System.Single UnityEngine.ParticleSystem/MainModule::GetStartSpeedMultiplier(UnityEngine.ParticleSystem)
+extern "C" IL2CPP_METHOD_ATTR float MainModule_GetStartSpeedMultiplier_m1633461692 (RuntimeObject * __this /* static, unused */, ParticleSystem_t1800779281 * ___system0, const RuntimeMethod* method)
+{
+	typedef float (*MainModule_GetStartSpeedMultiplier_m1633461692_ftn) (ParticleSystem_t1800779281 *);
+	static MainModule_GetStartSpeedMultiplier_m1633461692_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (MainModule_GetStartSpeedMultiplier_m1633461692_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.ParticleSystem/MainModule::GetStartSpeedMultiplier(UnityEngine.ParticleSystem)");
+	float retVal = _il2cpp_icall_func(___system0);
+	return retVal;
+}
+// System.Void UnityEngine.ParticleSystem/MainModule::SetStartSizeXMultiplier(UnityEngine.ParticleSystem,System.Single)
+extern "C" IL2CPP_METHOD_ATTR void MainModule_SetStartSizeXMultiplier_m1251507676 (RuntimeObject * __this /* static, unused */, ParticleSystem_t1800779281 * ___system0, float ___value1, const RuntimeMethod* method)
+{
+	typedef void (*MainModule_SetStartSizeXMultiplier_m1251507676_ftn) (ParticleSystem_t1800779281 *, float);
+	static MainModule_SetStartSizeXMultiplier_m1251507676_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (MainModule_SetStartSizeXMultiplier_m1251507676_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.ParticleSystem/MainModule::SetStartSizeXMultiplier(UnityEngine.ParticleSystem,System.Single)");
+	_il2cpp_icall_func(___system0, ___value1);
+}
+// System.Single UnityEngine.ParticleSystem/MainModule::GetStartSizeXMultiplier(UnityEngine.ParticleSystem)
+extern "C" IL2CPP_METHOD_ATTR float MainModule_GetStartSizeXMultiplier_m3834697463 (RuntimeObject * __this /* static, unused */, ParticleSystem_t1800779281 * ___system0, const RuntimeMethod* method)
+{
+	typedef float (*MainModule_GetStartSizeXMultiplier_m3834697463_ftn) (ParticleSystem_t1800779281 *);
+	static MainModule_GetStartSizeXMultiplier_m3834697463_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (MainModule_GetStartSizeXMultiplier_m3834697463_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.ParticleSystem/MainModule::GetStartSizeXMultiplier(UnityEngine.ParticleSystem)");
+	float retVal = _il2cpp_icall_func(___system0);
+	return retVal;
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -1938,6 +2823,25 @@ extern "C" void MinMaxCurve_t1067599125_marshal_com_cleanup(MinMaxCurve_t1067599
 	if (&(*marshaled.___m_CurveMin_2) != NULL) AnimationCurve_t3046754366_marshal_com_cleanup(*marshaled.___m_CurveMin_2);
 	if (&(*marshaled.___m_CurveMax_3) != NULL) AnimationCurve_t3046754366_marshal_com_cleanup(*marshaled.___m_CurveMax_3);
 }
+// System.Void UnityEngine.ParticleSystem/MinMaxCurve::.ctor(System.Single)
+extern "C" IL2CPP_METHOD_ATTR void MinMaxCurve__ctor_m1734431933 (MinMaxCurve_t1067599125 * __this, float ___constant0, const RuntimeMethod* method)
+{
+	{
+		__this->set_m_Mode_0(0);
+		__this->set_m_CurveMultiplier_1((0.0f));
+		__this->set_m_CurveMin_2((AnimationCurve_t3046754366 *)NULL);
+		__this->set_m_CurveMax_3((AnimationCurve_t3046754366 *)NULL);
+		__this->set_m_ConstantMin_4((0.0f));
+		float L_0 = ___constant0;
+		__this->set_m_ConstantMax_5(L_0);
+		return;
+	}
+}
+extern "C"  void MinMaxCurve__ctor_m1734431933_AdjustorThunk (RuntimeObject * __this, float ___constant0, const RuntimeMethod* method)
+{
+	MinMaxCurve_t1067599125 * _thisAdjusted = reinterpret_cast<MinMaxCurve_t1067599125 *>(__this + 1);
+	MinMaxCurve__ctor_m1734431933(_thisAdjusted, ___constant0, method);
+}
 // System.Single UnityEngine.ParticleSystem/MinMaxCurve::get_constant()
 extern "C" IL2CPP_METHOD_ATTR float MinMaxCurve_get_constant_m2963124720 (MinMaxCurve_t1067599125 * __this, const RuntimeMethod* method)
 {
@@ -1958,6 +2862,26 @@ extern "C"  float MinMaxCurve_get_constant_m2963124720_AdjustorThunk (RuntimeObj
 {
 	MinMaxCurve_t1067599125 * _thisAdjusted = reinterpret_cast<MinMaxCurve_t1067599125 *>(__this + 1);
 	return MinMaxCurve_get_constant_m2963124720(_thisAdjusted, method);
+}
+// UnityEngine.ParticleSystem/MinMaxCurve UnityEngine.ParticleSystem/MinMaxCurve::op_Implicit(System.Single)
+extern "C" IL2CPP_METHOD_ATTR MinMaxCurve_t1067599125  MinMaxCurve_op_Implicit_m2087694379 (RuntimeObject * __this /* static, unused */, float ___constant0, const RuntimeMethod* method)
+{
+	MinMaxCurve_t1067599125  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		float L_0 = ___constant0;
+		MinMaxCurve_t1067599125  L_1;
+		memset(&L_1, 0, sizeof(L_1));
+		MinMaxCurve__ctor_m1734431933((&L_1), L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		goto IL_000d;
+	}
+
+IL_000d:
+	{
+		MinMaxCurve_t1067599125  L_2 = V_0;
+		return L_2;
+	}
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -2136,6 +3060,24 @@ extern "C"  void Particle_set_angularVelocity3D_m3163963446_AdjustorThunk (Runti
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Int32 UnityEngine.ParticleSystemExtensionsImpl::GetCollisionEvents(UnityEngine.ParticleSystem,UnityEngine.GameObject,System.Object)
+extern "C" IL2CPP_METHOD_ATTR int32_t ParticleSystemExtensionsImpl_GetCollisionEvents_m2141038518 (RuntimeObject * __this /* static, unused */, ParticleSystem_t1800779281 * ___ps0, GameObject_t1113636619 * ___go1, RuntimeObject * ___collisionEvents2, const RuntimeMethod* method)
+{
+	typedef int32_t (*ParticleSystemExtensionsImpl_GetCollisionEvents_m2141038518_ftn) (ParticleSystem_t1800779281 *, GameObject_t1113636619 *, RuntimeObject *);
+	static ParticleSystemExtensionsImpl_GetCollisionEvents_m2141038518_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (ParticleSystemExtensionsImpl_GetCollisionEvents_m2141038518_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.ParticleSystemExtensionsImpl::GetCollisionEvents(UnityEngine.ParticleSystem,UnityEngine.GameObject,System.Object)");
+	int32_t retVal = _il2cpp_icall_func(___ps0, ___go1, ___collisionEvents2);
+	return retVal;
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

@@ -1196,6 +1196,8 @@ GameObject:
   - component: {fileID: 111393235533003692}
   - component: {fileID: 54762364246793050}
   - component: {fileID: 136891583933893510}
+  - component: {fileID: 114492116577930250}
+  - component: {fileID: 114029819647672406}
   m_Layer: 8
   m_Name: CatchMonster
   m_TagString: Untagged
@@ -5155,7 +5157,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1355386671717674}
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -2}
+  m_LocalPosition: {x: 0, y: 0, z: 6.16}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4312750208311168}
@@ -8061,6 +8063,56 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
+--- !u!114 &114029819647672406
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1355386671717674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 576c5136d0a1d8d43b5c26cc5f09d7bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  location:
+    Latitude: 0
+    Longitude: 0
+  monsterService: {fileID: 0}
+  anim: {fileID: 0}
+  animationSpeed: 1
+  monsterWarmRate: 0.0001
+--- !u!114 &114492116577930250
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1355386671717674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7984ae122f431a44eacd640ef57c5ea1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionObjectName: CatchBall
+  collisionEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: OnMonsterHit
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: packt.FoodyGO.PhysicsExt.CollisionEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  particlePrefab: {fileID: 400008, guid: 3f1f5afc18eba468c95057673c3b7ee4, type: 2}
+  destroyParticleDelaySeconds: 5
+  destroyObject: 1
+  destroyObjectDelaySeconds: 0
 --- !u!136 &136891583933893510
 CapsuleCollider:
   m_ObjectHideFlags: 1

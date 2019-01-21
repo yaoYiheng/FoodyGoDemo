@@ -456,6 +456,8 @@ struct DefaultUriParser_t95882050;
 struct Delegate_t1188392813;
 // System.DelegateData
 struct DelegateData_t1677132599;
+// System.Diagnostics.Stopwatch
+struct Stopwatch_t305734070;
 // System.Double
 struct Double_t594665363;
 // System.Exception
@@ -849,6 +851,7 @@ extern RuntimeClass* Socket_t1119025450_il2cpp_TypeInfo_var;
 extern RuntimeClass* SortedList_t2427694641_il2cpp_TypeInfo_var;
 extern RuntimeClass* SslPolicyErrors_t2205227823_il2cpp_TypeInfo_var;
 extern RuntimeClass* SslServerStream_t875102504_il2cpp_TypeInfo_var;
+extern RuntimeClass* Stopwatch_t305734070_il2cpp_TypeInfo_var;
 extern RuntimeClass* StreamWriter_t1266378904_il2cpp_TypeInfo_var;
 extern RuntimeClass* Stream_t1273022909_il2cpp_TypeInfo_var;
 extern RuntimeClass* StringBuilder_t_il2cpp_TypeInfo_var;
@@ -857,6 +860,7 @@ extern RuntimeClass* StringU5BU5D_t1281789340_il2cpp_TypeInfo_var;
 extern RuntimeClass* String_t_il2cpp_TypeInfo_var;
 extern RuntimeClass* ThreadAbortException_t4074510458_il2cpp_TypeInfo_var;
 extern RuntimeClass* Thread_t2300836069_il2cpp_TypeInfo_var;
+extern RuntimeClass* TimeSpan_t881159249_il2cpp_TypeInfo_var;
 extern RuntimeClass* TypeConverterAttribute_t3271584429_il2cpp_TypeInfo_var;
 extern RuntimeClass* Type_t_il2cpp_TypeInfo_var;
 extern RuntimeClass* UInt16U5BU5D_t3326319531_il2cpp_TypeInfo_var;
@@ -1646,6 +1650,12 @@ extern const uint32_t Socket__ctor_m3479084642_MetadataUsageId;
 extern const uint32_t Socket__ctor_m4043768444_MetadataUsageId;
 extern const uint32_t Socket_get_LocalEndPoint_m456692531_MetadataUsageId;
 extern const uint32_t Socket_set_Blocking_m2255852279_MetadataUsageId;
+extern const uint32_t Stopwatch_Start_m1142799187_MetadataUsageId;
+extern const uint32_t Stopwatch_Stop_m1583564474_MetadataUsageId;
+extern const uint32_t Stopwatch__cctor_m2429516881_MetadataUsageId;
+extern const uint32_t Stopwatch_get_ElapsedMilliseconds_m1101465039_MetadataUsageId;
+extern const uint32_t Stopwatch_get_ElapsedTicks_m2069815726_MetadataUsageId;
+extern const uint32_t Stopwatch_get_Elapsed_m1649583664_MetadataUsageId;
 extern const uint32_t TypeConverterAttribute_Equals_m1580461255_MetadataUsageId;
 extern const uint32_t TypeConverterAttribute__cctor_m2413733117_MetadataUsageId;
 extern const uint32_t TypeConverterAttribute__ctor_m1774069684_MetadataUsageId;
@@ -3175,6 +3185,81 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // TYPECONVERTER_T2249118273_H
+#ifndef STOPWATCH_T305734070_H
+#define STOPWATCH_T305734070_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Diagnostics.Stopwatch
+struct  Stopwatch_t305734070  : public RuntimeObject
+{
+public:
+	// System.Int64 System.Diagnostics.Stopwatch::elapsed
+	int64_t ___elapsed_2;
+	// System.Int64 System.Diagnostics.Stopwatch::started
+	int64_t ___started_3;
+	// System.Boolean System.Diagnostics.Stopwatch::is_running
+	bool ___is_running_4;
+
+public:
+	inline static int32_t get_offset_of_elapsed_2() { return static_cast<int32_t>(offsetof(Stopwatch_t305734070, ___elapsed_2)); }
+	inline int64_t get_elapsed_2() const { return ___elapsed_2; }
+	inline int64_t* get_address_of_elapsed_2() { return &___elapsed_2; }
+	inline void set_elapsed_2(int64_t value)
+	{
+		___elapsed_2 = value;
+	}
+
+	inline static int32_t get_offset_of_started_3() { return static_cast<int32_t>(offsetof(Stopwatch_t305734070, ___started_3)); }
+	inline int64_t get_started_3() const { return ___started_3; }
+	inline int64_t* get_address_of_started_3() { return &___started_3; }
+	inline void set_started_3(int64_t value)
+	{
+		___started_3 = value;
+	}
+
+	inline static int32_t get_offset_of_is_running_4() { return static_cast<int32_t>(offsetof(Stopwatch_t305734070, ___is_running_4)); }
+	inline bool get_is_running_4() const { return ___is_running_4; }
+	inline bool* get_address_of_is_running_4() { return &___is_running_4; }
+	inline void set_is_running_4(bool value)
+	{
+		___is_running_4 = value;
+	}
+};
+
+struct Stopwatch_t305734070_StaticFields
+{
+public:
+	// System.Int64 System.Diagnostics.Stopwatch::Frequency
+	int64_t ___Frequency_0;
+	// System.Boolean System.Diagnostics.Stopwatch::IsHighResolution
+	bool ___IsHighResolution_1;
+
+public:
+	inline static int32_t get_offset_of_Frequency_0() { return static_cast<int32_t>(offsetof(Stopwatch_t305734070_StaticFields, ___Frequency_0)); }
+	inline int64_t get_Frequency_0() const { return ___Frequency_0; }
+	inline int64_t* get_address_of_Frequency_0() { return &___Frequency_0; }
+	inline void set_Frequency_0(int64_t value)
+	{
+		___Frequency_0 = value;
+	}
+
+	inline static int32_t get_offset_of_IsHighResolution_1() { return static_cast<int32_t>(offsetof(Stopwatch_t305734070_StaticFields, ___IsHighResolution_1)); }
+	inline bool get_IsHighResolution_1() const { return ___IsHighResolution_1; }
+	inline bool* get_address_of_IsHighResolution_1() { return &___IsHighResolution_1; }
+	inline void set_IsHighResolution_1(bool value)
+	{
+		___IsHighResolution_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // STOPWATCH_T305734070_H
 #ifndef EXCEPTION_T_H
 #define EXCEPTION_T_H
 #ifdef __clang__
@@ -15195,6 +15280,16 @@ extern "C" IL2CPP_METHOD_ATTR int32_t SerializationInfo_GetInt32_m2640574809 (Se
 extern "C" IL2CPP_METHOD_ATTR void Exception_GetObjectData_m1103241326 (Exception_t * __this, SerializationInfo_t950877179 * p0, StreamingContext_t3711869237  p1, const RuntimeMethod* method);
 // System.Void System.UriParser::.ctor()
 extern "C" IL2CPP_METHOD_ATTR void UriParser__ctor_m2454688443 (UriParser_t3890150400 * __this, const RuntimeMethod* method);
+// System.Int64 System.Diagnostics.Stopwatch::get_ElapsedTicks()
+extern "C" IL2CPP_METHOD_ATTR int64_t Stopwatch_get_ElapsedTicks_m2069815726 (Stopwatch_t305734070 * __this, const RuntimeMethod* method);
+// System.TimeSpan System.TimeSpan::FromTicks(System.Int64)
+extern "C" IL2CPP_METHOD_ATTR TimeSpan_t881159249  TimeSpan_FromTicks_m4159473883 (RuntimeObject * __this /* static, unused */, int64_t p0, const RuntimeMethod* method);
+// System.TimeSpan System.Diagnostics.Stopwatch::get_Elapsed()
+extern "C" IL2CPP_METHOD_ATTR TimeSpan_t881159249  Stopwatch_get_Elapsed_m1649583664 (Stopwatch_t305734070 * __this, const RuntimeMethod* method);
+// System.Double System.TimeSpan::get_TotalMilliseconds()
+extern "C" IL2CPP_METHOD_ATTR double TimeSpan_get_TotalMilliseconds_m2429771311 (TimeSpan_t881159249 * __this, const RuntimeMethod* method);
+// System.Int64 System.Diagnostics.Stopwatch::GetTimestamp()
+extern "C" IL2CPP_METHOD_ATTR int64_t Stopwatch_GetTimestamp_m3779224436 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
 // System.Net.AuthenticationSchemes System.Net.AuthenticationSchemeSelector::Invoke(System.Net.HttpListenerRequest)
 extern "C" IL2CPP_METHOD_ATTR int32_t AuthenticationSchemeSelector_Invoke_m858614847 (AuthenticationSchemeSelector_t375327801 * __this, HttpListenerRequest_t630699488 * ___httpRequest0, const RuntimeMethod* method);
 // System.Void System.Text.StringBuilder::.ctor()
@@ -16226,14 +16321,6 @@ extern "C" IL2CPP_METHOD_ATTR void Worker_UpdateSendValues_m1721166924 (Worker_t
 extern "C" IL2CPP_METHOD_ATTR void SocketAsyncResult_set_Total_m2735056888 (SocketAsyncResult_t2080034863 * __this, int32_t ___value0, const RuntimeMethod* method);
 // System.Int32 System.Net.Sockets.Socket::SendTo_nochecks(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint)
 extern "C" IL2CPP_METHOD_ATTR int32_t Socket_SendTo_nochecks_m2955493341 (Socket_t1119025450 * __this, ByteU5BU5D_t4116647657* ___buffer0, int32_t ___offset1, int32_t ___size2, int32_t ___flags3, EndPoint_t982345378 * ___remote_end4, const RuntimeMethod* method);
-// System.Int32 System.Net.Sockets.SocketException::WSAGetLastError_internal()
-extern "C" IL2CPP_METHOD_ATTR int32_t SocketException_WSAGetLastError_internal_m1236276956 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
-// System.Void System.ComponentModel.Win32Exception::.ctor(System.Int32)
-extern "C" IL2CPP_METHOD_ATTR void Win32Exception__ctor_m3118723333 (Win32Exception_t3234146298 * __this, int32_t ___error0, const RuntimeMethod* method);
-// System.Int32 System.ComponentModel.Win32Exception::get_NativeErrorCode()
-extern "C" IL2CPP_METHOD_ATTR int32_t Win32Exception_get_NativeErrorCode_m4105802931 (Win32Exception_t3234146298 * __this, const RuntimeMethod* method);
-// System.String System.Exception::get_Message()
-extern "C" IL2CPP_METHOD_ATTR String_t* Exception_get_Message_m3320461627 (Exception_t * __this, const RuntimeMethod* method);
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -19739,6 +19826,219 @@ extern "C" IL2CPP_METHOD_ATTR void DefaultUriParser__ctor_m2634681684 (DefaultUr
 		UriParser__ctor_m2454688443(__this, /*hidden argument*/NULL);
 		String_t* L_0 = ___scheme0;
 		((UriParser_t3890150400 *)__this)->set_scheme_name_2(L_0);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void System.Diagnostics.Stopwatch::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void Stopwatch__ctor_m2673586837 (Stopwatch_t305734070 * __this, const RuntimeMethod* method)
+{
+	{
+		Object__ctor_m297566312(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.Diagnostics.Stopwatch::.cctor()
+extern "C" IL2CPP_METHOD_ATTR void Stopwatch__cctor_m2429516881 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Stopwatch__cctor_m2429516881_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		((Stopwatch_t305734070_StaticFields*)il2cpp_codegen_static_fields_for(Stopwatch_t305734070_il2cpp_TypeInfo_var))->set_Frequency_0((((int64_t)((int64_t)((int32_t)10000000)))));
+		((Stopwatch_t305734070_StaticFields*)il2cpp_codegen_static_fields_for(Stopwatch_t305734070_il2cpp_TypeInfo_var))->set_IsHighResolution_1((bool)1);
+		return;
+	}
+}
+// System.Int64 System.Diagnostics.Stopwatch::GetTimestamp()
+extern "C" IL2CPP_METHOD_ATTR int64_t Stopwatch_GetTimestamp_m3779224436 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+{
+	typedef int64_t (*Stopwatch_GetTimestamp_m3779224436_ftn) ();
+	using namespace il2cpp::icalls;
+	return  ((Stopwatch_GetTimestamp_m3779224436_ftn)System::System::Diagnostics::Stopwatch::GetTimestamp) ();
+}
+// System.TimeSpan System.Diagnostics.Stopwatch::get_Elapsed()
+extern "C" IL2CPP_METHOD_ATTR TimeSpan_t881159249  Stopwatch_get_Elapsed_m1649583664 (Stopwatch_t305734070 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Stopwatch_get_Elapsed_m1649583664_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Stopwatch_t305734070_il2cpp_TypeInfo_var);
+		bool L_0 = ((Stopwatch_t305734070_StaticFields*)il2cpp_codegen_static_fields_for(Stopwatch_t305734070_il2cpp_TypeInfo_var))->get_IsHighResolution_1();
+		if (!L_0)
+		{
+			goto IL_0023;
+		}
+	}
+	{
+		int64_t L_1 = Stopwatch_get_ElapsedTicks_m2069815726(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Stopwatch_t305734070_il2cpp_TypeInfo_var);
+		int64_t L_2 = ((Stopwatch_t305734070_StaticFields*)il2cpp_codegen_static_fields_for(Stopwatch_t305734070_il2cpp_TypeInfo_var))->get_Frequency_0();
+		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t881159249_il2cpp_TypeInfo_var);
+		TimeSpan_t881159249  L_3 = TimeSpan_FromTicks_m4159473883(NULL /*static, unused*/, ((int64_t)((int64_t)L_1/(int64_t)((int64_t)((int64_t)L_2/(int64_t)(((int64_t)((int64_t)((int32_t)10000000)))))))), /*hidden argument*/NULL);
+		return L_3;
+	}
+
+IL_0023:
+	{
+		int64_t L_4 = Stopwatch_get_ElapsedTicks_m2069815726(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t881159249_il2cpp_TypeInfo_var);
+		TimeSpan_t881159249  L_5 = TimeSpan_FromTicks_m4159473883(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		return L_5;
+	}
+}
+// System.Int64 System.Diagnostics.Stopwatch::get_ElapsedMilliseconds()
+extern "C" IL2CPP_METHOD_ATTR int64_t Stopwatch_get_ElapsedMilliseconds_m1101465039 (Stopwatch_t305734070 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Stopwatch_get_ElapsedMilliseconds_m1101465039_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	TimeSpan_t881159249  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Stopwatch_t305734070_il2cpp_TypeInfo_var);
+		bool L_0 = ((Stopwatch_t305734070_StaticFields*)il2cpp_codegen_static_fields_for(Stopwatch_t305734070_il2cpp_TypeInfo_var))->get_IsHighResolution_1();
+		if (!L_0)
+		{
+			goto IL_001e;
+		}
+	}
+	{
+		int64_t L_1 = Stopwatch_get_ElapsedTicks_m2069815726(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Stopwatch_t305734070_il2cpp_TypeInfo_var);
+		int64_t L_2 = ((Stopwatch_t305734070_StaticFields*)il2cpp_codegen_static_fields_for(Stopwatch_t305734070_il2cpp_TypeInfo_var))->get_Frequency_0();
+		return ((int64_t)((int64_t)L_1/(int64_t)((int64_t)((int64_t)L_2/(int64_t)(((int64_t)((int64_t)((int32_t)1000))))))));
+	}
+
+IL_001e:
+	{
+		TimeSpan_t881159249  L_3 = Stopwatch_get_Elapsed_m1649583664(__this, /*hidden argument*/NULL);
+		V_0 = L_3;
+		double L_4 = TimeSpan_get_TotalMilliseconds_m2429771311((TimeSpan_t881159249 *)(&V_0), /*hidden argument*/NULL);
+		if (L_4 > (double)(std::numeric_limits<int64_t>::max())) IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_overflow_exception(), NULL, NULL);
+		return (((int64_t)((int64_t)L_4)));
+	}
+}
+// System.Int64 System.Diagnostics.Stopwatch::get_ElapsedTicks()
+extern "C" IL2CPP_METHOD_ATTR int64_t Stopwatch_get_ElapsedTicks_m2069815726 (Stopwatch_t305734070 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Stopwatch_get_ElapsedTicks_m2069815726_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int64_t G_B3_0 = 0;
+	{
+		bool L_0 = __this->get_is_running_4();
+		if (!L_0)
+		{
+			goto IL_0023;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Stopwatch_t305734070_il2cpp_TypeInfo_var);
+		int64_t L_1 = Stopwatch_GetTimestamp_m3779224436(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int64_t L_2 = __this->get_started_3();
+		int64_t L_3 = __this->get_elapsed_2();
+		G_B3_0 = ((int64_t)il2cpp_codegen_add((int64_t)((int64_t)il2cpp_codegen_subtract((int64_t)L_1, (int64_t)L_2)), (int64_t)L_3));
+		goto IL_0029;
+	}
+
+IL_0023:
+	{
+		int64_t L_4 = __this->get_elapsed_2();
+		G_B3_0 = L_4;
+	}
+
+IL_0029:
+	{
+		return G_B3_0;
+	}
+}
+// System.Void System.Diagnostics.Stopwatch::Reset()
+extern "C" IL2CPP_METHOD_ATTR void Stopwatch_Reset_m2784178933 (Stopwatch_t305734070 * __this, const RuntimeMethod* method)
+{
+	{
+		__this->set_elapsed_2((((int64_t)((int64_t)0))));
+		__this->set_is_running_4((bool)0);
+		return;
+	}
+}
+// System.Void System.Diagnostics.Stopwatch::Start()
+extern "C" IL2CPP_METHOD_ATTR void Stopwatch_Start_m1142799187 (Stopwatch_t305734070 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Stopwatch_Start_m1142799187_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		bool L_0 = __this->get_is_running_4();
+		if (!L_0)
+		{
+			goto IL_000c;
+		}
+	}
+	{
+		return;
+	}
+
+IL_000c:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Stopwatch_t305734070_il2cpp_TypeInfo_var);
+		int64_t L_1 = Stopwatch_GetTimestamp_m3779224436(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_started_3(L_1);
+		__this->set_is_running_4((bool)1);
+		return;
+	}
+}
+// System.Void System.Diagnostics.Stopwatch::Stop()
+extern "C" IL2CPP_METHOD_ATTR void Stopwatch_Stop_m1583564474 (Stopwatch_t305734070 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Stopwatch_Stop_m1583564474_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		bool L_0 = __this->get_is_running_4();
+		if (L_0)
+		{
+			goto IL_000c;
+		}
+	}
+	{
+		return;
+	}
+
+IL_000c:
+	{
+		int64_t L_1 = __this->get_elapsed_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Stopwatch_t305734070_il2cpp_TypeInfo_var);
+		int64_t L_2 = Stopwatch_GetTimestamp_m3779224436(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int64_t L_3 = __this->get_started_3();
+		__this->set_elapsed_2(((int64_t)il2cpp_codegen_add((int64_t)L_1, (int64_t)((int64_t)il2cpp_codegen_subtract((int64_t)L_2, (int64_t)L_3)))));
+		__this->set_is_running_4((bool)0);
 		return;
 	}
 }
@@ -47588,83 +47888,6 @@ IL_00af:
 IL_00ba:
 	{
 		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Net.Sockets.SocketException::.ctor()
-extern "C" IL2CPP_METHOD_ATTR void SocketException__ctor_m480722159 (SocketException_t3852068672 * __this, const RuntimeMethod* method)
-{
-	{
-		int32_t L_0 = SocketException_WSAGetLastError_internal_m1236276956(NULL /*static, unused*/, /*hidden argument*/NULL);
-		Win32Exception__ctor_m3118723333(__this, L_0, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void System.Net.Sockets.SocketException::.ctor(System.Int32)
-extern "C" IL2CPP_METHOD_ATTR void SocketException__ctor_m1369613389 (SocketException_t3852068672 * __this, int32_t ___error0, const RuntimeMethod* method)
-{
-	{
-		int32_t L_0 = ___error0;
-		Win32Exception__ctor_m3118723333(__this, L_0, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void System.Net.Sockets.SocketException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-extern "C" IL2CPP_METHOD_ATTR void SocketException__ctor_m3558609746 (SocketException_t3852068672 * __this, SerializationInfo_t950877179 * ___info0, StreamingContext_t3711869237  ___context1, const RuntimeMethod* method)
-{
-	{
-		SerializationInfo_t950877179 * L_0 = ___info0;
-		StreamingContext_t3711869237  L_1 = ___context1;
-		Win32Exception__ctor_m3265219078(__this, L_0, L_1, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void System.Net.Sockets.SocketException::.ctor(System.Int32,System.String)
-extern "C" IL2CPP_METHOD_ATTR void SocketException__ctor_m3042788307 (SocketException_t3852068672 * __this, int32_t ___error0, String_t* ___message1, const RuntimeMethod* method)
-{
-	{
-		int32_t L_0 = ___error0;
-		String_t* L_1 = ___message1;
-		Win32Exception__ctor_m11747318(__this, L_0, L_1, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Int32 System.Net.Sockets.SocketException::WSAGetLastError_internal()
-extern "C" IL2CPP_METHOD_ATTR int32_t SocketException_WSAGetLastError_internal_m1236276956 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
-{
-	typedef int32_t (*SocketException_WSAGetLastError_internal_m1236276956_ftn) ();
-	using namespace il2cpp::icalls;
-	return  ((SocketException_WSAGetLastError_internal_m1236276956_ftn)System::System::Net::Sockets::SocketException::WSAGetLastError) ();
-}
-// System.Net.Sockets.SocketError System.Net.Sockets.SocketException::get_SocketErrorCode()
-extern "C" IL2CPP_METHOD_ATTR int32_t SocketException_get_SocketErrorCode_m2767669540 (SocketException_t3852068672 * __this, const RuntimeMethod* method)
-{
-	{
-		int32_t L_0 = Win32Exception_get_NativeErrorCode_m4105802931(__this, /*hidden argument*/NULL);
-		return (int32_t)(L_0);
-	}
-}
-// System.String System.Net.Sockets.SocketException::get_Message()
-extern "C" IL2CPP_METHOD_ATTR String_t* SocketException_get_Message_m1742236578 (SocketException_t3852068672 * __this, const RuntimeMethod* method)
-{
-	{
-		String_t* L_0 = Exception_get_Message_m3320461627(__this, /*hidden argument*/NULL);
-		return L_0;
 	}
 }
 #ifdef __clang__

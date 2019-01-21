@@ -134,6 +134,14 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Application_get_isPlaying();
 		Register_UnityEngine_Application_get_isPlaying();
 
+		//System.String UnityEngine.Application::get_dataPath()
+		void Register_UnityEngine_Application_get_dataPath();
+		Register_UnityEngine_Application_get_dataPath();
+
+		//System.String UnityEngine.Application::get_persistentDataPath()
+		void Register_UnityEngine_Application_get_persistentDataPath();
+		Register_UnityEngine_Application_get_persistentDataPath();
+
 		//System.String UnityEngine.Application::get_streamingAssetsPath()
 		void Register_UnityEngine_Application_get_streamingAssetsPath();
 		Register_UnityEngine_Application_get_streamingAssetsPath();
@@ -601,6 +609,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Boolean UnityEngine.Collider::get_isTrigger()
 		void Register_UnityEngine_Collider_get_isTrigger();
 		Register_UnityEngine_Collider_get_isTrigger();
+
+		//System.Void UnityEngine.Collider::Raycast_Injected(UnityEngine.Ray&,System.Single,System.Boolean&,UnityEngine.RaycastHit&)
+		void Register_UnityEngine_Collider_Raycast_Injected();
+		Register_UnityEngine_Collider_Raycast_Injected();
 
 		//UnityEngine.Rigidbody UnityEngine.Collider::get_attachedRigidbody()
 		void Register_UnityEngine_Collider_get_attachedRigidbody();
@@ -1070,6 +1082,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Input_GetButtonUp();
 		Register_UnityEngine_Input_GetButtonUp();
 
+		//System.Boolean UnityEngine.Input::GetKeyDownInt(System.Int32)
+		void Register_UnityEngine_Input_GetKeyDownInt();
+		Register_UnityEngine_Input_GetKeyDownInt();
+
 		//System.Boolean UnityEngine.Input::GetKeyInt(System.Int32)
 		void Register_UnityEngine_Input_GetKeyInt();
 		Register_UnityEngine_Input_GetKeyInt();
@@ -1189,6 +1205,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Single UnityEngine.Light::get_shadowStrength()
 		void Register_UnityEngine_Light_get_shadowStrength();
 		Register_UnityEngine_Light_get_shadowStrength();
+
+		//System.Void UnityEngine.Light::set_intensity(System.Single)
+		void Register_UnityEngine_Light_set_intensity();
+		Register_UnityEngine_Light_set_intensity();
 
 		//System.Void UnityEngine.Light::set_shadowBias(System.Single)
 		void Register_UnityEngine_Light_set_shadowBias();
@@ -1560,7 +1580,19 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.Object
 
+	//Start Registrations for type : UnityEngine.ParticleCollisionEvent
+
+		//UnityEngine.Component UnityEngine.ParticleCollisionEvent::InstanceIDToColliderComponent(System.Int32)
+		void Register_UnityEngine_ParticleCollisionEvent_InstanceIDToColliderComponent();
+		Register_UnityEngine_ParticleCollisionEvent_InstanceIDToColliderComponent();
+
+	//End Registrations for type : UnityEngine.ParticleCollisionEvent
+
 	//Start Registrations for type : UnityEngine.ParticleSystem
+
+		//System.Void UnityEngine.ParticleSystem::Clear(System.Boolean)
+		void Register_UnityEngine_ParticleSystem_Clear();
+		Register_UnityEngine_ParticleSystem_Clear();
 
 		//System.Void UnityEngine.ParticleSystem::INTERNAL_CALL_Emit(UnityEngine.ParticleSystem,System.Int32)
 		void Register_UnityEngine_ParticleSystem_INTERNAL_CALL_Emit();
@@ -1574,6 +1606,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_ParticleSystem_Internal_EmitOld();
 		Register_UnityEngine_ParticleSystem_Internal_EmitOld();
 
+		//System.Void UnityEngine.ParticleSystem::Play(System.Boolean)
+		void Register_UnityEngine_ParticleSystem_Play();
+		Register_UnityEngine_ParticleSystem_Play();
+
 	//End Registrations for type : UnityEngine.ParticleSystem
 
 	//Start Registrations for type : UnityEngine.ParticleSystem/EmissionModule
@@ -1586,11 +1622,47 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.ParticleSystem/MainModule
 
+		//System.Single UnityEngine.ParticleSystem/MainModule::GetStartLifetimeMultiplier(UnityEngine.ParticleSystem)
+		void Register_UnityEngine_ParticleSystem_MainModule_GetStartLifetimeMultiplier();
+		Register_UnityEngine_ParticleSystem_MainModule_GetStartLifetimeMultiplier();
+
+		//System.Single UnityEngine.ParticleSystem/MainModule::GetStartSizeXMultiplier(UnityEngine.ParticleSystem)
+		void Register_UnityEngine_ParticleSystem_MainModule_GetStartSizeXMultiplier();
+		Register_UnityEngine_ParticleSystem_MainModule_GetStartSizeXMultiplier();
+
+		//System.Single UnityEngine.ParticleSystem/MainModule::GetStartSpeedMultiplier(UnityEngine.ParticleSystem)
+		void Register_UnityEngine_ParticleSystem_MainModule_GetStartSpeedMultiplier();
+		Register_UnityEngine_ParticleSystem_MainModule_GetStartSpeedMultiplier();
+
 		//System.Void UnityEngine.ParticleSystem/MainModule::GetStartLifetime(UnityEngine.ParticleSystem,UnityEngine.ParticleSystem/MinMaxCurve&)
 		void Register_UnityEngine_ParticleSystem_MainModule_GetStartLifetime();
 		Register_UnityEngine_ParticleSystem_MainModule_GetStartLifetime();
 
+		//System.Void UnityEngine.ParticleSystem/MainModule::SetStartLifetimeMultiplier(UnityEngine.ParticleSystem,System.Single)
+		void Register_UnityEngine_ParticleSystem_MainModule_SetStartLifetimeMultiplier();
+		Register_UnityEngine_ParticleSystem_MainModule_SetStartLifetimeMultiplier();
+
+		//System.Void UnityEngine.ParticleSystem/MainModule::SetStartSizeXMultiplier(UnityEngine.ParticleSystem,System.Single)
+		void Register_UnityEngine_ParticleSystem_MainModule_SetStartSizeXMultiplier();
+		Register_UnityEngine_ParticleSystem_MainModule_SetStartSizeXMultiplier();
+
+		//System.Void UnityEngine.ParticleSystem/MainModule::SetStartSpeed(UnityEngine.ParticleSystem,UnityEngine.ParticleSystem/MinMaxCurve&)
+		void Register_UnityEngine_ParticleSystem_MainModule_SetStartSpeed();
+		Register_UnityEngine_ParticleSystem_MainModule_SetStartSpeed();
+
+		//System.Void UnityEngine.ParticleSystem/MainModule::SetStartSpeedMultiplier(UnityEngine.ParticleSystem,System.Single)
+		void Register_UnityEngine_ParticleSystem_MainModule_SetStartSpeedMultiplier();
+		Register_UnityEngine_ParticleSystem_MainModule_SetStartSpeedMultiplier();
+
 	//End Registrations for type : UnityEngine.ParticleSystem/MainModule
+
+	//Start Registrations for type : UnityEngine.ParticleSystemExtensionsImpl
+
+		//System.Int32 UnityEngine.ParticleSystemExtensionsImpl::GetCollisionEvents(UnityEngine.ParticleSystem,UnityEngine.GameObject,System.Object)
+		void Register_UnityEngine_ParticleSystemExtensionsImpl_GetCollisionEvents();
+		Register_UnityEngine_ParticleSystemExtensionsImpl_GetCollisionEvents();
+
+	//End Registrations for type : UnityEngine.ParticleSystemExtensionsImpl
 
 	//Start Registrations for type : UnityEngine.ParticleSystemRenderer
 
@@ -1746,6 +1818,18 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Random_get_value();
 		Register_UnityEngine_Random_get_value();
 
+		//System.Void UnityEngine.Random::get_insideUnitSphere_Injected(UnityEngine.Vector3&)
+		void Register_UnityEngine_Random_get_insideUnitSphere_Injected();
+		Register_UnityEngine_Random_get_insideUnitSphere_Injected();
+
+		//System.Void UnityEngine.Random::get_onUnitSphere_Injected(UnityEngine.Vector3&)
+		void Register_UnityEngine_Random_get_onUnitSphere_Injected();
+		Register_UnityEngine_Random_get_onUnitSphere_Injected();
+
+		//System.Void UnityEngine.Random::get_rotation_Injected(UnityEngine.Quaternion&)
+		void Register_UnityEngine_Random_get_rotation_Injected();
+		Register_UnityEngine_Random_get_rotation_Injected();
+
 	//End Registrations for type : UnityEngine.Random
 
 	//Start Registrations for type : UnityEngine.RectOffset
@@ -1874,6 +1958,10 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Renderer
 
+		//System.Boolean UnityEngine.Renderer::get_enabled()
+		void Register_UnityEngine_Renderer_get_enabled();
+		Register_UnityEngine_Renderer_get_enabled();
+
 		//System.Int32 UnityEngine.Renderer::get_sortingLayerID()
 		void Register_UnityEngine_Renderer_get_sortingLayerID();
 		Register_UnityEngine_Renderer_get_sortingLayerID();
@@ -1889,6 +1977,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Renderer::get_bounds_Injected(UnityEngine.Bounds&)
 		void Register_UnityEngine_Renderer_get_bounds_Injected();
 		Register_UnityEngine_Renderer_get_bounds_Injected();
+
+		//System.Void UnityEngine.Renderer::set_enabled(System.Boolean)
+		void Register_UnityEngine_Renderer_set_enabled();
+		Register_UnityEngine_Renderer_set_enabled();
 
 		//UnityEngine.Material UnityEngine.Renderer::GetMaterial()
 		void Register_UnityEngine_Renderer_GetMaterial();
@@ -1969,6 +2061,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Single UnityEngine.Rigidbody::get_drag()
 		void Register_UnityEngine_Rigidbody_get_drag();
 		Register_UnityEngine_Rigidbody_get_drag();
+
+		//System.Void UnityEngine.Rigidbody::AddExplosionForce_Injected(System.Single,UnityEngine.Vector3&,System.Single,System.Single,UnityEngine.ForceMode)
+		void Register_UnityEngine_Rigidbody_AddExplosionForce_Injected();
+		Register_UnityEngine_Rigidbody_AddExplosionForce_Injected();
 
 		//System.Void UnityEngine.Rigidbody::AddForceAtPosition_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.ForceMode)
 		void Register_UnityEngine_Rigidbody_AddForceAtPosition_Injected();
@@ -2191,6 +2287,26 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_SortingLayer_GetLayerValueFromID();
 
 	//End Registrations for type : UnityEngine.SortingLayer
+
+	//Start Registrations for type : UnityEngine.SphereCollider
+
+		//System.Single UnityEngine.SphereCollider::get_radius()
+		void Register_UnityEngine_SphereCollider_get_radius();
+		Register_UnityEngine_SphereCollider_get_radius();
+
+		//System.Void UnityEngine.SphereCollider::get_center_Injected(UnityEngine.Vector3&)
+		void Register_UnityEngine_SphereCollider_get_center_Injected();
+		Register_UnityEngine_SphereCollider_get_center_Injected();
+
+		//System.Void UnityEngine.SphereCollider::set_center_Injected(UnityEngine.Vector3&)
+		void Register_UnityEngine_SphereCollider_set_center_Injected();
+		Register_UnityEngine_SphereCollider_set_center_Injected();
+
+		//System.Void UnityEngine.SphereCollider::set_radius(System.Single)
+		void Register_UnityEngine_SphereCollider_set_radius();
+		Register_UnityEngine_SphereCollider_set_radius();
+
+	//End Registrations for type : UnityEngine.SphereCollider
 
 	//Start Registrations for type : UnityEngine.SpringJoint
 

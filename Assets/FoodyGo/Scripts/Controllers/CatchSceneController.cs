@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using packt.FoodyGO.Services;
 
 namespace packt.FoodyGO.Controllers
 {
@@ -9,7 +10,15 @@ namespace packt.FoodyGO.Controllers
         public MonsterController monster;
         public GameObject[] frozenDisableList;
         public GameObject[] frozenEnableList;
-                
+
+        void Start()
+        {
+            //var monster = InventoryService.Instance.CreateMonster();
+            //print(monster);
+            var m = MonsterFactory.CreatRandomMonster();
+            print(m);
+        }  
+
         public void OnMonsterHit(GameObject go, Collision collision)
         {
             monster = go.GetComponent<MonsterController>();

@@ -73,17 +73,6 @@ struct VirtActionInvoker0
 		((Action)invokeData.methodPtr)(obj, invokeData.method);
 	}
 };
-template <typename R>
-struct InterfaceFuncInvoker0
-{
-	typedef R (*Func)(void*, const RuntimeMethod*);
-
-	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
-	{
-		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
-		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
-	}
-};
 template <typename T1>
 struct InterfaceActionInvoker1
 {
@@ -93,6 +82,17 @@ struct InterfaceActionInvoker1
 	{
 		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
 		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+template <typename R>
+struct InterfaceFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
 	}
 };
 struct InterfaceActionInvoker0
@@ -522,6 +522,8 @@ extern const RuntimeMethod* Uri_Parse_m736300106_RuntimeMethod_var;
 extern const RuntimeMethod* Uri__ctor_m1916875437_RuntimeMethod_var;
 extern const RuntimeMethod* Uri__ctor_m3040793867_RuntimeMethod_var;
 extern const RuntimeMethod* Uri__ctor_m3577021606_RuntimeMethod_var;
+extern const uint32_t CapturingGroup_CompareTo_m4265294460_MetadataUsageId;
+extern const uint32_t CapturingGroup_Compile_m1789150976_MetadataUsageId;
 extern const uint32_t CharacterClass_AddRange_m3500530626_MetadataUsageId;
 extern const uint32_t CharacterClass_Compile_m3296067317_MetadataUsageId;
 extern const uint32_t CharacterClass__cctor_m443084915_MetadataUsageId;
@@ -5624,6 +5626,10 @@ extern "C" IL2CPP_METHOD_ATTR void Dictionary_2_Add_m1279427033_gshared (Diction
 // System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Int32>::TryGetValue(!0,!1&)
 extern "C" IL2CPP_METHOD_ATTR bool Dictionary_2_TryGetValue_m3959998165_gshared (Dictionary_2_t3384741 * __this, RuntimeObject * p0, int32_t* p1, const RuntimeMethod* method);
 
+// System.Void System.Text.RegularExpressions.Syntax.Group::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void Group__ctor_m2980794822 (Group_t1458537008 * __this, const RuntimeMethod* method);
+// System.Void System.Text.RegularExpressions.Syntax.Group::Compile(System.Text.RegularExpressions.ICompiler,System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void Group_Compile_m3355488790 (Group_t1458537008 * __this, RuntimeObject* ___cmp0, bool ___reverse1, const RuntimeMethod* method);
 // System.Void System.Text.RegularExpressions.Syntax.Expression::.ctor()
 extern "C" IL2CPP_METHOD_ATTR void Expression__ctor_m1600460087 (Expression_t2722445759 * __this, const RuntimeMethod* method);
 // System.Void System.Text.RegularExpressions.IntervalCollection::.ctor()
@@ -5746,10 +5752,6 @@ extern "C" IL2CPP_METHOD_ATTR int32_t String_get_Length_m3847582255 (String_t* _
 extern "C" IL2CPP_METHOD_ATTR Il2CppChar String_get_Chars_m2986988803 (String_t* __this, int32_t p0, const RuntimeMethod* method);
 // System.Void System.Text.RegularExpressions.Syntax.Literal::CompileLiteral(System.String,System.Text.RegularExpressions.ICompiler,System.Boolean,System.Boolean)
 extern "C" IL2CPP_METHOD_ATTR void Literal_CompileLiteral_m4231400317 (RuntimeObject * __this /* static, unused */, String_t* ___str0, RuntimeObject* ___cmp1, bool ___ignore2, bool ___reverse3, const RuntimeMethod* method);
-// System.Void System.Text.RegularExpressions.Syntax.Group::.ctor()
-extern "C" IL2CPP_METHOD_ATTR void Group__ctor_m2980794822 (Group_t1458537008 * __this, const RuntimeMethod* method);
-// System.Void System.Text.RegularExpressions.Syntax.Group::Compile(System.Text.RegularExpressions.ICompiler,System.Boolean)
-extern "C" IL2CPP_METHOD_ATTR void Group_Compile_m3355488790 (Group_t1458537008 * __this, RuntimeObject* ___cmp0, bool ___reverse1, const RuntimeMethod* method);
 // System.Void System.Collections.Hashtable::.ctor()
 extern "C" IL2CPP_METHOD_ATTR void Hashtable__ctor_m1815022027 (Hashtable_t1853889766 * __this, const RuntimeMethod* method);
 // System.Int32 System.Text.RegularExpressions.Syntax.Parser::ParseNumber(System.String,System.Int32&,System.Int32,System.Int32,System.Int32)
@@ -6133,6 +6135,114 @@ extern "C" IL2CPP_METHOD_ATTR void UriParser_set_SchemeName_m266448765 (UriParse
 extern "C" IL2CPP_METHOD_ATTR void UriParser_set_DefaultPort_m4007715058 (UriParser_t3890150400 * __this, int32_t ___value0, const RuntimeMethod* method);
 // System.Void System.UriParser::CreateDefaults()
 extern "C" IL2CPP_METHOD_ATTR void UriParser_CreateDefaults_m404296154 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void System.Text.RegularExpressions.Syntax.CapturingGroup::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void CapturingGroup__ctor_m1932199154 (CapturingGroup_t751358689 * __this, const RuntimeMethod* method)
+{
+	{
+		Group__ctor_m2980794822(__this, /*hidden argument*/NULL);
+		__this->set_gid_1(0);
+		__this->set_name_2((String_t*)NULL);
+		return;
+	}
+}
+// System.Int32 System.Text.RegularExpressions.Syntax.CapturingGroup::get_Index()
+extern "C" IL2CPP_METHOD_ATTR int32_t CapturingGroup_get_Index_m3406974370 (CapturingGroup_t751358689 * __this, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = __this->get_gid_1();
+		return L_0;
+	}
+}
+// System.Void System.Text.RegularExpressions.Syntax.CapturingGroup::set_Index(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void CapturingGroup_set_Index_m1113018009 (CapturingGroup_t751358689 * __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___value0;
+		__this->set_gid_1(L_0);
+		return;
+	}
+}
+// System.String System.Text.RegularExpressions.Syntax.CapturingGroup::get_Name()
+extern "C" IL2CPP_METHOD_ATTR String_t* CapturingGroup_get_Name_m3747712535 (CapturingGroup_t751358689 * __this, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = __this->get_name_2();
+		return L_0;
+	}
+}
+// System.Void System.Text.RegularExpressions.Syntax.CapturingGroup::set_Name(System.String)
+extern "C" IL2CPP_METHOD_ATTR void CapturingGroup_set_Name_m3031988208 (CapturingGroup_t751358689 * __this, String_t* ___value0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->set_name_2(L_0);
+		return;
+	}
+}
+// System.Boolean System.Text.RegularExpressions.Syntax.CapturingGroup::get_IsNamed()
+extern "C" IL2CPP_METHOD_ATTR bool CapturingGroup_get_IsNamed_m570289083 (CapturingGroup_t751358689 * __this, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = __this->get_name_2();
+		return (bool)((((int32_t)((((RuntimeObject*)(String_t*)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+	}
+}
+// System.Void System.Text.RegularExpressions.Syntax.CapturingGroup::Compile(System.Text.RegularExpressions.ICompiler,System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void CapturingGroup_Compile_m1789150976 (CapturingGroup_t751358689 * __this, RuntimeObject* ___cmp0, bool ___reverse1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CapturingGroup_Compile_m1789150976_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RuntimeObject* L_0 = ___cmp0;
+		int32_t L_1 = __this->get_gid_1();
+		NullCheck(L_0);
+		InterfaceActionInvoker1< int32_t >::Invoke(10 /* System.Void System.Text.RegularExpressions.ICompiler::EmitOpen(System.Int32) */, ICompiler_t118549125_il2cpp_TypeInfo_var, L_0, L_1);
+		RuntimeObject* L_2 = ___cmp0;
+		bool L_3 = ___reverse1;
+		Group_Compile_m3355488790(__this, L_2, L_3, /*hidden argument*/NULL);
+		RuntimeObject* L_4 = ___cmp0;
+		int32_t L_5 = __this->get_gid_1();
+		NullCheck(L_4);
+		InterfaceActionInvoker1< int32_t >::Invoke(11 /* System.Void System.Text.RegularExpressions.ICompiler::EmitClose(System.Int32) */, ICompiler_t118549125_il2cpp_TypeInfo_var, L_4, L_5);
+		return;
+	}
+}
+// System.Boolean System.Text.RegularExpressions.Syntax.CapturingGroup::IsComplex()
+extern "C" IL2CPP_METHOD_ATTR bool CapturingGroup_IsComplex_m4061114763 (CapturingGroup_t751358689 * __this, const RuntimeMethod* method)
+{
+	{
+		return (bool)1;
+	}
+}
+// System.Int32 System.Text.RegularExpressions.Syntax.CapturingGroup::CompareTo(System.Object)
+extern "C" IL2CPP_METHOD_ATTR int32_t CapturingGroup_CompareTo_m4265294460 (CapturingGroup_t751358689 * __this, RuntimeObject * ___other0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CapturingGroup_CompareTo_m4265294460_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		int32_t L_0 = __this->get_gid_1();
+		RuntimeObject * L_1 = ___other0;
+		NullCheck(((CapturingGroup_t751358689 *)CastclassClass((RuntimeObject*)L_1, CapturingGroup_t751358689_il2cpp_TypeInfo_var)));
+		int32_t L_2 = ((CapturingGroup_t751358689 *)CastclassClass((RuntimeObject*)L_1, CapturingGroup_t751358689_il2cpp_TypeInfo_var))->get_gid_1();
+		return ((int32_t)il2cpp_codegen_subtract((int32_t)L_0, (int32_t)L_2));
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"

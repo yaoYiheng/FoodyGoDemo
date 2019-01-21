@@ -139,7 +139,7 @@ namespace packt.FoodyGO.TouchInput
                 ca.disarmed = false;
             }
 
-            Invoke("ResetTarget", 5);            
+            Invoke("ResetTarget", 2);            
         }
                
 

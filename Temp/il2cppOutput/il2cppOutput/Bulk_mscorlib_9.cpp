@@ -963,6 +963,7 @@ extern const RuntimeMethod* String_CreateString_m3400201881_RuntimeMethod_var;
 extern const RuntimeMethod* String_CreateString_m4016935005_RuntimeMethod_var;
 extern const RuntimeMethod* String_CreateString_m860434552_RuntimeMethod_var;
 extern const RuntimeMethod* String_EndsWith_m1901926500_RuntimeMethod_var;
+extern const RuntimeMethod* String_EndsWith_m2637493491_RuntimeMethod_var;
 extern const RuntimeMethod* String_FormatHelper_m3913915042_RuntimeMethod_var;
 extern const RuntimeMethod* String_IndexOfAny_m2323029521_RuntimeMethod_var;
 extern const RuntimeMethod* String_IndexOfAny_m2882391940_RuntimeMethod_var;
@@ -1233,6 +1234,7 @@ extern const uint32_t String_CreateString_m3439913850_MetadataUsageId;
 extern const uint32_t String_CreateString_m4016935005_MetadataUsageId;
 extern const uint32_t String_CreateString_m860434552_MetadataUsageId;
 extern const uint32_t String_EndsWith_m1901926500_MetadataUsageId;
+extern const uint32_t String_EndsWith_m2637493491_MetadataUsageId;
 extern const uint32_t String_Equals_m1039194686_MetadataUsageId;
 extern const uint32_t String_Equals_m2270643605_MetadataUsageId;
 extern const uint32_t String_FormatHelper_m3913915042_MetadataUsageId;
@@ -33287,6 +33289,157 @@ IL_00b0:
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_35, NULL, String_StartsWith_m2640722675_RuntimeMethod_var);
 	}
 }
+// System.Boolean System.String::EndsWith(System.String,System.StringComparison)
+extern "C" IL2CPP_METHOD_ATTR bool String_EndsWith_m2637493491 (String_t* __this, String_t* ___value0, int32_t ___comparisonType1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (String_EndsWith_m2637493491_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		String_t* L_0 = ___value0;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_1 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_1, _stringLiteral3493618073, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, NULL, String_EndsWith_m2637493491_RuntimeMethod_var);
+	}
+
+IL_0011:
+	{
+		int32_t L_2 = ___comparisonType1;
+		V_1 = L_2;
+		int32_t L_3 = V_1;
+		switch (L_3)
+		{
+			case 0:
+			{
+				goto IL_0036;
+			}
+			case 1:
+			{
+				goto IL_0049;
+			}
+			case 2:
+			{
+				goto IL_005c;
+			}
+			case 3:
+			{
+				goto IL_006f;
+			}
+			case 4:
+			{
+				goto IL_0082;
+			}
+			case 5:
+			{
+				goto IL_0099;
+			}
+		}
+	}
+	{
+		goto IL_00b0;
+	}
+
+IL_0036:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(CultureInfo_t4157843068_il2cpp_TypeInfo_var);
+		CultureInfo_t4157843068 * L_4 = CultureInfo_get_CurrentCulture_m1632690660(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		CompareInfo_t1092934962 * L_5 = VirtFuncInvoker0< CompareInfo_t1092934962 * >::Invoke(11 /* System.Globalization.CompareInfo System.Globalization.CultureInfo::get_CompareInfo() */, L_4);
+		String_t* L_6 = ___value0;
+		NullCheck(L_5);
+		bool L_7 = VirtFuncInvoker3< bool, String_t*, String_t*, int32_t >::Invoke(12 /* System.Boolean System.Globalization.CompareInfo::IsSuffix(System.String,System.String,System.Globalization.CompareOptions) */, L_5, __this, L_6, 0);
+		return L_7;
+	}
+
+IL_0049:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(CultureInfo_t4157843068_il2cpp_TypeInfo_var);
+		CultureInfo_t4157843068 * L_8 = CultureInfo_get_CurrentCulture_m1632690660(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		CompareInfo_t1092934962 * L_9 = VirtFuncInvoker0< CompareInfo_t1092934962 * >::Invoke(11 /* System.Globalization.CompareInfo System.Globalization.CultureInfo::get_CompareInfo() */, L_8);
+		String_t* L_10 = ___value0;
+		NullCheck(L_9);
+		bool L_11 = VirtFuncInvoker3< bool, String_t*, String_t*, int32_t >::Invoke(12 /* System.Boolean System.Globalization.CompareInfo::IsSuffix(System.String,System.String,System.Globalization.CompareOptions) */, L_9, __this, L_10, 1);
+		return L_11;
+	}
+
+IL_005c:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(CultureInfo_t4157843068_il2cpp_TypeInfo_var);
+		CultureInfo_t4157843068 * L_12 = CultureInfo_get_InvariantCulture_m3532445182(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_12);
+		CompareInfo_t1092934962 * L_13 = VirtFuncInvoker0< CompareInfo_t1092934962 * >::Invoke(11 /* System.Globalization.CompareInfo System.Globalization.CultureInfo::get_CompareInfo() */, L_12);
+		String_t* L_14 = ___value0;
+		NullCheck(L_13);
+		bool L_15 = VirtFuncInvoker3< bool, String_t*, String_t*, int32_t >::Invoke(12 /* System.Boolean System.Globalization.CompareInfo::IsSuffix(System.String,System.String,System.Globalization.CompareOptions) */, L_13, __this, L_14, 0);
+		return L_15;
+	}
+
+IL_006f:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(CultureInfo_t4157843068_il2cpp_TypeInfo_var);
+		CultureInfo_t4157843068 * L_16 = CultureInfo_get_InvariantCulture_m3532445182(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_16);
+		CompareInfo_t1092934962 * L_17 = VirtFuncInvoker0< CompareInfo_t1092934962 * >::Invoke(11 /* System.Globalization.CompareInfo System.Globalization.CultureInfo::get_CompareInfo() */, L_16);
+		String_t* L_18 = ___value0;
+		NullCheck(L_17);
+		bool L_19 = VirtFuncInvoker3< bool, String_t*, String_t*, int32_t >::Invoke(12 /* System.Boolean System.Globalization.CompareInfo::IsSuffix(System.String,System.String,System.Globalization.CompareOptions) */, L_17, __this, L_18, 1);
+		return L_19;
+	}
+
+IL_0082:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(CultureInfo_t4157843068_il2cpp_TypeInfo_var);
+		CultureInfo_t4157843068 * L_20 = CultureInfo_get_CurrentCulture_m1632690660(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_20);
+		CompareInfo_t1092934962 * L_21 = VirtFuncInvoker0< CompareInfo_t1092934962 * >::Invoke(11 /* System.Globalization.CompareInfo System.Globalization.CultureInfo::get_CompareInfo() */, L_20);
+		String_t* L_22 = ___value0;
+		NullCheck(L_21);
+		bool L_23 = VirtFuncInvoker3< bool, String_t*, String_t*, int32_t >::Invoke(12 /* System.Boolean System.Globalization.CompareInfo::IsSuffix(System.String,System.String,System.Globalization.CompareOptions) */, L_21, __this, L_22, ((int32_t)1073741824));
+		return L_23;
+	}
+
+IL_0099:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(CultureInfo_t4157843068_il2cpp_TypeInfo_var);
+		CultureInfo_t4157843068 * L_24 = CultureInfo_get_CurrentCulture_m1632690660(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_24);
+		CompareInfo_t1092934962 * L_25 = VirtFuncInvoker0< CompareInfo_t1092934962 * >::Invoke(11 /* System.Globalization.CompareInfo System.Globalization.CultureInfo::get_CompareInfo() */, L_24);
+		String_t* L_26 = ___value0;
+		NullCheck(L_25);
+		bool L_27 = VirtFuncInvoker3< bool, String_t*, String_t*, int32_t >::Invoke(12 /* System.Boolean System.Globalization.CompareInfo::IsSuffix(System.String,System.String,System.Globalization.CompareOptions) */, L_25, __this, L_26, ((int32_t)268435456));
+		return L_27;
+	}
+
+IL_00b0:
+	{
+		ObjectU5BU5D_t2843939325* L_28 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_t2843939325* L_29 = L_28;
+		int32_t L_30 = ___comparisonType1;
+		int32_t L_31 = L_30;
+		RuntimeObject * L_32 = Box(StringComparison_t3657712135_il2cpp_TypeInfo_var, &L_31);
+		NullCheck(L_29);
+		ArrayElementTypeCheck (L_29, L_32);
+		(L_29)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_32);
+		String_t* L_33 = Locale_GetText_m1601577974(NULL /*static, unused*/, _stringLiteral3564128177, L_29, /*hidden argument*/NULL);
+		V_0 = L_33;
+		String_t* L_34 = V_0;
+		ArgumentException_t132251570 * L_35 = (ArgumentException_t132251570 *)il2cpp_codegen_object_new(ArgumentException_t132251570_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m1216717135(L_35, L_34, _stringLiteral744351982, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_35, NULL, String_EndsWith_m2637493491_RuntimeMethod_var);
+	}
+}
 // System.String System.String::Replace(System.Char,System.Char)
 extern "C" IL2CPP_METHOD_ATTR String_t* String_Replace_m3726209165 (String_t* __this, Il2CppChar ___oldChar0, Il2CppChar ___newChar1, const RuntimeMethod* method)
 {
@@ -43182,7 +43335,7 @@ IL_00a6:
 			{
 				Type_t * L_9 = V_1;
 				NullCheck(L_9);
-				RuntimeObject * L_10 = VirtFuncInvoker8< RuntimeObject *, String_t*, int32_t, Binder_t2999457153 *, RuntimeObject *, ObjectU5BU5D_t2843939325*, ParameterModifierU5BU5D_t2943407543*, CultureInfo_t4157843068 *, StringU5BU5D_t1281789340* >::Invoke(76 /* System.Object System.Type::InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[]) */, L_9, _stringLiteral3624839647, ((int32_t)4120), (Binder_t2999457153 *)NULL, NULL, (ObjectU5BU5D_t2843939325*)(ObjectU5BU5D_t2843939325*)NULL, (ParameterModifierU5BU5D_t2943407543*)(ParameterModifierU5BU5D_t2943407543*)NULL, (CultureInfo_t4157843068 *)NULL, (StringU5BU5D_t1281789340*)(StringU5BU5D_t1281789340*)NULL);
+				RuntimeObject * L_10 = VirtFuncInvoker8< RuntimeObject *, String_t*, int32_t, Binder_t2999457153 *, RuntimeObject *, ObjectU5BU5D_t2843939325*, ParameterModifierU5BU5D_t2943407543*, CultureInfo_t4157843068 *, StringU5BU5D_t1281789340* >::Invoke(77 /* System.Object System.Type::InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[]) */, L_9, _stringLiteral3624839647, ((int32_t)4120), (Binder_t2999457153 *)NULL, NULL, (ObjectU5BU5D_t2843939325*)(ObjectU5BU5D_t2843939325*)NULL, (ParameterModifierU5BU5D_t2943407543*)(ParameterModifierU5BU5D_t2943407543*)NULL, (CultureInfo_t4157843068 *)NULL, (StringU5BU5D_t1281789340*)(StringU5BU5D_t1281789340*)NULL);
 				V_2 = L_10;
 				RuntimeObject * L_11 = V_2;
 				if (L_11)
@@ -43264,7 +43417,7 @@ IL_00fc:
 				RuntimeObject * L_14 = V_2;
 				ObjectU5BU5D_t2843939325* L_15 = ___args1;
 				NullCheck(L_12);
-				RuntimeObject * L_16 = VirtFuncInvoker8< RuntimeObject *, String_t*, int32_t, Binder_t2999457153 *, RuntimeObject *, ObjectU5BU5D_t2843939325*, ParameterModifierU5BU5D_t2943407543*, CultureInfo_t4157843068 *, StringU5BU5D_t1281789340* >::Invoke(76 /* System.Object System.Type::InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[]) */, L_12, L_13, ((int32_t)276), (Binder_t2999457153 *)NULL, L_14, L_15, (ParameterModifierU5BU5D_t2943407543*)(ParameterModifierU5BU5D_t2943407543*)NULL, (CultureInfo_t4157843068 *)NULL, (StringU5BU5D_t1281789340*)(StringU5BU5D_t1281789340*)NULL);
+				RuntimeObject * L_16 = VirtFuncInvoker8< RuntimeObject *, String_t*, int32_t, Binder_t2999457153 *, RuntimeObject *, ObjectU5BU5D_t2843939325*, ParameterModifierU5BU5D_t2943407543*, CultureInfo_t4157843068 *, StringU5BU5D_t1281789340* >::Invoke(77 /* System.Object System.Type::InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[]) */, L_12, L_13, ((int32_t)276), (Binder_t2999457153 *)NULL, L_14, L_15, (ParameterModifierU5BU5D_t2943407543*)(ParameterModifierU5BU5D_t2943407543*)NULL, (CultureInfo_t4157843068 *)NULL, (StringU5BU5D_t1281789340*)(StringU5BU5D_t1281789340*)NULL);
 				V_3 = L_16;
 				IL2CPP_LEAVE(0x13F, FINALLY_0138);
 			}

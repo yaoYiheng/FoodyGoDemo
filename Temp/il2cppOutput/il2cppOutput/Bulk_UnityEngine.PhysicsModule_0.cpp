@@ -52,6 +52,8 @@ struct Object_t631007953;
 struct RaycastHitU5BU5D_t1690781147;
 // UnityEngine.Rigidbody
 struct Rigidbody_t3916780224;
+// UnityEngine.SphereCollider
+struct SphereCollider_t2077223608;
 // UnityEngine.SpringJoint
 struct SpringJoint_t1912369980;
 // UnityEngine.Transform
@@ -1609,6 +1611,10 @@ extern "C" IL2CPP_METHOD_ATTR int32_t CharacterController_Move_Injected_m2968855
 extern "C" IL2CPP_METHOD_ATTR void CharacterController_get_velocity_Injected_m3580965237 (CharacterController_t1138636865 * __this, Vector3_t3722313464 * ___ret0, const RuntimeMethod* method);
 // System.Void UnityEngine.Component::.ctor()
 extern "C" IL2CPP_METHOD_ATTR void Component__ctor_m1928064382 (Component_t1923634451 * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.Collider::Raycast_Injected(UnityEngine.Ray&,System.Single,System.Boolean&,UnityEngine.RaycastHit&)
+extern "C" IL2CPP_METHOD_ATTR void Collider_Raycast_Injected_m4000686358 (Collider_t1773347010 * __this, Ray_t3785851493 * ___ray0, float ___maxDistance1, bool* ___hasHit2, RaycastHit_t1056001966 * ___ret3, const RuntimeMethod* method);
+// UnityEngine.RaycastHit UnityEngine.Collider::Raycast(UnityEngine.Ray,System.Single,System.Boolean&)
+extern "C" IL2CPP_METHOD_ATTR RaycastHit_t1056001966  Collider_Raycast_m252925751 (Collider_t1773347010 * __this, Ray_t3785851493  ___ray0, float ___maxDistance1, bool* ___hasHit2, const RuntimeMethod* method);
 // System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)
 extern "C" IL2CPP_METHOD_ATTR bool Object_op_Inequality_m4071470834 (RuntimeObject * __this /* static, unused */, Object_t631007953 * p0, Object_t631007953 * p1, const RuntimeMethod* method);
 // UnityEngine.GameObject UnityEngine.Component::get_gameObject()
@@ -1705,6 +1711,14 @@ extern "C" IL2CPP_METHOD_ATTR void Rigidbody_AddTorque_Injected_m1490512715 (Rig
 extern "C" IL2CPP_METHOD_ATTR void Rigidbody_AddTorque_m1107708961 (Rigidbody_t3916780224 * __this, Vector3_t3722313464  ___torque0, int32_t ___mode1, const RuntimeMethod* method);
 // System.Void UnityEngine.Rigidbody::AddForceAtPosition_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.ForceMode)
 extern "C" IL2CPP_METHOD_ATTR void Rigidbody_AddForceAtPosition_Injected_m2161206961 (Rigidbody_t3916780224 * __this, Vector3_t3722313464 * ___force0, Vector3_t3722313464 * ___position1, int32_t ___mode2, const RuntimeMethod* method);
+// System.Void UnityEngine.Rigidbody::AddForceAtPosition(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.ForceMode)
+extern "C" IL2CPP_METHOD_ATTR void Rigidbody_AddForceAtPosition_m4182376850 (Rigidbody_t3916780224 * __this, Vector3_t3722313464  ___force0, Vector3_t3722313464  ___position1, int32_t ___mode2, const RuntimeMethod* method);
+// System.Void UnityEngine.Rigidbody::AddExplosionForce_Injected(System.Single,UnityEngine.Vector3&,System.Single,System.Single,UnityEngine.ForceMode)
+extern "C" IL2CPP_METHOD_ATTR void Rigidbody_AddExplosionForce_Injected_m674686496 (Rigidbody_t3916780224 * __this, float ___explosionForce0, Vector3_t3722313464 * ___explosionPosition1, float ___explosionRadius2, float ___upwardsModifier3, int32_t ___mode4, const RuntimeMethod* method);
+// System.Void UnityEngine.SphereCollider::get_center_Injected(UnityEngine.Vector3&)
+extern "C" IL2CPP_METHOD_ATTR void SphereCollider_get_center_Injected_m1495144477 (SphereCollider_t2077223608 * __this, Vector3_t3722313464 * ___ret0, const RuntimeMethod* method);
+// System.Void UnityEngine.SphereCollider::set_center_Injected(UnityEngine.Vector3&)
+extern "C" IL2CPP_METHOD_ATTR void SphereCollider_set_center_Injected_m3896894594 (SphereCollider_t2077223608 * __this, Vector3_t3722313464 * ___value0, const RuntimeMethod* method);
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -1903,6 +1917,51 @@ extern "C" IL2CPP_METHOD_ATTR bool Collider_get_isTrigger_m2414312872 (Collider_
 	_il2cpp_icall_func = (Collider_get_isTrigger_m2414312872_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Collider::get_isTrigger()");
 	bool retVal = _il2cpp_icall_func(__this);
 	return retVal;
+}
+// UnityEngine.RaycastHit UnityEngine.Collider::Raycast(UnityEngine.Ray,System.Single,System.Boolean&)
+extern "C" IL2CPP_METHOD_ATTR RaycastHit_t1056001966  Collider_Raycast_m252925751 (Collider_t1773347010 * __this, Ray_t3785851493  ___ray0, float ___maxDistance1, bool* ___hasHit2, const RuntimeMethod* method)
+{
+	RaycastHit_t1056001966  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		float L_0 = ___maxDistance1;
+		bool* L_1 = ___hasHit2;
+		Collider_Raycast_Injected_m4000686358(__this, (Ray_t3785851493 *)(&___ray0), L_0, (bool*)L_1, (RaycastHit_t1056001966 *)(&V_0), /*hidden argument*/NULL);
+		RaycastHit_t1056001966  L_2 = V_0;
+		return L_2;
+	}
+}
+// System.Boolean UnityEngine.Collider::Raycast(UnityEngine.Ray,UnityEngine.RaycastHit&,System.Single)
+extern "C" IL2CPP_METHOD_ATTR bool Collider_Raycast_m2876906360 (Collider_t1773347010 * __this, Ray_t3785851493  ___ray0, RaycastHit_t1056001966 * ___hitInfo1, float ___maxDistance2, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	{
+		V_0 = (bool)0;
+		RaycastHit_t1056001966 * L_0 = ___hitInfo1;
+		Ray_t3785851493  L_1 = ___ray0;
+		float L_2 = ___maxDistance2;
+		RaycastHit_t1056001966  L_3 = Collider_Raycast_m252925751(__this, L_1, L_2, (bool*)(&V_0), /*hidden argument*/NULL);
+		*(RaycastHit_t1056001966 *)L_0 = L_3;
+		bool L_4 = V_0;
+		V_1 = L_4;
+		goto IL_001a;
+	}
+
+IL_001a:
+	{
+		bool L_5 = V_1;
+		return L_5;
+	}
+}
+// System.Void UnityEngine.Collider::Raycast_Injected(UnityEngine.Ray&,System.Single,System.Boolean&,UnityEngine.RaycastHit&)
+extern "C" IL2CPP_METHOD_ATTR void Collider_Raycast_Injected_m4000686358 (Collider_t1773347010 * __this, Ray_t3785851493 * ___ray0, float ___maxDistance1, bool* ___hasHit2, RaycastHit_t1056001966 * ___ret3, const RuntimeMethod* method)
+{
+	typedef void (*Collider_Raycast_Injected_m4000686358_ftn) (Collider_t1773347010 *, Ray_t3785851493 *, float, bool*, RaycastHit_t1056001966 *);
+	static Collider_Raycast_Injected_m4000686358_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Collider_Raycast_Injected_m4000686358_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Collider::Raycast_Injected(UnityEngine.Ray&,System.Single,System.Boolean&,UnityEngine.RaycastHit&)");
+	_il2cpp_icall_func(__this, ___ray0, ___maxDistance1, ___hasHit2, ___ret3);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -3605,6 +3664,28 @@ extern "C" IL2CPP_METHOD_ATTR void Rigidbody_AddForceAtPosition_m4182376850 (Rig
 		return;
 	}
 }
+// System.Void UnityEngine.Rigidbody::AddForceAtPosition(UnityEngine.Vector3,UnityEngine.Vector3)
+extern "C" IL2CPP_METHOD_ATTR void Rigidbody_AddForceAtPosition_m2168455454 (Rigidbody_t3916780224 * __this, Vector3_t3722313464  ___force0, Vector3_t3722313464  ___position1, const RuntimeMethod* method)
+{
+	{
+		Vector3_t3722313464  L_0 = ___force0;
+		Vector3_t3722313464  L_1 = ___position1;
+		Rigidbody_AddForceAtPosition_m4182376850(__this, L_0, L_1, 0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Rigidbody::AddExplosionForce(System.Single,UnityEngine.Vector3,System.Single,System.Single,UnityEngine.ForceMode)
+extern "C" IL2CPP_METHOD_ATTR void Rigidbody_AddExplosionForce_m1698937293 (Rigidbody_t3916780224 * __this, float ___explosionForce0, Vector3_t3722313464  ___explosionPosition1, float ___explosionRadius2, float ___upwardsModifier3, int32_t ___mode4, const RuntimeMethod* method)
+{
+	{
+		float L_0 = ___explosionForce0;
+		float L_1 = ___explosionRadius2;
+		float L_2 = ___upwardsModifier3;
+		int32_t L_3 = ___mode4;
+		Rigidbody_AddExplosionForce_Injected_m674686496(__this, L_0, (Vector3_t3722313464 *)(&___explosionPosition1), L_1, L_2, L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
 // System.Void UnityEngine.Rigidbody::get_velocity_Injected(UnityEngine.Vector3&)
 extern "C" IL2CPP_METHOD_ATTR void Rigidbody_get_velocity_Injected_m706438584 (Rigidbody_t3916780224 * __this, Vector3_t3722313464 * ___ret0, const RuntimeMethod* method)
 {
@@ -3668,6 +3749,15 @@ extern "C" IL2CPP_METHOD_ATTR void Rigidbody_AddForceAtPosition_Injected_m216120
 	_il2cpp_icall_func = (Rigidbody_AddForceAtPosition_Injected_m2161206961_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rigidbody::AddForceAtPosition_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.ForceMode)");
 	_il2cpp_icall_func(__this, ___force0, ___position1, ___mode2);
 }
+// System.Void UnityEngine.Rigidbody::AddExplosionForce_Injected(System.Single,UnityEngine.Vector3&,System.Single,System.Single,UnityEngine.ForceMode)
+extern "C" IL2CPP_METHOD_ATTR void Rigidbody_AddExplosionForce_Injected_m674686496 (Rigidbody_t3916780224 * __this, float ___explosionForce0, Vector3_t3722313464 * ___explosionPosition1, float ___explosionRadius2, float ___upwardsModifier3, int32_t ___mode4, const RuntimeMethod* method)
+{
+	typedef void (*Rigidbody_AddExplosionForce_Injected_m674686496_ftn) (Rigidbody_t3916780224 *, float, Vector3_t3722313464 *, float, float, int32_t);
+	static Rigidbody_AddExplosionForce_Injected_m674686496_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Rigidbody_AddExplosionForce_Injected_m674686496_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rigidbody::AddExplosionForce_Injected(System.Single,UnityEngine.Vector3&,System.Single,System.Single,UnityEngine.ForceMode)");
+	_il2cpp_icall_func(__this, ___explosionForce0, ___explosionPosition1, ___explosionRadius2, ___upwardsModifier3, ___mode4);
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -3684,6 +3774,62 @@ extern "C" IL2CPP_METHOD_ATTR void Rigidbody_AddForceAtPosition_Injected_m216120
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// UnityEngine.Vector3 UnityEngine.SphereCollider::get_center()
+extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  SphereCollider_get_center_m3629329558 (SphereCollider_t2077223608 * __this, const RuntimeMethod* method)
+{
+	Vector3_t3722313464  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		SphereCollider_get_center_Injected_m1495144477(__this, (Vector3_t3722313464 *)(&V_0), /*hidden argument*/NULL);
+		Vector3_t3722313464  L_0 = V_0;
+		return L_0;
+	}
+}
+// System.Void UnityEngine.SphereCollider::set_center(UnityEngine.Vector3)
+extern "C" IL2CPP_METHOD_ATTR void SphereCollider_set_center_m583742655 (SphereCollider_t2077223608 * __this, Vector3_t3722313464  ___value0, const RuntimeMethod* method)
+{
+	{
+		SphereCollider_set_center_Injected_m3896894594(__this, (Vector3_t3722313464 *)(&___value0), /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Single UnityEngine.SphereCollider::get_radius()
+extern "C" IL2CPP_METHOD_ATTR float SphereCollider_get_radius_m3258976711 (SphereCollider_t2077223608 * __this, const RuntimeMethod* method)
+{
+	typedef float (*SphereCollider_get_radius_m3258976711_ftn) (SphereCollider_t2077223608 *);
+	static SphereCollider_get_radius_m3258976711_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (SphereCollider_get_radius_m3258976711_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SphereCollider::get_radius()");
+	float retVal = _il2cpp_icall_func(__this);
+	return retVal;
+}
+// System.Void UnityEngine.SphereCollider::set_radius(System.Single)
+extern "C" IL2CPP_METHOD_ATTR void SphereCollider_set_radius_m4130116958 (SphereCollider_t2077223608 * __this, float ___value0, const RuntimeMethod* method)
+{
+	typedef void (*SphereCollider_set_radius_m4130116958_ftn) (SphereCollider_t2077223608 *, float);
+	static SphereCollider_set_radius_m4130116958_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (SphereCollider_set_radius_m4130116958_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SphereCollider::set_radius(System.Single)");
+	_il2cpp_icall_func(__this, ___value0);
+}
+// System.Void UnityEngine.SphereCollider::get_center_Injected(UnityEngine.Vector3&)
+extern "C" IL2CPP_METHOD_ATTR void SphereCollider_get_center_Injected_m1495144477 (SphereCollider_t2077223608 * __this, Vector3_t3722313464 * ___ret0, const RuntimeMethod* method)
+{
+	typedef void (*SphereCollider_get_center_Injected_m1495144477_ftn) (SphereCollider_t2077223608 *, Vector3_t3722313464 *);
+	static SphereCollider_get_center_Injected_m1495144477_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (SphereCollider_get_center_Injected_m1495144477_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SphereCollider::get_center_Injected(UnityEngine.Vector3&)");
+	_il2cpp_icall_func(__this, ___ret0);
+}
+// System.Void UnityEngine.SphereCollider::set_center_Injected(UnityEngine.Vector3&)
+extern "C" IL2CPP_METHOD_ATTR void SphereCollider_set_center_Injected_m3896894594 (SphereCollider_t2077223608 * __this, Vector3_t3722313464 * ___value0, const RuntimeMethod* method)
+{
+	typedef void (*SphereCollider_set_center_Injected_m3896894594_ftn) (SphereCollider_t2077223608 *, Vector3_t3722313464 *);
+	static SphereCollider_set_center_Injected_m3896894594_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (SphereCollider_set_center_Injected_m3896894594_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SphereCollider::set_center_Injected(UnityEngine.Vector3&)");
+	_il2cpp_icall_func(__this, ___value0);
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

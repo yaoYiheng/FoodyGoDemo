@@ -449,7 +449,15 @@ extern "C" void QueuedCommand_t3856573170_marshal_pinvoke(void* managedStructure
 extern "C" void QueuedCommand_t3856573170_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 extern "C" void QueuedCommand_t3856573170_marshal_pinvoke_cleanup(void* marshaledStructure);
 extern const RuntimeType QueuedCommand_t3856573170_0_0_0;
-extern Il2CppInteropData g_Il2CppInteropData[128] = 
+extern "C" void IndexInfo_t1680796658_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+extern "C" void IndexInfo_t1680796658_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+extern "C" void IndexInfo_t1680796658_marshal_pinvoke_cleanup(void* marshaledStructure);
+extern const RuntimeType IndexInfo_t1680796658_0_0_0;
+extern "C" void IndexedColumn_t3080689016_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+extern "C" void IndexedColumn_t3080689016_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+extern "C" void IndexedColumn_t3080689016_marshal_pinvoke_cleanup(void* marshaledStructure);
+extern const RuntimeType IndexedColumn_t3080689016_0_0_0;
+extern Il2CppInteropData g_Il2CppInteropData[130] = 
 {
 	{ NULL, Context_t1744531130_marshal_pinvoke, Context_t1744531130_marshal_pinvoke_back, Context_t1744531130_marshal_pinvoke_cleanup, NULL, NULL, &Context_t1744531130_0_0_0 } /* Mono.Globalization.Unicode.SimpleCollator/Context */,
 	{ NULL, Escape_t3294788190_marshal_pinvoke, Escape_t3294788190_marshal_pinvoke_back, Escape_t3294788190_marshal_pinvoke_cleanup, NULL, NULL, &Escape_t3294788190_0_0_0 } /* Mono.Globalization.Unicode.SimpleCollator/Escape */,
@@ -578,5 +586,7 @@ extern Il2CppInteropData g_Il2CppInteropData[128] =
 	{ DelegatePInvokeWrapper_Callback_t1969551140, NULL, NULL, NULL, NULL, NULL, &Callback_t1969551140_0_0_0 } /* CUDLR.CommandAttribute/Callback */,
 	{ DelegatePInvokeWrapper_CallbackSimple_t200441164, NULL, NULL, NULL, NULL, NULL, &CallbackSimple_t200441164_0_0_0 } /* CUDLR.CommandAttribute/CallbackSimple */,
 	{ NULL, QueuedCommand_t3856573170_marshal_pinvoke, QueuedCommand_t3856573170_marshal_pinvoke_back, QueuedCommand_t3856573170_marshal_pinvoke_cleanup, NULL, NULL, &QueuedCommand_t3856573170_0_0_0 } /* CUDLR.QueuedCommand */,
+	{ NULL, IndexInfo_t1680796658_marshal_pinvoke, IndexInfo_t1680796658_marshal_pinvoke_back, IndexInfo_t1680796658_marshal_pinvoke_cleanup, NULL, NULL, &IndexInfo_t1680796658_0_0_0 } /* SQLite4Unity3d.SQLiteConnection/IndexInfo */,
+	{ NULL, IndexedColumn_t3080689016_marshal_pinvoke, IndexedColumn_t3080689016_marshal_pinvoke_back, IndexedColumn_t3080689016_marshal_pinvoke_cleanup, NULL, NULL, &IndexedColumn_t3080689016_0_0_0 } /* SQLite4Unity3d.SQLiteConnection/IndexedColumn */,
 	NULL,
 };

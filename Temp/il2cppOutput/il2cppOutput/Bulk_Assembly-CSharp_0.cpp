@@ -106,6 +106,17 @@ struct VirtFuncInvoker3
 		return ((Func)invokeData.methodPtr)(obj, p1, p2, p3, invokeData.method);
 	}
 };
+template <typename R, typename T1, typename T2, typename T3, typename T4, typename T5>
+struct VirtFuncInvoker5
+{
+	typedef R (*Func)(void*, T1, T2, T3, T4, T5, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1, T2 p2, T3 p3, T4 p4, T5 p5)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, p1, p2, p3, p4, p5, invokeData.method);
+	}
+};
 template <typename T1>
 struct GenericVirtActionInvoker1
 {
@@ -171,6 +182,17 @@ struct InterfaceActionInvoker2
 	{
 		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
 		((Action)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
+	}
+};
+template <typename R>
+struct InterfaceFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
 	}
 };
 template <typename T1>
@@ -245,10 +267,96 @@ struct U3CRegisterFileHandlersU3Ec__AnonStorey1_t3770007581;
 struct FileHandlerDelegate_t13458300;
 // CharacterGPSCopmassController
 struct CharacterGPSCopmassController_t3516088559;
+// GE_Elementals_Demo
+struct GE_Elementals_Demo_t1266050954;
+// SQLite4Unity3d.AutoIncrementAttribute
+struct AutoIncrementAttribute_t3792157881;
+// SQLite4Unity3d.BaseTableQuery
+struct BaseTableQuery_t440437958;
+// SQLite4Unity3d.BaseTableQuery/Ordering
+struct Ordering_t647619184;
+// SQLite4Unity3d.CollationAttribute
+struct CollationAttribute_t3564781786;
+// SQLite4Unity3d.ColumnAttribute
+struct ColumnAttribute_t3583764011;
+// SQLite4Unity3d.IgnoreAttribute
+struct IgnoreAttribute_t1003697248;
+// SQLite4Unity3d.IndexedAttribute
+struct IndexedAttribute_t384353508;
+// SQLite4Unity3d.MaxLengthAttribute
+struct MaxLengthAttribute_t2329480580;
+// SQLite4Unity3d.NotNullAttribute
+struct NotNullAttribute_t1344045378;
+// SQLite4Unity3d.NotNullConstraintViolationException
+struct NotNullConstraintViolationException_t3886364687;
+// SQLite4Unity3d.NotNullConstraintViolationException/<NotNullConstraintViolationException>c__AnonStorey0
+struct U3CNotNullConstraintViolationExceptionU3Ec__AnonStorey0_t2023264365;
+// SQLite4Unity3d.PreparedSqlLiteInsertCommand
+struct PreparedSqlLiteInsertCommand_t994658783;
+// SQLite4Unity3d.PrimaryKeyAttribute
+struct PrimaryKeyAttribute_t1120256698;
+// SQLite4Unity3d.SQLiteCommand
+struct SQLiteCommand_t3688707480;
+// SQLite4Unity3d.SQLiteCommand/Binding
+struct Binding_t2786839072;
+// SQLite4Unity3d.SQLiteCommand/Binding[]
+struct BindingU5BU5D_t2465081697;
+// SQLite4Unity3d.SQLiteConnection
+struct SQLiteConnection_t3070079188;
+// SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey0
+struct U3CInsertAllU3Ec__AnonStorey0_t106977603;
+// SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey1
+struct U3CInsertAllU3Ec__AnonStorey1_t106977604;
+// SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey2
+struct U3CInsertAllU3Ec__AnonStorey2_t106977601;
+// SQLite4Unity3d.SQLiteConnection/<Update>c__AnonStorey3
+struct U3CUpdateU3Ec__AnonStorey3_t445741020;
+// SQLite4Unity3d.SQLiteConnection/<UpdateAll>c__AnonStorey4
+struct U3CUpdateAllU3Ec__AnonStorey4_t1584503381;
+// SQLite4Unity3d.SQLiteConnection/ColumnInfo
+struct ColumnInfo_t2560133827;
+// SQLite4Unity3d.SQLiteConnection/ColumnInfo[]
+struct ColumnInfoU5BU5D_t3904641746;
+// SQLite4Unity3d.SQLiteConnection/IndexInfo[]
+struct IndexInfoU5BU5D_t1204222983;
+// SQLite4Unity3d.SQLiteConnection/IndexedColumn[]
+struct IndexedColumnU5BU5D_t692768169;
+// SQLite4Unity3d.SQLiteConnectionString
+struct SQLiteConnectionString_t3632030467;
+// SQLite4Unity3d.SQLiteException
+struct SQLiteException_t1356363765;
+// SQLite4Unity3d.TableAttribute
+struct TableAttribute_t3728577771;
+// SQLite4Unity3d.TableMapping
+struct TableMapping_t2276399492;
+// SQLite4Unity3d.TableMapping/<FindColumn>c__AnonStorey1
+struct U3CFindColumnU3Ec__AnonStorey1_t4099938701;
+// SQLite4Unity3d.TableMapping/<FindColumnWithPropertyName>c__AnonStorey0
+struct U3CFindColumnWithPropertyNameU3Ec__AnonStorey0_t3952487827;
+// SQLite4Unity3d.TableMapping/Column
+struct Column_t1357940583;
+// SQLite4Unity3d.TableMapping/Column[]
+struct ColumnU5BU5D_t4060676894;
+// SQLite4Unity3d.TableMapping[]
+struct TableMappingU5BU5D_t1004035053;
+// SQLite4Unity3d.TableQuery`1<System.Object>
+struct TableQuery_1_t1605398488;
+// SQLite4Unity3d.TableQuery`1<packt.FoodyGO.Database.DatabaseVersion>
+struct TableQuery_1_t1610030524;
+// SQLite4Unity3d.TableQuery`1<packt.FoodyGO.Database.Monster>
+struct TableQuery_1_t298633438;
+// SQLite4Unity3d.UniqueAttribute
+struct UniqueAttribute_t47190802;
+// System.Action
+struct Action_t1264377477;
 // System.Action`1<UnityEngine.AsyncOperation>
 struct Action_1_t1617499438;
 // System.Action`1<UnityEngine.U2D.SpriteAtlas>
 struct Action_1_t819399007;
+// System.ApplicationException
+struct ApplicationException_t2339761290;
+// System.ArgumentException
+struct ArgumentException_t132251570;
 // System.AsyncCallback
 struct AsyncCallback_t3962456242;
 // System.Attribute
@@ -261,24 +369,50 @@ struct ByteU5BU5D_t4116647657;
 struct CharU5BU5D_t3528271667;
 // System.Collections.ArrayList
 struct ArrayList_t2718874744;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.Object,SQLite4Unity3d.SQLiteConnection/IndexInfo>
+struct KeyCollection_t3217878413;
 // System.Collections.Generic.Dictionary`2/KeyCollection<System.Object,System.Object>
 struct KeyCollection_t322220623;
 // System.Collections.Generic.Dictionary`2/KeyCollection<System.String,CUDLR.CommandTree>
 struct KeyCollection_t2707328253;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.String,SQLite4Unity3d.SQLiteConnection/IndexInfo>
+struct KeyCollection_t1655728428;
 // System.Collections.Generic.Dictionary`2/Transform`1<System.String,CUDLR.CommandTree,System.Collections.DictionaryEntry>
 struct Transform_1_t2868809366;
+// System.Collections.Generic.Dictionary`2/Transform`1<System.String,SQLite4Unity3d.SQLiteConnection/IndexInfo,System.Collections.DictionaryEntry>
+struct Transform_1_t54634699;
+// System.Collections.Generic.Dictionary`2/Transform`1<System.String,SQLite4Unity3d.TableMapping,System.Collections.DictionaryEntry>
+struct Transform_1_t4149414065;
 // System.Collections.Generic.Dictionary`2/Transform`1<System.String,System.String,System.Collections.DictionaryEntry>
 struct Transform_1_t132201056;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.Object,System.Object>
+struct ValueCollection_t1848589470;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.String,SQLite4Unity3d.TableMapping>
+struct ValueCollection_t3777700109;
 // System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>
 struct Dictionary_2_t1839659084;
+// System.Collections.Generic.Dictionary`2<System.Object,SQLite4Unity3d.SQLiteConnection/IndexInfo>
+struct Dictionary_2_t3028202942;
 // System.Collections.Generic.Dictionary`2<System.Object,System.Object>
 struct Dictionary_2_t132545152;
 // System.Collections.Generic.Dictionary`2<System.String,CUDLR.CommandTree>
 struct Dictionary_2_t2517652782;
+// System.Collections.Generic.Dictionary`2<System.String,SQLite4Unity3d.SQLiteConnection/IndexInfo>
+struct Dictionary_2_t1466052957;
+// System.Collections.Generic.Dictionary`2<System.String,SQLite4Unity3d.TableMapping>
+struct Dictionary_2_t2061655791;
 // System.Collections.Generic.Dictionary`2<System.String,System.Int32>
 struct Dictionary_2_t2736202052;
 // System.Collections.Generic.Dictionary`2<System.String,System.String>
 struct Dictionary_2_t1632706988;
+// System.Collections.Generic.IEnumerable`1<SQLite4Unity3d.IndexedAttribute>
+struct IEnumerable_1_t3659173693;
+// System.Collections.Generic.IEnumerable`1<SQLite4Unity3d.SQLiteConnection/IndexedColumn>
+struct IEnumerable_1_t2060541905;
+// System.Collections.Generic.IEnumerable`1<SQLite4Unity3d.TableMapping/Column>
+struct IEnumerable_1_t337793472;
+// System.Collections.Generic.IEnumerable`1<SQLite4Unity3d.TableMapping>
+struct IEnumerable_1_t1256252381;
 // System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>
 struct IEnumerable_1_t1510070208;
 // System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<System.String,System.String>>
@@ -287,12 +421,26 @@ struct IEnumerable_1_t3010232044;
 struct IEnumerable_1_t2059959053;
 // System.Collections.Generic.IEnumerable`1<System.String>
 struct IEnumerable_1_t827303578;
+// System.Collections.Generic.IEnumerator`1<System.Object>
+struct IEnumerator_1_t3512676632;
+// System.Collections.Generic.IEnumerator`1<packt.FoodyGO.Database.Monster>
+struct IEnumerator_1_t2205911582;
 // System.Collections.Generic.IEqualityComparer`1<System.String>
 struct IEqualityComparer_1_t3954782707;
 // System.Collections.Generic.Link[]
 struct LinkU5BU5D_t964245573;
 // System.Collections.Generic.List`1<CUDLR.RouteAttribute>
 struct List_1_t2046717850;
+// System.Collections.Generic.List`1<SQLite4Unity3d.BaseTableQuery/Ordering>
+struct List_1_t2119693926;
+// System.Collections.Generic.List`1<SQLite4Unity3d.SQLiteCommand/Binding>
+struct List_1_t4258913814;
+// System.Collections.Generic.List`1<SQLite4Unity3d.SQLiteConnection/ColumnInfo>
+struct List_1_t4032208569;
+// System.Collections.Generic.List`1<SQLite4Unity3d.SQLiteConnection/IndexedColumn>
+struct List_1_t257796462;
+// System.Collections.Generic.List`1<SQLite4Unity3d.TableMapping/Column>
+struct List_1_t2830015325;
 // System.Collections.Generic.List`1<System.Object>
 struct List_1_t257213610;
 // System.Collections.Generic.List`1<System.String>
@@ -303,6 +451,8 @@ struct List_1_t2585711361;
 struct List_1_t4142344393;
 // System.Collections.Generic.List`1<packt.FoodyGO.Database.Monster>
 struct List_1_t3245415856;
+// System.Collections.Generic.List`1<packt.FoodyGO.Database.MonsterSpawnLocation>
+struct List_1_t1738687162;
 // System.Collections.Generic.Queue`1<CUDLR.QueuedCommand>
 struct Queue_1_t3702832664;
 // System.Collections.Generic.Queue`1<CUDLR.RequestContext>
@@ -315,6 +465,8 @@ struct Hashtable_t1853889766;
 struct IComparer_t1540313114;
 // System.Collections.IDictionary
 struct IDictionary_t1363984059;
+// System.Collections.IEnumerable
+struct IEnumerable_t1941168011;
 // System.Collections.IEnumerator
 struct IEnumerator_t1853284238;
 // System.Collections.IEqualityComparer
@@ -331,16 +483,42 @@ struct NameValueCollection_t407452768;
 struct Delegate_t1188392813;
 // System.DelegateData
 struct DelegateData_t1677132599;
+// System.Diagnostics.Stopwatch
+struct Stopwatch_t305734070;
 // System.Double
 struct Double_t594665363;
 // System.Exception
 struct Exception_t;
+// System.Func`2<SQLite4Unity3d.BaseTableQuery/Ordering,System.String>
+struct Func_2_t1731194471;
+// System.Func`2<SQLite4Unity3d.SQLiteConnection/IndexedColumn,System.Int32>
+struct Func_2_t166798807;
+// System.Func`2<SQLite4Unity3d.SQLiteConnection/IndexedColumn,System.Object>
+struct Func_2_t295959218;
+// System.Func`2<SQLite4Unity3d.SQLiteConnection/IndexedColumn,System.String>
+struct Func_2_t3358271039;
+// System.Func`2<SQLite4Unity3d.TableMapping/Column,System.Boolean>
+struct Func_2_t681049744;
+// System.Func`2<SQLite4Unity3d.TableMapping/Column,System.Object>
+struct Func_2_t3663867943;
+// System.Func`2<SQLite4Unity3d.TableMapping/Column,System.String>
+struct Func_2_t2431212468;
+// System.Func`2<SQLite4Unity3d.TableQuery`1/CompileResult<packt.FoodyGO.Database.DatabaseVersion>,System.String>
+struct Func_2_t85258525;
+// System.Func`2<SQLite4Unity3d.TableQuery`1/CompileResult<packt.FoodyGO.Database.Monster>,System.String>
+struct Func_2_t878566195;
 // System.Func`2<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>,System.Object>
 struct Func_2_t4016427559;
 // System.Func`2<System.Collections.Generic.KeyValuePair`2<System.String,System.String>,System.String>
 struct Func_2_t3001800792;
+// System.Func`2<System.Object,System.Boolean>
+struct Func_2_t3759279471;
+// System.Func`2<System.Object,System.Object>
+struct Func_2_t2447130374;
 // System.IAsyncResult
 struct IAsyncResult_t767004451;
+// System.IFormatProvider
+struct IFormatProvider_t2518567562;
 // System.IO.FileStream
 struct FileStream_t4292183065;
 // System.IO.Stream
@@ -349,6 +527,12 @@ struct Stream_t1273022909;
 struct Int32U5BU5D_t385246372;
 // System.IntPtr[]
 struct IntPtrU5BU5D_t4013366056;
+// System.InvalidOperationException
+struct InvalidOperationException_t56020091;
+// System.Linq.Expressions.Expression
+struct Expression_t1588164026;
+// System.Linq.IOrderedEnumerable`1<SQLite4Unity3d.SQLiteConnection/IndexedColumn>
+struct IOrderedEnumerable_1_t3736453316;
 // System.MulticastDelegate
 struct MulticastDelegate_t;
 // System.Net.AuthenticationSchemeSelector
@@ -375,6 +559,8 @@ struct WebHeaderCollection_t1942268960;
 struct NotSupportedException_t1314879016;
 // System.Object[]
 struct ObjectU5BU5D_t2843939325;
+// System.Random
+struct Random_t108471755;
 // System.Reflection.Assembly
 struct Assembly_t;
 // System.Reflection.Assembly/ResolveEventHolder
@@ -385,8 +571,12 @@ struct FieldInfo_t;
 struct FieldInfoU5BU5D_t846150980;
 // System.Reflection.MemberFilter
 struct MemberFilter_t426314064;
+// System.Reflection.MemberInfo
+struct MemberInfo_t;
 // System.Reflection.MethodInfo
 struct MethodInfo_t;
+// System.Reflection.PropertyInfo
+struct PropertyInfo_t;
 // System.Runtime.Serialization.SerializationInfo
 struct SerializationInfo_t950877179;
 // System.Security.Cryptography.RandomNumberGenerator
@@ -531,6 +721,8 @@ struct Renderer_t2627027031;
 struct Rigidbody_t3916780224;
 // UnityEngine.Sprite
 struct Sprite_t280657092;
+// UnityEngine.TextGenerator
+struct TextGenerator_t3211863866;
 // UnityEngine.Texture
 struct Texture_t3661962703;
 // UnityEngine.Texture2D
@@ -543,6 +735,8 @@ struct Transform_t3600365921;
 struct AspectRatioFitter_t3312407083;
 // UnityEngine.UI.CoroutineTween.TweenRunner`1<UnityEngine.UI.CoroutineTween.ColorTween>
 struct TweenRunner_1_t3055525458;
+// UnityEngine.UI.FontData
+struct FontData_t746620069;
 // UnityEngine.UI.Image
 struct Image_t2670269651;
 // UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
@@ -551,8 +745,12 @@ struct CullStateChangedEvent_t3661388177;
 struct RawImage_t3182918964;
 // UnityEngine.UI.RectMask2D
 struct RectMask2D_t3474889437;
+// UnityEngine.UI.Text
+struct Text_t1901882714;
 // UnityEngine.UI.VertexHelper
 struct VertexHelper_t2453304189;
+// UnityEngine.UIVertex[]
+struct UIVertexU5BU5D_t1981460040;
 // UnityEngine.Vector2[]
 struct Vector2U5BU5D_t1457185986;
 // UnityEngine.Vector3[]
@@ -575,8 +773,14 @@ struct CatchSceneController_t4077466895;
 struct CharacterGPSCompassController_t2402541944;
 // packt.FoodyGO.Controllers.MonsterController
 struct MonsterController_t3352166224;
+// packt.FoodyGO.Database.DatabaseVersion
+struct DatabaseVersion_t3084738200;
 // packt.FoodyGO.Database.Monster
 struct Monster_t1773341114;
+// packt.FoodyGO.Database.MonsterSpawnLocation
+struct MonsterSpawnLocation_t266612420;
+// packt.FoodyGO.Database.MonsterSpawnLocation[]
+struct MonsterSpawnLocationU5BU5D_t422840749;
 // packt.FoodyGO.Database.Monster[]
 struct MonsterU5BU5D_t2415199775;
 // packt.FoodyGO.Managers.GameManager
@@ -587,6 +791,8 @@ struct U3CDisplaySplashSceneU3Ec__Iterator0_t1774276246;
 struct Singleton_1_t2597712194;
 // packt.FoodyGO.Managers.Singleton`1<packt.FoodyGO.Managers.GameManager>
 struct Singleton_1_t2869849822;
+// packt.FoodyGO.Managers.Singleton`1<packt.FoodyGO.Services.InventoryService>
+struct Singleton_1_t3508042481;
 // packt.FoodyGO.Mapping.GoogleMapTile
 struct GoogleMapTile_t1047440669;
 // packt.FoodyGO.Mapping.GoogleMapTile/<_RefreshMapTile>c__Iterator0
@@ -615,6 +821,8 @@ struct U3CStartServiceU3Ec__Iterator1_t581170624;
 struct U3CStartSimulationServiceU3Ec__Iterator0_t30558242;
 // packt.FoodyGO.Services.GPSLocationService/OnRedrawEvent
 struct OnRedrawEvent_t4144385014;
+// packt.FoodyGO.Services.InventoryService
+struct InventoryService_t3990436451;
 // packt.FoodyGO.Services.MonsterService
 struct MonsterService_t815911722;
 // packt.FoodyGO.Services.MonsterService/<CleanupMonsters>c__Iterator0
@@ -628,67 +836,129 @@ struct CameraTextureOnRawImage_t460887456;
 // packt.FoodyGO.UI.FootstepTracker
 struct FootstepTracker_t354739997;
 
+extern RuntimeClass* Action_t1264377477_il2cpp_TypeInfo_var;
+extern RuntimeClass* ApplicationException_t2339761290_il2cpp_TypeInfo_var;
+extern RuntimeClass* ArgumentException_t132251570_il2cpp_TypeInfo_var;
 extern RuntimeClass* AsyncCallback_t3962456242_il2cpp_TypeInfo_var;
+extern RuntimeClass* Binding_t2786839072_il2cpp_TypeInfo_var;
 extern RuntimeClass* Boolean_t97287965_il2cpp_TypeInfo_var;
 extern RuntimeClass* ByteU5BU5D_t4116647657_il2cpp_TypeInfo_var;
+extern RuntimeClass* Byte_t1134296376_il2cpp_TypeInfo_var;
 extern RuntimeClass* CallbackSimple_t200441164_il2cpp_TypeInfo_var;
 extern RuntimeClass* Callback_t1777011615_il2cpp_TypeInfo_var;
 extern RuntimeClass* Callback_t1969551140_il2cpp_TypeInfo_var;
 extern RuntimeClass* CharU5BU5D_t3528271667_il2cpp_TypeInfo_var;
+extern RuntimeClass* CollationAttribute_t3564781786_il2cpp_TypeInfo_var;
+extern RuntimeClass* ColumnAttribute_t3583764011_il2cpp_TypeInfo_var;
+extern RuntimeClass* ColumnInfo_t2560133827_il2cpp_TypeInfo_var;
+extern RuntimeClass* Column_t1357940583_il2cpp_TypeInfo_var;
 extern RuntimeClass* CommandAttributeU5BU5D_t3855148191_il2cpp_TypeInfo_var;
 extern RuntimeClass* CommandAttribute_t3967200570_il2cpp_TypeInfo_var;
 extern RuntimeClass* CommandTree_t2732396483_il2cpp_TypeInfo_var;
 extern RuntimeClass* Console_t978607149_il2cpp_TypeInfo_var;
+extern RuntimeClass* Convert_t2465617642_il2cpp_TypeInfo_var;
 extern RuntimeClass* CrossPlatformInputManager_t191731427_il2cpp_TypeInfo_var;
+extern RuntimeClass* DatabaseVersion_t3084738200_il2cpp_TypeInfo_var;
+extern RuntimeClass* DateTimeOffset_t3229287507_il2cpp_TypeInfo_var;
 extern RuntimeClass* DateTime_t3738529785_il2cpp_TypeInfo_var;
 extern RuntimeClass* Debug_t3317548046_il2cpp_TypeInfo_var;
+extern RuntimeClass* Decimal_t2948259380_il2cpp_TypeInfo_var;
+extern RuntimeClass* Dictionary_2_t1466052957_il2cpp_TypeInfo_var;
 extern RuntimeClass* Dictionary_2_t1632706988_il2cpp_TypeInfo_var;
+extern RuntimeClass* Dictionary_2_t2061655791_il2cpp_TypeInfo_var;
 extern RuntimeClass* Dictionary_2_t2517652782_il2cpp_TypeInfo_var;
 extern RuntimeClass* Double_t594665363_il2cpp_TypeInfo_var;
 extern RuntimeClass* Encoding_t1523322056_il2cpp_TypeInfo_var;
 extern RuntimeClass* Exception_t_il2cpp_TypeInfo_var;
 extern RuntimeClass* FileHandlerDelegate_t13458300_il2cpp_TypeInfo_var;
+extern RuntimeClass* Func_2_t166798807_il2cpp_TypeInfo_var;
+extern RuntimeClass* Func_2_t2431212468_il2cpp_TypeInfo_var;
 extern RuntimeClass* Func_2_t3001800792_il2cpp_TypeInfo_var;
+extern RuntimeClass* Func_2_t3358271039_il2cpp_TypeInfo_var;
+extern RuntimeClass* Func_2_t3663867943_il2cpp_TypeInfo_var;
+extern RuntimeClass* Func_2_t681049744_il2cpp_TypeInfo_var;
 extern RuntimeClass* GoogleMapUtils_t2374289053_il2cpp_TypeInfo_var;
+extern RuntimeClass* Guid_t_il2cpp_TypeInfo_var;
 extern RuntimeClass* HttpListener_t988452056_il2cpp_TypeInfo_var;
 extern RuntimeClass* IDisposable_t3640265483_il2cpp_TypeInfo_var;
+extern RuntimeClass* IEnumerable_1_t3659173693_il2cpp_TypeInfo_var;
+extern RuntimeClass* IEnumerable_t1941168011_il2cpp_TypeInfo_var;
+extern RuntimeClass* IEnumerator_1_t2205911582_il2cpp_TypeInfo_var;
+extern RuntimeClass* IEnumerator_1_t816923976_il2cpp_TypeInfo_var;
+extern RuntimeClass* IEnumerator_t1853284238_il2cpp_TypeInfo_var;
+extern RuntimeClass* IndexedAttributeU5BU5D_t476100365_il2cpp_TypeInfo_var;
+extern RuntimeClass* IndexedAttribute_t384353508_il2cpp_TypeInfo_var;
 extern RuntimeClass* Input_t1431474628_il2cpp_TypeInfo_var;
+extern RuntimeClass* Int16_t2552820387_il2cpp_TypeInfo_var;
 extern RuntimeClass* Int32_t2950945753_il2cpp_TypeInfo_var;
+extern RuntimeClass* Int64_t3736567304_il2cpp_TypeInfo_var;
+extern RuntimeClass* IntPtr_t_il2cpp_TypeInfo_var;
+extern RuntimeClass* InvalidOperationException_t56020091_il2cpp_TypeInfo_var;
+extern RuntimeClass* List_1_t1738687162_il2cpp_TypeInfo_var;
 extern RuntimeClass* List_1_t2046717850_il2cpp_TypeInfo_var;
+extern RuntimeClass* List_1_t257213610_il2cpp_TypeInfo_var;
+extern RuntimeClass* List_1_t257796462_il2cpp_TypeInfo_var;
+extern RuntimeClass* List_1_t2830015325_il2cpp_TypeInfo_var;
 extern RuntimeClass* List_1_t3245415856_il2cpp_TypeInfo_var;
 extern RuntimeClass* List_1_t3319525431_il2cpp_TypeInfo_var;
+extern RuntimeClass* List_1_t4258913814_il2cpp_TypeInfo_var;
 extern RuntimeClass* LogCallback_t3588208630_il2cpp_TypeInfo_var;
 extern RuntimeClass* MapEnvelope_t3509470862_il2cpp_TypeInfo_var;
 extern RuntimeClass* MapLocation_t4058015206_il2cpp_TypeInfo_var;
 extern RuntimeClass* MapType_t3185662864_il2cpp_TypeInfo_var;
+extern RuntimeClass* Marshal_t1757017490_il2cpp_TypeInfo_var;
 extern RuntimeClass* Mathf_t3464937446_il2cpp_TypeInfo_var;
+extern RuntimeClass* MaxLengthAttribute_t2329480580_il2cpp_TypeInfo_var;
+extern RuntimeClass* MonsterSpawnLocation_t266612420_il2cpp_TypeInfo_var;
 extern RuntimeClass* Monster_t1773341114_il2cpp_TypeInfo_var;
+extern RuntimeClass* NotNullConstraintViolationException_t3886364687_il2cpp_TypeInfo_var;
 extern RuntimeClass* NotSupportedException_t1314879016_il2cpp_TypeInfo_var;
 extern RuntimeClass* ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var;
 extern RuntimeClass* Object_t631007953_il2cpp_TypeInfo_var;
 extern RuntimeClass* OnRedrawEvent_t4144385014_il2cpp_TypeInfo_var;
 extern RuntimeClass* Path_t1605229823_il2cpp_TypeInfo_var;
+extern RuntimeClass* PreparedSqlLiteInsertCommand_t994658783_il2cpp_TypeInfo_var;
 extern RuntimeClass* Quaternion_t2301928331_il2cpp_TypeInfo_var;
 extern RuntimeClass* Queue_1_t3448891251_il2cpp_TypeInfo_var;
 extern RuntimeClass* Queue_1_t3702832664_il2cpp_TypeInfo_var;
+extern RuntimeClass* Random_t108471755_il2cpp_TypeInfo_var;
 extern RuntimeClass* Regex_t3657309853_il2cpp_TypeInfo_var;
 extern RuntimeClass* RequestContext_t3602631757_il2cpp_TypeInfo_var;
+extern RuntimeClass* Result_t1053832893_il2cpp_TypeInfo_var;
 extern RuntimeClass* RouteAttributeU5BU5D_t1966353741_il2cpp_TypeInfo_var;
 extern RuntimeClass* RouteAttribute_t574643108_il2cpp_TypeInfo_var;
+extern RuntimeClass* SByte_t1669577662_il2cpp_TypeInfo_var;
+extern RuntimeClass* SQLiteCommand_t3688707480_il2cpp_TypeInfo_var;
+extern RuntimeClass* SQLiteConnection_t3070079188_il2cpp_TypeInfo_var;
+extern RuntimeClass* SQLiteException_t1356363765_il2cpp_TypeInfo_var;
 extern RuntimeClass* Server_t545360578_il2cpp_TypeInfo_var;
 extern RuntimeClass* Single_t1397266774_il2cpp_TypeInfo_var;
+extern RuntimeClass* Stopwatch_t305734070_il2cpp_TypeInfo_var;
 extern RuntimeClass* StringU5BU5D_t1281789340_il2cpp_TypeInfo_var;
 extern RuntimeClass* String_t_il2cpp_TypeInfo_var;
+extern RuntimeClass* TableAttribute_t3728577771_il2cpp_TypeInfo_var;
+extern RuntimeClass* TableMapping_t2276399492_il2cpp_TypeInfo_var;
 extern RuntimeClass* Thread_t2300836069_il2cpp_TypeInfo_var;
+extern RuntimeClass* TimeSpan_t881159249_il2cpp_TypeInfo_var;
 extern RuntimeClass* Type_t_il2cpp_TypeInfo_var;
 extern RuntimeClass* U3CCleanupMonstersU3Ec__Iterator0_t1226081092_il2cpp_TypeInfo_var;
 extern RuntimeClass* U3CDisplaySplashSceneU3Ec__Iterator0_t1774276246_il2cpp_TypeInfo_var;
+extern RuntimeClass* U3CFindColumnU3Ec__AnonStorey1_t4099938701_il2cpp_TypeInfo_var;
+extern RuntimeClass* U3CFindColumnWithPropertyNameU3Ec__AnonStorey0_t3952487827_il2cpp_TypeInfo_var;
 extern RuntimeClass* U3CHandleRequestsU3Ec__Iterator0_t4068759609_il2cpp_TypeInfo_var;
+extern RuntimeClass* U3CInsertAllU3Ec__AnonStorey0_t106977603_il2cpp_TypeInfo_var;
+extern RuntimeClass* U3CInsertAllU3Ec__AnonStorey1_t106977604_il2cpp_TypeInfo_var;
+extern RuntimeClass* U3CInsertAllU3Ec__AnonStorey2_t106977601_il2cpp_TypeInfo_var;
+extern RuntimeClass* U3CNotNullConstraintViolationExceptionU3Ec__AnonStorey0_t2023264365_il2cpp_TypeInfo_var;
 extern RuntimeClass* U3CRegisterAttributesU3Ec__AnonStorey0_t2829874507_il2cpp_TypeInfo_var;
 extern RuntimeClass* U3CRegisterFileHandlersU3Ec__AnonStorey1_t3770007581_il2cpp_TypeInfo_var;
 extern RuntimeClass* U3CStartServiceU3Ec__Iterator1_t581170624_il2cpp_TypeInfo_var;
 extern RuntimeClass* U3CStartSimulationServiceU3Ec__Iterator0_t30558242_il2cpp_TypeInfo_var;
+extern RuntimeClass* U3CUpdateAllU3Ec__AnonStorey4_t1584503381_il2cpp_TypeInfo_var;
+extern RuntimeClass* U3CUpdateU3Ec__AnonStorey3_t445741020_il2cpp_TypeInfo_var;
 extern RuntimeClass* U3C_RefreshMapTileU3Ec__Iterator0_t2254000978_il2cpp_TypeInfo_var;
+extern RuntimeClass* UInt16_t2177724958_il2cpp_TypeInfo_var;
+extern RuntimeClass* UInt32_t2560061978_il2cpp_TypeInfo_var;
 extern RuntimeClass* UnityAction_2_t2165061829_il2cpp_TypeInfo_var;
 extern RuntimeClass* Vector2_t2156229523_il2cpp_TypeInfo_var;
 extern RuntimeClass* Vector3_t3722313464_il2cpp_TypeInfo_var;
@@ -697,71 +967,143 @@ extern RuntimeClass* WWW_t3688466362_il2cpp_TypeInfo_var;
 extern RuntimeClass* WaitForEndOfFrame_t1314943911_il2cpp_TypeInfo_var;
 extern RuntimeClass* WaitForSeconds_t1699091251_il2cpp_TypeInfo_var;
 extern RuntimeClass* WebCamTexture_t1514609158_il2cpp_TypeInfo_var;
+extern String_t* _stringLiteral1015364716;
 extern String_t* _stringLiteral1057238085;
 extern String_t* _stringLiteral1064848892;
+extern String_t* _stringLiteral1069140854;
+extern String_t* _stringLiteral1082368474;
+extern String_t* _stringLiteral1127816336;
+extern String_t* _stringLiteral1162531351;
 extern String_t* _stringLiteral1178283393;
+extern String_t* _stringLiteral1209586805;
 extern String_t* _stringLiteral1229764066;
+extern String_t* _stringLiteral1234799759;
+extern String_t* _stringLiteral1235418589;
 extern String_t* _stringLiteral1235476637;
+extern String_t* _stringLiteral1274756140;
+extern String_t* _stringLiteral1308441708;
 extern String_t* _stringLiteral1328197633;
 extern String_t* _stringLiteral134297061;
 extern String_t* _stringLiteral1344478337;
 extern String_t* _stringLiteral1377815833;
 extern String_t* _stringLiteral139167187;
+extern String_t* _stringLiteral1438604692;
 extern String_t* _stringLiteral1483169834;
 extern String_t* _stringLiteral1571677065;
+extern String_t* _stringLiteral1572351178;
+extern String_t* _stringLiteral1581555912;
 extern String_t* _stringLiteral1592333791;
+extern String_t* _stringLiteral1606174207;
 extern String_t* _stringLiteral1612324208;
 extern String_t* _stringLiteral1739016468;
+extern String_t* _stringLiteral1811793787;
 extern String_t* _stringLiteral1819970986;
 extern String_t* _stringLiteral1828639942;
+extern String_t* _stringLiteral18648674;
 extern String_t* _stringLiteral1915170396;
 extern String_t* _stringLiteral1923429753;
 extern String_t* _stringLiteral193343063;
 extern String_t* _stringLiteral1946891126;
 extern String_t* _stringLiteral1963630794;
+extern String_t* _stringLiteral1967499511;
 extern String_t* _stringLiteral1973109963;
+extern String_t* _stringLiteral198758068;
 extern String_t* _stringLiteral1999276886;
+extern String_t* _stringLiteral2012523567;
 extern String_t* _stringLiteral2044213326;
 extern String_t* _stringLiteral2045074213;
 extern String_t* _stringLiteral211277911;
 extern String_t* _stringLiteral213757135;
 extern String_t* _stringLiteral2178748878;
+extern String_t* _stringLiteral2183129361;
 extern String_t* _stringLiteral2252386871;
 extern String_t* _stringLiteral2256588097;
+extern String_t* _stringLiteral2260534010;
 extern String_t* _stringLiteral2299194300;
+extern String_t* _stringLiteral232604126;
+extern String_t* _stringLiteral2327128955;
+extern String_t* _stringLiteral2345633357;
+extern String_t* _stringLiteral2368312492;
 extern String_t* _stringLiteral2372627905;
+extern String_t* _stringLiteral2377852224;
 extern String_t* _stringLiteral2424900053;
 extern String_t* _stringLiteral2435037111;
+extern String_t* _stringLiteral2437232471;
+extern String_t* _stringLiteral246767658;
+extern String_t* _stringLiteral2489652646;
 extern String_t* _stringLiteral2506294710;
+extern String_t* _stringLiteral2541060376;
+extern String_t* _stringLiteral2541768821;
+extern String_t* _stringLiteral259320604;
+extern String_t* _stringLiteral2681889827;
+extern String_t* _stringLiteral2684379337;
+extern String_t* _stringLiteral2698589578;
+extern String_t* _stringLiteral2702074613;
 extern String_t* _stringLiteral2714022994;
+extern String_t* _stringLiteral2748939550;
+extern String_t* _stringLiteral276901400;
 extern String_t* _stringLiteral2813937213;
 extern String_t* _stringLiteral2822064570;
+extern String_t* _stringLiteral2827757602;
+extern String_t* _stringLiteral2831778705;
 extern String_t* _stringLiteral2862852759;
 extern String_t* _stringLiteral2863770253;
+extern String_t* _stringLiteral2864812057;
+extern String_t* _stringLiteral2866910457;
 extern String_t* _stringLiteral2869855759;
+extern String_t* _stringLiteral2912564450;
 extern String_t* _stringLiteral2984908384;
 extern String_t* _stringLiteral3004335085;
+extern String_t* _stringLiteral3025885023;
 extern String_t* _stringLiteral3088513532;
+extern String_t* _stringLiteral311822863;
+extern String_t* _stringLiteral3168227782;
+extern String_t* _stringLiteral3170806154;
 extern String_t* _stringLiteral317198633;
+extern String_t* _stringLiteral3172542015;
+extern String_t* _stringLiteral3196334362;
 extern String_t* _stringLiteral3222722581;
 extern String_t* _stringLiteral3237436314;
 extern String_t* _stringLiteral3238102024;
+extern String_t* _stringLiteral326347238;
+extern String_t* _stringLiteral3278461159;
 extern String_t* _stringLiteral3324379924;
+extern String_t* _stringLiteral3326820399;
+extern String_t* _stringLiteral3350340990;
+extern String_t* _stringLiteral342936192;
+extern String_t* _stringLiteral3450517374;
+extern String_t* _stringLiteral3450517383;
 extern String_t* _stringLiteral3450517394;
+extern String_t* _stringLiteral3450976126;
 extern String_t* _stringLiteral3452614526;
 extern String_t* _stringLiteral3452614528;
 extern String_t* _stringLiteral3452614529;
+extern String_t* _stringLiteral3452614532;
+extern String_t* _stringLiteral3452614535;
+extern String_t* _stringLiteral3452614536;
 extern String_t* _stringLiteral3452614542;
 extern String_t* _stringLiteral3452614543;
+extern String_t* _stringLiteral3452614545;
 extern String_t* _stringLiteral3452614566;
 extern String_t* _stringLiteral3452614612;
+extern String_t* _stringLiteral3452614620;
+extern String_t* _stringLiteral3452614637;
+extern String_t* _stringLiteral3452614641;
 extern String_t* _stringLiteral3452614643;
 extern String_t* _stringLiteral3452614645;
+extern String_t* _stringLiteral3453007748;
+extern String_t* _stringLiteral3454449639;
 extern String_t* _stringLiteral3455563718;
 extern String_t* _stringLiteral3457136609;
+extern String_t* _stringLiteral3501676180;
 extern String_t* _stringLiteral353906979;
 extern String_t* _stringLiteral3596787190;
+extern String_t* _stringLiteral3616882139;
+extern String_t* _stringLiteral3634305103;
 extern String_t* _stringLiteral3649928864;
+extern String_t* _stringLiteral3659103397;
+extern String_t* _stringLiteral3667895855;
+extern String_t* _stringLiteral36711187;
 extern String_t* _stringLiteral3707908787;
 extern String_t* _stringLiteral3709892431;
 extern String_t* _stringLiteral3735457576;
@@ -769,33 +1111,56 @@ extern String_t* _stringLiteral3735861361;
 extern String_t* _stringLiteral3748635091;
 extern String_t* _stringLiteral37732695;
 extern String_t* _stringLiteral3787497674;
+extern String_t* _stringLiteral3795689398;
+extern String_t* _stringLiteral379716803;
+extern String_t* _stringLiteral3798050113;
 extern String_t* _stringLiteral3841741313;
+extern String_t* _stringLiteral384261975;
 extern String_t* _stringLiteral3842627524;
 extern String_t* _stringLiteral3875954633;
 extern String_t* _stringLiteral3881171512;
+extern String_t* _stringLiteral3896659014;
 extern String_t* _stringLiteral3931577473;
+extern String_t* _stringLiteral3946841517;
 extern String_t* _stringLiteral3964705726;
+extern String_t* _stringLiteral3972439919;
+extern String_t* _stringLiteral399103237;
 extern String_t* _stringLiteral4002445229;
 extern String_t* _stringLiteral4026193188;
+extern String_t* _stringLiteral4084842504;
 extern String_t* _stringLiteral4120481384;
+extern String_t* _stringLiteral4125610927;
 extern String_t* _stringLiteral4140064810;
 extern String_t* _stringLiteral417138101;
 extern String_t* _stringLiteral4176026750;
+extern String_t* _stringLiteral4223974518;
+extern String_t* _stringLiteral4276912658;
 extern String_t* _stringLiteral44895381;
+extern String_t* _stringLiteral484983545;
 extern String_t* _stringLiteral508239076;
+extern String_t* _stringLiteral509904522;
+extern String_t* _stringLiteral545402259;
 extern String_t* _stringLiteral567578815;
 extern String_t* _stringLiteral573045877;
 extern String_t* _stringLiteral583427657;
+extern String_t* _stringLiteral590886238;
+extern String_t* _stringLiteral657609245;
+extern String_t* _stringLiteral746838790;
 extern String_t* _stringLiteral747355815;
 extern String_t* _stringLiteral768485155;
 extern String_t* _stringLiteral783935412;
 extern String_t* _stringLiteral797640427;
+extern String_t* _stringLiteral807124363;
+extern String_t* _stringLiteral848554039;
+extern String_t* _stringLiteral854875510;
 extern String_t* _stringLiteral856847767;
 extern String_t* _stringLiteral88737304;
+extern String_t* _stringLiteral887883575;
 extern String_t* _stringLiteral907197241;
 extern String_t* _stringLiteral943589599;
 extern String_t* _stringLiteral956943737;
 extern String_t* _stringLiteral964250286;
+extern String_t* _stringLiteral989870448;
 extern const RuntimeMethod* CharacterGPSCompassController_GpsLocationService_OnMapRedraw_m956637251_RuntimeMethod_var;
 extern const RuntimeMethod* Component_GetComponent_TisAnimation_t3648466861_m4214971628_RuntimeMethod_var;
 extern const RuntimeMethod* Component_GetComponent_TisAspectRatioFitter_t3312407083_m1716914391_RuntimeMethod_var;
@@ -807,57 +1172,126 @@ extern const RuntimeMethod* Console_LogCallback_m3679510954_RuntimeMethod_var;
 extern const RuntimeMethod* Console_RegisterAttributes_m1913084373_RuntimeMethod_var;
 extern const RuntimeMethod* Console_RegisterCommand_m3820069520_RuntimeMethod_var;
 extern const RuntimeMethod* Dictionary_2_Add_m2799738156_RuntimeMethod_var;
+extern const RuntimeMethod* Dictionary_2_Add_m3197316107_RuntimeMethod_var;
+extern const RuntimeMethod* Dictionary_2_Add_m425274454_RuntimeMethod_var;
 extern const RuntimeMethod* Dictionary_2_ContainsKey_m108370318_RuntimeMethod_var;
 extern const RuntimeMethod* Dictionary_2_TryGetValue_m1185325717_RuntimeMethod_var;
+extern const RuntimeMethod* Dictionary_2_TryGetValue_m384793566_RuntimeMethod_var;
+extern const RuntimeMethod* Dictionary_2_TryGetValue_m582811047_RuntimeMethod_var;
+extern const RuntimeMethod* Dictionary_2__ctor_m141581994_RuntimeMethod_var;
+extern const RuntimeMethod* Dictionary_2__ctor_m2147951471_RuntimeMethod_var;
 extern const RuntimeMethod* Dictionary_2__ctor_m2842384104_RuntimeMethod_var;
 extern const RuntimeMethod* Dictionary_2__ctor_m3655204740_RuntimeMethod_var;
 extern const RuntimeMethod* Dictionary_2_get_Item_m2160169883_RuntimeMethod_var;
+extern const RuntimeMethod* Dictionary_2_get_Item_m2283669796_RuntimeMethod_var;
 extern const RuntimeMethod* Dictionary_2_get_Keys_m1160280914_RuntimeMethod_var;
+extern const RuntimeMethod* Dictionary_2_get_Keys_m172842089_RuntimeMethod_var;
+extern const RuntimeMethod* Dictionary_2_get_Values_m2477973787_RuntimeMethod_var;
 extern const RuntimeMethod* Dictionary_2_set_Item_m367355386_RuntimeMethod_var;
+extern const RuntimeMethod* Dictionary_2_set_Item_m722790113_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerable_Any_TisColumn_t1357940583_m3531908650_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerable_Any_TisIndexedAttribute_t384353508_m3570228897_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerable_Cast_TisIndexedAttribute_t384353508_m3549597737_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerable_Count_TisColumn_t1357940583_m1970071452_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerable_Empty_TisTableMapping_t2276399492_m3468073737_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerable_FirstOrDefault_TisColumn_t1357940583_m1244305018_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerable_FirstOrDefault_TisRuntimeObject_m714693565_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerable_OrderBy_TisIndexedColumn_t3080689016_TisInt32_t2950945753_m2211229744_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerable_Select_TisColumn_t1357940583_TisRuntimeObject_m4152888076_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerable_Select_TisColumn_t1357940583_TisString_t_m3321979519_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerable_Select_TisIndexedColumn_t3080689016_TisString_t_m2328209351_RuntimeMethod_var;
 extern const RuntimeMethod* Enumerable_Select_TisKeyValuePair_2_t4030379155_TisString_t_m3591192767_RuntimeMethod_var;
 extern const RuntimeMethod* Enumerable_Skip_TisString_t_m1381761333_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerable_ToArray_TisColumn_t1357940583_m3879603138_RuntimeMethod_var;
 extern const RuntimeMethod* Enumerable_ToArray_TisString_t_m4208096419_RuntimeMethod_var;
-extern const RuntimeMethod* Enumerator_Dispose_m169051511_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerable_Where_TisColumn_t1357940583_m2456226527_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerator_Dispose_m1545617601_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerator_Dispose_m1771143618_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerator_Dispose_m1999119403_RuntimeMethod_var;
 extern const RuntimeMethod* Enumerator_Dispose_m2026665411_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerator_Dispose_m4004210332_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerator_Dispose_m4215768123_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerator_Dispose_m865491697_RuntimeMethod_var;
 extern const RuntimeMethod* Enumerator_Dispose_m975943653_RuntimeMethod_var;
-extern const RuntimeMethod* Enumerator_MoveNext_m1538013277_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerator_MoveNext_m132011260_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerator_MoveNext_m1349881051_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerator_MoveNext_m1909543983_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerator_MoveNext_m2900741641_RuntimeMethod_var;
 extern const RuntimeMethod* Enumerator_MoveNext_m3675082026_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerator_MoveNext_m3937889501_RuntimeMethod_var;
 extern const RuntimeMethod* Enumerator_MoveNext_m4158182743_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerator_MoveNext_m985057225_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerator_get_Current_m1385564250_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerator_get_Current_m169089760_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerator_get_Current_m1763690911_RuntimeMethod_var;
 extern const RuntimeMethod* Enumerator_get_Current_m236733038_RuntimeMethod_var;
-extern const RuntimeMethod* Enumerator_get_Current_m2446182823_RuntimeMethod_var;
 extern const RuntimeMethod* Enumerator_get_Current_m3106489094_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerator_get_Current_m3377761755_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerator_get_Current_m361211096_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerator_get_Current_m4062518947_RuntimeMethod_var;
+extern const RuntimeMethod* Func_2__ctor_m1556317952_RuntimeMethod_var;
+extern const RuntimeMethod* Func_2__ctor_m2046779456_RuntimeMethod_var;
+extern const RuntimeMethod* Func_2__ctor_m2503113929_RuntimeMethod_var;
+extern const RuntimeMethod* Func_2__ctor_m3081439098_RuntimeMethod_var;
 extern const RuntimeMethod* Func_2__ctor_m3780063840_RuntimeMethod_var;
+extern const RuntimeMethod* Func_2__ctor_m492011138_RuntimeMethod_var;
 extern const RuntimeMethod* GameManager_SceneManager_sceneLoaded_m1169053865_RuntimeMethod_var;
 extern const RuntimeMethod* GameObject_AddComponent_TisMonsterController_t3352166224_m2844562169_RuntimeMethod_var;
 extern const RuntimeMethod* GameObject_GetComponent_TisCollisionAction_t3868143941_m1272204663_RuntimeMethod_var;
 extern const RuntimeMethod* GameObject_GetComponent_TisMonsterController_t3352166224_m2622647100_RuntimeMethod_var;
 extern const RuntimeMethod* GameObject_GetComponent_TisRigidbody_t3916780224_m564316479_RuntimeMethod_var;
+extern const RuntimeMethod* GameObject_GetComponent_TisText_t1901882714_m2114913816_RuntimeMethod_var;
 extern const RuntimeMethod* GameObject_GetComponents_TisCollisionReaction_t3737494906_m1736463665_RuntimeMethod_var;
+extern const RuntimeMethod* InventoryService_CheckDBVersion_m3986741618_RuntimeMethod_var;
 extern const RuntimeMethod* KeyCollection_GetEnumerator_m2274835298_RuntimeMethod_var;
+extern const RuntimeMethod* KeyCollection_GetEnumerator_m3330635900_RuntimeMethod_var;
 extern const RuntimeMethod* KeyValuePair_2_get_Key_m1970167909_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_Add_m1685793073_RuntimeMethod_var;
+extern const RuntimeMethod* List_1_Add_m1767659314_RuntimeMethod_var;
+extern const RuntimeMethod* List_1_Add_m1789417565_RuntimeMethod_var;
+extern const RuntimeMethod* List_1_Add_m2526584691_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_Add_m3083894502_RuntimeMethod_var;
+extern const RuntimeMethod* List_1_Add_m3305583421_RuntimeMethod_var;
+extern const RuntimeMethod* List_1_Add_m3338814081_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_Add_m548652276_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_Clear_m3111619026_RuntimeMethod_var;
+extern const RuntimeMethod* List_1_GetEnumerator_m1002389916_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_GetEnumerator_m2043795_RuntimeMethod_var;
-extern const RuntimeMethod* List_1_GetEnumerator_m950486139_RuntimeMethod_var;
+extern const RuntimeMethod* List_1_GetEnumerator_m2444197496_RuntimeMethod_var;
+extern const RuntimeMethod* List_1_GetEnumerator_m306818921_RuntimeMethod_var;
+extern const RuntimeMethod* List_1_GetEnumerator_m3158774955_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_Insert_m1169937215_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_RemoveAt_m815285786_RuntimeMethod_var;
-extern const RuntimeMethod* List_1_Remove_m1125353432_RuntimeMethod_var;
-extern const RuntimeMethod* List_1_ToArray_m2752040289_RuntimeMethod_var;
+extern const RuntimeMethod* List_1_Remove_m1818201010_RuntimeMethod_var;
+extern const RuntimeMethod* List_1_ToArray_m172353444_RuntimeMethod_var;
+extern const RuntimeMethod* List_1_ToArray_m318908896_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_ToArray_m3983937259_RuntimeMethod_var;
+extern const RuntimeMethod* List_1_ToArray_m4168020446_RuntimeMethod_var;
+extern const RuntimeMethod* List_1__ctor_m1328752868_RuntimeMethod_var;
+extern const RuntimeMethod* List_1__ctor_m2000653768_RuntimeMethod_var;
 extern const RuntimeMethod* List_1__ctor_m2739036410_RuntimeMethod_var;
 extern const RuntimeMethod* List_1__ctor_m2948823990_RuntimeMethod_var;
+extern const RuntimeMethod* List_1__ctor_m2991042439_RuntimeMethod_var;
+extern const RuntimeMethod* List_1__ctor_m502925065_RuntimeMethod_var;
 extern const RuntimeMethod* List_1__ctor_m706204246_RuntimeMethod_var;
+extern const RuntimeMethod* List_1__ctor_m852104221_RuntimeMethod_var;
+extern const RuntimeMethod* List_1_get_Count_m1035611094_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_get_Count_m2276455407_RuntimeMethod_var;
-extern const RuntimeMethod* List_1_get_Count_m3454857760_RuntimeMethod_var;
+extern const RuntimeMethod* List_1_get_Count_m3449619558_RuntimeMethod_var;
+extern const RuntimeMethod* List_1_get_Count_m4098183465_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_get_Count_m4178165277_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_get_Item_m1432922716_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_get_Item_m3346958548_RuntimeMethod_var;
 extern const RuntimeMethod* MonsterService_GpsLocationService_OnMapRedraw_m1591494870_RuntimeMethod_var;
+extern const RuntimeMethod* Nullable_1__ctor_m3940678751_RuntimeMethod_var;
+extern const RuntimeMethod* Nullable_1_get_HasValue_m589371754_RuntimeMethod_var;
+extern const RuntimeMethod* Nullable_1_get_Value_m3000890071_RuntimeMethod_var;
 extern const RuntimeMethod* Object_Instantiate_TisGameObject_t1113636619_m2517112845_RuntimeMethod_var;
-extern const RuntimeMethod* Object_Instantiate_TisTransform_t3600365921_m1831857851_RuntimeMethod_var;
+extern const RuntimeMethod* Object_Instantiate_TisGameObject_t1113636619_m4070250708_RuntimeMethod_var;
+extern const RuntimeMethod* Object_Instantiate_TisTransform_t3600365921_m3253087558_RuntimeMethod_var;
 extern const RuntimeMethod* Object_Instantiate_TisTransform_t3600365921_m3433092333_RuntimeMethod_var;
+extern const RuntimeMethod* Orm_SqlType_m2371860752_RuntimeMethod_var;
+extern const RuntimeMethod* PreparedSqlLiteInsertCommand_ExecuteNonQuery_m2787388731_RuntimeMethod_var;
 extern const RuntimeMethod* Queue_1_Dequeue_m940720808_RuntimeMethod_var;
 extern const RuntimeMethod* Queue_1_Dequeue_m992750647_RuntimeMethod_var;
 extern const RuntimeMethod* Queue_1_Enqueue_m1798554875_RuntimeMethod_var;
@@ -866,32 +1300,104 @@ extern const RuntimeMethod* Queue_1__ctor_m1114640169_RuntimeMethod_var;
 extern const RuntimeMethod* Queue_1__ctor_m3997517759_RuntimeMethod_var;
 extern const RuntimeMethod* Queue_1_get_Count_m1457504846_RuntimeMethod_var;
 extern const RuntimeMethod* Queue_1_get_Count_m3459060730_RuntimeMethod_var;
+extern const RuntimeMethod* SQLite3_Prepare2_m655766597_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteCommand_BindParameter_m2636142430_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteCommand_ExecuteDeferredQuery_TisRuntimeObject_m2260852394_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteCommand_ExecuteNonQuery_m485096923_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteCommand_ExecuteQuery_TisRuntimeObject_m3433496489_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteCommand_ReadCol_m2671623026_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteConnection_BeginTransaction_m4153052585_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteConnection_Close_m877720971_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteConnection_CreateCommand_m41717563_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteConnection_CreateTable_TisDatabaseVersion_t3084738200_m1245700543_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteConnection_CreateTable_TisMonster_t1773341114_m1425502898_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteConnection_CreateTable_m3467815003_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteConnection_Delete_m118892053_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteConnection_DoSavePointExecute_m3663436892_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteConnection_DropTable_TisDatabaseVersion_t3084738200_m2303863307_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteConnection_DropTable_TisMonster_t1773341114_m814443095_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteConnection_EnableLoadExtension_m2804692883_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteConnection_Insert_m2363025708_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteConnection_Query_TisColumnInfo_t2560133827_m3769036285_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteConnection_RollbackTo_m593030370_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteConnection_RunInTransaction_m2280780074_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteConnection_SaveTransactionPoint_m637039661_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteConnection_Table_TisDatabaseVersion_t3084738200_m3988505200_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteConnection_Table_TisMonster_t1773341114_m1106896334_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteConnection_U3CCreateTableU3Em__0_m3477665872_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteConnection_U3CCreateTableU3Em__1_m2252154560_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteConnection_U3CCreateTableU3Em__2_m3964932566_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteConnection_U3CUpdateU3Em__3_m3878545526_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteConnection_Update_m3158265721_RuntimeMethod_var;
+extern const RuntimeMethod* SQLiteConnection__ctor_m593903775_RuntimeMethod_var;
 extern const RuntimeMethod* Server_FileHandler_m953556668_RuntimeMethod_var;
 extern const RuntimeMethod* Server_ListenerCallback_m1101166877_RuntimeMethod_var;
 extern const RuntimeMethod* Server_RegisterRoutes_m2940078606_RuntimeMethod_var;
 extern const RuntimeMethod* Server_U3CRegisterFileHandlersU3Em__0_m1318319089_RuntimeMethod_var;
 extern const RuntimeMethod* Server_WWWFileHandler_m3697405713_RuntimeMethod_var;
+extern const RuntimeMethod* Singleton_1__ctor_m177044237_RuntimeMethod_var;
 extern const RuntimeMethod* Singleton_1__ctor_m3023341728_RuntimeMethod_var;
 extern const RuntimeMethod* Singleton_1_get_Instance_m1799659327_RuntimeMethod_var;
+extern const RuntimeMethod* TableMapping_U3CCreateInsertCommandU3Em__1_m1652305147_RuntimeMethod_var;
+extern const RuntimeMethod* TableMapping_U3CCreateInsertCommandU3Em__2_m1847088434_RuntimeMethod_var;
+extern const RuntimeMethod* TableMapping_U3Cget_InsertColumnsU3Em__0_m437155549_RuntimeMethod_var;
+extern const RuntimeMethod* TableQuery_1_FirstOrDefault_m2673836966_RuntimeMethod_var;
+extern const RuntimeMethod* TableQuery_1_GetEnumerator_m3445400550_RuntimeMethod_var;
 extern const RuntimeMethod* U3CCleanupMonstersU3Ec__Iterator0_Reset_m1912062058_RuntimeMethod_var;
 extern const RuntimeMethod* U3CDisplaySplashSceneU3Ec__Iterator0_Reset_m3496334170_RuntimeMethod_var;
+extern const RuntimeMethod* U3CFindColumnU3Ec__AnonStorey1_U3CU3Em__0_m3789328762_RuntimeMethod_var;
+extern const RuntimeMethod* U3CFindColumnWithPropertyNameU3Ec__AnonStorey0_U3CU3Em__0_m1008898867_RuntimeMethod_var;
 extern const RuntimeMethod* U3CHandleRequestsU3Ec__Iterator0_Reset_m520621552_RuntimeMethod_var;
+extern const RuntimeMethod* U3CInsertAllU3Ec__AnonStorey0_U3CU3Em__0_m2182591660_RuntimeMethod_var;
+extern const RuntimeMethod* U3CInsertAllU3Ec__AnonStorey1_U3CU3Em__0_m2182592683_RuntimeMethod_var;
+extern const RuntimeMethod* U3CInsertAllU3Ec__AnonStorey2_U3CU3Em__0_m2182589614_RuntimeMethod_var;
+extern const RuntimeMethod* U3CNotNullConstraintViolationExceptionU3Ec__AnonStorey0_U3CU3Em__0_m4249541711_RuntimeMethod_var;
 extern const RuntimeMethod* U3CRegisterAttributesU3Ec__AnonStorey0_U3CU3Em__0_m290692866_RuntimeMethod_var;
 extern const RuntimeMethod* U3CRegisterFileHandlersU3Ec__AnonStorey1_U3CU3Em__0_m1890339817_RuntimeMethod_var;
 extern const RuntimeMethod* U3CRegisterFileHandlersU3Ec__AnonStorey1_U3CU3Em__1_m1177063264_RuntimeMethod_var;
 extern const RuntimeMethod* U3CStartServiceU3Ec__Iterator1_Reset_m487492319_RuntimeMethod_var;
 extern const RuntimeMethod* U3CStartSimulationServiceU3Ec__Iterator0_Reset_m1020520_RuntimeMethod_var;
+extern const RuntimeMethod* U3CUpdateAllU3Ec__AnonStorey4_U3CU3Em__0_m114741402_RuntimeMethod_var;
+extern const RuntimeMethod* U3CUpdateU3Ec__AnonStorey3_U3CU3Em__0_m3028833688_RuntimeMethod_var;
+extern const RuntimeMethod* U3CUpdateU3Ec__AnonStorey3_U3CU3Em__1_m1512522977_RuntimeMethod_var;
 extern const RuntimeMethod* U3C_RefreshMapTileU3Ec__Iterator0_Reset_m334814570_RuntimeMethod_var;
 extern const RuntimeMethod* UnityAction_2__ctor_m2949990045_RuntimeMethod_var;
 extern const RuntimeMethod* UnityEvent_2_Invoke_m1317350659_RuntimeMethod_var;
 extern const RuntimeMethod* UnityEvent_2__ctor_m3125788568_RuntimeMethod_var;
+extern const RuntimeMethod* ValueCollection_GetEnumerator_m2694154459_RuntimeMethod_var;
+extern const RuntimeType* AutoIncrementAttribute_t3792157881_0_0_0_var;
+extern const RuntimeType* Boolean_t97287965_0_0_0_var;
+extern const RuntimeType* ByteU5BU5D_t4116647657_0_0_0_var;
+extern const RuntimeType* Byte_t1134296376_0_0_0_var;
 extern const RuntimeType* CallbackSimple_t200441164_0_0_0_var;
 extern const RuntimeType* Callback_t1777011615_0_0_0_var;
 extern const RuntimeType* Callback_t1969551140_0_0_0_var;
+extern const RuntimeType* CollationAttribute_t3564781786_0_0_0_var;
+extern const RuntimeType* ColumnAttribute_t3583764011_0_0_0_var;
 extern const RuntimeType* CommandAttribute_t3967200570_0_0_0_var;
 extern const RuntimeType* Component_t1923634451_0_0_0_var;
+extern const RuntimeType* DateTimeOffset_t3229287507_0_0_0_var;
+extern const RuntimeType* DateTime_t3738529785_0_0_0_var;
+extern const RuntimeType* Decimal_t2948259380_0_0_0_var;
+extern const RuntimeType* Double_t594665363_0_0_0_var;
 extern const RuntimeType* GameObject_t1113636619_0_0_0_var;
+extern const RuntimeType* Guid_t_0_0_0_var;
+extern const RuntimeType* IgnoreAttribute_t1003697248_0_0_0_var;
+extern const RuntimeType* IndexedAttribute_t384353508_0_0_0_var;
+extern const RuntimeType* Int16_t2552820387_0_0_0_var;
+extern const RuntimeType* Int32_t2950945753_0_0_0_var;
+extern const RuntimeType* Int64_t3736567304_0_0_0_var;
+extern const RuntimeType* MaxLengthAttribute_t2329480580_0_0_0_var;
+extern const RuntimeType* NotNullAttribute_t1344045378_0_0_0_var;
+extern const RuntimeType* PrimaryKeyAttribute_t1120256698_0_0_0_var;
 extern const RuntimeType* RouteAttribute_t574643108_0_0_0_var;
+extern const RuntimeType* SByte_t1669577662_0_0_0_var;
+extern const RuntimeType* Single_t1397266774_0_0_0_var;
+extern const RuntimeType* String_t_0_0_0_var;
+extern const RuntimeType* TableAttribute_t3728577771_0_0_0_var;
+extern const RuntimeType* TimeSpan_t881159249_0_0_0_var;
+extern const RuntimeType* UInt16_t2177724958_0_0_0_var;
+extern const RuntimeType* UInt32_t2560061978_0_0_0_var;
 extern const uint32_t CameraTextureOnRawImage_Awake_m792881822_MetadataUsageId;
 extern const uint32_t CatchSceneController_OnMonsterHit_m1834285492_MetadataUsageId;
 extern const uint32_t CharacterGPSCompassController_GpsLocationService_OnMapRedraw_m956637251_MetadataUsageId;
@@ -902,6 +1408,7 @@ extern const uint32_t CharacterGPSCopmassController_Update_m1158290140_MetadataU
 extern const uint32_t CollisionAction_OnCollisionEnter_m1615058802_MetadataUsageId;
 extern const uint32_t CollisionEvent__ctor_m1862707046_MetadataUsageId;
 extern const uint32_t CollisionReaction_OnCollisionReaction_m373418675_MetadataUsageId;
+extern const uint32_t Column__ctor_m4159236335_MetadataUsageId;
 extern const uint32_t CommandTree_Add_m1413729376_MetadataUsageId;
 extern const uint32_t CommandTree_Complete_m4074238911_MetadataUsageId;
 extern const uint32_t CommandTree_RunCommand_m942982424_MetadataUsageId;
@@ -939,6 +1446,9 @@ extern const uint32_t Epoch_get_Now_m1854578769_MetadataUsageId;
 extern const uint32_t FileHandlerDelegate_BeginInvoke_m4160211010_MetadataUsageId;
 extern const uint32_t FootstepTracker_Start_m2929438666_MetadataUsageId;
 extern const uint32_t FootstepTracker_Update_m3138465250_MetadataUsageId;
+extern const uint32_t GE_Elementals_Demo_ShowParticle_m2741302116_MetadataUsageId;
+extern const uint32_t GE_Elementals_Demo_Update_m1646419948_MetadataUsageId;
+extern const uint32_t GE_Elementals_Demo__ctor_m3279173250_MetadataUsageId;
 extern const uint32_t GPSLocationService_CenterMap_m4152844806_MetadataUsageId;
 extern const uint32_t GPSLocationService_OnDestroy_m4185384936_MetadataUsageId;
 extern const uint32_t GPSLocationService_StartService_m1469619096_MetadataUsageId;
@@ -967,6 +1477,14 @@ extern const uint32_t GoogleMapUtils_YToLat_m2128429579_MetadataUsageId;
 extern const uint32_t GoogleMapUtils__cctor_m4211902755_MetadataUsageId;
 extern const uint32_t GoogleMapUtils_adjustLatByPixels_m912186372_MetadataUsageId;
 extern const uint32_t GoogleMapUtils_adjustLonByPixels_m308880460_MetadataUsageId;
+extern const uint32_t InventoryService_CheckDBVersion_m3986741618_MetadataUsageId;
+extern const uint32_t InventoryService_CheckForUpgrade_m2488230913_MetadataUsageId;
+extern const uint32_t InventoryService_CreateDB_m2324099992_MetadataUsageId;
+extern const uint32_t InventoryService_CreateMonster_m887761791_MetadataUsageId;
+extern const uint32_t InventoryService_GetDatabaseVersion_m3845499507_MetadataUsageId;
+extern const uint32_t InventoryService_Start_m2942322615_MetadataUsageId;
+extern const uint32_t InventoryService_UpgradeDB_m245382953_MetadataUsageId;
+extern const uint32_t InventoryService__ctor_m2392319503_MetadataUsageId;
 extern const uint32_t MapEnvelope_Contains_m3314390585_MetadataUsageId;
 extern const uint32_t MathG_Distance_m3568946826_MetadataUsageId;
 extern const uint32_t MonsterController_Start_m3663945194_MetadataUsageId;
@@ -975,14 +1493,84 @@ extern const uint32_t MonsterService_CheckMonsters_m969227813_MetadataUsageId;
 extern const uint32_t MonsterService_CleanupMonsters_m384123468_MetadataUsageId;
 extern const uint32_t MonsterService_ConvertToWorldSpace_m2681085689_MetadataUsageId;
 extern const uint32_t MonsterService_GpsLocationService_OnMapRedraw_m1591494870_MetadataUsageId;
-extern const uint32_t MonsterService_SpawnMonster_m2465396457_MetadataUsageId;
+extern const uint32_t MonsterService_SpawnMonster_m1405257628_MetadataUsageId;
 extern const uint32_t MonsterService_Start_m4188006700_MetadataUsageId;
 extern const uint32_t MonsterService_Update_m2042139047_MetadataUsageId;
+extern const uint32_t Monster_ToString_m2623965871_MetadataUsageId;
+extern const uint32_t NotNullConstraintViolationException_New_m121954500_MetadataUsageId;
+extern const uint32_t NotNullConstraintViolationException_New_m2067300247_MetadataUsageId;
+extern const uint32_t NotNullConstraintViolationException_New_m4007323012_MetadataUsageId;
+extern const uint32_t NotNullConstraintViolationException__ctor_m491643267_MetadataUsageId;
+extern const uint32_t Orm_Collation_m2000210213_MetadataUsageId;
+extern const uint32_t Orm_GetIndices_m2972767871_MetadataUsageId;
+extern const uint32_t Orm_IsAutoInc_m1378547954_MetadataUsageId;
+extern const uint32_t Orm_IsMarkedNotNull_m3213728455_MetadataUsageId;
+extern const uint32_t Orm_IsPK_m1915115011_MetadataUsageId;
+extern const uint32_t Orm_MaxStringLength_m1394593579_MetadataUsageId;
+extern const uint32_t Orm_SqlDecl_m2709905698_MetadataUsageId;
+extern const uint32_t Orm_SqlType_m2371860752_MetadataUsageId;
+extern const uint32_t PreparedSqlLiteInsertCommand_Dispose_m2170116472_MetadataUsageId;
+extern const uint32_t PreparedSqlLiteInsertCommand_ExecuteNonQuery_m2787388731_MetadataUsageId;
+extern const uint32_t PreparedSqlLiteInsertCommand__cctor_m1543780345_MetadataUsageId;
 extern const uint32_t RequestContext__ctor_m925727424_MetadataUsageId;
 extern const uint32_t ResponseExtension_WriteBytes_m1603091416_MetadataUsageId;
 extern const uint32_t ResponseExtension_WriteFile_m2406796800_MetadataUsageId;
 extern const uint32_t ResponseExtension_WriteString_m1918185232_MetadataUsageId;
 extern const uint32_t RouteAttribute__ctor_m1948716522_MetadataUsageId;
+extern const uint32_t SQLite3_ColumnByteArray_m1093567263_MetadataUsageId;
+extern const uint32_t SQLite3_ColumnName16_m4168067819_MetadataUsageId;
+extern const uint32_t SQLite3_ColumnString_m4150538419_MetadataUsageId;
+extern const uint32_t SQLite3_GetErrmsg_m3570473851_MetadataUsageId;
+extern const uint32_t SQLite3_Prepare2_m655766597_MetadataUsageId;
+extern const uint32_t SQLiteCommand_BindAll_m1742688076_MetadataUsageId;
+extern const uint32_t SQLiteCommand_BindParameter_m2636142430_MetadataUsageId;
+extern const uint32_t SQLiteCommand_Bind_m1963191297_MetadataUsageId;
+extern const uint32_t SQLiteCommand_ExecuteNonQuery_m485096923_MetadataUsageId;
+extern const uint32_t SQLiteCommand_ReadCol_m2671623026_MetadataUsageId;
+extern const uint32_t SQLiteCommand_ToString_m3450717103_MetadataUsageId;
+extern const uint32_t SQLiteCommand__cctor_m221931894_MetadataUsageId;
+extern const uint32_t SQLiteCommand__ctor_m1824553444_MetadataUsageId;
+extern const uint32_t SQLiteConnection_BeginTransaction_m4153052585_MetadataUsageId;
+extern const uint32_t SQLiteConnection_Close_m877720971_MetadataUsageId;
+extern const uint32_t SQLiteConnection_Commit_m1310776034_MetadataUsageId;
+extern const uint32_t SQLiteConnection_CreateCommand_m41717563_MetadataUsageId;
+extern const uint32_t SQLiteConnection_CreateIndex_m105413951_MetadataUsageId;
+extern const uint32_t SQLiteConnection_CreateIndex_m2192659173_MetadataUsageId;
+extern const uint32_t SQLiteConnection_CreateIndex_m3641861941_MetadataUsageId;
+extern const uint32_t SQLiteConnection_CreateIndex_m4106815680_MetadataUsageId;
+extern const uint32_t SQLiteConnection_CreateTable_m3467815003_MetadataUsageId;
+extern const uint32_t SQLiteConnection_DeferredQuery_m1348183606_MetadataUsageId;
+extern const uint32_t SQLiteConnection_Delete_m118892053_MetadataUsageId;
+extern const uint32_t SQLiteConnection_DoSavePointExecute_m3663436892_MetadataUsageId;
+extern const uint32_t SQLiteConnection_EnableLoadExtension_m2804692883_MetadataUsageId;
+extern const uint32_t SQLiteConnection_Execute_m2332690897_MetadataUsageId;
+extern const uint32_t SQLiteConnection_Find_m880347942_MetadataUsageId;
+extern const uint32_t SQLiteConnection_GetMapping_m1572423408_MetadataUsageId;
+extern const uint32_t SQLiteConnection_GetNullTerminatedUtf8_m3916213873_MetadataUsageId;
+extern const uint32_t SQLiteConnection_GetTableInfo_m2951949514_MetadataUsageId;
+extern const uint32_t SQLiteConnection_InsertAll_m1256341055_MetadataUsageId;
+extern const uint32_t SQLiteConnection_InsertAll_m1562097560_MetadataUsageId;
+extern const uint32_t SQLiteConnection_InsertAll_m3331045845_MetadataUsageId;
+extern const uint32_t SQLiteConnection_InsertOrReplace_m188406952_MetadataUsageId;
+extern const uint32_t SQLiteConnection_InsertOrReplace_m3908902057_MetadataUsageId;
+extern const uint32_t SQLiteConnection_Insert_m2363025708_MetadataUsageId;
+extern const uint32_t SQLiteConnection_Insert_m2879703407_MetadataUsageId;
+extern const uint32_t SQLiteConnection_Insert_m3887320025_MetadataUsageId;
+extern const uint32_t SQLiteConnection_MigrateTable_m2841987575_MetadataUsageId;
+extern const uint32_t SQLiteConnection_NewCommand_m875355521_MetadataUsageId;
+extern const uint32_t SQLiteConnection_Query_m3705838259_MetadataUsageId;
+extern const uint32_t SQLiteConnection_Release_m3551925781_MetadataUsageId;
+extern const uint32_t SQLiteConnection_RollbackTo_m593030370_MetadataUsageId;
+extern const uint32_t SQLiteConnection_RunInTransaction_m2280780074_MetadataUsageId;
+extern const uint32_t SQLiteConnection_SaveTransactionPoint_m637039661_MetadataUsageId;
+extern const uint32_t SQLiteConnection_U3CUpdateU3Em__3_m3878545526_MetadataUsageId;
+extern const uint32_t SQLiteConnection_UpdateAll_m1200051963_MetadataUsageId;
+extern const uint32_t SQLiteConnection_Update_m3158265721_MetadataUsageId;
+extern const uint32_t SQLiteConnection__cctor_m990044362_MetadataUsageId;
+extern const uint32_t SQLiteConnection__ctor_m593903775_MetadataUsageId;
+extern const uint32_t SQLiteConnection_get_TableMappings_m847118141_MetadataUsageId;
+extern const uint32_t SQLiteConnection_set_BusyTimeout_m1319296104_MetadataUsageId;
+extern const uint32_t SQLiteException_New_m975542910_MetadataUsageId;
 extern const uint32_t Server_Awake_m447341606_MetadataUsageId;
 extern const uint32_t Server_FileHandler_m953556668_MetadataUsageId;
 extern const uint32_t Server_FindFileType_m1180339088_MetadataUsageId;
@@ -995,6 +1583,16 @@ extern const uint32_t Server_RegisterRoutes_m2940078606_MetadataUsageId;
 extern const uint32_t Server_U3CRegisterFileHandlersU3Em__0_m1318319089_MetadataUsageId;
 extern const uint32_t Server_WWWFileHandler_m3697405713_MetadataUsageId;
 extern const uint32_t Server__cctor_m2228102022_MetadataUsageId;
+extern const uint32_t TableMapping_CreateInsertCommand_m3040181227_MetadataUsageId;
+extern const uint32_t TableMapping_FindColumnWithPropertyName_m2023843767_MetadataUsageId;
+extern const uint32_t TableMapping_FindColumn_m3777443186_MetadataUsageId;
+extern const uint32_t TableMapping_GetInsertCommand_m2933871919_MetadataUsageId;
+extern const uint32_t TableMapping_SetAutoIncPK_m2643841799_MetadataUsageId;
+extern const uint32_t TableMapping_U3CCreateInsertCommandU3Em__1_m1652305147_MetadataUsageId;
+extern const uint32_t TableMapping_U3CCreateInsertCommandU3Em__2_m1847088434_MetadataUsageId;
+extern const uint32_t TableMapping__ctor_m3995337602_MetadataUsageId;
+extern const uint32_t TableMapping_get_InsertColumns_m899458969_MetadataUsageId;
+extern const uint32_t TableMapping_get_InsertOrReplaceColumns_m298127152_MetadataUsageId;
 extern const uint32_t ThrowTouchPad_OnDragging_m3718152125_MetadataUsageId;
 extern const uint32_t ThrowTouchPad_OnPointerDown_m2149717008_MetadataUsageId;
 extern const uint32_t ThrowTouchPad_ResetTarget_m3749627923_MetadataUsageId;
@@ -1005,23 +1603,32 @@ extern const uint32_t U3CCleanupMonstersU3Ec__Iterator0_MoveNext_m3353097104_Met
 extern const uint32_t U3CCleanupMonstersU3Ec__Iterator0_Reset_m1912062058_MetadataUsageId;
 extern const uint32_t U3CDisplaySplashSceneU3Ec__Iterator0_MoveNext_m540652312_MetadataUsageId;
 extern const uint32_t U3CDisplaySplashSceneU3Ec__Iterator0_Reset_m3496334170_MetadataUsageId;
+extern const uint32_t U3CFindColumnU3Ec__AnonStorey1_U3CU3Em__0_m3789328762_MetadataUsageId;
+extern const uint32_t U3CFindColumnWithPropertyNameU3Ec__AnonStorey0_U3CU3Em__0_m1008898867_MetadataUsageId;
 extern const uint32_t U3CHandleRequestsU3Ec__Iterator0_MoveNext_m2744576948_MetadataUsageId;
 extern const uint32_t U3CHandleRequestsU3Ec__Iterator0_Reset_m520621552_MetadataUsageId;
+extern const uint32_t U3CInsertAllU3Ec__AnonStorey0_U3CU3Em__0_m2182591660_MetadataUsageId;
+extern const uint32_t U3CInsertAllU3Ec__AnonStorey1_U3CU3Em__0_m2182592683_MetadataUsageId;
+extern const uint32_t U3CInsertAllU3Ec__AnonStorey2_U3CU3Em__0_m2182589614_MetadataUsageId;
 extern const uint32_t U3CStartServiceU3Ec__Iterator1_MoveNext_m3666085668_MetadataUsageId;
 extern const uint32_t U3CStartServiceU3Ec__Iterator1_Reset_m487492319_MetadataUsageId;
 extern const uint32_t U3CStartSimulationServiceU3Ec__Iterator0_MoveNext_m1658539792_MetadataUsageId;
 extern const uint32_t U3CStartSimulationServiceU3Ec__Iterator0_Reset_m1020520_MetadataUsageId;
+extern const uint32_t U3CUpdateAllU3Ec__AnonStorey4_U3CU3Em__0_m114741402_MetadataUsageId;
 extern const uint32_t U3C_RefreshMapTileU3Ec__Iterator0_MoveNext_m2810802210_MetadataUsageId;
 extern const uint32_t U3C_RefreshMapTileU3Ec__Iterator0_Reset_m334814570_MetadataUsageId;
 struct ContactPoint_t3758755253 ;
 
 struct CommandAttributeU5BU5D_t3855148191;
 struct RouteAttributeU5BU5D_t1966353741;
+struct IndexedAttributeU5BU5D_t476100365;
+struct ColumnU5BU5D_t4060676894;
 struct ByteU5BU5D_t4116647657;
 struct CharU5BU5D_t3528271667;
 struct ObjectU5BU5D_t2843939325;
 struct FieldInfoU5BU5D_t846150980;
 struct MethodInfoU5BU5D_t2572182361;
+struct PropertyInfoU5BU5D_t1461822886;
 struct StringU5BU5D_t1281789340;
 struct TypeU5BU5D_t3940880105;
 struct ComponentU5BU5D_t3294940482;
@@ -1030,7 +1637,7 @@ struct GameObjectU5BU5D_t3328599146;
 struct ObjectU5BU5D_t1417781964;
 struct TouchU5BU5D_t1849554061;
 struct Vector2U5BU5D_t1457185986;
-struct MonsterU5BU5D_t2415199775;
+struct MonsterSpawnLocationU5BU5D_t422840749;
 struct CollisionReactionU5BU5D_t2532295519;
 
 
@@ -1492,6 +2099,783 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // RESPONSEEXTENSION_T4265486427_H
+#ifndef BASETABLEQUERY_T440437958_H
+#define BASETABLEQUERY_T440437958_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.BaseTableQuery
+struct  BaseTableQuery_t440437958  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // BASETABLEQUERY_T440437958_H
+#ifndef ORDERING_T647619184_H
+#define ORDERING_T647619184_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.BaseTableQuery/Ordering
+struct  Ordering_t647619184  : public RuntimeObject
+{
+public:
+	// System.String SQLite4Unity3d.BaseTableQuery/Ordering::<ColumnName>k__BackingField
+	String_t* ___U3CColumnNameU3Ek__BackingField_0;
+	// System.Boolean SQLite4Unity3d.BaseTableQuery/Ordering::<Ascending>k__BackingField
+	bool ___U3CAscendingU3Ek__BackingField_1;
+
+public:
+	inline static int32_t get_offset_of_U3CColumnNameU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(Ordering_t647619184, ___U3CColumnNameU3Ek__BackingField_0)); }
+	inline String_t* get_U3CColumnNameU3Ek__BackingField_0() const { return ___U3CColumnNameU3Ek__BackingField_0; }
+	inline String_t** get_address_of_U3CColumnNameU3Ek__BackingField_0() { return &___U3CColumnNameU3Ek__BackingField_0; }
+	inline void set_U3CColumnNameU3Ek__BackingField_0(String_t* value)
+	{
+		___U3CColumnNameU3Ek__BackingField_0 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CColumnNameU3Ek__BackingField_0), value);
+	}
+
+	inline static int32_t get_offset_of_U3CAscendingU3Ek__BackingField_1() { return static_cast<int32_t>(offsetof(Ordering_t647619184, ___U3CAscendingU3Ek__BackingField_1)); }
+	inline bool get_U3CAscendingU3Ek__BackingField_1() const { return ___U3CAscendingU3Ek__BackingField_1; }
+	inline bool* get_address_of_U3CAscendingU3Ek__BackingField_1() { return &___U3CAscendingU3Ek__BackingField_1; }
+	inline void set_U3CAscendingU3Ek__BackingField_1(bool value)
+	{
+		___U3CAscendingU3Ek__BackingField_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ORDERING_T647619184_H
+#ifndef U3CNOTNULLCONSTRAINTVIOLATIONEXCEPTIONU3EC__ANONSTOREY0_T2023264365_H
+#define U3CNOTNULLCONSTRAINTVIOLATIONEXCEPTIONU3EC__ANONSTOREY0_T2023264365_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.NotNullConstraintViolationException/<NotNullConstraintViolationException>c__AnonStorey0
+struct  U3CNotNullConstraintViolationExceptionU3Ec__AnonStorey0_t2023264365  : public RuntimeObject
+{
+public:
+	// System.Object SQLite4Unity3d.NotNullConstraintViolationException/<NotNullConstraintViolationException>c__AnonStorey0::obj
+	RuntimeObject * ___obj_0;
+
+public:
+	inline static int32_t get_offset_of_obj_0() { return static_cast<int32_t>(offsetof(U3CNotNullConstraintViolationExceptionU3Ec__AnonStorey0_t2023264365, ___obj_0)); }
+	inline RuntimeObject * get_obj_0() const { return ___obj_0; }
+	inline RuntimeObject ** get_address_of_obj_0() { return &___obj_0; }
+	inline void set_obj_0(RuntimeObject * value)
+	{
+		___obj_0 = value;
+		Il2CppCodeGenWriteBarrier((&___obj_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // U3CNOTNULLCONSTRAINTVIOLATIONEXCEPTIONU3EC__ANONSTOREY0_T2023264365_H
+#ifndef ORM_T3091323797_H
+#define ORM_T3091323797_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.Orm
+struct  Orm_t3091323797  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ORM_T3091323797_H
+#ifndef SQLITE3_T985475636_H
+#define SQLITE3_T985475636_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.SQLite3
+struct  SQLite3_t985475636  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // SQLITE3_T985475636_H
+#ifndef BINDING_T2786839072_H
+#define BINDING_T2786839072_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.SQLiteCommand/Binding
+struct  Binding_t2786839072  : public RuntimeObject
+{
+public:
+	// System.String SQLite4Unity3d.SQLiteCommand/Binding::<Name>k__BackingField
+	String_t* ___U3CNameU3Ek__BackingField_0;
+	// System.Object SQLite4Unity3d.SQLiteCommand/Binding::<Value>k__BackingField
+	RuntimeObject * ___U3CValueU3Ek__BackingField_1;
+	// System.Int32 SQLite4Unity3d.SQLiteCommand/Binding::<Index>k__BackingField
+	int32_t ___U3CIndexU3Ek__BackingField_2;
+
+public:
+	inline static int32_t get_offset_of_U3CNameU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(Binding_t2786839072, ___U3CNameU3Ek__BackingField_0)); }
+	inline String_t* get_U3CNameU3Ek__BackingField_0() const { return ___U3CNameU3Ek__BackingField_0; }
+	inline String_t** get_address_of_U3CNameU3Ek__BackingField_0() { return &___U3CNameU3Ek__BackingField_0; }
+	inline void set_U3CNameU3Ek__BackingField_0(String_t* value)
+	{
+		___U3CNameU3Ek__BackingField_0 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CNameU3Ek__BackingField_0), value);
+	}
+
+	inline static int32_t get_offset_of_U3CValueU3Ek__BackingField_1() { return static_cast<int32_t>(offsetof(Binding_t2786839072, ___U3CValueU3Ek__BackingField_1)); }
+	inline RuntimeObject * get_U3CValueU3Ek__BackingField_1() const { return ___U3CValueU3Ek__BackingField_1; }
+	inline RuntimeObject ** get_address_of_U3CValueU3Ek__BackingField_1() { return &___U3CValueU3Ek__BackingField_1; }
+	inline void set_U3CValueU3Ek__BackingField_1(RuntimeObject * value)
+	{
+		___U3CValueU3Ek__BackingField_1 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CValueU3Ek__BackingField_1), value);
+	}
+
+	inline static int32_t get_offset_of_U3CIndexU3Ek__BackingField_2() { return static_cast<int32_t>(offsetof(Binding_t2786839072, ___U3CIndexU3Ek__BackingField_2)); }
+	inline int32_t get_U3CIndexU3Ek__BackingField_2() const { return ___U3CIndexU3Ek__BackingField_2; }
+	inline int32_t* get_address_of_U3CIndexU3Ek__BackingField_2() { return &___U3CIndexU3Ek__BackingField_2; }
+	inline void set_U3CIndexU3Ek__BackingField_2(int32_t value)
+	{
+		___U3CIndexU3Ek__BackingField_2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // BINDING_T2786839072_H
+#ifndef U3CINSERTALLU3EC__ANONSTOREY0_T106977603_H
+#define U3CINSERTALLU3EC__ANONSTOREY0_T106977603_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey0
+struct  U3CInsertAllU3Ec__AnonStorey0_t106977603  : public RuntimeObject
+{
+public:
+	// System.Collections.IEnumerable SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey0::objects
+	RuntimeObject* ___objects_0;
+	// System.Int32 SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey0::c
+	int32_t ___c_1;
+	// SQLite4Unity3d.SQLiteConnection SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey0::$this
+	SQLiteConnection_t3070079188 * ___U24this_2;
+
+public:
+	inline static int32_t get_offset_of_objects_0() { return static_cast<int32_t>(offsetof(U3CInsertAllU3Ec__AnonStorey0_t106977603, ___objects_0)); }
+	inline RuntimeObject* get_objects_0() const { return ___objects_0; }
+	inline RuntimeObject** get_address_of_objects_0() { return &___objects_0; }
+	inline void set_objects_0(RuntimeObject* value)
+	{
+		___objects_0 = value;
+		Il2CppCodeGenWriteBarrier((&___objects_0), value);
+	}
+
+	inline static int32_t get_offset_of_c_1() { return static_cast<int32_t>(offsetof(U3CInsertAllU3Ec__AnonStorey0_t106977603, ___c_1)); }
+	inline int32_t get_c_1() const { return ___c_1; }
+	inline int32_t* get_address_of_c_1() { return &___c_1; }
+	inline void set_c_1(int32_t value)
+	{
+		___c_1 = value;
+	}
+
+	inline static int32_t get_offset_of_U24this_2() { return static_cast<int32_t>(offsetof(U3CInsertAllU3Ec__AnonStorey0_t106977603, ___U24this_2)); }
+	inline SQLiteConnection_t3070079188 * get_U24this_2() const { return ___U24this_2; }
+	inline SQLiteConnection_t3070079188 ** get_address_of_U24this_2() { return &___U24this_2; }
+	inline void set_U24this_2(SQLiteConnection_t3070079188 * value)
+	{
+		___U24this_2 = value;
+		Il2CppCodeGenWriteBarrier((&___U24this_2), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // U3CINSERTALLU3EC__ANONSTOREY0_T106977603_H
+#ifndef U3CINSERTALLU3EC__ANONSTOREY1_T106977604_H
+#define U3CINSERTALLU3EC__ANONSTOREY1_T106977604_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey1
+struct  U3CInsertAllU3Ec__AnonStorey1_t106977604  : public RuntimeObject
+{
+public:
+	// System.Collections.IEnumerable SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey1::objects
+	RuntimeObject* ___objects_0;
+	// System.String SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey1::extra
+	String_t* ___extra_1;
+	// System.Int32 SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey1::c
+	int32_t ___c_2;
+	// SQLite4Unity3d.SQLiteConnection SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey1::$this
+	SQLiteConnection_t3070079188 * ___U24this_3;
+
+public:
+	inline static int32_t get_offset_of_objects_0() { return static_cast<int32_t>(offsetof(U3CInsertAllU3Ec__AnonStorey1_t106977604, ___objects_0)); }
+	inline RuntimeObject* get_objects_0() const { return ___objects_0; }
+	inline RuntimeObject** get_address_of_objects_0() { return &___objects_0; }
+	inline void set_objects_0(RuntimeObject* value)
+	{
+		___objects_0 = value;
+		Il2CppCodeGenWriteBarrier((&___objects_0), value);
+	}
+
+	inline static int32_t get_offset_of_extra_1() { return static_cast<int32_t>(offsetof(U3CInsertAllU3Ec__AnonStorey1_t106977604, ___extra_1)); }
+	inline String_t* get_extra_1() const { return ___extra_1; }
+	inline String_t** get_address_of_extra_1() { return &___extra_1; }
+	inline void set_extra_1(String_t* value)
+	{
+		___extra_1 = value;
+		Il2CppCodeGenWriteBarrier((&___extra_1), value);
+	}
+
+	inline static int32_t get_offset_of_c_2() { return static_cast<int32_t>(offsetof(U3CInsertAllU3Ec__AnonStorey1_t106977604, ___c_2)); }
+	inline int32_t get_c_2() const { return ___c_2; }
+	inline int32_t* get_address_of_c_2() { return &___c_2; }
+	inline void set_c_2(int32_t value)
+	{
+		___c_2 = value;
+	}
+
+	inline static int32_t get_offset_of_U24this_3() { return static_cast<int32_t>(offsetof(U3CInsertAllU3Ec__AnonStorey1_t106977604, ___U24this_3)); }
+	inline SQLiteConnection_t3070079188 * get_U24this_3() const { return ___U24this_3; }
+	inline SQLiteConnection_t3070079188 ** get_address_of_U24this_3() { return &___U24this_3; }
+	inline void set_U24this_3(SQLiteConnection_t3070079188 * value)
+	{
+		___U24this_3 = value;
+		Il2CppCodeGenWriteBarrier((&___U24this_3), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // U3CINSERTALLU3EC__ANONSTOREY1_T106977604_H
+#ifndef U3CINSERTALLU3EC__ANONSTOREY2_T106977601_H
+#define U3CINSERTALLU3EC__ANONSTOREY2_T106977601_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey2
+struct  U3CInsertAllU3Ec__AnonStorey2_t106977601  : public RuntimeObject
+{
+public:
+	// System.Collections.IEnumerable SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey2::objects
+	RuntimeObject* ___objects_0;
+	// System.Type SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey2::objType
+	Type_t * ___objType_1;
+	// System.Int32 SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey2::c
+	int32_t ___c_2;
+	// SQLite4Unity3d.SQLiteConnection SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey2::$this
+	SQLiteConnection_t3070079188 * ___U24this_3;
+
+public:
+	inline static int32_t get_offset_of_objects_0() { return static_cast<int32_t>(offsetof(U3CInsertAllU3Ec__AnonStorey2_t106977601, ___objects_0)); }
+	inline RuntimeObject* get_objects_0() const { return ___objects_0; }
+	inline RuntimeObject** get_address_of_objects_0() { return &___objects_0; }
+	inline void set_objects_0(RuntimeObject* value)
+	{
+		___objects_0 = value;
+		Il2CppCodeGenWriteBarrier((&___objects_0), value);
+	}
+
+	inline static int32_t get_offset_of_objType_1() { return static_cast<int32_t>(offsetof(U3CInsertAllU3Ec__AnonStorey2_t106977601, ___objType_1)); }
+	inline Type_t * get_objType_1() const { return ___objType_1; }
+	inline Type_t ** get_address_of_objType_1() { return &___objType_1; }
+	inline void set_objType_1(Type_t * value)
+	{
+		___objType_1 = value;
+		Il2CppCodeGenWriteBarrier((&___objType_1), value);
+	}
+
+	inline static int32_t get_offset_of_c_2() { return static_cast<int32_t>(offsetof(U3CInsertAllU3Ec__AnonStorey2_t106977601, ___c_2)); }
+	inline int32_t get_c_2() const { return ___c_2; }
+	inline int32_t* get_address_of_c_2() { return &___c_2; }
+	inline void set_c_2(int32_t value)
+	{
+		___c_2 = value;
+	}
+
+	inline static int32_t get_offset_of_U24this_3() { return static_cast<int32_t>(offsetof(U3CInsertAllU3Ec__AnonStorey2_t106977601, ___U24this_3)); }
+	inline SQLiteConnection_t3070079188 * get_U24this_3() const { return ___U24this_3; }
+	inline SQLiteConnection_t3070079188 ** get_address_of_U24this_3() { return &___U24this_3; }
+	inline void set_U24this_3(SQLiteConnection_t3070079188 * value)
+	{
+		___U24this_3 = value;
+		Il2CppCodeGenWriteBarrier((&___U24this_3), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // U3CINSERTALLU3EC__ANONSTOREY2_T106977601_H
+#ifndef U3CUPDATEU3EC__ANONSTOREY3_T445741020_H
+#define U3CUPDATEU3EC__ANONSTOREY3_T445741020_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.SQLiteConnection/<Update>c__AnonStorey3
+struct  U3CUpdateU3Ec__AnonStorey3_t445741020  : public RuntimeObject
+{
+public:
+	// SQLite4Unity3d.TableMapping/Column SQLite4Unity3d.SQLiteConnection/<Update>c__AnonStorey3::pk
+	Column_t1357940583 * ___pk_0;
+	// System.Object SQLite4Unity3d.SQLiteConnection/<Update>c__AnonStorey3::obj
+	RuntimeObject * ___obj_1;
+
+public:
+	inline static int32_t get_offset_of_pk_0() { return static_cast<int32_t>(offsetof(U3CUpdateU3Ec__AnonStorey3_t445741020, ___pk_0)); }
+	inline Column_t1357940583 * get_pk_0() const { return ___pk_0; }
+	inline Column_t1357940583 ** get_address_of_pk_0() { return &___pk_0; }
+	inline void set_pk_0(Column_t1357940583 * value)
+	{
+		___pk_0 = value;
+		Il2CppCodeGenWriteBarrier((&___pk_0), value);
+	}
+
+	inline static int32_t get_offset_of_obj_1() { return static_cast<int32_t>(offsetof(U3CUpdateU3Ec__AnonStorey3_t445741020, ___obj_1)); }
+	inline RuntimeObject * get_obj_1() const { return ___obj_1; }
+	inline RuntimeObject ** get_address_of_obj_1() { return &___obj_1; }
+	inline void set_obj_1(RuntimeObject * value)
+	{
+		___obj_1 = value;
+		Il2CppCodeGenWriteBarrier((&___obj_1), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // U3CUPDATEU3EC__ANONSTOREY3_T445741020_H
+#ifndef U3CUPDATEALLU3EC__ANONSTOREY4_T1584503381_H
+#define U3CUPDATEALLU3EC__ANONSTOREY4_T1584503381_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.SQLiteConnection/<UpdateAll>c__AnonStorey4
+struct  U3CUpdateAllU3Ec__AnonStorey4_t1584503381  : public RuntimeObject
+{
+public:
+	// System.Collections.IEnumerable SQLite4Unity3d.SQLiteConnection/<UpdateAll>c__AnonStorey4::objects
+	RuntimeObject* ___objects_0;
+	// System.Int32 SQLite4Unity3d.SQLiteConnection/<UpdateAll>c__AnonStorey4::c
+	int32_t ___c_1;
+	// SQLite4Unity3d.SQLiteConnection SQLite4Unity3d.SQLiteConnection/<UpdateAll>c__AnonStorey4::$this
+	SQLiteConnection_t3070079188 * ___U24this_2;
+
+public:
+	inline static int32_t get_offset_of_objects_0() { return static_cast<int32_t>(offsetof(U3CUpdateAllU3Ec__AnonStorey4_t1584503381, ___objects_0)); }
+	inline RuntimeObject* get_objects_0() const { return ___objects_0; }
+	inline RuntimeObject** get_address_of_objects_0() { return &___objects_0; }
+	inline void set_objects_0(RuntimeObject* value)
+	{
+		___objects_0 = value;
+		Il2CppCodeGenWriteBarrier((&___objects_0), value);
+	}
+
+	inline static int32_t get_offset_of_c_1() { return static_cast<int32_t>(offsetof(U3CUpdateAllU3Ec__AnonStorey4_t1584503381, ___c_1)); }
+	inline int32_t get_c_1() const { return ___c_1; }
+	inline int32_t* get_address_of_c_1() { return &___c_1; }
+	inline void set_c_1(int32_t value)
+	{
+		___c_1 = value;
+	}
+
+	inline static int32_t get_offset_of_U24this_2() { return static_cast<int32_t>(offsetof(U3CUpdateAllU3Ec__AnonStorey4_t1584503381, ___U24this_2)); }
+	inline SQLiteConnection_t3070079188 * get_U24this_2() const { return ___U24this_2; }
+	inline SQLiteConnection_t3070079188 ** get_address_of_U24this_2() { return &___U24this_2; }
+	inline void set_U24this_2(SQLiteConnection_t3070079188 * value)
+	{
+		___U24this_2 = value;
+		Il2CppCodeGenWriteBarrier((&___U24this_2), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // U3CUPDATEALLU3EC__ANONSTOREY4_T1584503381_H
+#ifndef COLUMNINFO_T2560133827_H
+#define COLUMNINFO_T2560133827_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.SQLiteConnection/ColumnInfo
+struct  ColumnInfo_t2560133827  : public RuntimeObject
+{
+public:
+	// System.String SQLite4Unity3d.SQLiteConnection/ColumnInfo::<Name>k__BackingField
+	String_t* ___U3CNameU3Ek__BackingField_0;
+	// System.Int32 SQLite4Unity3d.SQLiteConnection/ColumnInfo::<notnull>k__BackingField
+	int32_t ___U3CnotnullU3Ek__BackingField_1;
+
+public:
+	inline static int32_t get_offset_of_U3CNameU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(ColumnInfo_t2560133827, ___U3CNameU3Ek__BackingField_0)); }
+	inline String_t* get_U3CNameU3Ek__BackingField_0() const { return ___U3CNameU3Ek__BackingField_0; }
+	inline String_t** get_address_of_U3CNameU3Ek__BackingField_0() { return &___U3CNameU3Ek__BackingField_0; }
+	inline void set_U3CNameU3Ek__BackingField_0(String_t* value)
+	{
+		___U3CNameU3Ek__BackingField_0 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CNameU3Ek__BackingField_0), value);
+	}
+
+	inline static int32_t get_offset_of_U3CnotnullU3Ek__BackingField_1() { return static_cast<int32_t>(offsetof(ColumnInfo_t2560133827, ___U3CnotnullU3Ek__BackingField_1)); }
+	inline int32_t get_U3CnotnullU3Ek__BackingField_1() const { return ___U3CnotnullU3Ek__BackingField_1; }
+	inline int32_t* get_address_of_U3CnotnullU3Ek__BackingField_1() { return &___U3CnotnullU3Ek__BackingField_1; }
+	inline void set_U3CnotnullU3Ek__BackingField_1(int32_t value)
+	{
+		___U3CnotnullU3Ek__BackingField_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // COLUMNINFO_T2560133827_H
+#ifndef SQLITECONNECTIONSTRING_T3632030467_H
+#define SQLITECONNECTIONSTRING_T3632030467_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.SQLiteConnectionString
+struct  SQLiteConnectionString_t3632030467  : public RuntimeObject
+{
+public:
+	// System.String SQLite4Unity3d.SQLiteConnectionString::<ConnectionString>k__BackingField
+	String_t* ___U3CConnectionStringU3Ek__BackingField_0;
+	// System.String SQLite4Unity3d.SQLiteConnectionString::<DatabasePath>k__BackingField
+	String_t* ___U3CDatabasePathU3Ek__BackingField_1;
+	// System.Boolean SQLite4Unity3d.SQLiteConnectionString::<StoreDateTimeAsTicks>k__BackingField
+	bool ___U3CStoreDateTimeAsTicksU3Ek__BackingField_2;
+
+public:
+	inline static int32_t get_offset_of_U3CConnectionStringU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(SQLiteConnectionString_t3632030467, ___U3CConnectionStringU3Ek__BackingField_0)); }
+	inline String_t* get_U3CConnectionStringU3Ek__BackingField_0() const { return ___U3CConnectionStringU3Ek__BackingField_0; }
+	inline String_t** get_address_of_U3CConnectionStringU3Ek__BackingField_0() { return &___U3CConnectionStringU3Ek__BackingField_0; }
+	inline void set_U3CConnectionStringU3Ek__BackingField_0(String_t* value)
+	{
+		___U3CConnectionStringU3Ek__BackingField_0 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CConnectionStringU3Ek__BackingField_0), value);
+	}
+
+	inline static int32_t get_offset_of_U3CDatabasePathU3Ek__BackingField_1() { return static_cast<int32_t>(offsetof(SQLiteConnectionString_t3632030467, ___U3CDatabasePathU3Ek__BackingField_1)); }
+	inline String_t* get_U3CDatabasePathU3Ek__BackingField_1() const { return ___U3CDatabasePathU3Ek__BackingField_1; }
+	inline String_t** get_address_of_U3CDatabasePathU3Ek__BackingField_1() { return &___U3CDatabasePathU3Ek__BackingField_1; }
+	inline void set_U3CDatabasePathU3Ek__BackingField_1(String_t* value)
+	{
+		___U3CDatabasePathU3Ek__BackingField_1 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CDatabasePathU3Ek__BackingField_1), value);
+	}
+
+	inline static int32_t get_offset_of_U3CStoreDateTimeAsTicksU3Ek__BackingField_2() { return static_cast<int32_t>(offsetof(SQLiteConnectionString_t3632030467, ___U3CStoreDateTimeAsTicksU3Ek__BackingField_2)); }
+	inline bool get_U3CStoreDateTimeAsTicksU3Ek__BackingField_2() const { return ___U3CStoreDateTimeAsTicksU3Ek__BackingField_2; }
+	inline bool* get_address_of_U3CStoreDateTimeAsTicksU3Ek__BackingField_2() { return &___U3CStoreDateTimeAsTicksU3Ek__BackingField_2; }
+	inline void set_U3CStoreDateTimeAsTicksU3Ek__BackingField_2(bool value)
+	{
+		___U3CStoreDateTimeAsTicksU3Ek__BackingField_2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // SQLITECONNECTIONSTRING_T3632030467_H
+#ifndef TABLEMAPPING_T2276399492_H
+#define TABLEMAPPING_T2276399492_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.TableMapping
+struct  TableMapping_t2276399492  : public RuntimeObject
+{
+public:
+	// System.Type SQLite4Unity3d.TableMapping::<MappedType>k__BackingField
+	Type_t * ___U3CMappedTypeU3Ek__BackingField_0;
+	// System.String SQLite4Unity3d.TableMapping::<TableName>k__BackingField
+	String_t* ___U3CTableNameU3Ek__BackingField_1;
+	// SQLite4Unity3d.TableMapping/Column[] SQLite4Unity3d.TableMapping::<Columns>k__BackingField
+	ColumnU5BU5D_t4060676894* ___U3CColumnsU3Ek__BackingField_2;
+	// SQLite4Unity3d.TableMapping/Column SQLite4Unity3d.TableMapping::<PK>k__BackingField
+	Column_t1357940583 * ___U3CPKU3Ek__BackingField_3;
+	// System.String SQLite4Unity3d.TableMapping::<GetByPrimaryKeySql>k__BackingField
+	String_t* ___U3CGetByPrimaryKeySqlU3Ek__BackingField_4;
+	// SQLite4Unity3d.TableMapping/Column SQLite4Unity3d.TableMapping::_autoPk
+	Column_t1357940583 * ____autoPk_5;
+	// SQLite4Unity3d.TableMapping/Column[] SQLite4Unity3d.TableMapping::_insertColumns
+	ColumnU5BU5D_t4060676894* ____insertColumns_6;
+	// SQLite4Unity3d.TableMapping/Column[] SQLite4Unity3d.TableMapping::_insertOrReplaceColumns
+	ColumnU5BU5D_t4060676894* ____insertOrReplaceColumns_7;
+	// System.Boolean SQLite4Unity3d.TableMapping::<HasAutoIncPK>k__BackingField
+	bool ___U3CHasAutoIncPKU3Ek__BackingField_8;
+	// SQLite4Unity3d.PreparedSqlLiteInsertCommand SQLite4Unity3d.TableMapping::_insertCommand
+	PreparedSqlLiteInsertCommand_t994658783 * ____insertCommand_9;
+	// System.String SQLite4Unity3d.TableMapping::_insertCommandExtra
+	String_t* ____insertCommandExtra_10;
+
+public:
+	inline static int32_t get_offset_of_U3CMappedTypeU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(TableMapping_t2276399492, ___U3CMappedTypeU3Ek__BackingField_0)); }
+	inline Type_t * get_U3CMappedTypeU3Ek__BackingField_0() const { return ___U3CMappedTypeU3Ek__BackingField_0; }
+	inline Type_t ** get_address_of_U3CMappedTypeU3Ek__BackingField_0() { return &___U3CMappedTypeU3Ek__BackingField_0; }
+	inline void set_U3CMappedTypeU3Ek__BackingField_0(Type_t * value)
+	{
+		___U3CMappedTypeU3Ek__BackingField_0 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CMappedTypeU3Ek__BackingField_0), value);
+	}
+
+	inline static int32_t get_offset_of_U3CTableNameU3Ek__BackingField_1() { return static_cast<int32_t>(offsetof(TableMapping_t2276399492, ___U3CTableNameU3Ek__BackingField_1)); }
+	inline String_t* get_U3CTableNameU3Ek__BackingField_1() const { return ___U3CTableNameU3Ek__BackingField_1; }
+	inline String_t** get_address_of_U3CTableNameU3Ek__BackingField_1() { return &___U3CTableNameU3Ek__BackingField_1; }
+	inline void set_U3CTableNameU3Ek__BackingField_1(String_t* value)
+	{
+		___U3CTableNameU3Ek__BackingField_1 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CTableNameU3Ek__BackingField_1), value);
+	}
+
+	inline static int32_t get_offset_of_U3CColumnsU3Ek__BackingField_2() { return static_cast<int32_t>(offsetof(TableMapping_t2276399492, ___U3CColumnsU3Ek__BackingField_2)); }
+	inline ColumnU5BU5D_t4060676894* get_U3CColumnsU3Ek__BackingField_2() const { return ___U3CColumnsU3Ek__BackingField_2; }
+	inline ColumnU5BU5D_t4060676894** get_address_of_U3CColumnsU3Ek__BackingField_2() { return &___U3CColumnsU3Ek__BackingField_2; }
+	inline void set_U3CColumnsU3Ek__BackingField_2(ColumnU5BU5D_t4060676894* value)
+	{
+		___U3CColumnsU3Ek__BackingField_2 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CColumnsU3Ek__BackingField_2), value);
+	}
+
+	inline static int32_t get_offset_of_U3CPKU3Ek__BackingField_3() { return static_cast<int32_t>(offsetof(TableMapping_t2276399492, ___U3CPKU3Ek__BackingField_3)); }
+	inline Column_t1357940583 * get_U3CPKU3Ek__BackingField_3() const { return ___U3CPKU3Ek__BackingField_3; }
+	inline Column_t1357940583 ** get_address_of_U3CPKU3Ek__BackingField_3() { return &___U3CPKU3Ek__BackingField_3; }
+	inline void set_U3CPKU3Ek__BackingField_3(Column_t1357940583 * value)
+	{
+		___U3CPKU3Ek__BackingField_3 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CPKU3Ek__BackingField_3), value);
+	}
+
+	inline static int32_t get_offset_of_U3CGetByPrimaryKeySqlU3Ek__BackingField_4() { return static_cast<int32_t>(offsetof(TableMapping_t2276399492, ___U3CGetByPrimaryKeySqlU3Ek__BackingField_4)); }
+	inline String_t* get_U3CGetByPrimaryKeySqlU3Ek__BackingField_4() const { return ___U3CGetByPrimaryKeySqlU3Ek__BackingField_4; }
+	inline String_t** get_address_of_U3CGetByPrimaryKeySqlU3Ek__BackingField_4() { return &___U3CGetByPrimaryKeySqlU3Ek__BackingField_4; }
+	inline void set_U3CGetByPrimaryKeySqlU3Ek__BackingField_4(String_t* value)
+	{
+		___U3CGetByPrimaryKeySqlU3Ek__BackingField_4 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CGetByPrimaryKeySqlU3Ek__BackingField_4), value);
+	}
+
+	inline static int32_t get_offset_of__autoPk_5() { return static_cast<int32_t>(offsetof(TableMapping_t2276399492, ____autoPk_5)); }
+	inline Column_t1357940583 * get__autoPk_5() const { return ____autoPk_5; }
+	inline Column_t1357940583 ** get_address_of__autoPk_5() { return &____autoPk_5; }
+	inline void set__autoPk_5(Column_t1357940583 * value)
+	{
+		____autoPk_5 = value;
+		Il2CppCodeGenWriteBarrier((&____autoPk_5), value);
+	}
+
+	inline static int32_t get_offset_of__insertColumns_6() { return static_cast<int32_t>(offsetof(TableMapping_t2276399492, ____insertColumns_6)); }
+	inline ColumnU5BU5D_t4060676894* get__insertColumns_6() const { return ____insertColumns_6; }
+	inline ColumnU5BU5D_t4060676894** get_address_of__insertColumns_6() { return &____insertColumns_6; }
+	inline void set__insertColumns_6(ColumnU5BU5D_t4060676894* value)
+	{
+		____insertColumns_6 = value;
+		Il2CppCodeGenWriteBarrier((&____insertColumns_6), value);
+	}
+
+	inline static int32_t get_offset_of__insertOrReplaceColumns_7() { return static_cast<int32_t>(offsetof(TableMapping_t2276399492, ____insertOrReplaceColumns_7)); }
+	inline ColumnU5BU5D_t4060676894* get__insertOrReplaceColumns_7() const { return ____insertOrReplaceColumns_7; }
+	inline ColumnU5BU5D_t4060676894** get_address_of__insertOrReplaceColumns_7() { return &____insertOrReplaceColumns_7; }
+	inline void set__insertOrReplaceColumns_7(ColumnU5BU5D_t4060676894* value)
+	{
+		____insertOrReplaceColumns_7 = value;
+		Il2CppCodeGenWriteBarrier((&____insertOrReplaceColumns_7), value);
+	}
+
+	inline static int32_t get_offset_of_U3CHasAutoIncPKU3Ek__BackingField_8() { return static_cast<int32_t>(offsetof(TableMapping_t2276399492, ___U3CHasAutoIncPKU3Ek__BackingField_8)); }
+	inline bool get_U3CHasAutoIncPKU3Ek__BackingField_8() const { return ___U3CHasAutoIncPKU3Ek__BackingField_8; }
+	inline bool* get_address_of_U3CHasAutoIncPKU3Ek__BackingField_8() { return &___U3CHasAutoIncPKU3Ek__BackingField_8; }
+	inline void set_U3CHasAutoIncPKU3Ek__BackingField_8(bool value)
+	{
+		___U3CHasAutoIncPKU3Ek__BackingField_8 = value;
+	}
+
+	inline static int32_t get_offset_of__insertCommand_9() { return static_cast<int32_t>(offsetof(TableMapping_t2276399492, ____insertCommand_9)); }
+	inline PreparedSqlLiteInsertCommand_t994658783 * get__insertCommand_9() const { return ____insertCommand_9; }
+	inline PreparedSqlLiteInsertCommand_t994658783 ** get_address_of__insertCommand_9() { return &____insertCommand_9; }
+	inline void set__insertCommand_9(PreparedSqlLiteInsertCommand_t994658783 * value)
+	{
+		____insertCommand_9 = value;
+		Il2CppCodeGenWriteBarrier((&____insertCommand_9), value);
+	}
+
+	inline static int32_t get_offset_of__insertCommandExtra_10() { return static_cast<int32_t>(offsetof(TableMapping_t2276399492, ____insertCommandExtra_10)); }
+	inline String_t* get__insertCommandExtra_10() const { return ____insertCommandExtra_10; }
+	inline String_t** get_address_of__insertCommandExtra_10() { return &____insertCommandExtra_10; }
+	inline void set__insertCommandExtra_10(String_t* value)
+	{
+		____insertCommandExtra_10 = value;
+		Il2CppCodeGenWriteBarrier((&____insertCommandExtra_10), value);
+	}
+};
+
+struct TableMapping_t2276399492_StaticFields
+{
+public:
+	// System.Func`2<SQLite4Unity3d.TableMapping/Column,System.Boolean> SQLite4Unity3d.TableMapping::<>f__am$cache0
+	Func_2_t681049744 * ___U3CU3Ef__amU24cache0_11;
+	// System.Func`2<SQLite4Unity3d.TableMapping/Column,System.String> SQLite4Unity3d.TableMapping::<>f__am$cache1
+	Func_2_t2431212468 * ___U3CU3Ef__amU24cache1_12;
+	// System.Func`2<SQLite4Unity3d.TableMapping/Column,System.String> SQLite4Unity3d.TableMapping::<>f__am$cache2
+	Func_2_t2431212468 * ___U3CU3Ef__amU24cache2_13;
+
+public:
+	inline static int32_t get_offset_of_U3CU3Ef__amU24cache0_11() { return static_cast<int32_t>(offsetof(TableMapping_t2276399492_StaticFields, ___U3CU3Ef__amU24cache0_11)); }
+	inline Func_2_t681049744 * get_U3CU3Ef__amU24cache0_11() const { return ___U3CU3Ef__amU24cache0_11; }
+	inline Func_2_t681049744 ** get_address_of_U3CU3Ef__amU24cache0_11() { return &___U3CU3Ef__amU24cache0_11; }
+	inline void set_U3CU3Ef__amU24cache0_11(Func_2_t681049744 * value)
+	{
+		___U3CU3Ef__amU24cache0_11 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CU3Ef__amU24cache0_11), value);
+	}
+
+	inline static int32_t get_offset_of_U3CU3Ef__amU24cache1_12() { return static_cast<int32_t>(offsetof(TableMapping_t2276399492_StaticFields, ___U3CU3Ef__amU24cache1_12)); }
+	inline Func_2_t2431212468 * get_U3CU3Ef__amU24cache1_12() const { return ___U3CU3Ef__amU24cache1_12; }
+	inline Func_2_t2431212468 ** get_address_of_U3CU3Ef__amU24cache1_12() { return &___U3CU3Ef__amU24cache1_12; }
+	inline void set_U3CU3Ef__amU24cache1_12(Func_2_t2431212468 * value)
+	{
+		___U3CU3Ef__amU24cache1_12 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CU3Ef__amU24cache1_12), value);
+	}
+
+	inline static int32_t get_offset_of_U3CU3Ef__amU24cache2_13() { return static_cast<int32_t>(offsetof(TableMapping_t2276399492_StaticFields, ___U3CU3Ef__amU24cache2_13)); }
+	inline Func_2_t2431212468 * get_U3CU3Ef__amU24cache2_13() const { return ___U3CU3Ef__amU24cache2_13; }
+	inline Func_2_t2431212468 ** get_address_of_U3CU3Ef__amU24cache2_13() { return &___U3CU3Ef__amU24cache2_13; }
+	inline void set_U3CU3Ef__amU24cache2_13(Func_2_t2431212468 * value)
+	{
+		___U3CU3Ef__amU24cache2_13 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CU3Ef__amU24cache2_13), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // TABLEMAPPING_T2276399492_H
+#ifndef U3CFINDCOLUMNU3EC__ANONSTOREY1_T4099938701_H
+#define U3CFINDCOLUMNU3EC__ANONSTOREY1_T4099938701_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.TableMapping/<FindColumn>c__AnonStorey1
+struct  U3CFindColumnU3Ec__AnonStorey1_t4099938701  : public RuntimeObject
+{
+public:
+	// System.String SQLite4Unity3d.TableMapping/<FindColumn>c__AnonStorey1::columnName
+	String_t* ___columnName_0;
+
+public:
+	inline static int32_t get_offset_of_columnName_0() { return static_cast<int32_t>(offsetof(U3CFindColumnU3Ec__AnonStorey1_t4099938701, ___columnName_0)); }
+	inline String_t* get_columnName_0() const { return ___columnName_0; }
+	inline String_t** get_address_of_columnName_0() { return &___columnName_0; }
+	inline void set_columnName_0(String_t* value)
+	{
+		___columnName_0 = value;
+		Il2CppCodeGenWriteBarrier((&___columnName_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // U3CFINDCOLUMNU3EC__ANONSTOREY1_T4099938701_H
+#ifndef U3CFINDCOLUMNWITHPROPERTYNAMEU3EC__ANONSTOREY0_T3952487827_H
+#define U3CFINDCOLUMNWITHPROPERTYNAMEU3EC__ANONSTOREY0_T3952487827_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.TableMapping/<FindColumnWithPropertyName>c__AnonStorey0
+struct  U3CFindColumnWithPropertyNameU3Ec__AnonStorey0_t3952487827  : public RuntimeObject
+{
+public:
+	// System.String SQLite4Unity3d.TableMapping/<FindColumnWithPropertyName>c__AnonStorey0::propertyName
+	String_t* ___propertyName_0;
+
+public:
+	inline static int32_t get_offset_of_propertyName_0() { return static_cast<int32_t>(offsetof(U3CFindColumnWithPropertyNameU3Ec__AnonStorey0_t3952487827, ___propertyName_0)); }
+	inline String_t* get_propertyName_0() const { return ___propertyName_0; }
+	inline String_t** get_address_of_propertyName_0() { return &___propertyName_0; }
+	inline void set_propertyName_0(String_t* value)
+	{
+		___propertyName_0 = value;
+		Il2CppCodeGenWriteBarrier((&___propertyName_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // U3CFINDCOLUMNWITHPROPERTYNAMEU3EC__ANONSTOREY0_T3952487827_H
 struct Il2CppArrayBounds;
 #ifndef RUNTIMEARRAY_H
 #define RUNTIMEARRAY_H
@@ -1557,6 +2941,66 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // KEYCOLLECTION_T2707328253_H
+#ifndef KEYCOLLECTION_T1655728428_H
+#define KEYCOLLECTION_T1655728428_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.String,SQLite4Unity3d.SQLiteConnection/IndexInfo>
+struct  KeyCollection_t1655728428  : public RuntimeObject
+{
+public:
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/KeyCollection::dictionary
+	Dictionary_2_t1466052957 * ___dictionary_0;
+
+public:
+	inline static int32_t get_offset_of_dictionary_0() { return static_cast<int32_t>(offsetof(KeyCollection_t1655728428, ___dictionary_0)); }
+	inline Dictionary_2_t1466052957 * get_dictionary_0() const { return ___dictionary_0; }
+	inline Dictionary_2_t1466052957 ** get_address_of_dictionary_0() { return &___dictionary_0; }
+	inline void set_dictionary_0(Dictionary_2_t1466052957 * value)
+	{
+		___dictionary_0 = value;
+		Il2CppCodeGenWriteBarrier((&___dictionary_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // KEYCOLLECTION_T1655728428_H
+#ifndef VALUECOLLECTION_T3777700109_H
+#define VALUECOLLECTION_T3777700109_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.String,SQLite4Unity3d.TableMapping>
+struct  ValueCollection_t3777700109  : public RuntimeObject
+{
+public:
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/ValueCollection::dictionary
+	Dictionary_2_t2061655791 * ___dictionary_0;
+
+public:
+	inline static int32_t get_offset_of_dictionary_0() { return static_cast<int32_t>(offsetof(ValueCollection_t3777700109, ___dictionary_0)); }
+	inline Dictionary_2_t2061655791 * get_dictionary_0() const { return ___dictionary_0; }
+	inline Dictionary_2_t2061655791 ** get_address_of_dictionary_0() { return &___dictionary_0; }
+	inline void set_dictionary_0(Dictionary_2_t2061655791 * value)
+	{
+		___dictionary_0 = value;
+		Il2CppCodeGenWriteBarrier((&___dictionary_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // VALUECOLLECTION_T3777700109_H
 #ifndef DICTIONARY_2_T2517652782_H
 #define DICTIONARY_2_T2517652782_H
 #ifdef __clang__
@@ -1709,6 +3153,310 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DICTIONARY_2_T2517652782_H
+#ifndef DICTIONARY_2_T1466052957_H
+#define DICTIONARY_2_T1466052957_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.Dictionary`2<System.String,SQLite4Unity3d.SQLiteConnection/IndexInfo>
+struct  Dictionary_2_t1466052957  : public RuntimeObject
+{
+public:
+	// System.Int32[] System.Collections.Generic.Dictionary`2::table
+	Int32U5BU5D_t385246372* ___table_4;
+	// System.Collections.Generic.Link[] System.Collections.Generic.Dictionary`2::linkSlots
+	LinkU5BU5D_t964245573* ___linkSlots_5;
+	// TKey[] System.Collections.Generic.Dictionary`2::keySlots
+	StringU5BU5D_t1281789340* ___keySlots_6;
+	// TValue[] System.Collections.Generic.Dictionary`2::valueSlots
+	IndexInfoU5BU5D_t1204222983* ___valueSlots_7;
+	// System.Int32 System.Collections.Generic.Dictionary`2::touchedSlots
+	int32_t ___touchedSlots_8;
+	// System.Int32 System.Collections.Generic.Dictionary`2::emptySlot
+	int32_t ___emptySlot_9;
+	// System.Int32 System.Collections.Generic.Dictionary`2::count
+	int32_t ___count_10;
+	// System.Int32 System.Collections.Generic.Dictionary`2::threshold
+	int32_t ___threshold_11;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::hcp
+	RuntimeObject* ___hcp_12;
+	// System.Runtime.Serialization.SerializationInfo System.Collections.Generic.Dictionary`2::serialization_info
+	SerializationInfo_t950877179 * ___serialization_info_13;
+	// System.Int32 System.Collections.Generic.Dictionary`2::generation
+	int32_t ___generation_14;
+
+public:
+	inline static int32_t get_offset_of_table_4() { return static_cast<int32_t>(offsetof(Dictionary_2_t1466052957, ___table_4)); }
+	inline Int32U5BU5D_t385246372* get_table_4() const { return ___table_4; }
+	inline Int32U5BU5D_t385246372** get_address_of_table_4() { return &___table_4; }
+	inline void set_table_4(Int32U5BU5D_t385246372* value)
+	{
+		___table_4 = value;
+		Il2CppCodeGenWriteBarrier((&___table_4), value);
+	}
+
+	inline static int32_t get_offset_of_linkSlots_5() { return static_cast<int32_t>(offsetof(Dictionary_2_t1466052957, ___linkSlots_5)); }
+	inline LinkU5BU5D_t964245573* get_linkSlots_5() const { return ___linkSlots_5; }
+	inline LinkU5BU5D_t964245573** get_address_of_linkSlots_5() { return &___linkSlots_5; }
+	inline void set_linkSlots_5(LinkU5BU5D_t964245573* value)
+	{
+		___linkSlots_5 = value;
+		Il2CppCodeGenWriteBarrier((&___linkSlots_5), value);
+	}
+
+	inline static int32_t get_offset_of_keySlots_6() { return static_cast<int32_t>(offsetof(Dictionary_2_t1466052957, ___keySlots_6)); }
+	inline StringU5BU5D_t1281789340* get_keySlots_6() const { return ___keySlots_6; }
+	inline StringU5BU5D_t1281789340** get_address_of_keySlots_6() { return &___keySlots_6; }
+	inline void set_keySlots_6(StringU5BU5D_t1281789340* value)
+	{
+		___keySlots_6 = value;
+		Il2CppCodeGenWriteBarrier((&___keySlots_6), value);
+	}
+
+	inline static int32_t get_offset_of_valueSlots_7() { return static_cast<int32_t>(offsetof(Dictionary_2_t1466052957, ___valueSlots_7)); }
+	inline IndexInfoU5BU5D_t1204222983* get_valueSlots_7() const { return ___valueSlots_7; }
+	inline IndexInfoU5BU5D_t1204222983** get_address_of_valueSlots_7() { return &___valueSlots_7; }
+	inline void set_valueSlots_7(IndexInfoU5BU5D_t1204222983* value)
+	{
+		___valueSlots_7 = value;
+		Il2CppCodeGenWriteBarrier((&___valueSlots_7), value);
+	}
+
+	inline static int32_t get_offset_of_touchedSlots_8() { return static_cast<int32_t>(offsetof(Dictionary_2_t1466052957, ___touchedSlots_8)); }
+	inline int32_t get_touchedSlots_8() const { return ___touchedSlots_8; }
+	inline int32_t* get_address_of_touchedSlots_8() { return &___touchedSlots_8; }
+	inline void set_touchedSlots_8(int32_t value)
+	{
+		___touchedSlots_8 = value;
+	}
+
+	inline static int32_t get_offset_of_emptySlot_9() { return static_cast<int32_t>(offsetof(Dictionary_2_t1466052957, ___emptySlot_9)); }
+	inline int32_t get_emptySlot_9() const { return ___emptySlot_9; }
+	inline int32_t* get_address_of_emptySlot_9() { return &___emptySlot_9; }
+	inline void set_emptySlot_9(int32_t value)
+	{
+		___emptySlot_9 = value;
+	}
+
+	inline static int32_t get_offset_of_count_10() { return static_cast<int32_t>(offsetof(Dictionary_2_t1466052957, ___count_10)); }
+	inline int32_t get_count_10() const { return ___count_10; }
+	inline int32_t* get_address_of_count_10() { return &___count_10; }
+	inline void set_count_10(int32_t value)
+	{
+		___count_10 = value;
+	}
+
+	inline static int32_t get_offset_of_threshold_11() { return static_cast<int32_t>(offsetof(Dictionary_2_t1466052957, ___threshold_11)); }
+	inline int32_t get_threshold_11() const { return ___threshold_11; }
+	inline int32_t* get_address_of_threshold_11() { return &___threshold_11; }
+	inline void set_threshold_11(int32_t value)
+	{
+		___threshold_11 = value;
+	}
+
+	inline static int32_t get_offset_of_hcp_12() { return static_cast<int32_t>(offsetof(Dictionary_2_t1466052957, ___hcp_12)); }
+	inline RuntimeObject* get_hcp_12() const { return ___hcp_12; }
+	inline RuntimeObject** get_address_of_hcp_12() { return &___hcp_12; }
+	inline void set_hcp_12(RuntimeObject* value)
+	{
+		___hcp_12 = value;
+		Il2CppCodeGenWriteBarrier((&___hcp_12), value);
+	}
+
+	inline static int32_t get_offset_of_serialization_info_13() { return static_cast<int32_t>(offsetof(Dictionary_2_t1466052957, ___serialization_info_13)); }
+	inline SerializationInfo_t950877179 * get_serialization_info_13() const { return ___serialization_info_13; }
+	inline SerializationInfo_t950877179 ** get_address_of_serialization_info_13() { return &___serialization_info_13; }
+	inline void set_serialization_info_13(SerializationInfo_t950877179 * value)
+	{
+		___serialization_info_13 = value;
+		Il2CppCodeGenWriteBarrier((&___serialization_info_13), value);
+	}
+
+	inline static int32_t get_offset_of_generation_14() { return static_cast<int32_t>(offsetof(Dictionary_2_t1466052957, ___generation_14)); }
+	inline int32_t get_generation_14() const { return ___generation_14; }
+	inline int32_t* get_address_of_generation_14() { return &___generation_14; }
+	inline void set_generation_14(int32_t value)
+	{
+		___generation_14 = value;
+	}
+};
+
+struct Dictionary_2_t1466052957_StaticFields
+{
+public:
+	// System.Collections.Generic.Dictionary`2/Transform`1<TKey,TValue,System.Collections.DictionaryEntry> System.Collections.Generic.Dictionary`2::<>f__am$cacheB
+	Transform_1_t54634699 * ___U3CU3Ef__amU24cacheB_15;
+
+public:
+	inline static int32_t get_offset_of_U3CU3Ef__amU24cacheB_15() { return static_cast<int32_t>(offsetof(Dictionary_2_t1466052957_StaticFields, ___U3CU3Ef__amU24cacheB_15)); }
+	inline Transform_1_t54634699 * get_U3CU3Ef__amU24cacheB_15() const { return ___U3CU3Ef__amU24cacheB_15; }
+	inline Transform_1_t54634699 ** get_address_of_U3CU3Ef__amU24cacheB_15() { return &___U3CU3Ef__amU24cacheB_15; }
+	inline void set_U3CU3Ef__amU24cacheB_15(Transform_1_t54634699 * value)
+	{
+		___U3CU3Ef__amU24cacheB_15 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CU3Ef__amU24cacheB_15), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DICTIONARY_2_T1466052957_H
+#ifndef DICTIONARY_2_T2061655791_H
+#define DICTIONARY_2_T2061655791_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.Dictionary`2<System.String,SQLite4Unity3d.TableMapping>
+struct  Dictionary_2_t2061655791  : public RuntimeObject
+{
+public:
+	// System.Int32[] System.Collections.Generic.Dictionary`2::table
+	Int32U5BU5D_t385246372* ___table_4;
+	// System.Collections.Generic.Link[] System.Collections.Generic.Dictionary`2::linkSlots
+	LinkU5BU5D_t964245573* ___linkSlots_5;
+	// TKey[] System.Collections.Generic.Dictionary`2::keySlots
+	StringU5BU5D_t1281789340* ___keySlots_6;
+	// TValue[] System.Collections.Generic.Dictionary`2::valueSlots
+	TableMappingU5BU5D_t1004035053* ___valueSlots_7;
+	// System.Int32 System.Collections.Generic.Dictionary`2::touchedSlots
+	int32_t ___touchedSlots_8;
+	// System.Int32 System.Collections.Generic.Dictionary`2::emptySlot
+	int32_t ___emptySlot_9;
+	// System.Int32 System.Collections.Generic.Dictionary`2::count
+	int32_t ___count_10;
+	// System.Int32 System.Collections.Generic.Dictionary`2::threshold
+	int32_t ___threshold_11;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::hcp
+	RuntimeObject* ___hcp_12;
+	// System.Runtime.Serialization.SerializationInfo System.Collections.Generic.Dictionary`2::serialization_info
+	SerializationInfo_t950877179 * ___serialization_info_13;
+	// System.Int32 System.Collections.Generic.Dictionary`2::generation
+	int32_t ___generation_14;
+
+public:
+	inline static int32_t get_offset_of_table_4() { return static_cast<int32_t>(offsetof(Dictionary_2_t2061655791, ___table_4)); }
+	inline Int32U5BU5D_t385246372* get_table_4() const { return ___table_4; }
+	inline Int32U5BU5D_t385246372** get_address_of_table_4() { return &___table_4; }
+	inline void set_table_4(Int32U5BU5D_t385246372* value)
+	{
+		___table_4 = value;
+		Il2CppCodeGenWriteBarrier((&___table_4), value);
+	}
+
+	inline static int32_t get_offset_of_linkSlots_5() { return static_cast<int32_t>(offsetof(Dictionary_2_t2061655791, ___linkSlots_5)); }
+	inline LinkU5BU5D_t964245573* get_linkSlots_5() const { return ___linkSlots_5; }
+	inline LinkU5BU5D_t964245573** get_address_of_linkSlots_5() { return &___linkSlots_5; }
+	inline void set_linkSlots_5(LinkU5BU5D_t964245573* value)
+	{
+		___linkSlots_5 = value;
+		Il2CppCodeGenWriteBarrier((&___linkSlots_5), value);
+	}
+
+	inline static int32_t get_offset_of_keySlots_6() { return static_cast<int32_t>(offsetof(Dictionary_2_t2061655791, ___keySlots_6)); }
+	inline StringU5BU5D_t1281789340* get_keySlots_6() const { return ___keySlots_6; }
+	inline StringU5BU5D_t1281789340** get_address_of_keySlots_6() { return &___keySlots_6; }
+	inline void set_keySlots_6(StringU5BU5D_t1281789340* value)
+	{
+		___keySlots_6 = value;
+		Il2CppCodeGenWriteBarrier((&___keySlots_6), value);
+	}
+
+	inline static int32_t get_offset_of_valueSlots_7() { return static_cast<int32_t>(offsetof(Dictionary_2_t2061655791, ___valueSlots_7)); }
+	inline TableMappingU5BU5D_t1004035053* get_valueSlots_7() const { return ___valueSlots_7; }
+	inline TableMappingU5BU5D_t1004035053** get_address_of_valueSlots_7() { return &___valueSlots_7; }
+	inline void set_valueSlots_7(TableMappingU5BU5D_t1004035053* value)
+	{
+		___valueSlots_7 = value;
+		Il2CppCodeGenWriteBarrier((&___valueSlots_7), value);
+	}
+
+	inline static int32_t get_offset_of_touchedSlots_8() { return static_cast<int32_t>(offsetof(Dictionary_2_t2061655791, ___touchedSlots_8)); }
+	inline int32_t get_touchedSlots_8() const { return ___touchedSlots_8; }
+	inline int32_t* get_address_of_touchedSlots_8() { return &___touchedSlots_8; }
+	inline void set_touchedSlots_8(int32_t value)
+	{
+		___touchedSlots_8 = value;
+	}
+
+	inline static int32_t get_offset_of_emptySlot_9() { return static_cast<int32_t>(offsetof(Dictionary_2_t2061655791, ___emptySlot_9)); }
+	inline int32_t get_emptySlot_9() const { return ___emptySlot_9; }
+	inline int32_t* get_address_of_emptySlot_9() { return &___emptySlot_9; }
+	inline void set_emptySlot_9(int32_t value)
+	{
+		___emptySlot_9 = value;
+	}
+
+	inline static int32_t get_offset_of_count_10() { return static_cast<int32_t>(offsetof(Dictionary_2_t2061655791, ___count_10)); }
+	inline int32_t get_count_10() const { return ___count_10; }
+	inline int32_t* get_address_of_count_10() { return &___count_10; }
+	inline void set_count_10(int32_t value)
+	{
+		___count_10 = value;
+	}
+
+	inline static int32_t get_offset_of_threshold_11() { return static_cast<int32_t>(offsetof(Dictionary_2_t2061655791, ___threshold_11)); }
+	inline int32_t get_threshold_11() const { return ___threshold_11; }
+	inline int32_t* get_address_of_threshold_11() { return &___threshold_11; }
+	inline void set_threshold_11(int32_t value)
+	{
+		___threshold_11 = value;
+	}
+
+	inline static int32_t get_offset_of_hcp_12() { return static_cast<int32_t>(offsetof(Dictionary_2_t2061655791, ___hcp_12)); }
+	inline RuntimeObject* get_hcp_12() const { return ___hcp_12; }
+	inline RuntimeObject** get_address_of_hcp_12() { return &___hcp_12; }
+	inline void set_hcp_12(RuntimeObject* value)
+	{
+		___hcp_12 = value;
+		Il2CppCodeGenWriteBarrier((&___hcp_12), value);
+	}
+
+	inline static int32_t get_offset_of_serialization_info_13() { return static_cast<int32_t>(offsetof(Dictionary_2_t2061655791, ___serialization_info_13)); }
+	inline SerializationInfo_t950877179 * get_serialization_info_13() const { return ___serialization_info_13; }
+	inline SerializationInfo_t950877179 ** get_address_of_serialization_info_13() { return &___serialization_info_13; }
+	inline void set_serialization_info_13(SerializationInfo_t950877179 * value)
+	{
+		___serialization_info_13 = value;
+		Il2CppCodeGenWriteBarrier((&___serialization_info_13), value);
+	}
+
+	inline static int32_t get_offset_of_generation_14() { return static_cast<int32_t>(offsetof(Dictionary_2_t2061655791, ___generation_14)); }
+	inline int32_t get_generation_14() const { return ___generation_14; }
+	inline int32_t* get_address_of_generation_14() { return &___generation_14; }
+	inline void set_generation_14(int32_t value)
+	{
+		___generation_14 = value;
+	}
+};
+
+struct Dictionary_2_t2061655791_StaticFields
+{
+public:
+	// System.Collections.Generic.Dictionary`2/Transform`1<TKey,TValue,System.Collections.DictionaryEntry> System.Collections.Generic.Dictionary`2::<>f__am$cacheB
+	Transform_1_t4149414065 * ___U3CU3Ef__amU24cacheB_15;
+
+public:
+	inline static int32_t get_offset_of_U3CU3Ef__amU24cacheB_15() { return static_cast<int32_t>(offsetof(Dictionary_2_t2061655791_StaticFields, ___U3CU3Ef__amU24cacheB_15)); }
+	inline Transform_1_t4149414065 * get_U3CU3Ef__amU24cacheB_15() const { return ___U3CU3Ef__amU24cacheB_15; }
+	inline Transform_1_t4149414065 ** get_address_of_U3CU3Ef__amU24cacheB_15() { return &___U3CU3Ef__amU24cacheB_15; }
+	inline void set_U3CU3Ef__amU24cacheB_15(Transform_1_t4149414065 * value)
+	{
+		___U3CU3Ef__amU24cacheB_15 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CU3Ef__amU24cacheB_15), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DICTIONARY_2_T2061655791_H
 #ifndef DICTIONARY_2_T1632706988_H
 #define DICTIONARY_2_T1632706988_H
 #ifdef __clang__
@@ -1928,6 +3676,341 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // LIST_1_T2046717850_H
+#ifndef LIST_1_T4258913814_H
+#define LIST_1_T4258913814_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.List`1<SQLite4Unity3d.SQLiteCommand/Binding>
+struct  List_1_t4258913814  : public RuntimeObject
+{
+public:
+	// T[] System.Collections.Generic.List`1::_items
+	BindingU5BU5D_t2465081697* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+
+public:
+	inline static int32_t get_offset_of__items_1() { return static_cast<int32_t>(offsetof(List_1_t4258913814, ____items_1)); }
+	inline BindingU5BU5D_t2465081697* get__items_1() const { return ____items_1; }
+	inline BindingU5BU5D_t2465081697** get_address_of__items_1() { return &____items_1; }
+	inline void set__items_1(BindingU5BU5D_t2465081697* value)
+	{
+		____items_1 = value;
+		Il2CppCodeGenWriteBarrier((&____items_1), value);
+	}
+
+	inline static int32_t get_offset_of__size_2() { return static_cast<int32_t>(offsetof(List_1_t4258913814, ____size_2)); }
+	inline int32_t get__size_2() const { return ____size_2; }
+	inline int32_t* get_address_of__size_2() { return &____size_2; }
+	inline void set__size_2(int32_t value)
+	{
+		____size_2 = value;
+	}
+
+	inline static int32_t get_offset_of__version_3() { return static_cast<int32_t>(offsetof(List_1_t4258913814, ____version_3)); }
+	inline int32_t get__version_3() const { return ____version_3; }
+	inline int32_t* get_address_of__version_3() { return &____version_3; }
+	inline void set__version_3(int32_t value)
+	{
+		____version_3 = value;
+	}
+};
+
+struct List_1_t4258913814_StaticFields
+{
+public:
+	// T[] System.Collections.Generic.List`1::EmptyArray
+	BindingU5BU5D_t2465081697* ___EmptyArray_4;
+
+public:
+	inline static int32_t get_offset_of_EmptyArray_4() { return static_cast<int32_t>(offsetof(List_1_t4258913814_StaticFields, ___EmptyArray_4)); }
+	inline BindingU5BU5D_t2465081697* get_EmptyArray_4() const { return ___EmptyArray_4; }
+	inline BindingU5BU5D_t2465081697** get_address_of_EmptyArray_4() { return &___EmptyArray_4; }
+	inline void set_EmptyArray_4(BindingU5BU5D_t2465081697* value)
+	{
+		___EmptyArray_4 = value;
+		Il2CppCodeGenWriteBarrier((&___EmptyArray_4), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // LIST_1_T4258913814_H
+#ifndef LIST_1_T4032208569_H
+#define LIST_1_T4032208569_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.List`1<SQLite4Unity3d.SQLiteConnection/ColumnInfo>
+struct  List_1_t4032208569  : public RuntimeObject
+{
+public:
+	// T[] System.Collections.Generic.List`1::_items
+	ColumnInfoU5BU5D_t3904641746* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+
+public:
+	inline static int32_t get_offset_of__items_1() { return static_cast<int32_t>(offsetof(List_1_t4032208569, ____items_1)); }
+	inline ColumnInfoU5BU5D_t3904641746* get__items_1() const { return ____items_1; }
+	inline ColumnInfoU5BU5D_t3904641746** get_address_of__items_1() { return &____items_1; }
+	inline void set__items_1(ColumnInfoU5BU5D_t3904641746* value)
+	{
+		____items_1 = value;
+		Il2CppCodeGenWriteBarrier((&____items_1), value);
+	}
+
+	inline static int32_t get_offset_of__size_2() { return static_cast<int32_t>(offsetof(List_1_t4032208569, ____size_2)); }
+	inline int32_t get__size_2() const { return ____size_2; }
+	inline int32_t* get_address_of__size_2() { return &____size_2; }
+	inline void set__size_2(int32_t value)
+	{
+		____size_2 = value;
+	}
+
+	inline static int32_t get_offset_of__version_3() { return static_cast<int32_t>(offsetof(List_1_t4032208569, ____version_3)); }
+	inline int32_t get__version_3() const { return ____version_3; }
+	inline int32_t* get_address_of__version_3() { return &____version_3; }
+	inline void set__version_3(int32_t value)
+	{
+		____version_3 = value;
+	}
+};
+
+struct List_1_t4032208569_StaticFields
+{
+public:
+	// T[] System.Collections.Generic.List`1::EmptyArray
+	ColumnInfoU5BU5D_t3904641746* ___EmptyArray_4;
+
+public:
+	inline static int32_t get_offset_of_EmptyArray_4() { return static_cast<int32_t>(offsetof(List_1_t4032208569_StaticFields, ___EmptyArray_4)); }
+	inline ColumnInfoU5BU5D_t3904641746* get_EmptyArray_4() const { return ___EmptyArray_4; }
+	inline ColumnInfoU5BU5D_t3904641746** get_address_of_EmptyArray_4() { return &___EmptyArray_4; }
+	inline void set_EmptyArray_4(ColumnInfoU5BU5D_t3904641746* value)
+	{
+		___EmptyArray_4 = value;
+		Il2CppCodeGenWriteBarrier((&___EmptyArray_4), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // LIST_1_T4032208569_H
+#ifndef LIST_1_T257796462_H
+#define LIST_1_T257796462_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.List`1<SQLite4Unity3d.SQLiteConnection/IndexedColumn>
+struct  List_1_t257796462  : public RuntimeObject
+{
+public:
+	// T[] System.Collections.Generic.List`1::_items
+	IndexedColumnU5BU5D_t692768169* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+
+public:
+	inline static int32_t get_offset_of__items_1() { return static_cast<int32_t>(offsetof(List_1_t257796462, ____items_1)); }
+	inline IndexedColumnU5BU5D_t692768169* get__items_1() const { return ____items_1; }
+	inline IndexedColumnU5BU5D_t692768169** get_address_of__items_1() { return &____items_1; }
+	inline void set__items_1(IndexedColumnU5BU5D_t692768169* value)
+	{
+		____items_1 = value;
+		Il2CppCodeGenWriteBarrier((&____items_1), value);
+	}
+
+	inline static int32_t get_offset_of__size_2() { return static_cast<int32_t>(offsetof(List_1_t257796462, ____size_2)); }
+	inline int32_t get__size_2() const { return ____size_2; }
+	inline int32_t* get_address_of__size_2() { return &____size_2; }
+	inline void set__size_2(int32_t value)
+	{
+		____size_2 = value;
+	}
+
+	inline static int32_t get_offset_of__version_3() { return static_cast<int32_t>(offsetof(List_1_t257796462, ____version_3)); }
+	inline int32_t get__version_3() const { return ____version_3; }
+	inline int32_t* get_address_of__version_3() { return &____version_3; }
+	inline void set__version_3(int32_t value)
+	{
+		____version_3 = value;
+	}
+};
+
+struct List_1_t257796462_StaticFields
+{
+public:
+	// T[] System.Collections.Generic.List`1::EmptyArray
+	IndexedColumnU5BU5D_t692768169* ___EmptyArray_4;
+
+public:
+	inline static int32_t get_offset_of_EmptyArray_4() { return static_cast<int32_t>(offsetof(List_1_t257796462_StaticFields, ___EmptyArray_4)); }
+	inline IndexedColumnU5BU5D_t692768169* get_EmptyArray_4() const { return ___EmptyArray_4; }
+	inline IndexedColumnU5BU5D_t692768169** get_address_of_EmptyArray_4() { return &___EmptyArray_4; }
+	inline void set_EmptyArray_4(IndexedColumnU5BU5D_t692768169* value)
+	{
+		___EmptyArray_4 = value;
+		Il2CppCodeGenWriteBarrier((&___EmptyArray_4), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // LIST_1_T257796462_H
+#ifndef LIST_1_T2830015325_H
+#define LIST_1_T2830015325_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.List`1<SQLite4Unity3d.TableMapping/Column>
+struct  List_1_t2830015325  : public RuntimeObject
+{
+public:
+	// T[] System.Collections.Generic.List`1::_items
+	ColumnU5BU5D_t4060676894* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+
+public:
+	inline static int32_t get_offset_of__items_1() { return static_cast<int32_t>(offsetof(List_1_t2830015325, ____items_1)); }
+	inline ColumnU5BU5D_t4060676894* get__items_1() const { return ____items_1; }
+	inline ColumnU5BU5D_t4060676894** get_address_of__items_1() { return &____items_1; }
+	inline void set__items_1(ColumnU5BU5D_t4060676894* value)
+	{
+		____items_1 = value;
+		Il2CppCodeGenWriteBarrier((&____items_1), value);
+	}
+
+	inline static int32_t get_offset_of__size_2() { return static_cast<int32_t>(offsetof(List_1_t2830015325, ____size_2)); }
+	inline int32_t get__size_2() const { return ____size_2; }
+	inline int32_t* get_address_of__size_2() { return &____size_2; }
+	inline void set__size_2(int32_t value)
+	{
+		____size_2 = value;
+	}
+
+	inline static int32_t get_offset_of__version_3() { return static_cast<int32_t>(offsetof(List_1_t2830015325, ____version_3)); }
+	inline int32_t get__version_3() const { return ____version_3; }
+	inline int32_t* get_address_of__version_3() { return &____version_3; }
+	inline void set__version_3(int32_t value)
+	{
+		____version_3 = value;
+	}
+};
+
+struct List_1_t2830015325_StaticFields
+{
+public:
+	// T[] System.Collections.Generic.List`1::EmptyArray
+	ColumnU5BU5D_t4060676894* ___EmptyArray_4;
+
+public:
+	inline static int32_t get_offset_of_EmptyArray_4() { return static_cast<int32_t>(offsetof(List_1_t2830015325_StaticFields, ___EmptyArray_4)); }
+	inline ColumnU5BU5D_t4060676894* get_EmptyArray_4() const { return ___EmptyArray_4; }
+	inline ColumnU5BU5D_t4060676894** get_address_of_EmptyArray_4() { return &___EmptyArray_4; }
+	inline void set_EmptyArray_4(ColumnU5BU5D_t4060676894* value)
+	{
+		___EmptyArray_4 = value;
+		Il2CppCodeGenWriteBarrier((&___EmptyArray_4), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // LIST_1_T2830015325_H
+#ifndef LIST_1_T257213610_H
+#define LIST_1_T257213610_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.List`1<System.Object>
+struct  List_1_t257213610  : public RuntimeObject
+{
+public:
+	// T[] System.Collections.Generic.List`1::_items
+	ObjectU5BU5D_t2843939325* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+
+public:
+	inline static int32_t get_offset_of__items_1() { return static_cast<int32_t>(offsetof(List_1_t257213610, ____items_1)); }
+	inline ObjectU5BU5D_t2843939325* get__items_1() const { return ____items_1; }
+	inline ObjectU5BU5D_t2843939325** get_address_of__items_1() { return &____items_1; }
+	inline void set__items_1(ObjectU5BU5D_t2843939325* value)
+	{
+		____items_1 = value;
+		Il2CppCodeGenWriteBarrier((&____items_1), value);
+	}
+
+	inline static int32_t get_offset_of__size_2() { return static_cast<int32_t>(offsetof(List_1_t257213610, ____size_2)); }
+	inline int32_t get__size_2() const { return ____size_2; }
+	inline int32_t* get_address_of__size_2() { return &____size_2; }
+	inline void set__size_2(int32_t value)
+	{
+		____size_2 = value;
+	}
+
+	inline static int32_t get_offset_of__version_3() { return static_cast<int32_t>(offsetof(List_1_t257213610, ____version_3)); }
+	inline int32_t get__version_3() const { return ____version_3; }
+	inline int32_t* get_address_of__version_3() { return &____version_3; }
+	inline void set__version_3(int32_t value)
+	{
+		____version_3 = value;
+	}
+};
+
+struct List_1_t257213610_StaticFields
+{
+public:
+	// T[] System.Collections.Generic.List`1::EmptyArray
+	ObjectU5BU5D_t2843939325* ___EmptyArray_4;
+
+public:
+	inline static int32_t get_offset_of_EmptyArray_4() { return static_cast<int32_t>(offsetof(List_1_t257213610_StaticFields, ___EmptyArray_4)); }
+	inline ObjectU5BU5D_t2843939325* get_EmptyArray_4() const { return ___EmptyArray_4; }
+	inline ObjectU5BU5D_t2843939325** get_address_of_EmptyArray_4() { return &___EmptyArray_4; }
+	inline void set_EmptyArray_4(ObjectU5BU5D_t2843939325* value)
+	{
+		___EmptyArray_4 = value;
+		Il2CppCodeGenWriteBarrier((&___EmptyArray_4), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // LIST_1_T257213610_H
 #ifndef LIST_1_T3319525431_H
 #define LIST_1_T3319525431_H
 #ifdef __clang__
@@ -2062,6 +4145,73 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // LIST_1_T3245415856_H
+#ifndef LIST_1_T1738687162_H
+#define LIST_1_T1738687162_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.List`1<packt.FoodyGO.Database.MonsterSpawnLocation>
+struct  List_1_t1738687162  : public RuntimeObject
+{
+public:
+	// T[] System.Collections.Generic.List`1::_items
+	MonsterSpawnLocationU5BU5D_t422840749* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+
+public:
+	inline static int32_t get_offset_of__items_1() { return static_cast<int32_t>(offsetof(List_1_t1738687162, ____items_1)); }
+	inline MonsterSpawnLocationU5BU5D_t422840749* get__items_1() const { return ____items_1; }
+	inline MonsterSpawnLocationU5BU5D_t422840749** get_address_of__items_1() { return &____items_1; }
+	inline void set__items_1(MonsterSpawnLocationU5BU5D_t422840749* value)
+	{
+		____items_1 = value;
+		Il2CppCodeGenWriteBarrier((&____items_1), value);
+	}
+
+	inline static int32_t get_offset_of__size_2() { return static_cast<int32_t>(offsetof(List_1_t1738687162, ____size_2)); }
+	inline int32_t get__size_2() const { return ____size_2; }
+	inline int32_t* get_address_of__size_2() { return &____size_2; }
+	inline void set__size_2(int32_t value)
+	{
+		____size_2 = value;
+	}
+
+	inline static int32_t get_offset_of__version_3() { return static_cast<int32_t>(offsetof(List_1_t1738687162, ____version_3)); }
+	inline int32_t get__version_3() const { return ____version_3; }
+	inline int32_t* get_address_of__version_3() { return &____version_3; }
+	inline void set__version_3(int32_t value)
+	{
+		____version_3 = value;
+	}
+};
+
+struct List_1_t1738687162_StaticFields
+{
+public:
+	// T[] System.Collections.Generic.List`1::EmptyArray
+	MonsterSpawnLocationU5BU5D_t422840749* ___EmptyArray_4;
+
+public:
+	inline static int32_t get_offset_of_EmptyArray_4() { return static_cast<int32_t>(offsetof(List_1_t1738687162_StaticFields, ___EmptyArray_4)); }
+	inline MonsterSpawnLocationU5BU5D_t422840749* get_EmptyArray_4() const { return ___EmptyArray_4; }
+	inline MonsterSpawnLocationU5BU5D_t422840749** get_address_of_EmptyArray_4() { return &___EmptyArray_4; }
+	inline void set_EmptyArray_4(MonsterSpawnLocationU5BU5D_t422840749* value)
+	{
+		___EmptyArray_4 = value;
+		Il2CppCodeGenWriteBarrier((&___EmptyArray_4), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // LIST_1_T1738687162_H
 #ifndef QUEUE_1_T3702832664_H
 #define QUEUE_1_T3702832664_H
 #ifdef __clang__
@@ -2329,6 +4479,81 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // NAMEOBJECTCOLLECTIONBASE_T2091847364_H
+#ifndef STOPWATCH_T305734070_H
+#define STOPWATCH_T305734070_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Diagnostics.Stopwatch
+struct  Stopwatch_t305734070  : public RuntimeObject
+{
+public:
+	// System.Int64 System.Diagnostics.Stopwatch::elapsed
+	int64_t ___elapsed_2;
+	// System.Int64 System.Diagnostics.Stopwatch::started
+	int64_t ___started_3;
+	// System.Boolean System.Diagnostics.Stopwatch::is_running
+	bool ___is_running_4;
+
+public:
+	inline static int32_t get_offset_of_elapsed_2() { return static_cast<int32_t>(offsetof(Stopwatch_t305734070, ___elapsed_2)); }
+	inline int64_t get_elapsed_2() const { return ___elapsed_2; }
+	inline int64_t* get_address_of_elapsed_2() { return &___elapsed_2; }
+	inline void set_elapsed_2(int64_t value)
+	{
+		___elapsed_2 = value;
+	}
+
+	inline static int32_t get_offset_of_started_3() { return static_cast<int32_t>(offsetof(Stopwatch_t305734070, ___started_3)); }
+	inline int64_t get_started_3() const { return ___started_3; }
+	inline int64_t* get_address_of_started_3() { return &___started_3; }
+	inline void set_started_3(int64_t value)
+	{
+		___started_3 = value;
+	}
+
+	inline static int32_t get_offset_of_is_running_4() { return static_cast<int32_t>(offsetof(Stopwatch_t305734070, ___is_running_4)); }
+	inline bool get_is_running_4() const { return ___is_running_4; }
+	inline bool* get_address_of_is_running_4() { return &___is_running_4; }
+	inline void set_is_running_4(bool value)
+	{
+		___is_running_4 = value;
+	}
+};
+
+struct Stopwatch_t305734070_StaticFields
+{
+public:
+	// System.Int64 System.Diagnostics.Stopwatch::Frequency
+	int64_t ___Frequency_0;
+	// System.Boolean System.Diagnostics.Stopwatch::IsHighResolution
+	bool ___IsHighResolution_1;
+
+public:
+	inline static int32_t get_offset_of_Frequency_0() { return static_cast<int32_t>(offsetof(Stopwatch_t305734070_StaticFields, ___Frequency_0)); }
+	inline int64_t get_Frequency_0() const { return ___Frequency_0; }
+	inline int64_t* get_address_of_Frequency_0() { return &___Frequency_0; }
+	inline void set_Frequency_0(int64_t value)
+	{
+		___Frequency_0 = value;
+	}
+
+	inline static int32_t get_offset_of_IsHighResolution_1() { return static_cast<int32_t>(offsetof(Stopwatch_t305734070_StaticFields, ___IsHighResolution_1)); }
+	inline bool get_IsHighResolution_1() const { return ___IsHighResolution_1; }
+	inline bool* get_address_of_IsHighResolution_1() { return &___IsHighResolution_1; }
+	inline void set_IsHighResolution_1(bool value)
+	{
+		___IsHighResolution_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // STOPWATCH_T305734070_H
 #ifndef EXCEPTION_T_H
 #define EXCEPTION_T_H
 #ifdef __clang__
@@ -2838,6 +5063,56 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // HTTPLISTENERRESPONSE_T3502667045_H
+#ifndef RANDOM_T108471755_H
+#define RANDOM_T108471755_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Random
+struct  Random_t108471755  : public RuntimeObject
+{
+public:
+	// System.Int32 System.Random::inext
+	int32_t ___inext_3;
+	// System.Int32 System.Random::inextp
+	int32_t ___inextp_4;
+	// System.Int32[] System.Random::SeedArray
+	Int32U5BU5D_t385246372* ___SeedArray_5;
+
+public:
+	inline static int32_t get_offset_of_inext_3() { return static_cast<int32_t>(offsetof(Random_t108471755, ___inext_3)); }
+	inline int32_t get_inext_3() const { return ___inext_3; }
+	inline int32_t* get_address_of_inext_3() { return &___inext_3; }
+	inline void set_inext_3(int32_t value)
+	{
+		___inext_3 = value;
+	}
+
+	inline static int32_t get_offset_of_inextp_4() { return static_cast<int32_t>(offsetof(Random_t108471755, ___inextp_4)); }
+	inline int32_t get_inextp_4() const { return ___inextp_4; }
+	inline int32_t* get_address_of_inextp_4() { return &___inextp_4; }
+	inline void set_inextp_4(int32_t value)
+	{
+		___inextp_4 = value;
+	}
+
+	inline static int32_t get_offset_of_SeedArray_5() { return static_cast<int32_t>(offsetof(Random_t108471755, ___SeedArray_5)); }
+	inline Int32U5BU5D_t385246372* get_SeedArray_5() const { return ___SeedArray_5; }
+	inline Int32U5BU5D_t385246372** get_address_of_SeedArray_5() { return &___SeedArray_5; }
+	inline void set_SeedArray_5(Int32U5BU5D_t385246372* value)
+	{
+		___SeedArray_5 = value;
+		Il2CppCodeGenWriteBarrier((&___SeedArray_5), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // RANDOM_T108471755_H
 #ifndef MEMBERINFO_T_H
 #define MEMBERINFO_T_H
 #ifdef __clang__
@@ -4094,6 +6369,117 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // VIRTUALAXIS_T4087348596_H
+#ifndef DATABASEVERSION_T3084738200_H
+#define DATABASEVERSION_T3084738200_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// packt.FoodyGO.Database.DatabaseVersion
+struct  DatabaseVersion_t3084738200  : public RuntimeObject
+{
+public:
+	// System.String packt.FoodyGO.Database.DatabaseVersion::<Version>k__BackingField
+	String_t* ___U3CVersionU3Ek__BackingField_0;
+
+public:
+	inline static int32_t get_offset_of_U3CVersionU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(DatabaseVersion_t3084738200, ___U3CVersionU3Ek__BackingField_0)); }
+	inline String_t* get_U3CVersionU3Ek__BackingField_0() const { return ___U3CVersionU3Ek__BackingField_0; }
+	inline String_t** get_address_of_U3CVersionU3Ek__BackingField_0() { return &___U3CVersionU3Ek__BackingField_0; }
+	inline void set_U3CVersionU3Ek__BackingField_0(String_t* value)
+	{
+		___U3CVersionU3Ek__BackingField_0 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CVersionU3Ek__BackingField_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATABASEVERSION_T3084738200_H
+#ifndef MONSTER_T1773341114_H
+#define MONSTER_T1773341114_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// packt.FoodyGO.Database.Monster
+struct  Monster_t1773341114  : public RuntimeObject
+{
+public:
+	// System.Int32 packt.FoodyGO.Database.Monster::<Id>k__BackingField
+	int32_t ___U3CIdU3Ek__BackingField_0;
+	// System.String packt.FoodyGO.Database.Monster::<Name>k__BackingField
+	String_t* ___U3CNameU3Ek__BackingField_1;
+	// System.Int32 packt.FoodyGO.Database.Monster::<Level>k__BackingField
+	int32_t ___U3CLevelU3Ek__BackingField_2;
+	// System.Int32 packt.FoodyGO.Database.Monster::<Power>k__BackingField
+	int32_t ___U3CPowerU3Ek__BackingField_3;
+	// System.String packt.FoodyGO.Database.Monster::<Skills>k__BackingField
+	String_t* ___U3CSkillsU3Ek__BackingField_4;
+	// System.Double packt.FoodyGO.Database.Monster::<CaughtTimestamp>k__BackingField
+	double ___U3CCaughtTimestampU3Ek__BackingField_5;
+
+public:
+	inline static int32_t get_offset_of_U3CIdU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(Monster_t1773341114, ___U3CIdU3Ek__BackingField_0)); }
+	inline int32_t get_U3CIdU3Ek__BackingField_0() const { return ___U3CIdU3Ek__BackingField_0; }
+	inline int32_t* get_address_of_U3CIdU3Ek__BackingField_0() { return &___U3CIdU3Ek__BackingField_0; }
+	inline void set_U3CIdU3Ek__BackingField_0(int32_t value)
+	{
+		___U3CIdU3Ek__BackingField_0 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CNameU3Ek__BackingField_1() { return static_cast<int32_t>(offsetof(Monster_t1773341114, ___U3CNameU3Ek__BackingField_1)); }
+	inline String_t* get_U3CNameU3Ek__BackingField_1() const { return ___U3CNameU3Ek__BackingField_1; }
+	inline String_t** get_address_of_U3CNameU3Ek__BackingField_1() { return &___U3CNameU3Ek__BackingField_1; }
+	inline void set_U3CNameU3Ek__BackingField_1(String_t* value)
+	{
+		___U3CNameU3Ek__BackingField_1 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CNameU3Ek__BackingField_1), value);
+	}
+
+	inline static int32_t get_offset_of_U3CLevelU3Ek__BackingField_2() { return static_cast<int32_t>(offsetof(Monster_t1773341114, ___U3CLevelU3Ek__BackingField_2)); }
+	inline int32_t get_U3CLevelU3Ek__BackingField_2() const { return ___U3CLevelU3Ek__BackingField_2; }
+	inline int32_t* get_address_of_U3CLevelU3Ek__BackingField_2() { return &___U3CLevelU3Ek__BackingField_2; }
+	inline void set_U3CLevelU3Ek__BackingField_2(int32_t value)
+	{
+		___U3CLevelU3Ek__BackingField_2 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CPowerU3Ek__BackingField_3() { return static_cast<int32_t>(offsetof(Monster_t1773341114, ___U3CPowerU3Ek__BackingField_3)); }
+	inline int32_t get_U3CPowerU3Ek__BackingField_3() const { return ___U3CPowerU3Ek__BackingField_3; }
+	inline int32_t* get_address_of_U3CPowerU3Ek__BackingField_3() { return &___U3CPowerU3Ek__BackingField_3; }
+	inline void set_U3CPowerU3Ek__BackingField_3(int32_t value)
+	{
+		___U3CPowerU3Ek__BackingField_3 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CSkillsU3Ek__BackingField_4() { return static_cast<int32_t>(offsetof(Monster_t1773341114, ___U3CSkillsU3Ek__BackingField_4)); }
+	inline String_t* get_U3CSkillsU3Ek__BackingField_4() const { return ___U3CSkillsU3Ek__BackingField_4; }
+	inline String_t** get_address_of_U3CSkillsU3Ek__BackingField_4() { return &___U3CSkillsU3Ek__BackingField_4; }
+	inline void set_U3CSkillsU3Ek__BackingField_4(String_t* value)
+	{
+		___U3CSkillsU3Ek__BackingField_4 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CSkillsU3Ek__BackingField_4), value);
+	}
+
+	inline static int32_t get_offset_of_U3CCaughtTimestampU3Ek__BackingField_5() { return static_cast<int32_t>(offsetof(Monster_t1773341114, ___U3CCaughtTimestampU3Ek__BackingField_5)); }
+	inline double get_U3CCaughtTimestampU3Ek__BackingField_5() const { return ___U3CCaughtTimestampU3Ek__BackingField_5; }
+	inline double* get_address_of_U3CCaughtTimestampU3Ek__BackingField_5() { return &___U3CCaughtTimestampU3Ek__BackingField_5; }
+	inline void set_U3CCaughtTimestampU3Ek__BackingField_5(double value)
+	{
+		___U3CCaughtTimestampU3Ek__BackingField_5 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MONSTER_T1773341114_H
 #ifndef U3CDISPLAYSPLASHSCENEU3EC__ITERATOR0_T1774276246_H
 #define U3CDISPLAYSPLASHSCENEU3EC__ITERATOR0_T1774276246_H
 #ifdef __clang__
@@ -4578,8 +6964,8 @@ struct  U3CCleanupMonstersU3Ec__Iterator0_t1226081092  : public RuntimeObject
 public:
 	// System.Double packt.FoodyGO.Services.MonsterService/<CleanupMonsters>c__Iterator0::<now>__1
 	double ___U3CnowU3E__1_0;
-	// packt.FoodyGO.Database.Monster[] packt.FoodyGO.Services.MonsterService/<CleanupMonsters>c__Iterator0::<list>__1
-	MonsterU5BU5D_t2415199775* ___U3ClistU3E__1_1;
+	// packt.FoodyGO.Database.MonsterSpawnLocation[] packt.FoodyGO.Services.MonsterService/<CleanupMonsters>c__Iterator0::<list>__1
+	MonsterSpawnLocationU5BU5D_t422840749* ___U3ClistU3E__1_1;
 	// packt.FoodyGO.Services.MonsterService packt.FoodyGO.Services.MonsterService/<CleanupMonsters>c__Iterator0::$this
 	MonsterService_t815911722 * ___U24this_2;
 	// System.Object packt.FoodyGO.Services.MonsterService/<CleanupMonsters>c__Iterator0::$current
@@ -4599,9 +6985,9 @@ public:
 	}
 
 	inline static int32_t get_offset_of_U3ClistU3E__1_1() { return static_cast<int32_t>(offsetof(U3CCleanupMonstersU3Ec__Iterator0_t1226081092, ___U3ClistU3E__1_1)); }
-	inline MonsterU5BU5D_t2415199775* get_U3ClistU3E__1_1() const { return ___U3ClistU3E__1_1; }
-	inline MonsterU5BU5D_t2415199775** get_address_of_U3ClistU3E__1_1() { return &___U3ClistU3E__1_1; }
-	inline void set_U3ClistU3E__1_1(MonsterU5BU5D_t2415199775* value)
+	inline MonsterSpawnLocationU5BU5D_t422840749* get_U3ClistU3E__1_1() const { return ___U3ClistU3E__1_1; }
+	inline MonsterSpawnLocationU5BU5D_t422840749** get_address_of_U3ClistU3E__1_1() { return &___U3ClistU3E__1_1; }
+	inline void set_U3ClistU3E__1_1(MonsterSpawnLocationU5BU5D_t422840749* value)
 	{
 		___U3ClistU3E__1_1 = value;
 		Il2CppCodeGenWriteBarrier((&___U3ClistU3E__1_1), value);
@@ -4843,6 +7229,405 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // ROUTEATTRIBUTE_T574643108_H
+#ifndef AUTOINCREMENTATTRIBUTE_T3792157881_H
+#define AUTOINCREMENTATTRIBUTE_T3792157881_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.AutoIncrementAttribute
+struct  AutoIncrementAttribute_t3792157881  : public Attribute_t861562559
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // AUTOINCREMENTATTRIBUTE_T3792157881_H
+#ifndef COLLATIONATTRIBUTE_T3564781786_H
+#define COLLATIONATTRIBUTE_T3564781786_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.CollationAttribute
+struct  CollationAttribute_t3564781786  : public Attribute_t861562559
+{
+public:
+	// System.String SQLite4Unity3d.CollationAttribute::<Value>k__BackingField
+	String_t* ___U3CValueU3Ek__BackingField_0;
+
+public:
+	inline static int32_t get_offset_of_U3CValueU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(CollationAttribute_t3564781786, ___U3CValueU3Ek__BackingField_0)); }
+	inline String_t* get_U3CValueU3Ek__BackingField_0() const { return ___U3CValueU3Ek__BackingField_0; }
+	inline String_t** get_address_of_U3CValueU3Ek__BackingField_0() { return &___U3CValueU3Ek__BackingField_0; }
+	inline void set_U3CValueU3Ek__BackingField_0(String_t* value)
+	{
+		___U3CValueU3Ek__BackingField_0 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CValueU3Ek__BackingField_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // COLLATIONATTRIBUTE_T3564781786_H
+#ifndef COLUMNATTRIBUTE_T3583764011_H
+#define COLUMNATTRIBUTE_T3583764011_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.ColumnAttribute
+struct  ColumnAttribute_t3583764011  : public Attribute_t861562559
+{
+public:
+	// System.String SQLite4Unity3d.ColumnAttribute::<Name>k__BackingField
+	String_t* ___U3CNameU3Ek__BackingField_0;
+
+public:
+	inline static int32_t get_offset_of_U3CNameU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(ColumnAttribute_t3583764011, ___U3CNameU3Ek__BackingField_0)); }
+	inline String_t* get_U3CNameU3Ek__BackingField_0() const { return ___U3CNameU3Ek__BackingField_0; }
+	inline String_t** get_address_of_U3CNameU3Ek__BackingField_0() { return &___U3CNameU3Ek__BackingField_0; }
+	inline void set_U3CNameU3Ek__BackingField_0(String_t* value)
+	{
+		___U3CNameU3Ek__BackingField_0 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CNameU3Ek__BackingField_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // COLUMNATTRIBUTE_T3583764011_H
+#ifndef IGNOREATTRIBUTE_T1003697248_H
+#define IGNOREATTRIBUTE_T1003697248_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.IgnoreAttribute
+struct  IgnoreAttribute_t1003697248  : public Attribute_t861562559
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // IGNOREATTRIBUTE_T1003697248_H
+#ifndef INDEXEDATTRIBUTE_T384353508_H
+#define INDEXEDATTRIBUTE_T384353508_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.IndexedAttribute
+struct  IndexedAttribute_t384353508  : public Attribute_t861562559
+{
+public:
+	// System.String SQLite4Unity3d.IndexedAttribute::<Name>k__BackingField
+	String_t* ___U3CNameU3Ek__BackingField_0;
+	// System.Int32 SQLite4Unity3d.IndexedAttribute::<Order>k__BackingField
+	int32_t ___U3COrderU3Ek__BackingField_1;
+	// System.Boolean SQLite4Unity3d.IndexedAttribute::<Unique>k__BackingField
+	bool ___U3CUniqueU3Ek__BackingField_2;
+
+public:
+	inline static int32_t get_offset_of_U3CNameU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(IndexedAttribute_t384353508, ___U3CNameU3Ek__BackingField_0)); }
+	inline String_t* get_U3CNameU3Ek__BackingField_0() const { return ___U3CNameU3Ek__BackingField_0; }
+	inline String_t** get_address_of_U3CNameU3Ek__BackingField_0() { return &___U3CNameU3Ek__BackingField_0; }
+	inline void set_U3CNameU3Ek__BackingField_0(String_t* value)
+	{
+		___U3CNameU3Ek__BackingField_0 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CNameU3Ek__BackingField_0), value);
+	}
+
+	inline static int32_t get_offset_of_U3COrderU3Ek__BackingField_1() { return static_cast<int32_t>(offsetof(IndexedAttribute_t384353508, ___U3COrderU3Ek__BackingField_1)); }
+	inline int32_t get_U3COrderU3Ek__BackingField_1() const { return ___U3COrderU3Ek__BackingField_1; }
+	inline int32_t* get_address_of_U3COrderU3Ek__BackingField_1() { return &___U3COrderU3Ek__BackingField_1; }
+	inline void set_U3COrderU3Ek__BackingField_1(int32_t value)
+	{
+		___U3COrderU3Ek__BackingField_1 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CUniqueU3Ek__BackingField_2() { return static_cast<int32_t>(offsetof(IndexedAttribute_t384353508, ___U3CUniqueU3Ek__BackingField_2)); }
+	inline bool get_U3CUniqueU3Ek__BackingField_2() const { return ___U3CUniqueU3Ek__BackingField_2; }
+	inline bool* get_address_of_U3CUniqueU3Ek__BackingField_2() { return &___U3CUniqueU3Ek__BackingField_2; }
+	inline void set_U3CUniqueU3Ek__BackingField_2(bool value)
+	{
+		___U3CUniqueU3Ek__BackingField_2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // INDEXEDATTRIBUTE_T384353508_H
+#ifndef MAXLENGTHATTRIBUTE_T2329480580_H
+#define MAXLENGTHATTRIBUTE_T2329480580_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.MaxLengthAttribute
+struct  MaxLengthAttribute_t2329480580  : public Attribute_t861562559
+{
+public:
+	// System.Int32 SQLite4Unity3d.MaxLengthAttribute::<Value>k__BackingField
+	int32_t ___U3CValueU3Ek__BackingField_0;
+
+public:
+	inline static int32_t get_offset_of_U3CValueU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(MaxLengthAttribute_t2329480580, ___U3CValueU3Ek__BackingField_0)); }
+	inline int32_t get_U3CValueU3Ek__BackingField_0() const { return ___U3CValueU3Ek__BackingField_0; }
+	inline int32_t* get_address_of_U3CValueU3Ek__BackingField_0() { return &___U3CValueU3Ek__BackingField_0; }
+	inline void set_U3CValueU3Ek__BackingField_0(int32_t value)
+	{
+		___U3CValueU3Ek__BackingField_0 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MAXLENGTHATTRIBUTE_T2329480580_H
+#ifndef NOTNULLATTRIBUTE_T1344045378_H
+#define NOTNULLATTRIBUTE_T1344045378_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.NotNullAttribute
+struct  NotNullAttribute_t1344045378  : public Attribute_t861562559
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // NOTNULLATTRIBUTE_T1344045378_H
+#ifndef PRIMARYKEYATTRIBUTE_T1120256698_H
+#define PRIMARYKEYATTRIBUTE_T1120256698_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.PrimaryKeyAttribute
+struct  PrimaryKeyAttribute_t1120256698  : public Attribute_t861562559
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PRIMARYKEYATTRIBUTE_T1120256698_H
+#ifndef INDEXINFO_T1680796658_H
+#define INDEXINFO_T1680796658_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.SQLiteConnection/IndexInfo
+struct  IndexInfo_t1680796658 
+{
+public:
+	// System.String SQLite4Unity3d.SQLiteConnection/IndexInfo::IndexName
+	String_t* ___IndexName_0;
+	// System.String SQLite4Unity3d.SQLiteConnection/IndexInfo::TableName
+	String_t* ___TableName_1;
+	// System.Boolean SQLite4Unity3d.SQLiteConnection/IndexInfo::Unique
+	bool ___Unique_2;
+	// System.Collections.Generic.List`1<SQLite4Unity3d.SQLiteConnection/IndexedColumn> SQLite4Unity3d.SQLiteConnection/IndexInfo::Columns
+	List_1_t257796462 * ___Columns_3;
+
+public:
+	inline static int32_t get_offset_of_IndexName_0() { return static_cast<int32_t>(offsetof(IndexInfo_t1680796658, ___IndexName_0)); }
+	inline String_t* get_IndexName_0() const { return ___IndexName_0; }
+	inline String_t** get_address_of_IndexName_0() { return &___IndexName_0; }
+	inline void set_IndexName_0(String_t* value)
+	{
+		___IndexName_0 = value;
+		Il2CppCodeGenWriteBarrier((&___IndexName_0), value);
+	}
+
+	inline static int32_t get_offset_of_TableName_1() { return static_cast<int32_t>(offsetof(IndexInfo_t1680796658, ___TableName_1)); }
+	inline String_t* get_TableName_1() const { return ___TableName_1; }
+	inline String_t** get_address_of_TableName_1() { return &___TableName_1; }
+	inline void set_TableName_1(String_t* value)
+	{
+		___TableName_1 = value;
+		Il2CppCodeGenWriteBarrier((&___TableName_1), value);
+	}
+
+	inline static int32_t get_offset_of_Unique_2() { return static_cast<int32_t>(offsetof(IndexInfo_t1680796658, ___Unique_2)); }
+	inline bool get_Unique_2() const { return ___Unique_2; }
+	inline bool* get_address_of_Unique_2() { return &___Unique_2; }
+	inline void set_Unique_2(bool value)
+	{
+		___Unique_2 = value;
+	}
+
+	inline static int32_t get_offset_of_Columns_3() { return static_cast<int32_t>(offsetof(IndexInfo_t1680796658, ___Columns_3)); }
+	inline List_1_t257796462 * get_Columns_3() const { return ___Columns_3; }
+	inline List_1_t257796462 ** get_address_of_Columns_3() { return &___Columns_3; }
+	inline void set_Columns_3(List_1_t257796462 * value)
+	{
+		___Columns_3 = value;
+		Il2CppCodeGenWriteBarrier((&___Columns_3), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+// Native definition for P/Invoke marshalling of SQLite4Unity3d.SQLiteConnection/IndexInfo
+struct IndexInfo_t1680796658_marshaled_pinvoke
+{
+	char* ___IndexName_0;
+	char* ___TableName_1;
+	int32_t ___Unique_2;
+	List_1_t257796462 * ___Columns_3;
+};
+// Native definition for COM marshalling of SQLite4Unity3d.SQLiteConnection/IndexInfo
+struct IndexInfo_t1680796658_marshaled_com
+{
+	Il2CppChar* ___IndexName_0;
+	Il2CppChar* ___TableName_1;
+	int32_t ___Unique_2;
+	List_1_t257796462 * ___Columns_3;
+};
+#endif // INDEXINFO_T1680796658_H
+#ifndef INDEXEDCOLUMN_T3080689016_H
+#define INDEXEDCOLUMN_T3080689016_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.SQLiteConnection/IndexedColumn
+struct  IndexedColumn_t3080689016 
+{
+public:
+	// System.Int32 SQLite4Unity3d.SQLiteConnection/IndexedColumn::Order
+	int32_t ___Order_0;
+	// System.String SQLite4Unity3d.SQLiteConnection/IndexedColumn::ColumnName
+	String_t* ___ColumnName_1;
+
+public:
+	inline static int32_t get_offset_of_Order_0() { return static_cast<int32_t>(offsetof(IndexedColumn_t3080689016, ___Order_0)); }
+	inline int32_t get_Order_0() const { return ___Order_0; }
+	inline int32_t* get_address_of_Order_0() { return &___Order_0; }
+	inline void set_Order_0(int32_t value)
+	{
+		___Order_0 = value;
+	}
+
+	inline static int32_t get_offset_of_ColumnName_1() { return static_cast<int32_t>(offsetof(IndexedColumn_t3080689016, ___ColumnName_1)); }
+	inline String_t* get_ColumnName_1() const { return ___ColumnName_1; }
+	inline String_t** get_address_of_ColumnName_1() { return &___ColumnName_1; }
+	inline void set_ColumnName_1(String_t* value)
+	{
+		___ColumnName_1 = value;
+		Il2CppCodeGenWriteBarrier((&___ColumnName_1), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+// Native definition for P/Invoke marshalling of SQLite4Unity3d.SQLiteConnection/IndexedColumn
+struct IndexedColumn_t3080689016_marshaled_pinvoke
+{
+	int32_t ___Order_0;
+	char* ___ColumnName_1;
+};
+// Native definition for COM marshalling of SQLite4Unity3d.SQLiteConnection/IndexedColumn
+struct IndexedColumn_t3080689016_marshaled_com
+{
+	int32_t ___Order_0;
+	Il2CppChar* ___ColumnName_1;
+};
+#endif // INDEXEDCOLUMN_T3080689016_H
+#ifndef TABLEATTRIBUTE_T3728577771_H
+#define TABLEATTRIBUTE_T3728577771_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.TableAttribute
+struct  TableAttribute_t3728577771  : public Attribute_t861562559
+{
+public:
+	// System.String SQLite4Unity3d.TableAttribute::<Name>k__BackingField
+	String_t* ___U3CNameU3Ek__BackingField_0;
+
+public:
+	inline static int32_t get_offset_of_U3CNameU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(TableAttribute_t3728577771, ___U3CNameU3Ek__BackingField_0)); }
+	inline String_t* get_U3CNameU3Ek__BackingField_0() const { return ___U3CNameU3Ek__BackingField_0; }
+	inline String_t** get_address_of_U3CNameU3Ek__BackingField_0() { return &___U3CNameU3Ek__BackingField_0; }
+	inline void set_U3CNameU3Ek__BackingField_0(String_t* value)
+	{
+		___U3CNameU3Ek__BackingField_0 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CNameU3Ek__BackingField_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // TABLEATTRIBUTE_T3728577771_H
+#ifndef APPLICATIONEXCEPTION_T2339761290_H
+#define APPLICATIONEXCEPTION_T2339761290_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.ApplicationException
+struct  ApplicationException_t2339761290  : public Exception_t
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // APPLICATIONEXCEPTION_T2339761290_H
 #ifndef BOOLEAN_T97287965_H
 #define BOOLEAN_T97287965_H
 #ifdef __clang__
@@ -5116,6 +7901,47 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // KEYVALUEPAIR_2_T620357653_H
+#ifndef KEYVALUEPAIR_2_T164360662_H
+#define KEYVALUEPAIR_2_T164360662_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.KeyValuePair`2<System.String,SQLite4Unity3d.TableMapping>
+struct  KeyValuePair_2_t164360662 
+{
+public:
+	// TKey System.Collections.Generic.KeyValuePair`2::key
+	String_t* ___key_0;
+	// TValue System.Collections.Generic.KeyValuePair`2::value
+	TableMapping_t2276399492 * ___value_1;
+
+public:
+	inline static int32_t get_offset_of_key_0() { return static_cast<int32_t>(offsetof(KeyValuePair_2_t164360662, ___key_0)); }
+	inline String_t* get_key_0() const { return ___key_0; }
+	inline String_t** get_address_of_key_0() { return &___key_0; }
+	inline void set_key_0(String_t* value)
+	{
+		___key_0 = value;
+		Il2CppCodeGenWriteBarrier((&___key_0), value);
+	}
+
+	inline static int32_t get_offset_of_value_1() { return static_cast<int32_t>(offsetof(KeyValuePair_2_t164360662, ___value_1)); }
+	inline TableMapping_t2276399492 * get_value_1() const { return ___value_1; }
+	inline TableMapping_t2276399492 ** get_address_of_value_1() { return &___value_1; }
+	inline void set_value_1(TableMapping_t2276399492 * value)
+	{
+		___value_1 = value;
+		Il2CppCodeGenWriteBarrier((&___value_1), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // KEYVALUEPAIR_2_T164360662_H
 #ifndef KEYVALUEPAIR_2_T4030379155_H
 #define KEYVALUEPAIR_2_T4030379155_H
 #ifdef __clang__
@@ -5157,6 +7983,189 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // KEYVALUEPAIR_2_T4030379155_H
+#ifndef ENUMERATOR_T1853190395_H
+#define ENUMERATOR_T1853190395_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.List`1/Enumerator<SQLite4Unity3d.SQLiteCommand/Binding>
+struct  Enumerator_t1853190395 
+{
+public:
+	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator::l
+	List_1_t4258913814 * ___l_0;
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::next
+	int32_t ___next_1;
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::ver
+	int32_t ___ver_2;
+	// T System.Collections.Generic.List`1/Enumerator::current
+	Binding_t2786839072 * ___current_3;
+
+public:
+	inline static int32_t get_offset_of_l_0() { return static_cast<int32_t>(offsetof(Enumerator_t1853190395, ___l_0)); }
+	inline List_1_t4258913814 * get_l_0() const { return ___l_0; }
+	inline List_1_t4258913814 ** get_address_of_l_0() { return &___l_0; }
+	inline void set_l_0(List_1_t4258913814 * value)
+	{
+		___l_0 = value;
+		Il2CppCodeGenWriteBarrier((&___l_0), value);
+	}
+
+	inline static int32_t get_offset_of_next_1() { return static_cast<int32_t>(offsetof(Enumerator_t1853190395, ___next_1)); }
+	inline int32_t get_next_1() const { return ___next_1; }
+	inline int32_t* get_address_of_next_1() { return &___next_1; }
+	inline void set_next_1(int32_t value)
+	{
+		___next_1 = value;
+	}
+
+	inline static int32_t get_offset_of_ver_2() { return static_cast<int32_t>(offsetof(Enumerator_t1853190395, ___ver_2)); }
+	inline int32_t get_ver_2() const { return ___ver_2; }
+	inline int32_t* get_address_of_ver_2() { return &___ver_2; }
+	inline void set_ver_2(int32_t value)
+	{
+		___ver_2 = value;
+	}
+
+	inline static int32_t get_offset_of_current_3() { return static_cast<int32_t>(offsetof(Enumerator_t1853190395, ___current_3)); }
+	inline Binding_t2786839072 * get_current_3() const { return ___current_3; }
+	inline Binding_t2786839072 ** get_address_of_current_3() { return &___current_3; }
+	inline void set_current_3(Binding_t2786839072 * value)
+	{
+		___current_3 = value;
+		Il2CppCodeGenWriteBarrier((&___current_3), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ENUMERATOR_T1853190395_H
+#ifndef ENUMERATOR_T1626485150_H
+#define ENUMERATOR_T1626485150_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.List`1/Enumerator<SQLite4Unity3d.SQLiteConnection/ColumnInfo>
+struct  Enumerator_t1626485150 
+{
+public:
+	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator::l
+	List_1_t4032208569 * ___l_0;
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::next
+	int32_t ___next_1;
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::ver
+	int32_t ___ver_2;
+	// T System.Collections.Generic.List`1/Enumerator::current
+	ColumnInfo_t2560133827 * ___current_3;
+
+public:
+	inline static int32_t get_offset_of_l_0() { return static_cast<int32_t>(offsetof(Enumerator_t1626485150, ___l_0)); }
+	inline List_1_t4032208569 * get_l_0() const { return ___l_0; }
+	inline List_1_t4032208569 ** get_address_of_l_0() { return &___l_0; }
+	inline void set_l_0(List_1_t4032208569 * value)
+	{
+		___l_0 = value;
+		Il2CppCodeGenWriteBarrier((&___l_0), value);
+	}
+
+	inline static int32_t get_offset_of_next_1() { return static_cast<int32_t>(offsetof(Enumerator_t1626485150, ___next_1)); }
+	inline int32_t get_next_1() const { return ___next_1; }
+	inline int32_t* get_address_of_next_1() { return &___next_1; }
+	inline void set_next_1(int32_t value)
+	{
+		___next_1 = value;
+	}
+
+	inline static int32_t get_offset_of_ver_2() { return static_cast<int32_t>(offsetof(Enumerator_t1626485150, ___ver_2)); }
+	inline int32_t get_ver_2() const { return ___ver_2; }
+	inline int32_t* get_address_of_ver_2() { return &___ver_2; }
+	inline void set_ver_2(int32_t value)
+	{
+		___ver_2 = value;
+	}
+
+	inline static int32_t get_offset_of_current_3() { return static_cast<int32_t>(offsetof(Enumerator_t1626485150, ___current_3)); }
+	inline ColumnInfo_t2560133827 * get_current_3() const { return ___current_3; }
+	inline ColumnInfo_t2560133827 ** get_address_of_current_3() { return &___current_3; }
+	inline void set_current_3(ColumnInfo_t2560133827 * value)
+	{
+		___current_3 = value;
+		Il2CppCodeGenWriteBarrier((&___current_3), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ENUMERATOR_T1626485150_H
+#ifndef ENUMERATOR_T424291906_H
+#define ENUMERATOR_T424291906_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.List`1/Enumerator<SQLite4Unity3d.TableMapping/Column>
+struct  Enumerator_t424291906 
+{
+public:
+	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator::l
+	List_1_t2830015325 * ___l_0;
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::next
+	int32_t ___next_1;
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::ver
+	int32_t ___ver_2;
+	// T System.Collections.Generic.List`1/Enumerator::current
+	Column_t1357940583 * ___current_3;
+
+public:
+	inline static int32_t get_offset_of_l_0() { return static_cast<int32_t>(offsetof(Enumerator_t424291906, ___l_0)); }
+	inline List_1_t2830015325 * get_l_0() const { return ___l_0; }
+	inline List_1_t2830015325 ** get_address_of_l_0() { return &___l_0; }
+	inline void set_l_0(List_1_t2830015325 * value)
+	{
+		___l_0 = value;
+		Il2CppCodeGenWriteBarrier((&___l_0), value);
+	}
+
+	inline static int32_t get_offset_of_next_1() { return static_cast<int32_t>(offsetof(Enumerator_t424291906, ___next_1)); }
+	inline int32_t get_next_1() const { return ___next_1; }
+	inline int32_t* get_address_of_next_1() { return &___next_1; }
+	inline void set_next_1(int32_t value)
+	{
+		___next_1 = value;
+	}
+
+	inline static int32_t get_offset_of_ver_2() { return static_cast<int32_t>(offsetof(Enumerator_t424291906, ___ver_2)); }
+	inline int32_t get_ver_2() const { return ___ver_2; }
+	inline int32_t* get_address_of_ver_2() { return &___ver_2; }
+	inline void set_ver_2(int32_t value)
+	{
+		___ver_2 = value;
+	}
+
+	inline static int32_t get_offset_of_current_3() { return static_cast<int32_t>(offsetof(Enumerator_t424291906, ___current_3)); }
+	inline Column_t1357940583 * get_current_3() const { return ___current_3; }
+	inline Column_t1357940583 ** get_address_of_current_3() { return &___current_3; }
+	inline void set_current_3(Column_t1357940583 * value)
+	{
+		___current_3 = value;
+		Il2CppCodeGenWriteBarrier((&___current_3), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ENUMERATOR_T424291906_H
 #ifndef ENUMERATOR_T2146457487_H
 #define ENUMERATOR_T2146457487_H
 #ifdef __clang__
@@ -5279,38 +8288,38 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // ENUMERATOR_T913802012_H
-#ifndef ENUMERATOR_T839692437_H
-#define ENUMERATOR_T839692437_H
+#ifndef ENUMERATOR_T3627931039_H
+#define ENUMERATOR_T3627931039_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Collections.Generic.List`1/Enumerator<packt.FoodyGO.Database.Monster>
-struct  Enumerator_t839692437 
+// System.Collections.Generic.List`1/Enumerator<packt.FoodyGO.Database.MonsterSpawnLocation>
+struct  Enumerator_t3627931039 
 {
 public:
 	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator::l
-	List_1_t3245415856 * ___l_0;
+	List_1_t1738687162 * ___l_0;
 	// System.Int32 System.Collections.Generic.List`1/Enumerator::next
 	int32_t ___next_1;
 	// System.Int32 System.Collections.Generic.List`1/Enumerator::ver
 	int32_t ___ver_2;
 	// T System.Collections.Generic.List`1/Enumerator::current
-	Monster_t1773341114 * ___current_3;
+	MonsterSpawnLocation_t266612420 * ___current_3;
 
 public:
-	inline static int32_t get_offset_of_l_0() { return static_cast<int32_t>(offsetof(Enumerator_t839692437, ___l_0)); }
-	inline List_1_t3245415856 * get_l_0() const { return ___l_0; }
-	inline List_1_t3245415856 ** get_address_of_l_0() { return &___l_0; }
-	inline void set_l_0(List_1_t3245415856 * value)
+	inline static int32_t get_offset_of_l_0() { return static_cast<int32_t>(offsetof(Enumerator_t3627931039, ___l_0)); }
+	inline List_1_t1738687162 * get_l_0() const { return ___l_0; }
+	inline List_1_t1738687162 ** get_address_of_l_0() { return &___l_0; }
+	inline void set_l_0(List_1_t1738687162 * value)
 	{
 		___l_0 = value;
 		Il2CppCodeGenWriteBarrier((&___l_0), value);
 	}
 
-	inline static int32_t get_offset_of_next_1() { return static_cast<int32_t>(offsetof(Enumerator_t839692437, ___next_1)); }
+	inline static int32_t get_offset_of_next_1() { return static_cast<int32_t>(offsetof(Enumerator_t3627931039, ___next_1)); }
 	inline int32_t get_next_1() const { return ___next_1; }
 	inline int32_t* get_address_of_next_1() { return &___next_1; }
 	inline void set_next_1(int32_t value)
@@ -5318,7 +8327,7 @@ public:
 		___next_1 = value;
 	}
 
-	inline static int32_t get_offset_of_ver_2() { return static_cast<int32_t>(offsetof(Enumerator_t839692437, ___ver_2)); }
+	inline static int32_t get_offset_of_ver_2() { return static_cast<int32_t>(offsetof(Enumerator_t3627931039, ___ver_2)); }
 	inline int32_t get_ver_2() const { return ___ver_2; }
 	inline int32_t* get_address_of_ver_2() { return &___ver_2; }
 	inline void set_ver_2(int32_t value)
@@ -5326,10 +8335,10 @@ public:
 		___ver_2 = value;
 	}
 
-	inline static int32_t get_offset_of_current_3() { return static_cast<int32_t>(offsetof(Enumerator_t839692437, ___current_3)); }
-	inline Monster_t1773341114 * get_current_3() const { return ___current_3; }
-	inline Monster_t1773341114 ** get_address_of_current_3() { return &___current_3; }
-	inline void set_current_3(Monster_t1773341114 * value)
+	inline static int32_t get_offset_of_current_3() { return static_cast<int32_t>(offsetof(Enumerator_t3627931039, ___current_3)); }
+	inline MonsterSpawnLocation_t266612420 * get_current_3() const { return ___current_3; }
+	inline MonsterSpawnLocation_t266612420 ** get_address_of_current_3() { return &___current_3; }
+	inline void set_current_3(MonsterSpawnLocation_t266612420 * value)
 	{
 		___current_3 = value;
 		Il2CppCodeGenWriteBarrier((&___current_3), value);
@@ -5339,7 +8348,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // ENUMERATOR_T839692437_H
+#endif // ENUMERATOR_T3627931039_H
 #ifndef NAMEVALUECOLLECTION_T407452768_H
 #define NAMEVALUECOLLECTION_T407452768_H
 #ifdef __clang__
@@ -5381,6 +8390,121 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // NAMEVALUECOLLECTION_T407452768_H
+#ifndef DECIMAL_T2948259380_H
+#define DECIMAL_T2948259380_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Decimal
+struct  Decimal_t2948259380 
+{
+public:
+	// System.UInt32 System.Decimal::flags
+	uint32_t ___flags_5;
+	// System.UInt32 System.Decimal::hi
+	uint32_t ___hi_6;
+	// System.UInt32 System.Decimal::lo
+	uint32_t ___lo_7;
+	// System.UInt32 System.Decimal::mid
+	uint32_t ___mid_8;
+
+public:
+	inline static int32_t get_offset_of_flags_5() { return static_cast<int32_t>(offsetof(Decimal_t2948259380, ___flags_5)); }
+	inline uint32_t get_flags_5() const { return ___flags_5; }
+	inline uint32_t* get_address_of_flags_5() { return &___flags_5; }
+	inline void set_flags_5(uint32_t value)
+	{
+		___flags_5 = value;
+	}
+
+	inline static int32_t get_offset_of_hi_6() { return static_cast<int32_t>(offsetof(Decimal_t2948259380, ___hi_6)); }
+	inline uint32_t get_hi_6() const { return ___hi_6; }
+	inline uint32_t* get_address_of_hi_6() { return &___hi_6; }
+	inline void set_hi_6(uint32_t value)
+	{
+		___hi_6 = value;
+	}
+
+	inline static int32_t get_offset_of_lo_7() { return static_cast<int32_t>(offsetof(Decimal_t2948259380, ___lo_7)); }
+	inline uint32_t get_lo_7() const { return ___lo_7; }
+	inline uint32_t* get_address_of_lo_7() { return &___lo_7; }
+	inline void set_lo_7(uint32_t value)
+	{
+		___lo_7 = value;
+	}
+
+	inline static int32_t get_offset_of_mid_8() { return static_cast<int32_t>(offsetof(Decimal_t2948259380, ___mid_8)); }
+	inline uint32_t get_mid_8() const { return ___mid_8; }
+	inline uint32_t* get_address_of_mid_8() { return &___mid_8; }
+	inline void set_mid_8(uint32_t value)
+	{
+		___mid_8 = value;
+	}
+};
+
+struct Decimal_t2948259380_StaticFields
+{
+public:
+	// System.Decimal System.Decimal::MinValue
+	Decimal_t2948259380  ___MinValue_0;
+	// System.Decimal System.Decimal::MaxValue
+	Decimal_t2948259380  ___MaxValue_1;
+	// System.Decimal System.Decimal::MinusOne
+	Decimal_t2948259380  ___MinusOne_2;
+	// System.Decimal System.Decimal::One
+	Decimal_t2948259380  ___One_3;
+	// System.Decimal System.Decimal::MaxValueDiv10
+	Decimal_t2948259380  ___MaxValueDiv10_4;
+
+public:
+	inline static int32_t get_offset_of_MinValue_0() { return static_cast<int32_t>(offsetof(Decimal_t2948259380_StaticFields, ___MinValue_0)); }
+	inline Decimal_t2948259380  get_MinValue_0() const { return ___MinValue_0; }
+	inline Decimal_t2948259380 * get_address_of_MinValue_0() { return &___MinValue_0; }
+	inline void set_MinValue_0(Decimal_t2948259380  value)
+	{
+		___MinValue_0 = value;
+	}
+
+	inline static int32_t get_offset_of_MaxValue_1() { return static_cast<int32_t>(offsetof(Decimal_t2948259380_StaticFields, ___MaxValue_1)); }
+	inline Decimal_t2948259380  get_MaxValue_1() const { return ___MaxValue_1; }
+	inline Decimal_t2948259380 * get_address_of_MaxValue_1() { return &___MaxValue_1; }
+	inline void set_MaxValue_1(Decimal_t2948259380  value)
+	{
+		___MaxValue_1 = value;
+	}
+
+	inline static int32_t get_offset_of_MinusOne_2() { return static_cast<int32_t>(offsetof(Decimal_t2948259380_StaticFields, ___MinusOne_2)); }
+	inline Decimal_t2948259380  get_MinusOne_2() const { return ___MinusOne_2; }
+	inline Decimal_t2948259380 * get_address_of_MinusOne_2() { return &___MinusOne_2; }
+	inline void set_MinusOne_2(Decimal_t2948259380  value)
+	{
+		___MinusOne_2 = value;
+	}
+
+	inline static int32_t get_offset_of_One_3() { return static_cast<int32_t>(offsetof(Decimal_t2948259380_StaticFields, ___One_3)); }
+	inline Decimal_t2948259380  get_One_3() const { return ___One_3; }
+	inline Decimal_t2948259380 * get_address_of_One_3() { return &___One_3; }
+	inline void set_One_3(Decimal_t2948259380  value)
+	{
+		___One_3 = value;
+	}
+
+	inline static int32_t get_offset_of_MaxValueDiv10_4() { return static_cast<int32_t>(offsetof(Decimal_t2948259380_StaticFields, ___MaxValueDiv10_4)); }
+	inline Decimal_t2948259380  get_MaxValueDiv10_4() const { return ___MaxValueDiv10_4; }
+	inline Decimal_t2948259380 * get_address_of_MaxValueDiv10_4() { return &___MaxValueDiv10_4; }
+	inline void set_MaxValueDiv10_4(Decimal_t2948259380  value)
+	{
+		___MaxValueDiv10_4 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DECIMAL_T2948259380_H
 #ifndef DOUBLE_T594665363_H
 #define DOUBLE_T594665363_H
 #ifdef __clang__
@@ -5633,6 +8757,35 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // GUID_T_H
+#ifndef INT16_T2552820387_H
+#define INT16_T2552820387_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Int16
+struct  Int16_t2552820387 
+{
+public:
+	// System.Int16 System.Int16::m_value
+	int16_t ___m_value_2;
+
+public:
+	inline static int32_t get_offset_of_m_value_2() { return static_cast<int32_t>(offsetof(Int16_t2552820387, ___m_value_2)); }
+	inline int16_t get_m_value_2() const { return ___m_value_2; }
+	inline int16_t* get_address_of_m_value_2() { return &___m_value_2; }
+	inline void set_m_value_2(int16_t value)
+	{
+		___m_value_2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // INT16_T2552820387_H
 #ifndef INT32_T2950945753_H
 #define INT32_T2950945753_H
 #ifdef __clang__
@@ -5736,6 +8889,45 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // INTPTR_T_H
+#ifndef NULLABLE_1_T378540539_H
+#define NULLABLE_1_T378540539_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Nullable`1<System.Int32>
+struct  Nullable_1_t378540539 
+{
+public:
+	// T System.Nullable`1::value
+	int32_t ___value_0;
+	// System.Boolean System.Nullable`1::has_value
+	bool ___has_value_1;
+
+public:
+	inline static int32_t get_offset_of_value_0() { return static_cast<int32_t>(offsetof(Nullable_1_t378540539, ___value_0)); }
+	inline int32_t get_value_0() const { return ___value_0; }
+	inline int32_t* get_address_of_value_0() { return &___value_0; }
+	inline void set_value_0(int32_t value)
+	{
+		___value_0 = value;
+	}
+
+	inline static int32_t get_offset_of_has_value_1() { return static_cast<int32_t>(offsetof(Nullable_1_t378540539, ___has_value_1)); }
+	inline bool get_has_value_1() const { return ___has_value_1; }
+	inline bool* get_address_of_has_value_1() { return &___has_value_1; }
+	inline void set_has_value_1(bool value)
+	{
+		___has_value_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // NULLABLE_1_T378540539_H
 #ifndef FIELDINFO_T_H
 #define FIELDINFO_T_H
 #ifdef __clang__
@@ -5776,6 +8968,55 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // METHODBASE_T_H
+#ifndef PROPERTYINFO_T_H
+#define PROPERTYINFO_T_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Reflection.PropertyInfo
+struct  PropertyInfo_t  : public MemberInfo_t
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PROPERTYINFO_T_H
+#ifndef SBYTE_T1669577662_H
+#define SBYTE_T1669577662_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.SByte
+struct  SByte_t1669577662 
+{
+public:
+	// System.SByte System.SByte::m_value
+	int8_t ___m_value_0;
+
+public:
+	inline static int32_t get_offset_of_m_value_0() { return static_cast<int32_t>(offsetof(SByte_t1669577662, ___m_value_0)); }
+	inline int8_t get_m_value_0() const { return ___m_value_0; }
+	inline int8_t* get_address_of_m_value_0() { return &___m_value_0; }
+	inline void set_m_value_0(int8_t value)
+	{
+		___m_value_0 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // SBYTE_T1669577662_H
 #ifndef SINGLE_T1397266774_H
 #define SINGLE_T1397266774_H
 #ifdef __clang__
@@ -5947,6 +9188,35 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // TIMESPAN_T881159249_H
+#ifndef UINT16_T2177724958_H
+#define UINT16_T2177724958_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.UInt16
+struct  UInt16_t2177724958 
+{
+public:
+	// System.UInt16 System.UInt16::m_value
+	uint16_t ___m_value_2;
+
+public:
+	inline static int32_t get_offset_of_m_value_2() { return static_cast<int32_t>(offsetof(UInt16_t2177724958, ___m_value_2)); }
+	inline uint16_t get_m_value_2() const { return ___m_value_2; }
+	inline uint16_t* get_address_of_m_value_2() { return &___m_value_2; }
+	inline void set_m_value_2(uint16_t value)
+	{
+		___m_value_2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // UINT16_T2177724958_H
 #ifndef UINT32_T2560061978_H
 #define UINT32_T2560061978_H
 #ifdef __clang__
@@ -6798,6 +10068,1086 @@ struct WaitForSeconds_t1699091251_marshaled_com : public YieldInstruction_t40309
 	float ___m_Seconds_0;
 };
 #endif // WAITFORSECONDS_T1699091251_H
+#ifndef CREATEFLAGS_T2403871199_H
+#define CREATEFLAGS_T2403871199_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.CreateFlags
+struct  CreateFlags_t2403871199 
+{
+public:
+	// System.Int32 SQLite4Unity3d.CreateFlags::value__
+	int32_t ___value___1;
+
+public:
+	inline static int32_t get_offset_of_value___1() { return static_cast<int32_t>(offsetof(CreateFlags_t2403871199, ___value___1)); }
+	inline int32_t get_value___1() const { return ___value___1; }
+	inline int32_t* get_address_of_value___1() { return &___value___1; }
+	inline void set_value___1(int32_t value)
+	{
+		___value___1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // CREATEFLAGS_T2403871199_H
+#ifndef PREPAREDSQLLITEINSERTCOMMAND_T994658783_H
+#define PREPAREDSQLLITEINSERTCOMMAND_T994658783_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.PreparedSqlLiteInsertCommand
+struct  PreparedSqlLiteInsertCommand_t994658783  : public RuntimeObject
+{
+public:
+	// System.Boolean SQLite4Unity3d.PreparedSqlLiteInsertCommand::<Initialized>k__BackingField
+	bool ___U3CInitializedU3Ek__BackingField_0;
+	// SQLite4Unity3d.SQLiteConnection SQLite4Unity3d.PreparedSqlLiteInsertCommand::<Connection>k__BackingField
+	SQLiteConnection_t3070079188 * ___U3CConnectionU3Ek__BackingField_1;
+	// System.String SQLite4Unity3d.PreparedSqlLiteInsertCommand::<CommandText>k__BackingField
+	String_t* ___U3CCommandTextU3Ek__BackingField_2;
+	// System.IntPtr SQLite4Unity3d.PreparedSqlLiteInsertCommand::<Statement>k__BackingField
+	intptr_t ___U3CStatementU3Ek__BackingField_3;
+
+public:
+	inline static int32_t get_offset_of_U3CInitializedU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(PreparedSqlLiteInsertCommand_t994658783, ___U3CInitializedU3Ek__BackingField_0)); }
+	inline bool get_U3CInitializedU3Ek__BackingField_0() const { return ___U3CInitializedU3Ek__BackingField_0; }
+	inline bool* get_address_of_U3CInitializedU3Ek__BackingField_0() { return &___U3CInitializedU3Ek__BackingField_0; }
+	inline void set_U3CInitializedU3Ek__BackingField_0(bool value)
+	{
+		___U3CInitializedU3Ek__BackingField_0 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CConnectionU3Ek__BackingField_1() { return static_cast<int32_t>(offsetof(PreparedSqlLiteInsertCommand_t994658783, ___U3CConnectionU3Ek__BackingField_1)); }
+	inline SQLiteConnection_t3070079188 * get_U3CConnectionU3Ek__BackingField_1() const { return ___U3CConnectionU3Ek__BackingField_1; }
+	inline SQLiteConnection_t3070079188 ** get_address_of_U3CConnectionU3Ek__BackingField_1() { return &___U3CConnectionU3Ek__BackingField_1; }
+	inline void set_U3CConnectionU3Ek__BackingField_1(SQLiteConnection_t3070079188 * value)
+	{
+		___U3CConnectionU3Ek__BackingField_1 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CConnectionU3Ek__BackingField_1), value);
+	}
+
+	inline static int32_t get_offset_of_U3CCommandTextU3Ek__BackingField_2() { return static_cast<int32_t>(offsetof(PreparedSqlLiteInsertCommand_t994658783, ___U3CCommandTextU3Ek__BackingField_2)); }
+	inline String_t* get_U3CCommandTextU3Ek__BackingField_2() const { return ___U3CCommandTextU3Ek__BackingField_2; }
+	inline String_t** get_address_of_U3CCommandTextU3Ek__BackingField_2() { return &___U3CCommandTextU3Ek__BackingField_2; }
+	inline void set_U3CCommandTextU3Ek__BackingField_2(String_t* value)
+	{
+		___U3CCommandTextU3Ek__BackingField_2 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CCommandTextU3Ek__BackingField_2), value);
+	}
+
+	inline static int32_t get_offset_of_U3CStatementU3Ek__BackingField_3() { return static_cast<int32_t>(offsetof(PreparedSqlLiteInsertCommand_t994658783, ___U3CStatementU3Ek__BackingField_3)); }
+	inline intptr_t get_U3CStatementU3Ek__BackingField_3() const { return ___U3CStatementU3Ek__BackingField_3; }
+	inline intptr_t* get_address_of_U3CStatementU3Ek__BackingField_3() { return &___U3CStatementU3Ek__BackingField_3; }
+	inline void set_U3CStatementU3Ek__BackingField_3(intptr_t value)
+	{
+		___U3CStatementU3Ek__BackingField_3 = value;
+	}
+};
+
+struct PreparedSqlLiteInsertCommand_t994658783_StaticFields
+{
+public:
+	// System.IntPtr SQLite4Unity3d.PreparedSqlLiteInsertCommand::NullStatement
+	intptr_t ___NullStatement_4;
+
+public:
+	inline static int32_t get_offset_of_NullStatement_4() { return static_cast<int32_t>(offsetof(PreparedSqlLiteInsertCommand_t994658783_StaticFields, ___NullStatement_4)); }
+	inline intptr_t get_NullStatement_4() const { return ___NullStatement_4; }
+	inline intptr_t* get_address_of_NullStatement_4() { return &___NullStatement_4; }
+	inline void set_NullStatement_4(intptr_t value)
+	{
+		___NullStatement_4 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PREPAREDSQLLITEINSERTCOMMAND_T994658783_H
+#ifndef COLTYPE_T3265409004_H
+#define COLTYPE_T3265409004_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.SQLite3/ColType
+struct  ColType_t3265409004 
+{
+public:
+	// System.Int32 SQLite4Unity3d.SQLite3/ColType::value__
+	int32_t ___value___1;
+
+public:
+	inline static int32_t get_offset_of_value___1() { return static_cast<int32_t>(offsetof(ColType_t3265409004, ___value___1)); }
+	inline int32_t get_value___1() const { return ___value___1; }
+	inline int32_t* get_address_of_value___1() { return &___value___1; }
+	inline void set_value___1(int32_t value)
+	{
+		___value___1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // COLTYPE_T3265409004_H
+#ifndef CONFIGOPTION_T3994509900_H
+#define CONFIGOPTION_T3994509900_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.SQLite3/ConfigOption
+struct  ConfigOption_t3994509900 
+{
+public:
+	// System.Int32 SQLite4Unity3d.SQLite3/ConfigOption::value__
+	int32_t ___value___1;
+
+public:
+	inline static int32_t get_offset_of_value___1() { return static_cast<int32_t>(offsetof(ConfigOption_t3994509900, ___value___1)); }
+	inline int32_t get_value___1() const { return ___value___1; }
+	inline int32_t* get_address_of_value___1() { return &___value___1; }
+	inline void set_value___1(int32_t value)
+	{
+		___value___1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // CONFIGOPTION_T3994509900_H
+#ifndef EXTENDEDRESULT_T3125463630_H
+#define EXTENDEDRESULT_T3125463630_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.SQLite3/ExtendedResult
+struct  ExtendedResult_t3125463630 
+{
+public:
+	// System.Int32 SQLite4Unity3d.SQLite3/ExtendedResult::value__
+	int32_t ___value___1;
+
+public:
+	inline static int32_t get_offset_of_value___1() { return static_cast<int32_t>(offsetof(ExtendedResult_t3125463630, ___value___1)); }
+	inline int32_t get_value___1() const { return ___value___1; }
+	inline int32_t* get_address_of_value___1() { return &___value___1; }
+	inline void set_value___1(int32_t value)
+	{
+		___value___1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // EXTENDEDRESULT_T3125463630_H
+#ifndef RESULT_T1053832893_H
+#define RESULT_T1053832893_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.SQLite3/Result
+struct  Result_t1053832893 
+{
+public:
+	// System.Int32 SQLite4Unity3d.SQLite3/Result::value__
+	int32_t ___value___1;
+
+public:
+	inline static int32_t get_offset_of_value___1() { return static_cast<int32_t>(offsetof(Result_t1053832893, ___value___1)); }
+	inline int32_t get_value___1() const { return ___value___1; }
+	inline int32_t* get_address_of_value___1() { return &___value___1; }
+	inline void set_value___1(int32_t value)
+	{
+		___value___1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // RESULT_T1053832893_H
+#ifndef SQLITECOMMAND_T3688707480_H
+#define SQLITECOMMAND_T3688707480_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.SQLiteCommand
+struct  SQLiteCommand_t3688707480  : public RuntimeObject
+{
+public:
+	// SQLite4Unity3d.SQLiteConnection SQLite4Unity3d.SQLiteCommand::_conn
+	SQLiteConnection_t3070079188 * ____conn_0;
+	// System.Collections.Generic.List`1<SQLite4Unity3d.SQLiteCommand/Binding> SQLite4Unity3d.SQLiteCommand::_bindings
+	List_1_t4258913814 * ____bindings_1;
+	// System.String SQLite4Unity3d.SQLiteCommand::<CommandText>k__BackingField
+	String_t* ___U3CCommandTextU3Ek__BackingField_2;
+
+public:
+	inline static int32_t get_offset_of__conn_0() { return static_cast<int32_t>(offsetof(SQLiteCommand_t3688707480, ____conn_0)); }
+	inline SQLiteConnection_t3070079188 * get__conn_0() const { return ____conn_0; }
+	inline SQLiteConnection_t3070079188 ** get_address_of__conn_0() { return &____conn_0; }
+	inline void set__conn_0(SQLiteConnection_t3070079188 * value)
+	{
+		____conn_0 = value;
+		Il2CppCodeGenWriteBarrier((&____conn_0), value);
+	}
+
+	inline static int32_t get_offset_of__bindings_1() { return static_cast<int32_t>(offsetof(SQLiteCommand_t3688707480, ____bindings_1)); }
+	inline List_1_t4258913814 * get__bindings_1() const { return ____bindings_1; }
+	inline List_1_t4258913814 ** get_address_of__bindings_1() { return &____bindings_1; }
+	inline void set__bindings_1(List_1_t4258913814 * value)
+	{
+		____bindings_1 = value;
+		Il2CppCodeGenWriteBarrier((&____bindings_1), value);
+	}
+
+	inline static int32_t get_offset_of_U3CCommandTextU3Ek__BackingField_2() { return static_cast<int32_t>(offsetof(SQLiteCommand_t3688707480, ___U3CCommandTextU3Ek__BackingField_2)); }
+	inline String_t* get_U3CCommandTextU3Ek__BackingField_2() const { return ___U3CCommandTextU3Ek__BackingField_2; }
+	inline String_t** get_address_of_U3CCommandTextU3Ek__BackingField_2() { return &___U3CCommandTextU3Ek__BackingField_2; }
+	inline void set_U3CCommandTextU3Ek__BackingField_2(String_t* value)
+	{
+		___U3CCommandTextU3Ek__BackingField_2 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CCommandTextU3Ek__BackingField_2), value);
+	}
+};
+
+struct SQLiteCommand_t3688707480_StaticFields
+{
+public:
+	// System.IntPtr SQLite4Unity3d.SQLiteCommand::NegativePointer
+	intptr_t ___NegativePointer_3;
+
+public:
+	inline static int32_t get_offset_of_NegativePointer_3() { return static_cast<int32_t>(offsetof(SQLiteCommand_t3688707480_StaticFields, ___NegativePointer_3)); }
+	inline intptr_t get_NegativePointer_3() const { return ___NegativePointer_3; }
+	inline intptr_t* get_address_of_NegativePointer_3() { return &___NegativePointer_3; }
+	inline void set_NegativePointer_3(intptr_t value)
+	{
+		___NegativePointer_3 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // SQLITECOMMAND_T3688707480_H
+#ifndef SQLITECONNECTION_T3070079188_H
+#define SQLITECONNECTION_T3070079188_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.SQLiteConnection
+struct  SQLiteConnection_t3070079188  : public RuntimeObject
+{
+public:
+	// System.Boolean SQLite4Unity3d.SQLiteConnection::_open
+	bool ____open_0;
+	// System.TimeSpan SQLite4Unity3d.SQLiteConnection::_busyTimeout
+	TimeSpan_t881159249  ____busyTimeout_1;
+	// System.Collections.Generic.Dictionary`2<System.String,SQLite4Unity3d.TableMapping> SQLite4Unity3d.SQLiteConnection::_mappings
+	Dictionary_2_t2061655791 * ____mappings_2;
+	// System.Collections.Generic.Dictionary`2<System.String,SQLite4Unity3d.TableMapping> SQLite4Unity3d.SQLiteConnection::_tables
+	Dictionary_2_t2061655791 * ____tables_3;
+	// System.Diagnostics.Stopwatch SQLite4Unity3d.SQLiteConnection::_sw
+	Stopwatch_t305734070 * ____sw_4;
+	// System.Int64 SQLite4Unity3d.SQLiteConnection::_elapsedMilliseconds
+	int64_t ____elapsedMilliseconds_5;
+	// System.Int32 SQLite4Unity3d.SQLiteConnection::_transactionDepth
+	int32_t ____transactionDepth_6;
+	// System.Random SQLite4Unity3d.SQLiteConnection::_rand
+	Random_t108471755 * ____rand_7;
+	// System.IntPtr SQLite4Unity3d.SQLiteConnection::<Handle>k__BackingField
+	intptr_t ___U3CHandleU3Ek__BackingField_8;
+	// System.String SQLite4Unity3d.SQLiteConnection::<DatabasePath>k__BackingField
+	String_t* ___U3CDatabasePathU3Ek__BackingField_10;
+	// System.Boolean SQLite4Unity3d.SQLiteConnection::<TimeExecution>k__BackingField
+	bool ___U3CTimeExecutionU3Ek__BackingField_11;
+	// System.Boolean SQLite4Unity3d.SQLiteConnection::<Trace>k__BackingField
+	bool ___U3CTraceU3Ek__BackingField_12;
+	// System.Boolean SQLite4Unity3d.SQLiteConnection::<StoreDateTimeAsTicks>k__BackingField
+	bool ___U3CStoreDateTimeAsTicksU3Ek__BackingField_13;
+
+public:
+	inline static int32_t get_offset_of__open_0() { return static_cast<int32_t>(offsetof(SQLiteConnection_t3070079188, ____open_0)); }
+	inline bool get__open_0() const { return ____open_0; }
+	inline bool* get_address_of__open_0() { return &____open_0; }
+	inline void set__open_0(bool value)
+	{
+		____open_0 = value;
+	}
+
+	inline static int32_t get_offset_of__busyTimeout_1() { return static_cast<int32_t>(offsetof(SQLiteConnection_t3070079188, ____busyTimeout_1)); }
+	inline TimeSpan_t881159249  get__busyTimeout_1() const { return ____busyTimeout_1; }
+	inline TimeSpan_t881159249 * get_address_of__busyTimeout_1() { return &____busyTimeout_1; }
+	inline void set__busyTimeout_1(TimeSpan_t881159249  value)
+	{
+		____busyTimeout_1 = value;
+	}
+
+	inline static int32_t get_offset_of__mappings_2() { return static_cast<int32_t>(offsetof(SQLiteConnection_t3070079188, ____mappings_2)); }
+	inline Dictionary_2_t2061655791 * get__mappings_2() const { return ____mappings_2; }
+	inline Dictionary_2_t2061655791 ** get_address_of__mappings_2() { return &____mappings_2; }
+	inline void set__mappings_2(Dictionary_2_t2061655791 * value)
+	{
+		____mappings_2 = value;
+		Il2CppCodeGenWriteBarrier((&____mappings_2), value);
+	}
+
+	inline static int32_t get_offset_of__tables_3() { return static_cast<int32_t>(offsetof(SQLiteConnection_t3070079188, ____tables_3)); }
+	inline Dictionary_2_t2061655791 * get__tables_3() const { return ____tables_3; }
+	inline Dictionary_2_t2061655791 ** get_address_of__tables_3() { return &____tables_3; }
+	inline void set__tables_3(Dictionary_2_t2061655791 * value)
+	{
+		____tables_3 = value;
+		Il2CppCodeGenWriteBarrier((&____tables_3), value);
+	}
+
+	inline static int32_t get_offset_of__sw_4() { return static_cast<int32_t>(offsetof(SQLiteConnection_t3070079188, ____sw_4)); }
+	inline Stopwatch_t305734070 * get__sw_4() const { return ____sw_4; }
+	inline Stopwatch_t305734070 ** get_address_of__sw_4() { return &____sw_4; }
+	inline void set__sw_4(Stopwatch_t305734070 * value)
+	{
+		____sw_4 = value;
+		Il2CppCodeGenWriteBarrier((&____sw_4), value);
+	}
+
+	inline static int32_t get_offset_of__elapsedMilliseconds_5() { return static_cast<int32_t>(offsetof(SQLiteConnection_t3070079188, ____elapsedMilliseconds_5)); }
+	inline int64_t get__elapsedMilliseconds_5() const { return ____elapsedMilliseconds_5; }
+	inline int64_t* get_address_of__elapsedMilliseconds_5() { return &____elapsedMilliseconds_5; }
+	inline void set__elapsedMilliseconds_5(int64_t value)
+	{
+		____elapsedMilliseconds_5 = value;
+	}
+
+	inline static int32_t get_offset_of__transactionDepth_6() { return static_cast<int32_t>(offsetof(SQLiteConnection_t3070079188, ____transactionDepth_6)); }
+	inline int32_t get__transactionDepth_6() const { return ____transactionDepth_6; }
+	inline int32_t* get_address_of__transactionDepth_6() { return &____transactionDepth_6; }
+	inline void set__transactionDepth_6(int32_t value)
+	{
+		____transactionDepth_6 = value;
+	}
+
+	inline static int32_t get_offset_of__rand_7() { return static_cast<int32_t>(offsetof(SQLiteConnection_t3070079188, ____rand_7)); }
+	inline Random_t108471755 * get__rand_7() const { return ____rand_7; }
+	inline Random_t108471755 ** get_address_of__rand_7() { return &____rand_7; }
+	inline void set__rand_7(Random_t108471755 * value)
+	{
+		____rand_7 = value;
+		Il2CppCodeGenWriteBarrier((&____rand_7), value);
+	}
+
+	inline static int32_t get_offset_of_U3CHandleU3Ek__BackingField_8() { return static_cast<int32_t>(offsetof(SQLiteConnection_t3070079188, ___U3CHandleU3Ek__BackingField_8)); }
+	inline intptr_t get_U3CHandleU3Ek__BackingField_8() const { return ___U3CHandleU3Ek__BackingField_8; }
+	inline intptr_t* get_address_of_U3CHandleU3Ek__BackingField_8() { return &___U3CHandleU3Ek__BackingField_8; }
+	inline void set_U3CHandleU3Ek__BackingField_8(intptr_t value)
+	{
+		___U3CHandleU3Ek__BackingField_8 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CDatabasePathU3Ek__BackingField_10() { return static_cast<int32_t>(offsetof(SQLiteConnection_t3070079188, ___U3CDatabasePathU3Ek__BackingField_10)); }
+	inline String_t* get_U3CDatabasePathU3Ek__BackingField_10() const { return ___U3CDatabasePathU3Ek__BackingField_10; }
+	inline String_t** get_address_of_U3CDatabasePathU3Ek__BackingField_10() { return &___U3CDatabasePathU3Ek__BackingField_10; }
+	inline void set_U3CDatabasePathU3Ek__BackingField_10(String_t* value)
+	{
+		___U3CDatabasePathU3Ek__BackingField_10 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CDatabasePathU3Ek__BackingField_10), value);
+	}
+
+	inline static int32_t get_offset_of_U3CTimeExecutionU3Ek__BackingField_11() { return static_cast<int32_t>(offsetof(SQLiteConnection_t3070079188, ___U3CTimeExecutionU3Ek__BackingField_11)); }
+	inline bool get_U3CTimeExecutionU3Ek__BackingField_11() const { return ___U3CTimeExecutionU3Ek__BackingField_11; }
+	inline bool* get_address_of_U3CTimeExecutionU3Ek__BackingField_11() { return &___U3CTimeExecutionU3Ek__BackingField_11; }
+	inline void set_U3CTimeExecutionU3Ek__BackingField_11(bool value)
+	{
+		___U3CTimeExecutionU3Ek__BackingField_11 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CTraceU3Ek__BackingField_12() { return static_cast<int32_t>(offsetof(SQLiteConnection_t3070079188, ___U3CTraceU3Ek__BackingField_12)); }
+	inline bool get_U3CTraceU3Ek__BackingField_12() const { return ___U3CTraceU3Ek__BackingField_12; }
+	inline bool* get_address_of_U3CTraceU3Ek__BackingField_12() { return &___U3CTraceU3Ek__BackingField_12; }
+	inline void set_U3CTraceU3Ek__BackingField_12(bool value)
+	{
+		___U3CTraceU3Ek__BackingField_12 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CStoreDateTimeAsTicksU3Ek__BackingField_13() { return static_cast<int32_t>(offsetof(SQLiteConnection_t3070079188, ___U3CStoreDateTimeAsTicksU3Ek__BackingField_13)); }
+	inline bool get_U3CStoreDateTimeAsTicksU3Ek__BackingField_13() const { return ___U3CStoreDateTimeAsTicksU3Ek__BackingField_13; }
+	inline bool* get_address_of_U3CStoreDateTimeAsTicksU3Ek__BackingField_13() { return &___U3CStoreDateTimeAsTicksU3Ek__BackingField_13; }
+	inline void set_U3CStoreDateTimeAsTicksU3Ek__BackingField_13(bool value)
+	{
+		___U3CStoreDateTimeAsTicksU3Ek__BackingField_13 = value;
+	}
+};
+
+struct SQLiteConnection_t3070079188_StaticFields
+{
+public:
+	// System.IntPtr SQLite4Unity3d.SQLiteConnection::NullHandle
+	intptr_t ___NullHandle_9;
+	// System.Boolean SQLite4Unity3d.SQLiteConnection::_preserveDuringLinkMagic
+	bool ____preserveDuringLinkMagic_14;
+	// System.Func`2<SQLite4Unity3d.SQLiteConnection/IndexedColumn,System.Int32> SQLite4Unity3d.SQLiteConnection::<>f__am$cache0
+	Func_2_t166798807 * ___U3CU3Ef__amU24cache0_15;
+	// System.Func`2<SQLite4Unity3d.SQLiteConnection/IndexedColumn,System.String> SQLite4Unity3d.SQLiteConnection::<>f__am$cache1
+	Func_2_t3358271039 * ___U3CU3Ef__amU24cache1_16;
+	// System.Func`2<SQLite4Unity3d.TableMapping/Column,System.String> SQLite4Unity3d.SQLiteConnection::<>f__am$cache2
+	Func_2_t2431212468 * ___U3CU3Ef__amU24cache2_17;
+
+public:
+	inline static int32_t get_offset_of_NullHandle_9() { return static_cast<int32_t>(offsetof(SQLiteConnection_t3070079188_StaticFields, ___NullHandle_9)); }
+	inline intptr_t get_NullHandle_9() const { return ___NullHandle_9; }
+	inline intptr_t* get_address_of_NullHandle_9() { return &___NullHandle_9; }
+	inline void set_NullHandle_9(intptr_t value)
+	{
+		___NullHandle_9 = value;
+	}
+
+	inline static int32_t get_offset_of__preserveDuringLinkMagic_14() { return static_cast<int32_t>(offsetof(SQLiteConnection_t3070079188_StaticFields, ____preserveDuringLinkMagic_14)); }
+	inline bool get__preserveDuringLinkMagic_14() const { return ____preserveDuringLinkMagic_14; }
+	inline bool* get_address_of__preserveDuringLinkMagic_14() { return &____preserveDuringLinkMagic_14; }
+	inline void set__preserveDuringLinkMagic_14(bool value)
+	{
+		____preserveDuringLinkMagic_14 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CU3Ef__amU24cache0_15() { return static_cast<int32_t>(offsetof(SQLiteConnection_t3070079188_StaticFields, ___U3CU3Ef__amU24cache0_15)); }
+	inline Func_2_t166798807 * get_U3CU3Ef__amU24cache0_15() const { return ___U3CU3Ef__amU24cache0_15; }
+	inline Func_2_t166798807 ** get_address_of_U3CU3Ef__amU24cache0_15() { return &___U3CU3Ef__amU24cache0_15; }
+	inline void set_U3CU3Ef__amU24cache0_15(Func_2_t166798807 * value)
+	{
+		___U3CU3Ef__amU24cache0_15 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CU3Ef__amU24cache0_15), value);
+	}
+
+	inline static int32_t get_offset_of_U3CU3Ef__amU24cache1_16() { return static_cast<int32_t>(offsetof(SQLiteConnection_t3070079188_StaticFields, ___U3CU3Ef__amU24cache1_16)); }
+	inline Func_2_t3358271039 * get_U3CU3Ef__amU24cache1_16() const { return ___U3CU3Ef__amU24cache1_16; }
+	inline Func_2_t3358271039 ** get_address_of_U3CU3Ef__amU24cache1_16() { return &___U3CU3Ef__amU24cache1_16; }
+	inline void set_U3CU3Ef__amU24cache1_16(Func_2_t3358271039 * value)
+	{
+		___U3CU3Ef__amU24cache1_16 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CU3Ef__amU24cache1_16), value);
+	}
+
+	inline static int32_t get_offset_of_U3CU3Ef__amU24cache2_17() { return static_cast<int32_t>(offsetof(SQLiteConnection_t3070079188_StaticFields, ___U3CU3Ef__amU24cache2_17)); }
+	inline Func_2_t2431212468 * get_U3CU3Ef__amU24cache2_17() const { return ___U3CU3Ef__amU24cache2_17; }
+	inline Func_2_t2431212468 ** get_address_of_U3CU3Ef__amU24cache2_17() { return &___U3CU3Ef__amU24cache2_17; }
+	inline void set_U3CU3Ef__amU24cache2_17(Func_2_t2431212468 * value)
+	{
+		___U3CU3Ef__amU24cache2_17 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CU3Ef__amU24cache2_17), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // SQLITECONNECTION_T3070079188_H
+#ifndef SQLITEOPENFLAGS_T2333747160_H
+#define SQLITEOPENFLAGS_T2333747160_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.SQLiteOpenFlags
+struct  SQLiteOpenFlags_t2333747160 
+{
+public:
+	// System.Int32 SQLite4Unity3d.SQLiteOpenFlags::value__
+	int32_t ___value___1;
+
+public:
+	inline static int32_t get_offset_of_value___1() { return static_cast<int32_t>(offsetof(SQLiteOpenFlags_t2333747160, ___value___1)); }
+	inline int32_t get_value___1() const { return ___value___1; }
+	inline int32_t* get_address_of_value___1() { return &___value___1; }
+	inline void set_value___1(int32_t value)
+	{
+		___value___1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // SQLITEOPENFLAGS_T2333747160_H
+#ifndef COLUMN_T1357940583_H
+#define COLUMN_T1357940583_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.TableMapping/Column
+struct  Column_t1357940583  : public RuntimeObject
+{
+public:
+	// System.Reflection.PropertyInfo SQLite4Unity3d.TableMapping/Column::_prop
+	PropertyInfo_t * ____prop_0;
+	// System.String SQLite4Unity3d.TableMapping/Column::<Name>k__BackingField
+	String_t* ___U3CNameU3Ek__BackingField_1;
+	// System.Type SQLite4Unity3d.TableMapping/Column::<ColumnType>k__BackingField
+	Type_t * ___U3CColumnTypeU3Ek__BackingField_2;
+	// System.String SQLite4Unity3d.TableMapping/Column::<Collation>k__BackingField
+	String_t* ___U3CCollationU3Ek__BackingField_3;
+	// System.Boolean SQLite4Unity3d.TableMapping/Column::<IsAutoInc>k__BackingField
+	bool ___U3CIsAutoIncU3Ek__BackingField_4;
+	// System.Boolean SQLite4Unity3d.TableMapping/Column::<IsAutoGuid>k__BackingField
+	bool ___U3CIsAutoGuidU3Ek__BackingField_5;
+	// System.Boolean SQLite4Unity3d.TableMapping/Column::<IsPK>k__BackingField
+	bool ___U3CIsPKU3Ek__BackingField_6;
+	// System.Collections.Generic.IEnumerable`1<SQLite4Unity3d.IndexedAttribute> SQLite4Unity3d.TableMapping/Column::<Indices>k__BackingField
+	RuntimeObject* ___U3CIndicesU3Ek__BackingField_7;
+	// System.Boolean SQLite4Unity3d.TableMapping/Column::<IsNullable>k__BackingField
+	bool ___U3CIsNullableU3Ek__BackingField_8;
+	// System.Nullable`1<System.Int32> SQLite4Unity3d.TableMapping/Column::<MaxStringLength>k__BackingField
+	Nullable_1_t378540539  ___U3CMaxStringLengthU3Ek__BackingField_9;
+
+public:
+	inline static int32_t get_offset_of__prop_0() { return static_cast<int32_t>(offsetof(Column_t1357940583, ____prop_0)); }
+	inline PropertyInfo_t * get__prop_0() const { return ____prop_0; }
+	inline PropertyInfo_t ** get_address_of__prop_0() { return &____prop_0; }
+	inline void set__prop_0(PropertyInfo_t * value)
+	{
+		____prop_0 = value;
+		Il2CppCodeGenWriteBarrier((&____prop_0), value);
+	}
+
+	inline static int32_t get_offset_of_U3CNameU3Ek__BackingField_1() { return static_cast<int32_t>(offsetof(Column_t1357940583, ___U3CNameU3Ek__BackingField_1)); }
+	inline String_t* get_U3CNameU3Ek__BackingField_1() const { return ___U3CNameU3Ek__BackingField_1; }
+	inline String_t** get_address_of_U3CNameU3Ek__BackingField_1() { return &___U3CNameU3Ek__BackingField_1; }
+	inline void set_U3CNameU3Ek__BackingField_1(String_t* value)
+	{
+		___U3CNameU3Ek__BackingField_1 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CNameU3Ek__BackingField_1), value);
+	}
+
+	inline static int32_t get_offset_of_U3CColumnTypeU3Ek__BackingField_2() { return static_cast<int32_t>(offsetof(Column_t1357940583, ___U3CColumnTypeU3Ek__BackingField_2)); }
+	inline Type_t * get_U3CColumnTypeU3Ek__BackingField_2() const { return ___U3CColumnTypeU3Ek__BackingField_2; }
+	inline Type_t ** get_address_of_U3CColumnTypeU3Ek__BackingField_2() { return &___U3CColumnTypeU3Ek__BackingField_2; }
+	inline void set_U3CColumnTypeU3Ek__BackingField_2(Type_t * value)
+	{
+		___U3CColumnTypeU3Ek__BackingField_2 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CColumnTypeU3Ek__BackingField_2), value);
+	}
+
+	inline static int32_t get_offset_of_U3CCollationU3Ek__BackingField_3() { return static_cast<int32_t>(offsetof(Column_t1357940583, ___U3CCollationU3Ek__BackingField_3)); }
+	inline String_t* get_U3CCollationU3Ek__BackingField_3() const { return ___U3CCollationU3Ek__BackingField_3; }
+	inline String_t** get_address_of_U3CCollationU3Ek__BackingField_3() { return &___U3CCollationU3Ek__BackingField_3; }
+	inline void set_U3CCollationU3Ek__BackingField_3(String_t* value)
+	{
+		___U3CCollationU3Ek__BackingField_3 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CCollationU3Ek__BackingField_3), value);
+	}
+
+	inline static int32_t get_offset_of_U3CIsAutoIncU3Ek__BackingField_4() { return static_cast<int32_t>(offsetof(Column_t1357940583, ___U3CIsAutoIncU3Ek__BackingField_4)); }
+	inline bool get_U3CIsAutoIncU3Ek__BackingField_4() const { return ___U3CIsAutoIncU3Ek__BackingField_4; }
+	inline bool* get_address_of_U3CIsAutoIncU3Ek__BackingField_4() { return &___U3CIsAutoIncU3Ek__BackingField_4; }
+	inline void set_U3CIsAutoIncU3Ek__BackingField_4(bool value)
+	{
+		___U3CIsAutoIncU3Ek__BackingField_4 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CIsAutoGuidU3Ek__BackingField_5() { return static_cast<int32_t>(offsetof(Column_t1357940583, ___U3CIsAutoGuidU3Ek__BackingField_5)); }
+	inline bool get_U3CIsAutoGuidU3Ek__BackingField_5() const { return ___U3CIsAutoGuidU3Ek__BackingField_5; }
+	inline bool* get_address_of_U3CIsAutoGuidU3Ek__BackingField_5() { return &___U3CIsAutoGuidU3Ek__BackingField_5; }
+	inline void set_U3CIsAutoGuidU3Ek__BackingField_5(bool value)
+	{
+		___U3CIsAutoGuidU3Ek__BackingField_5 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CIsPKU3Ek__BackingField_6() { return static_cast<int32_t>(offsetof(Column_t1357940583, ___U3CIsPKU3Ek__BackingField_6)); }
+	inline bool get_U3CIsPKU3Ek__BackingField_6() const { return ___U3CIsPKU3Ek__BackingField_6; }
+	inline bool* get_address_of_U3CIsPKU3Ek__BackingField_6() { return &___U3CIsPKU3Ek__BackingField_6; }
+	inline void set_U3CIsPKU3Ek__BackingField_6(bool value)
+	{
+		___U3CIsPKU3Ek__BackingField_6 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CIndicesU3Ek__BackingField_7() { return static_cast<int32_t>(offsetof(Column_t1357940583, ___U3CIndicesU3Ek__BackingField_7)); }
+	inline RuntimeObject* get_U3CIndicesU3Ek__BackingField_7() const { return ___U3CIndicesU3Ek__BackingField_7; }
+	inline RuntimeObject** get_address_of_U3CIndicesU3Ek__BackingField_7() { return &___U3CIndicesU3Ek__BackingField_7; }
+	inline void set_U3CIndicesU3Ek__BackingField_7(RuntimeObject* value)
+	{
+		___U3CIndicesU3Ek__BackingField_7 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CIndicesU3Ek__BackingField_7), value);
+	}
+
+	inline static int32_t get_offset_of_U3CIsNullableU3Ek__BackingField_8() { return static_cast<int32_t>(offsetof(Column_t1357940583, ___U3CIsNullableU3Ek__BackingField_8)); }
+	inline bool get_U3CIsNullableU3Ek__BackingField_8() const { return ___U3CIsNullableU3Ek__BackingField_8; }
+	inline bool* get_address_of_U3CIsNullableU3Ek__BackingField_8() { return &___U3CIsNullableU3Ek__BackingField_8; }
+	inline void set_U3CIsNullableU3Ek__BackingField_8(bool value)
+	{
+		___U3CIsNullableU3Ek__BackingField_8 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CMaxStringLengthU3Ek__BackingField_9() { return static_cast<int32_t>(offsetof(Column_t1357940583, ___U3CMaxStringLengthU3Ek__BackingField_9)); }
+	inline Nullable_1_t378540539  get_U3CMaxStringLengthU3Ek__BackingField_9() const { return ___U3CMaxStringLengthU3Ek__BackingField_9; }
+	inline Nullable_1_t378540539 * get_address_of_U3CMaxStringLengthU3Ek__BackingField_9() { return &___U3CMaxStringLengthU3Ek__BackingField_9; }
+	inline void set_U3CMaxStringLengthU3Ek__BackingField_9(Nullable_1_t378540539  value)
+	{
+		___U3CMaxStringLengthU3Ek__BackingField_9 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // COLUMN_T1357940583_H
+#ifndef TABLEQUERY_1_T1610030524_H
+#define TABLEQUERY_1_T1610030524_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.TableQuery`1<packt.FoodyGO.Database.DatabaseVersion>
+struct  TableQuery_1_t1610030524  : public BaseTableQuery_t440437958
+{
+public:
+	// SQLite4Unity3d.SQLiteConnection SQLite4Unity3d.TableQuery`1::<Connection>k__BackingField
+	SQLiteConnection_t3070079188 * ___U3CConnectionU3Ek__BackingField_0;
+	// SQLite4Unity3d.TableMapping SQLite4Unity3d.TableQuery`1::<Table>k__BackingField
+	TableMapping_t2276399492 * ___U3CTableU3Ek__BackingField_1;
+	// System.Linq.Expressions.Expression SQLite4Unity3d.TableQuery`1::_where
+	Expression_t1588164026 * ____where_2;
+	// System.Collections.Generic.List`1<SQLite4Unity3d.BaseTableQuery/Ordering> SQLite4Unity3d.TableQuery`1::_orderBys
+	List_1_t2119693926 * ____orderBys_3;
+	// System.Nullable`1<System.Int32> SQLite4Unity3d.TableQuery`1::_limit
+	Nullable_1_t378540539  ____limit_4;
+	// System.Nullable`1<System.Int32> SQLite4Unity3d.TableQuery`1::_offset
+	Nullable_1_t378540539  ____offset_5;
+	// SQLite4Unity3d.BaseTableQuery SQLite4Unity3d.TableQuery`1::_joinInner
+	BaseTableQuery_t440437958 * ____joinInner_6;
+	// System.Linq.Expressions.Expression SQLite4Unity3d.TableQuery`1::_joinInnerKeySelector
+	Expression_t1588164026 * ____joinInnerKeySelector_7;
+	// SQLite4Unity3d.BaseTableQuery SQLite4Unity3d.TableQuery`1::_joinOuter
+	BaseTableQuery_t440437958 * ____joinOuter_8;
+	// System.Linq.Expressions.Expression SQLite4Unity3d.TableQuery`1::_joinOuterKeySelector
+	Expression_t1588164026 * ____joinOuterKeySelector_9;
+	// System.Linq.Expressions.Expression SQLite4Unity3d.TableQuery`1::_joinSelector
+	Expression_t1588164026 * ____joinSelector_10;
+	// System.Linq.Expressions.Expression SQLite4Unity3d.TableQuery`1::_selector
+	Expression_t1588164026 * ____selector_11;
+	// System.Boolean SQLite4Unity3d.TableQuery`1::_deferred
+	bool ____deferred_12;
+
+public:
+	inline static int32_t get_offset_of_U3CConnectionU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(TableQuery_1_t1610030524, ___U3CConnectionU3Ek__BackingField_0)); }
+	inline SQLiteConnection_t3070079188 * get_U3CConnectionU3Ek__BackingField_0() const { return ___U3CConnectionU3Ek__BackingField_0; }
+	inline SQLiteConnection_t3070079188 ** get_address_of_U3CConnectionU3Ek__BackingField_0() { return &___U3CConnectionU3Ek__BackingField_0; }
+	inline void set_U3CConnectionU3Ek__BackingField_0(SQLiteConnection_t3070079188 * value)
+	{
+		___U3CConnectionU3Ek__BackingField_0 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CConnectionU3Ek__BackingField_0), value);
+	}
+
+	inline static int32_t get_offset_of_U3CTableU3Ek__BackingField_1() { return static_cast<int32_t>(offsetof(TableQuery_1_t1610030524, ___U3CTableU3Ek__BackingField_1)); }
+	inline TableMapping_t2276399492 * get_U3CTableU3Ek__BackingField_1() const { return ___U3CTableU3Ek__BackingField_1; }
+	inline TableMapping_t2276399492 ** get_address_of_U3CTableU3Ek__BackingField_1() { return &___U3CTableU3Ek__BackingField_1; }
+	inline void set_U3CTableU3Ek__BackingField_1(TableMapping_t2276399492 * value)
+	{
+		___U3CTableU3Ek__BackingField_1 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CTableU3Ek__BackingField_1), value);
+	}
+
+	inline static int32_t get_offset_of__where_2() { return static_cast<int32_t>(offsetof(TableQuery_1_t1610030524, ____where_2)); }
+	inline Expression_t1588164026 * get__where_2() const { return ____where_2; }
+	inline Expression_t1588164026 ** get_address_of__where_2() { return &____where_2; }
+	inline void set__where_2(Expression_t1588164026 * value)
+	{
+		____where_2 = value;
+		Il2CppCodeGenWriteBarrier((&____where_2), value);
+	}
+
+	inline static int32_t get_offset_of__orderBys_3() { return static_cast<int32_t>(offsetof(TableQuery_1_t1610030524, ____orderBys_3)); }
+	inline List_1_t2119693926 * get__orderBys_3() const { return ____orderBys_3; }
+	inline List_1_t2119693926 ** get_address_of__orderBys_3() { return &____orderBys_3; }
+	inline void set__orderBys_3(List_1_t2119693926 * value)
+	{
+		____orderBys_3 = value;
+		Il2CppCodeGenWriteBarrier((&____orderBys_3), value);
+	}
+
+	inline static int32_t get_offset_of__limit_4() { return static_cast<int32_t>(offsetof(TableQuery_1_t1610030524, ____limit_4)); }
+	inline Nullable_1_t378540539  get__limit_4() const { return ____limit_4; }
+	inline Nullable_1_t378540539 * get_address_of__limit_4() { return &____limit_4; }
+	inline void set__limit_4(Nullable_1_t378540539  value)
+	{
+		____limit_4 = value;
+	}
+
+	inline static int32_t get_offset_of__offset_5() { return static_cast<int32_t>(offsetof(TableQuery_1_t1610030524, ____offset_5)); }
+	inline Nullable_1_t378540539  get__offset_5() const { return ____offset_5; }
+	inline Nullable_1_t378540539 * get_address_of__offset_5() { return &____offset_5; }
+	inline void set__offset_5(Nullable_1_t378540539  value)
+	{
+		____offset_5 = value;
+	}
+
+	inline static int32_t get_offset_of__joinInner_6() { return static_cast<int32_t>(offsetof(TableQuery_1_t1610030524, ____joinInner_6)); }
+	inline BaseTableQuery_t440437958 * get__joinInner_6() const { return ____joinInner_6; }
+	inline BaseTableQuery_t440437958 ** get_address_of__joinInner_6() { return &____joinInner_6; }
+	inline void set__joinInner_6(BaseTableQuery_t440437958 * value)
+	{
+		____joinInner_6 = value;
+		Il2CppCodeGenWriteBarrier((&____joinInner_6), value);
+	}
+
+	inline static int32_t get_offset_of__joinInnerKeySelector_7() { return static_cast<int32_t>(offsetof(TableQuery_1_t1610030524, ____joinInnerKeySelector_7)); }
+	inline Expression_t1588164026 * get__joinInnerKeySelector_7() const { return ____joinInnerKeySelector_7; }
+	inline Expression_t1588164026 ** get_address_of__joinInnerKeySelector_7() { return &____joinInnerKeySelector_7; }
+	inline void set__joinInnerKeySelector_7(Expression_t1588164026 * value)
+	{
+		____joinInnerKeySelector_7 = value;
+		Il2CppCodeGenWriteBarrier((&____joinInnerKeySelector_7), value);
+	}
+
+	inline static int32_t get_offset_of__joinOuter_8() { return static_cast<int32_t>(offsetof(TableQuery_1_t1610030524, ____joinOuter_8)); }
+	inline BaseTableQuery_t440437958 * get__joinOuter_8() const { return ____joinOuter_8; }
+	inline BaseTableQuery_t440437958 ** get_address_of__joinOuter_8() { return &____joinOuter_8; }
+	inline void set__joinOuter_8(BaseTableQuery_t440437958 * value)
+	{
+		____joinOuter_8 = value;
+		Il2CppCodeGenWriteBarrier((&____joinOuter_8), value);
+	}
+
+	inline static int32_t get_offset_of__joinOuterKeySelector_9() { return static_cast<int32_t>(offsetof(TableQuery_1_t1610030524, ____joinOuterKeySelector_9)); }
+	inline Expression_t1588164026 * get__joinOuterKeySelector_9() const { return ____joinOuterKeySelector_9; }
+	inline Expression_t1588164026 ** get_address_of__joinOuterKeySelector_9() { return &____joinOuterKeySelector_9; }
+	inline void set__joinOuterKeySelector_9(Expression_t1588164026 * value)
+	{
+		____joinOuterKeySelector_9 = value;
+		Il2CppCodeGenWriteBarrier((&____joinOuterKeySelector_9), value);
+	}
+
+	inline static int32_t get_offset_of__joinSelector_10() { return static_cast<int32_t>(offsetof(TableQuery_1_t1610030524, ____joinSelector_10)); }
+	inline Expression_t1588164026 * get__joinSelector_10() const { return ____joinSelector_10; }
+	inline Expression_t1588164026 ** get_address_of__joinSelector_10() { return &____joinSelector_10; }
+	inline void set__joinSelector_10(Expression_t1588164026 * value)
+	{
+		____joinSelector_10 = value;
+		Il2CppCodeGenWriteBarrier((&____joinSelector_10), value);
+	}
+
+	inline static int32_t get_offset_of__selector_11() { return static_cast<int32_t>(offsetof(TableQuery_1_t1610030524, ____selector_11)); }
+	inline Expression_t1588164026 * get__selector_11() const { return ____selector_11; }
+	inline Expression_t1588164026 ** get_address_of__selector_11() { return &____selector_11; }
+	inline void set__selector_11(Expression_t1588164026 * value)
+	{
+		____selector_11 = value;
+		Il2CppCodeGenWriteBarrier((&____selector_11), value);
+	}
+
+	inline static int32_t get_offset_of__deferred_12() { return static_cast<int32_t>(offsetof(TableQuery_1_t1610030524, ____deferred_12)); }
+	inline bool get__deferred_12() const { return ____deferred_12; }
+	inline bool* get_address_of__deferred_12() { return &____deferred_12; }
+	inline void set__deferred_12(bool value)
+	{
+		____deferred_12 = value;
+	}
+};
+
+struct TableQuery_1_t1610030524_StaticFields
+{
+public:
+	// System.Func`2<SQLite4Unity3d.BaseTableQuery/Ordering,System.String> SQLite4Unity3d.TableQuery`1::<>f__am$cache0
+	Func_2_t1731194471 * ___U3CU3Ef__amU24cache0_13;
+	// System.Func`2<SQLite4Unity3d.TableQuery`1/CompileResult<T>,System.String> SQLite4Unity3d.TableQuery`1::<>f__am$cache1
+	Func_2_t85258525 * ___U3CU3Ef__amU24cache1_14;
+
+public:
+	inline static int32_t get_offset_of_U3CU3Ef__amU24cache0_13() { return static_cast<int32_t>(offsetof(TableQuery_1_t1610030524_StaticFields, ___U3CU3Ef__amU24cache0_13)); }
+	inline Func_2_t1731194471 * get_U3CU3Ef__amU24cache0_13() const { return ___U3CU3Ef__amU24cache0_13; }
+	inline Func_2_t1731194471 ** get_address_of_U3CU3Ef__amU24cache0_13() { return &___U3CU3Ef__amU24cache0_13; }
+	inline void set_U3CU3Ef__amU24cache0_13(Func_2_t1731194471 * value)
+	{
+		___U3CU3Ef__amU24cache0_13 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CU3Ef__amU24cache0_13), value);
+	}
+
+	inline static int32_t get_offset_of_U3CU3Ef__amU24cache1_14() { return static_cast<int32_t>(offsetof(TableQuery_1_t1610030524_StaticFields, ___U3CU3Ef__amU24cache1_14)); }
+	inline Func_2_t85258525 * get_U3CU3Ef__amU24cache1_14() const { return ___U3CU3Ef__amU24cache1_14; }
+	inline Func_2_t85258525 ** get_address_of_U3CU3Ef__amU24cache1_14() { return &___U3CU3Ef__amU24cache1_14; }
+	inline void set_U3CU3Ef__amU24cache1_14(Func_2_t85258525 * value)
+	{
+		___U3CU3Ef__amU24cache1_14 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CU3Ef__amU24cache1_14), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // TABLEQUERY_1_T1610030524_H
+#ifndef TABLEQUERY_1_T298633438_H
+#define TABLEQUERY_1_T298633438_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.TableQuery`1<packt.FoodyGO.Database.Monster>
+struct  TableQuery_1_t298633438  : public BaseTableQuery_t440437958
+{
+public:
+	// SQLite4Unity3d.SQLiteConnection SQLite4Unity3d.TableQuery`1::<Connection>k__BackingField
+	SQLiteConnection_t3070079188 * ___U3CConnectionU3Ek__BackingField_0;
+	// SQLite4Unity3d.TableMapping SQLite4Unity3d.TableQuery`1::<Table>k__BackingField
+	TableMapping_t2276399492 * ___U3CTableU3Ek__BackingField_1;
+	// System.Linq.Expressions.Expression SQLite4Unity3d.TableQuery`1::_where
+	Expression_t1588164026 * ____where_2;
+	// System.Collections.Generic.List`1<SQLite4Unity3d.BaseTableQuery/Ordering> SQLite4Unity3d.TableQuery`1::_orderBys
+	List_1_t2119693926 * ____orderBys_3;
+	// System.Nullable`1<System.Int32> SQLite4Unity3d.TableQuery`1::_limit
+	Nullable_1_t378540539  ____limit_4;
+	// System.Nullable`1<System.Int32> SQLite4Unity3d.TableQuery`1::_offset
+	Nullable_1_t378540539  ____offset_5;
+	// SQLite4Unity3d.BaseTableQuery SQLite4Unity3d.TableQuery`1::_joinInner
+	BaseTableQuery_t440437958 * ____joinInner_6;
+	// System.Linq.Expressions.Expression SQLite4Unity3d.TableQuery`1::_joinInnerKeySelector
+	Expression_t1588164026 * ____joinInnerKeySelector_7;
+	// SQLite4Unity3d.BaseTableQuery SQLite4Unity3d.TableQuery`1::_joinOuter
+	BaseTableQuery_t440437958 * ____joinOuter_8;
+	// System.Linq.Expressions.Expression SQLite4Unity3d.TableQuery`1::_joinOuterKeySelector
+	Expression_t1588164026 * ____joinOuterKeySelector_9;
+	// System.Linq.Expressions.Expression SQLite4Unity3d.TableQuery`1::_joinSelector
+	Expression_t1588164026 * ____joinSelector_10;
+	// System.Linq.Expressions.Expression SQLite4Unity3d.TableQuery`1::_selector
+	Expression_t1588164026 * ____selector_11;
+	// System.Boolean SQLite4Unity3d.TableQuery`1::_deferred
+	bool ____deferred_12;
+
+public:
+	inline static int32_t get_offset_of_U3CConnectionU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(TableQuery_1_t298633438, ___U3CConnectionU3Ek__BackingField_0)); }
+	inline SQLiteConnection_t3070079188 * get_U3CConnectionU3Ek__BackingField_0() const { return ___U3CConnectionU3Ek__BackingField_0; }
+	inline SQLiteConnection_t3070079188 ** get_address_of_U3CConnectionU3Ek__BackingField_0() { return &___U3CConnectionU3Ek__BackingField_0; }
+	inline void set_U3CConnectionU3Ek__BackingField_0(SQLiteConnection_t3070079188 * value)
+	{
+		___U3CConnectionU3Ek__BackingField_0 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CConnectionU3Ek__BackingField_0), value);
+	}
+
+	inline static int32_t get_offset_of_U3CTableU3Ek__BackingField_1() { return static_cast<int32_t>(offsetof(TableQuery_1_t298633438, ___U3CTableU3Ek__BackingField_1)); }
+	inline TableMapping_t2276399492 * get_U3CTableU3Ek__BackingField_1() const { return ___U3CTableU3Ek__BackingField_1; }
+	inline TableMapping_t2276399492 ** get_address_of_U3CTableU3Ek__BackingField_1() { return &___U3CTableU3Ek__BackingField_1; }
+	inline void set_U3CTableU3Ek__BackingField_1(TableMapping_t2276399492 * value)
+	{
+		___U3CTableU3Ek__BackingField_1 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CTableU3Ek__BackingField_1), value);
+	}
+
+	inline static int32_t get_offset_of__where_2() { return static_cast<int32_t>(offsetof(TableQuery_1_t298633438, ____where_2)); }
+	inline Expression_t1588164026 * get__where_2() const { return ____where_2; }
+	inline Expression_t1588164026 ** get_address_of__where_2() { return &____where_2; }
+	inline void set__where_2(Expression_t1588164026 * value)
+	{
+		____where_2 = value;
+		Il2CppCodeGenWriteBarrier((&____where_2), value);
+	}
+
+	inline static int32_t get_offset_of__orderBys_3() { return static_cast<int32_t>(offsetof(TableQuery_1_t298633438, ____orderBys_3)); }
+	inline List_1_t2119693926 * get__orderBys_3() const { return ____orderBys_3; }
+	inline List_1_t2119693926 ** get_address_of__orderBys_3() { return &____orderBys_3; }
+	inline void set__orderBys_3(List_1_t2119693926 * value)
+	{
+		____orderBys_3 = value;
+		Il2CppCodeGenWriteBarrier((&____orderBys_3), value);
+	}
+
+	inline static int32_t get_offset_of__limit_4() { return static_cast<int32_t>(offsetof(TableQuery_1_t298633438, ____limit_4)); }
+	inline Nullable_1_t378540539  get__limit_4() const { return ____limit_4; }
+	inline Nullable_1_t378540539 * get_address_of__limit_4() { return &____limit_4; }
+	inline void set__limit_4(Nullable_1_t378540539  value)
+	{
+		____limit_4 = value;
+	}
+
+	inline static int32_t get_offset_of__offset_5() { return static_cast<int32_t>(offsetof(TableQuery_1_t298633438, ____offset_5)); }
+	inline Nullable_1_t378540539  get__offset_5() const { return ____offset_5; }
+	inline Nullable_1_t378540539 * get_address_of__offset_5() { return &____offset_5; }
+	inline void set__offset_5(Nullable_1_t378540539  value)
+	{
+		____offset_5 = value;
+	}
+
+	inline static int32_t get_offset_of__joinInner_6() { return static_cast<int32_t>(offsetof(TableQuery_1_t298633438, ____joinInner_6)); }
+	inline BaseTableQuery_t440437958 * get__joinInner_6() const { return ____joinInner_6; }
+	inline BaseTableQuery_t440437958 ** get_address_of__joinInner_6() { return &____joinInner_6; }
+	inline void set__joinInner_6(BaseTableQuery_t440437958 * value)
+	{
+		____joinInner_6 = value;
+		Il2CppCodeGenWriteBarrier((&____joinInner_6), value);
+	}
+
+	inline static int32_t get_offset_of__joinInnerKeySelector_7() { return static_cast<int32_t>(offsetof(TableQuery_1_t298633438, ____joinInnerKeySelector_7)); }
+	inline Expression_t1588164026 * get__joinInnerKeySelector_7() const { return ____joinInnerKeySelector_7; }
+	inline Expression_t1588164026 ** get_address_of__joinInnerKeySelector_7() { return &____joinInnerKeySelector_7; }
+	inline void set__joinInnerKeySelector_7(Expression_t1588164026 * value)
+	{
+		____joinInnerKeySelector_7 = value;
+		Il2CppCodeGenWriteBarrier((&____joinInnerKeySelector_7), value);
+	}
+
+	inline static int32_t get_offset_of__joinOuter_8() { return static_cast<int32_t>(offsetof(TableQuery_1_t298633438, ____joinOuter_8)); }
+	inline BaseTableQuery_t440437958 * get__joinOuter_8() const { return ____joinOuter_8; }
+	inline BaseTableQuery_t440437958 ** get_address_of__joinOuter_8() { return &____joinOuter_8; }
+	inline void set__joinOuter_8(BaseTableQuery_t440437958 * value)
+	{
+		____joinOuter_8 = value;
+		Il2CppCodeGenWriteBarrier((&____joinOuter_8), value);
+	}
+
+	inline static int32_t get_offset_of__joinOuterKeySelector_9() { return static_cast<int32_t>(offsetof(TableQuery_1_t298633438, ____joinOuterKeySelector_9)); }
+	inline Expression_t1588164026 * get__joinOuterKeySelector_9() const { return ____joinOuterKeySelector_9; }
+	inline Expression_t1588164026 ** get_address_of__joinOuterKeySelector_9() { return &____joinOuterKeySelector_9; }
+	inline void set__joinOuterKeySelector_9(Expression_t1588164026 * value)
+	{
+		____joinOuterKeySelector_9 = value;
+		Il2CppCodeGenWriteBarrier((&____joinOuterKeySelector_9), value);
+	}
+
+	inline static int32_t get_offset_of__joinSelector_10() { return static_cast<int32_t>(offsetof(TableQuery_1_t298633438, ____joinSelector_10)); }
+	inline Expression_t1588164026 * get__joinSelector_10() const { return ____joinSelector_10; }
+	inline Expression_t1588164026 ** get_address_of__joinSelector_10() { return &____joinSelector_10; }
+	inline void set__joinSelector_10(Expression_t1588164026 * value)
+	{
+		____joinSelector_10 = value;
+		Il2CppCodeGenWriteBarrier((&____joinSelector_10), value);
+	}
+
+	inline static int32_t get_offset_of__selector_11() { return static_cast<int32_t>(offsetof(TableQuery_1_t298633438, ____selector_11)); }
+	inline Expression_t1588164026 * get__selector_11() const { return ____selector_11; }
+	inline Expression_t1588164026 ** get_address_of__selector_11() { return &____selector_11; }
+	inline void set__selector_11(Expression_t1588164026 * value)
+	{
+		____selector_11 = value;
+		Il2CppCodeGenWriteBarrier((&____selector_11), value);
+	}
+
+	inline static int32_t get_offset_of__deferred_12() { return static_cast<int32_t>(offsetof(TableQuery_1_t298633438, ____deferred_12)); }
+	inline bool get__deferred_12() const { return ____deferred_12; }
+	inline bool* get_address_of__deferred_12() { return &____deferred_12; }
+	inline void set__deferred_12(bool value)
+	{
+		____deferred_12 = value;
+	}
+};
+
+struct TableQuery_1_t298633438_StaticFields
+{
+public:
+	// System.Func`2<SQLite4Unity3d.BaseTableQuery/Ordering,System.String> SQLite4Unity3d.TableQuery`1::<>f__am$cache0
+	Func_2_t1731194471 * ___U3CU3Ef__amU24cache0_13;
+	// System.Func`2<SQLite4Unity3d.TableQuery`1/CompileResult<T>,System.String> SQLite4Unity3d.TableQuery`1::<>f__am$cache1
+	Func_2_t878566195 * ___U3CU3Ef__amU24cache1_14;
+
+public:
+	inline static int32_t get_offset_of_U3CU3Ef__amU24cache0_13() { return static_cast<int32_t>(offsetof(TableQuery_1_t298633438_StaticFields, ___U3CU3Ef__amU24cache0_13)); }
+	inline Func_2_t1731194471 * get_U3CU3Ef__amU24cache0_13() const { return ___U3CU3Ef__amU24cache0_13; }
+	inline Func_2_t1731194471 ** get_address_of_U3CU3Ef__amU24cache0_13() { return &___U3CU3Ef__amU24cache0_13; }
+	inline void set_U3CU3Ef__amU24cache0_13(Func_2_t1731194471 * value)
+	{
+		___U3CU3Ef__amU24cache0_13 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CU3Ef__amU24cache0_13), value);
+	}
+
+	inline static int32_t get_offset_of_U3CU3Ef__amU24cache1_14() { return static_cast<int32_t>(offsetof(TableQuery_1_t298633438_StaticFields, ___U3CU3Ef__amU24cache1_14)); }
+	inline Func_2_t878566195 * get_U3CU3Ef__amU24cache1_14() const { return ___U3CU3Ef__amU24cache1_14; }
+	inline Func_2_t878566195 ** get_address_of_U3CU3Ef__amU24cache1_14() { return &___U3CU3Ef__amU24cache1_14; }
+	inline void set_U3CU3Ef__amU24cache1_14(Func_2_t878566195 * value)
+	{
+		___U3CU3Ef__amU24cache1_14 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CU3Ef__amU24cache1_14), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // TABLEQUERY_1_T298633438_H
+#ifndef UNIQUEATTRIBUTE_T47190802_H
+#define UNIQUEATTRIBUTE_T47190802_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.UniqueAttribute
+struct  UniqueAttribute_t47190802  : public IndexedAttribute_t384353508
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // UNIQUEATTRIBUTE_T47190802_H
+#ifndef ARGUMENTEXCEPTION_T132251570_H
+#define ARGUMENTEXCEPTION_T132251570_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.ArgumentException
+struct  ArgumentException_t132251570  : public SystemException_t176217640
+{
+public:
+	// System.String System.ArgumentException::param_name
+	String_t* ___param_name_12;
+
+public:
+	inline static int32_t get_offset_of_param_name_12() { return static_cast<int32_t>(offsetof(ArgumentException_t132251570, ___param_name_12)); }
+	inline String_t* get_param_name_12() const { return ___param_name_12; }
+	inline String_t** get_address_of_param_name_12() { return &___param_name_12; }
+	inline void set_param_name_12(String_t* value)
+	{
+		___param_name_12 = value;
+		Il2CppCodeGenWriteBarrier((&___param_name_12), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ARGUMENTEXCEPTION_T132251570_H
 #ifndef ENUMERATOR_T2086727927_H
 #define ENUMERATOR_T2086727927_H
 #ifdef __clang__
@@ -6918,6 +11268,146 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // ENUMERATOR_T176868261_H
+#ifndef ENUMERATOR_T4015838566_H
+#define ENUMERATOR_T4015838566_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.Dictionary`2/Enumerator<System.String,SQLite4Unity3d.TableMapping>
+struct  Enumerator_t4015838566 
+{
+public:
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::dictionary
+	Dictionary_2_t2061655791 * ___dictionary_0;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::next
+	int32_t ___next_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::stamp
+	int32_t ___stamp_2;
+	// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::current
+	KeyValuePair_2_t164360662  ___current_3;
+
+public:
+	inline static int32_t get_offset_of_dictionary_0() { return static_cast<int32_t>(offsetof(Enumerator_t4015838566, ___dictionary_0)); }
+	inline Dictionary_2_t2061655791 * get_dictionary_0() const { return ___dictionary_0; }
+	inline Dictionary_2_t2061655791 ** get_address_of_dictionary_0() { return &___dictionary_0; }
+	inline void set_dictionary_0(Dictionary_2_t2061655791 * value)
+	{
+		___dictionary_0 = value;
+		Il2CppCodeGenWriteBarrier((&___dictionary_0), value);
+	}
+
+	inline static int32_t get_offset_of_next_1() { return static_cast<int32_t>(offsetof(Enumerator_t4015838566, ___next_1)); }
+	inline int32_t get_next_1() const { return ___next_1; }
+	inline int32_t* get_address_of_next_1() { return &___next_1; }
+	inline void set_next_1(int32_t value)
+	{
+		___next_1 = value;
+	}
+
+	inline static int32_t get_offset_of_stamp_2() { return static_cast<int32_t>(offsetof(Enumerator_t4015838566, ___stamp_2)); }
+	inline int32_t get_stamp_2() const { return ___stamp_2; }
+	inline int32_t* get_address_of_stamp_2() { return &___stamp_2; }
+	inline void set_stamp_2(int32_t value)
+	{
+		___stamp_2 = value;
+	}
+
+	inline static int32_t get_offset_of_current_3() { return static_cast<int32_t>(offsetof(Enumerator_t4015838566, ___current_3)); }
+	inline KeyValuePair_2_t164360662  get_current_3() const { return ___current_3; }
+	inline KeyValuePair_2_t164360662 * get_address_of_current_3() { return &___current_3; }
+	inline void set_current_3(KeyValuePair_2_t164360662  value)
+	{
+		___current_3 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ENUMERATOR_T4015838566_H
+#ifndef KEYVALUEPAIR_2_T1130907813_H
+#define KEYVALUEPAIR_2_T1130907813_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.KeyValuePair`2<System.Object,SQLite4Unity3d.SQLiteConnection/IndexInfo>
+struct  KeyValuePair_2_t1130907813 
+{
+public:
+	// TKey System.Collections.Generic.KeyValuePair`2::key
+	RuntimeObject * ___key_0;
+	// TValue System.Collections.Generic.KeyValuePair`2::value
+	IndexInfo_t1680796658  ___value_1;
+
+public:
+	inline static int32_t get_offset_of_key_0() { return static_cast<int32_t>(offsetof(KeyValuePair_2_t1130907813, ___key_0)); }
+	inline RuntimeObject * get_key_0() const { return ___key_0; }
+	inline RuntimeObject ** get_address_of_key_0() { return &___key_0; }
+	inline void set_key_0(RuntimeObject * value)
+	{
+		___key_0 = value;
+		Il2CppCodeGenWriteBarrier((&___key_0), value);
+	}
+
+	inline static int32_t get_offset_of_value_1() { return static_cast<int32_t>(offsetof(KeyValuePair_2_t1130907813, ___value_1)); }
+	inline IndexInfo_t1680796658  get_value_1() const { return ___value_1; }
+	inline IndexInfo_t1680796658 * get_address_of_value_1() { return &___value_1; }
+	inline void set_value_1(IndexInfo_t1680796658  value)
+	{
+		___value_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // KEYVALUEPAIR_2_T1130907813_H
+#ifndef KEYVALUEPAIR_2_T3863725124_H
+#define KEYVALUEPAIR_2_T3863725124_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.KeyValuePair`2<System.String,SQLite4Unity3d.SQLiteConnection/IndexInfo>
+struct  KeyValuePair_2_t3863725124 
+{
+public:
+	// TKey System.Collections.Generic.KeyValuePair`2::key
+	String_t* ___key_0;
+	// TValue System.Collections.Generic.KeyValuePair`2::value
+	IndexInfo_t1680796658  ___value_1;
+
+public:
+	inline static int32_t get_offset_of_key_0() { return static_cast<int32_t>(offsetof(KeyValuePair_2_t3863725124, ___key_0)); }
+	inline String_t* get_key_0() const { return ___key_0; }
+	inline String_t** get_address_of_key_0() { return &___key_0; }
+	inline void set_key_0(String_t* value)
+	{
+		___key_0 = value;
+		Il2CppCodeGenWriteBarrier((&___key_0), value);
+	}
+
+	inline static int32_t get_offset_of_value_1() { return static_cast<int32_t>(offsetof(KeyValuePair_2_t3863725124, ___value_1)); }
+	inline IndexInfo_t1680796658  get_value_1() const { return ___value_1; }
+	inline IndexInfo_t1680796658 * get_address_of_value_1() { return &___value_1; }
+	inline void set_value_1(IndexInfo_t1680796658  value)
+	{
+		___value_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // KEYVALUEPAIR_2_T3863725124_H
 #ifndef DATETIMEKIND_T3468814247_H
 #define DATETIMEKIND_T3468814247_H
 #ifdef __clang__
@@ -7089,6 +11579,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // FILEACCESS_T1659085276_H
+#ifndef INVALIDOPERATIONEXCEPTION_T56020091_H
+#define INVALIDOPERATIONEXCEPTION_T56020091_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.InvalidOperationException
+struct  InvalidOperationException_t56020091  : public SystemException_t176217640
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // INVALIDOPERATIONEXCEPTION_T56020091_H
 #ifndef AUTHENTICATIONSCHEMES_T3459406435_H
 #define AUTHENTICATIONSCHEMES_T3459406435_H
 #ifdef __clang__
@@ -7595,6 +12105,35 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // RUNTIMETYPEHANDLE_T3027515415_H
+#ifndef STRINGCOMPARISON_T3657712135_H
+#define STRINGCOMPARISON_T3657712135_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.StringComparison
+struct  StringComparison_t3657712135 
+{
+public:
+	// System.Int32 System.StringComparison::value__
+	int32_t ___value___1;
+
+public:
+	inline static int32_t get_offset_of_value___1() { return static_cast<int32_t>(offsetof(StringComparison_t3657712135, ___value___1)); }
+	inline int32_t get_value___1() const { return ___value___1; }
+	inline int32_t* get_address_of_value___1() { return &___value___1; }
+	inline void set_value___1(int32_t value)
+	{
+		___value___1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // STRINGCOMPARISON_T3657712135_H
 #ifndef MATCH_T3408321083_H
 #define MATCH_T3408321083_H
 #ifdef __clang__
@@ -8160,6 +12699,35 @@ struct RaycastResult_t3360306849_marshaled_com
 	Vector2_t2156229523  ___screenPosition_9;
 };
 #endif // RAYCASTRESULT_T3360306849_H
+#ifndef KEYCODE_T2599294277_H
+#define KEYCODE_T2599294277_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.KeyCode
+struct  KeyCode_t2599294277 
+{
+public:
+	// System.Int32 UnityEngine.KeyCode::value__
+	int32_t ___value___1;
+
+public:
+	inline static int32_t get_offset_of_value___1() { return static_cast<int32_t>(offsetof(KeyCode_t2599294277, ___value___1)); }
+	inline int32_t get_value___1() const { return ___value___1; }
+	inline int32_t* get_address_of_value___1() { return &___value___1; }
+	inline void set_value___1(int32_t value)
+	{
+		___value___1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // KEYCODE_T2599294277_H
 #ifndef LOCATIONSERVICESTATUS_T1778527219_H
 #define LOCATIONSERVICESTATUS_T1778527219_H
 #ifdef __clang__
@@ -8633,35 +13201,35 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // TYPE_T1152881528_H
-#ifndef MONSTER_T1773341114_H
-#define MONSTER_T1773341114_H
+#ifndef MONSTERSPAWNLOCATION_T266612420_H
+#define MONSTERSPAWNLOCATION_T266612420_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// packt.FoodyGO.Database.Monster
-struct  Monster_t1773341114  : public RuntimeObject
+// packt.FoodyGO.Database.MonsterSpawnLocation
+struct  MonsterSpawnLocation_t266612420  : public RuntimeObject
 {
 public:
-	// packt.FoodyGO.Mapping.MapLocation packt.FoodyGO.Database.Monster::location
+	// packt.FoodyGO.Mapping.MapLocation packt.FoodyGO.Database.MonsterSpawnLocation::location
 	MapLocation_t4058015206 * ___location_0;
-	// UnityEngine.Vector3 packt.FoodyGO.Database.Monster::position
+	// UnityEngine.Vector3 packt.FoodyGO.Database.MonsterSpawnLocation::position
 	Vector3_t3722313464  ___position_1;
-	// System.Double packt.FoodyGO.Database.Monster::spawnTimestamp
+	// System.Double packt.FoodyGO.Database.MonsterSpawnLocation::spawnTimestamp
 	double ___spawnTimestamp_2;
-	// System.Double packt.FoodyGO.Database.Monster::lastHeardTimestamp
+	// System.Double packt.FoodyGO.Database.MonsterSpawnLocation::lastHeardTimestamp
 	double ___lastHeardTimestamp_3;
-	// System.Double packt.FoodyGO.Database.Monster::lastSeenTimestamp
+	// System.Double packt.FoodyGO.Database.MonsterSpawnLocation::lastSeenTimestamp
 	double ___lastSeenTimestamp_4;
-	// UnityEngine.GameObject packt.FoodyGO.Database.Monster::gameObject
+	// UnityEngine.GameObject packt.FoodyGO.Database.MonsterSpawnLocation::gameObject
 	GameObject_t1113636619 * ___gameObject_5;
-	// System.Int32 packt.FoodyGO.Database.Monster::footstepRange
+	// System.Int32 packt.FoodyGO.Database.MonsterSpawnLocation::footstepRange
 	int32_t ___footstepRange_6;
 
 public:
-	inline static int32_t get_offset_of_location_0() { return static_cast<int32_t>(offsetof(Monster_t1773341114, ___location_0)); }
+	inline static int32_t get_offset_of_location_0() { return static_cast<int32_t>(offsetof(MonsterSpawnLocation_t266612420, ___location_0)); }
 	inline MapLocation_t4058015206 * get_location_0() const { return ___location_0; }
 	inline MapLocation_t4058015206 ** get_address_of_location_0() { return &___location_0; }
 	inline void set_location_0(MapLocation_t4058015206 * value)
@@ -8670,7 +13238,7 @@ public:
 		Il2CppCodeGenWriteBarrier((&___location_0), value);
 	}
 
-	inline static int32_t get_offset_of_position_1() { return static_cast<int32_t>(offsetof(Monster_t1773341114, ___position_1)); }
+	inline static int32_t get_offset_of_position_1() { return static_cast<int32_t>(offsetof(MonsterSpawnLocation_t266612420, ___position_1)); }
 	inline Vector3_t3722313464  get_position_1() const { return ___position_1; }
 	inline Vector3_t3722313464 * get_address_of_position_1() { return &___position_1; }
 	inline void set_position_1(Vector3_t3722313464  value)
@@ -8678,7 +13246,7 @@ public:
 		___position_1 = value;
 	}
 
-	inline static int32_t get_offset_of_spawnTimestamp_2() { return static_cast<int32_t>(offsetof(Monster_t1773341114, ___spawnTimestamp_2)); }
+	inline static int32_t get_offset_of_spawnTimestamp_2() { return static_cast<int32_t>(offsetof(MonsterSpawnLocation_t266612420, ___spawnTimestamp_2)); }
 	inline double get_spawnTimestamp_2() const { return ___spawnTimestamp_2; }
 	inline double* get_address_of_spawnTimestamp_2() { return &___spawnTimestamp_2; }
 	inline void set_spawnTimestamp_2(double value)
@@ -8686,7 +13254,7 @@ public:
 		___spawnTimestamp_2 = value;
 	}
 
-	inline static int32_t get_offset_of_lastHeardTimestamp_3() { return static_cast<int32_t>(offsetof(Monster_t1773341114, ___lastHeardTimestamp_3)); }
+	inline static int32_t get_offset_of_lastHeardTimestamp_3() { return static_cast<int32_t>(offsetof(MonsterSpawnLocation_t266612420, ___lastHeardTimestamp_3)); }
 	inline double get_lastHeardTimestamp_3() const { return ___lastHeardTimestamp_3; }
 	inline double* get_address_of_lastHeardTimestamp_3() { return &___lastHeardTimestamp_3; }
 	inline void set_lastHeardTimestamp_3(double value)
@@ -8694,7 +13262,7 @@ public:
 		___lastHeardTimestamp_3 = value;
 	}
 
-	inline static int32_t get_offset_of_lastSeenTimestamp_4() { return static_cast<int32_t>(offsetof(Monster_t1773341114, ___lastSeenTimestamp_4)); }
+	inline static int32_t get_offset_of_lastSeenTimestamp_4() { return static_cast<int32_t>(offsetof(MonsterSpawnLocation_t266612420, ___lastSeenTimestamp_4)); }
 	inline double get_lastSeenTimestamp_4() const { return ___lastSeenTimestamp_4; }
 	inline double* get_address_of_lastSeenTimestamp_4() { return &___lastSeenTimestamp_4; }
 	inline void set_lastSeenTimestamp_4(double value)
@@ -8702,7 +13270,7 @@ public:
 		___lastSeenTimestamp_4 = value;
 	}
 
-	inline static int32_t get_offset_of_gameObject_5() { return static_cast<int32_t>(offsetof(Monster_t1773341114, ___gameObject_5)); }
+	inline static int32_t get_offset_of_gameObject_5() { return static_cast<int32_t>(offsetof(MonsterSpawnLocation_t266612420, ___gameObject_5)); }
 	inline GameObject_t1113636619 * get_gameObject_5() const { return ___gameObject_5; }
 	inline GameObject_t1113636619 ** get_address_of_gameObject_5() { return &___gameObject_5; }
 	inline void set_gameObject_5(GameObject_t1113636619 * value)
@@ -8711,7 +13279,7 @@ public:
 		Il2CppCodeGenWriteBarrier((&___gameObject_5), value);
 	}
 
-	inline static int32_t get_offset_of_footstepRange_6() { return static_cast<int32_t>(offsetof(Monster_t1773341114, ___footstepRange_6)); }
+	inline static int32_t get_offset_of_footstepRange_6() { return static_cast<int32_t>(offsetof(MonsterSpawnLocation_t266612420, ___footstepRange_6)); }
 	inline int32_t get_footstepRange_6() const { return ___footstepRange_6; }
 	inline int32_t* get_address_of_footstepRange_6() { return &___footstepRange_6; }
 	inline void set_footstepRange_6(int32_t value)
@@ -8723,7 +13291,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // MONSTER_T1773341114_H
+#endif // MONSTERSPAWNLOCATION_T266612420_H
 #ifndef MAPTYPE_T3185662864_H
 #define MAPTYPE_T3185662864_H
 #ifdef __clang__
@@ -8831,6 +13399,155 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // CONTROLSTYLE_T3966684686_H
+#ifndef SQLITEEXCEPTION_T1356363765_H
+#define SQLITEEXCEPTION_T1356363765_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.SQLiteException
+struct  SQLiteException_t1356363765  : public Exception_t
+{
+public:
+	// SQLite4Unity3d.SQLite3/Result SQLite4Unity3d.SQLiteException::<Result>k__BackingField
+	int32_t ___U3CResultU3Ek__BackingField_11;
+
+public:
+	inline static int32_t get_offset_of_U3CResultU3Ek__BackingField_11() { return static_cast<int32_t>(offsetof(SQLiteException_t1356363765, ___U3CResultU3Ek__BackingField_11)); }
+	inline int32_t get_U3CResultU3Ek__BackingField_11() const { return ___U3CResultU3Ek__BackingField_11; }
+	inline int32_t* get_address_of_U3CResultU3Ek__BackingField_11() { return &___U3CResultU3Ek__BackingField_11; }
+	inline void set_U3CResultU3Ek__BackingField_11(int32_t value)
+	{
+		___U3CResultU3Ek__BackingField_11 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // SQLITEEXCEPTION_T1356363765_H
+#ifndef ENUMERATOR_T687418421_H
+#define ENUMERATOR_T687418421_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.Dictionary`2/Enumerator<System.Object,SQLite4Unity3d.SQLiteConnection/IndexInfo>
+struct  Enumerator_t687418421 
+{
+public:
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::dictionary
+	Dictionary_2_t3028202942 * ___dictionary_0;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::next
+	int32_t ___next_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::stamp
+	int32_t ___stamp_2;
+	// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::current
+	KeyValuePair_2_t1130907813  ___current_3;
+
+public:
+	inline static int32_t get_offset_of_dictionary_0() { return static_cast<int32_t>(offsetof(Enumerator_t687418421, ___dictionary_0)); }
+	inline Dictionary_2_t3028202942 * get_dictionary_0() const { return ___dictionary_0; }
+	inline Dictionary_2_t3028202942 ** get_address_of_dictionary_0() { return &___dictionary_0; }
+	inline void set_dictionary_0(Dictionary_2_t3028202942 * value)
+	{
+		___dictionary_0 = value;
+		Il2CppCodeGenWriteBarrier((&___dictionary_0), value);
+	}
+
+	inline static int32_t get_offset_of_next_1() { return static_cast<int32_t>(offsetof(Enumerator_t687418421, ___next_1)); }
+	inline int32_t get_next_1() const { return ___next_1; }
+	inline int32_t* get_address_of_next_1() { return &___next_1; }
+	inline void set_next_1(int32_t value)
+	{
+		___next_1 = value;
+	}
+
+	inline static int32_t get_offset_of_stamp_2() { return static_cast<int32_t>(offsetof(Enumerator_t687418421, ___stamp_2)); }
+	inline int32_t get_stamp_2() const { return ___stamp_2; }
+	inline int32_t* get_address_of_stamp_2() { return &___stamp_2; }
+	inline void set_stamp_2(int32_t value)
+	{
+		___stamp_2 = value;
+	}
+
+	inline static int32_t get_offset_of_current_3() { return static_cast<int32_t>(offsetof(Enumerator_t687418421, ___current_3)); }
+	inline KeyValuePair_2_t1130907813  get_current_3() const { return ___current_3; }
+	inline KeyValuePair_2_t1130907813 * get_address_of_current_3() { return &___current_3; }
+	inline void set_current_3(KeyValuePair_2_t1130907813  value)
+	{
+		___current_3 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ENUMERATOR_T687418421_H
+#ifndef ENUMERATOR_T3420235732_H
+#define ENUMERATOR_T3420235732_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.Dictionary`2/Enumerator<System.String,SQLite4Unity3d.SQLiteConnection/IndexInfo>
+struct  Enumerator_t3420235732 
+{
+public:
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::dictionary
+	Dictionary_2_t1466052957 * ___dictionary_0;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::next
+	int32_t ___next_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::stamp
+	int32_t ___stamp_2;
+	// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::current
+	KeyValuePair_2_t3863725124  ___current_3;
+
+public:
+	inline static int32_t get_offset_of_dictionary_0() { return static_cast<int32_t>(offsetof(Enumerator_t3420235732, ___dictionary_0)); }
+	inline Dictionary_2_t1466052957 * get_dictionary_0() const { return ___dictionary_0; }
+	inline Dictionary_2_t1466052957 ** get_address_of_dictionary_0() { return &___dictionary_0; }
+	inline void set_dictionary_0(Dictionary_2_t1466052957 * value)
+	{
+		___dictionary_0 = value;
+		Il2CppCodeGenWriteBarrier((&___dictionary_0), value);
+	}
+
+	inline static int32_t get_offset_of_next_1() { return static_cast<int32_t>(offsetof(Enumerator_t3420235732, ___next_1)); }
+	inline int32_t get_next_1() const { return ___next_1; }
+	inline int32_t* get_address_of_next_1() { return &___next_1; }
+	inline void set_next_1(int32_t value)
+	{
+		___next_1 = value;
+	}
+
+	inline static int32_t get_offset_of_stamp_2() { return static_cast<int32_t>(offsetof(Enumerator_t3420235732, ___stamp_2)); }
+	inline int32_t get_stamp_2() const { return ___stamp_2; }
+	inline int32_t* get_address_of_stamp_2() { return &___stamp_2; }
+	inline void set_stamp_2(int32_t value)
+	{
+		___stamp_2 = value;
+	}
+
+	inline static int32_t get_offset_of_current_3() { return static_cast<int32_t>(offsetof(Enumerator_t3420235732, ___current_3)); }
+	inline KeyValuePair_2_t3863725124  get_current_3() const { return ___current_3; }
+	inline KeyValuePair_2_t3863725124 * get_address_of_current_3() { return &___current_3; }
+	inline void set_current_3(KeyValuePair_2_t3863725124  value)
+	{
+		___current_3 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ENUMERATOR_T3420235732_H
 #ifndef ENUMERATOR_T314722136_H
 #define ENUMERATOR_T314722136_H
 #ifdef __clang__
@@ -8889,6 +13606,64 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // ENUMERATOR_T2699829766_H
+#ifndef ENUMERATOR_T701438809_H
+#define ENUMERATOR_T701438809_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Object,System.Object>
+struct  Enumerator_t701438809 
+{
+public:
+	// System.Collections.Generic.Dictionary`2/Enumerator<TKey,TValue> System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator::host_enumerator
+	Enumerator_t2086727927  ___host_enumerator_0;
+
+public:
+	inline static int32_t get_offset_of_host_enumerator_0() { return static_cast<int32_t>(offsetof(Enumerator_t701438809, ___host_enumerator_0)); }
+	inline Enumerator_t2086727927  get_host_enumerator_0() const { return ___host_enumerator_0; }
+	inline Enumerator_t2086727927 * get_address_of_host_enumerator_0() { return &___host_enumerator_0; }
+	inline void set_host_enumerator_0(Enumerator_t2086727927  value)
+	{
+		___host_enumerator_0 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ENUMERATOR_T701438809_H
+#ifndef ENUMERATOR_T2630549448_H
+#define ENUMERATOR_T2630549448_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.String,SQLite4Unity3d.TableMapping>
+struct  Enumerator_t2630549448 
+{
+public:
+	// System.Collections.Generic.Dictionary`2/Enumerator<TKey,TValue> System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator::host_enumerator
+	Enumerator_t4015838566  ___host_enumerator_0;
+
+public:
+	inline static int32_t get_offset_of_host_enumerator_0() { return static_cast<int32_t>(offsetof(Enumerator_t2630549448, ___host_enumerator_0)); }
+	inline Enumerator_t4015838566  get_host_enumerator_0() const { return ___host_enumerator_0; }
+	inline Enumerator_t4015838566 * get_address_of_host_enumerator_0() { return &___host_enumerator_0; }
+	inline void set_host_enumerator_0(Enumerator_t4015838566  value)
+	{
+		___host_enumerator_0 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ENUMERATOR_T2630549448_H
 #ifndef DATETIME_T3738529785_H
 #define DATETIME_T3738529785_H
 #ifdef __clang__
@@ -10823,6 +15598,56 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // FILEHANDLERDELEGATE_T13458300_H
+#ifndef NOTNULLCONSTRAINTVIOLATIONEXCEPTION_T3886364687_H
+#define NOTNULLCONSTRAINTVIOLATIONEXCEPTION_T3886364687_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// SQLite4Unity3d.NotNullConstraintViolationException
+struct  NotNullConstraintViolationException_t3886364687  : public SQLiteException_t1356363765
+{
+public:
+	// System.Collections.Generic.IEnumerable`1<SQLite4Unity3d.TableMapping/Column> SQLite4Unity3d.NotNullConstraintViolationException::<Columns>k__BackingField
+	RuntimeObject* ___U3CColumnsU3Ek__BackingField_12;
+
+public:
+	inline static int32_t get_offset_of_U3CColumnsU3Ek__BackingField_12() { return static_cast<int32_t>(offsetof(NotNullConstraintViolationException_t3886364687, ___U3CColumnsU3Ek__BackingField_12)); }
+	inline RuntimeObject* get_U3CColumnsU3Ek__BackingField_12() const { return ___U3CColumnsU3Ek__BackingField_12; }
+	inline RuntimeObject** get_address_of_U3CColumnsU3Ek__BackingField_12() { return &___U3CColumnsU3Ek__BackingField_12; }
+	inline void set_U3CColumnsU3Ek__BackingField_12(RuntimeObject* value)
+	{
+		___U3CColumnsU3Ek__BackingField_12 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CColumnsU3Ek__BackingField_12), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // NOTNULLCONSTRAINTVIOLATIONEXCEPTION_T3886364687_H
+#ifndef ACTION_T1264377477_H
+#define ACTION_T1264377477_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Action
+struct  Action_t1264377477  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ACTION_T1264377477_H
 #ifndef ASYNCCALLBACK_T3962456242_H
 #define ASYNCCALLBACK_T3962456242_H
 #ifdef __clang__
@@ -10843,6 +15668,229 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // ASYNCCALLBACK_T3962456242_H
+#ifndef ENUMERATOR_T3210379926_H
+#define ENUMERATOR_T3210379926_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator<System.Object,SQLite4Unity3d.SQLiteConnection/IndexInfo>
+struct  Enumerator_t3210379926 
+{
+public:
+	// System.Collections.Generic.Dictionary`2/Enumerator<TKey,TValue> System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator::host_enumerator
+	Enumerator_t687418421  ___host_enumerator_0;
+
+public:
+	inline static int32_t get_offset_of_host_enumerator_0() { return static_cast<int32_t>(offsetof(Enumerator_t3210379926, ___host_enumerator_0)); }
+	inline Enumerator_t687418421  get_host_enumerator_0() const { return ___host_enumerator_0; }
+	inline Enumerator_t687418421 * get_address_of_host_enumerator_0() { return &___host_enumerator_0; }
+	inline void set_host_enumerator_0(Enumerator_t687418421  value)
+	{
+		___host_enumerator_0 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ENUMERATOR_T3210379926_H
+#ifndef ENUMERATOR_T1648229941_H
+#define ENUMERATOR_T1648229941_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator<System.String,SQLite4Unity3d.SQLiteConnection/IndexInfo>
+struct  Enumerator_t1648229941 
+{
+public:
+	// System.Collections.Generic.Dictionary`2/Enumerator<TKey,TValue> System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator::host_enumerator
+	Enumerator_t3420235732  ___host_enumerator_0;
+
+public:
+	inline static int32_t get_offset_of_host_enumerator_0() { return static_cast<int32_t>(offsetof(Enumerator_t1648229941, ___host_enumerator_0)); }
+	inline Enumerator_t3420235732  get_host_enumerator_0() const { return ___host_enumerator_0; }
+	inline Enumerator_t3420235732 * get_address_of_host_enumerator_0() { return &___host_enumerator_0; }
+	inline void set_host_enumerator_0(Enumerator_t3420235732  value)
+	{
+		___host_enumerator_0 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ENUMERATOR_T1648229941_H
+#ifndef DATETIMEOFFSET_T3229287507_H
+#define DATETIMEOFFSET_T3229287507_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.DateTimeOffset
+struct  DateTimeOffset_t3229287507 
+{
+public:
+	// System.DateTime System.DateTimeOffset::dt
+	DateTime_t3738529785  ___dt_2;
+	// System.TimeSpan System.DateTimeOffset::utc_offset
+	TimeSpan_t881159249  ___utc_offset_3;
+
+public:
+	inline static int32_t get_offset_of_dt_2() { return static_cast<int32_t>(offsetof(DateTimeOffset_t3229287507, ___dt_2)); }
+	inline DateTime_t3738529785  get_dt_2() const { return ___dt_2; }
+	inline DateTime_t3738529785 * get_address_of_dt_2() { return &___dt_2; }
+	inline void set_dt_2(DateTime_t3738529785  value)
+	{
+		___dt_2 = value;
+	}
+
+	inline static int32_t get_offset_of_utc_offset_3() { return static_cast<int32_t>(offsetof(DateTimeOffset_t3229287507, ___utc_offset_3)); }
+	inline TimeSpan_t881159249  get_utc_offset_3() const { return ___utc_offset_3; }
+	inline TimeSpan_t881159249 * get_address_of_utc_offset_3() { return &___utc_offset_3; }
+	inline void set_utc_offset_3(TimeSpan_t881159249  value)
+	{
+		___utc_offset_3 = value;
+	}
+};
+
+struct DateTimeOffset_t3229287507_StaticFields
+{
+public:
+	// System.DateTimeOffset System.DateTimeOffset::MaxValue
+	DateTimeOffset_t3229287507  ___MaxValue_0;
+	// System.DateTimeOffset System.DateTimeOffset::MinValue
+	DateTimeOffset_t3229287507  ___MinValue_1;
+
+public:
+	inline static int32_t get_offset_of_MaxValue_0() { return static_cast<int32_t>(offsetof(DateTimeOffset_t3229287507_StaticFields, ___MaxValue_0)); }
+	inline DateTimeOffset_t3229287507  get_MaxValue_0() const { return ___MaxValue_0; }
+	inline DateTimeOffset_t3229287507 * get_address_of_MaxValue_0() { return &___MaxValue_0; }
+	inline void set_MaxValue_0(DateTimeOffset_t3229287507  value)
+	{
+		___MaxValue_0 = value;
+	}
+
+	inline static int32_t get_offset_of_MinValue_1() { return static_cast<int32_t>(offsetof(DateTimeOffset_t3229287507_StaticFields, ___MinValue_1)); }
+	inline DateTimeOffset_t3229287507  get_MinValue_1() const { return ___MinValue_1; }
+	inline DateTimeOffset_t3229287507 * get_address_of_MinValue_1() { return &___MinValue_1; }
+	inline void set_MinValue_1(DateTimeOffset_t3229287507  value)
+	{
+		___MinValue_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATETIMEOFFSET_T3229287507_H
+#ifndef FUNC_2_T166798807_H
+#define FUNC_2_T166798807_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Func`2<SQLite4Unity3d.SQLiteConnection/IndexedColumn,System.Int32>
+struct  Func_2_t166798807  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // FUNC_2_T166798807_H
+#ifndef FUNC_2_T3358271039_H
+#define FUNC_2_T3358271039_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Func`2<SQLite4Unity3d.SQLiteConnection/IndexedColumn,System.String>
+struct  Func_2_t3358271039  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // FUNC_2_T3358271039_H
+#ifndef FUNC_2_T681049744_H
+#define FUNC_2_T681049744_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Func`2<SQLite4Unity3d.TableMapping/Column,System.Boolean>
+struct  Func_2_t681049744  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // FUNC_2_T681049744_H
+#ifndef FUNC_2_T3663867943_H
+#define FUNC_2_T3663867943_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Func`2<SQLite4Unity3d.TableMapping/Column,System.Object>
+struct  Func_2_t3663867943  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // FUNC_2_T3663867943_H
+#ifndef FUNC_2_T2431212468_H
+#define FUNC_2_T2431212468_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Func`2<SQLite4Unity3d.TableMapping/Column,System.String>
+struct  Func_2_t2431212468  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // FUNC_2_T2431212468_H
 #ifndef FUNC_2_T3001800792_H
 #define FUNC_2_T3001800792_H
 #ifdef __clang__
@@ -11336,6 +16384,299 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // CHARACTERGPSCOPMASSCONTROLLER_T3516088559_H
+#ifndef GE_ELEMENTALS_DEMO_T1266050954_H
+#define GE_ELEMENTALS_DEMO_T1266050954_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// GE_Elementals_Demo
+struct  GE_Elementals_Demo_t1266050954  : public MonoBehaviour_t3962482529
+{
+public:
+	// UnityEngine.Color GE_Elementals_Demo::m_ColorFire
+	Color_t2555686324  ___m_ColorFire_4;
+	// UnityEngine.Color GE_Elementals_Demo::m_ColorWater
+	Color_t2555686324  ___m_ColorWater_5;
+	// UnityEngine.Color GE_Elementals_Demo::m_ColorWind
+	Color_t2555686324  ___m_ColorWind_6;
+	// UnityEngine.Color GE_Elementals_Demo::m_ColorEarth
+	Color_t2555686324  ___m_ColorEarth_7;
+	// UnityEngine.Color GE_Elementals_Demo::m_ColorThunder
+	Color_t2555686324  ___m_ColorThunder_8;
+	// UnityEngine.Color GE_Elementals_Demo::m_ColorIce
+	Color_t2555686324  ___m_ColorIce_9;
+	// UnityEngine.Color GE_Elementals_Demo::m_ColorLight
+	Color_t2555686324  ___m_ColorLight_10;
+	// UnityEngine.Color GE_Elementals_Demo::m_ColorDarkness
+	Color_t2555686324  ___m_ColorDarkness_11;
+	// UnityEngine.GameObject[] GE_Elementals_Demo::m_PrefabListFire
+	GameObjectU5BU5D_t3328599146* ___m_PrefabListFire_12;
+	// UnityEngine.GameObject[] GE_Elementals_Demo::m_PrefabListWater
+	GameObjectU5BU5D_t3328599146* ___m_PrefabListWater_13;
+	// UnityEngine.GameObject[] GE_Elementals_Demo::m_PrefabListWind
+	GameObjectU5BU5D_t3328599146* ___m_PrefabListWind_14;
+	// UnityEngine.GameObject[] GE_Elementals_Demo::m_PrefabListEarth
+	GameObjectU5BU5D_t3328599146* ___m_PrefabListEarth_15;
+	// UnityEngine.GameObject[] GE_Elementals_Demo::m_PrefabListThunder
+	GameObjectU5BU5D_t3328599146* ___m_PrefabListThunder_16;
+	// UnityEngine.GameObject[] GE_Elementals_Demo::m_PrefabListIce
+	GameObjectU5BU5D_t3328599146* ___m_PrefabListIce_17;
+	// UnityEngine.GameObject[] GE_Elementals_Demo::m_PrefabListLight
+	GameObjectU5BU5D_t3328599146* ___m_PrefabListLight_18;
+	// UnityEngine.GameObject[] GE_Elementals_Demo::m_PrefabListDarkness
+	GameObjectU5BU5D_t3328599146* ___m_PrefabListDarkness_19;
+	// System.Int32 GE_Elementals_Demo::m_CurrentCategoryIndex
+	int32_t ___m_CurrentCategoryIndex_20;
+	// System.Int32 GE_Elementals_Demo::m_CurrentParticleIndex
+	int32_t ___m_CurrentParticleIndex_21;
+	// System.String GE_Elementals_Demo::m_CategoryName
+	String_t* ___m_CategoryName_22;
+	// System.String GE_Elementals_Demo::m_ParticleName
+	String_t* ___m_ParticleName_23;
+	// UnityEngine.GameObject[] GE_Elementals_Demo::m_CurrentCategory
+	GameObjectU5BU5D_t3328599146* ___m_CurrentCategory_24;
+	// UnityEngine.GameObject GE_Elementals_Demo::m_CurrentParticle
+	GameObject_t1113636619 * ___m_CurrentParticle_25;
+	// UnityEngine.UI.Text GE_Elementals_Demo::m_Category
+	Text_t1901882714 * ___m_Category_26;
+	// UnityEngine.UI.Text GE_Elementals_Demo::m_Particle
+	Text_t1901882714 * ___m_Particle_27;
+	// UnityEngine.Vector3 GE_Elementals_Demo::m_PreviousMousePosition
+	Vector3_t3722313464  ___m_PreviousMousePosition_28;
+	// System.Boolean GE_Elementals_Demo::m_ShowParticleWhenTouchEnded
+	bool ___m_ShowParticleWhenTouchEnded_29;
+
+public:
+	inline static int32_t get_offset_of_m_ColorFire_4() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_ColorFire_4)); }
+	inline Color_t2555686324  get_m_ColorFire_4() const { return ___m_ColorFire_4; }
+	inline Color_t2555686324 * get_address_of_m_ColorFire_4() { return &___m_ColorFire_4; }
+	inline void set_m_ColorFire_4(Color_t2555686324  value)
+	{
+		___m_ColorFire_4 = value;
+	}
+
+	inline static int32_t get_offset_of_m_ColorWater_5() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_ColorWater_5)); }
+	inline Color_t2555686324  get_m_ColorWater_5() const { return ___m_ColorWater_5; }
+	inline Color_t2555686324 * get_address_of_m_ColorWater_5() { return &___m_ColorWater_5; }
+	inline void set_m_ColorWater_5(Color_t2555686324  value)
+	{
+		___m_ColorWater_5 = value;
+	}
+
+	inline static int32_t get_offset_of_m_ColorWind_6() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_ColorWind_6)); }
+	inline Color_t2555686324  get_m_ColorWind_6() const { return ___m_ColorWind_6; }
+	inline Color_t2555686324 * get_address_of_m_ColorWind_6() { return &___m_ColorWind_6; }
+	inline void set_m_ColorWind_6(Color_t2555686324  value)
+	{
+		___m_ColorWind_6 = value;
+	}
+
+	inline static int32_t get_offset_of_m_ColorEarth_7() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_ColorEarth_7)); }
+	inline Color_t2555686324  get_m_ColorEarth_7() const { return ___m_ColorEarth_7; }
+	inline Color_t2555686324 * get_address_of_m_ColorEarth_7() { return &___m_ColorEarth_7; }
+	inline void set_m_ColorEarth_7(Color_t2555686324  value)
+	{
+		___m_ColorEarth_7 = value;
+	}
+
+	inline static int32_t get_offset_of_m_ColorThunder_8() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_ColorThunder_8)); }
+	inline Color_t2555686324  get_m_ColorThunder_8() const { return ___m_ColorThunder_8; }
+	inline Color_t2555686324 * get_address_of_m_ColorThunder_8() { return &___m_ColorThunder_8; }
+	inline void set_m_ColorThunder_8(Color_t2555686324  value)
+	{
+		___m_ColorThunder_8 = value;
+	}
+
+	inline static int32_t get_offset_of_m_ColorIce_9() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_ColorIce_9)); }
+	inline Color_t2555686324  get_m_ColorIce_9() const { return ___m_ColorIce_9; }
+	inline Color_t2555686324 * get_address_of_m_ColorIce_9() { return &___m_ColorIce_9; }
+	inline void set_m_ColorIce_9(Color_t2555686324  value)
+	{
+		___m_ColorIce_9 = value;
+	}
+
+	inline static int32_t get_offset_of_m_ColorLight_10() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_ColorLight_10)); }
+	inline Color_t2555686324  get_m_ColorLight_10() const { return ___m_ColorLight_10; }
+	inline Color_t2555686324 * get_address_of_m_ColorLight_10() { return &___m_ColorLight_10; }
+	inline void set_m_ColorLight_10(Color_t2555686324  value)
+	{
+		___m_ColorLight_10 = value;
+	}
+
+	inline static int32_t get_offset_of_m_ColorDarkness_11() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_ColorDarkness_11)); }
+	inline Color_t2555686324  get_m_ColorDarkness_11() const { return ___m_ColorDarkness_11; }
+	inline Color_t2555686324 * get_address_of_m_ColorDarkness_11() { return &___m_ColorDarkness_11; }
+	inline void set_m_ColorDarkness_11(Color_t2555686324  value)
+	{
+		___m_ColorDarkness_11 = value;
+	}
+
+	inline static int32_t get_offset_of_m_PrefabListFire_12() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_PrefabListFire_12)); }
+	inline GameObjectU5BU5D_t3328599146* get_m_PrefabListFire_12() const { return ___m_PrefabListFire_12; }
+	inline GameObjectU5BU5D_t3328599146** get_address_of_m_PrefabListFire_12() { return &___m_PrefabListFire_12; }
+	inline void set_m_PrefabListFire_12(GameObjectU5BU5D_t3328599146* value)
+	{
+		___m_PrefabListFire_12 = value;
+		Il2CppCodeGenWriteBarrier((&___m_PrefabListFire_12), value);
+	}
+
+	inline static int32_t get_offset_of_m_PrefabListWater_13() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_PrefabListWater_13)); }
+	inline GameObjectU5BU5D_t3328599146* get_m_PrefabListWater_13() const { return ___m_PrefabListWater_13; }
+	inline GameObjectU5BU5D_t3328599146** get_address_of_m_PrefabListWater_13() { return &___m_PrefabListWater_13; }
+	inline void set_m_PrefabListWater_13(GameObjectU5BU5D_t3328599146* value)
+	{
+		___m_PrefabListWater_13 = value;
+		Il2CppCodeGenWriteBarrier((&___m_PrefabListWater_13), value);
+	}
+
+	inline static int32_t get_offset_of_m_PrefabListWind_14() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_PrefabListWind_14)); }
+	inline GameObjectU5BU5D_t3328599146* get_m_PrefabListWind_14() const { return ___m_PrefabListWind_14; }
+	inline GameObjectU5BU5D_t3328599146** get_address_of_m_PrefabListWind_14() { return &___m_PrefabListWind_14; }
+	inline void set_m_PrefabListWind_14(GameObjectU5BU5D_t3328599146* value)
+	{
+		___m_PrefabListWind_14 = value;
+		Il2CppCodeGenWriteBarrier((&___m_PrefabListWind_14), value);
+	}
+
+	inline static int32_t get_offset_of_m_PrefabListEarth_15() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_PrefabListEarth_15)); }
+	inline GameObjectU5BU5D_t3328599146* get_m_PrefabListEarth_15() const { return ___m_PrefabListEarth_15; }
+	inline GameObjectU5BU5D_t3328599146** get_address_of_m_PrefabListEarth_15() { return &___m_PrefabListEarth_15; }
+	inline void set_m_PrefabListEarth_15(GameObjectU5BU5D_t3328599146* value)
+	{
+		___m_PrefabListEarth_15 = value;
+		Il2CppCodeGenWriteBarrier((&___m_PrefabListEarth_15), value);
+	}
+
+	inline static int32_t get_offset_of_m_PrefabListThunder_16() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_PrefabListThunder_16)); }
+	inline GameObjectU5BU5D_t3328599146* get_m_PrefabListThunder_16() const { return ___m_PrefabListThunder_16; }
+	inline GameObjectU5BU5D_t3328599146** get_address_of_m_PrefabListThunder_16() { return &___m_PrefabListThunder_16; }
+	inline void set_m_PrefabListThunder_16(GameObjectU5BU5D_t3328599146* value)
+	{
+		___m_PrefabListThunder_16 = value;
+		Il2CppCodeGenWriteBarrier((&___m_PrefabListThunder_16), value);
+	}
+
+	inline static int32_t get_offset_of_m_PrefabListIce_17() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_PrefabListIce_17)); }
+	inline GameObjectU5BU5D_t3328599146* get_m_PrefabListIce_17() const { return ___m_PrefabListIce_17; }
+	inline GameObjectU5BU5D_t3328599146** get_address_of_m_PrefabListIce_17() { return &___m_PrefabListIce_17; }
+	inline void set_m_PrefabListIce_17(GameObjectU5BU5D_t3328599146* value)
+	{
+		___m_PrefabListIce_17 = value;
+		Il2CppCodeGenWriteBarrier((&___m_PrefabListIce_17), value);
+	}
+
+	inline static int32_t get_offset_of_m_PrefabListLight_18() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_PrefabListLight_18)); }
+	inline GameObjectU5BU5D_t3328599146* get_m_PrefabListLight_18() const { return ___m_PrefabListLight_18; }
+	inline GameObjectU5BU5D_t3328599146** get_address_of_m_PrefabListLight_18() { return &___m_PrefabListLight_18; }
+	inline void set_m_PrefabListLight_18(GameObjectU5BU5D_t3328599146* value)
+	{
+		___m_PrefabListLight_18 = value;
+		Il2CppCodeGenWriteBarrier((&___m_PrefabListLight_18), value);
+	}
+
+	inline static int32_t get_offset_of_m_PrefabListDarkness_19() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_PrefabListDarkness_19)); }
+	inline GameObjectU5BU5D_t3328599146* get_m_PrefabListDarkness_19() const { return ___m_PrefabListDarkness_19; }
+	inline GameObjectU5BU5D_t3328599146** get_address_of_m_PrefabListDarkness_19() { return &___m_PrefabListDarkness_19; }
+	inline void set_m_PrefabListDarkness_19(GameObjectU5BU5D_t3328599146* value)
+	{
+		___m_PrefabListDarkness_19 = value;
+		Il2CppCodeGenWriteBarrier((&___m_PrefabListDarkness_19), value);
+	}
+
+	inline static int32_t get_offset_of_m_CurrentCategoryIndex_20() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_CurrentCategoryIndex_20)); }
+	inline int32_t get_m_CurrentCategoryIndex_20() const { return ___m_CurrentCategoryIndex_20; }
+	inline int32_t* get_address_of_m_CurrentCategoryIndex_20() { return &___m_CurrentCategoryIndex_20; }
+	inline void set_m_CurrentCategoryIndex_20(int32_t value)
+	{
+		___m_CurrentCategoryIndex_20 = value;
+	}
+
+	inline static int32_t get_offset_of_m_CurrentParticleIndex_21() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_CurrentParticleIndex_21)); }
+	inline int32_t get_m_CurrentParticleIndex_21() const { return ___m_CurrentParticleIndex_21; }
+	inline int32_t* get_address_of_m_CurrentParticleIndex_21() { return &___m_CurrentParticleIndex_21; }
+	inline void set_m_CurrentParticleIndex_21(int32_t value)
+	{
+		___m_CurrentParticleIndex_21 = value;
+	}
+
+	inline static int32_t get_offset_of_m_CategoryName_22() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_CategoryName_22)); }
+	inline String_t* get_m_CategoryName_22() const { return ___m_CategoryName_22; }
+	inline String_t** get_address_of_m_CategoryName_22() { return &___m_CategoryName_22; }
+	inline void set_m_CategoryName_22(String_t* value)
+	{
+		___m_CategoryName_22 = value;
+		Il2CppCodeGenWriteBarrier((&___m_CategoryName_22), value);
+	}
+
+	inline static int32_t get_offset_of_m_ParticleName_23() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_ParticleName_23)); }
+	inline String_t* get_m_ParticleName_23() const { return ___m_ParticleName_23; }
+	inline String_t** get_address_of_m_ParticleName_23() { return &___m_ParticleName_23; }
+	inline void set_m_ParticleName_23(String_t* value)
+	{
+		___m_ParticleName_23 = value;
+		Il2CppCodeGenWriteBarrier((&___m_ParticleName_23), value);
+	}
+
+	inline static int32_t get_offset_of_m_CurrentCategory_24() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_CurrentCategory_24)); }
+	inline GameObjectU5BU5D_t3328599146* get_m_CurrentCategory_24() const { return ___m_CurrentCategory_24; }
+	inline GameObjectU5BU5D_t3328599146** get_address_of_m_CurrentCategory_24() { return &___m_CurrentCategory_24; }
+	inline void set_m_CurrentCategory_24(GameObjectU5BU5D_t3328599146* value)
+	{
+		___m_CurrentCategory_24 = value;
+		Il2CppCodeGenWriteBarrier((&___m_CurrentCategory_24), value);
+	}
+
+	inline static int32_t get_offset_of_m_CurrentParticle_25() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_CurrentParticle_25)); }
+	inline GameObject_t1113636619 * get_m_CurrentParticle_25() const { return ___m_CurrentParticle_25; }
+	inline GameObject_t1113636619 ** get_address_of_m_CurrentParticle_25() { return &___m_CurrentParticle_25; }
+	inline void set_m_CurrentParticle_25(GameObject_t1113636619 * value)
+	{
+		___m_CurrentParticle_25 = value;
+		Il2CppCodeGenWriteBarrier((&___m_CurrentParticle_25), value);
+	}
+
+	inline static int32_t get_offset_of_m_Category_26() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_Category_26)); }
+	inline Text_t1901882714 * get_m_Category_26() const { return ___m_Category_26; }
+	inline Text_t1901882714 ** get_address_of_m_Category_26() { return &___m_Category_26; }
+	inline void set_m_Category_26(Text_t1901882714 * value)
+	{
+		___m_Category_26 = value;
+		Il2CppCodeGenWriteBarrier((&___m_Category_26), value);
+	}
+
+	inline static int32_t get_offset_of_m_Particle_27() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_Particle_27)); }
+	inline Text_t1901882714 * get_m_Particle_27() const { return ___m_Particle_27; }
+	inline Text_t1901882714 ** get_address_of_m_Particle_27() { return &___m_Particle_27; }
+	inline void set_m_Particle_27(Text_t1901882714 * value)
+	{
+		___m_Particle_27 = value;
+		Il2CppCodeGenWriteBarrier((&___m_Particle_27), value);
+	}
+
+	inline static int32_t get_offset_of_m_PreviousMousePosition_28() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_PreviousMousePosition_28)); }
+	inline Vector3_t3722313464  get_m_PreviousMousePosition_28() const { return ___m_PreviousMousePosition_28; }
+	inline Vector3_t3722313464 * get_address_of_m_PreviousMousePosition_28() { return &___m_PreviousMousePosition_28; }
+	inline void set_m_PreviousMousePosition_28(Vector3_t3722313464  value)
+	{
+		___m_PreviousMousePosition_28 = value;
+	}
+
+	inline static int32_t get_offset_of_m_ShowParticleWhenTouchEnded_29() { return static_cast<int32_t>(offsetof(GE_Elementals_Demo_t1266050954, ___m_ShowParticleWhenTouchEnded_29)); }
+	inline bool get_m_ShowParticleWhenTouchEnded_29() const { return ___m_ShowParticleWhenTouchEnded_29; }
+	inline bool* get_address_of_m_ShowParticleWhenTouchEnded_29() { return &___m_ShowParticleWhenTouchEnded_29; }
+	inline void set_m_ShowParticleWhenTouchEnded_29(bool value)
+	{
+		___m_ShowParticleWhenTouchEnded_29 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // GE_ELEMENTALS_DEMO_T1266050954_H
 #ifndef UIBEHAVIOUR_T3495933518_H
 #define UIBEHAVIOUR_T3495933518_H
 #ifdef __clang__
@@ -11708,8 +17049,8 @@ public:
 	MapLocation_t4058015206 * ___location_4;
 	// packt.FoodyGO.Services.MonsterService packt.FoodyGO.Controllers.MonsterController::monsterService
 	MonsterService_t815911722 * ___monsterService_5;
-	// packt.FoodyGO.Database.Monster packt.FoodyGO.Controllers.MonsterController::monsterDataObject
-	Monster_t1773341114 * ___monsterDataObject_6;
+	// packt.FoodyGO.Database.MonsterSpawnLocation packt.FoodyGO.Controllers.MonsterController::monsterDataObject
+	MonsterSpawnLocation_t266612420 * ___monsterDataObject_6;
 	// UnityEngine.Animation packt.FoodyGO.Controllers.MonsterController::anim
 	Animation_t3648466861 * ___anim_7;
 	// System.Single packt.FoodyGO.Controllers.MonsterController::animationSpeed
@@ -11737,9 +17078,9 @@ public:
 	}
 
 	inline static int32_t get_offset_of_monsterDataObject_6() { return static_cast<int32_t>(offsetof(MonsterController_t3352166224, ___monsterDataObject_6)); }
-	inline Monster_t1773341114 * get_monsterDataObject_6() const { return ___monsterDataObject_6; }
-	inline Monster_t1773341114 ** get_address_of_monsterDataObject_6() { return &___monsterDataObject_6; }
-	inline void set_monsterDataObject_6(Monster_t1773341114 * value)
+	inline MonsterSpawnLocation_t266612420 * get_monsterDataObject_6() const { return ___monsterDataObject_6; }
+	inline MonsterSpawnLocation_t266612420 ** get_address_of_monsterDataObject_6() { return &___monsterDataObject_6; }
+	inline void set_monsterDataObject_6(MonsterSpawnLocation_t266612420 * value)
 	{
 		___monsterDataObject_6 = value;
 		Il2CppCodeGenWriteBarrier((&___monsterDataObject_6), value);
@@ -11812,6 +17153,43 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // SINGLETON_1_T2869849822_H
+#ifndef SINGLETON_1_T3508042481_H
+#define SINGLETON_1_T3508042481_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// packt.FoodyGO.Managers.Singleton`1<packt.FoodyGO.Services.InventoryService>
+struct  Singleton_1_t3508042481  : public MonoBehaviour_t3962482529
+{
+public:
+
+public:
+};
+
+struct Singleton_1_t3508042481_StaticFields
+{
+public:
+	// T packt.FoodyGO.Managers.Singleton`1::_instance
+	InventoryService_t3990436451 * ____instance_4;
+
+public:
+	inline static int32_t get_offset_of__instance_4() { return static_cast<int32_t>(offsetof(Singleton_1_t3508042481_StaticFields, ____instance_4)); }
+	inline InventoryService_t3990436451 * get__instance_4() const { return ____instance_4; }
+	inline InventoryService_t3990436451 ** get_address_of__instance_4() { return &____instance_4; }
+	inline void set__instance_4(InventoryService_t3990436451 * value)
+	{
+		____instance_4 = value;
+		Il2CppCodeGenWriteBarrier((&____instance_4), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // SINGLETON_1_T3508042481_H
 #ifndef GOOGLEMAPTILE_T1047440669_H
 #define GOOGLEMAPTILE_T1047440669_H
 #ifdef __clang__
@@ -12346,8 +17724,8 @@ public:
 	float ___twoStepRange_14;
 	// System.Single packt.FoodyGO.Services.MonsterService::threeStepRange
 	float ___threeStepRange_15;
-	// System.Collections.Generic.List`1<packt.FoodyGO.Database.Monster> packt.FoodyGO.Services.MonsterService::monsters
-	List_1_t3245415856 * ___monsters_16;
+	// System.Collections.Generic.List`1<packt.FoodyGO.Database.MonsterSpawnLocation> packt.FoodyGO.Services.MonsterService::monsters
+	List_1_t1738687162 * ___monsters_16;
 
 public:
 	inline static int32_t get_offset_of_gpsLocationService_4() { return static_cast<int32_t>(offsetof(MonsterService_t815911722, ___gpsLocationService_4)); }
@@ -12449,9 +17827,9 @@ public:
 	}
 
 	inline static int32_t get_offset_of_monsters_16() { return static_cast<int32_t>(offsetof(MonsterService_t815911722, ___monsters_16)); }
-	inline List_1_t3245415856 * get_monsters_16() const { return ___monsters_16; }
-	inline List_1_t3245415856 ** get_address_of_monsters_16() { return &___monsters_16; }
-	inline void set_monsters_16(List_1_t3245415856 * value)
+	inline List_1_t1738687162 * get_monsters_16() const { return ___monsters_16; }
+	inline List_1_t1738687162 ** get_address_of_monsters_16() { return &___monsters_16; }
+	inline void set_monsters_16(List_1_t1738687162 * value)
 	{
 		___monsters_16 = value;
 		Il2CppCodeGenWriteBarrier((&___monsters_16), value);
@@ -13324,6 +18702,68 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // GAMEMANAGER_T3352243792_H
+#ifndef INVENTORYSERVICE_T3990436451_H
+#define INVENTORYSERVICE_T3990436451_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// packt.FoodyGO.Services.InventoryService
+struct  InventoryService_t3990436451  : public Singleton_1_t3508042481
+{
+public:
+	// System.String packt.FoodyGO.Services.InventoryService::DatabaseName
+	String_t* ___DatabaseName_5;
+	// System.String packt.FoodyGO.Services.InventoryService::DatabaseVersion
+	String_t* ___DatabaseVersion_6;
+	// System.Boolean packt.FoodyGO.Services.InventoryService::newDatabase
+	bool ___newDatabase_7;
+	// SQLite4Unity3d.SQLiteConnection packt.FoodyGO.Services.InventoryService::_connection
+	SQLiteConnection_t3070079188 * ____connection_8;
+
+public:
+	inline static int32_t get_offset_of_DatabaseName_5() { return static_cast<int32_t>(offsetof(InventoryService_t3990436451, ___DatabaseName_5)); }
+	inline String_t* get_DatabaseName_5() const { return ___DatabaseName_5; }
+	inline String_t** get_address_of_DatabaseName_5() { return &___DatabaseName_5; }
+	inline void set_DatabaseName_5(String_t* value)
+	{
+		___DatabaseName_5 = value;
+		Il2CppCodeGenWriteBarrier((&___DatabaseName_5), value);
+	}
+
+	inline static int32_t get_offset_of_DatabaseVersion_6() { return static_cast<int32_t>(offsetof(InventoryService_t3990436451, ___DatabaseVersion_6)); }
+	inline String_t* get_DatabaseVersion_6() const { return ___DatabaseVersion_6; }
+	inline String_t** get_address_of_DatabaseVersion_6() { return &___DatabaseVersion_6; }
+	inline void set_DatabaseVersion_6(String_t* value)
+	{
+		___DatabaseVersion_6 = value;
+		Il2CppCodeGenWriteBarrier((&___DatabaseVersion_6), value);
+	}
+
+	inline static int32_t get_offset_of_newDatabase_7() { return static_cast<int32_t>(offsetof(InventoryService_t3990436451, ___newDatabase_7)); }
+	inline bool get_newDatabase_7() const { return ___newDatabase_7; }
+	inline bool* get_address_of_newDatabase_7() { return &___newDatabase_7; }
+	inline void set_newDatabase_7(bool value)
+	{
+		___newDatabase_7 = value;
+	}
+
+	inline static int32_t get_offset_of__connection_8() { return static_cast<int32_t>(offsetof(InventoryService_t3990436451, ____connection_8)); }
+	inline SQLiteConnection_t3070079188 * get__connection_8() const { return ____connection_8; }
+	inline SQLiteConnection_t3070079188 ** get_address_of__connection_8() { return &____connection_8; }
+	inline void set__connection_8(SQLiteConnection_t3070079188 * value)
+	{
+		____connection_8 = value;
+		Il2CppCodeGenWriteBarrier((&____connection_8), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // INVENTORYSERVICE_T3990436451_H
 #ifndef MASKABLEGRAPHIC_T3839221559_H
 #define MASKABLEGRAPHIC_T3839221559_H
 #ifdef __clang__
@@ -13701,6 +19141,107 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // RAWIMAGE_T3182918964_H
+#ifndef TEXT_T1901882714_H
+#define TEXT_T1901882714_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.UI.Text
+struct  Text_t1901882714  : public MaskableGraphic_t3839221559
+{
+public:
+	// UnityEngine.UI.FontData UnityEngine.UI.Text::m_FontData
+	FontData_t746620069 * ___m_FontData_30;
+	// System.String UnityEngine.UI.Text::m_Text
+	String_t* ___m_Text_31;
+	// UnityEngine.TextGenerator UnityEngine.UI.Text::m_TextCache
+	TextGenerator_t3211863866 * ___m_TextCache_32;
+	// UnityEngine.TextGenerator UnityEngine.UI.Text::m_TextCacheForLayout
+	TextGenerator_t3211863866 * ___m_TextCacheForLayout_33;
+	// System.Boolean UnityEngine.UI.Text::m_DisableFontTextureRebuiltCallback
+	bool ___m_DisableFontTextureRebuiltCallback_35;
+	// UnityEngine.UIVertex[] UnityEngine.UI.Text::m_TempVerts
+	UIVertexU5BU5D_t1981460040* ___m_TempVerts_36;
+
+public:
+	inline static int32_t get_offset_of_m_FontData_30() { return static_cast<int32_t>(offsetof(Text_t1901882714, ___m_FontData_30)); }
+	inline FontData_t746620069 * get_m_FontData_30() const { return ___m_FontData_30; }
+	inline FontData_t746620069 ** get_address_of_m_FontData_30() { return &___m_FontData_30; }
+	inline void set_m_FontData_30(FontData_t746620069 * value)
+	{
+		___m_FontData_30 = value;
+		Il2CppCodeGenWriteBarrier((&___m_FontData_30), value);
+	}
+
+	inline static int32_t get_offset_of_m_Text_31() { return static_cast<int32_t>(offsetof(Text_t1901882714, ___m_Text_31)); }
+	inline String_t* get_m_Text_31() const { return ___m_Text_31; }
+	inline String_t** get_address_of_m_Text_31() { return &___m_Text_31; }
+	inline void set_m_Text_31(String_t* value)
+	{
+		___m_Text_31 = value;
+		Il2CppCodeGenWriteBarrier((&___m_Text_31), value);
+	}
+
+	inline static int32_t get_offset_of_m_TextCache_32() { return static_cast<int32_t>(offsetof(Text_t1901882714, ___m_TextCache_32)); }
+	inline TextGenerator_t3211863866 * get_m_TextCache_32() const { return ___m_TextCache_32; }
+	inline TextGenerator_t3211863866 ** get_address_of_m_TextCache_32() { return &___m_TextCache_32; }
+	inline void set_m_TextCache_32(TextGenerator_t3211863866 * value)
+	{
+		___m_TextCache_32 = value;
+		Il2CppCodeGenWriteBarrier((&___m_TextCache_32), value);
+	}
+
+	inline static int32_t get_offset_of_m_TextCacheForLayout_33() { return static_cast<int32_t>(offsetof(Text_t1901882714, ___m_TextCacheForLayout_33)); }
+	inline TextGenerator_t3211863866 * get_m_TextCacheForLayout_33() const { return ___m_TextCacheForLayout_33; }
+	inline TextGenerator_t3211863866 ** get_address_of_m_TextCacheForLayout_33() { return &___m_TextCacheForLayout_33; }
+	inline void set_m_TextCacheForLayout_33(TextGenerator_t3211863866 * value)
+	{
+		___m_TextCacheForLayout_33 = value;
+		Il2CppCodeGenWriteBarrier((&___m_TextCacheForLayout_33), value);
+	}
+
+	inline static int32_t get_offset_of_m_DisableFontTextureRebuiltCallback_35() { return static_cast<int32_t>(offsetof(Text_t1901882714, ___m_DisableFontTextureRebuiltCallback_35)); }
+	inline bool get_m_DisableFontTextureRebuiltCallback_35() const { return ___m_DisableFontTextureRebuiltCallback_35; }
+	inline bool* get_address_of_m_DisableFontTextureRebuiltCallback_35() { return &___m_DisableFontTextureRebuiltCallback_35; }
+	inline void set_m_DisableFontTextureRebuiltCallback_35(bool value)
+	{
+		___m_DisableFontTextureRebuiltCallback_35 = value;
+	}
+
+	inline static int32_t get_offset_of_m_TempVerts_36() { return static_cast<int32_t>(offsetof(Text_t1901882714, ___m_TempVerts_36)); }
+	inline UIVertexU5BU5D_t1981460040* get_m_TempVerts_36() const { return ___m_TempVerts_36; }
+	inline UIVertexU5BU5D_t1981460040** get_address_of_m_TempVerts_36() { return &___m_TempVerts_36; }
+	inline void set_m_TempVerts_36(UIVertexU5BU5D_t1981460040* value)
+	{
+		___m_TempVerts_36 = value;
+		Il2CppCodeGenWriteBarrier((&___m_TempVerts_36), value);
+	}
+};
+
+struct Text_t1901882714_StaticFields
+{
+public:
+	// UnityEngine.Material UnityEngine.UI.Text::s_DefaultText
+	Material_t340375123 * ___s_DefaultText_34;
+
+public:
+	inline static int32_t get_offset_of_s_DefaultText_34() { return static_cast<int32_t>(offsetof(Text_t1901882714_StaticFields, ___s_DefaultText_34)); }
+	inline Material_t340375123 * get_s_DefaultText_34() const { return ___s_DefaultText_34; }
+	inline Material_t340375123 ** get_address_of_s_DefaultText_34() { return &___s_DefaultText_34; }
+	inline void set_s_DefaultText_34(Material_t340375123 * value)
+	{
+		___s_DefaultText_34 = value;
+		Il2CppCodeGenWriteBarrier((&___s_DefaultText_34), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // TEXT_T1901882714_H
 // System.String[]
 struct StringU5BU5D_t1281789340  : public RuntimeArray
 {
@@ -13993,6 +19534,43 @@ public:
 		m_Items[index] = value;
 	}
 };
+// UnityEngine.GameObject[]
+struct GameObjectU5BU5D_t3328599146  : public RuntimeArray
+{
+public:
+	ALIGN_FIELD (8) GameObject_t1113636619 * m_Items[1];
+
+public:
+	inline GameObject_t1113636619 * GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline GameObject_t1113636619 ** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, GameObject_t1113636619 * value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+	inline GameObject_t1113636619 * GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline GameObject_t1113636619 ** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, GameObject_t1113636619 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
 // UnityEngine.Object[]
 struct ObjectU5BU5D_t1417781964  : public RuntimeArray
 {
@@ -14104,38 +19682,112 @@ public:
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
 	}
 };
-// UnityEngine.GameObject[]
-struct GameObjectU5BU5D_t3328599146  : public RuntimeArray
+// SQLite4Unity3d.TableMapping/Column[]
+struct ColumnU5BU5D_t4060676894  : public RuntimeArray
 {
 public:
-	ALIGN_FIELD (8) GameObject_t1113636619 * m_Items[1];
+	ALIGN_FIELD (8) Column_t1357940583 * m_Items[1];
 
 public:
-	inline GameObject_t1113636619 * GetAt(il2cpp_array_size_t index) const
+	inline Column_t1357940583 * GetAt(il2cpp_array_size_t index) const
 	{
 		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
 		return m_Items[index];
 	}
-	inline GameObject_t1113636619 ** GetAddressAt(il2cpp_array_size_t index)
+	inline Column_t1357940583 ** GetAddressAt(il2cpp_array_size_t index)
 	{
 		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
 		return m_Items + index;
 	}
-	inline void SetAt(il2cpp_array_size_t index, GameObject_t1113636619 * value)
+	inline void SetAt(il2cpp_array_size_t index, Column_t1357940583 * value)
 	{
 		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
 	}
-	inline GameObject_t1113636619 * GetAtUnchecked(il2cpp_array_size_t index) const
+	inline Column_t1357940583 * GetAtUnchecked(il2cpp_array_size_t index) const
 	{
 		return m_Items[index];
 	}
-	inline GameObject_t1113636619 ** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	inline Column_t1357940583 ** GetAddressAtUnchecked(il2cpp_array_size_t index)
 	{
 		return m_Items + index;
 	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, GameObject_t1113636619 * value)
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Column_t1357940583 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// System.Reflection.PropertyInfo[]
+struct PropertyInfoU5BU5D_t1461822886  : public RuntimeArray
+{
+public:
+	ALIGN_FIELD (8) PropertyInfo_t * m_Items[1];
+
+public:
+	inline PropertyInfo_t * GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline PropertyInfo_t ** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, PropertyInfo_t * value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+	inline PropertyInfo_t * GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline PropertyInfo_t ** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, PropertyInfo_t * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// SQLite4Unity3d.IndexedAttribute[]
+struct IndexedAttributeU5BU5D_t476100365  : public RuntimeArray
+{
+public:
+	ALIGN_FIELD (8) IndexedAttribute_t384353508 * m_Items[1];
+
+public:
+	inline IndexedAttribute_t384353508 * GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline IndexedAttribute_t384353508 ** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, IndexedAttribute_t384353508 * value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+	inline IndexedAttribute_t384353508 * GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline IndexedAttribute_t384353508 ** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, IndexedAttribute_t384353508 * value)
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
@@ -14248,38 +19900,38 @@ public:
 		m_Items[index] = value;
 	}
 };
-// packt.FoodyGO.Database.Monster[]
-struct MonsterU5BU5D_t2415199775  : public RuntimeArray
+// packt.FoodyGO.Database.MonsterSpawnLocation[]
+struct MonsterSpawnLocationU5BU5D_t422840749  : public RuntimeArray
 {
 public:
-	ALIGN_FIELD (8) Monster_t1773341114 * m_Items[1];
+	ALIGN_FIELD (8) MonsterSpawnLocation_t266612420 * m_Items[1];
 
 public:
-	inline Monster_t1773341114 * GetAt(il2cpp_array_size_t index) const
+	inline MonsterSpawnLocation_t266612420 * GetAt(il2cpp_array_size_t index) const
 	{
 		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
 		return m_Items[index];
 	}
-	inline Monster_t1773341114 ** GetAddressAt(il2cpp_array_size_t index)
+	inline MonsterSpawnLocation_t266612420 ** GetAddressAt(il2cpp_array_size_t index)
 	{
 		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
 		return m_Items + index;
 	}
-	inline void SetAt(il2cpp_array_size_t index, Monster_t1773341114 * value)
+	inline void SetAt(il2cpp_array_size_t index, MonsterSpawnLocation_t266612420 * value)
 	{
 		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
 	}
-	inline Monster_t1773341114 * GetAtUnchecked(il2cpp_array_size_t index) const
+	inline MonsterSpawnLocation_t266612420 * GetAtUnchecked(il2cpp_array_size_t index) const
 	{
 		return m_Items[index];
 	}
-	inline Monster_t1773341114 ** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	inline MonsterSpawnLocation_t266612420 ** GetAddressAtUnchecked(il2cpp_array_size_t index)
 	{
 		return m_Items + index;
 	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, Monster_t1773341114 * value)
+	inline void SetAtUnchecked(il2cpp_array_size_t index, MonsterSpawnLocation_t266612420 * value)
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
@@ -14398,6 +20050,80 @@ extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Queue_1_Dequeue_m3550993416_gshare
 extern "C" IL2CPP_METHOD_ATTR RuntimeObject * GameObject_GetComponent_TisRuntimeObject_m2049753423_gshared (GameObject_t1113636619 * __this, const RuntimeMethod* method);
 // !!0 UnityEngine.Object::Instantiate<System.Object>(!!0)
 extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Object_Instantiate_TisRuntimeObject_m2446893047_gshared (RuntimeObject * __this /* static, unused */, RuntimeObject * p0, const RuntimeMethod* method);
+// System.Void System.Func`2<System.Object,System.Boolean>::.ctor(System.Object,System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR void Func_2__ctor_m3104565095_gshared (Func_2_t3759279471 * __this, RuntimeObject * p0, intptr_t p1, const RuntimeMethod* method);
+// System.Collections.Generic.IEnumerable`1<!!0> System.Linq.Enumerable::Where<System.Object>(System.Collections.Generic.IEnumerable`1<!!0>,System.Func`2<!!0,System.Boolean>)
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_Where_TisRuntimeObject_m3454096398_gshared (RuntimeObject * __this /* static, unused */, RuntimeObject* p0, Func_2_t3759279471 * p1, const RuntimeMethod* method);
+// System.Boolean System.Nullable`1<System.Int32>::get_HasValue()
+extern "C" IL2CPP_METHOD_ATTR bool Nullable_1_get_HasValue_m589371754_gshared (Nullable_1_t378540539 * __this, const RuntimeMethod* method);
+// !0 System.Nullable`1<System.Int32>::get_Value()
+extern "C" IL2CPP_METHOD_ATTR int32_t Nullable_1_get_Value_m3000890071_gshared (Nullable_1_t378540539 * __this, const RuntimeMethod* method);
+// System.Collections.Generic.IEnumerable`1<!!0> System.Linq.Enumerable::Cast<System.Object>(System.Collections.IEnumerable)
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_Cast_TisRuntimeObject_m2814037400_gshared (RuntimeObject * __this /* static, unused */, RuntimeObject* p0, const RuntimeMethod* method);
+// System.Void System.Nullable`1<System.Int32>::.ctor(!0)
+extern "C" IL2CPP_METHOD_ATTR void Nullable_1__ctor_m3940678751_gshared (Nullable_1_t378540539 * __this, int32_t p0, const RuntimeMethod* method);
+// System.Collections.Generic.Dictionary`2/ValueCollection<!0,!1> System.Collections.Generic.Dictionary`2<System.Object,System.Object>::get_Values()
+extern "C" IL2CPP_METHOD_ATTR ValueCollection_t1848589470 * Dictionary_2_get_Values_m2492087945_gshared (Dictionary_2_t132545152 * __this, const RuntimeMethod* method);
+// System.Collections.Generic.IEnumerable`1<!!0> System.Linq.Enumerable::Empty<System.Object>()
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_Empty_TisRuntimeObject_m2402128488_gshared (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
+// System.Void System.Func`2<System.Object,System.Object>::.ctor(System.Object,System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR void Func_2__ctor_m348566106_gshared (Func_2_t2447130374 * __this, RuntimeObject * p0, intptr_t p1, const RuntimeMethod* method);
+// System.Collections.Generic.IEnumerable`1<!!1> System.Linq.Enumerable::Select<System.Object,System.Object>(System.Collections.Generic.IEnumerable`1<!!0>,System.Func`2<!!0,!!1>)
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_Select_TisRuntimeObject_TisRuntimeObject_m952846165_gshared (RuntimeObject * __this /* static, unused */, RuntimeObject* p0, Func_2_t2447130374 * p1, const RuntimeMethod* method);
+// System.Void System.Collections.Generic.Dictionary`2<System.Object,SQLite4Unity3d.SQLiteConnection/IndexInfo>::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m3868364819_gshared (Dictionary_2_t3028202942 * __this, const RuntimeMethod* method);
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Object,SQLite4Unity3d.SQLiteConnection/IndexInfo>::TryGetValue(!0,!1&)
+extern "C" IL2CPP_METHOD_ATTR bool Dictionary_2_TryGetValue_m3896150971_gshared (Dictionary_2_t3028202942 * __this, RuntimeObject * p0, IndexInfo_t1680796658 * p1, const RuntimeMethod* method);
+// System.Void System.Collections.Generic.List`1<SQLite4Unity3d.SQLiteConnection/IndexedColumn>::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void List_1__ctor_m2991042439_gshared (List_1_t257796462 * __this, const RuntimeMethod* method);
+// System.Void System.Collections.Generic.Dictionary`2<System.Object,SQLite4Unity3d.SQLiteConnection/IndexInfo>::Add(!0,!1)
+extern "C" IL2CPP_METHOD_ATTR void Dictionary_2_Add_m3548960853_gshared (Dictionary_2_t3028202942 * __this, RuntimeObject * p0, IndexInfo_t1680796658  p1, const RuntimeMethod* method);
+// System.Void System.Collections.Generic.List`1<SQLite4Unity3d.SQLiteConnection/IndexedColumn>::Add(!0)
+extern "C" IL2CPP_METHOD_ATTR void List_1_Add_m1789417565_gshared (List_1_t257796462 * __this, IndexedColumn_t3080689016  p0, const RuntimeMethod* method);
+// System.Collections.Generic.Dictionary`2/KeyCollection<!0,!1> System.Collections.Generic.Dictionary`2<System.Object,SQLite4Unity3d.SQLiteConnection/IndexInfo>::get_Keys()
+extern "C" IL2CPP_METHOD_ATTR KeyCollection_t3217878413 * Dictionary_2_get_Keys_m4217477210_gshared (Dictionary_2_t3028202942 * __this, const RuntimeMethod* method);
+// System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator<!0,!1> System.Collections.Generic.Dictionary`2/KeyCollection<System.Object,SQLite4Unity3d.SQLiteConnection/IndexInfo>::GetEnumerator()
+extern "C" IL2CPP_METHOD_ATTR Enumerator_t3210379926  KeyCollection_GetEnumerator_m1480558318_gshared (KeyCollection_t3217878413 * __this, const RuntimeMethod* method);
+// !0 System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator<System.Object,SQLite4Unity3d.SQLiteConnection/IndexInfo>::get_Current()
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Enumerator_get_Current_m3152865025_gshared (Enumerator_t3210379926 * __this, const RuntimeMethod* method);
+// !1 System.Collections.Generic.Dictionary`2<System.Object,SQLite4Unity3d.SQLiteConnection/IndexInfo>::get_Item(!0)
+extern "C" IL2CPP_METHOD_ATTR IndexInfo_t1680796658  Dictionary_2_get_Item_m1767284423_gshared (Dictionary_2_t3028202942 * __this, RuntimeObject * p0, const RuntimeMethod* method);
+// System.Void System.Func`2<SQLite4Unity3d.SQLiteConnection/IndexedColumn,System.Int32>::.ctor(System.Object,System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR void Func_2__ctor_m3081439098_gshared (Func_2_t166798807 * __this, RuntimeObject * p0, intptr_t p1, const RuntimeMethod* method);
+// System.Linq.IOrderedEnumerable`1<!!0> System.Linq.Enumerable::OrderBy<SQLite4Unity3d.SQLiteConnection/IndexedColumn,System.Int32>(System.Collections.Generic.IEnumerable`1<!!0>,System.Func`2<!!0,!!1>)
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_OrderBy_TisIndexedColumn_t3080689016_TisInt32_t2950945753_m2211229744_gshared (RuntimeObject * __this /* static, unused */, RuntimeObject* p0, Func_2_t166798807 * p1, const RuntimeMethod* method);
+// System.Void System.Func`2<SQLite4Unity3d.SQLiteConnection/IndexedColumn,System.Object>::.ctor(System.Object,System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR void Func_2__ctor_m2856537620_gshared (Func_2_t295959218 * __this, RuntimeObject * p0, intptr_t p1, const RuntimeMethod* method);
+// System.Collections.Generic.IEnumerable`1<!!1> System.Linq.Enumerable::Select<SQLite4Unity3d.SQLiteConnection/IndexedColumn,System.Object>(System.Collections.Generic.IEnumerable`1<!!0>,System.Func`2<!!0,!!1>)
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_Select_TisIndexedColumn_t3080689016_TisRuntimeObject_m1687662468_gshared (RuntimeObject * __this /* static, unused */, RuntimeObject* p0, Func_2_t295959218 * p1, const RuntimeMethod* method);
+// System.Boolean System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator<System.Object,SQLite4Unity3d.SQLiteConnection/IndexInfo>::MoveNext()
+extern "C" IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m3762248545_gshared (Enumerator_t3210379926 * __this, const RuntimeMethod* method);
+// System.Void System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator<System.Object,SQLite4Unity3d.SQLiteConnection/IndexInfo>::Dispose()
+extern "C" IL2CPP_METHOD_ATTR void Enumerator_Dispose_m3584551482_gshared (Enumerator_t3210379926 * __this, const RuntimeMethod* method);
+// System.Collections.Generic.List`1<T> SQLite4Unity3d.SQLiteConnection::Query<System.Object>(System.String,System.Object[])
+extern "C" IL2CPP_METHOD_ATTR List_1_t257213610 * SQLiteConnection_Query_TisRuntimeObject_m3327921830_gshared (SQLiteConnection_t3070079188 * __this, String_t* ___query0, ObjectU5BU5D_t2843939325* ___args1, const RuntimeMethod* method);
+// System.Collections.Generic.List`1<T> SQLite4Unity3d.SQLiteCommand::ExecuteQuery<System.Object>(SQLite4Unity3d.TableMapping)
+extern "C" IL2CPP_METHOD_ATTR List_1_t257213610 * SQLiteCommand_ExecuteQuery_TisRuntimeObject_m3433496489_gshared (SQLiteCommand_t3688707480 * __this, TableMapping_t2276399492 * ___map0, const RuntimeMethod* method);
+// System.Collections.Generic.IEnumerable`1<T> SQLite4Unity3d.SQLiteCommand::ExecuteDeferredQuery<System.Object>(SQLite4Unity3d.TableMapping)
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject* SQLiteCommand_ExecuteDeferredQuery_TisRuntimeObject_m2260852394_gshared (SQLiteCommand_t3688707480 * __this, TableMapping_t2276399492 * ___map0, const RuntimeMethod* method);
+// !!0 System.Linq.Enumerable::FirstOrDefault<System.Object>(System.Collections.Generic.IEnumerable`1<!!0>)
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Enumerable_FirstOrDefault_TisRuntimeObject_m714693565_gshared (RuntimeObject * __this /* static, unused */, RuntimeObject* p0, const RuntimeMethod* method);
+// System.Void System.Collections.Generic.List`1<System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<!0>)
+extern "C" IL2CPP_METHOD_ATTR void List_1__ctor_m1328752868_gshared (List_1_t257213610 * __this, RuntimeObject* p0, const RuntimeMethod* method);
+// System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<!0,!1> System.Collections.Generic.Dictionary`2/ValueCollection<System.Object,System.Object>::GetEnumerator()
+extern "C" IL2CPP_METHOD_ATTR Enumerator_t701438809  ValueCollection_GetEnumerator_m3808619909_gshared (ValueCollection_t1848589470 * __this, const RuntimeMethod* method);
+// !1 System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Object,System.Object>::get_Current()
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Enumerator_get_Current_m2014973879_gshared (Enumerator_t701438809 * __this, const RuntimeMethod* method);
+// System.Boolean System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Object,System.Object>::MoveNext()
+extern "C" IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m181298207_gshared (Enumerator_t701438809 * __this, const RuntimeMethod* method);
+// System.Void System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Object,System.Object>::Dispose()
+extern "C" IL2CPP_METHOD_ATTR void Enumerator_Dispose_m1051275336_gshared (Enumerator_t701438809 * __this, const RuntimeMethod* method);
+// !!0 System.Linq.Enumerable::FirstOrDefault<System.Object>(System.Collections.Generic.IEnumerable`1<!!0>,System.Func`2<!!0,System.Boolean>)
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Enumerable_FirstOrDefault_TisRuntimeObject_m2704383259_gshared (RuntimeObject * __this /* static, unused */, RuntimeObject* p0, Func_2_t3759279471 * p1, const RuntimeMethod* method);
+// System.Boolean System.Linq.Enumerable::Any<System.Object>(System.Collections.Generic.IEnumerable`1<!!0>)
+extern "C" IL2CPP_METHOD_ATTR bool Enumerable_Any_TisRuntimeObject_m3173759778_gshared (RuntimeObject * __this /* static, unused */, RuntimeObject* p0, const RuntimeMethod* method);
+// System.Int32 System.Linq.Enumerable::Count<System.Object>(System.Collections.Generic.IEnumerable`1<!!0>)
+extern "C" IL2CPP_METHOD_ATTR int32_t Enumerable_Count_TisRuntimeObject_m119961155_gshared (RuntimeObject * __this /* static, unused */, RuntimeObject* p0, const RuntimeMethod* method);
 // !!0 UnityEngine.Component::GetComponent<System.Object>()
 extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Component_GetComponent_TisRuntimeObject_m2906321015_gshared (Component_t1923634451 * __this, const RuntimeMethod* method);
 // System.Void packt.FoodyGO.Managers.Singleton`1<System.Object>::.ctor()
@@ -14412,6 +20138,16 @@ extern "C" IL2CPP_METHOD_ATTR void UnityEvent_2__ctor_m155249342_gshared (UnityE
 extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Object_Instantiate_TisRuntimeObject_m3141366230_gshared (RuntimeObject * __this /* static, unused */, RuntimeObject * p0, Vector3_t3722313464  p1, Quaternion_t2301928331  p2, const RuntimeMethod* method);
 // System.Void UnityEngine.Events.UnityEvent`2<System.Object,System.Object>::Invoke(!0,!1)
 extern "C" IL2CPP_METHOD_ATTR void UnityEvent_2_Invoke_m243724720_gshared (UnityEvent_2_t614268397 * __this, RuntimeObject * p0, RuntimeObject * p1, const RuntimeMethod* method);
+// System.Int32 SQLite4Unity3d.SQLiteConnection::DropTable<System.Object>()
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_DropTable_TisRuntimeObject_m2815964847_gshared (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method);
+// System.Int32 SQLite4Unity3d.SQLiteConnection::CreateTable<System.Object>(SQLite4Unity3d.CreateFlags)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_CreateTable_TisRuntimeObject_m3576344292_gshared (SQLiteConnection_t3070079188 * __this, int32_t ___createFlags0, const RuntimeMethod* method);
+// SQLite4Unity3d.TableQuery`1<T> SQLite4Unity3d.SQLiteConnection::Table<System.Object>()
+extern "C" IL2CPP_METHOD_ATTR TableQuery_1_t1605398488 * SQLiteConnection_Table_TisRuntimeObject_m1945612407_gshared (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method);
+// System.Collections.Generic.IEnumerator`1<T> SQLite4Unity3d.TableQuery`1<System.Object>::GetEnumerator()
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject* TableQuery_1_GetEnumerator_m1933813595_gshared (TableQuery_1_t1605398488 * __this, const RuntimeMethod* method);
+// T SQLite4Unity3d.TableQuery`1<System.Object>::FirstOrDefault()
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject * TableQuery_1_FirstOrDefault_m513296056_gshared (TableQuery_1_t1605398488 * __this, const RuntimeMethod* method);
 // !!0 UnityEngine.GameObject::AddComponent<System.Object>()
 extern "C" IL2CPP_METHOD_ATTR RuntimeObject * GameObject_AddComponent_TisRuntimeObject_m3469369570_gshared (GameObject_t1113636619 * __this, const RuntimeMethod* method);
 // System.Boolean System.Collections.Generic.List`1<System.Object>::Remove(!0)
@@ -14874,12 +20610,60 @@ extern "C" IL2CPP_METHOD_ATTR float Time_get_fixedTime_m908791845 (RuntimeObject
 extern "C" IL2CPP_METHOD_ATTR Quaternion_t2301928331  Quaternion_Slerp_m1234055455 (RuntimeObject * __this /* static, unused */, Quaternion_t2301928331  p0, Quaternion_t2301928331  p1, float p2, const RuntimeMethod* method);
 // System.Void UnityEngine.Transform::set_rotation(UnityEngine.Quaternion)
 extern "C" IL2CPP_METHOD_ATTR void Transform_set_rotation_m3524318132 (Transform_t3600365921 * __this, Quaternion_t2301928331  p0, const RuntimeMethod* method);
-// UnityEngine.Object[] UnityEngine.Object::FindObjectsOfType(System.Type)
-extern "C" IL2CPP_METHOD_ATTR ObjectU5BU5D_t1417781964* Object_FindObjectsOfType_m2295101757 (RuntimeObject * __this /* static, unused */, Type_t * p0, const RuntimeMethod* method);
-// System.String UnityEngine.Object::get_name()
-extern "C" IL2CPP_METHOD_ATTR String_t* Object_get_name_m4211327027 (Object_t631007953 * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.Color::.ctor(System.Single,System.Single,System.Single,System.Single)
+extern "C" IL2CPP_METHOD_ATTR void Color__ctor_m2943235014 (Color_t2555686324 * __this, float p0, float p1, float p2, float p3, const RuntimeMethod* method);
+// System.Void GE_Elementals_Demo::ShowParticle()
+extern "C" IL2CPP_METHOD_ATTR void GE_Elementals_Demo_ShowParticle_m2741302116 (GE_Elementals_Demo_t1266050954 * __this, const RuntimeMethod* method);
+// System.Int32 UnityEngine.Input::get_touchCount()
+extern "C" IL2CPP_METHOD_ATTR int32_t Input_get_touchCount_m3403849067 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
+// UnityEngine.Touch UnityEngine.Input::GetTouch(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR Touch_t1921856868  Input_GetTouch_m2192712756 (RuntimeObject * __this /* static, unused */, int32_t p0, const RuntimeMethod* method);
+// UnityEngine.TouchPhase UnityEngine.Touch::get_phase()
+extern "C" IL2CPP_METHOD_ATTR int32_t Touch_get_phase_m214549210 (Touch_t1921856868 * __this, const RuntimeMethod* method);
+// System.Boolean UnityEngine.Input::GetMouseButtonDown(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR bool Input_GetMouseButtonDown_m2081676745 (RuntimeObject * __this /* static, unused */, int32_t p0, const RuntimeMethod* method);
+// UnityEngine.Vector3 UnityEngine.Input::get_mousePosition()
+extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  Input_get_mousePosition_m1616496925 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
+// System.Boolean UnityEngine.Input::GetMouseButtonUp(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR bool Input_GetMouseButtonUp_m2924350851 (RuntimeObject * __this /* static, unused */, int32_t p0, const RuntimeMethod* method);
+// UnityEngine.Vector2 UnityEngine.Vector2::op_Implicit(UnityEngine.Vector3)
+extern "C" IL2CPP_METHOD_ATTR Vector2_t2156229523  Vector2_op_Implicit_m4260192859 (RuntimeObject * __this /* static, unused */, Vector3_t3722313464  p0, const RuntimeMethod* method);
+// System.Single UnityEngine.Vector2::Distance(UnityEngine.Vector2,UnityEngine.Vector2)
+extern "C" IL2CPP_METHOD_ATTR float Vector2_Distance_m3048868881 (RuntimeObject * __this /* static, unused */, Vector2_t2156229523  p0, Vector2_t2156229523  p1, const RuntimeMethod* method);
+// System.Boolean UnityEngine.Input::GetKeyUp(UnityEngine.KeyCode)
+extern "C" IL2CPP_METHOD_ATTR bool Input_GetKeyUp_m2808015270 (RuntimeObject * __this /* static, unused */, int32_t p0, const RuntimeMethod* method);
+// System.Void GE_Elementals_Demo::PreviousCategory()
+extern "C" IL2CPP_METHOD_ATTR void GE_Elementals_Demo_PreviousCategory_m2153749244 (GE_Elementals_Demo_t1266050954 * __this, const RuntimeMethod* method);
+// System.Void GE_Elementals_Demo::NextCategory()
+extern "C" IL2CPP_METHOD_ATTR void GE_Elementals_Demo_NextCategory_m3880071215 (GE_Elementals_Demo_t1266050954 * __this, const RuntimeMethod* method);
+// System.Void GE_Elementals_Demo::PreviousParticle()
+extern "C" IL2CPP_METHOD_ATTR void GE_Elementals_Demo_PreviousParticle_m542495095 (GE_Elementals_Demo_t1266050954 * __this, const RuntimeMethod* method);
+// System.Void GE_Elementals_Demo::NextParticle()
+extern "C" IL2CPP_METHOD_ATTR void GE_Elementals_Demo_NextParticle_m2541396880 (GE_Elementals_Demo_t1266050954 * __this, const RuntimeMethod* method);
 // UnityEngine.GameObject UnityEngine.GameObject::Find(System.String)
 extern "C" IL2CPP_METHOD_ATTR GameObject_t1113636619 * GameObject_Find_m2032535176 (RuntimeObject * __this /* static, unused */, String_t* p0, const RuntimeMethod* method);
+// System.Boolean UnityEngine.Object::op_Implicit(UnityEngine.Object)
+extern "C" IL2CPP_METHOD_ATTR bool Object_op_Implicit_m3574996620 (RuntimeObject * __this /* static, unused */, Object_t631007953 * p0, const RuntimeMethod* method);
+// !!0 UnityEngine.GameObject::GetComponent<UnityEngine.UI.Text>()
+inline Text_t1901882714 * GameObject_GetComponent_TisText_t1901882714_m2114913816 (GameObject_t1113636619 * __this, const RuntimeMethod* method)
+{
+	return ((  Text_t1901882714 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m2049753423_gshared)(__this, method);
+}
+// System.String UnityEngine.Object::get_name()
+extern "C" IL2CPP_METHOD_ATTR String_t* Object_get_name_m4211327027 (Object_t631007953 * __this, const RuntimeMethod* method);
+// System.String System.String::Concat(System.Object[])
+extern "C" IL2CPP_METHOD_ATTR String_t* String_Concat_m2971454694 (RuntimeObject * __this /* static, unused */, ObjectU5BU5D_t2843939325* p0, const RuntimeMethod* method);
+// System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)
+extern "C" IL2CPP_METHOD_ATTR bool Object_op_Inequality_m4071470834 (RuntimeObject * __this /* static, unused */, Object_t631007953 * p0, Object_t631007953 * p1, const RuntimeMethod* method);
+// System.Void UnityEngine.Object::DestroyObject(UnityEngine.Object)
+extern "C" IL2CPP_METHOD_ATTR void Object_DestroyObject_m1406874517 (RuntimeObject * __this /* static, unused */, Object_t631007953 * p0, const RuntimeMethod* method);
+// !!0 UnityEngine.Object::Instantiate<UnityEngine.GameObject>(!!0)
+inline GameObject_t1113636619 * Object_Instantiate_TisGameObject_t1113636619_m4070250708 (RuntimeObject * __this /* static, unused */, GameObject_t1113636619 * p0, const RuntimeMethod* method)
+{
+	return ((  GameObject_t1113636619 * (*) (RuntimeObject * /* static, unused */, GameObject_t1113636619 *, const RuntimeMethod*))Object_Instantiate_TisRuntimeObject_m2446893047_gshared)(__this /* static, unused */, p0, method);
+}
+// UnityEngine.Object[] UnityEngine.Object::FindObjectsOfType(System.Type)
+extern "C" IL2CPP_METHOD_ATTR ObjectU5BU5D_t1417781964* Object_FindObjectsOfType_m2295101757 (RuntimeObject * __this /* static, unused */, Type_t * p0, const RuntimeMethod* method);
 // System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)
 extern "C" IL2CPP_METHOD_ATTR bool Object_op_Equality_m1810815630 (RuntimeObject * __this /* static, unused */, Object_t631007953 * p0, Object_t631007953 * p1, const RuntimeMethod* method);
 // UnityEngine.Component[] UnityEngine.GameObject::GetComponents(System.Type)
@@ -14888,8 +20672,6 @@ extern "C" IL2CPP_METHOD_ATTR ComponentU5BU5D_t3294940482* GameObject_GetCompone
 extern "C" IL2CPP_METHOD_ATTR Type_t * Object_GetType_m88164663 (RuntimeObject * __this, const RuntimeMethod* method);
 // System.Reflection.FieldInfo[] System.Type::GetFields()
 extern "C" IL2CPP_METHOD_ATTR FieldInfoU5BU5D_t846150980* Type_GetFields_m3709891696 (Type_t * __this, const RuntimeMethod* method);
-// System.String System.String::Concat(System.Object[])
-extern "C" IL2CPP_METHOD_ATTR String_t* String_Concat_m2971454694 (RuntimeObject * __this /* static, unused */, ObjectU5BU5D_t2843939325* p0, const RuntimeMethod* method);
 // System.String System.String::TrimEnd(System.Char[])
 extern "C" IL2CPP_METHOD_ATTR String_t* String_TrimEnd_m3824727301 (String_t* __this, CharU5BU5D_t3528271667* p0, const RuntimeMethod* method);
 // System.Text.Encoding System.Text.Encoding::get_UTF8()
@@ -14898,13 +20680,798 @@ extern "C" IL2CPP_METHOD_ATTR Encoding_t1523322056 * Encoding_get_UTF8_m10084867
 extern "C" IL2CPP_METHOD_ATTR void HttpListenerResponse_set_ContentLength64_m3790368474 (HttpListenerResponse_t3502667045 * __this, int64_t p0, const RuntimeMethod* method);
 // System.IO.FileStream System.IO.File::OpenRead(System.String)
 extern "C" IL2CPP_METHOD_ATTR FileStream_t4292183065 * File_OpenRead_m2936789020 (RuntimeObject * __this /* static, unused */, String_t* p0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.CollationAttribute::set_Value(System.String)
+extern "C" IL2CPP_METHOD_ATTR void CollationAttribute_set_Value_m2547913855 (CollationAttribute_t3564781786 * __this, String_t* ___value0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.ColumnAttribute::set_Name(System.String)
+extern "C" IL2CPP_METHOD_ATTR void ColumnAttribute_set_Name_m1348764183 (ColumnAttribute_t3583764011 * __this, String_t* ___value0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.IndexedAttribute::set_Name(System.String)
+extern "C" IL2CPP_METHOD_ATTR void IndexedAttribute_set_Name_m1234318038 (IndexedAttribute_t384353508 * __this, String_t* ___value0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.IndexedAttribute::set_Order(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void IndexedAttribute_set_Order_m3237548574 (IndexedAttribute_t384353508 * __this, int32_t ___value0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.MaxLengthAttribute::set_Value(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void MaxLengthAttribute_set_Value_m3276403614 (MaxLengthAttribute_t2329480580 * __this, int32_t ___value0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.NotNullConstraintViolationException::.ctor(SQLite4Unity3d.SQLite3/Result,System.String,SQLite4Unity3d.TableMapping,System.Object)
+extern "C" IL2CPP_METHOD_ATTR void NotNullConstraintViolationException__ctor_m491643267 (NotNullConstraintViolationException_t3886364687 * __this, int32_t ___r0, String_t* ___message1, TableMapping_t2276399492 * ___mapping2, RuntimeObject * ___obj3, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.NotNullConstraintViolationException/<NotNullConstraintViolationException>c__AnonStorey0::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void U3CNotNullConstraintViolationExceptionU3Ec__AnonStorey0__ctor_m3000327238 (U3CNotNullConstraintViolationExceptionU3Ec__AnonStorey0_t2023264365 * __this, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteException::.ctor(SQLite4Unity3d.SQLite3/Result,System.String)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteException__ctor_m1199196893 (SQLiteException_t1356363765 * __this, int32_t ___r0, String_t* ___message1, const RuntimeMethod* method);
+// SQLite4Unity3d.TableMapping/Column[] SQLite4Unity3d.TableMapping::get_Columns()
+extern "C" IL2CPP_METHOD_ATTR ColumnU5BU5D_t4060676894* TableMapping_get_Columns_m2283845646 (TableMapping_t2276399492 * __this, const RuntimeMethod* method);
+// System.Void System.Func`2<SQLite4Unity3d.TableMapping/Column,System.Boolean>::.ctor(System.Object,System.IntPtr)
+inline void Func_2__ctor_m2046779456 (Func_2_t681049744 * __this, RuntimeObject * p0, intptr_t p1, const RuntimeMethod* method)
+{
+	((  void (*) (Func_2_t681049744 *, RuntimeObject *, intptr_t, const RuntimeMethod*))Func_2__ctor_m3104565095_gshared)(__this, p0, p1, method);
+}
+// System.Collections.Generic.IEnumerable`1<!!0> System.Linq.Enumerable::Where<SQLite4Unity3d.TableMapping/Column>(System.Collections.Generic.IEnumerable`1<!!0>,System.Func`2<!!0,System.Boolean>)
+inline RuntimeObject* Enumerable_Where_TisColumn_t1357940583_m2456226527 (RuntimeObject * __this /* static, unused */, RuntimeObject* p0, Func_2_t681049744 * p1, const RuntimeMethod* method)
+{
+	return ((  RuntimeObject* (*) (RuntimeObject * /* static, unused */, RuntimeObject*, Func_2_t681049744 *, const RuntimeMethod*))Enumerable_Where_TisRuntimeObject_m3454096398_gshared)(__this /* static, unused */, p0, p1, method);
+}
+// System.Void SQLite4Unity3d.NotNullConstraintViolationException::set_Columns(System.Collections.Generic.IEnumerable`1<SQLite4Unity3d.TableMapping/Column>)
+extern "C" IL2CPP_METHOD_ATTR void NotNullConstraintViolationException_set_Columns_m3499201995 (NotNullConstraintViolationException_t3886364687 * __this, RuntimeObject* ___value0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.NotNullConstraintViolationException::.ctor(SQLite4Unity3d.SQLite3/Result,System.String)
+extern "C" IL2CPP_METHOD_ATTR void NotNullConstraintViolationException__ctor_m15606160 (NotNullConstraintViolationException_t3886364687 * __this, int32_t ___r0, String_t* ___message1, const RuntimeMethod* method);
+// SQLite4Unity3d.SQLite3/Result SQLite4Unity3d.SQLiteException::get_Result()
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteException_get_Result_m3460608678 (SQLiteException_t1356363765 * __this, const RuntimeMethod* method);
+// System.Boolean SQLite4Unity3d.TableMapping/Column::get_IsNullable()
+extern "C" IL2CPP_METHOD_ATTR bool Column_get_IsNullable_m280325304 (Column_t1357940583 * __this, const RuntimeMethod* method);
+// System.Object SQLite4Unity3d.TableMapping/Column::GetValue(System.Object)
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Column_GetValue_m3743332072 (Column_t1357940583 * __this, RuntimeObject * ___obj0, const RuntimeMethod* method);
+// System.String SQLite4Unity3d.TableMapping/Column::get_Name()
+extern "C" IL2CPP_METHOD_ATTR String_t* Column_get_Name_m892990361 (Column_t1357940583 * __this, const RuntimeMethod* method);
+// System.String SQLite4Unity3d.Orm::SqlType(SQLite4Unity3d.TableMapping/Column,System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR String_t* Orm_SqlType_m2371860752 (RuntimeObject * __this /* static, unused */, Column_t1357940583 * ___p0, bool ___storeDateTimeAsTicks1, const RuntimeMethod* method);
+// System.String System.String::Concat(System.String[])
+extern "C" IL2CPP_METHOD_ATTR String_t* String_Concat_m1809518182 (RuntimeObject * __this /* static, unused */, StringU5BU5D_t1281789340* p0, const RuntimeMethod* method);
+// System.Boolean SQLite4Unity3d.TableMapping/Column::get_IsPK()
+extern "C" IL2CPP_METHOD_ATTR bool Column_get_IsPK_m2082193636 (Column_t1357940583 * __this, const RuntimeMethod* method);
+// System.Boolean SQLite4Unity3d.TableMapping/Column::get_IsAutoInc()
+extern "C" IL2CPP_METHOD_ATTR bool Column_get_IsAutoInc_m3625158064 (Column_t1357940583 * __this, const RuntimeMethod* method);
+// System.String SQLite4Unity3d.TableMapping/Column::get_Collation()
+extern "C" IL2CPP_METHOD_ATTR String_t* Column_get_Collation_m3582061121 (Column_t1357940583 * __this, const RuntimeMethod* method);
+// System.String System.String::Concat(System.String,System.String,System.String,System.String)
+extern "C" IL2CPP_METHOD_ATTR String_t* String_Concat_m2163913788 (RuntimeObject * __this /* static, unused */, String_t* p0, String_t* p1, String_t* p2, String_t* p3, const RuntimeMethod* method);
+// System.Type SQLite4Unity3d.TableMapping/Column::get_ColumnType()
+extern "C" IL2CPP_METHOD_ATTR Type_t * Column_get_ColumnType_m2188313396 (Column_t1357940583 * __this, const RuntimeMethod* method);
+// System.Nullable`1<System.Int32> SQLite4Unity3d.TableMapping/Column::get_MaxStringLength()
+extern "C" IL2CPP_METHOD_ATTR Nullable_1_t378540539  Column_get_MaxStringLength_m2359220591 (Column_t1357940583 * __this, const RuntimeMethod* method);
+// System.Boolean System.Nullable`1<System.Int32>::get_HasValue()
+inline bool Nullable_1_get_HasValue_m589371754 (Nullable_1_t378540539 * __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Nullable_1_t378540539 *, const RuntimeMethod*))Nullable_1_get_HasValue_m589371754_gshared)(__this, method);
+}
+// !0 System.Nullable`1<System.Int32>::get_Value()
+inline int32_t Nullable_1_get_Value_m3000890071 (Nullable_1_t378540539 * __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (Nullable_1_t378540539 *, const RuntimeMethod*))Nullable_1_get_Value_m3000890071_gshared)(__this, method);
+}
+// System.Boolean System.Type::get_IsEnum()
+extern "C" IL2CPP_METHOD_ATTR bool Type_get_IsEnum_m208091508 (Type_t * __this, const RuntimeMethod* method);
+// System.Void System.NotSupportedException::.ctor(System.String)
+extern "C" IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m2494070935 (NotSupportedException_t1314879016 * __this, String_t* p0, const RuntimeMethod* method);
+// System.String SQLite4Unity3d.CollationAttribute::get_Value()
+extern "C" IL2CPP_METHOD_ATTR String_t* CollationAttribute_get_Value_m547414817 (CollationAttribute_t3564781786 * __this, const RuntimeMethod* method);
+// System.Collections.Generic.IEnumerable`1<!!0> System.Linq.Enumerable::Cast<SQLite4Unity3d.IndexedAttribute>(System.Collections.IEnumerable)
+inline RuntimeObject* Enumerable_Cast_TisIndexedAttribute_t384353508_m3549597737 (RuntimeObject * __this /* static, unused */, RuntimeObject* p0, const RuntimeMethod* method)
+{
+	return ((  RuntimeObject* (*) (RuntimeObject * /* static, unused */, RuntimeObject*, const RuntimeMethod*))Enumerable_Cast_TisRuntimeObject_m2814037400_gshared)(__this /* static, unused */, p0, method);
+}
+// System.Int32 SQLite4Unity3d.MaxLengthAttribute::get_Value()
+extern "C" IL2CPP_METHOD_ATTR int32_t MaxLengthAttribute_get_Value_m2838542087 (MaxLengthAttribute_t2329480580 * __this, const RuntimeMethod* method);
+// System.Void System.Nullable`1<System.Int32>::.ctor(!0)
+inline void Nullable_1__ctor_m3940678751 (Nullable_1_t378540539 * __this, int32_t p0, const RuntimeMethod* method)
+{
+	((  void (*) (Nullable_1_t378540539 *, int32_t, const RuntimeMethod*))Nullable_1__ctor_m3940678751_gshared)(__this, p0, method);
+}
+// System.Void SQLite4Unity3d.PreparedSqlLiteInsertCommand::set_Connection(SQLite4Unity3d.SQLiteConnection)
+extern "C" IL2CPP_METHOD_ATTR void PreparedSqlLiteInsertCommand_set_Connection_m254024264 (PreparedSqlLiteInsertCommand_t994658783 * __this, SQLiteConnection_t3070079188 * ___value0, const RuntimeMethod* method);
+// SQLite4Unity3d.SQLiteConnection SQLite4Unity3d.PreparedSqlLiteInsertCommand::get_Connection()
+extern "C" IL2CPP_METHOD_ATTR SQLiteConnection_t3070079188 * PreparedSqlLiteInsertCommand_get_Connection_m458268417 (PreparedSqlLiteInsertCommand_t994658783 * __this, const RuntimeMethod* method);
+// System.Boolean SQLite4Unity3d.SQLiteConnection::get_Trace()
+extern "C" IL2CPP_METHOD_ATTR bool SQLiteConnection_get_Trace_m4025894662 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method);
+// System.Boolean SQLite4Unity3d.PreparedSqlLiteInsertCommand::get_Initialized()
+extern "C" IL2CPP_METHOD_ATTR bool PreparedSqlLiteInsertCommand_get_Initialized_m1342253637 (PreparedSqlLiteInsertCommand_t994658783 * __this, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.PreparedSqlLiteInsertCommand::set_Statement(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR void PreparedSqlLiteInsertCommand_set_Statement_m2329728472 (PreparedSqlLiteInsertCommand_t994658783 * __this, intptr_t ___value0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.PreparedSqlLiteInsertCommand::set_Initialized(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void PreparedSqlLiteInsertCommand_set_Initialized_m3809384747 (PreparedSqlLiteInsertCommand_t994658783 * __this, bool ___value0, const RuntimeMethod* method);
+// System.IntPtr SQLite4Unity3d.PreparedSqlLiteInsertCommand::get_Statement()
+extern "C" IL2CPP_METHOD_ATTR intptr_t PreparedSqlLiteInsertCommand_get_Statement_m4160804592 (PreparedSqlLiteInsertCommand_t994658783 * __this, const RuntimeMethod* method);
+// System.Boolean SQLite4Unity3d.SQLiteConnection::get_StoreDateTimeAsTicks()
+extern "C" IL2CPP_METHOD_ATTR bool SQLiteConnection_get_StoreDateTimeAsTicks_m1334058394 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteCommand::BindParameter(System.IntPtr,System.Int32,System.Object,System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteCommand_BindParameter_m2636142430 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, RuntimeObject * ___value2, bool ___storeDateTimeAsTicks3, const RuntimeMethod* method);
+// SQLite4Unity3d.SQLite3/Result SQLite4Unity3d.SQLite3::Step(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_Step_m2082604678 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, const RuntimeMethod* method);
+// System.IntPtr SQLite4Unity3d.SQLiteConnection::get_Handle()
+extern "C" IL2CPP_METHOD_ATTR intptr_t SQLiteConnection_get_Handle_m4185785638 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method);
+// System.Int32 SQLite4Unity3d.SQLite3::Changes(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_Changes_m805525823 (RuntimeObject * __this /* static, unused */, intptr_t ___db0, const RuntimeMethod* method);
+// SQLite4Unity3d.SQLite3/Result SQLite4Unity3d.SQLite3::Reset(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_Reset_m1714599342 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, const RuntimeMethod* method);
+// System.String SQLite4Unity3d.SQLite3::GetErrmsg(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR String_t* SQLite3_GetErrmsg_m3570473851 (RuntimeObject * __this /* static, unused */, intptr_t ___db0, const RuntimeMethod* method);
+// SQLite4Unity3d.SQLiteException SQLite4Unity3d.SQLiteException::New(SQLite4Unity3d.SQLite3/Result,System.String)
+extern "C" IL2CPP_METHOD_ATTR SQLiteException_t1356363765 * SQLiteException_New_m975542910 (RuntimeObject * __this /* static, unused */, int32_t ___r0, String_t* ___message1, const RuntimeMethod* method);
+// SQLite4Unity3d.SQLite3/ExtendedResult SQLite4Unity3d.SQLite3::ExtendedErrCode(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_ExtendedErrCode_m1645503891 (RuntimeObject * __this /* static, unused */, intptr_t ___db0, const RuntimeMethod* method);
+// SQLite4Unity3d.NotNullConstraintViolationException SQLite4Unity3d.NotNullConstraintViolationException::New(SQLite4Unity3d.SQLite3/Result,System.String)
+extern "C" IL2CPP_METHOD_ATTR NotNullConstraintViolationException_t3886364687 * NotNullConstraintViolationException_New_m121954500 (RuntimeObject * __this /* static, unused */, int32_t ___r0, String_t* ___message1, const RuntimeMethod* method);
+// System.String SQLite4Unity3d.PreparedSqlLiteInsertCommand::get_CommandText()
+extern "C" IL2CPP_METHOD_ATTR String_t* PreparedSqlLiteInsertCommand_get_CommandText_m2313340410 (PreparedSqlLiteInsertCommand_t994658783 * __this, const RuntimeMethod* method);
+// System.IntPtr SQLite4Unity3d.SQLite3::Prepare2(System.IntPtr,System.String)
+extern "C" IL2CPP_METHOD_ATTR intptr_t SQLite3_Prepare2_m655766597 (RuntimeObject * __this /* static, unused */, intptr_t ___db0, String_t* ___query1, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.PreparedSqlLiteInsertCommand::Dispose(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void PreparedSqlLiteInsertCommand_Dispose_m2170116472 (PreparedSqlLiteInsertCommand_t994658783 * __this, bool ___disposing0, const RuntimeMethod* method);
+// System.Void System.GC::SuppressFinalize(System.Object)
+extern "C" IL2CPP_METHOD_ATTR void GC_SuppressFinalize_m1177400158 (RuntimeObject * __this /* static, unused */, RuntimeObject * p0, const RuntimeMethod* method);
+// System.Boolean System.IntPtr::op_Inequality(System.IntPtr,System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR bool IntPtr_op_Inequality_m3063970704 (RuntimeObject * __this /* static, unused */, intptr_t p0, intptr_t p1, const RuntimeMethod* method);
+// SQLite4Unity3d.SQLite3/Result SQLite4Unity3d.SQLite3::Finalize(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_Finalize_m877745565 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, const RuntimeMethod* method);
+// System.Void System.Object::Finalize()
+extern "C" IL2CPP_METHOD_ATTR void Object_Finalize_m3076187857 (RuntimeObject * __this, const RuntimeMethod* method);
+// SQLite4Unity3d.SQLite3/Result SQLite4Unity3d.SQLite3::Prepare2(System.IntPtr,System.String,System.Int32,System.IntPtr&,System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_Prepare2_m2811953343 (RuntimeObject * __this /* static, unused */, intptr_t ___db0, String_t* ___sql1, int32_t ___numBytes2, intptr_t* ___stmt3, intptr_t ___pzTail4, const RuntimeMethod* method);
+// System.IntPtr SQLite4Unity3d.SQLite3::Errmsg(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR intptr_t SQLite3_Errmsg_m656673648 (RuntimeObject * __this /* static, unused */, intptr_t ___db0, const RuntimeMethod* method);
+// System.String System.Runtime.InteropServices.Marshal::PtrToStringUni(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR String_t* Marshal_PtrToStringUni_m175561854 (RuntimeObject * __this /* static, unused */, intptr_t p0, const RuntimeMethod* method);
+// System.IntPtr SQLite4Unity3d.SQLite3::ColumnName16Internal(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR intptr_t SQLite3_ColumnName16Internal_m3939023131 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, const RuntimeMethod* method);
+// System.IntPtr SQLite4Unity3d.SQLite3::ColumnText16(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR intptr_t SQLite3_ColumnText16_m680827076 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, const RuntimeMethod* method);
+// System.Int32 SQLite4Unity3d.SQLite3::ColumnBytes(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_ColumnBytes_m253525103 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, const RuntimeMethod* method);
+// System.IntPtr SQLite4Unity3d.SQLite3::ColumnBlob(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR intptr_t SQLite3_ColumnBlob_m1019686787 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, const RuntimeMethod* method);
+// System.Void System.Runtime.InteropServices.Marshal::Copy(System.IntPtr,System.Byte[],System.Int32,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void Marshal_Copy_m1222846562 (RuntimeObject * __this /* static, unused */, intptr_t p0, ByteU5BU5D_t4116647657* p1, int32_t p2, int32_t p3, const RuntimeMethod* method);
+// System.Void System.Collections.Generic.List`1<SQLite4Unity3d.SQLiteCommand/Binding>::.ctor()
+inline void List_1__ctor_m502925065 (List_1_t4258913814 * __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t4258913814 *, const RuntimeMethod*))List_1__ctor_m2321703786_gshared)(__this, method);
+}
+// System.Void SQLite4Unity3d.SQLiteCommand::set_CommandText(System.String)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteCommand_set_CommandText_m1328880820 (SQLiteCommand_t3688707480 * __this, String_t* ___value0, const RuntimeMethod* method);
+// System.IntPtr SQLite4Unity3d.SQLiteCommand::Prepare()
+extern "C" IL2CPP_METHOD_ATTR intptr_t SQLiteCommand_Prepare_m3991188589 (SQLiteCommand_t3688707480 * __this, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteCommand::Finalize(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteCommand_Finalize_m1231223217 (SQLiteCommand_t3688707480 * __this, intptr_t ___stmt0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteCommand/Binding::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void Binding__ctor_m3016444451 (Binding_t2786839072 * __this, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteCommand/Binding::set_Name(System.String)
+extern "C" IL2CPP_METHOD_ATTR void Binding_set_Name_m2494568403 (Binding_t2786839072 * __this, String_t* ___value0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteCommand/Binding::set_Value(System.Object)
+extern "C" IL2CPP_METHOD_ATTR void Binding_set_Value_m4120112503 (Binding_t2786839072 * __this, RuntimeObject * ___value0, const RuntimeMethod* method);
+// System.Void System.Collections.Generic.List`1<SQLite4Unity3d.SQLiteCommand/Binding>::Add(!0)
+inline void List_1_Add_m3305583421 (List_1_t4258913814 * __this, Binding_t2786839072 * p0, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t4258913814 *, Binding_t2786839072 *, const RuntimeMethod*))List_1_Add_m3338814081_gshared)(__this, p0, method);
+}
+// System.Void SQLite4Unity3d.SQLiteCommand::Bind(System.String,System.Object)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteCommand_Bind_m1963191297 (SQLiteCommand_t3688707480 * __this, String_t* ___name0, RuntimeObject * ___val1, const RuntimeMethod* method);
+// System.Int32 System.Collections.Generic.List`1<SQLite4Unity3d.SQLiteCommand/Binding>::get_Count()
+inline int32_t List_1_get_Count_m3449619558 (List_1_t4258913814 * __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_t4258913814 *, const RuntimeMethod*))List_1_get_Count_m2934127733_gshared)(__this, method);
+}
+// System.String SQLite4Unity3d.SQLiteCommand::get_CommandText()
+extern "C" IL2CPP_METHOD_ATTR String_t* SQLiteCommand_get_CommandText_m2944188450 (SQLiteCommand_t3688707480 * __this, const RuntimeMethod* method);
+// System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<SQLite4Unity3d.SQLiteCommand/Binding>::GetEnumerator()
+inline Enumerator_t1853190395  List_1_GetEnumerator_m1002389916 (List_1_t4258913814 * __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_t1853190395  (*) (List_1_t4258913814 *, const RuntimeMethod*))List_1_GetEnumerator_m2930774921_gshared)(__this, method);
+}
+// !0 System.Collections.Generic.List`1/Enumerator<SQLite4Unity3d.SQLiteCommand/Binding>::get_Current()
+inline Binding_t2786839072 * Enumerator_get_Current_m4062518947 (Enumerator_t1853190395 * __this, const RuntimeMethod* method)
+{
+	return ((  Binding_t2786839072 * (*) (Enumerator_t1853190395 *, const RuntimeMethod*))Enumerator_get_Current_m470245444_gshared)(__this, method);
+}
+// System.Object SQLite4Unity3d.SQLiteCommand/Binding::get_Value()
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Binding_get_Value_m3934136218 (Binding_t2786839072 * __this, const RuntimeMethod* method);
+// System.Boolean System.Collections.Generic.List`1/Enumerator<SQLite4Unity3d.SQLiteCommand/Binding>::MoveNext()
+inline bool Enumerator_MoveNext_m1349881051 (Enumerator_t1853190395 * __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_t1853190395 *, const RuntimeMethod*))Enumerator_MoveNext_m2142368520_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.List`1/Enumerator<SQLite4Unity3d.SQLiteCommand/Binding>::Dispose()
+inline void Enumerator_Dispose_m1545617601 (Enumerator_t1853190395 * __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_t1853190395 *, const RuntimeMethod*))Enumerator_Dispose_m3007748546_gshared)(__this, method);
+}
+// System.String System.Environment::get_NewLine()
+extern "C" IL2CPP_METHOD_ATTR String_t* Environment_get_NewLine_m3211016485 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteCommand::BindAll(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteCommand_BindAll_m1742688076 (SQLiteCommand_t3688707480 * __this, intptr_t ___stmt0, const RuntimeMethod* method);
+// System.String SQLite4Unity3d.SQLiteCommand/Binding::get_Name()
+extern "C" IL2CPP_METHOD_ATTR String_t* Binding_get_Name_m2312834149 (Binding_t2786839072 * __this, const RuntimeMethod* method);
+// System.Int32 SQLite4Unity3d.SQLite3::BindParameterIndex(System.IntPtr,System.String)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_BindParameterIndex_m3061816311 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, String_t* ___name1, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteCommand/Binding::set_Index(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void Binding_set_Index_m3995208946 (Binding_t2786839072 * __this, int32_t ___value0, const RuntimeMethod* method);
+// System.Int32 SQLite4Unity3d.SQLiteCommand/Binding::get_Index()
+extern "C" IL2CPP_METHOD_ATTR int32_t Binding_get_Index_m42666718 (Binding_t2786839072 * __this, const RuntimeMethod* method);
+// System.Int32 SQLite4Unity3d.SQLite3::BindNull(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_BindNull_m2819514229 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, const RuntimeMethod* method);
+// System.Int32 SQLite4Unity3d.SQLite3::BindInt(System.IntPtr,System.Int32,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_BindInt_m3326750893 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, int32_t ___val2, const RuntimeMethod* method);
+// System.Int32 SQLite4Unity3d.SQLite3::BindText(System.IntPtr,System.Int32,System.String,System.Int32,System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_BindText_m446958600 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, String_t* ___val2, int32_t ___n3, intptr_t ___free4, const RuntimeMethod* method);
+// System.Int32 System.Convert::ToInt32(System.Object)
+extern "C" IL2CPP_METHOD_ATTR int32_t Convert_ToInt32_m2608095889 (RuntimeObject * __this /* static, unused */, RuntimeObject * p0, const RuntimeMethod* method);
+// System.Int64 System.Convert::ToInt64(System.Object)
+extern "C" IL2CPP_METHOD_ATTR int64_t Convert_ToInt64_m3240678588 (RuntimeObject * __this /* static, unused */, RuntimeObject * p0, const RuntimeMethod* method);
+// System.Int32 SQLite4Unity3d.SQLite3::BindInt64(System.IntPtr,System.Int32,System.Int64)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_BindInt64_m3899626256 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, int64_t ___val2, const RuntimeMethod* method);
+// System.Double System.Convert::ToDouble(System.Object)
+extern "C" IL2CPP_METHOD_ATTR double Convert_ToDouble_m4025515304 (RuntimeObject * __this /* static, unused */, RuntimeObject * p0, const RuntimeMethod* method);
+// System.Int32 SQLite4Unity3d.SQLite3::BindDouble(System.IntPtr,System.Int32,System.Double)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_BindDouble_m2715021545 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, double ___val2, const RuntimeMethod* method);
+// System.Int64 System.TimeSpan::get_Ticks()
+extern "C" IL2CPP_METHOD_ATTR int64_t TimeSpan_get_Ticks_m2137362016 (TimeSpan_t881159249 * __this, const RuntimeMethod* method);
+// System.Int64 System.DateTime::get_Ticks()
+extern "C" IL2CPP_METHOD_ATTR int64_t DateTime_get_Ticks_m1550640881 (DateTime_t3738529785 * __this, const RuntimeMethod* method);
+// System.String System.DateTime::ToString(System.String)
+extern "C" IL2CPP_METHOD_ATTR String_t* DateTime_ToString_m3718521780 (DateTime_t3738529785 * __this, String_t* p0, const RuntimeMethod* method);
+// System.Int64 System.DateTimeOffset::get_UtcTicks()
+extern "C" IL2CPP_METHOD_ATTR int64_t DateTimeOffset_get_UtcTicks_m3512477945 (DateTimeOffset_t3229287507 * __this, const RuntimeMethod* method);
+// System.Int32 SQLite4Unity3d.SQLite3::BindBlob(System.IntPtr,System.Int32,System.Byte[],System.Int32,System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_BindBlob_m3274128319 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, ByteU5BU5D_t4116647657* ___val2, int32_t ___n3, intptr_t ___free4, const RuntimeMethod* method);
+// System.String System.Guid::ToString()
+extern "C" IL2CPP_METHOD_ATTR String_t* Guid_ToString_m3279186591 (Guid_t * __this, const RuntimeMethod* method);
+// System.String SQLite4Unity3d.SQLite3::ColumnString(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR String_t* SQLite3_ColumnString_m4150538419 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, const RuntimeMethod* method);
+// System.Int32 SQLite4Unity3d.SQLite3::ColumnInt(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_ColumnInt_m486845722 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, const RuntimeMethod* method);
+// System.Double SQLite4Unity3d.SQLite3::ColumnDouble(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR double SQLite3_ColumnDouble_m703462329 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, const RuntimeMethod* method);
+// System.Int64 SQLite4Unity3d.SQLite3::ColumnInt64(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR int64_t SQLite3_ColumnInt64_m2218779963 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, const RuntimeMethod* method);
+// System.Void System.TimeSpan::.ctor(System.Int64)
+extern "C" IL2CPP_METHOD_ATTR void TimeSpan__ctor_m1896986612 (TimeSpan_t881159249 * __this, int64_t p0, const RuntimeMethod* method);
+// System.Void System.DateTime::.ctor(System.Int64)
+extern "C" IL2CPP_METHOD_ATTR void DateTime__ctor_m516789325 (DateTime_t3738529785 * __this, int64_t p0, const RuntimeMethod* method);
+// System.DateTime System.DateTime::Parse(System.String)
+extern "C" IL2CPP_METHOD_ATTR DateTime_t3738529785  DateTime_Parse_m2550724587 (RuntimeObject * __this /* static, unused */, String_t* p0, const RuntimeMethod* method);
+// System.Void System.DateTimeOffset::.ctor(System.Int64,System.TimeSpan)
+extern "C" IL2CPP_METHOD_ATTR void DateTimeOffset__ctor_m1464148220 (DateTimeOffset_t3229287507 * __this, int64_t p0, TimeSpan_t881159249  p1, const RuntimeMethod* method);
+// System.Decimal System.Decimal::op_Explicit(System.Double)
+extern "C" IL2CPP_METHOD_ATTR Decimal_t2948259380  Decimal_op_Explicit_m2433293820 (RuntimeObject * __this /* static, unused */, double p0, const RuntimeMethod* method);
+// System.Byte[] SQLite4Unity3d.SQLite3::ColumnByteArray(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR ByteU5BU5D_t4116647657* SQLite3_ColumnByteArray_m1093567263 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, const RuntimeMethod* method);
+// System.Void System.Guid::.ctor(System.String)
+extern "C" IL2CPP_METHOD_ATTR void Guid__ctor_m2423264394 (Guid_t * __this, String_t* p0, const RuntimeMethod* method);
+// System.Void System.IntPtr::.ctor(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void IntPtr__ctor_m987082960 (intptr_t* __this, int32_t p0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteConnection::.ctor(System.String,SQLite4Unity3d.SQLiteOpenFlags,System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection__ctor_m593903775 (SQLiteConnection_t3070079188 * __this, String_t* ___databasePath0, int32_t ___openFlags1, bool ___storeDateTimeAsTicks2, const RuntimeMethod* method);
+// System.Void System.Random::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void Random__ctor_m4122933043 (Random_t108471755 * __this, const RuntimeMethod* method);
+// System.Void System.ArgumentException::.ctor(System.String,System.String)
+extern "C" IL2CPP_METHOD_ATTR void ArgumentException__ctor_m1216717135 (ArgumentException_t132251570 * __this, String_t* p0, String_t* p1, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteConnection::set_DatabasePath(System.String)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_set_DatabasePath_m1228607167 (SQLiteConnection_t3070079188 * __this, String_t* ___value0, const RuntimeMethod* method);
+// System.String SQLite4Unity3d.SQLiteConnection::get_DatabasePath()
+extern "C" IL2CPP_METHOD_ATTR String_t* SQLiteConnection_get_DatabasePath_m517910366 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method);
+// System.Byte[] SQLite4Unity3d.SQLiteConnection::GetNullTerminatedUtf8(System.String)
+extern "C" IL2CPP_METHOD_ATTR ByteU5BU5D_t4116647657* SQLiteConnection_GetNullTerminatedUtf8_m3916213873 (RuntimeObject * __this /* static, unused */, String_t* ___s0, const RuntimeMethod* method);
+// SQLite4Unity3d.SQLite3/Result SQLite4Unity3d.SQLite3::Open(System.Byte[],System.IntPtr&,System.Int32,System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_Open_m3447767184 (RuntimeObject * __this /* static, unused */, ByteU5BU5D_t4116647657* ___filename0, intptr_t* ___db1, int32_t ___flags2, intptr_t ___zvfs3, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteConnection::set_Handle(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_set_Handle_m1539251663 (SQLiteConnection_t3070079188 * __this, intptr_t ___value0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteConnection::set_StoreDateTimeAsTicks(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_set_StoreDateTimeAsTicks_m3885514687 (SQLiteConnection_t3070079188 * __this, bool ___value0, const RuntimeMethod* method);
+// System.TimeSpan System.TimeSpan::FromSeconds(System.Double)
+extern "C" IL2CPP_METHOD_ATTR TimeSpan_t881159249  TimeSpan_FromSeconds_m4219356874 (RuntimeObject * __this /* static, unused */, double p0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteConnection::set_BusyTimeout(System.TimeSpan)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_set_BusyTimeout_m1319296104 (SQLiteConnection_t3070079188 * __this, TimeSpan_t881159249  ___value0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteConnection/ColumnInfo::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void ColumnInfo__ctor_m3797747095 (ColumnInfo_t2560133827 * __this, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteConnection/ColumnInfo::set_Name(System.String)
+extern "C" IL2CPP_METHOD_ATTR void ColumnInfo_set_Name_m3211096544 (ColumnInfo_t2560133827 * __this, String_t* ___value0, const RuntimeMethod* method);
+// SQLite4Unity3d.SQLite3/Result SQLite4Unity3d.SQLite3::EnableLoadExtension(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_EnableLoadExtension_m2149057872 (RuntimeObject * __this /* static, unused */, intptr_t ___db0, int32_t ___onoff1, const RuntimeMethod* method);
+// System.Double System.TimeSpan::get_TotalMilliseconds()
+extern "C" IL2CPP_METHOD_ATTR double TimeSpan_get_TotalMilliseconds_m2429771311 (TimeSpan_t881159249 * __this, const RuntimeMethod* method);
+// SQLite4Unity3d.SQLite3/Result SQLite4Unity3d.SQLite3::BusyTimeout(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_BusyTimeout_m2064827914 (RuntimeObject * __this /* static, unused */, intptr_t ___db0, int32_t ___milliseconds1, const RuntimeMethod* method);
+// System.Collections.Generic.Dictionary`2/ValueCollection<!0,!1> System.Collections.Generic.Dictionary`2<System.String,SQLite4Unity3d.TableMapping>::get_Values()
+inline ValueCollection_t3777700109 * Dictionary_2_get_Values_m2477973787 (Dictionary_2_t2061655791 * __this, const RuntimeMethod* method)
+{
+	return ((  ValueCollection_t3777700109 * (*) (Dictionary_2_t2061655791 *, const RuntimeMethod*))Dictionary_2_get_Values_m2492087945_gshared)(__this, method);
+}
+// System.Collections.Generic.IEnumerable`1<!!0> System.Linq.Enumerable::Empty<SQLite4Unity3d.TableMapping>()
+inline RuntimeObject* Enumerable_Empty_TisTableMapping_t2276399492_m3468073737 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+{
+	return ((  RuntimeObject* (*) (RuntimeObject * /* static, unused */, const RuntimeMethod*))Enumerable_Empty_TisRuntimeObject_m2402128488_gshared)(__this /* static, unused */, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.String,SQLite4Unity3d.TableMapping>::.ctor()
+inline void Dictionary_2__ctor_m141581994 (Dictionary_2_t2061655791 * __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t2061655791 *, const RuntimeMethod*))Dictionary_2__ctor_m518943619_gshared)(__this, method);
+}
+// System.Boolean System.Collections.Generic.Dictionary`2<System.String,SQLite4Unity3d.TableMapping>::TryGetValue(!0,!1&)
+inline bool Dictionary_2_TryGetValue_m582811047 (Dictionary_2_t2061655791 * __this, String_t* p0, TableMapping_t2276399492 ** p1, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_t2061655791 *, String_t*, TableMapping_t2276399492 **, const RuntimeMethod*))Dictionary_2_TryGetValue_m3280774074_gshared)(__this, p0, p1, method);
+}
+// System.Void SQLite4Unity3d.TableMapping::.ctor(System.Type,SQLite4Unity3d.CreateFlags)
+extern "C" IL2CPP_METHOD_ATTR void TableMapping__ctor_m3995337602 (TableMapping_t2276399492 * __this, Type_t * ___type0, int32_t ___createFlags1, const RuntimeMethod* method);
+// System.Void System.Collections.Generic.Dictionary`2<System.String,SQLite4Unity3d.TableMapping>::set_Item(!0,!1)
+inline void Dictionary_2_set_Item_m722790113 (Dictionary_2_t2061655791 * __this, String_t* p0, TableMapping_t2276399492 * p1, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t2061655791 *, String_t*, TableMapping_t2276399492 *, const RuntimeMethod*))Dictionary_2_set_Item_m3474379962_gshared)(__this, p0, p1, method);
+}
+// SQLite4Unity3d.TableMapping SQLite4Unity3d.SQLiteConnection::GetMapping(System.Type,SQLite4Unity3d.CreateFlags)
+extern "C" IL2CPP_METHOD_ATTR TableMapping_t2276399492 * SQLiteConnection_GetMapping_m1572423408 (SQLiteConnection_t3070079188 * __this, Type_t * ___type0, int32_t ___createFlags1, const RuntimeMethod* method);
+// System.Void System.Collections.Generic.Dictionary`2<System.String,SQLite4Unity3d.TableMapping>::Add(!0,!1)
+inline void Dictionary_2_Add_m425274454 (Dictionary_2_t2061655791 * __this, String_t* p0, TableMapping_t2276399492 * p1, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t2061655791 *, String_t*, TableMapping_t2276399492 *, const RuntimeMethod*))Dictionary_2_Add_m2387223709_gshared)(__this, p0, p1, method);
+}
+// System.String SQLite4Unity3d.TableMapping::get_TableName()
+extern "C" IL2CPP_METHOD_ATTR String_t* TableMapping_get_TableName_m271466374 (TableMapping_t2276399492 * __this, const RuntimeMethod* method);
+// System.Void System.Func`2<SQLite4Unity3d.TableMapping/Column,System.String>::.ctor(System.Object,System.IntPtr)
+inline void Func_2__ctor_m492011138 (Func_2_t2431212468 * __this, RuntimeObject * p0, intptr_t p1, const RuntimeMethod* method)
+{
+	((  void (*) (Func_2_t2431212468 *, RuntimeObject *, intptr_t, const RuntimeMethod*))Func_2__ctor_m348566106_gshared)(__this, p0, p1, method);
+}
+// System.Collections.Generic.IEnumerable`1<!!1> System.Linq.Enumerable::Select<SQLite4Unity3d.TableMapping/Column,System.String>(System.Collections.Generic.IEnumerable`1<!!0>,System.Func`2<!!0,!!1>)
+inline RuntimeObject* Enumerable_Select_TisColumn_t1357940583_TisString_t_m3321979519 (RuntimeObject * __this /* static, unused */, RuntimeObject* p0, Func_2_t2431212468 * p1, const RuntimeMethod* method)
+{
+	return ((  RuntimeObject* (*) (RuntimeObject * /* static, unused */, RuntimeObject*, Func_2_t2431212468 *, const RuntimeMethod*))Enumerable_Select_TisRuntimeObject_TisRuntimeObject_m952846165_gshared)(__this /* static, unused */, p0, p1, method);
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::Execute(System.String,System.Object[])
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_Execute_m2332690897 (SQLiteConnection_t3070079188 * __this, String_t* ___query0, ObjectU5BU5D_t2843939325* ___args1, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteConnection::MigrateTable(SQLite4Unity3d.TableMapping)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_MigrateTable_m2841987575 (SQLiteConnection_t3070079188 * __this, TableMapping_t2276399492 * ___map0, const RuntimeMethod* method);
+// System.Void System.Collections.Generic.Dictionary`2<System.String,SQLite4Unity3d.SQLiteConnection/IndexInfo>::.ctor()
+inline void Dictionary_2__ctor_m2147951471 (Dictionary_2_t1466052957 * __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t1466052957 *, const RuntimeMethod*))Dictionary_2__ctor_m3868364819_gshared)(__this, method);
+}
+// System.Collections.Generic.IEnumerable`1<SQLite4Unity3d.IndexedAttribute> SQLite4Unity3d.TableMapping/Column::get_Indices()
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject* Column_get_Indices_m933483296 (Column_t1357940583 * __this, const RuntimeMethod* method);
+// System.String SQLite4Unity3d.IndexedAttribute::get_Name()
+extern "C" IL2CPP_METHOD_ATTR String_t* IndexedAttribute_get_Name_m2341810600 (IndexedAttribute_t384353508 * __this, const RuntimeMethod* method);
+// System.Boolean System.Collections.Generic.Dictionary`2<System.String,SQLite4Unity3d.SQLiteConnection/IndexInfo>::TryGetValue(!0,!1&)
+inline bool Dictionary_2_TryGetValue_m384793566 (Dictionary_2_t1466052957 * __this, String_t* p0, IndexInfo_t1680796658 * p1, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_t1466052957 *, String_t*, IndexInfo_t1680796658 *, const RuntimeMethod*))Dictionary_2_TryGetValue_m3896150971_gshared)(__this, p0, p1, method);
+}
+// System.Void System.Collections.Generic.List`1<SQLite4Unity3d.SQLiteConnection/IndexedColumn>::.ctor()
+inline void List_1__ctor_m2991042439 (List_1_t257796462 * __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t257796462 *, const RuntimeMethod*))List_1__ctor_m2991042439_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.String,SQLite4Unity3d.SQLiteConnection/IndexInfo>::Add(!0,!1)
+inline void Dictionary_2_Add_m3197316107 (Dictionary_2_t1466052957 * __this, String_t* p0, IndexInfo_t1680796658  p1, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t1466052957 *, String_t*, IndexInfo_t1680796658 , const RuntimeMethod*))Dictionary_2_Add_m3548960853_gshared)(__this, p0, p1, method);
+}
+// System.Int32 SQLite4Unity3d.IndexedAttribute::get_Order()
+extern "C" IL2CPP_METHOD_ATTR int32_t IndexedAttribute_get_Order_m48377204 (IndexedAttribute_t384353508 * __this, const RuntimeMethod* method);
+// System.Void System.Collections.Generic.List`1<SQLite4Unity3d.SQLiteConnection/IndexedColumn>::Add(!0)
+inline void List_1_Add_m1789417565 (List_1_t257796462 * __this, IndexedColumn_t3080689016  p0, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t257796462 *, IndexedColumn_t3080689016 , const RuntimeMethod*))List_1_Add_m1789417565_gshared)(__this, p0, method);
+}
+// System.Collections.Generic.Dictionary`2/KeyCollection<!0,!1> System.Collections.Generic.Dictionary`2<System.String,SQLite4Unity3d.SQLiteConnection/IndexInfo>::get_Keys()
+inline KeyCollection_t1655728428 * Dictionary_2_get_Keys_m172842089 (Dictionary_2_t1466052957 * __this, const RuntimeMethod* method)
+{
+	return ((  KeyCollection_t1655728428 * (*) (Dictionary_2_t1466052957 *, const RuntimeMethod*))Dictionary_2_get_Keys_m4217477210_gshared)(__this, method);
+}
+// System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator<!0,!1> System.Collections.Generic.Dictionary`2/KeyCollection<System.String,SQLite4Unity3d.SQLiteConnection/IndexInfo>::GetEnumerator()
+inline Enumerator_t1648229941  KeyCollection_GetEnumerator_m3330635900 (KeyCollection_t1655728428 * __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_t1648229941  (*) (KeyCollection_t1655728428 *, const RuntimeMethod*))KeyCollection_GetEnumerator_m1480558318_gshared)(__this, method);
+}
+// !0 System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator<System.String,SQLite4Unity3d.SQLiteConnection/IndexInfo>::get_Current()
+inline String_t* Enumerator_get_Current_m169089760 (Enumerator_t1648229941 * __this, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (Enumerator_t1648229941 *, const RuntimeMethod*))Enumerator_get_Current_m3152865025_gshared)(__this, method);
+}
+// !1 System.Collections.Generic.Dictionary`2<System.String,SQLite4Unity3d.SQLiteConnection/IndexInfo>::get_Item(!0)
+inline IndexInfo_t1680796658  Dictionary_2_get_Item_m2283669796 (Dictionary_2_t1466052957 * __this, String_t* p0, const RuntimeMethod* method)
+{
+	return ((  IndexInfo_t1680796658  (*) (Dictionary_2_t1466052957 *, String_t*, const RuntimeMethod*))Dictionary_2_get_Item_m1767284423_gshared)(__this, p0, method);
+}
+// System.Void System.Func`2<SQLite4Unity3d.SQLiteConnection/IndexedColumn,System.Int32>::.ctor(System.Object,System.IntPtr)
+inline void Func_2__ctor_m3081439098 (Func_2_t166798807 * __this, RuntimeObject * p0, intptr_t p1, const RuntimeMethod* method)
+{
+	((  void (*) (Func_2_t166798807 *, RuntimeObject *, intptr_t, const RuntimeMethod*))Func_2__ctor_m3081439098_gshared)(__this, p0, p1, method);
+}
+// System.Linq.IOrderedEnumerable`1<!!0> System.Linq.Enumerable::OrderBy<SQLite4Unity3d.SQLiteConnection/IndexedColumn,System.Int32>(System.Collections.Generic.IEnumerable`1<!!0>,System.Func`2<!!0,!!1>)
+inline RuntimeObject* Enumerable_OrderBy_TisIndexedColumn_t3080689016_TisInt32_t2950945753_m2211229744 (RuntimeObject * __this /* static, unused */, RuntimeObject* p0, Func_2_t166798807 * p1, const RuntimeMethod* method)
+{
+	return ((  RuntimeObject* (*) (RuntimeObject * /* static, unused */, RuntimeObject*, Func_2_t166798807 *, const RuntimeMethod*))Enumerable_OrderBy_TisIndexedColumn_t3080689016_TisInt32_t2950945753_m2211229744_gshared)(__this /* static, unused */, p0, p1, method);
+}
+// System.Void System.Func`2<SQLite4Unity3d.SQLiteConnection/IndexedColumn,System.String>::.ctor(System.Object,System.IntPtr)
+inline void Func_2__ctor_m1556317952 (Func_2_t3358271039 * __this, RuntimeObject * p0, intptr_t p1, const RuntimeMethod* method)
+{
+	((  void (*) (Func_2_t3358271039 *, RuntimeObject *, intptr_t, const RuntimeMethod*))Func_2__ctor_m2856537620_gshared)(__this, p0, p1, method);
+}
+// System.Collections.Generic.IEnumerable`1<!!1> System.Linq.Enumerable::Select<SQLite4Unity3d.SQLiteConnection/IndexedColumn,System.String>(System.Collections.Generic.IEnumerable`1<!!0>,System.Func`2<!!0,!!1>)
+inline RuntimeObject* Enumerable_Select_TisIndexedColumn_t3080689016_TisString_t_m2328209351 (RuntimeObject * __this /* static, unused */, RuntimeObject* p0, Func_2_t3358271039 * p1, const RuntimeMethod* method)
+{
+	return ((  RuntimeObject* (*) (RuntimeObject * /* static, unused */, RuntimeObject*, Func_2_t3358271039 *, const RuntimeMethod*))Enumerable_Select_TisIndexedColumn_t3080689016_TisRuntimeObject_m1687662468_gshared)(__this /* static, unused */, p0, p1, method);
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::CreateIndex(System.String,System.String,System.String[],System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_CreateIndex_m4106815680 (SQLiteConnection_t3070079188 * __this, String_t* ___indexName0, String_t* ___tableName1, StringU5BU5D_t1281789340* ___columnNames2, bool ___unique3, const RuntimeMethod* method);
+// System.Boolean System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator<System.String,SQLite4Unity3d.SQLiteConnection/IndexInfo>::MoveNext()
+inline bool Enumerator_MoveNext_m2900741641 (Enumerator_t1648229941 * __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_t1648229941 *, const RuntimeMethod*))Enumerator_MoveNext_m3762248545_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator<System.String,SQLite4Unity3d.SQLiteConnection/IndexInfo>::Dispose()
+inline void Enumerator_Dispose_m1771143618 (Enumerator_t1648229941 * __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_t1648229941 *, const RuntimeMethod*))Enumerator_Dispose_m3584551482_gshared)(__this, method);
+}
+// System.String System.String::Format(System.String,System.Object[])
+extern "C" IL2CPP_METHOD_ATTR String_t* String_Format_m630303134 (RuntimeObject * __this /* static, unused */, String_t* p0, ObjectU5BU5D_t2843939325* p1, const RuntimeMethod* method);
+// System.Int32 SQLite4Unity3d.SQLiteConnection::CreateIndex(System.String,System.String,System.String,System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_CreateIndex_m105413951 (SQLiteConnection_t3070079188 * __this, String_t* ___indexName0, String_t* ___tableName1, String_t* ___columnName2, bool ___unique3, const RuntimeMethod* method);
+// System.Collections.Generic.List`1<T> SQLite4Unity3d.SQLiteConnection::Query<SQLite4Unity3d.SQLiteConnection/ColumnInfo>(System.String,System.Object[])
+inline List_1_t4032208569 * SQLiteConnection_Query_TisColumnInfo_t2560133827_m3769036285 (SQLiteConnection_t3070079188 * __this, String_t* ___query0, ObjectU5BU5D_t2843939325* ___args1, const RuntimeMethod* method)
+{
+	return ((  List_1_t4032208569 * (*) (SQLiteConnection_t3070079188 *, String_t*, ObjectU5BU5D_t2843939325*, const RuntimeMethod*))SQLiteConnection_Query_TisRuntimeObject_m3327921830_gshared)(__this, ___query0, ___args1, method);
+}
+// System.Collections.Generic.List`1<SQLite4Unity3d.SQLiteConnection/ColumnInfo> SQLite4Unity3d.SQLiteConnection::GetTableInfo(System.String)
+extern "C" IL2CPP_METHOD_ATTR List_1_t4032208569 * SQLiteConnection_GetTableInfo_m2951949514 (SQLiteConnection_t3070079188 * __this, String_t* ___tableName0, const RuntimeMethod* method);
+// System.Void System.Collections.Generic.List`1<SQLite4Unity3d.TableMapping/Column>::.ctor()
+inline void List_1__ctor_m2000653768 (List_1_t2830015325 * __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t2830015325 *, const RuntimeMethod*))List_1__ctor_m2321703786_gshared)(__this, method);
+}
+// System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<SQLite4Unity3d.SQLiteConnection/ColumnInfo>::GetEnumerator()
+inline Enumerator_t1626485150  List_1_GetEnumerator_m306818921 (List_1_t4032208569 * __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_t1626485150  (*) (List_1_t4032208569 *, const RuntimeMethod*))List_1_GetEnumerator_m2930774921_gshared)(__this, method);
+}
+// !0 System.Collections.Generic.List`1/Enumerator<SQLite4Unity3d.SQLiteConnection/ColumnInfo>::get_Current()
+inline ColumnInfo_t2560133827 * Enumerator_get_Current_m1385564250 (Enumerator_t1626485150 * __this, const RuntimeMethod* method)
+{
+	return ((  ColumnInfo_t2560133827 * (*) (Enumerator_t1626485150 *, const RuntimeMethod*))Enumerator_get_Current_m470245444_gshared)(__this, method);
+}
+// System.String SQLite4Unity3d.SQLiteConnection/ColumnInfo::get_Name()
+extern "C" IL2CPP_METHOD_ATTR String_t* ColumnInfo_get_Name_m850063639 (ColumnInfo_t2560133827 * __this, const RuntimeMethod* method);
+// System.Int32 System.String::Compare(System.String,System.String,System.StringComparison)
+extern "C" IL2CPP_METHOD_ATTR int32_t String_Compare_m3203413707 (RuntimeObject * __this /* static, unused */, String_t* p0, String_t* p1, int32_t p2, const RuntimeMethod* method);
+// System.Boolean System.Collections.Generic.List`1/Enumerator<SQLite4Unity3d.SQLiteConnection/ColumnInfo>::MoveNext()
+inline bool Enumerator_MoveNext_m985057225 (Enumerator_t1626485150 * __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_t1626485150 *, const RuntimeMethod*))Enumerator_MoveNext_m2142368520_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.List`1/Enumerator<SQLite4Unity3d.SQLiteConnection/ColumnInfo>::Dispose()
+inline void Enumerator_Dispose_m1999119403 (Enumerator_t1626485150 * __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_t1626485150 *, const RuntimeMethod*))Enumerator_Dispose_m3007748546_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.List`1<SQLite4Unity3d.TableMapping/Column>::Add(!0)
+inline void List_1_Add_m1767659314 (List_1_t2830015325 * __this, Column_t1357940583 * p0, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t2830015325 *, Column_t1357940583 *, const RuntimeMethod*))List_1_Add_m3338814081_gshared)(__this, p0, method);
+}
+// System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<SQLite4Unity3d.TableMapping/Column>::GetEnumerator()
+inline Enumerator_t424291906  List_1_GetEnumerator_m3158774955 (List_1_t2830015325 * __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_t424291906  (*) (List_1_t2830015325 *, const RuntimeMethod*))List_1_GetEnumerator_m2930774921_gshared)(__this, method);
+}
+// !0 System.Collections.Generic.List`1/Enumerator<SQLite4Unity3d.TableMapping/Column>::get_Current()
+inline Column_t1357940583 * Enumerator_get_Current_m3377761755 (Enumerator_t424291906 * __this, const RuntimeMethod* method)
+{
+	return ((  Column_t1357940583 * (*) (Enumerator_t424291906 *, const RuntimeMethod*))Enumerator_get_Current_m470245444_gshared)(__this, method);
+}
+// System.String SQLite4Unity3d.Orm::SqlDecl(SQLite4Unity3d.TableMapping/Column,System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR String_t* Orm_SqlDecl_m2709905698 (RuntimeObject * __this /* static, unused */, Column_t1357940583 * ___p0, bool ___storeDateTimeAsTicks1, const RuntimeMethod* method);
+// System.Boolean System.Collections.Generic.List`1/Enumerator<SQLite4Unity3d.TableMapping/Column>::MoveNext()
+inline bool Enumerator_MoveNext_m1909543983 (Enumerator_t424291906 * __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_t424291906 *, const RuntimeMethod*))Enumerator_MoveNext_m2142368520_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.List`1/Enumerator<SQLite4Unity3d.TableMapping/Column>::Dispose()
+inline void Enumerator_Dispose_m4004210332 (Enumerator_t424291906 * __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_t424291906 *, const RuntimeMethod*))Enumerator_Dispose_m3007748546_gshared)(__this, method);
+}
+// System.Void SQLite4Unity3d.SQLiteCommand::.ctor(SQLite4Unity3d.SQLiteConnection)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteCommand__ctor_m1824553444 (SQLiteCommand_t3688707480 * __this, SQLiteConnection_t3070079188 * ___conn0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteCommand::Bind(System.Object)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteCommand_Bind_m3149550542 (SQLiteCommand_t3688707480 * __this, RuntimeObject * ___val0, const RuntimeMethod* method);
+// SQLite4Unity3d.SQLiteCommand SQLite4Unity3d.SQLiteConnection::CreateCommand(System.String,System.Object[])
+extern "C" IL2CPP_METHOD_ATTR SQLiteCommand_t3688707480 * SQLiteConnection_CreateCommand_m41717563 (SQLiteConnection_t3070079188 * __this, String_t* ___cmdText0, ObjectU5BU5D_t2843939325* ___ps1, const RuntimeMethod* method);
+// System.Boolean SQLite4Unity3d.SQLiteConnection::get_TimeExecution()
+extern "C" IL2CPP_METHOD_ATTR bool SQLiteConnection_get_TimeExecution_m2293937657 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method);
+// System.Void System.Diagnostics.Stopwatch::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void Stopwatch__ctor_m2673586837 (Stopwatch_t305734070 * __this, const RuntimeMethod* method);
+// System.Void System.Diagnostics.Stopwatch::Reset()
+extern "C" IL2CPP_METHOD_ATTR void Stopwatch_Reset_m2784178933 (Stopwatch_t305734070 * __this, const RuntimeMethod* method);
+// System.Void System.Diagnostics.Stopwatch::Start()
+extern "C" IL2CPP_METHOD_ATTR void Stopwatch_Start_m1142799187 (Stopwatch_t305734070 * __this, const RuntimeMethod* method);
+// System.Int32 SQLite4Unity3d.SQLiteCommand::ExecuteNonQuery()
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteCommand_ExecuteNonQuery_m485096923 (SQLiteCommand_t3688707480 * __this, const RuntimeMethod* method);
+// System.Void System.Diagnostics.Stopwatch::Stop()
+extern "C" IL2CPP_METHOD_ATTR void Stopwatch_Stop_m1583564474 (Stopwatch_t305734070 * __this, const RuntimeMethod* method);
+// System.Int64 System.Diagnostics.Stopwatch::get_ElapsedMilliseconds()
+extern "C" IL2CPP_METHOD_ATTR int64_t Stopwatch_get_ElapsedMilliseconds_m1101465039 (Stopwatch_t305734070 * __this, const RuntimeMethod* method);
+// System.Collections.Generic.List`1<T> SQLite4Unity3d.SQLiteCommand::ExecuteQuery<System.Object>(SQLite4Unity3d.TableMapping)
+inline List_1_t257213610 * SQLiteCommand_ExecuteQuery_TisRuntimeObject_m3433496489 (SQLiteCommand_t3688707480 * __this, TableMapping_t2276399492 * ___map0, const RuntimeMethod* method)
+{
+	return ((  List_1_t257213610 * (*) (SQLiteCommand_t3688707480 *, TableMapping_t2276399492 *, const RuntimeMethod*))SQLiteCommand_ExecuteQuery_TisRuntimeObject_m3433496489_gshared)(__this, ___map0, method);
+}
+// System.Collections.Generic.IEnumerable`1<T> SQLite4Unity3d.SQLiteCommand::ExecuteDeferredQuery<System.Object>(SQLite4Unity3d.TableMapping)
+inline RuntimeObject* SQLiteCommand_ExecuteDeferredQuery_TisRuntimeObject_m2260852394 (SQLiteCommand_t3688707480 * __this, TableMapping_t2276399492 * ___map0, const RuntimeMethod* method)
+{
+	return ((  RuntimeObject* (*) (SQLiteCommand_t3688707480 *, TableMapping_t2276399492 *, const RuntimeMethod*))SQLiteCommand_ExecuteDeferredQuery_TisRuntimeObject_m2260852394_gshared)(__this, ___map0, method);
+}
+// System.String SQLite4Unity3d.TableMapping::get_GetByPrimaryKeySql()
+extern "C" IL2CPP_METHOD_ATTR String_t* TableMapping_get_GetByPrimaryKeySql_m2330456509 (TableMapping_t2276399492 * __this, const RuntimeMethod* method);
+// System.Collections.Generic.List`1<System.Object> SQLite4Unity3d.SQLiteConnection::Query(SQLite4Unity3d.TableMapping,System.String,System.Object[])
+extern "C" IL2CPP_METHOD_ATTR List_1_t257213610 * SQLiteConnection_Query_m3705838259 (SQLiteConnection_t3070079188 * __this, TableMapping_t2276399492 * ___map0, String_t* ___query1, ObjectU5BU5D_t2843939325* ___args2, const RuntimeMethod* method);
+// !!0 System.Linq.Enumerable::FirstOrDefault<System.Object>(System.Collections.Generic.IEnumerable`1<!!0>)
+inline RuntimeObject * Enumerable_FirstOrDefault_TisRuntimeObject_m714693565 (RuntimeObject * __this /* static, unused */, RuntimeObject* p0, const RuntimeMethod* method)
+{
+	return ((  RuntimeObject * (*) (RuntimeObject * /* static, unused */, RuntimeObject*, const RuntimeMethod*))Enumerable_FirstOrDefault_TisRuntimeObject_m714693565_gshared)(__this /* static, unused */, p0, method);
+}
+// System.Int32 System.Threading.Interlocked::CompareExchange(System.Int32&,System.Int32,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR int32_t Interlocked_CompareExchange_m3023855514 (RuntimeObject * __this /* static, unused */, int32_t* p0, int32_t p1, int32_t p2, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteConnection::RollbackTo(System.String,System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_RollbackTo_m593030370 (SQLiteConnection_t3070079188 * __this, String_t* ___savepoint0, bool ___noThrow1, const RuntimeMethod* method);
+// System.Int32 System.Threading.Interlocked::Decrement(System.Int32&)
+extern "C" IL2CPP_METHOD_ATTR int32_t Interlocked_Decrement_m899158053 (RuntimeObject * __this /* static, unused */, int32_t* p0, const RuntimeMethod* method);
+// System.Void System.InvalidOperationException::.ctor(System.String)
+extern "C" IL2CPP_METHOD_ATTR void InvalidOperationException__ctor_m237278729 (InvalidOperationException_t56020091 * __this, String_t* p0, const RuntimeMethod* method);
+// System.Int32 System.Threading.Interlocked::Increment(System.Int32&)
+extern "C" IL2CPP_METHOD_ATTR int32_t Interlocked_Increment_m3548166048 (RuntimeObject * __this /* static, unused */, int32_t* p0, const RuntimeMethod* method);
+// System.Int32 System.Threading.Interlocked::Exchange(System.Int32&,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR int32_t Interlocked_Exchange_m435211442 (RuntimeObject * __this /* static, unused */, int32_t* p0, int32_t p1, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteConnection::DoSavePointExecute(System.String,System.String)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_DoSavePointExecute_m3663436892 (SQLiteConnection_t3070079188 * __this, String_t* ___savepoint0, String_t* ___cmd1, const RuntimeMethod* method);
+// System.Int32 System.String::IndexOf(System.Char)
+extern "C" IL2CPP_METHOD_ATTR int32_t String_IndexOf_m363431711 (String_t* __this, Il2CppChar p0, const RuntimeMethod* method);
+// System.String System.String::Substring(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR String_t* String_Substring_m2848979100 (String_t* __this, int32_t p0, const RuntimeMethod* method);
+// System.Boolean System.Int32::TryParse(System.String,System.Int32&)
+extern "C" IL2CPP_METHOD_ATTR bool Int32_TryParse_m2404707562 (RuntimeObject * __this /* static, unused */, String_t* p0, int32_t* p1, const RuntimeMethod* method);
+// System.Void System.Threading.Thread::VolatileWrite(System.Int32&,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void Thread_VolatileWrite_m1660207352 (RuntimeObject * __this /* static, unused */, int32_t* p0, int32_t p1, const RuntimeMethod* method);
+// System.String SQLite4Unity3d.SQLiteConnection::SaveTransactionPoint()
+extern "C" IL2CPP_METHOD_ATTR String_t* SQLiteConnection_SaveTransactionPoint_m637039661 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method);
+// System.Void System.Action::Invoke()
+extern "C" IL2CPP_METHOD_ATTR void Action_Invoke_m937035532 (Action_t1264377477 * __this, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteConnection::Release(System.String)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_Release_m3551925781 (SQLiteConnection_t3070079188 * __this, String_t* ___savepoint0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteConnection::Rollback()
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_Rollback_m328589351 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey0::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void U3CInsertAllU3Ec__AnonStorey0__ctor_m3930371309 (U3CInsertAllU3Ec__AnonStorey0_t106977603 * __this, const RuntimeMethod* method);
+// System.Void System.Action::.ctor(System.Object,System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR void Action__ctor_m2994342681 (Action_t1264377477 * __this, RuntimeObject * p0, intptr_t p1, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteConnection::RunInTransaction(System.Action)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_RunInTransaction_m2280780074 (SQLiteConnection_t3070079188 * __this, Action_t1264377477 * ___action0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey1::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void U3CInsertAllU3Ec__AnonStorey1__ctor_m3930372398 (U3CInsertAllU3Ec__AnonStorey1_t106977604 * __this, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey2::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void U3CInsertAllU3Ec__AnonStorey2__ctor_m3930366887 (U3CInsertAllU3Ec__AnonStorey2_t106977601 * __this, const RuntimeMethod* method);
+// System.Int32 SQLite4Unity3d.SQLiteConnection::Insert(System.Object,System.String,System.Type)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_Insert_m2363025708 (SQLiteConnection_t3070079188 * __this, RuntimeObject * ___obj0, String_t* ___extra1, Type_t * ___objType2, const RuntimeMethod* method);
+// SQLite4Unity3d.TableMapping/Column SQLite4Unity3d.TableMapping::get_PK()
+extern "C" IL2CPP_METHOD_ATTR Column_t1357940583 * TableMapping_get_PK_m1996960091 (TableMapping_t2276399492 * __this, const RuntimeMethod* method);
+// System.Boolean SQLite4Unity3d.TableMapping/Column::get_IsAutoGuid()
+extern "C" IL2CPP_METHOD_ATTR bool Column_get_IsAutoGuid_m1239656193 (Column_t1357940583 * __this, const RuntimeMethod* method);
+// System.String SQLite4Unity3d.TableMapping/Column::get_PropertyName()
+extern "C" IL2CPP_METHOD_ATTR String_t* Column_get_PropertyName_m4271576104 (Column_t1357940583 * __this, const RuntimeMethod* method);
+// System.Reflection.PropertyInfo System.Type::GetProperty(System.String)
+extern "C" IL2CPP_METHOD_ATTR PropertyInfo_t * Type_GetProperty_m3414567179 (Type_t * __this, String_t* p0, const RuntimeMethod* method);
+// System.Guid System.Guid::NewGuid()
+extern "C" IL2CPP_METHOD_ATTR Guid_t  Guid_NewGuid_m923091018 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
+// SQLite4Unity3d.TableMapping/Column[] SQLite4Unity3d.TableMapping::get_InsertOrReplaceColumns()
+extern "C" IL2CPP_METHOD_ATTR ColumnU5BU5D_t4060676894* TableMapping_get_InsertOrReplaceColumns_m298127152 (TableMapping_t2276399492 * __this, const RuntimeMethod* method);
+// SQLite4Unity3d.TableMapping/Column[] SQLite4Unity3d.TableMapping::get_InsertColumns()
+extern "C" IL2CPP_METHOD_ATTR ColumnU5BU5D_t4060676894* TableMapping_get_InsertColumns_m899458969 (TableMapping_t2276399492 * __this, const RuntimeMethod* method);
+// SQLite4Unity3d.PreparedSqlLiteInsertCommand SQLite4Unity3d.TableMapping::GetInsertCommand(SQLite4Unity3d.SQLiteConnection,System.String)
+extern "C" IL2CPP_METHOD_ATTR PreparedSqlLiteInsertCommand_t994658783 * TableMapping_GetInsertCommand_m2933871919 (TableMapping_t2276399492 * __this, SQLiteConnection_t3070079188 * ___conn0, String_t* ___extra1, const RuntimeMethod* method);
+// System.Int32 SQLite4Unity3d.PreparedSqlLiteInsertCommand::ExecuteNonQuery(System.Object[])
+extern "C" IL2CPP_METHOD_ATTR int32_t PreparedSqlLiteInsertCommand_ExecuteNonQuery_m2787388731 (PreparedSqlLiteInsertCommand_t994658783 * __this, ObjectU5BU5D_t2843939325* ___source0, const RuntimeMethod* method);
+// SQLite4Unity3d.NotNullConstraintViolationException SQLite4Unity3d.NotNullConstraintViolationException::New(SQLite4Unity3d.SQLite3/Result,System.String,SQLite4Unity3d.TableMapping,System.Object)
+extern "C" IL2CPP_METHOD_ATTR NotNullConstraintViolationException_t3886364687 * NotNullConstraintViolationException_New_m2067300247 (RuntimeObject * __this /* static, unused */, int32_t ___r0, String_t* ___message1, TableMapping_t2276399492 * ___mapping2, RuntimeObject * ___obj3, const RuntimeMethod* method);
+// System.Boolean SQLite4Unity3d.TableMapping::get_HasAutoIncPK()
+extern "C" IL2CPP_METHOD_ATTR bool TableMapping_get_HasAutoIncPK_m3789797898 (TableMapping_t2276399492 * __this, const RuntimeMethod* method);
+// System.Int64 SQLite4Unity3d.SQLite3::LastInsertRowid(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR int64_t SQLite3_LastInsertRowid_m192026105 (RuntimeObject * __this /* static, unused */, intptr_t ___db0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.TableMapping::SetAutoIncPK(System.Object,System.Int64)
+extern "C" IL2CPP_METHOD_ATTR void TableMapping_SetAutoIncPK_m2643841799 (TableMapping_t2276399492 * __this, RuntimeObject * ___obj0, int64_t ___id1, const RuntimeMethod* method);
+// System.Int32 SQLite4Unity3d.SQLiteConnection::Update(System.Object,System.Type)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_Update_m3158265721 (SQLiteConnection_t3070079188 * __this, RuntimeObject * ___obj0, Type_t * ___objType1, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteConnection/<Update>c__AnonStorey3::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void U3CUpdateU3Ec__AnonStorey3__ctor_m4095385256 (U3CUpdateU3Ec__AnonStorey3_t445741020 * __this, const RuntimeMethod* method);
+// System.Void System.Func`2<SQLite4Unity3d.TableMapping/Column,System.Object>::.ctor(System.Object,System.IntPtr)
+inline void Func_2__ctor_m2503113929 (Func_2_t3663867943 * __this, RuntimeObject * p0, intptr_t p1, const RuntimeMethod* method)
+{
+	((  void (*) (Func_2_t3663867943 *, RuntimeObject *, intptr_t, const RuntimeMethod*))Func_2__ctor_m348566106_gshared)(__this, p0, p1, method);
+}
+// System.Collections.Generic.IEnumerable`1<!!1> System.Linq.Enumerable::Select<SQLite4Unity3d.TableMapping/Column,System.Object>(System.Collections.Generic.IEnumerable`1<!!0>,System.Func`2<!!0,!!1>)
+inline RuntimeObject* Enumerable_Select_TisColumn_t1357940583_TisRuntimeObject_m4152888076 (RuntimeObject * __this /* static, unused */, RuntimeObject* p0, Func_2_t3663867943 * p1, const RuntimeMethod* method)
+{
+	return ((  RuntimeObject* (*) (RuntimeObject * /* static, unused */, RuntimeObject*, Func_2_t3663867943 *, const RuntimeMethod*))Enumerable_Select_TisRuntimeObject_TisRuntimeObject_m952846165_gshared)(__this /* static, unused */, p0, p1, method);
+}
+// System.Void System.Collections.Generic.List`1<System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<!0>)
+inline void List_1__ctor_m1328752868 (List_1_t257213610 * __this, RuntimeObject* p0, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t257213610 *, RuntimeObject*, const RuntimeMethod*))List_1__ctor_m1328752868_gshared)(__this, p0, method);
+}
+// System.Void System.Collections.Generic.List`1<System.Object>::Add(!0)
+inline void List_1_Add_m3338814081 (List_1_t257213610 * __this, RuntimeObject * p0, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t257213610 *, RuntimeObject *, const RuntimeMethod*))List_1_Add_m3338814081_gshared)(__this, p0, method);
+}
+// System.String System.String::Format(System.String,System.Object,System.Object,System.Object)
+extern "C" IL2CPP_METHOD_ATTR String_t* String_Format_m3339413201 (RuntimeObject * __this /* static, unused */, String_t* p0, RuntimeObject * p1, RuntimeObject * p2, RuntimeObject * p3, const RuntimeMethod* method);
+// !0[] System.Collections.Generic.List`1<System.Object>::ToArray()
+inline ObjectU5BU5D_t2843939325* List_1_ToArray_m4168020446 (List_1_t257213610 * __this, const RuntimeMethod* method)
+{
+	return ((  ObjectU5BU5D_t2843939325* (*) (List_1_t257213610 *, const RuntimeMethod*))List_1_ToArray_m4168020446_gshared)(__this, method);
+}
+// SQLite4Unity3d.NotNullConstraintViolationException SQLite4Unity3d.NotNullConstraintViolationException::New(SQLite4Unity3d.SQLiteException,SQLite4Unity3d.TableMapping,System.Object)
+extern "C" IL2CPP_METHOD_ATTR NotNullConstraintViolationException_t3886364687 * NotNullConstraintViolationException_New_m4007323012 (RuntimeObject * __this /* static, unused */, SQLiteException_t1356363765 * ___exception0, TableMapping_t2276399492 * ___mapping1, RuntimeObject * ___obj2, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteConnection/<UpdateAll>c__AnonStorey4::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void U3CUpdateAllU3Ec__AnonStorey4__ctor_m240844993 (U3CUpdateAllU3Ec__AnonStorey4_t1584503381 * __this, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteConnection::Close()
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_Close_m877720971 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method);
+// System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<!0,!1> System.Collections.Generic.Dictionary`2/ValueCollection<System.String,SQLite4Unity3d.TableMapping>::GetEnumerator()
+inline Enumerator_t2630549448  ValueCollection_GetEnumerator_m2694154459 (ValueCollection_t3777700109 * __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_t2630549448  (*) (ValueCollection_t3777700109 *, const RuntimeMethod*))ValueCollection_GetEnumerator_m3808619909_gshared)(__this, method);
+}
+// !1 System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.String,SQLite4Unity3d.TableMapping>::get_Current()
+inline TableMapping_t2276399492 * Enumerator_get_Current_m361211096 (Enumerator_t2630549448 * __this, const RuntimeMethod* method)
+{
+	return ((  TableMapping_t2276399492 * (*) (Enumerator_t2630549448 *, const RuntimeMethod*))Enumerator_get_Current_m2014973879_gshared)(__this, method);
+}
+// System.Void SQLite4Unity3d.TableMapping::Dispose()
+extern "C" IL2CPP_METHOD_ATTR void TableMapping_Dispose_m3451646384 (TableMapping_t2276399492 * __this, const RuntimeMethod* method);
+// System.Boolean System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.String,SQLite4Unity3d.TableMapping>::MoveNext()
+inline bool Enumerator_MoveNext_m132011260 (Enumerator_t2630549448 * __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_t2630549448 *, const RuntimeMethod*))Enumerator_MoveNext_m181298207_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.String,SQLite4Unity3d.TableMapping>::Dispose()
+inline void Enumerator_Dispose_m4215768123 (Enumerator_t2630549448 * __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_t2630549448 *, const RuntimeMethod*))Enumerator_Dispose_m1051275336_gshared)(__this, method);
+}
+// SQLite4Unity3d.SQLite3/Result SQLite4Unity3d.SQLite3::Close(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_Close_m3192934511 (RuntimeObject * __this /* static, unused */, intptr_t ___db0, const RuntimeMethod* method);
+// System.Int32 SQLite4Unity3d.SQLiteConnection::Insert(System.Object)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_Insert_m2879703407 (SQLiteConnection_t3070079188 * __this, RuntimeObject * ___obj0, const RuntimeMethod* method);
+// System.Int32 SQLite4Unity3d.SQLiteConnection::Insert(System.Object,System.String)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_Insert_m317916960 (SQLiteConnection_t3070079188 * __this, RuntimeObject * ___obj0, String_t* ___extra1, const RuntimeMethod* method);
+// System.Int32 SQLite4Unity3d.SQLiteConnection::Insert(System.Object,System.Type)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_Insert_m3887320025 (SQLiteConnection_t3070079188 * __this, RuntimeObject * ___obj0, Type_t * ___objType1, const RuntimeMethod* method);
+// System.Int32 SQLite4Unity3d.SQLiteConnection::Update(System.Object)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_Update_m766617629 (SQLiteConnection_t3070079188 * __this, RuntimeObject * ___obj0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteConnectionString::set_ConnectionString(System.String)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnectionString_set_ConnectionString_m803767572 (SQLiteConnectionString_t3632030467 * __this, String_t* ___value0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteConnectionString::set_StoreDateTimeAsTicks(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnectionString_set_StoreDateTimeAsTicks_m3525391643 (SQLiteConnectionString_t3632030467 * __this, bool ___value0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteConnectionString::set_DatabasePath(System.String)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnectionString_set_DatabasePath_m496957376 (SQLiteConnectionString_t3632030467 * __this, String_t* ___value0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.SQLiteException::set_Result(SQLite4Unity3d.SQLite3/Result)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteException_set_Result_m2403511823 (SQLiteException_t1356363765 * __this, int32_t ___value0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.TableAttribute::set_Name(System.String)
+extern "C" IL2CPP_METHOD_ATTR void TableAttribute_set_Name_m2607600070 (TableAttribute_t3728577771 * __this, String_t* ___value0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.TableMapping::set_MappedType(System.Type)
+extern "C" IL2CPP_METHOD_ATTR void TableMapping_set_MappedType_m3778817337 (TableMapping_t2276399492 * __this, Type_t * ___value0, const RuntimeMethod* method);
+// System.String SQLite4Unity3d.TableAttribute::get_Name()
+extern "C" IL2CPP_METHOD_ATTR String_t* TableAttribute_get_Name_m2385249559 (TableAttribute_t3728577771 * __this, const RuntimeMethod* method);
+// System.Type SQLite4Unity3d.TableMapping::get_MappedType()
+extern "C" IL2CPP_METHOD_ATTR Type_t * TableMapping_get_MappedType_m562585678 (TableMapping_t2276399492 * __this, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.TableMapping::set_TableName(System.String)
+extern "C" IL2CPP_METHOD_ATTR void TableMapping_set_TableName_m3725161048 (TableMapping_t2276399492 * __this, String_t* ___value0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.TableMapping/Column::.ctor(System.Reflection.PropertyInfo,SQLite4Unity3d.CreateFlags)
+extern "C" IL2CPP_METHOD_ATTR void Column__ctor_m4159236335 (Column_t1357940583 * __this, PropertyInfo_t * ___prop0, int32_t ___createFlags1, const RuntimeMethod* method);
+// !0[] System.Collections.Generic.List`1<SQLite4Unity3d.TableMapping/Column>::ToArray()
+inline ColumnU5BU5D_t4060676894* List_1_ToArray_m318908896 (List_1_t2830015325 * __this, const RuntimeMethod* method)
+{
+	return ((  ColumnU5BU5D_t4060676894* (*) (List_1_t2830015325 *, const RuntimeMethod*))List_1_ToArray_m4168020446_gshared)(__this, method);
+}
+// System.Void SQLite4Unity3d.TableMapping::set_Columns(SQLite4Unity3d.TableMapping/Column[])
+extern "C" IL2CPP_METHOD_ATTR void TableMapping_set_Columns_m1361145771 (TableMapping_t2276399492 * __this, ColumnU5BU5D_t4060676894* ___value0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.TableMapping::set_PK(SQLite4Unity3d.TableMapping/Column)
+extern "C" IL2CPP_METHOD_ATTR void TableMapping_set_PK_m3417890792 (TableMapping_t2276399492 * __this, Column_t1357940583 * ___value0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.TableMapping::set_HasAutoIncPK(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void TableMapping_set_HasAutoIncPK_m1448455158 (TableMapping_t2276399492 * __this, bool ___value0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.TableMapping::set_GetByPrimaryKeySql(System.String)
+extern "C" IL2CPP_METHOD_ATTR void TableMapping_set_GetByPrimaryKeySql_m1429920147 (TableMapping_t2276399492 * __this, String_t* ___value0, const RuntimeMethod* method);
+// System.Object System.Convert::ChangeType(System.Object,System.Type,System.IFormatProvider)
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Convert_ChangeType_m827193029 (RuntimeObject * __this /* static, unused */, RuntimeObject * p0, Type_t * p1, RuntimeObject* p2, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.TableMapping/Column::SetValue(System.Object,System.Object)
+extern "C" IL2CPP_METHOD_ATTR void Column_SetValue_m789064993 (Column_t1357940583 * __this, RuntimeObject * ___obj0, RuntimeObject * ___val1, const RuntimeMethod* method);
+// !!0[] System.Linq.Enumerable::ToArray<SQLite4Unity3d.TableMapping/Column>(System.Collections.Generic.IEnumerable`1<!!0>)
+inline ColumnU5BU5D_t4060676894* Enumerable_ToArray_TisColumn_t1357940583_m3879603138 (RuntimeObject * __this /* static, unused */, RuntimeObject* p0, const RuntimeMethod* method)
+{
+	return ((  ColumnU5BU5D_t4060676894* (*) (RuntimeObject * /* static, unused */, RuntimeObject*, const RuntimeMethod*))Enumerable_ToArray_TisRuntimeObject_m698722831_gshared)(__this /* static, unused */, p0, method);
+}
+// System.Void SQLite4Unity3d.TableMapping/<FindColumnWithPropertyName>c__AnonStorey0::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void U3CFindColumnWithPropertyNameU3Ec__AnonStorey0__ctor_m1797408499 (U3CFindColumnWithPropertyNameU3Ec__AnonStorey0_t3952487827 * __this, const RuntimeMethod* method);
+// !!0 System.Linq.Enumerable::FirstOrDefault<SQLite4Unity3d.TableMapping/Column>(System.Collections.Generic.IEnumerable`1<!!0>,System.Func`2<!!0,System.Boolean>)
+inline Column_t1357940583 * Enumerable_FirstOrDefault_TisColumn_t1357940583_m1244305018 (RuntimeObject * __this /* static, unused */, RuntimeObject* p0, Func_2_t681049744 * p1, const RuntimeMethod* method)
+{
+	return ((  Column_t1357940583 * (*) (RuntimeObject * /* static, unused */, RuntimeObject*, Func_2_t681049744 *, const RuntimeMethod*))Enumerable_FirstOrDefault_TisRuntimeObject_m2704383259_gshared)(__this /* static, unused */, p0, p1, method);
+}
+// System.Void SQLite4Unity3d.TableMapping/<FindColumn>c__AnonStorey1::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void U3CFindColumnU3Ec__AnonStorey1__ctor_m4279429018 (U3CFindColumnU3Ec__AnonStorey1_t4099938701 * __this, const RuntimeMethod* method);
+// SQLite4Unity3d.PreparedSqlLiteInsertCommand SQLite4Unity3d.TableMapping::CreateInsertCommand(SQLite4Unity3d.SQLiteConnection,System.String)
+extern "C" IL2CPP_METHOD_ATTR PreparedSqlLiteInsertCommand_t994658783 * TableMapping_CreateInsertCommand_m3040181227 (TableMapping_t2276399492 * __this, SQLiteConnection_t3070079188 * ___conn0, String_t* ___extra1, const RuntimeMethod* method);
+// System.Boolean System.String::op_Inequality(System.String,System.String)
+extern "C" IL2CPP_METHOD_ATTR bool String_op_Inequality_m215368492 (RuntimeObject * __this /* static, unused */, String_t* p0, String_t* p1, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.PreparedSqlLiteInsertCommand::Dispose()
+extern "C" IL2CPP_METHOD_ATTR void PreparedSqlLiteInsertCommand_Dispose_m3430535342 (PreparedSqlLiteInsertCommand_t994658783 * __this, const RuntimeMethod* method);
+// System.Boolean System.Linq.Enumerable::Any<SQLite4Unity3d.TableMapping/Column>(System.Collections.Generic.IEnumerable`1<!!0>)
+inline bool Enumerable_Any_TisColumn_t1357940583_m3531908650 (RuntimeObject * __this /* static, unused */, RuntimeObject* p0, const RuntimeMethod* method)
+{
+	return ((  bool (*) (RuntimeObject * /* static, unused */, RuntimeObject*, const RuntimeMethod*))Enumerable_Any_TisRuntimeObject_m3173759778_gshared)(__this /* static, unused */, p0, method);
+}
+// System.Int32 System.Linq.Enumerable::Count<SQLite4Unity3d.TableMapping/Column>(System.Collections.Generic.IEnumerable`1<!!0>)
+inline int32_t Enumerable_Count_TisColumn_t1357940583_m1970071452 (RuntimeObject * __this /* static, unused */, RuntimeObject* p0, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (RuntimeObject * /* static, unused */, RuntimeObject*, const RuntimeMethod*))Enumerable_Count_TisRuntimeObject_m119961155_gshared)(__this /* static, unused */, p0, method);
+}
+// System.Void SQLite4Unity3d.PreparedSqlLiteInsertCommand::.ctor(SQLite4Unity3d.SQLiteConnection)
+extern "C" IL2CPP_METHOD_ATTR void PreparedSqlLiteInsertCommand__ctor_m2520792582 (PreparedSqlLiteInsertCommand_t994658783 * __this, SQLiteConnection_t3070079188 * ___conn0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.PreparedSqlLiteInsertCommand::set_CommandText(System.String)
+extern "C" IL2CPP_METHOD_ATTR void PreparedSqlLiteInsertCommand_set_CommandText_m1234740154 (PreparedSqlLiteInsertCommand_t994658783 * __this, String_t* ___value0, const RuntimeMethod* method);
+// System.String SQLite4Unity3d.ColumnAttribute::get_Name()
+extern "C" IL2CPP_METHOD_ATTR String_t* ColumnAttribute_get_Name_m1252734108 (ColumnAttribute_t3583764011 * __this, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.TableMapping/Column::set_Name(System.String)
+extern "C" IL2CPP_METHOD_ATTR void Column_set_Name_m3544316257 (Column_t1357940583 * __this, String_t* ___value0, const RuntimeMethod* method);
+// System.Type System.Nullable::GetUnderlyingType(System.Type)
+extern "C" IL2CPP_METHOD_ATTR Type_t * Nullable_GetUnderlyingType_m3905033790 (RuntimeObject * __this /* static, unused */, Type_t * p0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.TableMapping/Column::set_ColumnType(System.Type)
+extern "C" IL2CPP_METHOD_ATTR void Column_set_ColumnType_m3888550940 (Column_t1357940583 * __this, Type_t * ___value0, const RuntimeMethod* method);
+// System.String SQLite4Unity3d.Orm::Collation(System.Reflection.MemberInfo)
+extern "C" IL2CPP_METHOD_ATTR String_t* Orm_Collation_m2000210213 (RuntimeObject * __this /* static, unused */, MemberInfo_t * ___p0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.TableMapping/Column::set_Collation(System.String)
+extern "C" IL2CPP_METHOD_ATTR void Column_set_Collation_m3153081185 (Column_t1357940583 * __this, String_t* ___value0, const RuntimeMethod* method);
+// System.Boolean SQLite4Unity3d.Orm::IsPK(System.Reflection.MemberInfo)
+extern "C" IL2CPP_METHOD_ATTR bool Orm_IsPK_m1915115011 (RuntimeObject * __this /* static, unused */, MemberInfo_t * ___p0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.TableMapping/Column::set_IsPK(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void Column_set_IsPK_m4119222481 (Column_t1357940583 * __this, bool ___value0, const RuntimeMethod* method);
+// System.Boolean SQLite4Unity3d.Orm::IsAutoInc(System.Reflection.MemberInfo)
+extern "C" IL2CPP_METHOD_ATTR bool Orm_IsAutoInc_m1378547954 (RuntimeObject * __this /* static, unused */, MemberInfo_t * ___p0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.TableMapping/Column::set_IsAutoGuid(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void Column_set_IsAutoGuid_m3143679467 (Column_t1357940583 * __this, bool ___value0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.TableMapping/Column::set_IsAutoInc(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void Column_set_IsAutoInc_m2623478080 (Column_t1357940583 * __this, bool ___value0, const RuntimeMethod* method);
+// System.Collections.Generic.IEnumerable`1<SQLite4Unity3d.IndexedAttribute> SQLite4Unity3d.Orm::GetIndices(System.Reflection.MemberInfo)
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject* Orm_GetIndices_m2972767871 (RuntimeObject * __this /* static, unused */, MemberInfo_t * ___p0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.TableMapping/Column::set_Indices(System.Collections.Generic.IEnumerable`1<SQLite4Unity3d.IndexedAttribute>)
+extern "C" IL2CPP_METHOD_ATTR void Column_set_Indices_m1885054196 (Column_t1357940583 * __this, RuntimeObject* ___value0, const RuntimeMethod* method);
+// System.Boolean System.Linq.Enumerable::Any<SQLite4Unity3d.IndexedAttribute>(System.Collections.Generic.IEnumerable`1<!!0>)
+inline bool Enumerable_Any_TisIndexedAttribute_t384353508_m3570228897 (RuntimeObject * __this /* static, unused */, RuntimeObject* p0, const RuntimeMethod* method)
+{
+	return ((  bool (*) (RuntimeObject * /* static, unused */, RuntimeObject*, const RuntimeMethod*))Enumerable_Any_TisRuntimeObject_m3173759778_gshared)(__this /* static, unused */, p0, method);
+}
+// System.Boolean System.String::EndsWith(System.String,System.StringComparison)
+extern "C" IL2CPP_METHOD_ATTR bool String_EndsWith_m2637493491 (String_t* __this, String_t* p0, int32_t p1, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.IndexedAttribute::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void IndexedAttribute__ctor_m1705656832 (IndexedAttribute_t384353508 * __this, const RuntimeMethod* method);
+// System.Boolean SQLite4Unity3d.Orm::IsMarkedNotNull(System.Reflection.MemberInfo)
+extern "C" IL2CPP_METHOD_ATTR bool Orm_IsMarkedNotNull_m3213728455 (RuntimeObject * __this /* static, unused */, MemberInfo_t * ___p0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.TableMapping/Column::set_IsNullable(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void Column_set_IsNullable_m3568119008 (Column_t1357940583 * __this, bool ___value0, const RuntimeMethod* method);
+// System.Nullable`1<System.Int32> SQLite4Unity3d.Orm::MaxStringLength(System.Reflection.PropertyInfo)
+extern "C" IL2CPP_METHOD_ATTR Nullable_1_t378540539  Orm_MaxStringLength_m1394593579 (RuntimeObject * __this /* static, unused */, PropertyInfo_t * ___p0, const RuntimeMethod* method);
+// System.Void SQLite4Unity3d.TableMapping/Column::set_MaxStringLength(System.Nullable`1<System.Int32>)
+extern "C" IL2CPP_METHOD_ATTR void Column_set_MaxStringLength_m3353773535 (Column_t1357940583 * __this, Nullable_1_t378540539  ___value0, const RuntimeMethod* method);
 // !!0 UnityEngine.GameObject::GetComponent<packt.FoodyGO.Controllers.MonsterController>()
 inline MonsterController_t3352166224 * GameObject_GetComponent_TisMonsterController_t3352166224_m2622647100 (GameObject_t1113636619 * __this, const RuntimeMethod* method)
 {
 	return ((  MonsterController_t3352166224 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m2049753423_gshared)(__this, method);
 }
-// System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)
-extern "C" IL2CPP_METHOD_ATTR bool Object_op_Inequality_m4071470834 (RuntimeObject * __this /* static, unused */, Object_t631007953 * p0, Object_t631007953 * p1, const RuntimeMethod* method);
 // System.Void UnityEngine.MonoBehaviour::print(System.Object)
 extern "C" IL2CPP_METHOD_ATTR void MonoBehaviour_print_m330341231 (RuntimeObject * __this /* static, unused */, RuntimeObject * p0, const RuntimeMethod* method);
 // UnityEngine.Vector3 UnityEngine.Collision::get_relativeVelocity()
@@ -14956,6 +21523,14 @@ inline Animation_t3648466861 * Component_GetComponent_TisAnimation_t3648466861_m
 extern "C" IL2CPP_METHOD_ATTR AnimationState_t1108360407 * Animation_get_Item_m2435218778 (Animation_t3648466861 * __this, String_t* p0, const RuntimeMethod* method);
 // System.Void UnityEngine.AnimationState::set_speed(System.Single)
 extern "C" IL2CPP_METHOD_ATTR void AnimationState_set_speed_m2787468711 (AnimationState_t1108360407 * __this, float p0, const RuntimeMethod* method);
+// System.String packt.FoodyGO.Database.Monster::get_Name()
+extern "C" IL2CPP_METHOD_ATTR String_t* Monster_get_Name_m1651679322 (Monster_t1773341114 * __this, const RuntimeMethod* method);
+// System.Int32 packt.FoodyGO.Database.Monster::get_Level()
+extern "C" IL2CPP_METHOD_ATTR int32_t Monster_get_Level_m793340504 (Monster_t1773341114 * __this, const RuntimeMethod* method);
+// System.Int32 packt.FoodyGO.Database.Monster::get_Power()
+extern "C" IL2CPP_METHOD_ATTR int32_t Monster_get_Power_m2475516986 (Monster_t1773341114 * __this, const RuntimeMethod* method);
+// System.String packt.FoodyGO.Database.Monster::get_Skills()
+extern "C" IL2CPP_METHOD_ATTR String_t* Monster_get_Skills_m1288394513 (Monster_t1773341114 * __this, const RuntimeMethod* method);
 // System.Void packt.FoodyGO.Managers.Singleton`1<packt.FoodyGO.Managers.GameManager>::.ctor()
 inline void Singleton_1__ctor_m3023341728 (Singleton_1_t2869849822 * __this, const RuntimeMethod* method)
 {
@@ -15018,8 +21593,6 @@ extern "C" IL2CPP_METHOD_ATTR LocationService_t2839639379 * Input_get_location_m
 extern "C" IL2CPP_METHOD_ATTR bool LocationService_get_isEnabledByUser_m3325769302 (LocationService_t2839639379 * __this, const RuntimeMethod* method);
 // UnityEngine.LocationServiceStatus UnityEngine.LocationService::get_status()
 extern "C" IL2CPP_METHOD_ATTR int32_t LocationService_get_status_m1450164038 (LocationService_t2839639379 * __this, const RuntimeMethod* method);
-// System.String System.String::Format(System.String,System.Object,System.Object,System.Object)
-extern "C" IL2CPP_METHOD_ATTR String_t* String_Format_m3339413201 (RuntimeObject * __this /* static, unused */, String_t* p0, RuntimeObject * p1, RuntimeObject * p2, RuntimeObject * p3, const RuntimeMethod* method);
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.Renderer>()
 inline Renderer_t2627027031 * Component_GetComponent_TisRenderer_t2627027031_m2651633905 (Component_t1923634451 * __this, const RuntimeMethod* method)
 {
@@ -15074,7 +21647,7 @@ extern "C" IL2CPP_METHOD_ATTR Quaternion_t2301928331  Quaternion_FromToRotation_
 // UnityEngine.Vector3 UnityEngine.ContactPoint::get_point()
 extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  ContactPoint_get_point_m1734743878 (ContactPoint_t3758755253 * __this, const RuntimeMethod* method);
 // !!0 UnityEngine.Object::Instantiate<UnityEngine.Transform>(!!0,UnityEngine.Vector3,UnityEngine.Quaternion)
-inline Transform_t3600365921 * Object_Instantiate_TisTransform_t3600365921_m1831857851 (RuntimeObject * __this /* static, unused */, Transform_t3600365921 * p0, Vector3_t3722313464  p1, Quaternion_t2301928331  p2, const RuntimeMethod* method)
+inline Transform_t3600365921 * Object_Instantiate_TisTransform_t3600365921_m3253087558 (RuntimeObject * __this /* static, unused */, Transform_t3600365921 * p0, Vector3_t3722313464  p1, Quaternion_t2301928331  p2, const RuntimeMethod* method)
 {
 	return ((  Transform_t3600365921 * (*) (RuntimeObject * /* static, unused */, Transform_t3600365921 *, Vector3_t3722313464 , Quaternion_t2301928331 , const RuntimeMethod*))Object_Instantiate_TisRuntimeObject_m3141366230_gshared)(__this /* static, unused */, p0, p1, p2, method);
 }
@@ -15125,36 +21698,134 @@ extern "C" IL2CPP_METHOD_ATTR void LocationService_Stop_m2430709999 (LocationSer
 extern "C" IL2CPP_METHOD_ATTR void LocationService_Start_m970336927 (LocationService_t2839639379 * __this, float p0, float p1, const RuntimeMethod* method);
 // System.Double packt.FoodyGo.Utils.Epoch::get_Now()
 extern "C" IL2CPP_METHOD_ATTR double Epoch_get_Now_m1854578769 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
+// System.Void packt.FoodyGO.Managers.Singleton`1<packt.FoodyGO.Services.InventoryService>::.ctor()
+inline void Singleton_1__ctor_m177044237 (Singleton_1_t3508042481 * __this, const RuntimeMethod* method)
+{
+	((  void (*) (Singleton_1_t3508042481 *, const RuntimeMethod*))Singleton_1__ctor_m4238515172_gshared)(__this, method);
+}
+// System.String UnityEngine.Application::get_persistentDataPath()
+extern "C" IL2CPP_METHOD_ATTR String_t* Application_get_persistentDataPath_m1428108154 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
+// System.String UnityEngine.Application::get_dataPath()
+extern "C" IL2CPP_METHOD_ATTR String_t* Application_get_dataPath_m4232621142 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
+// System.Void System.IO.File::Copy(System.String,System.String)
+extern "C" IL2CPP_METHOD_ATTR void File_Copy_m497281780 (RuntimeObject * __this /* static, unused */, String_t* p0, String_t* p1, const RuntimeMethod* method);
+// System.Void packt.FoodyGO.Services.InventoryService::CreateDB()
+extern "C" IL2CPP_METHOD_ATTR void InventoryService_CreateDB_m2324099992 (InventoryService_t3990436451 * __this, const RuntimeMethod* method);
+// System.Void packt.FoodyGO.Services.InventoryService::CheckForUpgrade()
+extern "C" IL2CPP_METHOD_ATTR void InventoryService_CheckForUpgrade_m2488230913 (InventoryService_t3990436451 * __this, const RuntimeMethod* method);
+// System.String packt.FoodyGO.Services.InventoryService::GetDatabaseVersion()
+extern "C" IL2CPP_METHOD_ATTR String_t* InventoryService_GetDatabaseVersion_m3845499507 (InventoryService_t3990436451 * __this, const RuntimeMethod* method);
+// System.Boolean packt.FoodyGO.Services.InventoryService::CheckDBVersion(System.String)
+extern "C" IL2CPP_METHOD_ATTR bool InventoryService_CheckDBVersion_m3986741618 (InventoryService_t3990436451 * __this, String_t* ___version0, const RuntimeMethod* method);
+// System.Void UnityEngine.Debug::LogFormat(System.String,System.Object[])
+extern "C" IL2CPP_METHOD_ATTR void Debug_LogFormat_m309087137 (RuntimeObject * __this /* static, unused */, String_t* p0, ObjectU5BU5D_t2843939325* p1, const RuntimeMethod* method);
+// System.Void packt.FoodyGO.Services.InventoryService::UpgradeDB()
+extern "C" IL2CPP_METHOD_ATTR void InventoryService_UpgradeDB_m245382953 (InventoryService_t3990436451 * __this, const RuntimeMethod* method);
+// System.Void System.ApplicationException::.ctor(System.String)
+extern "C" IL2CPP_METHOD_ATTR void ApplicationException__ctor_m2517758450 (ApplicationException_t2339761290 * __this, String_t* p0, const RuntimeMethod* method);
+// System.Int32 System.Collections.Generic.List`1<SQLite4Unity3d.SQLiteConnection/ColumnInfo>::get_Count()
+inline int32_t List_1_get_Count_m4098183465 (List_1_t4032208569 * __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_t4032208569 *, const RuntimeMethod*))List_1_get_Count_m2934127733_gshared)(__this, method);
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::DropTable<packt.FoodyGO.Database.Monster>()
+inline int32_t SQLiteConnection_DropTable_TisMonster_t1773341114_m814443095 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (SQLiteConnection_t3070079188 *, const RuntimeMethod*))SQLiteConnection_DropTable_TisRuntimeObject_m2815964847_gshared)(__this, method);
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::CreateTable<packt.FoodyGO.Database.Monster>(SQLite4Unity3d.CreateFlags)
+inline int32_t SQLiteConnection_CreateTable_TisMonster_t1773341114_m1425502898 (SQLiteConnection_t3070079188 * __this, int32_t ___createFlags0, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (SQLiteConnection_t3070079188 *, int32_t, const RuntimeMethod*))SQLiteConnection_CreateTable_TisRuntimeObject_m3576344292_gshared)(__this, ___createFlags0, method);
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::DropTable<packt.FoodyGO.Database.DatabaseVersion>()
+inline int32_t SQLiteConnection_DropTable_TisDatabaseVersion_t3084738200_m2303863307 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (SQLiteConnection_t3070079188 *, const RuntimeMethod*))SQLiteConnection_DropTable_TisRuntimeObject_m2815964847_gshared)(__this, method);
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::CreateTable<packt.FoodyGO.Database.DatabaseVersion>(SQLite4Unity3d.CreateFlags)
+inline int32_t SQLiteConnection_CreateTable_TisDatabaseVersion_t3084738200_m1245700543 (SQLiteConnection_t3070079188 * __this, int32_t ___createFlags0, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (SQLiteConnection_t3070079188 *, int32_t, const RuntimeMethod*))SQLiteConnection_CreateTable_TisRuntimeObject_m3576344292_gshared)(__this, ___createFlags0, method);
+}
+// System.Void packt.FoodyGO.Database.DatabaseVersion::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void DatabaseVersion__ctor_m3835686796 (DatabaseVersion_t3084738200 * __this, const RuntimeMethod* method);
+// System.Void packt.FoodyGO.Database.DatabaseVersion::set_Version(System.String)
+extern "C" IL2CPP_METHOD_ATTR void DatabaseVersion_set_Version_m3782741465 (DatabaseVersion_t3084738200 * __this, String_t* ___value0, const RuntimeMethod* method);
+// SQLite4Unity3d.TableQuery`1<T> SQLite4Unity3d.SQLiteConnection::Table<packt.FoodyGO.Database.Monster>()
+inline TableQuery_1_t298633438 * SQLiteConnection_Table_TisMonster_t1773341114_m1106896334 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method)
+{
+	return ((  TableQuery_1_t298633438 * (*) (SQLiteConnection_t3070079188 *, const RuntimeMethod*))SQLiteConnection_Table_TisRuntimeObject_m1945612407_gshared)(__this, method);
+}
 // System.Void System.Collections.Generic.List`1<packt.FoodyGO.Database.Monster>::.ctor()
 inline void List_1__ctor_m2739036410 (List_1_t3245415856 * __this, const RuntimeMethod* method)
 {
 	((  void (*) (List_1_t3245415856 *, const RuntimeMethod*))List_1__ctor_m2321703786_gshared)(__this, method);
 }
+// System.Collections.Generic.IEnumerator`1<T> SQLite4Unity3d.TableQuery`1<packt.FoodyGO.Database.Monster>::GetEnumerator()
+inline RuntimeObject* TableQuery_1_GetEnumerator_m3445400550 (TableQuery_1_t298633438 * __this, const RuntimeMethod* method)
+{
+	return ((  RuntimeObject* (*) (TableQuery_1_t298633438 *, const RuntimeMethod*))TableQuery_1_GetEnumerator_m1933813595_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.List`1<packt.FoodyGO.Database.Monster>::Add(!0)
+inline void List_1_Add_m548652276 (List_1_t3245415856 * __this, Monster_t1773341114 * p0, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t3245415856 *, Monster_t1773341114 *, const RuntimeMethod*))List_1_Add_m3338814081_gshared)(__this, p0, method);
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::InsertAll(System.Collections.IEnumerable)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_InsertAll_m3331045845 (SQLiteConnection_t3070079188 * __this, RuntimeObject* ___objects0, const RuntimeMethod* method);
+// SQLite4Unity3d.TableQuery`1<T> SQLite4Unity3d.SQLiteConnection::Table<packt.FoodyGO.Database.DatabaseVersion>()
+inline TableQuery_1_t1610030524 * SQLiteConnection_Table_TisDatabaseVersion_t3084738200_m3988505200 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method)
+{
+	return ((  TableQuery_1_t1610030524 * (*) (SQLiteConnection_t3070079188 *, const RuntimeMethod*))SQLiteConnection_Table_TisRuntimeObject_m1945612407_gshared)(__this, method);
+}
+// T SQLite4Unity3d.TableQuery`1<packt.FoodyGO.Database.DatabaseVersion>::FirstOrDefault()
+inline DatabaseVersion_t3084738200 * TableQuery_1_FirstOrDefault_m2673836966 (TableQuery_1_t1610030524 * __this, const RuntimeMethod* method)
+{
+	return ((  DatabaseVersion_t3084738200 * (*) (TableQuery_1_t1610030524 *, const RuntimeMethod*))TableQuery_1_FirstOrDefault_m513296056_gshared)(__this, method);
+}
+// System.String packt.FoodyGO.Database.DatabaseVersion::get_Version()
+extern "C" IL2CPP_METHOD_ATTR String_t* DatabaseVersion_get_Version_m2461075180 (DatabaseVersion_t3084738200 * __this, const RuntimeMethod* method);
+// System.Void packt.FoodyGO.Database.Monster::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void Monster__ctor_m3815700999 (Monster_t1773341114 * __this, const RuntimeMethod* method);
+// System.Void packt.FoodyGO.Database.Monster::set_Name(System.String)
+extern "C" IL2CPP_METHOD_ATTR void Monster_set_Name_m288663463 (Monster_t1773341114 * __this, String_t* ___value0, const RuntimeMethod* method);
+// System.Void packt.FoodyGO.Database.Monster::set_Level(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void Monster_set_Level_m3399875111 (Monster_t1773341114 * __this, int32_t ___value0, const RuntimeMethod* method);
+// System.Void packt.FoodyGO.Database.Monster::set_Power(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void Monster_set_Power_m3200394756 (Monster_t1773341114 * __this, int32_t ___value0, const RuntimeMethod* method);
+// System.Void packt.FoodyGO.Database.Monster::set_Skills(System.String)
+extern "C" IL2CPP_METHOD_ATTR void Monster_set_Skills_m3705665767 (Monster_t1773341114 * __this, String_t* ___value0, const RuntimeMethod* method);
+// System.Void System.Collections.Generic.List`1<packt.FoodyGO.Database.MonsterSpawnLocation>::.ctor()
+inline void List_1__ctor_m852104221 (List_1_t1738687162 * __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t1738687162 *, const RuntimeMethod*))List_1__ctor_m2321703786_gshared)(__this, method);
+}
 // System.Collections.IEnumerator packt.FoodyGO.Services.MonsterService::CleanupMonsters()
 extern "C" IL2CPP_METHOD_ATTR RuntimeObject* MonsterService_CleanupMonsters_m384123468 (MonsterService_t815911722 * __this, const RuntimeMethod* method);
-// System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<packt.FoodyGO.Database.Monster>::GetEnumerator()
-inline Enumerator_t839692437  List_1_GetEnumerator_m950486139 (List_1_t3245415856 * __this, const RuntimeMethod* method)
+// System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<packt.FoodyGO.Database.MonsterSpawnLocation>::GetEnumerator()
+inline Enumerator_t3627931039  List_1_GetEnumerator_m2444197496 (List_1_t1738687162 * __this, const RuntimeMethod* method)
 {
-	return ((  Enumerator_t839692437  (*) (List_1_t3245415856 *, const RuntimeMethod*))List_1_GetEnumerator_m2930774921_gshared)(__this, method);
+	return ((  Enumerator_t3627931039  (*) (List_1_t1738687162 *, const RuntimeMethod*))List_1_GetEnumerator_m2930774921_gshared)(__this, method);
 }
-// !0 System.Collections.Generic.List`1/Enumerator<packt.FoodyGO.Database.Monster>::get_Current()
-inline Monster_t1773341114 * Enumerator_get_Current_m2446182823 (Enumerator_t839692437 * __this, const RuntimeMethod* method)
+// !0 System.Collections.Generic.List`1/Enumerator<packt.FoodyGO.Database.MonsterSpawnLocation>::get_Current()
+inline MonsterSpawnLocation_t266612420 * Enumerator_get_Current_m1763690911 (Enumerator_t3627931039 * __this, const RuntimeMethod* method)
 {
-	return ((  Monster_t1773341114 * (*) (Enumerator_t839692437 *, const RuntimeMethod*))Enumerator_get_Current_m470245444_gshared)(__this, method);
+	return ((  MonsterSpawnLocation_t266612420 * (*) (Enumerator_t3627931039 *, const RuntimeMethod*))Enumerator_get_Current_m470245444_gshared)(__this, method);
 }
 // UnityEngine.Vector3 packt.FoodyGO.Services.MonsterService::ConvertToWorldSpace(System.Single,System.Single)
 extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  MonsterService_ConvertToWorldSpace_m2681085689 (MonsterService_t815911722 * __this, float ___longitude0, float ___latitude1, const RuntimeMethod* method);
 // UnityEngine.Transform UnityEngine.GameObject::get_transform()
 extern "C" IL2CPP_METHOD_ATTR Transform_t3600365921 * GameObject_get_transform_m1369836730 (GameObject_t1113636619 * __this, const RuntimeMethod* method);
-// System.Boolean System.Collections.Generic.List`1/Enumerator<packt.FoodyGO.Database.Monster>::MoveNext()
-inline bool Enumerator_MoveNext_m1538013277 (Enumerator_t839692437 * __this, const RuntimeMethod* method)
+// System.Boolean System.Collections.Generic.List`1/Enumerator<packt.FoodyGO.Database.MonsterSpawnLocation>::MoveNext()
+inline bool Enumerator_MoveNext_m3937889501 (Enumerator_t3627931039 * __this, const RuntimeMethod* method)
 {
-	return ((  bool (*) (Enumerator_t839692437 *, const RuntimeMethod*))Enumerator_MoveNext_m2142368520_gshared)(__this, method);
+	return ((  bool (*) (Enumerator_t3627931039 *, const RuntimeMethod*))Enumerator_MoveNext_m2142368520_gshared)(__this, method);
 }
-// System.Void System.Collections.Generic.List`1/Enumerator<packt.FoodyGO.Database.Monster>::Dispose()
-inline void Enumerator_Dispose_m169051511 (Enumerator_t839692437 * __this, const RuntimeMethod* method)
+// System.Void System.Collections.Generic.List`1/Enumerator<packt.FoodyGO.Database.MonsterSpawnLocation>::Dispose()
+inline void Enumerator_Dispose_m865491697 (Enumerator_t3627931039 * __this, const RuntimeMethod* method)
 {
-	((  void (*) (Enumerator_t839692437 *, const RuntimeMethod*))Enumerator_Dispose_m3007748546_gshared)(__this, method);
+	((  void (*) (Enumerator_t3627931039 *, const RuntimeMethod*))Enumerator_Dispose_m3007748546_gshared)(__this, method);
 }
 // System.Void packt.FoodyGO.Services.MonsterService/<CleanupMonsters>c__Iterator0::.ctor()
 extern "C" IL2CPP_METHOD_ATTR void U3CCleanupMonstersU3Ec__Iterator0__ctor_m3693260922 (U3CCleanupMonstersU3Ec__Iterator0_t1226081092 * __this, const RuntimeMethod* method);
@@ -15164,15 +21835,15 @@ extern "C" IL2CPP_METHOD_ATTR void MonsterService_CheckMonsters_m969227813 (Mons
 extern "C" IL2CPP_METHOD_ATTR float Random_get_value_m3115885645 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
 // System.Single UnityEngine.Random::Range(System.Single,System.Single)
 extern "C" IL2CPP_METHOD_ATTR float Random_Range_m2202990745 (RuntimeObject * __this /* static, unused */, float p0, float p1, const RuntimeMethod* method);
-// System.Void packt.FoodyGO.Database.Monster::.ctor()
-extern "C" IL2CPP_METHOD_ATTR void Monster__ctor_m3815700999 (Monster_t1773341114 * __this, const RuntimeMethod* method);
-// System.Void System.Collections.Generic.List`1<packt.FoodyGO.Database.Monster>::Add(!0)
-inline void List_1_Add_m548652276 (List_1_t3245415856 * __this, Monster_t1773341114 * p0, const RuntimeMethod* method)
+// System.Void packt.FoodyGO.Database.MonsterSpawnLocation::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void MonsterSpawnLocation__ctor_m3958958467 (MonsterSpawnLocation_t266612420 * __this, const RuntimeMethod* method);
+// System.Void System.Collections.Generic.List`1<packt.FoodyGO.Database.MonsterSpawnLocation>::Add(!0)
+inline void List_1_Add_m2526584691 (List_1_t1738687162 * __this, MonsterSpawnLocation_t266612420 * p0, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_t3245415856 *, Monster_t1773341114 *, const RuntimeMethod*))List_1_Add_m3338814081_gshared)(__this, p0, method);
+	((  void (*) (List_1_t1738687162 *, MonsterSpawnLocation_t266612420 *, const RuntimeMethod*))List_1_Add_m3338814081_gshared)(__this, p0, method);
 }
-// System.Void packt.FoodyGO.Services.MonsterService::SpawnMonster(packt.FoodyGO.Database.Monster)
-extern "C" IL2CPP_METHOD_ATTR void MonsterService_SpawnMonster_m2465396457 (MonsterService_t815911722 * __this, Monster_t1773341114 * ___monster0, const RuntimeMethod* method);
+// System.Void packt.FoodyGO.Services.MonsterService::SpawnMonster(packt.FoodyGO.Database.MonsterSpawnLocation)
+extern "C" IL2CPP_METHOD_ATTR void MonsterService_SpawnMonster_m1405257628 (MonsterService_t815911722 * __this, MonsterSpawnLocation_t266612420 * ___monster0, const RuntimeMethod* method);
 // System.Int32 packt.FoodyGO.Services.MonsterService::CalculateFootstepRange(System.Single)
 extern "C" IL2CPP_METHOD_ATTR int32_t MonsterService_CalculateFootstepRange_m3447776341 (MonsterService_t815911722 * __this, float ___distance0, const RuntimeMethod* method);
 // System.Int32 UnityEngine.Random::Range(System.Int32,System.Int32)
@@ -15187,15 +21858,15 @@ inline MonsterController_t3352166224 * GameObject_AddComponent_TisMonsterControl
 {
 	return ((  MonsterController_t3352166224 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m3469369570_gshared)(__this, method);
 }
-// !0[] System.Collections.Generic.List`1<packt.FoodyGO.Database.Monster>::ToArray()
-inline MonsterU5BU5D_t2415199775* List_1_ToArray_m2752040289 (List_1_t3245415856 * __this, const RuntimeMethod* method)
+// !0[] System.Collections.Generic.List`1<packt.FoodyGO.Database.MonsterSpawnLocation>::ToArray()
+inline MonsterSpawnLocationU5BU5D_t422840749* List_1_ToArray_m172353444 (List_1_t1738687162 * __this, const RuntimeMethod* method)
 {
-	return ((  MonsterU5BU5D_t2415199775* (*) (List_1_t3245415856 *, const RuntimeMethod*))List_1_ToArray_m4168020446_gshared)(__this, method);
+	return ((  MonsterSpawnLocationU5BU5D_t422840749* (*) (List_1_t1738687162 *, const RuntimeMethod*))List_1_ToArray_m4168020446_gshared)(__this, method);
 }
-// System.Boolean System.Collections.Generic.List`1<packt.FoodyGO.Database.Monster>::Remove(!0)
-inline bool List_1_Remove_m1125353432 (List_1_t3245415856 * __this, Monster_t1773341114 * p0, const RuntimeMethod* method)
+// System.Boolean System.Collections.Generic.List`1<packt.FoodyGO.Database.MonsterSpawnLocation>::Remove(!0)
+inline bool List_1_Remove_m1818201010 (List_1_t1738687162 * __this, MonsterSpawnLocation_t266612420 * p0, const RuntimeMethod* method)
 {
-	return ((  bool (*) (List_1_t3245415856 *, Monster_t1773341114 *, const RuntimeMethod*))List_1_Remove_m1416767016_gshared)(__this, p0, method);
+	return ((  bool (*) (List_1_t1738687162 *, MonsterSpawnLocation_t266612420 *, const RuntimeMethod*))List_1_Remove_m1416767016_gshared)(__this, p0, method);
 }
 // System.Void packt.FoodyGO.TouchInput.CustomTouchPad::CreateVirtualAxes()
 extern "C" IL2CPP_METHOD_ATTR void CustomTouchPad_CreateVirtualAxes_m111834567 (CustomTouchPad_t1107529228 * __this, const RuntimeMethod* method);
@@ -15221,8 +21892,6 @@ inline GameManager_t3352243792 * Singleton_1_get_Instance_m1799659327 (RuntimeOb
 extern "C" IL2CPP_METHOD_ATTR bool GameManager_RegisterHitGameObject_m2446493643 (GameManager_t3352243792 * __this, PointerEventData_t3807901092 * ___data0, const RuntimeMethod* method);
 // System.Int32 UnityEngine.EventSystems.PointerEventData::get_pointerId()
 extern "C" IL2CPP_METHOD_ATTR int32_t PointerEventData_get_pointerId_m1200356155 (PointerEventData_t3807901092 * __this, const RuntimeMethod* method);
-// System.Int32 UnityEngine.Input::get_touchCount()
-extern "C" IL2CPP_METHOD_ATTR int32_t Input_get_touchCount_m3403849067 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
 // UnityEngine.Touch[] UnityEngine.Input::get_touches()
 extern "C" IL2CPP_METHOD_ATTR TouchU5BU5D_t1849554061* Input_get_touches_m1702694043 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
 // UnityEngine.Vector2 UnityEngine.Touch::get_position()
@@ -15239,8 +21908,6 @@ extern "C" IL2CPP_METHOD_ATTR bool CrossPlatformInputManager_AxisExists_m3653225
 extern "C" IL2CPP_METHOD_ATTR void CrossPlatformInputManager_UnRegisterVirtualAxis_m2756471501 (RuntimeObject * __this /* static, unused */, String_t* p0, const RuntimeMethod* method);
 // System.Void packt.FoodyGO.TouchInput.ThrowTouchPad::ResetTarget()
 extern "C" IL2CPP_METHOD_ATTR void ThrowTouchPad_ResetTarget_m3749627923 (ThrowTouchPad_t2858465420 * __this, const RuntimeMethod* method);
-// UnityEngine.Vector3 UnityEngine.Input::get_mousePosition()
-extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  Input_get_mousePosition_m1616496925 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
 // UnityEngine.Vector3 UnityEngine.Camera::ScreenToWorldPoint(UnityEngine.Vector3)
 extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  Camera_ScreenToWorldPoint_m3978588570 (Camera_t4157153871 * __this, Vector3_t3722313464  p0, const RuntimeMethod* method);
 // UnityEngine.Vector3 UnityEngine.Vector3::op_Addition(UnityEngine.Vector3,UnityEngine.Vector3)
@@ -15319,12 +21986,10 @@ extern "C" IL2CPP_METHOD_ATTR void AspectRatioFitter_set_aspectRatio_m626759227 
 extern "C" IL2CPP_METHOD_ATTR void Rect__ctor_m2614021312 (Rect_t2360479859 * __this, float p0, float p1, float p2, float p3, const RuntimeMethod* method);
 // System.Void UnityEngine.UI.RawImage::set_uvRect(UnityEngine.Rect)
 extern "C" IL2CPP_METHOD_ATTR void RawImage_set_uvRect_m529943894 (RawImage_t3182918964 * __this, Rect_t2360479859  p0, const RuntimeMethod* method);
-// System.Void UnityEngine.Color::.ctor(System.Single,System.Single,System.Single,System.Single)
-extern "C" IL2CPP_METHOD_ATTR void Color__ctor_m2943235014 (Color_t2555686324 * __this, float p0, float p1, float p2, float p3, const RuntimeMethod* method);
-// System.Int32 System.Collections.Generic.List`1<packt.FoodyGO.Database.Monster>::get_Count()
-inline int32_t List_1_get_Count_m3454857760 (List_1_t3245415856 * __this, const RuntimeMethod* method)
+// System.Int32 System.Collections.Generic.List`1<packt.FoodyGO.Database.MonsterSpawnLocation>::get_Count()
+inline int32_t List_1_get_Count_m1035611094 (List_1_t1738687162 * __this, const RuntimeMethod* method)
 {
-	return ((  int32_t (*) (List_1_t3245415856 *, const RuntimeMethod*))List_1_get_Count_m2934127733_gshared)(__this, method);
+	return ((  int32_t (*) (List_1_t1738687162 *, const RuntimeMethod*))List_1_get_Count_m2934127733_gshared)(__this, method);
 }
 // System.Int32 UnityEngine.Mathf::Min(System.Int32,System.Int32)
 extern "C" IL2CPP_METHOD_ATTR int32_t Mathf_Min_m18103608 (RuntimeObject * __this /* static, unused */, int32_t p0, int32_t p1, const RuntimeMethod* method);
@@ -19044,6 +25709,769 @@ extern "C" IL2CPP_METHOD_ATTR void CharacterGPSCopmassController_Update_m1158290
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void GE_Elementals_Demo::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void GE_Elementals_Demo__ctor_m3279173250 (GE_Elementals_Demo_t1266050954 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (GE_Elementals_Demo__ctor_m3279173250_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Color_t2555686324  L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		Color__ctor_m2943235014((&L_0), (1.0f), (1.0f), (1.0f), (1.0f), /*hidden argument*/NULL);
+		__this->set_m_ColorFire_4(L_0);
+		Color_t2555686324  L_1;
+		memset(&L_1, 0, sizeof(L_1));
+		Color__ctor_m2943235014((&L_1), (1.0f), (1.0f), (1.0f), (1.0f), /*hidden argument*/NULL);
+		__this->set_m_ColorWater_5(L_1);
+		Color_t2555686324  L_2;
+		memset(&L_2, 0, sizeof(L_2));
+		Color__ctor_m2943235014((&L_2), (1.0f), (1.0f), (1.0f), (1.0f), /*hidden argument*/NULL);
+		__this->set_m_ColorWind_6(L_2);
+		Color_t2555686324  L_3;
+		memset(&L_3, 0, sizeof(L_3));
+		Color__ctor_m2943235014((&L_3), (1.0f), (1.0f), (1.0f), (1.0f), /*hidden argument*/NULL);
+		__this->set_m_ColorEarth_7(L_3);
+		Color_t2555686324  L_4;
+		memset(&L_4, 0, sizeof(L_4));
+		Color__ctor_m2943235014((&L_4), (1.0f), (1.0f), (1.0f), (1.0f), /*hidden argument*/NULL);
+		__this->set_m_ColorThunder_8(L_4);
+		Color_t2555686324  L_5;
+		memset(&L_5, 0, sizeof(L_5));
+		Color__ctor_m2943235014((&L_5), (1.0f), (1.0f), (1.0f), (1.0f), /*hidden argument*/NULL);
+		__this->set_m_ColorIce_9(L_5);
+		Color_t2555686324  L_6;
+		memset(&L_6, 0, sizeof(L_6));
+		Color__ctor_m2943235014((&L_6), (1.0f), (1.0f), (1.0f), (1.0f), /*hidden argument*/NULL);
+		__this->set_m_ColorLight_10(L_6);
+		Color_t2555686324  L_7;
+		memset(&L_7, 0, sizeof(L_7));
+		Color__ctor_m2943235014((&L_7), (1.0f), (1.0f), (1.0f), (1.0f), /*hidden argument*/NULL);
+		__this->set_m_ColorDarkness_11(L_7);
+		__this->set_m_CurrentCategoryIndex_20((-1));
+		__this->set_m_CurrentParticleIndex_21((-1));
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_8 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_2();
+		__this->set_m_CategoryName_22(L_8);
+		String_t* L_9 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_2();
+		__this->set_m_ParticleName_23(L_9);
+		MonoBehaviour__ctor_m1579109191(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void GE_Elementals_Demo::Start()
+extern "C" IL2CPP_METHOD_ATTR void GE_Elementals_Demo_Start_m296934700 (GE_Elementals_Demo_t1266050954 * __this, const RuntimeMethod* method)
+{
+	{
+		GameObjectU5BU5D_t3328599146* L_0 = __this->get_m_PrefabListFire_12();
+		NullCheck(L_0);
+		if ((((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_0)->max_length))))) > ((int32_t)0)))
+		{
+			goto IL_0070;
+		}
+	}
+	{
+		GameObjectU5BU5D_t3328599146* L_1 = __this->get_m_PrefabListWind_14();
+		NullCheck(L_1);
+		if ((((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_1)->max_length))))) > ((int32_t)0)))
+		{
+			goto IL_0070;
+		}
+	}
+	{
+		GameObjectU5BU5D_t3328599146* L_2 = __this->get_m_PrefabListWater_13();
+		NullCheck(L_2);
+		if ((((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_2)->max_length))))) > ((int32_t)0)))
+		{
+			goto IL_0070;
+		}
+	}
+	{
+		GameObjectU5BU5D_t3328599146* L_3 = __this->get_m_PrefabListEarth_15();
+		NullCheck(L_3);
+		if ((((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_3)->max_length))))) > ((int32_t)0)))
+		{
+			goto IL_0070;
+		}
+	}
+	{
+		GameObjectU5BU5D_t3328599146* L_4 = __this->get_m_PrefabListIce_17();
+		NullCheck(L_4);
+		if ((((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_4)->max_length))))) > ((int32_t)0)))
+		{
+			goto IL_0070;
+		}
+	}
+	{
+		GameObjectU5BU5D_t3328599146* L_5 = __this->get_m_PrefabListThunder_16();
+		NullCheck(L_5);
+		if ((((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_5)->max_length))))) > ((int32_t)0)))
+		{
+			goto IL_0070;
+		}
+	}
+	{
+		GameObjectU5BU5D_t3328599146* L_6 = __this->get_m_PrefabListLight_18();
+		NullCheck(L_6);
+		if ((((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_6)->max_length))))) > ((int32_t)0)))
+		{
+			goto IL_0070;
+		}
+	}
+	{
+		GameObjectU5BU5D_t3328599146* L_7 = __this->get_m_PrefabListDarkness_19();
+		NullCheck(L_7);
+		if ((((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_7)->max_length))))) <= ((int32_t)0)))
+		{
+			goto IL_0084;
+		}
+	}
+
+IL_0070:
+	{
+		__this->set_m_CurrentCategoryIndex_20(0);
+		__this->set_m_CurrentParticleIndex_21(0);
+		GE_Elementals_Demo_ShowParticle_m2741302116(__this, /*hidden argument*/NULL);
+	}
+
+IL_0084:
+	{
+		return;
+	}
+}
+// System.Void GE_Elementals_Demo::Update()
+extern "C" IL2CPP_METHOD_ATTR void GE_Elementals_Demo_Update_m1646419948 (GE_Elementals_Demo_t1266050954 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (GE_Elementals_Demo_Update_m1646419948_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Touch_t1921856868  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	float V_1 = 0.0f;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1431474628_il2cpp_TypeInfo_var);
+		int32_t L_0 = Input_get_touchCount_m3403849067(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) == ((uint32_t)1))))
+		{
+			goto IL_006d;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1431474628_il2cpp_TypeInfo_var);
+		Touch_t1921856868  L_1 = Input_GetTouch_m2192712756(NULL /*static, unused*/, 0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		int32_t L_2 = Touch_get_phase_m214549210((Touch_t1921856868 *)(&V_0), /*hidden argument*/NULL);
+		if (L_2)
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		__this->set_m_ShowParticleWhenTouchEnded_29((bool)1);
+		goto IL_0068;
+	}
+
+IL_002a:
+	{
+		int32_t L_3 = Touch_get_phase_m214549210((Touch_t1921856868 *)(&V_0), /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_3) == ((uint32_t)1))))
+		{
+			goto IL_0043;
+		}
+	}
+	{
+		__this->set_m_ShowParticleWhenTouchEnded_29((bool)0);
+		goto IL_0068;
+	}
+
+IL_0043:
+	{
+		int32_t L_4 = Touch_get_phase_m214549210((Touch_t1921856868 *)(&V_0), /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_4) == ((uint32_t)3))))
+		{
+			goto IL_0068;
+		}
+	}
+	{
+		bool L_5 = __this->get_m_ShowParticleWhenTouchEnded_29();
+		if (!L_5)
+		{
+			goto IL_0061;
+		}
+	}
+	{
+		GE_Elementals_Demo_ShowParticle_m2741302116(__this, /*hidden argument*/NULL);
+	}
+
+IL_0061:
+	{
+		__this->set_m_ShowParticleWhenTouchEnded_29((bool)0);
+	}
+
+IL_0068:
+	{
+		goto IL_00c9;
+	}
+
+IL_006d:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1431474628_il2cpp_TypeInfo_var);
+		int32_t L_6 = Input_get_touchCount_m3403849067(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if (L_6)
+		{
+			goto IL_00c9;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1431474628_il2cpp_TypeInfo_var);
+		bool L_7 = Input_GetMouseButtonDown_m2081676745(NULL /*static, unused*/, 0, /*hidden argument*/NULL);
+		if (!L_7)
+		{
+			goto IL_0092;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1431474628_il2cpp_TypeInfo_var);
+		Vector3_t3722313464  L_8 = Input_get_mousePosition_m1616496925(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_m_PreviousMousePosition_28(L_8);
+		goto IL_00c9;
+	}
+
+IL_0092:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1431474628_il2cpp_TypeInfo_var);
+		bool L_9 = Input_GetMouseButtonUp_m2924350851(NULL /*static, unused*/, 0, /*hidden argument*/NULL);
+		if (!L_9)
+		{
+			goto IL_00c9;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1431474628_il2cpp_TypeInfo_var);
+		Vector3_t3722313464  L_10 = Input_get_mousePosition_m1616496925(NULL /*static, unused*/, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Vector2_t2156229523_il2cpp_TypeInfo_var);
+		Vector2_t2156229523  L_11 = Vector2_op_Implicit_m4260192859(NULL /*static, unused*/, L_10, /*hidden argument*/NULL);
+		Vector3_t3722313464  L_12 = __this->get_m_PreviousMousePosition_28();
+		Vector2_t2156229523  L_13 = Vector2_op_Implicit_m4260192859(NULL /*static, unused*/, L_12, /*hidden argument*/NULL);
+		float L_14 = Vector2_Distance_m3048868881(NULL /*static, unused*/, L_11, L_13, /*hidden argument*/NULL);
+		V_1 = L_14;
+		float L_15 = V_1;
+		if ((!(((float)L_15) < ((float)(5.0f)))))
+		{
+			goto IL_00c9;
+		}
+	}
+	{
+		GE_Elementals_Demo_ShowParticle_m2741302116(__this, /*hidden argument*/NULL);
+	}
+
+IL_00c9:
+	{
+		int32_t L_16 = __this->get_m_CurrentCategoryIndex_20();
+		if ((((int32_t)L_16) == ((int32_t)(-1))))
+		{
+			goto IL_015b;
+		}
+	}
+	{
+		int32_t L_17 = __this->get_m_CurrentParticleIndex_21();
+		if ((((int32_t)L_17) == ((int32_t)(-1))))
+		{
+			goto IL_015b;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1431474628_il2cpp_TypeInfo_var);
+		bool L_18 = Input_GetKeyUp_m2808015270(NULL /*static, unused*/, ((int32_t)273), /*hidden argument*/NULL);
+		if (!L_18)
+		{
+			goto IL_00fb;
+		}
+	}
+	{
+		GE_Elementals_Demo_PreviousCategory_m2153749244(__this, /*hidden argument*/NULL);
+		goto IL_015b;
+	}
+
+IL_00fb:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1431474628_il2cpp_TypeInfo_var);
+		bool L_19 = Input_GetKeyUp_m2808015270(NULL /*static, unused*/, ((int32_t)274), /*hidden argument*/NULL);
+		if (!L_19)
+		{
+			goto IL_0115;
+		}
+	}
+	{
+		GE_Elementals_Demo_NextCategory_m3880071215(__this, /*hidden argument*/NULL);
+		goto IL_015b;
+	}
+
+IL_0115:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1431474628_il2cpp_TypeInfo_var);
+		bool L_20 = Input_GetKeyUp_m2808015270(NULL /*static, unused*/, ((int32_t)276), /*hidden argument*/NULL);
+		if (!L_20)
+		{
+			goto IL_012f;
+		}
+	}
+	{
+		GE_Elementals_Demo_PreviousParticle_m542495095(__this, /*hidden argument*/NULL);
+		goto IL_015b;
+	}
+
+IL_012f:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1431474628_il2cpp_TypeInfo_var);
+		bool L_21 = Input_GetKeyUp_m2808015270(NULL /*static, unused*/, ((int32_t)275), /*hidden argument*/NULL);
+		if (!L_21)
+		{
+			goto IL_0149;
+		}
+	}
+	{
+		GE_Elementals_Demo_NextParticle_m2541396880(__this, /*hidden argument*/NULL);
+		goto IL_015b;
+	}
+
+IL_0149:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1431474628_il2cpp_TypeInfo_var);
+		bool L_22 = Input_GetKeyUp_m2808015270(NULL /*static, unused*/, ((int32_t)32), /*hidden argument*/NULL);
+		if (!L_22)
+		{
+			goto IL_015b;
+		}
+	}
+	{
+		GE_Elementals_Demo_ShowParticle_m2741302116(__this, /*hidden argument*/NULL);
+	}
+
+IL_015b:
+	{
+		return;
+	}
+}
+// System.Void GE_Elementals_Demo::PreviousCategory()
+extern "C" IL2CPP_METHOD_ATTR void GE_Elementals_Demo_PreviousCategory_m2153749244 (GE_Elementals_Demo_t1266050954 * __this, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = __this->get_m_CurrentCategoryIndex_20();
+		__this->set_m_CurrentCategoryIndex_20(((int32_t)il2cpp_codegen_subtract((int32_t)L_0, (int32_t)1)));
+		__this->set_m_CurrentParticleIndex_21(0);
+		GE_Elementals_Demo_ShowParticle_m2741302116(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void GE_Elementals_Demo::NextCategory()
+extern "C" IL2CPP_METHOD_ATTR void GE_Elementals_Demo_NextCategory_m3880071215 (GE_Elementals_Demo_t1266050954 * __this, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = __this->get_m_CurrentCategoryIndex_20();
+		__this->set_m_CurrentCategoryIndex_20(((int32_t)il2cpp_codegen_add((int32_t)L_0, (int32_t)1)));
+		__this->set_m_CurrentParticleIndex_21(0);
+		GE_Elementals_Demo_ShowParticle_m2741302116(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void GE_Elementals_Demo::PreviousParticle()
+extern "C" IL2CPP_METHOD_ATTR void GE_Elementals_Demo_PreviousParticle_m542495095 (GE_Elementals_Demo_t1266050954 * __this, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = __this->get_m_CurrentParticleIndex_21();
+		__this->set_m_CurrentParticleIndex_21(((int32_t)il2cpp_codegen_subtract((int32_t)L_0, (int32_t)1)));
+		GE_Elementals_Demo_ShowParticle_m2741302116(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void GE_Elementals_Demo::NextParticle()
+extern "C" IL2CPP_METHOD_ATTR void GE_Elementals_Demo_NextParticle_m2541396880 (GE_Elementals_Demo_t1266050954 * __this, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = __this->get_m_CurrentParticleIndex_21();
+		__this->set_m_CurrentParticleIndex_21(((int32_t)il2cpp_codegen_add((int32_t)L_0, (int32_t)1)));
+		GE_Elementals_Demo_ShowParticle_m2741302116(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void GE_Elementals_Demo::ShowParticle()
+extern "C" IL2CPP_METHOD_ATTR void GE_Elementals_Demo_ShowParticle_m2741302116 (GE_Elementals_Demo_t1266050954 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (GE_Elementals_Demo_ShowParticle_m2741302116_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	GameObject_t1113636619 * V_0 = NULL;
+	{
+		int32_t L_0 = __this->get_m_CurrentCategoryIndex_20();
+		if ((((int32_t)L_0) <= ((int32_t)7)))
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		__this->set_m_CurrentCategoryIndex_20(0);
+		goto IL_002b;
+	}
+
+IL_0018:
+	{
+		int32_t L_1 = __this->get_m_CurrentCategoryIndex_20();
+		if ((((int32_t)L_1) >= ((int32_t)0)))
+		{
+			goto IL_002b;
+		}
+	}
+	{
+		__this->set_m_CurrentCategoryIndex_20(7);
+	}
+
+IL_002b:
+	{
+		GameObject_t1113636619 * L_2 = GameObject_Find_m2032535176(NULL /*static, unused*/, _stringLiteral1069140854, /*hidden argument*/NULL);
+		V_0 = L_2;
+		GameObject_t1113636619 * L_3 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
+		bool L_4 = Object_op_Implicit_m3574996620(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+		if (!L_4)
+		{
+			goto IL_004d;
+		}
+	}
+	{
+		GameObject_t1113636619 * L_5 = V_0;
+		NullCheck(L_5);
+		Text_t1901882714 * L_6 = GameObject_GetComponent_TisText_t1901882714_m2114913816(L_5, /*hidden argument*/GameObject_GetComponent_TisText_t1901882714_m2114913816_RuntimeMethod_var);
+		__this->set_m_Category_26(L_6);
+	}
+
+IL_004d:
+	{
+		GameObject_t1113636619 * L_7 = GameObject_Find_m2032535176(NULL /*static, unused*/, _stringLiteral2912564450, /*hidden argument*/NULL);
+		V_0 = L_7;
+		GameObject_t1113636619 * L_8 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
+		bool L_9 = Object_op_Implicit_m3574996620(NULL /*static, unused*/, L_8, /*hidden argument*/NULL);
+		if (!L_9)
+		{
+			goto IL_006f;
+		}
+	}
+	{
+		GameObject_t1113636619 * L_10 = V_0;
+		NullCheck(L_10);
+		Text_t1901882714 * L_11 = GameObject_GetComponent_TisText_t1901882714_m2114913816(L_10, /*hidden argument*/GameObject_GetComponent_TisText_t1901882714_m2114913816_RuntimeMethod_var);
+		__this->set_m_Particle_27(L_11);
+	}
+
+IL_006f:
+	{
+		int32_t L_12 = __this->get_m_CurrentCategoryIndex_20();
+		if (L_12)
+		{
+			goto IL_00b8;
+		}
+	}
+	{
+		GameObjectU5BU5D_t3328599146* L_13 = __this->get_m_PrefabListFire_12();
+		__this->set_m_CurrentCategory_24(L_13);
+		__this->set_m_CategoryName_22(_stringLiteral509904522);
+		Text_t1901882714 * L_14 = __this->get_m_Category_26();
+		Color_t2555686324  L_15 = __this->get_m_ColorFire_4();
+		NullCheck(L_14);
+		VirtActionInvoker1< Color_t2555686324  >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_14, L_15);
+		Text_t1901882714 * L_16 = __this->get_m_Particle_27();
+		Color_t2555686324  L_17 = __this->get_m_ColorFire_4();
+		NullCheck(L_16);
+		VirtActionInvoker1< Color_t2555686324  >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_16, L_17);
+		goto IL_02b9;
+	}
+
+IL_00b8:
+	{
+		int32_t L_18 = __this->get_m_CurrentCategoryIndex_20();
+		if ((!(((uint32_t)L_18) == ((uint32_t)1))))
+		{
+			goto IL_0102;
+		}
+	}
+	{
+		GameObjectU5BU5D_t3328599146* L_19 = __this->get_m_PrefabListWater_13();
+		__this->set_m_CurrentCategory_24(L_19);
+		__this->set_m_CategoryName_22(_stringLiteral545402259);
+		Text_t1901882714 * L_20 = __this->get_m_Category_26();
+		Color_t2555686324  L_21 = __this->get_m_ColorWater_5();
+		NullCheck(L_20);
+		VirtActionInvoker1< Color_t2555686324  >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_20, L_21);
+		Text_t1901882714 * L_22 = __this->get_m_Particle_27();
+		Color_t2555686324  L_23 = __this->get_m_ColorWater_5();
+		NullCheck(L_22);
+		VirtActionInvoker1< Color_t2555686324  >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_22, L_23);
+		goto IL_02b9;
+	}
+
+IL_0102:
+	{
+		int32_t L_24 = __this->get_m_CurrentCategoryIndex_20();
+		if ((!(((uint32_t)L_24) == ((uint32_t)2))))
+		{
+			goto IL_014c;
+		}
+	}
+	{
+		GameObjectU5BU5D_t3328599146* L_25 = __this->get_m_PrefabListWind_14();
+		__this->set_m_CurrentCategory_24(L_25);
+		__this->set_m_CategoryName_22(_stringLiteral1235418589);
+		Text_t1901882714 * L_26 = __this->get_m_Category_26();
+		Color_t2555686324  L_27 = __this->get_m_ColorWind_6();
+		NullCheck(L_26);
+		VirtActionInvoker1< Color_t2555686324  >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_26, L_27);
+		Text_t1901882714 * L_28 = __this->get_m_Particle_27();
+		Color_t2555686324  L_29 = __this->get_m_ColorWind_6();
+		NullCheck(L_28);
+		VirtActionInvoker1< Color_t2555686324  >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_28, L_29);
+		goto IL_02b9;
+	}
+
+IL_014c:
+	{
+		int32_t L_30 = __this->get_m_CurrentCategoryIndex_20();
+		if ((!(((uint32_t)L_30) == ((uint32_t)3))))
+		{
+			goto IL_0196;
+		}
+	}
+	{
+		GameObjectU5BU5D_t3328599146* L_31 = __this->get_m_PrefabListEarth_15();
+		__this->set_m_CurrentCategory_24(L_31);
+		__this->set_m_CategoryName_22(_stringLiteral484983545);
+		Text_t1901882714 * L_32 = __this->get_m_Category_26();
+		Color_t2555686324  L_33 = __this->get_m_ColorEarth_7();
+		NullCheck(L_32);
+		VirtActionInvoker1< Color_t2555686324  >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_32, L_33);
+		Text_t1901882714 * L_34 = __this->get_m_Particle_27();
+		Color_t2555686324  L_35 = __this->get_m_ColorEarth_7();
+		NullCheck(L_34);
+		VirtActionInvoker1< Color_t2555686324  >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_34, L_35);
+		goto IL_02b9;
+	}
+
+IL_0196:
+	{
+		int32_t L_36 = __this->get_m_CurrentCategoryIndex_20();
+		if ((!(((uint32_t)L_36) == ((uint32_t)4))))
+		{
+			goto IL_01e0;
+		}
+	}
+	{
+		GameObjectU5BU5D_t3328599146* L_37 = __this->get_m_PrefabListThunder_16();
+		__this->set_m_CurrentCategory_24(L_37);
+		__this->set_m_CategoryName_22(_stringLiteral3667895855);
+		Text_t1901882714 * L_38 = __this->get_m_Category_26();
+		Color_t2555686324  L_39 = __this->get_m_ColorThunder_8();
+		NullCheck(L_38);
+		VirtActionInvoker1< Color_t2555686324  >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_38, L_39);
+		Text_t1901882714 * L_40 = __this->get_m_Particle_27();
+		Color_t2555686324  L_41 = __this->get_m_ColorThunder_8();
+		NullCheck(L_40);
+		VirtActionInvoker1< Color_t2555686324  >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_40, L_41);
+		goto IL_02b9;
+	}
+
+IL_01e0:
+	{
+		int32_t L_42 = __this->get_m_CurrentCategoryIndex_20();
+		if ((!(((uint32_t)L_42) == ((uint32_t)5))))
+		{
+			goto IL_022a;
+		}
+	}
+	{
+		GameObjectU5BU5D_t3328599146* L_43 = __this->get_m_PrefabListIce_17();
+		__this->set_m_CurrentCategory_24(L_43);
+		__this->set_m_CategoryName_22(_stringLiteral276901400);
+		Text_t1901882714 * L_44 = __this->get_m_Category_26();
+		Color_t2555686324  L_45 = __this->get_m_ColorIce_9();
+		NullCheck(L_44);
+		VirtActionInvoker1< Color_t2555686324  >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_44, L_45);
+		Text_t1901882714 * L_46 = __this->get_m_Particle_27();
+		Color_t2555686324  L_47 = __this->get_m_ColorIce_9();
+		NullCheck(L_46);
+		VirtActionInvoker1< Color_t2555686324  >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_46, L_47);
+		goto IL_02b9;
+	}
+
+IL_022a:
+	{
+		int32_t L_48 = __this->get_m_CurrentCategoryIndex_20();
+		if ((!(((uint32_t)L_48) == ((uint32_t)6))))
+		{
+			goto IL_0274;
+		}
+	}
+	{
+		GameObjectU5BU5D_t3328599146* L_49 = __this->get_m_PrefabListLight_18();
+		__this->set_m_CurrentCategory_24(L_49);
+		__this->set_m_CategoryName_22(_stringLiteral1209586805);
+		Text_t1901882714 * L_50 = __this->get_m_Category_26();
+		Color_t2555686324  L_51 = __this->get_m_ColorLight_10();
+		NullCheck(L_50);
+		VirtActionInvoker1< Color_t2555686324  >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_50, L_51);
+		Text_t1901882714 * L_52 = __this->get_m_Particle_27();
+		Color_t2555686324  L_53 = __this->get_m_ColorLight_10();
+		NullCheck(L_52);
+		VirtActionInvoker1< Color_t2555686324  >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_52, L_53);
+		goto IL_02b9;
+	}
+
+IL_0274:
+	{
+		int32_t L_54 = __this->get_m_CurrentCategoryIndex_20();
+		if ((!(((uint32_t)L_54) == ((uint32_t)7))))
+		{
+			goto IL_02b9;
+		}
+	}
+	{
+		GameObjectU5BU5D_t3328599146* L_55 = __this->get_m_PrefabListDarkness_19();
+		__this->set_m_CurrentCategory_24(L_55);
+		__this->set_m_CategoryName_22(_stringLiteral4125610927);
+		Text_t1901882714 * L_56 = __this->get_m_Category_26();
+		Color_t2555686324  L_57 = __this->get_m_ColorDarkness_11();
+		NullCheck(L_56);
+		VirtActionInvoker1< Color_t2555686324  >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_56, L_57);
+		Text_t1901882714 * L_58 = __this->get_m_Particle_27();
+		Color_t2555686324  L_59 = __this->get_m_ColorDarkness_11();
+		NullCheck(L_58);
+		VirtActionInvoker1< Color_t2555686324  >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_58, L_59);
+	}
+
+IL_02b9:
+	{
+		Text_t1901882714 * L_60 = __this->get_m_Category_26();
+		String_t* L_61 = __this->get_m_CategoryName_22();
+		NullCheck(L_60);
+		VirtActionInvoker1< String_t* >::Invoke(73 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_60, L_61);
+		int32_t L_62 = __this->get_m_CurrentParticleIndex_21();
+		GameObjectU5BU5D_t3328599146* L_63 = __this->get_m_CurrentCategory_24();
+		NullCheck(L_63);
+		if ((((int32_t)L_62) < ((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_63)->max_length)))))))
+		{
+			goto IL_02e9;
+		}
+	}
+	{
+		__this->set_m_CurrentParticleIndex_21(0);
+		goto IL_0305;
+	}
+
+IL_02e9:
+	{
+		int32_t L_64 = __this->get_m_CurrentParticleIndex_21();
+		if ((((int32_t)L_64) >= ((int32_t)0)))
+		{
+			goto IL_0305;
+		}
+	}
+	{
+		GameObjectU5BU5D_t3328599146* L_65 = __this->get_m_CurrentCategory_24();
+		NullCheck(L_65);
+		__this->set_m_CurrentParticleIndex_21(((int32_t)il2cpp_codegen_subtract((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_65)->max_length)))), (int32_t)1)));
+	}
+
+IL_0305:
+	{
+		GameObjectU5BU5D_t3328599146* L_66 = __this->get_m_CurrentCategory_24();
+		int32_t L_67 = __this->get_m_CurrentParticleIndex_21();
+		NullCheck(L_66);
+		int32_t L_68 = L_67;
+		GameObject_t1113636619 * L_69 = (L_66)->GetAt(static_cast<il2cpp_array_size_t>(L_68));
+		NullCheck(L_69);
+		String_t* L_70 = Object_get_name_m4211327027(L_69, /*hidden argument*/NULL);
+		__this->set_m_ParticleName_23(L_70);
+		Text_t1901882714 * L_71 = __this->get_m_Particle_27();
+		ObjectU5BU5D_t2843939325* L_72 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)6);
+		ObjectU5BU5D_t2843939325* L_73 = L_72;
+		NullCheck(L_73);
+		ArrayElementTypeCheck (L_73, _stringLiteral3452614536);
+		(L_73)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)_stringLiteral3452614536);
+		ObjectU5BU5D_t2843939325* L_74 = L_73;
+		int32_t L_75 = __this->get_m_CurrentParticleIndex_21();
+		int32_t L_76 = ((int32_t)il2cpp_codegen_add((int32_t)L_75, (int32_t)1));
+		RuntimeObject * L_77 = Box(Int32_t2950945753_il2cpp_TypeInfo_var, &L_76);
+		NullCheck(L_74);
+		ArrayElementTypeCheck (L_74, L_77);
+		(L_74)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject *)L_77);
+		ObjectU5BU5D_t2843939325* L_78 = L_74;
+		NullCheck(L_78);
+		ArrayElementTypeCheck (L_78, _stringLiteral3452614529);
+		(L_78)->SetAt(static_cast<il2cpp_array_size_t>(2), (RuntimeObject *)_stringLiteral3452614529);
+		ObjectU5BU5D_t2843939325* L_79 = L_78;
+		GameObjectU5BU5D_t3328599146* L_80 = __this->get_m_CurrentCategory_24();
+		NullCheck(L_80);
+		int32_t L_81 = (((int32_t)((int32_t)(((RuntimeArray *)L_80)->max_length))));
+		RuntimeObject * L_82 = Box(Int32_t2950945753_il2cpp_TypeInfo_var, &L_81);
+		NullCheck(L_79);
+		ArrayElementTypeCheck (L_79, L_82);
+		(L_79)->SetAt(static_cast<il2cpp_array_size_t>(3), (RuntimeObject *)L_82);
+		ObjectU5BU5D_t2843939325* L_83 = L_79;
+		NullCheck(L_83);
+		ArrayElementTypeCheck (L_83, _stringLiteral3450517383);
+		(L_83)->SetAt(static_cast<il2cpp_array_size_t>(4), (RuntimeObject *)_stringLiteral3450517383);
+		ObjectU5BU5D_t2843939325* L_84 = L_83;
+		String_t* L_85 = __this->get_m_ParticleName_23();
+		NullCheck(L_84);
+		ArrayElementTypeCheck (L_84, L_85);
+		(L_84)->SetAt(static_cast<il2cpp_array_size_t>(5), (RuntimeObject *)L_85);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_86 = String_Concat_m2971454694(NULL /*static, unused*/, L_84, /*hidden argument*/NULL);
+		NullCheck(L_71);
+		VirtActionInvoker1< String_t* >::Invoke(73 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_71, L_86);
+		GameObject_t1113636619 * L_87 = __this->get_m_CurrentParticle_25();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
+		bool L_88 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_87, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_88)
+		{
+			goto IL_0390;
+		}
+	}
+	{
+		GameObject_t1113636619 * L_89 = __this->get_m_CurrentParticle_25();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
+		Object_DestroyObject_m1406874517(NULL /*static, unused*/, L_89, /*hidden argument*/NULL);
+	}
+
+IL_0390:
+	{
+		GameObjectU5BU5D_t3328599146* L_90 = __this->get_m_CurrentCategory_24();
+		int32_t L_91 = __this->get_m_CurrentParticleIndex_21();
+		NullCheck(L_90);
+		int32_t L_92 = L_91;
+		GameObject_t1113636619 * L_93 = (L_90)->GetAt(static_cast<il2cpp_array_size_t>(L_92));
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
+		GameObject_t1113636619 * L_94 = Object_Instantiate_TisGameObject_t1113636619_m4070250708(NULL /*static, unused*/, L_93, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m4070250708_RuntimeMethod_var);
+		__this->set_m_CurrentParticle_25(L_94);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // System.Void GameObjectCommands::ListGameObjects()
 extern "C" IL2CPP_METHOD_ATTR void GameObjectCommands_ListGameObjects_m1038345753 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
 {
@@ -19604,11 +27032,9459 @@ IL_009a:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void SQLite4Unity3d.AutoIncrementAttribute::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void AutoIncrementAttribute__ctor_m483114792 (AutoIncrementAttribute_t3792157881 * __this, const RuntimeMethod* method)
+{
+	{
+		Attribute__ctor_m1529526131(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.BaseTableQuery::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void BaseTableQuery__ctor_m4000201453 (BaseTableQuery_t440437958 * __this, const RuntimeMethod* method)
+{
+	{
+		Object__ctor_m297566312(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.BaseTableQuery/Ordering::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void Ordering__ctor_m3489848826 (Ordering_t647619184 * __this, const RuntimeMethod* method)
+{
+	{
+		Object__ctor_m297566312(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.String SQLite4Unity3d.BaseTableQuery/Ordering::get_ColumnName()
+extern "C" IL2CPP_METHOD_ATTR String_t* Ordering_get_ColumnName_m2131241096 (Ordering_t647619184 * __this, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = __this->get_U3CColumnNameU3Ek__BackingField_0();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.BaseTableQuery/Ordering::set_ColumnName(System.String)
+extern "C" IL2CPP_METHOD_ATTR void Ordering_set_ColumnName_m51591596 (Ordering_t647619184 * __this, String_t* ___value0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->set_U3CColumnNameU3Ek__BackingField_0(L_0);
+		return;
+	}
+}
+// System.Boolean SQLite4Unity3d.BaseTableQuery/Ordering::get_Ascending()
+extern "C" IL2CPP_METHOD_ATTR bool Ordering_get_Ascending_m2022387961 (Ordering_t647619184 * __this, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = __this->get_U3CAscendingU3Ek__BackingField_1();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.BaseTableQuery/Ordering::set_Ascending(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void Ordering_set_Ascending_m78893210 (Ordering_t647619184 * __this, bool ___value0, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = ___value0;
+		__this->set_U3CAscendingU3Ek__BackingField_1(L_0);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.CollationAttribute::.ctor(System.String)
+extern "C" IL2CPP_METHOD_ATTR void CollationAttribute__ctor_m3529953702 (CollationAttribute_t3564781786 * __this, String_t* ___collation0, const RuntimeMethod* method)
+{
+	{
+		Attribute__ctor_m1529526131(__this, /*hidden argument*/NULL);
+		String_t* L_0 = ___collation0;
+		CollationAttribute_set_Value_m2547913855(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.String SQLite4Unity3d.CollationAttribute::get_Value()
+extern "C" IL2CPP_METHOD_ATTR String_t* CollationAttribute_get_Value_m547414817 (CollationAttribute_t3564781786 * __this, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = __this->get_U3CValueU3Ek__BackingField_0();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.CollationAttribute::set_Value(System.String)
+extern "C" IL2CPP_METHOD_ATTR void CollationAttribute_set_Value_m2547913855 (CollationAttribute_t3564781786 * __this, String_t* ___value0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->set_U3CValueU3Ek__BackingField_0(L_0);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.ColumnAttribute::.ctor(System.String)
+extern "C" IL2CPP_METHOD_ATTR void ColumnAttribute__ctor_m1412202507 (ColumnAttribute_t3583764011 * __this, String_t* ___name0, const RuntimeMethod* method)
+{
+	{
+		Attribute__ctor_m1529526131(__this, /*hidden argument*/NULL);
+		String_t* L_0 = ___name0;
+		ColumnAttribute_set_Name_m1348764183(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.String SQLite4Unity3d.ColumnAttribute::get_Name()
+extern "C" IL2CPP_METHOD_ATTR String_t* ColumnAttribute_get_Name_m1252734108 (ColumnAttribute_t3583764011 * __this, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = __this->get_U3CNameU3Ek__BackingField_0();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.ColumnAttribute::set_Name(System.String)
+extern "C" IL2CPP_METHOD_ATTR void ColumnAttribute_set_Name_m1348764183 (ColumnAttribute_t3583764011 * __this, String_t* ___value0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->set_U3CNameU3Ek__BackingField_0(L_0);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.IgnoreAttribute::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void IgnoreAttribute__ctor_m3835086883 (IgnoreAttribute_t1003697248 * __this, const RuntimeMethod* method)
+{
+	{
+		Attribute__ctor_m1529526131(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.IndexedAttribute::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void IndexedAttribute__ctor_m1705656832 (IndexedAttribute_t384353508 * __this, const RuntimeMethod* method)
+{
+	{
+		Attribute__ctor_m1529526131(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.IndexedAttribute::.ctor(System.String,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void IndexedAttribute__ctor_m1946807753 (IndexedAttribute_t384353508 * __this, String_t* ___name0, int32_t ___order1, const RuntimeMethod* method)
+{
+	{
+		Attribute__ctor_m1529526131(__this, /*hidden argument*/NULL);
+		String_t* L_0 = ___name0;
+		IndexedAttribute_set_Name_m1234318038(__this, L_0, /*hidden argument*/NULL);
+		int32_t L_1 = ___order1;
+		IndexedAttribute_set_Order_m3237548574(__this, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.String SQLite4Unity3d.IndexedAttribute::get_Name()
+extern "C" IL2CPP_METHOD_ATTR String_t* IndexedAttribute_get_Name_m2341810600 (IndexedAttribute_t384353508 * __this, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = __this->get_U3CNameU3Ek__BackingField_0();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.IndexedAttribute::set_Name(System.String)
+extern "C" IL2CPP_METHOD_ATTR void IndexedAttribute_set_Name_m1234318038 (IndexedAttribute_t384353508 * __this, String_t* ___value0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->set_U3CNameU3Ek__BackingField_0(L_0);
+		return;
+	}
+}
+// System.Int32 SQLite4Unity3d.IndexedAttribute::get_Order()
+extern "C" IL2CPP_METHOD_ATTR int32_t IndexedAttribute_get_Order_m48377204 (IndexedAttribute_t384353508 * __this, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = __this->get_U3COrderU3Ek__BackingField_1();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.IndexedAttribute::set_Order(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void IndexedAttribute_set_Order_m3237548574 (IndexedAttribute_t384353508 * __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___value0;
+		__this->set_U3COrderU3Ek__BackingField_1(L_0);
+		return;
+	}
+}
+// System.Boolean SQLite4Unity3d.IndexedAttribute::get_Unique()
+extern "C" IL2CPP_METHOD_ATTR bool IndexedAttribute_get_Unique_m2673061730 (IndexedAttribute_t384353508 * __this, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = __this->get_U3CUniqueU3Ek__BackingField_2();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.IndexedAttribute::set_Unique(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void IndexedAttribute_set_Unique_m3233776020 (IndexedAttribute_t384353508 * __this, bool ___value0, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = ___value0;
+		__this->set_U3CUniqueU3Ek__BackingField_2(L_0);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.MaxLengthAttribute::.ctor(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void MaxLengthAttribute__ctor_m1253138157 (MaxLengthAttribute_t2329480580 * __this, int32_t ___length0, const RuntimeMethod* method)
+{
+	{
+		Attribute__ctor_m1529526131(__this, /*hidden argument*/NULL);
+		int32_t L_0 = ___length0;
+		MaxLengthAttribute_set_Value_m3276403614(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Int32 SQLite4Unity3d.MaxLengthAttribute::get_Value()
+extern "C" IL2CPP_METHOD_ATTR int32_t MaxLengthAttribute_get_Value_m2838542087 (MaxLengthAttribute_t2329480580 * __this, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = __this->get_U3CValueU3Ek__BackingField_0();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.MaxLengthAttribute::set_Value(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void MaxLengthAttribute_set_Value_m3276403614 (MaxLengthAttribute_t2329480580 * __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___value0;
+		__this->set_U3CValueU3Ek__BackingField_0(L_0);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.NotNullAttribute::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void NotNullAttribute__ctor_m3478788553 (NotNullAttribute_t1344045378 * __this, const RuntimeMethod* method)
+{
+	{
+		Attribute__ctor_m1529526131(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.NotNullConstraintViolationException::.ctor(SQLite4Unity3d.SQLite3/Result,System.String)
+extern "C" IL2CPP_METHOD_ATTR void NotNullConstraintViolationException__ctor_m15606160 (NotNullConstraintViolationException_t3886364687 * __this, int32_t ___r0, String_t* ___message1, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___r0;
+		String_t* L_1 = ___message1;
+		NotNullConstraintViolationException__ctor_m491643267(__this, L_0, L_1, (TableMapping_t2276399492 *)NULL, NULL, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.NotNullConstraintViolationException::.ctor(SQLite4Unity3d.SQLite3/Result,System.String,SQLite4Unity3d.TableMapping,System.Object)
+extern "C" IL2CPP_METHOD_ATTR void NotNullConstraintViolationException__ctor_m491643267 (NotNullConstraintViolationException_t3886364687 * __this, int32_t ___r0, String_t* ___message1, TableMapping_t2276399492 * ___mapping2, RuntimeObject * ___obj3, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (NotNullConstraintViolationException__ctor_m491643267_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CNotNullConstraintViolationExceptionU3Ec__AnonStorey0_t2023264365 * V_0 = NULL;
+	{
+		U3CNotNullConstraintViolationExceptionU3Ec__AnonStorey0_t2023264365 * L_0 = (U3CNotNullConstraintViolationExceptionU3Ec__AnonStorey0_t2023264365 *)il2cpp_codegen_object_new(U3CNotNullConstraintViolationExceptionU3Ec__AnonStorey0_t2023264365_il2cpp_TypeInfo_var);
+		U3CNotNullConstraintViolationExceptionU3Ec__AnonStorey0__ctor_m3000327238(L_0, /*hidden argument*/NULL);
+		V_0 = L_0;
+		U3CNotNullConstraintViolationExceptionU3Ec__AnonStorey0_t2023264365 * L_1 = V_0;
+		RuntimeObject * L_2 = ___obj3;
+		NullCheck(L_1);
+		L_1->set_obj_0(L_2);
+		int32_t L_3 = ___r0;
+		String_t* L_4 = ___message1;
+		SQLiteException__ctor_m1199196893(__this, L_3, L_4, /*hidden argument*/NULL);
+		TableMapping_t2276399492 * L_5 = ___mapping2;
+		if (!L_5)
+		{
+			goto IL_0044;
+		}
+	}
+	{
+		U3CNotNullConstraintViolationExceptionU3Ec__AnonStorey0_t2023264365 * L_6 = V_0;
+		NullCheck(L_6);
+		RuntimeObject * L_7 = L_6->get_obj_0();
+		if (!L_7)
+		{
+			goto IL_0044;
+		}
+	}
+	{
+		TableMapping_t2276399492 * L_8 = ___mapping2;
+		NullCheck(L_8);
+		ColumnU5BU5D_t4060676894* L_9 = TableMapping_get_Columns_m2283845646(L_8, /*hidden argument*/NULL);
+		U3CNotNullConstraintViolationExceptionU3Ec__AnonStorey0_t2023264365 * L_10 = V_0;
+		intptr_t L_11 = (intptr_t)U3CNotNullConstraintViolationExceptionU3Ec__AnonStorey0_U3CU3Em__0_m4249541711_RuntimeMethod_var;
+		Func_2_t681049744 * L_12 = (Func_2_t681049744 *)il2cpp_codegen_object_new(Func_2_t681049744_il2cpp_TypeInfo_var);
+		Func_2__ctor_m2046779456(L_12, L_10, L_11, /*hidden argument*/Func_2__ctor_m2046779456_RuntimeMethod_var);
+		RuntimeObject* L_13 = Enumerable_Where_TisColumn_t1357940583_m2456226527(NULL /*static, unused*/, (RuntimeObject*)(RuntimeObject*)L_9, L_12, /*hidden argument*/Enumerable_Where_TisColumn_t1357940583_m2456226527_RuntimeMethod_var);
+		NotNullConstraintViolationException_set_Columns_m3499201995(__this, L_13, /*hidden argument*/NULL);
+	}
+
+IL_0044:
+	{
+		return;
+	}
+}
+// System.Collections.Generic.IEnumerable`1<SQLite4Unity3d.TableMapping/Column> SQLite4Unity3d.NotNullConstraintViolationException::get_Columns()
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject* NotNullConstraintViolationException_get_Columns_m1163171445 (NotNullConstraintViolationException_t3886364687 * __this, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject* L_0 = __this->get_U3CColumnsU3Ek__BackingField_12();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.NotNullConstraintViolationException::set_Columns(System.Collections.Generic.IEnumerable`1<SQLite4Unity3d.TableMapping/Column>)
+extern "C" IL2CPP_METHOD_ATTR void NotNullConstraintViolationException_set_Columns_m3499201995 (NotNullConstraintViolationException_t3886364687 * __this, RuntimeObject* ___value0, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject* L_0 = ___value0;
+		__this->set_U3CColumnsU3Ek__BackingField_12(L_0);
+		return;
+	}
+}
+// SQLite4Unity3d.NotNullConstraintViolationException SQLite4Unity3d.NotNullConstraintViolationException::New(SQLite4Unity3d.SQLite3/Result,System.String)
+extern "C" IL2CPP_METHOD_ATTR NotNullConstraintViolationException_t3886364687 * NotNullConstraintViolationException_New_m121954500 (RuntimeObject * __this /* static, unused */, int32_t ___r0, String_t* ___message1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (NotNullConstraintViolationException_New_m121954500_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		int32_t L_0 = ___r0;
+		String_t* L_1 = ___message1;
+		NotNullConstraintViolationException_t3886364687 * L_2 = (NotNullConstraintViolationException_t3886364687 *)il2cpp_codegen_object_new(NotNullConstraintViolationException_t3886364687_il2cpp_TypeInfo_var);
+		NotNullConstraintViolationException__ctor_m15606160(L_2, L_0, L_1, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
+// SQLite4Unity3d.NotNullConstraintViolationException SQLite4Unity3d.NotNullConstraintViolationException::New(SQLite4Unity3d.SQLite3/Result,System.String,SQLite4Unity3d.TableMapping,System.Object)
+extern "C" IL2CPP_METHOD_ATTR NotNullConstraintViolationException_t3886364687 * NotNullConstraintViolationException_New_m2067300247 (RuntimeObject * __this /* static, unused */, int32_t ___r0, String_t* ___message1, TableMapping_t2276399492 * ___mapping2, RuntimeObject * ___obj3, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (NotNullConstraintViolationException_New_m2067300247_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		int32_t L_0 = ___r0;
+		String_t* L_1 = ___message1;
+		TableMapping_t2276399492 * L_2 = ___mapping2;
+		RuntimeObject * L_3 = ___obj3;
+		NotNullConstraintViolationException_t3886364687 * L_4 = (NotNullConstraintViolationException_t3886364687 *)il2cpp_codegen_object_new(NotNullConstraintViolationException_t3886364687_il2cpp_TypeInfo_var);
+		NotNullConstraintViolationException__ctor_m491643267(L_4, L_0, L_1, L_2, L_3, /*hidden argument*/NULL);
+		return L_4;
+	}
+}
+// SQLite4Unity3d.NotNullConstraintViolationException SQLite4Unity3d.NotNullConstraintViolationException::New(SQLite4Unity3d.SQLiteException,SQLite4Unity3d.TableMapping,System.Object)
+extern "C" IL2CPP_METHOD_ATTR NotNullConstraintViolationException_t3886364687 * NotNullConstraintViolationException_New_m4007323012 (RuntimeObject * __this /* static, unused */, SQLiteException_t1356363765 * ___exception0, TableMapping_t2276399492 * ___mapping1, RuntimeObject * ___obj2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (NotNullConstraintViolationException_New_m4007323012_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		SQLiteException_t1356363765 * L_0 = ___exception0;
+		NullCheck(L_0);
+		int32_t L_1 = SQLiteException_get_Result_m3460608678(L_0, /*hidden argument*/NULL);
+		SQLiteException_t1356363765 * L_2 = ___exception0;
+		NullCheck(L_2);
+		String_t* L_3 = VirtFuncInvoker0< String_t* >::Invoke(6 /* System.String System.Exception::get_Message() */, L_2);
+		TableMapping_t2276399492 * L_4 = ___mapping1;
+		RuntimeObject * L_5 = ___obj2;
+		NotNullConstraintViolationException_t3886364687 * L_6 = (NotNullConstraintViolationException_t3886364687 *)il2cpp_codegen_object_new(NotNullConstraintViolationException_t3886364687_il2cpp_TypeInfo_var);
+		NotNullConstraintViolationException__ctor_m491643267(L_6, L_1, L_3, L_4, L_5, /*hidden argument*/NULL);
+		return L_6;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.NotNullConstraintViolationException/<NotNullConstraintViolationException>c__AnonStorey0::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void U3CNotNullConstraintViolationExceptionU3Ec__AnonStorey0__ctor_m3000327238 (U3CNotNullConstraintViolationExceptionU3Ec__AnonStorey0_t2023264365 * __this, const RuntimeMethod* method)
+{
+	{
+		Object__ctor_m297566312(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean SQLite4Unity3d.NotNullConstraintViolationException/<NotNullConstraintViolationException>c__AnonStorey0::<>m__0(SQLite4Unity3d.TableMapping/Column)
+extern "C" IL2CPP_METHOD_ATTR bool U3CNotNullConstraintViolationExceptionU3Ec__AnonStorey0_U3CU3Em__0_m4249541711 (U3CNotNullConstraintViolationExceptionU3Ec__AnonStorey0_t2023264365 * __this, Column_t1357940583 * ___c0, const RuntimeMethod* method)
+{
+	int32_t G_B3_0 = 0;
+	{
+		Column_t1357940583 * L_0 = ___c0;
+		NullCheck(L_0);
+		bool L_1 = Column_get_IsNullable_m280325304(L_0, /*hidden argument*/NULL);
+		if (L_1)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		Column_t1357940583 * L_2 = ___c0;
+		RuntimeObject * L_3 = __this->get_obj_0();
+		NullCheck(L_2);
+		RuntimeObject * L_4 = Column_GetValue_m3743332072(L_2, L_3, /*hidden argument*/NULL);
+		G_B3_0 = ((((RuntimeObject*)(RuntimeObject *)L_4) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
+		goto IL_001d;
+	}
+
+IL_001c:
+	{
+		G_B3_0 = 0;
+	}
+
+IL_001d:
+	{
+		return (bool)G_B3_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.String SQLite4Unity3d.Orm::SqlDecl(SQLite4Unity3d.TableMapping/Column,System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR String_t* Orm_SqlDecl_m2709905698 (RuntimeObject * __this /* static, unused */, Column_t1357940583 * ___p0, bool ___storeDateTimeAsTicks1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Orm_SqlDecl_m2709905698_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	{
+		StringU5BU5D_t1281789340* L_0 = (StringU5BU5D_t1281789340*)SZArrayNew(StringU5BU5D_t1281789340_il2cpp_TypeInfo_var, (uint32_t)5);
+		StringU5BU5D_t1281789340* L_1 = L_0;
+		NullCheck(L_1);
+		ArrayElementTypeCheck (L_1, _stringLiteral3452614526);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral3452614526);
+		StringU5BU5D_t1281789340* L_2 = L_1;
+		Column_t1357940583 * L_3 = ___p0;
+		NullCheck(L_3);
+		String_t* L_4 = Column_get_Name_m892990361(L_3, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		ArrayElementTypeCheck (L_2, L_4);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_4);
+		StringU5BU5D_t1281789340* L_5 = L_2;
+		NullCheck(L_5);
+		ArrayElementTypeCheck (L_5, _stringLiteral3450517374);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral3450517374);
+		StringU5BU5D_t1281789340* L_6 = L_5;
+		Column_t1357940583 * L_7 = ___p0;
+		bool L_8 = ___storeDateTimeAsTicks1;
+		String_t* L_9 = Orm_SqlType_m2371860752(NULL /*static, unused*/, L_7, L_8, /*hidden argument*/NULL);
+		NullCheck(L_6);
+		ArrayElementTypeCheck (L_6, L_9);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_9);
+		StringU5BU5D_t1281789340* L_10 = L_6;
+		NullCheck(L_10);
+		ArrayElementTypeCheck (L_10, _stringLiteral3452614528);
+		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteral3452614528);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_11 = String_Concat_m1809518182(NULL /*static, unused*/, L_10, /*hidden argument*/NULL);
+		V_0 = L_11;
+		Column_t1357940583 * L_12 = ___p0;
+		NullCheck(L_12);
+		bool L_13 = Column_get_IsPK_m2082193636(L_12, /*hidden argument*/NULL);
+		if (!L_13)
+		{
+			goto IL_004e;
+		}
+	}
+	{
+		String_t* L_14 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_15 = String_Concat_m3937257545(NULL /*static, unused*/, L_14, _stringLiteral989870448, /*hidden argument*/NULL);
+		V_0 = L_15;
+	}
+
+IL_004e:
+	{
+		Column_t1357940583 * L_16 = ___p0;
+		NullCheck(L_16);
+		bool L_17 = Column_get_IsAutoInc_m3625158064(L_16, /*hidden argument*/NULL);
+		if (!L_17)
+		{
+			goto IL_0065;
+		}
+	}
+	{
+		String_t* L_18 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_19 = String_Concat_m3937257545(NULL /*static, unused*/, L_18, _stringLiteral1811793787, /*hidden argument*/NULL);
+		V_0 = L_19;
+	}
+
+IL_0065:
+	{
+		Column_t1357940583 * L_20 = ___p0;
+		NullCheck(L_20);
+		bool L_21 = Column_get_IsNullable_m280325304(L_20, /*hidden argument*/NULL);
+		if (L_21)
+		{
+			goto IL_007c;
+		}
+	}
+	{
+		String_t* L_22 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_23 = String_Concat_m3937257545(NULL /*static, unused*/, L_22, _stringLiteral887883575, /*hidden argument*/NULL);
+		V_0 = L_23;
+	}
+
+IL_007c:
+	{
+		Column_t1357940583 * L_24 = ___p0;
+		NullCheck(L_24);
+		String_t* L_25 = Column_get_Collation_m3582061121(L_24, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_26 = String_IsNullOrEmpty_m2969720369(NULL /*static, unused*/, L_25, /*hidden argument*/NULL);
+		if (L_26)
+		{
+			goto IL_00a3;
+		}
+	}
+	{
+		String_t* L_27 = V_0;
+		Column_t1357940583 * L_28 = ___p0;
+		NullCheck(L_28);
+		String_t* L_29 = Column_get_Collation_m3582061121(L_28, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_30 = String_Concat_m2163913788(NULL /*static, unused*/, L_27, _stringLiteral3326820399, L_29, _stringLiteral3452614528, /*hidden argument*/NULL);
+		V_0 = L_30;
+	}
+
+IL_00a3:
+	{
+		String_t* L_31 = V_0;
+		return L_31;
+	}
+}
+// System.String SQLite4Unity3d.Orm::SqlType(SQLite4Unity3d.TableMapping/Column,System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR String_t* Orm_SqlType_m2371860752 (RuntimeObject * __this /* static, unused */, Column_t1357940583 * ___p0, bool ___storeDateTimeAsTicks1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Orm_SqlType_m2371860752_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Type_t * V_0 = NULL;
+	Nullable_1_t378540539  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	String_t* G_B24_0 = NULL;
+	{
+		Column_t1357940583 * L_0 = ___p0;
+		NullCheck(L_0);
+		Type_t * L_1 = Column_get_ColumnType_m2188313396(L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		Type_t * L_2 = V_0;
+		RuntimeTypeHandle_t3027515415  L_3 = { reinterpret_cast<intptr_t> (Boolean_t97287965_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_4 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+		if ((((RuntimeObject*)(Type_t *)L_2) == ((RuntimeObject*)(Type_t *)L_4)))
+		{
+			goto IL_0067;
+		}
+	}
+	{
+		Type_t * L_5 = V_0;
+		RuntimeTypeHandle_t3027515415  L_6 = { reinterpret_cast<intptr_t> (Byte_t1134296376_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_7 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_6, /*hidden argument*/NULL);
+		if ((((RuntimeObject*)(Type_t *)L_5) == ((RuntimeObject*)(Type_t *)L_7)))
+		{
+			goto IL_0067;
+		}
+	}
+	{
+		Type_t * L_8 = V_0;
+		RuntimeTypeHandle_t3027515415  L_9 = { reinterpret_cast<intptr_t> (UInt16_t2177724958_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_10 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_9, /*hidden argument*/NULL);
+		if ((((RuntimeObject*)(Type_t *)L_8) == ((RuntimeObject*)(Type_t *)L_10)))
+		{
+			goto IL_0067;
+		}
+	}
+	{
+		Type_t * L_11 = V_0;
+		RuntimeTypeHandle_t3027515415  L_12 = { reinterpret_cast<intptr_t> (SByte_t1669577662_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_13 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_12, /*hidden argument*/NULL);
+		if ((((RuntimeObject*)(Type_t *)L_11) == ((RuntimeObject*)(Type_t *)L_13)))
+		{
+			goto IL_0067;
+		}
+	}
+	{
+		Type_t * L_14 = V_0;
+		RuntimeTypeHandle_t3027515415  L_15 = { reinterpret_cast<intptr_t> (Int16_t2552820387_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_16 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_15, /*hidden argument*/NULL);
+		if ((((RuntimeObject*)(Type_t *)L_14) == ((RuntimeObject*)(Type_t *)L_16)))
+		{
+			goto IL_0067;
+		}
+	}
+	{
+		Type_t * L_17 = V_0;
+		RuntimeTypeHandle_t3027515415  L_18 = { reinterpret_cast<intptr_t> (Int32_t2950945753_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_19 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_18, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_17) == ((RuntimeObject*)(Type_t *)L_19))))
+		{
+			goto IL_006d;
+		}
+	}
+
+IL_0067:
+	{
+		return _stringLiteral1572351178;
+	}
+
+IL_006d:
+	{
+		Type_t * L_20 = V_0;
+		RuntimeTypeHandle_t3027515415  L_21 = { reinterpret_cast<intptr_t> (UInt32_t2560061978_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_22 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_21, /*hidden argument*/NULL);
+		if ((((RuntimeObject*)(Type_t *)L_20) == ((RuntimeObject*)(Type_t *)L_22)))
+		{
+			goto IL_008d;
+		}
+	}
+	{
+		Type_t * L_23 = V_0;
+		RuntimeTypeHandle_t3027515415  L_24 = { reinterpret_cast<intptr_t> (Int64_t3736567304_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_25 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_24, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_23) == ((RuntimeObject*)(Type_t *)L_25))))
+		{
+			goto IL_0093;
+		}
+	}
+
+IL_008d:
+	{
+		return _stringLiteral2702074613;
+	}
+
+IL_0093:
+	{
+		Type_t * L_26 = V_0;
+		RuntimeTypeHandle_t3027515415  L_27 = { reinterpret_cast<intptr_t> (Single_t1397266774_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_28 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_27, /*hidden argument*/NULL);
+		if ((((RuntimeObject*)(Type_t *)L_26) == ((RuntimeObject*)(Type_t *)L_28)))
+		{
+			goto IL_00c3;
+		}
+	}
+	{
+		Type_t * L_29 = V_0;
+		RuntimeTypeHandle_t3027515415  L_30 = { reinterpret_cast<intptr_t> (Double_t594665363_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_31 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_30, /*hidden argument*/NULL);
+		if ((((RuntimeObject*)(Type_t *)L_29) == ((RuntimeObject*)(Type_t *)L_31)))
+		{
+			goto IL_00c3;
+		}
+	}
+	{
+		Type_t * L_32 = V_0;
+		RuntimeTypeHandle_t3027515415  L_33 = { reinterpret_cast<intptr_t> (Decimal_t2948259380_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_34 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_33, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_32) == ((RuntimeObject*)(Type_t *)L_34))))
+		{
+			goto IL_00c9;
+		}
+	}
+
+IL_00c3:
+	{
+		return _stringLiteral807124363;
+	}
+
+IL_00c9:
+	{
+		Type_t * L_35 = V_0;
+		RuntimeTypeHandle_t3027515415  L_36 = { reinterpret_cast<intptr_t> (String_t_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_37 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_36, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_35) == ((RuntimeObject*)(Type_t *)L_37))))
+		{
+			goto IL_010e;
+		}
+	}
+	{
+		Column_t1357940583 * L_38 = ___p0;
+		NullCheck(L_38);
+		Nullable_1_t378540539  L_39 = Column_get_MaxStringLength_m2359220591(L_38, /*hidden argument*/NULL);
+		V_1 = L_39;
+		bool L_40 = Nullable_1_get_HasValue_m589371754((Nullable_1_t378540539 *)(&V_1), /*hidden argument*/Nullable_1_get_HasValue_m589371754_RuntimeMethod_var);
+		if (!L_40)
+		{
+			goto IL_0108;
+		}
+	}
+	{
+		int32_t L_41 = Nullable_1_get_Value_m3000890071((Nullable_1_t378540539 *)(&V_1), /*hidden argument*/Nullable_1_get_Value_m3000890071_RuntimeMethod_var);
+		int32_t L_42 = L_41;
+		RuntimeObject * L_43 = Box(Int32_t2950945753_il2cpp_TypeInfo_var, &L_42);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_44 = String_Concat_m1715369213(NULL /*static, unused*/, _stringLiteral1308441708, L_43, _stringLiteral3452614535, /*hidden argument*/NULL);
+		return L_44;
+	}
+
+IL_0108:
+	{
+		return _stringLiteral1015364716;
+	}
+
+IL_010e:
+	{
+		Type_t * L_45 = V_0;
+		RuntimeTypeHandle_t3027515415  L_46 = { reinterpret_cast<intptr_t> (TimeSpan_t881159249_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_47 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_46, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_45) == ((RuntimeObject*)(Type_t *)L_47))))
+		{
+			goto IL_0124;
+		}
+	}
+	{
+		return _stringLiteral2702074613;
+	}
+
+IL_0124:
+	{
+		Type_t * L_48 = V_0;
+		RuntimeTypeHandle_t3027515415  L_49 = { reinterpret_cast<intptr_t> (DateTime_t3738529785_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_50 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_49, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_48) == ((RuntimeObject*)(Type_t *)L_50))))
+		{
+			goto IL_014a;
+		}
+	}
+	{
+		bool L_51 = ___storeDateTimeAsTicks1;
+		if (!L_51)
+		{
+			goto IL_0144;
+		}
+	}
+	{
+		G_B24_0 = _stringLiteral2702074613;
+		goto IL_0149;
+	}
+
+IL_0144:
+	{
+		G_B24_0 = _stringLiteral3798050113;
+	}
+
+IL_0149:
+	{
+		return G_B24_0;
+	}
+
+IL_014a:
+	{
+		Type_t * L_52 = V_0;
+		RuntimeTypeHandle_t3027515415  L_53 = { reinterpret_cast<intptr_t> (DateTimeOffset_t3229287507_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_54 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_53, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_52) == ((RuntimeObject*)(Type_t *)L_54))))
+		{
+			goto IL_0160;
+		}
+	}
+	{
+		return _stringLiteral2702074613;
+	}
+
+IL_0160:
+	{
+		Type_t * L_55 = V_0;
+		NullCheck(L_55);
+		bool L_56 = Type_get_IsEnum_m208091508(L_55, /*hidden argument*/NULL);
+		if (!L_56)
+		{
+			goto IL_0171;
+		}
+	}
+	{
+		return _stringLiteral1572351178;
+	}
+
+IL_0171:
+	{
+		Type_t * L_57 = V_0;
+		RuntimeTypeHandle_t3027515415  L_58 = { reinterpret_cast<intptr_t> (ByteU5BU5D_t4116647657_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_59 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_58, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_57) == ((RuntimeObject*)(Type_t *)L_59))))
+		{
+			goto IL_0187;
+		}
+	}
+	{
+		return _stringLiteral3946841517;
+	}
+
+IL_0187:
+	{
+		Type_t * L_60 = V_0;
+		RuntimeTypeHandle_t3027515415  L_61 = { reinterpret_cast<intptr_t> (Guid_t_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_62 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_61, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_60) == ((RuntimeObject*)(Type_t *)L_62))))
+		{
+			goto IL_019d;
+		}
+	}
+	{
+		return _stringLiteral3196334362;
+	}
+
+IL_019d:
+	{
+		Type_t * L_63 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_64 = String_Concat_m904156431(NULL /*static, unused*/, _stringLiteral2541768821, L_63, /*hidden argument*/NULL);
+		NotSupportedException_t1314879016 * L_65 = (NotSupportedException_t1314879016 *)il2cpp_codegen_object_new(NotSupportedException_t1314879016_il2cpp_TypeInfo_var);
+		NotSupportedException__ctor_m2494070935(L_65, L_64, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_65, NULL, Orm_SqlType_m2371860752_RuntimeMethod_var);
+	}
+}
+// System.Boolean SQLite4Unity3d.Orm::IsPK(System.Reflection.MemberInfo)
+extern "C" IL2CPP_METHOD_ATTR bool Orm_IsPK_m1915115011 (RuntimeObject * __this /* static, unused */, MemberInfo_t * ___p0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Orm_IsPK_m1915115011_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ObjectU5BU5D_t2843939325* V_0 = NULL;
+	{
+		MemberInfo_t * L_0 = ___p0;
+		RuntimeTypeHandle_t3027515415  L_1 = { reinterpret_cast<intptr_t> (PrimaryKeyAttribute_t1120256698_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_2 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		ObjectU5BU5D_t2843939325* L_3 = VirtFuncInvoker2< ObjectU5BU5D_t2843939325*, Type_t *, bool >::Invoke(13 /* System.Object[] System.Reflection.MemberInfo::GetCustomAttributes(System.Type,System.Boolean) */, L_0, L_2, (bool)1);
+		V_0 = L_3;
+		ObjectU5BU5D_t2843939325* L_4 = V_0;
+		NullCheck(L_4);
+		return (bool)((((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_4)->max_length))))) > ((int32_t)0))? 1 : 0);
+	}
+}
+// System.String SQLite4Unity3d.Orm::Collation(System.Reflection.MemberInfo)
+extern "C" IL2CPP_METHOD_ATTR String_t* Orm_Collation_m2000210213 (RuntimeObject * __this /* static, unused */, MemberInfo_t * ___p0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Orm_Collation_m2000210213_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ObjectU5BU5D_t2843939325* V_0 = NULL;
+	{
+		MemberInfo_t * L_0 = ___p0;
+		RuntimeTypeHandle_t3027515415  L_1 = { reinterpret_cast<intptr_t> (CollationAttribute_t3564781786_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_2 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		ObjectU5BU5D_t2843939325* L_3 = VirtFuncInvoker2< ObjectU5BU5D_t2843939325*, Type_t *, bool >::Invoke(13 /* System.Object[] System.Reflection.MemberInfo::GetCustomAttributes(System.Type,System.Boolean) */, L_0, L_2, (bool)1);
+		V_0 = L_3;
+		ObjectU5BU5D_t2843939325* L_4 = V_0;
+		NullCheck(L_4);
+		if ((((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_4)->max_length))))) <= ((int32_t)0)))
+		{
+			goto IL_0029;
+		}
+	}
+	{
+		ObjectU5BU5D_t2843939325* L_5 = V_0;
+		NullCheck(L_5);
+		int32_t L_6 = 0;
+		RuntimeObject * L_7 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
+		NullCheck(((CollationAttribute_t3564781786 *)CastclassClass((RuntimeObject*)L_7, CollationAttribute_t3564781786_il2cpp_TypeInfo_var)));
+		String_t* L_8 = CollationAttribute_get_Value_m547414817(((CollationAttribute_t3564781786 *)CastclassClass((RuntimeObject*)L_7, CollationAttribute_t3564781786_il2cpp_TypeInfo_var)), /*hidden argument*/NULL);
+		return L_8;
+	}
+
+IL_0029:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_9 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_2();
+		return L_9;
+	}
+}
+// System.Boolean SQLite4Unity3d.Orm::IsAutoInc(System.Reflection.MemberInfo)
+extern "C" IL2CPP_METHOD_ATTR bool Orm_IsAutoInc_m1378547954 (RuntimeObject * __this /* static, unused */, MemberInfo_t * ___p0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Orm_IsAutoInc_m1378547954_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ObjectU5BU5D_t2843939325* V_0 = NULL;
+	{
+		MemberInfo_t * L_0 = ___p0;
+		RuntimeTypeHandle_t3027515415  L_1 = { reinterpret_cast<intptr_t> (AutoIncrementAttribute_t3792157881_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_2 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		ObjectU5BU5D_t2843939325* L_3 = VirtFuncInvoker2< ObjectU5BU5D_t2843939325*, Type_t *, bool >::Invoke(13 /* System.Object[] System.Reflection.MemberInfo::GetCustomAttributes(System.Type,System.Boolean) */, L_0, L_2, (bool)1);
+		V_0 = L_3;
+		ObjectU5BU5D_t2843939325* L_4 = V_0;
+		NullCheck(L_4);
+		return (bool)((((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_4)->max_length))))) > ((int32_t)0))? 1 : 0);
+	}
+}
+// System.Collections.Generic.IEnumerable`1<SQLite4Unity3d.IndexedAttribute> SQLite4Unity3d.Orm::GetIndices(System.Reflection.MemberInfo)
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject* Orm_GetIndices_m2972767871 (RuntimeObject * __this /* static, unused */, MemberInfo_t * ___p0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Orm_GetIndices_m2972767871_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ObjectU5BU5D_t2843939325* V_0 = NULL;
+	{
+		MemberInfo_t * L_0 = ___p0;
+		RuntimeTypeHandle_t3027515415  L_1 = { reinterpret_cast<intptr_t> (IndexedAttribute_t384353508_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_2 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		ObjectU5BU5D_t2843939325* L_3 = VirtFuncInvoker2< ObjectU5BU5D_t2843939325*, Type_t *, bool >::Invoke(13 /* System.Object[] System.Reflection.MemberInfo::GetCustomAttributes(System.Type,System.Boolean) */, L_0, L_2, (bool)1);
+		V_0 = L_3;
+		ObjectU5BU5D_t2843939325* L_4 = V_0;
+		RuntimeObject* L_5 = Enumerable_Cast_TisIndexedAttribute_t384353508_m3549597737(NULL /*static, unused*/, (RuntimeObject*)(RuntimeObject*)L_4, /*hidden argument*/Enumerable_Cast_TisIndexedAttribute_t384353508_m3549597737_RuntimeMethod_var);
+		return L_5;
+	}
+}
+// System.Nullable`1<System.Int32> SQLite4Unity3d.Orm::MaxStringLength(System.Reflection.PropertyInfo)
+extern "C" IL2CPP_METHOD_ATTR Nullable_1_t378540539  Orm_MaxStringLength_m1394593579 (RuntimeObject * __this /* static, unused */, PropertyInfo_t * ___p0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Orm_MaxStringLength_m1394593579_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ObjectU5BU5D_t2843939325* V_0 = NULL;
+	Nullable_1_t378540539  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		PropertyInfo_t * L_0 = ___p0;
+		RuntimeTypeHandle_t3027515415  L_1 = { reinterpret_cast<intptr_t> (MaxLengthAttribute_t2329480580_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_2 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		ObjectU5BU5D_t2843939325* L_3 = VirtFuncInvoker2< ObjectU5BU5D_t2843939325*, Type_t *, bool >::Invoke(13 /* System.Object[] System.Reflection.MemberInfo::GetCustomAttributes(System.Type,System.Boolean) */, L_0, L_2, (bool)1);
+		V_0 = L_3;
+		ObjectU5BU5D_t2843939325* L_4 = V_0;
+		NullCheck(L_4);
+		if ((((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_4)->max_length))))) <= ((int32_t)0)))
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		ObjectU5BU5D_t2843939325* L_5 = V_0;
+		NullCheck(L_5);
+		int32_t L_6 = 0;
+		RuntimeObject * L_7 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
+		NullCheck(((MaxLengthAttribute_t2329480580 *)CastclassClass((RuntimeObject*)L_7, MaxLengthAttribute_t2329480580_il2cpp_TypeInfo_var)));
+		int32_t L_8 = MaxLengthAttribute_get_Value_m2838542087(((MaxLengthAttribute_t2329480580 *)CastclassClass((RuntimeObject*)L_7, MaxLengthAttribute_t2329480580_il2cpp_TypeInfo_var)), /*hidden argument*/NULL);
+		Nullable_1_t378540539  L_9;
+		memset(&L_9, 0, sizeof(L_9));
+		Nullable_1__ctor_m3940678751((&L_9), L_8, /*hidden argument*/Nullable_1__ctor_m3940678751_RuntimeMethod_var);
+		return L_9;
+	}
+
+IL_002e:
+	{
+		il2cpp_codegen_initobj((&V_1), sizeof(Nullable_1_t378540539 ));
+		Nullable_1_t378540539  L_10 = V_1;
+		return L_10;
+	}
+}
+// System.Boolean SQLite4Unity3d.Orm::IsMarkedNotNull(System.Reflection.MemberInfo)
+extern "C" IL2CPP_METHOD_ATTR bool Orm_IsMarkedNotNull_m3213728455 (RuntimeObject * __this /* static, unused */, MemberInfo_t * ___p0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Orm_IsMarkedNotNull_m3213728455_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ObjectU5BU5D_t2843939325* V_0 = NULL;
+	{
+		MemberInfo_t * L_0 = ___p0;
+		RuntimeTypeHandle_t3027515415  L_1 = { reinterpret_cast<intptr_t> (NotNullAttribute_t1344045378_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_2 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		ObjectU5BU5D_t2843939325* L_3 = VirtFuncInvoker2< ObjectU5BU5D_t2843939325*, Type_t *, bool >::Invoke(13 /* System.Object[] System.Reflection.MemberInfo::GetCustomAttributes(System.Type,System.Boolean) */, L_0, L_2, (bool)1);
+		V_0 = L_3;
+		ObjectU5BU5D_t2843939325* L_4 = V_0;
+		NullCheck(L_4);
+		return (bool)((((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_4)->max_length))))) > ((int32_t)0))? 1 : 0);
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.PreparedSqlLiteInsertCommand::.ctor(SQLite4Unity3d.SQLiteConnection)
+extern "C" IL2CPP_METHOD_ATTR void PreparedSqlLiteInsertCommand__ctor_m2520792582 (PreparedSqlLiteInsertCommand_t994658783 * __this, SQLiteConnection_t3070079188 * ___conn0, const RuntimeMethod* method)
+{
+	{
+		Object__ctor_m297566312(__this, /*hidden argument*/NULL);
+		SQLiteConnection_t3070079188 * L_0 = ___conn0;
+		PreparedSqlLiteInsertCommand_set_Connection_m254024264(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean SQLite4Unity3d.PreparedSqlLiteInsertCommand::get_Initialized()
+extern "C" IL2CPP_METHOD_ATTR bool PreparedSqlLiteInsertCommand_get_Initialized_m1342253637 (PreparedSqlLiteInsertCommand_t994658783 * __this, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = __this->get_U3CInitializedU3Ek__BackingField_0();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.PreparedSqlLiteInsertCommand::set_Initialized(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void PreparedSqlLiteInsertCommand_set_Initialized_m3809384747 (PreparedSqlLiteInsertCommand_t994658783 * __this, bool ___value0, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = ___value0;
+		__this->set_U3CInitializedU3Ek__BackingField_0(L_0);
+		return;
+	}
+}
+// SQLite4Unity3d.SQLiteConnection SQLite4Unity3d.PreparedSqlLiteInsertCommand::get_Connection()
+extern "C" IL2CPP_METHOD_ATTR SQLiteConnection_t3070079188 * PreparedSqlLiteInsertCommand_get_Connection_m458268417 (PreparedSqlLiteInsertCommand_t994658783 * __this, const RuntimeMethod* method)
+{
+	{
+		SQLiteConnection_t3070079188 * L_0 = __this->get_U3CConnectionU3Ek__BackingField_1();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.PreparedSqlLiteInsertCommand::set_Connection(SQLite4Unity3d.SQLiteConnection)
+extern "C" IL2CPP_METHOD_ATTR void PreparedSqlLiteInsertCommand_set_Connection_m254024264 (PreparedSqlLiteInsertCommand_t994658783 * __this, SQLiteConnection_t3070079188 * ___value0, const RuntimeMethod* method)
+{
+	{
+		SQLiteConnection_t3070079188 * L_0 = ___value0;
+		__this->set_U3CConnectionU3Ek__BackingField_1(L_0);
+		return;
+	}
+}
+// System.String SQLite4Unity3d.PreparedSqlLiteInsertCommand::get_CommandText()
+extern "C" IL2CPP_METHOD_ATTR String_t* PreparedSqlLiteInsertCommand_get_CommandText_m2313340410 (PreparedSqlLiteInsertCommand_t994658783 * __this, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = __this->get_U3CCommandTextU3Ek__BackingField_2();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.PreparedSqlLiteInsertCommand::set_CommandText(System.String)
+extern "C" IL2CPP_METHOD_ATTR void PreparedSqlLiteInsertCommand_set_CommandText_m1234740154 (PreparedSqlLiteInsertCommand_t994658783 * __this, String_t* ___value0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->set_U3CCommandTextU3Ek__BackingField_2(L_0);
+		return;
+	}
+}
+// System.IntPtr SQLite4Unity3d.PreparedSqlLiteInsertCommand::get_Statement()
+extern "C" IL2CPP_METHOD_ATTR intptr_t PreparedSqlLiteInsertCommand_get_Statement_m4160804592 (PreparedSqlLiteInsertCommand_t994658783 * __this, const RuntimeMethod* method)
+{
+	{
+		intptr_t L_0 = __this->get_U3CStatementU3Ek__BackingField_3();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.PreparedSqlLiteInsertCommand::set_Statement(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR void PreparedSqlLiteInsertCommand_set_Statement_m2329728472 (PreparedSqlLiteInsertCommand_t994658783 * __this, intptr_t ___value0, const RuntimeMethod* method)
+{
+	{
+		intptr_t L_0 = ___value0;
+		__this->set_U3CStatementU3Ek__BackingField_3(L_0);
+		return;
+	}
+}
+// System.Int32 SQLite4Unity3d.PreparedSqlLiteInsertCommand::ExecuteNonQuery(System.Object[])
+extern "C" IL2CPP_METHOD_ATTR int32_t PreparedSqlLiteInsertCommand_ExecuteNonQuery_m2787388731 (PreparedSqlLiteInsertCommand_t994658783 * __this, ObjectU5BU5D_t2843939325* ___source0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PreparedSqlLiteInsertCommand_ExecuteNonQuery_m2787388731_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	String_t* V_3 = NULL;
+	{
+		SQLiteConnection_t3070079188 * L_0 = PreparedSqlLiteInsertCommand_get_Connection_m458268417(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		bool L_1 = SQLiteConnection_get_Trace_m4025894662(L_0, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0010;
+		}
+	}
+
+IL_0010:
+	{
+		V_0 = 0;
+		bool L_2 = PreparedSqlLiteInsertCommand_get_Initialized_m1342253637(__this, /*hidden argument*/NULL);
+		if (L_2)
+		{
+			goto IL_0030;
+		}
+	}
+	{
+		intptr_t L_3 = VirtFuncInvoker0< intptr_t >::Invoke(5 /* System.IntPtr SQLite4Unity3d.PreparedSqlLiteInsertCommand::Prepare() */, __this);
+		PreparedSqlLiteInsertCommand_set_Statement_m2329728472(__this, L_3, /*hidden argument*/NULL);
+		PreparedSqlLiteInsertCommand_set_Initialized_m3809384747(__this, (bool)1, /*hidden argument*/NULL);
+	}
+
+IL_0030:
+	{
+		ObjectU5BU5D_t2843939325* L_4 = ___source0;
+		if (!L_4)
+		{
+			goto IL_0066;
+		}
+	}
+	{
+		V_1 = 0;
+		goto IL_005d;
+	}
+
+IL_003d:
+	{
+		intptr_t L_5 = PreparedSqlLiteInsertCommand_get_Statement_m4160804592(__this, /*hidden argument*/NULL);
+		int32_t L_6 = V_1;
+		ObjectU5BU5D_t2843939325* L_7 = ___source0;
+		int32_t L_8 = V_1;
+		NullCheck(L_7);
+		int32_t L_9 = L_8;
+		RuntimeObject * L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
+		SQLiteConnection_t3070079188 * L_11 = PreparedSqlLiteInsertCommand_get_Connection_m458268417(__this, /*hidden argument*/NULL);
+		NullCheck(L_11);
+		bool L_12 = SQLiteConnection_get_StoreDateTimeAsTicks_m1334058394(L_11, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(SQLiteCommand_t3688707480_il2cpp_TypeInfo_var);
+		SQLiteCommand_BindParameter_m2636142430(NULL /*static, unused*/, L_5, ((int32_t)il2cpp_codegen_add((int32_t)L_6, (int32_t)1)), L_10, L_12, /*hidden argument*/NULL);
+		int32_t L_13 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_13, (int32_t)1));
+	}
+
+IL_005d:
+	{
+		int32_t L_14 = V_1;
+		ObjectU5BU5D_t2843939325* L_15 = ___source0;
+		NullCheck(L_15);
+		if ((((int32_t)L_14) < ((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_15)->max_length)))))))
+		{
+			goto IL_003d;
+		}
+	}
+
+IL_0066:
+	{
+		intptr_t L_16 = PreparedSqlLiteInsertCommand_get_Statement_m4160804592(__this, /*hidden argument*/NULL);
+		int32_t L_17 = SQLite3_Step_m2082604678(NULL /*static, unused*/, L_16, /*hidden argument*/NULL);
+		V_0 = L_17;
+		int32_t L_18 = V_0;
+		if ((!(((uint32_t)L_18) == ((uint32_t)((int32_t)101)))))
+		{
+			goto IL_0099;
+		}
+	}
+	{
+		SQLiteConnection_t3070079188 * L_19 = PreparedSqlLiteInsertCommand_get_Connection_m458268417(__this, /*hidden argument*/NULL);
+		NullCheck(L_19);
+		intptr_t L_20 = SQLiteConnection_get_Handle_m4185785638(L_19, /*hidden argument*/NULL);
+		int32_t L_21 = SQLite3_Changes_m805525823(NULL /*static, unused*/, L_20, /*hidden argument*/NULL);
+		V_2 = L_21;
+		intptr_t L_22 = PreparedSqlLiteInsertCommand_get_Statement_m4160804592(__this, /*hidden argument*/NULL);
+		SQLite3_Reset_m1714599342(NULL /*static, unused*/, L_22, /*hidden argument*/NULL);
+		int32_t L_23 = V_2;
+		return L_23;
+	}
+
+IL_0099:
+	{
+		int32_t L_24 = V_0;
+		if ((!(((uint32_t)L_24) == ((uint32_t)1))))
+		{
+			goto IL_00c5;
+		}
+	}
+	{
+		SQLiteConnection_t3070079188 * L_25 = PreparedSqlLiteInsertCommand_get_Connection_m458268417(__this, /*hidden argument*/NULL);
+		NullCheck(L_25);
+		intptr_t L_26 = SQLiteConnection_get_Handle_m4185785638(L_25, /*hidden argument*/NULL);
+		String_t* L_27 = SQLite3_GetErrmsg_m3570473851(NULL /*static, unused*/, L_26, /*hidden argument*/NULL);
+		V_3 = L_27;
+		intptr_t L_28 = PreparedSqlLiteInsertCommand_get_Statement_m4160804592(__this, /*hidden argument*/NULL);
+		SQLite3_Reset_m1714599342(NULL /*static, unused*/, L_28, /*hidden argument*/NULL);
+		int32_t L_29 = V_0;
+		String_t* L_30 = V_3;
+		SQLiteException_t1356363765 * L_31 = SQLiteException_New_m975542910(NULL /*static, unused*/, L_29, L_30, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_31, NULL, PreparedSqlLiteInsertCommand_ExecuteNonQuery_m2787388731_RuntimeMethod_var);
+	}
+
+IL_00c5:
+	{
+		int32_t L_32 = V_0;
+		if ((!(((uint32_t)L_32) == ((uint32_t)((int32_t)19)))))
+		{
+			goto IL_010a;
+		}
+	}
+	{
+		SQLiteConnection_t3070079188 * L_33 = PreparedSqlLiteInsertCommand_get_Connection_m458268417(__this, /*hidden argument*/NULL);
+		NullCheck(L_33);
+		intptr_t L_34 = SQLiteConnection_get_Handle_m4185785638(L_33, /*hidden argument*/NULL);
+		int32_t L_35 = SQLite3_ExtendedErrCode_m1645503891(NULL /*static, unused*/, L_34, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_35) == ((uint32_t)((int32_t)1299)))))
+		{
+			goto IL_010a;
+		}
+	}
+	{
+		intptr_t L_36 = PreparedSqlLiteInsertCommand_get_Statement_m4160804592(__this, /*hidden argument*/NULL);
+		SQLite3_Reset_m1714599342(NULL /*static, unused*/, L_36, /*hidden argument*/NULL);
+		int32_t L_37 = V_0;
+		SQLiteConnection_t3070079188 * L_38 = PreparedSqlLiteInsertCommand_get_Connection_m458268417(__this, /*hidden argument*/NULL);
+		NullCheck(L_38);
+		intptr_t L_39 = SQLiteConnection_get_Handle_m4185785638(L_38, /*hidden argument*/NULL);
+		String_t* L_40 = SQLite3_GetErrmsg_m3570473851(NULL /*static, unused*/, L_39, /*hidden argument*/NULL);
+		NotNullConstraintViolationException_t3886364687 * L_41 = NotNullConstraintViolationException_New_m121954500(NULL /*static, unused*/, L_37, L_40, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_41, NULL, PreparedSqlLiteInsertCommand_ExecuteNonQuery_m2787388731_RuntimeMethod_var);
+	}
+
+IL_010a:
+	{
+		intptr_t L_42 = PreparedSqlLiteInsertCommand_get_Statement_m4160804592(__this, /*hidden argument*/NULL);
+		SQLite3_Reset_m1714599342(NULL /*static, unused*/, L_42, /*hidden argument*/NULL);
+		int32_t L_43 = V_0;
+		RuntimeObject * L_44 = Box(Result_t1053832893_il2cpp_TypeInfo_var, (&V_0));
+		NullCheck(L_44);
+		String_t* L_45 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_44);
+		V_0 = *(int32_t*)UnBox(L_44);
+		SQLiteException_t1356363765 * L_46 = SQLiteException_New_m975542910(NULL /*static, unused*/, L_43, L_45, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_46, NULL, PreparedSqlLiteInsertCommand_ExecuteNonQuery_m2787388731_RuntimeMethod_var);
+	}
+}
+// System.IntPtr SQLite4Unity3d.PreparedSqlLiteInsertCommand::Prepare()
+extern "C" IL2CPP_METHOD_ATTR intptr_t PreparedSqlLiteInsertCommand_Prepare_m2090834464 (PreparedSqlLiteInsertCommand_t994658783 * __this, const RuntimeMethod* method)
+{
+	intptr_t V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		SQLiteConnection_t3070079188 * L_0 = PreparedSqlLiteInsertCommand_get_Connection_m458268417(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		intptr_t L_1 = SQLiteConnection_get_Handle_m4185785638(L_0, /*hidden argument*/NULL);
+		String_t* L_2 = PreparedSqlLiteInsertCommand_get_CommandText_m2313340410(__this, /*hidden argument*/NULL);
+		intptr_t L_3 = SQLite3_Prepare2_m655766597(NULL /*static, unused*/, L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		intptr_t L_4 = V_0;
+		return L_4;
+	}
+}
+// System.Void SQLite4Unity3d.PreparedSqlLiteInsertCommand::Dispose()
+extern "C" IL2CPP_METHOD_ATTR void PreparedSqlLiteInsertCommand_Dispose_m3430535342 (PreparedSqlLiteInsertCommand_t994658783 * __this, const RuntimeMethod* method)
+{
+	{
+		PreparedSqlLiteInsertCommand_Dispose_m2170116472(__this, (bool)1, /*hidden argument*/NULL);
+		GC_SuppressFinalize_m1177400158(NULL /*static, unused*/, __this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.PreparedSqlLiteInsertCommand::Dispose(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void PreparedSqlLiteInsertCommand_Dispose_m2170116472 (PreparedSqlLiteInsertCommand_t994658783 * __this, bool ___disposing0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PreparedSqlLiteInsertCommand_Dispose_m2170116472_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		intptr_t L_0 = PreparedSqlLiteInsertCommand_get_Statement_m4160804592(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(PreparedSqlLiteInsertCommand_t994658783_il2cpp_TypeInfo_var);
+		intptr_t L_1 = ((PreparedSqlLiteInsertCommand_t994658783_StaticFields*)il2cpp_codegen_static_fields_for(PreparedSqlLiteInsertCommand_t994658783_il2cpp_TypeInfo_var))->get_NullStatement_4();
+		bool L_2 = IntPtr_op_Inequality_m3063970704(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_0039;
+		}
+	}
+
+IL_0015:
+	try
+	{ // begin try (depth: 1)
+		intptr_t L_3 = PreparedSqlLiteInsertCommand_get_Statement_m4160804592(__this, /*hidden argument*/NULL);
+		SQLite3_Finalize_m877745565(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+		IL2CPP_LEAVE(0x39, FINALLY_0026);
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_0026;
+	}
+
+FINALLY_0026:
+	{ // begin finally (depth: 1)
+		IL2CPP_RUNTIME_CLASS_INIT(PreparedSqlLiteInsertCommand_t994658783_il2cpp_TypeInfo_var);
+		intptr_t L_4 = ((PreparedSqlLiteInsertCommand_t994658783_StaticFields*)il2cpp_codegen_static_fields_for(PreparedSqlLiteInsertCommand_t994658783_il2cpp_TypeInfo_var))->get_NullStatement_4();
+		PreparedSqlLiteInsertCommand_set_Statement_m2329728472(__this, L_4, /*hidden argument*/NULL);
+		PreparedSqlLiteInsertCommand_set_Connection_m254024264(__this, (SQLiteConnection_t3070079188 *)NULL, /*hidden argument*/NULL);
+		IL2CPP_END_FINALLY(38)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(38)
+	{
+		IL2CPP_JUMP_TBL(0x39, IL_0039)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_0039:
+	{
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.PreparedSqlLiteInsertCommand::Finalize()
+extern "C" IL2CPP_METHOD_ATTR void PreparedSqlLiteInsertCommand_Finalize_m141300826 (PreparedSqlLiteInsertCommand_t994658783 * __this, const RuntimeMethod* method)
+{
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+
+IL_0000:
+	try
+	{ // begin try (depth: 1)
+		PreparedSqlLiteInsertCommand_Dispose_m2170116472(__this, (bool)0, /*hidden argument*/NULL);
+		IL2CPP_LEAVE(0x13, FINALLY_000c);
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_000c;
+	}
+
+FINALLY_000c:
+	{ // begin finally (depth: 1)
+		Object_Finalize_m3076187857(__this, /*hidden argument*/NULL);
+		IL2CPP_END_FINALLY(12)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(12)
+	{
+		IL2CPP_JUMP_TBL(0x13, IL_0013)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_0013:
+	{
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.PreparedSqlLiteInsertCommand::.cctor()
+extern "C" IL2CPP_METHOD_ATTR void PreparedSqlLiteInsertCommand__cctor_m1543780345 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PreparedSqlLiteInsertCommand__cctor_m1543780345_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	intptr_t V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(intptr_t));
+		intptr_t L_0 = V_0;
+		((PreparedSqlLiteInsertCommand_t994658783_StaticFields*)il2cpp_codegen_static_fields_for(PreparedSqlLiteInsertCommand_t994658783_il2cpp_TypeInfo_var))->set_NullStatement_4(L_0);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.PrimaryKeyAttribute::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void PrimaryKeyAttribute__ctor_m2439714878 (PrimaryKeyAttribute_t1120256698 * __this, const RuntimeMethod* method)
+{
+	{
+		Attribute__ctor_m1529526131(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// SQLite4Unity3d.SQLite3/Result SQLite4Unity3d.SQLite3::Open(System.String,System.IntPtr&)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_Open_m2676305146 (RuntimeObject * __this /* static, unused */, String_t* ___filename0, intptr_t* ___db1, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (char*, intptr_t*);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(char*) + sizeof(intptr_t*);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_open", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'Open'"), NULL, NULL);
+		}
+	}
+
+	// Marshaling of parameter '___filename0' to native representation
+	char* ____filename0_marshaled = NULL;
+	____filename0_marshaled = il2cpp_codegen_marshal_string(___filename0);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(____filename0_marshaled, ___db1);
+
+	// Marshaling cleanup of parameter '___filename0' native representation
+	il2cpp_codegen_marshal_free(____filename0_marshaled);
+	____filename0_marshaled = NULL;
+
+	return returnValue;
+}
+// SQLite4Unity3d.SQLite3/Result SQLite4Unity3d.SQLite3::Open(System.String,System.IntPtr&,System.Int32,System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_Open_m3248389973 (RuntimeObject * __this /* static, unused */, String_t* ___filename0, intptr_t* ___db1, int32_t ___flags2, intptr_t ___zvfs3, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (char*, intptr_t*, int32_t, intptr_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(char*) + sizeof(intptr_t*) + sizeof(int32_t) + sizeof(intptr_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_open_v2", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'Open'"), NULL, NULL);
+		}
+	}
+
+	// Marshaling of parameter '___filename0' to native representation
+	char* ____filename0_marshaled = NULL;
+	____filename0_marshaled = il2cpp_codegen_marshal_string(___filename0);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(____filename0_marshaled, ___db1, ___flags2, ___zvfs3);
+
+	// Marshaling cleanup of parameter '___filename0' native representation
+	il2cpp_codegen_marshal_free(____filename0_marshaled);
+	____filename0_marshaled = NULL;
+
+	return returnValue;
+}
+// SQLite4Unity3d.SQLite3/Result SQLite4Unity3d.SQLite3::Open(System.Byte[],System.IntPtr&,System.Int32,System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_Open_m3447767184 (RuntimeObject * __this /* static, unused */, ByteU5BU5D_t4116647657* ___filename0, intptr_t* ___db1, int32_t ___flags2, intptr_t ___zvfs3, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (uint8_t*, intptr_t*, int32_t, intptr_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(void*) + sizeof(intptr_t*) + sizeof(int32_t) + sizeof(intptr_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_open_v2", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'Open'"), NULL, NULL);
+		}
+	}
+
+	// Marshaling of parameter '___filename0' to native representation
+	uint8_t* ____filename0_marshaled = NULL;
+	if (___filename0 != NULL)
+	{
+		____filename0_marshaled = reinterpret_cast<uint8_t*>((___filename0)->GetAddressAtUnchecked(0));
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(____filename0_marshaled, ___db1, ___flags2, ___zvfs3);
+
+	return returnValue;
+}
+// SQLite4Unity3d.SQLite3/Result SQLite4Unity3d.SQLite3::Open16(System.String,System.IntPtr&)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_Open16_m2515949469 (RuntimeObject * __this /* static, unused */, String_t* ___filename0, intptr_t* ___db1, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (Il2CppChar*, intptr_t*);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(Il2CppChar*) + sizeof(intptr_t*);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_open16", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'Open16'"), NULL, NULL);
+		}
+	}
+
+	// Marshaling of parameter '___filename0' to native representation
+	Il2CppChar* ____filename0_marshaled = NULL;
+	if (___filename0 != NULL)
+	{
+		____filename0_marshaled = ___filename0->get_address_of_start_char_1();
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(____filename0_marshaled, ___db1);
+
+	return returnValue;
+}
+// SQLite4Unity3d.SQLite3/Result SQLite4Unity3d.SQLite3::EnableLoadExtension(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_EnableLoadExtension_m2149057872 (RuntimeObject * __this /* static, unused */, intptr_t ___db0, int32_t ___onoff1, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (intptr_t, int32_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t) + sizeof(int32_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_enable_load_extension", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'EnableLoadExtension'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___db0, ___onoff1);
+
+	return returnValue;
+}
+// SQLite4Unity3d.SQLite3/Result SQLite4Unity3d.SQLite3::Close(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_Close_m3192934511 (RuntimeObject * __this /* static, unused */, intptr_t ___db0, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (intptr_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_close", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'Close'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___db0);
+
+	return returnValue;
+}
+// SQLite4Unity3d.SQLite3/Result SQLite4Unity3d.SQLite3::Initialize()
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_Initialize_m3171118616 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) ();
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = 0;
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_initialize", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'Initialize'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc();
+
+	return returnValue;
+}
+// SQLite4Unity3d.SQLite3/Result SQLite4Unity3d.SQLite3::Shutdown()
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_Shutdown_m35722413 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) ();
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = 0;
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_shutdown", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'Shutdown'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc();
+
+	return returnValue;
+}
+// SQLite4Unity3d.SQLite3/Result SQLite4Unity3d.SQLite3::Config(SQLite4Unity3d.SQLite3/ConfigOption)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_Config_m3846039364 (RuntimeObject * __this /* static, unused */, int32_t ___option0, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (int32_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(int32_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_config", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'Config'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___option0);
+
+	return returnValue;
+}
+// System.Int32 SQLite4Unity3d.SQLite3::SetDirectory(System.UInt32,System.String)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_SetDirectory_m2035647711 (RuntimeObject * __this /* static, unused */, uint32_t ___directoryType0, String_t* ___directoryPath1, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (uint32_t, Il2CppChar*);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(uint32_t) + sizeof(Il2CppChar*);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_win32_set_directory", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'SetDirectory'"), NULL, NULL);
+		}
+	}
+
+	// Marshaling of parameter '___directoryPath1' to native representation
+	Il2CppChar* ____directoryPath1_marshaled = NULL;
+	if (___directoryPath1 != NULL)
+	{
+		____directoryPath1_marshaled = ___directoryPath1->get_address_of_start_char_1();
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___directoryType0, ____directoryPath1_marshaled);
+
+	return returnValue;
+}
+// SQLite4Unity3d.SQLite3/Result SQLite4Unity3d.SQLite3::BusyTimeout(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_BusyTimeout_m2064827914 (RuntimeObject * __this /* static, unused */, intptr_t ___db0, int32_t ___milliseconds1, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (intptr_t, int32_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t) + sizeof(int32_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_busy_timeout", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'BusyTimeout'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___db0, ___milliseconds1);
+
+	return returnValue;
+}
+// System.Int32 SQLite4Unity3d.SQLite3::Changes(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_Changes_m805525823 (RuntimeObject * __this /* static, unused */, intptr_t ___db0, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (intptr_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_changes", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'Changes'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___db0);
+
+	return returnValue;
+}
+// SQLite4Unity3d.SQLite3/Result SQLite4Unity3d.SQLite3::Prepare2(System.IntPtr,System.String,System.Int32,System.IntPtr&,System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_Prepare2_m2811953343 (RuntimeObject * __this /* static, unused */, intptr_t ___db0, String_t* ___sql1, int32_t ___numBytes2, intptr_t* ___stmt3, intptr_t ___pzTail4, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (intptr_t, char*, int32_t, intptr_t*, intptr_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t) + sizeof(char*) + sizeof(int32_t) + sizeof(intptr_t*) + sizeof(intptr_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_prepare_v2", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'Prepare2'"), NULL, NULL);
+		}
+	}
+
+	// Marshaling of parameter '___sql1' to native representation
+	char* ____sql1_marshaled = NULL;
+	____sql1_marshaled = il2cpp_codegen_marshal_string(___sql1);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___db0, ____sql1_marshaled, ___numBytes2, ___stmt3, ___pzTail4);
+
+	// Marshaling cleanup of parameter '___sql1' native representation
+	il2cpp_codegen_marshal_free(____sql1_marshaled);
+	____sql1_marshaled = NULL;
+
+	return returnValue;
+}
+// System.IntPtr SQLite4Unity3d.SQLite3::Prepare2(System.IntPtr,System.String)
+extern "C" IL2CPP_METHOD_ATTR intptr_t SQLite3_Prepare2_m655766597 (RuntimeObject * __this /* static, unused */, intptr_t ___db0, String_t* ___query1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLite3_Prepare2_m655766597_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	intptr_t V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	int32_t V_1 = 0;
+	{
+		intptr_t L_0 = ___db0;
+		String_t* L_1 = ___query1;
+		IL2CPP_RUNTIME_CLASS_INIT(Encoding_t1523322056_il2cpp_TypeInfo_var);
+		Encoding_t1523322056 * L_2 = Encoding_get_UTF8_m1008486739(NULL /*static, unused*/, /*hidden argument*/NULL);
+		String_t* L_3 = ___query1;
+		NullCheck(L_2);
+		int32_t L_4 = VirtFuncInvoker1< int32_t, String_t* >::Invoke(6 /* System.Int32 System.Text.Encoding::GetByteCount(System.String) */, L_2, L_3);
+		int32_t L_5 = SQLite3_Prepare2_m2811953343(NULL /*static, unused*/, L_0, L_1, L_4, (intptr_t*)(&V_0), (intptr_t)(0), /*hidden argument*/NULL);
+		V_1 = L_5;
+		int32_t L_6 = V_1;
+		if (!L_6)
+		{
+			goto IL_002d;
+		}
+	}
+	{
+		int32_t L_7 = V_1;
+		intptr_t L_8 = ___db0;
+		String_t* L_9 = SQLite3_GetErrmsg_m3570473851(NULL /*static, unused*/, L_8, /*hidden argument*/NULL);
+		SQLiteException_t1356363765 * L_10 = SQLiteException_New_m975542910(NULL /*static, unused*/, L_7, L_9, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_10, NULL, SQLite3_Prepare2_m655766597_RuntimeMethod_var);
+	}
+
+IL_002d:
+	{
+		intptr_t L_11 = V_0;
+		return L_11;
+	}
+}
+// SQLite4Unity3d.SQLite3/Result SQLite4Unity3d.SQLite3::Step(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_Step_m2082604678 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (intptr_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_step", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'Step'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___stmt0);
+
+	return returnValue;
+}
+// SQLite4Unity3d.SQLite3/Result SQLite4Unity3d.SQLite3::Reset(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_Reset_m1714599342 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (intptr_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_reset", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'Reset'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___stmt0);
+
+	return returnValue;
+}
+// SQLite4Unity3d.SQLite3/Result SQLite4Unity3d.SQLite3::Finalize(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_Finalize_m877745565 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (intptr_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_finalize", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'Finalize'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___stmt0);
+
+	return returnValue;
+}
+// System.Int64 SQLite4Unity3d.SQLite3::LastInsertRowid(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR int64_t SQLite3_LastInsertRowid_m192026105 (RuntimeObject * __this /* static, unused */, intptr_t ___db0, const RuntimeMethod* method)
+{
+	typedef int64_t (CDECL *PInvokeFunc) (intptr_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_last_insert_rowid", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'LastInsertRowid'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	int64_t returnValue = il2cppPInvokeFunc(___db0);
+
+	return returnValue;
+}
+// System.IntPtr SQLite4Unity3d.SQLite3::Errmsg(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR intptr_t SQLite3_Errmsg_m656673648 (RuntimeObject * __this /* static, unused */, intptr_t ___db0, const RuntimeMethod* method)
+{
+	typedef intptr_t (CDECL *PInvokeFunc) (intptr_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_errmsg16", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'Errmsg'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	intptr_t returnValue = il2cppPInvokeFunc(___db0);
+
+	return returnValue;
+}
+// System.String SQLite4Unity3d.SQLite3::GetErrmsg(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR String_t* SQLite3_GetErrmsg_m3570473851 (RuntimeObject * __this /* static, unused */, intptr_t ___db0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLite3_GetErrmsg_m3570473851_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		intptr_t L_0 = ___db0;
+		intptr_t L_1 = SQLite3_Errmsg_m656673648(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t1757017490_il2cpp_TypeInfo_var);
+		String_t* L_2 = Marshal_PtrToStringUni_m175561854(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
+// System.Int32 SQLite4Unity3d.SQLite3::BindParameterIndex(System.IntPtr,System.String)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_BindParameterIndex_m3061816311 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, String_t* ___name1, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (intptr_t, char*);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t) + sizeof(char*);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_bind_parameter_index", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'BindParameterIndex'"), NULL, NULL);
+		}
+	}
+
+	// Marshaling of parameter '___name1' to native representation
+	char* ____name1_marshaled = NULL;
+	____name1_marshaled = il2cpp_codegen_marshal_string(___name1);
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___stmt0, ____name1_marshaled);
+
+	// Marshaling cleanup of parameter '___name1' native representation
+	il2cpp_codegen_marshal_free(____name1_marshaled);
+	____name1_marshaled = NULL;
+
+	return returnValue;
+}
+// System.Int32 SQLite4Unity3d.SQLite3::BindNull(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_BindNull_m2819514229 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (intptr_t, int32_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t) + sizeof(int32_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_bind_null", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'BindNull'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___stmt0, ___index1);
+
+	return returnValue;
+}
+// System.Int32 SQLite4Unity3d.SQLite3::BindInt(System.IntPtr,System.Int32,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_BindInt_m3326750893 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, int32_t ___val2, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (intptr_t, int32_t, int32_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t) + sizeof(int32_t) + sizeof(int32_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_bind_int", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'BindInt'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___stmt0, ___index1, ___val2);
+
+	return returnValue;
+}
+// System.Int32 SQLite4Unity3d.SQLite3::BindInt64(System.IntPtr,System.Int32,System.Int64)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_BindInt64_m3899626256 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, int64_t ___val2, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (intptr_t, int32_t, int64_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t) + sizeof(int32_t) + sizeof(int64_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_bind_int64", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'BindInt64'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___stmt0, ___index1, ___val2);
+
+	return returnValue;
+}
+// System.Int32 SQLite4Unity3d.SQLite3::BindDouble(System.IntPtr,System.Int32,System.Double)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_BindDouble_m2715021545 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, double ___val2, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (intptr_t, int32_t, double);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t) + sizeof(int32_t) + sizeof(double);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_bind_double", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'BindDouble'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___stmt0, ___index1, ___val2);
+
+	return returnValue;
+}
+// System.Int32 SQLite4Unity3d.SQLite3::BindText(System.IntPtr,System.Int32,System.String,System.Int32,System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_BindText_m446958600 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, String_t* ___val2, int32_t ___n3, intptr_t ___free4, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (intptr_t, int32_t, Il2CppChar*, int32_t, intptr_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t) + sizeof(int32_t) + sizeof(Il2CppChar*) + sizeof(int32_t) + sizeof(intptr_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_bind_text16", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'BindText'"), NULL, NULL);
+		}
+	}
+
+	// Marshaling of parameter '___val2' to native representation
+	Il2CppChar* ____val2_marshaled = NULL;
+	if (___val2 != NULL)
+	{
+		____val2_marshaled = ___val2->get_address_of_start_char_1();
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___stmt0, ___index1, ____val2_marshaled, ___n3, ___free4);
+
+	return returnValue;
+}
+// System.Int32 SQLite4Unity3d.SQLite3::BindBlob(System.IntPtr,System.Int32,System.Byte[],System.Int32,System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_BindBlob_m3274128319 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, ByteU5BU5D_t4116647657* ___val2, int32_t ___n3, intptr_t ___free4, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (intptr_t, int32_t, uint8_t*, int32_t, intptr_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t) + sizeof(int32_t) + sizeof(void*) + sizeof(int32_t) + sizeof(intptr_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_bind_blob", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'BindBlob'"), NULL, NULL);
+		}
+	}
+
+	// Marshaling of parameter '___val2' to native representation
+	uint8_t* ____val2_marshaled = NULL;
+	if (___val2 != NULL)
+	{
+		____val2_marshaled = reinterpret_cast<uint8_t*>((___val2)->GetAddressAtUnchecked(0));
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___stmt0, ___index1, ____val2_marshaled, ___n3, ___free4);
+
+	return returnValue;
+}
+// System.Int32 SQLite4Unity3d.SQLite3::ColumnCount(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_ColumnCount_m3903137145 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (intptr_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_column_count", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'ColumnCount'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___stmt0);
+
+	return returnValue;
+}
+// System.IntPtr SQLite4Unity3d.SQLite3::ColumnName(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR intptr_t SQLite3_ColumnName_m452039526 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, const RuntimeMethod* method)
+{
+	typedef intptr_t (CDECL *PInvokeFunc) (intptr_t, int32_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t) + sizeof(int32_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_column_name", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'ColumnName'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	intptr_t returnValue = il2cppPInvokeFunc(___stmt0, ___index1);
+
+	return returnValue;
+}
+// System.IntPtr SQLite4Unity3d.SQLite3::ColumnName16Internal(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR intptr_t SQLite3_ColumnName16Internal_m3939023131 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, const RuntimeMethod* method)
+{
+	typedef intptr_t (CDECL *PInvokeFunc) (intptr_t, int32_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t) + sizeof(int32_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_column_name16", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'ColumnName16Internal'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	intptr_t returnValue = il2cppPInvokeFunc(___stmt0, ___index1);
+
+	return returnValue;
+}
+// System.String SQLite4Unity3d.SQLite3::ColumnName16(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR String_t* SQLite3_ColumnName16_m4168067819 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLite3_ColumnName16_m4168067819_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		intptr_t L_0 = ___stmt0;
+		int32_t L_1 = ___index1;
+		intptr_t L_2 = SQLite3_ColumnName16Internal_m3939023131(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t1757017490_il2cpp_TypeInfo_var);
+		String_t* L_3 = Marshal_PtrToStringUni_m175561854(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		return L_3;
+	}
+}
+// SQLite4Unity3d.SQLite3/ColType SQLite4Unity3d.SQLite3::ColumnType(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_ColumnType_m3326540871 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (intptr_t, int32_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t) + sizeof(int32_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_column_type", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'ColumnType'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___stmt0, ___index1);
+
+	return returnValue;
+}
+// System.Int32 SQLite4Unity3d.SQLite3::ColumnInt(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_ColumnInt_m486845722 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (intptr_t, int32_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t) + sizeof(int32_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_column_int", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'ColumnInt'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___stmt0, ___index1);
+
+	return returnValue;
+}
+// System.Int64 SQLite4Unity3d.SQLite3::ColumnInt64(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR int64_t SQLite3_ColumnInt64_m2218779963 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, const RuntimeMethod* method)
+{
+	typedef int64_t (CDECL *PInvokeFunc) (intptr_t, int32_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t) + sizeof(int32_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_column_int64", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'ColumnInt64'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	int64_t returnValue = il2cppPInvokeFunc(___stmt0, ___index1);
+
+	return returnValue;
+}
+// System.Double SQLite4Unity3d.SQLite3::ColumnDouble(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR double SQLite3_ColumnDouble_m703462329 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, const RuntimeMethod* method)
+{
+	typedef double (CDECL *PInvokeFunc) (intptr_t, int32_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t) + sizeof(int32_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_column_double", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'ColumnDouble'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	double returnValue = il2cppPInvokeFunc(___stmt0, ___index1);
+
+	return returnValue;
+}
+// System.IntPtr SQLite4Unity3d.SQLite3::ColumnText(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR intptr_t SQLite3_ColumnText_m2661513840 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, const RuntimeMethod* method)
+{
+	typedef intptr_t (CDECL *PInvokeFunc) (intptr_t, int32_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t) + sizeof(int32_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_column_text", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'ColumnText'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	intptr_t returnValue = il2cppPInvokeFunc(___stmt0, ___index1);
+
+	return returnValue;
+}
+// System.IntPtr SQLite4Unity3d.SQLite3::ColumnText16(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR intptr_t SQLite3_ColumnText16_m680827076 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, const RuntimeMethod* method)
+{
+	typedef intptr_t (CDECL *PInvokeFunc) (intptr_t, int32_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t) + sizeof(int32_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_column_text16", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'ColumnText16'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	intptr_t returnValue = il2cppPInvokeFunc(___stmt0, ___index1);
+
+	return returnValue;
+}
+// System.IntPtr SQLite4Unity3d.SQLite3::ColumnBlob(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR intptr_t SQLite3_ColumnBlob_m1019686787 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, const RuntimeMethod* method)
+{
+	typedef intptr_t (CDECL *PInvokeFunc) (intptr_t, int32_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t) + sizeof(int32_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_column_blob", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'ColumnBlob'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	intptr_t returnValue = il2cppPInvokeFunc(___stmt0, ___index1);
+
+	return returnValue;
+}
+// System.Int32 SQLite4Unity3d.SQLite3::ColumnBytes(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_ColumnBytes_m253525103 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (intptr_t, int32_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t) + sizeof(int32_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_column_bytes", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'ColumnBytes'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___stmt0, ___index1);
+
+	return returnValue;
+}
+// System.String SQLite4Unity3d.SQLite3::ColumnString(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR String_t* SQLite3_ColumnString_m4150538419 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLite3_ColumnString_m4150538419_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		intptr_t L_0 = ___stmt0;
+		int32_t L_1 = ___index1;
+		intptr_t L_2 = SQLite3_ColumnText16_m680827076(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t1757017490_il2cpp_TypeInfo_var);
+		String_t* L_3 = Marshal_PtrToStringUni_m175561854(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		return L_3;
+	}
+}
+// System.Byte[] SQLite4Unity3d.SQLite3::ColumnByteArray(System.IntPtr,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR ByteU5BU5D_t4116647657* SQLite3_ColumnByteArray_m1093567263 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLite3_ColumnByteArray_m1093567263_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	ByteU5BU5D_t4116647657* V_1 = NULL;
+	{
+		intptr_t L_0 = ___stmt0;
+		int32_t L_1 = ___index1;
+		int32_t L_2 = SQLite3_ColumnBytes_m253525103(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		int32_t L_3 = V_0;
+		ByteU5BU5D_t4116647657* L_4 = (ByteU5BU5D_t4116647657*)SZArrayNew(ByteU5BU5D_t4116647657_il2cpp_TypeInfo_var, (uint32_t)L_3);
+		V_1 = L_4;
+		int32_t L_5 = V_0;
+		if ((((int32_t)L_5) <= ((int32_t)0)))
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		intptr_t L_6 = ___stmt0;
+		int32_t L_7 = ___index1;
+		intptr_t L_8 = SQLite3_ColumnBlob_m1019686787(NULL /*static, unused*/, L_6, L_7, /*hidden argument*/NULL);
+		ByteU5BU5D_t4116647657* L_9 = V_1;
+		int32_t L_10 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t1757017490_il2cpp_TypeInfo_var);
+		Marshal_Copy_m1222846562(NULL /*static, unused*/, L_8, L_9, 0, L_10, /*hidden argument*/NULL);
+	}
+
+IL_0025:
+	{
+		ByteU5BU5D_t4116647657* L_11 = V_1;
+		return L_11;
+	}
+}
+// SQLite4Unity3d.SQLite3/ExtendedResult SQLite4Unity3d.SQLite3::ExtendedErrCode(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_ExtendedErrCode_m1645503891 (RuntimeObject * __this /* static, unused */, intptr_t ___db0, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) (intptr_t);
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_extended_errcode", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'ExtendedErrCode'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc(___db0);
+
+	return returnValue;
+}
+// System.Int32 SQLite4Unity3d.SQLite3::LibVersionNumber()
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLite3_LibVersionNumber_m3415770333 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+{
+	typedef int32_t (CDECL *PInvokeFunc) ();
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = 0;
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("sqlite3"), "sqlite3_libversion_number", IL2CPP_CALL_C, CHARSET_UNICODE, parameterSize, false);
+
+		if (il2cppPInvokeFunc == NULL)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Unable to find method for p/invoke: 'LibVersionNumber'"), NULL, NULL);
+		}
+	}
+
+	// Native function invocation
+	int32_t returnValue = il2cppPInvokeFunc();
+
+	return returnValue;
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.SQLiteCommand::.ctor(SQLite4Unity3d.SQLiteConnection)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteCommand__ctor_m1824553444 (SQLiteCommand_t3688707480 * __this, SQLiteConnection_t3070079188 * ___conn0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteCommand__ctor_m1824553444_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Object__ctor_m297566312(__this, /*hidden argument*/NULL);
+		SQLiteConnection_t3070079188 * L_0 = ___conn0;
+		__this->set__conn_0(L_0);
+		List_1_t4258913814 * L_1 = (List_1_t4258913814 *)il2cpp_codegen_object_new(List_1_t4258913814_il2cpp_TypeInfo_var);
+		List_1__ctor_m502925065(L_1, /*hidden argument*/List_1__ctor_m502925065_RuntimeMethod_var);
+		__this->set__bindings_1(L_1);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_2 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_2();
+		SQLiteCommand_set_CommandText_m1328880820(__this, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.String SQLite4Unity3d.SQLiteCommand::get_CommandText()
+extern "C" IL2CPP_METHOD_ATTR String_t* SQLiteCommand_get_CommandText_m2944188450 (SQLiteCommand_t3688707480 * __this, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = __this->get_U3CCommandTextU3Ek__BackingField_2();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteCommand::set_CommandText(System.String)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteCommand_set_CommandText_m1328880820 (SQLiteCommand_t3688707480 * __this, String_t* ___value0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->set_U3CCommandTextU3Ek__BackingField_2(L_0);
+		return;
+	}
+}
+// System.Int32 SQLite4Unity3d.SQLiteCommand::ExecuteNonQuery()
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteCommand_ExecuteNonQuery_m485096923 (SQLiteCommand_t3688707480 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteCommand_ExecuteNonQuery_m485096923_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	intptr_t V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	int32_t V_2 = 0;
+	String_t* V_3 = NULL;
+	{
+		SQLiteConnection_t3070079188 * L_0 = __this->get__conn_0();
+		NullCheck(L_0);
+		bool L_1 = SQLiteConnection_get_Trace_m4025894662(L_0, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0010;
+		}
+	}
+
+IL_0010:
+	{
+		V_0 = 0;
+		intptr_t L_2 = SQLiteCommand_Prepare_m3991188589(__this, /*hidden argument*/NULL);
+		V_1 = L_2;
+		intptr_t L_3 = V_1;
+		int32_t L_4 = SQLite3_Step_m2082604678(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		intptr_t L_5 = V_1;
+		SQLiteCommand_Finalize_m1231223217(__this, L_5, /*hidden argument*/NULL);
+		int32_t L_6 = V_0;
+		if ((!(((uint32_t)L_6) == ((uint32_t)((int32_t)101)))))
+		{
+			goto IL_0042;
+		}
+	}
+	{
+		SQLiteConnection_t3070079188 * L_7 = __this->get__conn_0();
+		NullCheck(L_7);
+		intptr_t L_8 = SQLiteConnection_get_Handle_m4185785638(L_7, /*hidden argument*/NULL);
+		int32_t L_9 = SQLite3_Changes_m805525823(NULL /*static, unused*/, L_8, /*hidden argument*/NULL);
+		V_2 = L_9;
+		int32_t L_10 = V_2;
+		return L_10;
+	}
+
+IL_0042:
+	{
+		int32_t L_11 = V_0;
+		if ((!(((uint32_t)L_11) == ((uint32_t)1))))
+		{
+			goto IL_0062;
+		}
+	}
+	{
+		SQLiteConnection_t3070079188 * L_12 = __this->get__conn_0();
+		NullCheck(L_12);
+		intptr_t L_13 = SQLiteConnection_get_Handle_m4185785638(L_12, /*hidden argument*/NULL);
+		String_t* L_14 = SQLite3_GetErrmsg_m3570473851(NULL /*static, unused*/, L_13, /*hidden argument*/NULL);
+		V_3 = L_14;
+		int32_t L_15 = V_0;
+		String_t* L_16 = V_3;
+		SQLiteException_t1356363765 * L_17 = SQLiteException_New_m975542910(NULL /*static, unused*/, L_15, L_16, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_17, NULL, SQLiteCommand_ExecuteNonQuery_m485096923_RuntimeMethod_var);
+	}
+
+IL_0062:
+	{
+		int32_t L_18 = V_0;
+		if ((!(((uint32_t)L_18) == ((uint32_t)((int32_t)19)))))
+		{
+			goto IL_009b;
+		}
+	}
+	{
+		SQLiteConnection_t3070079188 * L_19 = __this->get__conn_0();
+		NullCheck(L_19);
+		intptr_t L_20 = SQLiteConnection_get_Handle_m4185785638(L_19, /*hidden argument*/NULL);
+		int32_t L_21 = SQLite3_ExtendedErrCode_m1645503891(NULL /*static, unused*/, L_20, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_21) == ((uint32_t)((int32_t)1299)))))
+		{
+			goto IL_009b;
+		}
+	}
+	{
+		int32_t L_22 = V_0;
+		SQLiteConnection_t3070079188 * L_23 = __this->get__conn_0();
+		NullCheck(L_23);
+		intptr_t L_24 = SQLiteConnection_get_Handle_m4185785638(L_23, /*hidden argument*/NULL);
+		String_t* L_25 = SQLite3_GetErrmsg_m3570473851(NULL /*static, unused*/, L_24, /*hidden argument*/NULL);
+		NotNullConstraintViolationException_t3886364687 * L_26 = NotNullConstraintViolationException_New_m121954500(NULL /*static, unused*/, L_22, L_25, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_26, NULL, SQLiteCommand_ExecuteNonQuery_m485096923_RuntimeMethod_var);
+	}
+
+IL_009b:
+	{
+		int32_t L_27 = V_0;
+		RuntimeObject * L_28 = Box(Result_t1053832893_il2cpp_TypeInfo_var, (&V_0));
+		NullCheck(L_28);
+		String_t* L_29 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_28);
+		V_0 = *(int32_t*)UnBox(L_28);
+		SQLiteException_t1356363765 * L_30 = SQLiteException_New_m975542910(NULL /*static, unused*/, L_27, L_29, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_30, NULL, SQLiteCommand_ExecuteNonQuery_m485096923_RuntimeMethod_var);
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteCommand::OnInstanceCreated(System.Object)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteCommand_OnInstanceCreated_m397335047 (SQLiteCommand_t3688707480 * __this, RuntimeObject * ___obj0, const RuntimeMethod* method)
+{
+	{
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteCommand::Bind(System.String,System.Object)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteCommand_Bind_m1963191297 (SQLiteCommand_t3688707480 * __this, String_t* ___name0, RuntimeObject * ___val1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteCommand_Bind_m1963191297_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Binding_t2786839072 * V_0 = NULL;
+	{
+		List_1_t4258913814 * L_0 = __this->get__bindings_1();
+		Binding_t2786839072 * L_1 = (Binding_t2786839072 *)il2cpp_codegen_object_new(Binding_t2786839072_il2cpp_TypeInfo_var);
+		Binding__ctor_m3016444451(L_1, /*hidden argument*/NULL);
+		V_0 = L_1;
+		Binding_t2786839072 * L_2 = V_0;
+		String_t* L_3 = ___name0;
+		NullCheck(L_2);
+		Binding_set_Name_m2494568403(L_2, L_3, /*hidden argument*/NULL);
+		Binding_t2786839072 * L_4 = V_0;
+		RuntimeObject * L_5 = ___val1;
+		NullCheck(L_4);
+		Binding_set_Value_m4120112503(L_4, L_5, /*hidden argument*/NULL);
+		Binding_t2786839072 * L_6 = V_0;
+		NullCheck(L_0);
+		List_1_Add_m3305583421(L_0, L_6, /*hidden argument*/List_1_Add_m3305583421_RuntimeMethod_var);
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteCommand::Bind(System.Object)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteCommand_Bind_m3149550542 (SQLiteCommand_t3688707480 * __this, RuntimeObject * ___val0, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject * L_0 = ___val0;
+		SQLiteCommand_Bind_m1963191297(__this, (String_t*)NULL, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.String SQLite4Unity3d.SQLiteCommand::ToString()
+extern "C" IL2CPP_METHOD_ATTR String_t* SQLiteCommand_ToString_m3450717103 (SQLiteCommand_t3688707480 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteCommand_ToString_m3450717103_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	StringU5BU5D_t1281789340* V_0 = NULL;
+	int32_t V_1 = 0;
+	Binding_t2786839072 * V_2 = NULL;
+	Enumerator_t1853190395  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		List_1_t4258913814 * L_0 = __this->get__bindings_1();
+		NullCheck(L_0);
+		int32_t L_1 = List_1_get_Count_m3449619558(L_0, /*hidden argument*/List_1_get_Count_m3449619558_RuntimeMethod_var);
+		StringU5BU5D_t1281789340* L_2 = (StringU5BU5D_t1281789340*)SZArrayNew(StringU5BU5D_t1281789340_il2cpp_TypeInfo_var, (uint32_t)((int32_t)il2cpp_codegen_add((int32_t)1, (int32_t)L_1)));
+		V_0 = L_2;
+		StringU5BU5D_t1281789340* L_3 = V_0;
+		String_t* L_4 = SQLiteCommand_get_CommandText_m2944188450(__this, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		ArrayElementTypeCheck (L_3, L_4);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_4);
+		V_1 = 1;
+		List_1_t4258913814 * L_5 = __this->get__bindings_1();
+		NullCheck(L_5);
+		Enumerator_t1853190395  L_6 = List_1_GetEnumerator_m1002389916(L_5, /*hidden argument*/List_1_GetEnumerator_m1002389916_RuntimeMethod_var);
+		V_3 = L_6;
+	}
+
+IL_002a:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_0056;
+		}
+
+IL_002f:
+		{
+			Binding_t2786839072 * L_7 = Enumerator_get_Current_m4062518947((Enumerator_t1853190395 *)(&V_3), /*hidden argument*/Enumerator_get_Current_m4062518947_RuntimeMethod_var);
+			V_2 = L_7;
+			StringU5BU5D_t1281789340* L_8 = V_0;
+			int32_t L_9 = V_1;
+			int32_t L_10 = V_1;
+			int32_t L_11 = ((int32_t)il2cpp_codegen_subtract((int32_t)L_10, (int32_t)1));
+			RuntimeObject * L_12 = Box(Int32_t2950945753_il2cpp_TypeInfo_var, &L_11);
+			Binding_t2786839072 * L_13 = V_2;
+			NullCheck(L_13);
+			RuntimeObject * L_14 = Binding_get_Value_m3934136218(L_13, /*hidden argument*/NULL);
+			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+			String_t* L_15 = String_Format_m2556382932(NULL /*static, unused*/, _stringLiteral1162531351, L_12, L_14, /*hidden argument*/NULL);
+			NullCheck(L_8);
+			ArrayElementTypeCheck (L_8, L_15);
+			(L_8)->SetAt(static_cast<il2cpp_array_size_t>(L_9), (String_t*)L_15);
+			int32_t L_16 = V_1;
+			V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_16, (int32_t)1));
+		}
+
+IL_0056:
+		{
+			bool L_17 = Enumerator_MoveNext_m1349881051((Enumerator_t1853190395 *)(&V_3), /*hidden argument*/Enumerator_MoveNext_m1349881051_RuntimeMethod_var);
+			if (L_17)
+			{
+				goto IL_002f;
+			}
+		}
+
+IL_0062:
+		{
+			IL2CPP_LEAVE(0x75, FINALLY_0067);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_0067;
+	}
+
+FINALLY_0067:
+	{ // begin finally (depth: 1)
+		Enumerator_Dispose_m1545617601((Enumerator_t1853190395 *)(&V_3), /*hidden argument*/Enumerator_Dispose_m1545617601_RuntimeMethod_var);
+		IL2CPP_END_FINALLY(103)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(103)
+	{
+		IL2CPP_JUMP_TBL(0x75, IL_0075)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_0075:
+	{
+		String_t* L_18 = Environment_get_NewLine_m3211016485(NULL /*static, unused*/, /*hidden argument*/NULL);
+		StringU5BU5D_t1281789340* L_19 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_20 = String_Join_m2050845953(NULL /*static, unused*/, L_18, L_19, /*hidden argument*/NULL);
+		return L_20;
+	}
+}
+// System.IntPtr SQLite4Unity3d.SQLiteCommand::Prepare()
+extern "C" IL2CPP_METHOD_ATTR intptr_t SQLiteCommand_Prepare_m3991188589 (SQLiteCommand_t3688707480 * __this, const RuntimeMethod* method)
+{
+	intptr_t V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		SQLiteConnection_t3070079188 * L_0 = __this->get__conn_0();
+		NullCheck(L_0);
+		intptr_t L_1 = SQLiteConnection_get_Handle_m4185785638(L_0, /*hidden argument*/NULL);
+		String_t* L_2 = SQLiteCommand_get_CommandText_m2944188450(__this, /*hidden argument*/NULL);
+		intptr_t L_3 = SQLite3_Prepare2_m655766597(NULL /*static, unused*/, L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		intptr_t L_4 = V_0;
+		SQLiteCommand_BindAll_m1742688076(__this, L_4, /*hidden argument*/NULL);
+		intptr_t L_5 = V_0;
+		return L_5;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteCommand::Finalize(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteCommand_Finalize_m1231223217 (SQLiteCommand_t3688707480 * __this, intptr_t ___stmt0, const RuntimeMethod* method)
+{
+	{
+		intptr_t L_0 = ___stmt0;
+		SQLite3_Finalize_m877745565(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteCommand::BindAll(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteCommand_BindAll_m1742688076 (SQLiteCommand_t3688707480 * __this, intptr_t ___stmt0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteCommand_BindAll_m1742688076_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	Binding_t2786839072 * V_1 = NULL;
+	Enumerator_t1853190395  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		V_0 = 1;
+		List_1_t4258913814 * L_0 = __this->get__bindings_1();
+		NullCheck(L_0);
+		Enumerator_t1853190395  L_1 = List_1_GetEnumerator_m1002389916(L_0, /*hidden argument*/List_1_GetEnumerator_m1002389916_RuntimeMethod_var);
+		V_2 = L_1;
+	}
+
+IL_000e:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_0065;
+		}
+
+IL_0013:
+		{
+			Binding_t2786839072 * L_2 = Enumerator_get_Current_m4062518947((Enumerator_t1853190395 *)(&V_2), /*hidden argument*/Enumerator_get_Current_m4062518947_RuntimeMethod_var);
+			V_1 = L_2;
+			Binding_t2786839072 * L_3 = V_1;
+			NullCheck(L_3);
+			String_t* L_4 = Binding_get_Name_m2312834149(L_3, /*hidden argument*/NULL);
+			if (!L_4)
+			{
+				goto IL_003d;
+			}
+		}
+
+IL_0026:
+		{
+			Binding_t2786839072 * L_5 = V_1;
+			intptr_t L_6 = ___stmt0;
+			Binding_t2786839072 * L_7 = V_1;
+			NullCheck(L_7);
+			String_t* L_8 = Binding_get_Name_m2312834149(L_7, /*hidden argument*/NULL);
+			int32_t L_9 = SQLite3_BindParameterIndex_m3061816311(NULL /*static, unused*/, L_6, L_8, /*hidden argument*/NULL);
+			NullCheck(L_5);
+			Binding_set_Index_m3995208946(L_5, L_9, /*hidden argument*/NULL);
+			goto IL_0048;
+		}
+
+IL_003d:
+		{
+			Binding_t2786839072 * L_10 = V_1;
+			int32_t L_11 = V_0;
+			int32_t L_12 = L_11;
+			V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_12, (int32_t)1));
+			NullCheck(L_10);
+			Binding_set_Index_m3995208946(L_10, L_12, /*hidden argument*/NULL);
+		}
+
+IL_0048:
+		{
+			intptr_t L_13 = ___stmt0;
+			Binding_t2786839072 * L_14 = V_1;
+			NullCheck(L_14);
+			int32_t L_15 = Binding_get_Index_m42666718(L_14, /*hidden argument*/NULL);
+			Binding_t2786839072 * L_16 = V_1;
+			NullCheck(L_16);
+			RuntimeObject * L_17 = Binding_get_Value_m3934136218(L_16, /*hidden argument*/NULL);
+			SQLiteConnection_t3070079188 * L_18 = __this->get__conn_0();
+			NullCheck(L_18);
+			bool L_19 = SQLiteConnection_get_StoreDateTimeAsTicks_m1334058394(L_18, /*hidden argument*/NULL);
+			IL2CPP_RUNTIME_CLASS_INIT(SQLiteCommand_t3688707480_il2cpp_TypeInfo_var);
+			SQLiteCommand_BindParameter_m2636142430(NULL /*static, unused*/, L_13, L_15, L_17, L_19, /*hidden argument*/NULL);
+		}
+
+IL_0065:
+		{
+			bool L_20 = Enumerator_MoveNext_m1349881051((Enumerator_t1853190395 *)(&V_2), /*hidden argument*/Enumerator_MoveNext_m1349881051_RuntimeMethod_var);
+			if (L_20)
+			{
+				goto IL_0013;
+			}
+		}
+
+IL_0071:
+		{
+			IL2CPP_LEAVE(0x84, FINALLY_0076);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_0076;
+	}
+
+FINALLY_0076:
+	{ // begin finally (depth: 1)
+		Enumerator_Dispose_m1545617601((Enumerator_t1853190395 *)(&V_2), /*hidden argument*/Enumerator_Dispose_m1545617601_RuntimeMethod_var);
+		IL2CPP_END_FINALLY(118)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(118)
+	{
+		IL2CPP_JUMP_TBL(0x84, IL_0084)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_0084:
+	{
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteCommand::BindParameter(System.IntPtr,System.Int32,System.Object,System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteCommand_BindParameter_m2636142430 (RuntimeObject * __this /* static, unused */, intptr_t ___stmt0, int32_t ___index1, RuntimeObject * ___value2, bool ___storeDateTimeAsTicks3, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteCommand_BindParameter_m2636142430_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	TimeSpan_t881159249  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	DateTime_t3738529785  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	DateTime_t3738529785  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	DateTimeOffset_t3229287507  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	Guid_t  V_4;
+	memset(&V_4, 0, sizeof(V_4));
+	int32_t G_B14_0 = 0;
+	intptr_t G_B14_1;
+	memset(&G_B14_1, 0, sizeof(G_B14_1));
+	int32_t G_B13_0 = 0;
+	intptr_t G_B13_1;
+	memset(&G_B13_1, 0, sizeof(G_B13_1));
+	int32_t G_B15_0 = 0;
+	int32_t G_B15_1 = 0;
+	intptr_t G_B15_2;
+	memset(&G_B15_2, 0, sizeof(G_B15_2));
+	{
+		RuntimeObject * L_0 = ___value2;
+		if (L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		intptr_t L_1 = ___stmt0;
+		int32_t L_2 = ___index1;
+		SQLite3_BindNull_m2819514229(NULL /*static, unused*/, L_1, L_2, /*hidden argument*/NULL);
+		goto IL_0251;
+	}
+
+IL_0013:
+	{
+		RuntimeObject * L_3 = ___value2;
+		if (!((RuntimeObject *)IsInstSealed((RuntimeObject*)L_3, Int32_t2950945753_il2cpp_TypeInfo_var)))
+		{
+			goto IL_0031;
+		}
+	}
+	{
+		intptr_t L_4 = ___stmt0;
+		int32_t L_5 = ___index1;
+		RuntimeObject * L_6 = ___value2;
+		SQLite3_BindInt_m3326750893(NULL /*static, unused*/, L_4, L_5, ((*(int32_t*)((int32_t*)UnBox(L_6, Int32_t2950945753_il2cpp_TypeInfo_var)))), /*hidden argument*/NULL);
+		goto IL_0251;
+	}
+
+IL_0031:
+	{
+		RuntimeObject * L_7 = ___value2;
+		if (!((String_t*)IsInstSealed((RuntimeObject*)L_7, String_t_il2cpp_TypeInfo_var)))
+		{
+			goto IL_0055;
+		}
+	}
+	{
+		intptr_t L_8 = ___stmt0;
+		int32_t L_9 = ___index1;
+		RuntimeObject * L_10 = ___value2;
+		IL2CPP_RUNTIME_CLASS_INIT(SQLiteCommand_t3688707480_il2cpp_TypeInfo_var);
+		intptr_t L_11 = ((SQLiteCommand_t3688707480_StaticFields*)il2cpp_codegen_static_fields_for(SQLiteCommand_t3688707480_il2cpp_TypeInfo_var))->get_NegativePointer_3();
+		SQLite3_BindText_m446958600(NULL /*static, unused*/, L_8, L_9, ((String_t*)CastclassSealed((RuntimeObject*)L_10, String_t_il2cpp_TypeInfo_var)), (-1), L_11, /*hidden argument*/NULL);
+		goto IL_0251;
+	}
+
+IL_0055:
+	{
+		RuntimeObject * L_12 = ___value2;
+		if (((RuntimeObject *)IsInstSealed((RuntimeObject*)L_12, Byte_t1134296376_il2cpp_TypeInfo_var)))
+		{
+			goto IL_0081;
+		}
+	}
+	{
+		RuntimeObject * L_13 = ___value2;
+		if (((RuntimeObject *)IsInstSealed((RuntimeObject*)L_13, UInt16_t2177724958_il2cpp_TypeInfo_var)))
+		{
+			goto IL_0081;
+		}
+	}
+	{
+		RuntimeObject * L_14 = ___value2;
+		if (((RuntimeObject *)IsInstSealed((RuntimeObject*)L_14, SByte_t1669577662_il2cpp_TypeInfo_var)))
+		{
+			goto IL_0081;
+		}
+	}
+	{
+		RuntimeObject * L_15 = ___value2;
+		if (!((RuntimeObject *)IsInstSealed((RuntimeObject*)L_15, Int16_t2552820387_il2cpp_TypeInfo_var)))
+		{
+			goto IL_0094;
+		}
+	}
+
+IL_0081:
+	{
+		intptr_t L_16 = ___stmt0;
+		int32_t L_17 = ___index1;
+		RuntimeObject * L_18 = ___value2;
+		IL2CPP_RUNTIME_CLASS_INIT(Convert_t2465617642_il2cpp_TypeInfo_var);
+		int32_t L_19 = Convert_ToInt32_m2608095889(NULL /*static, unused*/, L_18, /*hidden argument*/NULL);
+		SQLite3_BindInt_m3326750893(NULL /*static, unused*/, L_16, L_17, L_19, /*hidden argument*/NULL);
+		goto IL_0251;
+	}
+
+IL_0094:
+	{
+		RuntimeObject * L_20 = ___value2;
+		if (!((RuntimeObject *)IsInstSealed((RuntimeObject*)L_20, Boolean_t97287965_il2cpp_TypeInfo_var)))
+		{
+			goto IL_00be;
+		}
+	}
+	{
+		intptr_t L_21 = ___stmt0;
+		int32_t L_22 = ___index1;
+		RuntimeObject * L_23 = ___value2;
+		G_B13_0 = L_22;
+		G_B13_1 = L_21;
+		if (!((*(bool*)((bool*)UnBox(L_23, Boolean_t97287965_il2cpp_TypeInfo_var)))))
+		{
+			G_B14_0 = L_22;
+			G_B14_1 = L_21;
+			goto IL_00b2;
+		}
+	}
+	{
+		G_B15_0 = 1;
+		G_B15_1 = G_B13_0;
+		G_B15_2 = G_B13_1;
+		goto IL_00b3;
+	}
+
+IL_00b2:
+	{
+		G_B15_0 = 0;
+		G_B15_1 = G_B14_0;
+		G_B15_2 = G_B14_1;
+	}
+
+IL_00b3:
+	{
+		SQLite3_BindInt_m3326750893(NULL /*static, unused*/, G_B15_2, G_B15_1, G_B15_0, /*hidden argument*/NULL);
+		goto IL_0251;
+	}
+
+IL_00be:
+	{
+		RuntimeObject * L_24 = ___value2;
+		if (((RuntimeObject *)IsInstSealed((RuntimeObject*)L_24, UInt32_t2560061978_il2cpp_TypeInfo_var)))
+		{
+			goto IL_00d4;
+		}
+	}
+	{
+		RuntimeObject * L_25 = ___value2;
+		if (!((RuntimeObject *)IsInstSealed((RuntimeObject*)L_25, Int64_t3736567304_il2cpp_TypeInfo_var)))
+		{
+			goto IL_00e7;
+		}
+	}
+
+IL_00d4:
+	{
+		intptr_t L_26 = ___stmt0;
+		int32_t L_27 = ___index1;
+		RuntimeObject * L_28 = ___value2;
+		IL2CPP_RUNTIME_CLASS_INIT(Convert_t2465617642_il2cpp_TypeInfo_var);
+		int64_t L_29 = Convert_ToInt64_m3240678588(NULL /*static, unused*/, L_28, /*hidden argument*/NULL);
+		SQLite3_BindInt64_m3899626256(NULL /*static, unused*/, L_26, L_27, L_29, /*hidden argument*/NULL);
+		goto IL_0251;
+	}
+
+IL_00e7:
+	{
+		RuntimeObject * L_30 = ___value2;
+		if (((RuntimeObject *)IsInstSealed((RuntimeObject*)L_30, Single_t1397266774_il2cpp_TypeInfo_var)))
+		{
+			goto IL_0108;
+		}
+	}
+	{
+		RuntimeObject * L_31 = ___value2;
+		if (((RuntimeObject *)IsInstSealed((RuntimeObject*)L_31, Double_t594665363_il2cpp_TypeInfo_var)))
+		{
+			goto IL_0108;
+		}
+	}
+	{
+		RuntimeObject * L_32 = ___value2;
+		if (!((RuntimeObject *)IsInstSealed((RuntimeObject*)L_32, Decimal_t2948259380_il2cpp_TypeInfo_var)))
+		{
+			goto IL_011b;
+		}
+	}
+
+IL_0108:
+	{
+		intptr_t L_33 = ___stmt0;
+		int32_t L_34 = ___index1;
+		RuntimeObject * L_35 = ___value2;
+		IL2CPP_RUNTIME_CLASS_INIT(Convert_t2465617642_il2cpp_TypeInfo_var);
+		double L_36 = Convert_ToDouble_m4025515304(NULL /*static, unused*/, L_35, /*hidden argument*/NULL);
+		SQLite3_BindDouble_m2715021545(NULL /*static, unused*/, L_33, L_34, L_36, /*hidden argument*/NULL);
+		goto IL_0251;
+	}
+
+IL_011b:
+	{
+		RuntimeObject * L_37 = ___value2;
+		if (!((RuntimeObject *)IsInstSealed((RuntimeObject*)L_37, TimeSpan_t881159249_il2cpp_TypeInfo_var)))
+		{
+			goto IL_0141;
+		}
+	}
+	{
+		intptr_t L_38 = ___stmt0;
+		int32_t L_39 = ___index1;
+		RuntimeObject * L_40 = ___value2;
+		V_0 = ((*(TimeSpan_t881159249 *)((TimeSpan_t881159249 *)UnBox(L_40, TimeSpan_t881159249_il2cpp_TypeInfo_var))));
+		int64_t L_41 = TimeSpan_get_Ticks_m2137362016((TimeSpan_t881159249 *)(&V_0), /*hidden argument*/NULL);
+		SQLite3_BindInt64_m3899626256(NULL /*static, unused*/, L_38, L_39, L_41, /*hidden argument*/NULL);
+		goto IL_0251;
+	}
+
+IL_0141:
+	{
+		RuntimeObject * L_42 = ___value2;
+		if (!((RuntimeObject *)IsInstSealed((RuntimeObject*)L_42, DateTime_t3738529785_il2cpp_TypeInfo_var)))
+		{
+			goto IL_0193;
+		}
+	}
+	{
+		bool L_43 = ___storeDateTimeAsTicks3;
+		if (!L_43)
+		{
+			goto IL_016d;
+		}
+	}
+	{
+		intptr_t L_44 = ___stmt0;
+		int32_t L_45 = ___index1;
+		RuntimeObject * L_46 = ___value2;
+		V_1 = ((*(DateTime_t3738529785 *)((DateTime_t3738529785 *)UnBox(L_46, DateTime_t3738529785_il2cpp_TypeInfo_var))));
+		int64_t L_47 = DateTime_get_Ticks_m1550640881((DateTime_t3738529785 *)(&V_1), /*hidden argument*/NULL);
+		SQLite3_BindInt64_m3899626256(NULL /*static, unused*/, L_44, L_45, L_47, /*hidden argument*/NULL);
+		goto IL_018e;
+	}
+
+IL_016d:
+	{
+		intptr_t L_48 = ___stmt0;
+		int32_t L_49 = ___index1;
+		RuntimeObject * L_50 = ___value2;
+		V_2 = ((*(DateTime_t3738529785 *)((DateTime_t3738529785 *)UnBox(L_50, DateTime_t3738529785_il2cpp_TypeInfo_var))));
+		String_t* L_51 = DateTime_ToString_m3718521780((DateTime_t3738529785 *)(&V_2), _stringLiteral384261975, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(SQLiteCommand_t3688707480_il2cpp_TypeInfo_var);
+		intptr_t L_52 = ((SQLiteCommand_t3688707480_StaticFields*)il2cpp_codegen_static_fields_for(SQLiteCommand_t3688707480_il2cpp_TypeInfo_var))->get_NegativePointer_3();
+		SQLite3_BindText_m446958600(NULL /*static, unused*/, L_48, L_49, L_51, (-1), L_52, /*hidden argument*/NULL);
+	}
+
+IL_018e:
+	{
+		goto IL_0251;
+	}
+
+IL_0193:
+	{
+		RuntimeObject * L_53 = ___value2;
+		if (!((RuntimeObject *)IsInstSealed((RuntimeObject*)L_53, DateTimeOffset_t3229287507_il2cpp_TypeInfo_var)))
+		{
+			goto IL_01b9;
+		}
+	}
+	{
+		intptr_t L_54 = ___stmt0;
+		int32_t L_55 = ___index1;
+		RuntimeObject * L_56 = ___value2;
+		V_3 = ((*(DateTimeOffset_t3229287507 *)((DateTimeOffset_t3229287507 *)UnBox(L_56, DateTimeOffset_t3229287507_il2cpp_TypeInfo_var))));
+		int64_t L_57 = DateTimeOffset_get_UtcTicks_m3512477945((DateTimeOffset_t3229287507 *)(&V_3), /*hidden argument*/NULL);
+		SQLite3_BindInt64_m3899626256(NULL /*static, unused*/, L_54, L_55, L_57, /*hidden argument*/NULL);
+		goto IL_0251;
+	}
+
+IL_01b9:
+	{
+		RuntimeObject * L_58 = ___value2;
+		NullCheck(L_58);
+		Type_t * L_59 = Object_GetType_m88164663(L_58, /*hidden argument*/NULL);
+		NullCheck(L_59);
+		bool L_60 = Type_get_IsEnum_m208091508(L_59, /*hidden argument*/NULL);
+		if (!L_60)
+		{
+			goto IL_01dc;
+		}
+	}
+	{
+		intptr_t L_61 = ___stmt0;
+		int32_t L_62 = ___index1;
+		RuntimeObject * L_63 = ___value2;
+		IL2CPP_RUNTIME_CLASS_INIT(Convert_t2465617642_il2cpp_TypeInfo_var);
+		int32_t L_64 = Convert_ToInt32_m2608095889(NULL /*static, unused*/, L_63, /*hidden argument*/NULL);
+		SQLite3_BindInt_m3326750893(NULL /*static, unused*/, L_61, L_62, L_64, /*hidden argument*/NULL);
+		goto IL_0251;
+	}
+
+IL_01dc:
+	{
+		RuntimeObject * L_65 = ___value2;
+		if (!((ByteU5BU5D_t4116647657*)IsInst((RuntimeObject*)L_65, ByteU5BU5D_t4116647657_il2cpp_TypeInfo_var)))
+		{
+			goto IL_0207;
+		}
+	}
+	{
+		intptr_t L_66 = ___stmt0;
+		int32_t L_67 = ___index1;
+		RuntimeObject * L_68 = ___value2;
+		RuntimeObject * L_69 = ___value2;
+		NullCheck(((ByteU5BU5D_t4116647657*)Castclass((RuntimeObject*)L_69, ByteU5BU5D_t4116647657_il2cpp_TypeInfo_var)));
+		IL2CPP_RUNTIME_CLASS_INIT(SQLiteCommand_t3688707480_il2cpp_TypeInfo_var);
+		intptr_t L_70 = ((SQLiteCommand_t3688707480_StaticFields*)il2cpp_codegen_static_fields_for(SQLiteCommand_t3688707480_il2cpp_TypeInfo_var))->get_NegativePointer_3();
+		SQLite3_BindBlob_m3274128319(NULL /*static, unused*/, L_66, L_67, ((ByteU5BU5D_t4116647657*)Castclass((RuntimeObject*)L_68, ByteU5BU5D_t4116647657_il2cpp_TypeInfo_var)), (((int32_t)((int32_t)(((RuntimeArray *)((ByteU5BU5D_t4116647657*)Castclass((RuntimeObject*)L_69, ByteU5BU5D_t4116647657_il2cpp_TypeInfo_var)))->max_length)))), L_70, /*hidden argument*/NULL);
+		goto IL_0251;
+	}
+
+IL_0207:
+	{
+		RuntimeObject * L_71 = ___value2;
+		if (!((RuntimeObject *)IsInstSealed((RuntimeObject*)L_71, Guid_t_il2cpp_TypeInfo_var)))
+		{
+			goto IL_023b;
+		}
+	}
+	{
+		intptr_t L_72 = ___stmt0;
+		int32_t L_73 = ___index1;
+		RuntimeObject * L_74 = ___value2;
+		V_4 = ((*(Guid_t *)((Guid_t *)UnBox(L_74, Guid_t_il2cpp_TypeInfo_var))));
+		String_t* L_75 = Guid_ToString_m3279186591((Guid_t *)(&V_4), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(SQLiteCommand_t3688707480_il2cpp_TypeInfo_var);
+		intptr_t L_76 = ((SQLiteCommand_t3688707480_StaticFields*)il2cpp_codegen_static_fields_for(SQLiteCommand_t3688707480_il2cpp_TypeInfo_var))->get_NegativePointer_3();
+		SQLite3_BindText_m446958600(NULL /*static, unused*/, L_72, L_73, L_75, ((int32_t)72), L_76, /*hidden argument*/NULL);
+		goto IL_0251;
+	}
+
+IL_023b:
+	{
+		RuntimeObject * L_77 = ___value2;
+		NullCheck(L_77);
+		Type_t * L_78 = Object_GetType_m88164663(L_77, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_79 = String_Concat_m904156431(NULL /*static, unused*/, _stringLiteral1438604692, L_78, /*hidden argument*/NULL);
+		NotSupportedException_t1314879016 * L_80 = (NotSupportedException_t1314879016 *)il2cpp_codegen_object_new(NotSupportedException_t1314879016_il2cpp_TypeInfo_var);
+		NotSupportedException__ctor_m2494070935(L_80, L_79, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_80, NULL, SQLiteCommand_BindParameter_m2636142430_RuntimeMethod_var);
+	}
+
+IL_0251:
+	{
+		return;
+	}
+}
+// System.Object SQLite4Unity3d.SQLiteCommand::ReadCol(System.IntPtr,System.Int32,SQLite4Unity3d.SQLite3/ColType,System.Type)
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject * SQLiteCommand_ReadCol_m2671623026 (SQLiteCommand_t3688707480 * __this, intptr_t ___stmt0, int32_t ___index1, int32_t ___type2, Type_t * ___clrType3, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteCommand_ReadCol_m2671623026_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	String_t* V_1 = NULL;
+	{
+		int32_t L_0 = ___type2;
+		if ((!(((uint32_t)L_0) == ((uint32_t)5))))
+		{
+			goto IL_0009;
+		}
+	}
+	{
+		return NULL;
+	}
+
+IL_0009:
+	{
+		Type_t * L_1 = ___clrType3;
+		RuntimeTypeHandle_t3027515415  L_2 = { reinterpret_cast<intptr_t> (String_t_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_3 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_1) == ((RuntimeObject*)(Type_t *)L_3))))
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		intptr_t L_4 = ___stmt0;
+		int32_t L_5 = ___index1;
+		String_t* L_6 = SQLite3_ColumnString_m4150538419(NULL /*static, unused*/, L_4, L_5, /*hidden argument*/NULL);
+		return L_6;
+	}
+
+IL_0022:
+	{
+		Type_t * L_7 = ___clrType3;
+		RuntimeTypeHandle_t3027515415  L_8 = { reinterpret_cast<intptr_t> (Int32_t2950945753_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_9 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_8, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_7) == ((RuntimeObject*)(Type_t *)L_9))))
+		{
+			goto IL_0040;
+		}
+	}
+	{
+		intptr_t L_10 = ___stmt0;
+		int32_t L_11 = ___index1;
+		int32_t L_12 = SQLite3_ColumnInt_m486845722(NULL /*static, unused*/, L_10, L_11, /*hidden argument*/NULL);
+		int32_t L_13 = L_12;
+		RuntimeObject * L_14 = Box(Int32_t2950945753_il2cpp_TypeInfo_var, &L_13);
+		return L_14;
+	}
+
+IL_0040:
+	{
+		Type_t * L_15 = ___clrType3;
+		RuntimeTypeHandle_t3027515415  L_16 = { reinterpret_cast<intptr_t> (Boolean_t97287965_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_17 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_16, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_15) == ((RuntimeObject*)(Type_t *)L_17))))
+		{
+			goto IL_0061;
+		}
+	}
+	{
+		intptr_t L_18 = ___stmt0;
+		int32_t L_19 = ___index1;
+		int32_t L_20 = SQLite3_ColumnInt_m486845722(NULL /*static, unused*/, L_18, L_19, /*hidden argument*/NULL);
+		bool L_21 = ((bool)((((int32_t)L_20) == ((int32_t)1))? 1 : 0));
+		RuntimeObject * L_22 = Box(Boolean_t97287965_il2cpp_TypeInfo_var, &L_21);
+		return L_22;
+	}
+
+IL_0061:
+	{
+		Type_t * L_23 = ___clrType3;
+		RuntimeTypeHandle_t3027515415  L_24 = { reinterpret_cast<intptr_t> (Double_t594665363_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_25 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_24, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_23) == ((RuntimeObject*)(Type_t *)L_25))))
+		{
+			goto IL_007f;
+		}
+	}
+	{
+		intptr_t L_26 = ___stmt0;
+		int32_t L_27 = ___index1;
+		double L_28 = SQLite3_ColumnDouble_m703462329(NULL /*static, unused*/, L_26, L_27, /*hidden argument*/NULL);
+		double L_29 = L_28;
+		RuntimeObject * L_30 = Box(Double_t594665363_il2cpp_TypeInfo_var, &L_29);
+		return L_30;
+	}
+
+IL_007f:
+	{
+		Type_t * L_31 = ___clrType3;
+		RuntimeTypeHandle_t3027515415  L_32 = { reinterpret_cast<intptr_t> (Single_t1397266774_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_33 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_32, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_31) == ((RuntimeObject*)(Type_t *)L_33))))
+		{
+			goto IL_009e;
+		}
+	}
+	{
+		intptr_t L_34 = ___stmt0;
+		int32_t L_35 = ___index1;
+		double L_36 = SQLite3_ColumnDouble_m703462329(NULL /*static, unused*/, L_34, L_35, /*hidden argument*/NULL);
+		float L_37 = (((float)((float)L_36)));
+		RuntimeObject * L_38 = Box(Single_t1397266774_il2cpp_TypeInfo_var, &L_37);
+		return L_38;
+	}
+
+IL_009e:
+	{
+		Type_t * L_39 = ___clrType3;
+		RuntimeTypeHandle_t3027515415  L_40 = { reinterpret_cast<intptr_t> (TimeSpan_t881159249_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_41 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_40, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_39) == ((RuntimeObject*)(Type_t *)L_41))))
+		{
+			goto IL_00c1;
+		}
+	}
+	{
+		intptr_t L_42 = ___stmt0;
+		int32_t L_43 = ___index1;
+		int64_t L_44 = SQLite3_ColumnInt64_m2218779963(NULL /*static, unused*/, L_42, L_43, /*hidden argument*/NULL);
+		TimeSpan_t881159249  L_45;
+		memset(&L_45, 0, sizeof(L_45));
+		TimeSpan__ctor_m1896986612((&L_45), L_44, /*hidden argument*/NULL);
+		TimeSpan_t881159249  L_46 = L_45;
+		RuntimeObject * L_47 = Box(TimeSpan_t881159249_il2cpp_TypeInfo_var, &L_46);
+		return L_47;
+	}
+
+IL_00c1:
+	{
+		Type_t * L_48 = ___clrType3;
+		RuntimeTypeHandle_t3027515415  L_49 = { reinterpret_cast<intptr_t> (DateTime_t3738529785_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_50 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_49, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_48) == ((RuntimeObject*)(Type_t *)L_50))))
+		{
+			goto IL_0108;
+		}
+	}
+	{
+		SQLiteConnection_t3070079188 * L_51 = __this->get__conn_0();
+		NullCheck(L_51);
+		bool L_52 = SQLiteConnection_get_StoreDateTimeAsTicks_m1334058394(L_51, /*hidden argument*/NULL);
+		if (!L_52)
+		{
+			goto IL_00f4;
+		}
+	}
+	{
+		intptr_t L_53 = ___stmt0;
+		int32_t L_54 = ___index1;
+		int64_t L_55 = SQLite3_ColumnInt64_m2218779963(NULL /*static, unused*/, L_53, L_54, /*hidden argument*/NULL);
+		DateTime_t3738529785  L_56;
+		memset(&L_56, 0, sizeof(L_56));
+		DateTime__ctor_m516789325((&L_56), L_55, /*hidden argument*/NULL);
+		DateTime_t3738529785  L_57 = L_56;
+		RuntimeObject * L_58 = Box(DateTime_t3738529785_il2cpp_TypeInfo_var, &L_57);
+		return L_58;
+	}
+
+IL_00f4:
+	{
+		intptr_t L_59 = ___stmt0;
+		int32_t L_60 = ___index1;
+		String_t* L_61 = SQLite3_ColumnString_m4150538419(NULL /*static, unused*/, L_59, L_60, /*hidden argument*/NULL);
+		V_0 = L_61;
+		String_t* L_62 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t3738529785_il2cpp_TypeInfo_var);
+		DateTime_t3738529785  L_63 = DateTime_Parse_m2550724587(NULL /*static, unused*/, L_62, /*hidden argument*/NULL);
+		DateTime_t3738529785  L_64 = L_63;
+		RuntimeObject * L_65 = Box(DateTime_t3738529785_il2cpp_TypeInfo_var, &L_64);
+		return L_65;
+	}
+
+IL_0108:
+	{
+		Type_t * L_66 = ___clrType3;
+		RuntimeTypeHandle_t3027515415  L_67 = { reinterpret_cast<intptr_t> (DateTimeOffset_t3229287507_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_68 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_67, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_66) == ((RuntimeObject*)(Type_t *)L_68))))
+		{
+			goto IL_0130;
+		}
+	}
+	{
+		intptr_t L_69 = ___stmt0;
+		int32_t L_70 = ___index1;
+		int64_t L_71 = SQLite3_ColumnInt64_m2218779963(NULL /*static, unused*/, L_69, L_70, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t881159249_il2cpp_TypeInfo_var);
+		TimeSpan_t881159249  L_72 = ((TimeSpan_t881159249_StaticFields*)il2cpp_codegen_static_fields_for(TimeSpan_t881159249_il2cpp_TypeInfo_var))->get_Zero_7();
+		DateTimeOffset_t3229287507  L_73;
+		memset(&L_73, 0, sizeof(L_73));
+		DateTimeOffset__ctor_m1464148220((&L_73), L_71, L_72, /*hidden argument*/NULL);
+		DateTimeOffset_t3229287507  L_74 = L_73;
+		RuntimeObject * L_75 = Box(DateTimeOffset_t3229287507_il2cpp_TypeInfo_var, &L_74);
+		return L_75;
+	}
+
+IL_0130:
+	{
+		Type_t * L_76 = ___clrType3;
+		NullCheck(L_76);
+		bool L_77 = Type_get_IsEnum_m208091508(L_76, /*hidden argument*/NULL);
+		if (!L_77)
+		{
+			goto IL_0149;
+		}
+	}
+	{
+		intptr_t L_78 = ___stmt0;
+		int32_t L_79 = ___index1;
+		int32_t L_80 = SQLite3_ColumnInt_m486845722(NULL /*static, unused*/, L_78, L_79, /*hidden argument*/NULL);
+		int32_t L_81 = L_80;
+		RuntimeObject * L_82 = Box(Int32_t2950945753_il2cpp_TypeInfo_var, &L_81);
+		return L_82;
+	}
+
+IL_0149:
+	{
+		Type_t * L_83 = ___clrType3;
+		RuntimeTypeHandle_t3027515415  L_84 = { reinterpret_cast<intptr_t> (Int64_t3736567304_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_85 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_84, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_83) == ((RuntimeObject*)(Type_t *)L_85))))
+		{
+			goto IL_0167;
+		}
+	}
+	{
+		intptr_t L_86 = ___stmt0;
+		int32_t L_87 = ___index1;
+		int64_t L_88 = SQLite3_ColumnInt64_m2218779963(NULL /*static, unused*/, L_86, L_87, /*hidden argument*/NULL);
+		int64_t L_89 = L_88;
+		RuntimeObject * L_90 = Box(Int64_t3736567304_il2cpp_TypeInfo_var, &L_89);
+		return L_90;
+	}
+
+IL_0167:
+	{
+		Type_t * L_91 = ___clrType3;
+		RuntimeTypeHandle_t3027515415  L_92 = { reinterpret_cast<intptr_t> (UInt32_t2560061978_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_93 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_92, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_91) == ((RuntimeObject*)(Type_t *)L_93))))
+		{
+			goto IL_0186;
+		}
+	}
+	{
+		intptr_t L_94 = ___stmt0;
+		int32_t L_95 = ___index1;
+		int64_t L_96 = SQLite3_ColumnInt64_m2218779963(NULL /*static, unused*/, L_94, L_95, /*hidden argument*/NULL);
+		uint32_t L_97 = ((uint32_t)(((int32_t)((uint32_t)L_96))));
+		RuntimeObject * L_98 = Box(UInt32_t2560061978_il2cpp_TypeInfo_var, &L_97);
+		return L_98;
+	}
+
+IL_0186:
+	{
+		Type_t * L_99 = ___clrType3;
+		RuntimeTypeHandle_t3027515415  L_100 = { reinterpret_cast<intptr_t> (Decimal_t2948259380_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_101 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_100, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_99) == ((RuntimeObject*)(Type_t *)L_101))))
+		{
+			goto IL_01a9;
+		}
+	}
+	{
+		intptr_t L_102 = ___stmt0;
+		int32_t L_103 = ___index1;
+		double L_104 = SQLite3_ColumnDouble_m703462329(NULL /*static, unused*/, L_102, L_103, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Decimal_t2948259380_il2cpp_TypeInfo_var);
+		Decimal_t2948259380  L_105 = Decimal_op_Explicit_m2433293820(NULL /*static, unused*/, L_104, /*hidden argument*/NULL);
+		Decimal_t2948259380  L_106 = L_105;
+		RuntimeObject * L_107 = Box(Decimal_t2948259380_il2cpp_TypeInfo_var, &L_106);
+		return L_107;
+	}
+
+IL_01a9:
+	{
+		Type_t * L_108 = ___clrType3;
+		RuntimeTypeHandle_t3027515415  L_109 = { reinterpret_cast<intptr_t> (Byte_t1134296376_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_110 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_109, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_108) == ((RuntimeObject*)(Type_t *)L_110))))
+		{
+			goto IL_01c8;
+		}
+	}
+	{
+		intptr_t L_111 = ___stmt0;
+		int32_t L_112 = ___index1;
+		int32_t L_113 = SQLite3_ColumnInt_m486845722(NULL /*static, unused*/, L_111, L_112, /*hidden argument*/NULL);
+		uint8_t L_114 = ((uint8_t)(((int32_t)((uint8_t)L_113))));
+		RuntimeObject * L_115 = Box(Byte_t1134296376_il2cpp_TypeInfo_var, &L_114);
+		return L_115;
+	}
+
+IL_01c8:
+	{
+		Type_t * L_116 = ___clrType3;
+		RuntimeTypeHandle_t3027515415  L_117 = { reinterpret_cast<intptr_t> (UInt16_t2177724958_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_118 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_117, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_116) == ((RuntimeObject*)(Type_t *)L_118))))
+		{
+			goto IL_01e7;
+		}
+	}
+	{
+		intptr_t L_119 = ___stmt0;
+		int32_t L_120 = ___index1;
+		int32_t L_121 = SQLite3_ColumnInt_m486845722(NULL /*static, unused*/, L_119, L_120, /*hidden argument*/NULL);
+		uint16_t L_122 = ((uint16_t)(((int32_t)((uint16_t)L_121))));
+		RuntimeObject * L_123 = Box(UInt16_t2177724958_il2cpp_TypeInfo_var, &L_122);
+		return L_123;
+	}
+
+IL_01e7:
+	{
+		Type_t * L_124 = ___clrType3;
+		RuntimeTypeHandle_t3027515415  L_125 = { reinterpret_cast<intptr_t> (Int16_t2552820387_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_126 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_125, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_124) == ((RuntimeObject*)(Type_t *)L_126))))
+		{
+			goto IL_0206;
+		}
+	}
+	{
+		intptr_t L_127 = ___stmt0;
+		int32_t L_128 = ___index1;
+		int32_t L_129 = SQLite3_ColumnInt_m486845722(NULL /*static, unused*/, L_127, L_128, /*hidden argument*/NULL);
+		int16_t L_130 = (((int16_t)((int16_t)L_129)));
+		RuntimeObject * L_131 = Box(Int16_t2552820387_il2cpp_TypeInfo_var, &L_130);
+		return L_131;
+	}
+
+IL_0206:
+	{
+		Type_t * L_132 = ___clrType3;
+		RuntimeTypeHandle_t3027515415  L_133 = { reinterpret_cast<intptr_t> (SByte_t1669577662_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_134 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_133, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_132) == ((RuntimeObject*)(Type_t *)L_134))))
+		{
+			goto IL_0225;
+		}
+	}
+	{
+		intptr_t L_135 = ___stmt0;
+		int32_t L_136 = ___index1;
+		int32_t L_137 = SQLite3_ColumnInt_m486845722(NULL /*static, unused*/, L_135, L_136, /*hidden argument*/NULL);
+		int8_t L_138 = (((int8_t)((int8_t)L_137)));
+		RuntimeObject * L_139 = Box(SByte_t1669577662_il2cpp_TypeInfo_var, &L_138);
+		return L_139;
+	}
+
+IL_0225:
+	{
+		Type_t * L_140 = ___clrType3;
+		RuntimeTypeHandle_t3027515415  L_141 = { reinterpret_cast<intptr_t> (ByteU5BU5D_t4116647657_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_142 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_141, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_140) == ((RuntimeObject*)(Type_t *)L_142))))
+		{
+			goto IL_023e;
+		}
+	}
+	{
+		intptr_t L_143 = ___stmt0;
+		int32_t L_144 = ___index1;
+		ByteU5BU5D_t4116647657* L_145 = SQLite3_ColumnByteArray_m1093567263(NULL /*static, unused*/, L_143, L_144, /*hidden argument*/NULL);
+		return (RuntimeObject *)L_145;
+	}
+
+IL_023e:
+	{
+		Type_t * L_146 = ___clrType3;
+		RuntimeTypeHandle_t3027515415  L_147 = { reinterpret_cast<intptr_t> (Guid_t_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_148 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_147, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_146) == ((RuntimeObject*)(Type_t *)L_148))))
+		{
+			goto IL_0263;
+		}
+	}
+	{
+		intptr_t L_149 = ___stmt0;
+		int32_t L_150 = ___index1;
+		String_t* L_151 = SQLite3_ColumnString_m4150538419(NULL /*static, unused*/, L_149, L_150, /*hidden argument*/NULL);
+		V_1 = L_151;
+		String_t* L_152 = V_1;
+		Guid_t  L_153;
+		memset(&L_153, 0, sizeof(L_153));
+		Guid__ctor_m2423264394((&L_153), L_152, /*hidden argument*/NULL);
+		Guid_t  L_154 = L_153;
+		RuntimeObject * L_155 = Box(Guid_t_il2cpp_TypeInfo_var, &L_154);
+		return L_155;
+	}
+
+IL_0263:
+	{
+		Type_t * L_156 = ___clrType3;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_157 = String_Concat_m904156431(NULL /*static, unused*/, _stringLiteral3350340990, L_156, /*hidden argument*/NULL);
+		NotSupportedException_t1314879016 * L_158 = (NotSupportedException_t1314879016 *)il2cpp_codegen_object_new(NotSupportedException_t1314879016_il2cpp_TypeInfo_var);
+		NotSupportedException__ctor_m2494070935(L_158, L_157, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_158, NULL, SQLiteCommand_ReadCol_m2671623026_RuntimeMethod_var);
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteCommand::.cctor()
+extern "C" IL2CPP_METHOD_ATTR void SQLiteCommand__cctor_m221931894 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteCommand__cctor_m221931894_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		intptr_t L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		IntPtr__ctor_m987082960((&L_0), (-1), /*hidden argument*/NULL);
+		((SQLiteCommand_t3688707480_StaticFields*)il2cpp_codegen_static_fields_for(SQLiteCommand_t3688707480_il2cpp_TypeInfo_var))->set_NegativePointer_3(L_0);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.SQLiteCommand/Binding::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void Binding__ctor_m3016444451 (Binding_t2786839072 * __this, const RuntimeMethod* method)
+{
+	{
+		Object__ctor_m297566312(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.String SQLite4Unity3d.SQLiteCommand/Binding::get_Name()
+extern "C" IL2CPP_METHOD_ATTR String_t* Binding_get_Name_m2312834149 (Binding_t2786839072 * __this, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = __this->get_U3CNameU3Ek__BackingField_0();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteCommand/Binding::set_Name(System.String)
+extern "C" IL2CPP_METHOD_ATTR void Binding_set_Name_m2494568403 (Binding_t2786839072 * __this, String_t* ___value0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->set_U3CNameU3Ek__BackingField_0(L_0);
+		return;
+	}
+}
+// System.Object SQLite4Unity3d.SQLiteCommand/Binding::get_Value()
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Binding_get_Value_m3934136218 (Binding_t2786839072 * __this, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject * L_0 = __this->get_U3CValueU3Ek__BackingField_1();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteCommand/Binding::set_Value(System.Object)
+extern "C" IL2CPP_METHOD_ATTR void Binding_set_Value_m4120112503 (Binding_t2786839072 * __this, RuntimeObject * ___value0, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject * L_0 = ___value0;
+		__this->set_U3CValueU3Ek__BackingField_1(L_0);
+		return;
+	}
+}
+// System.Int32 SQLite4Unity3d.SQLiteCommand/Binding::get_Index()
+extern "C" IL2CPP_METHOD_ATTR int32_t Binding_get_Index_m42666718 (Binding_t2786839072 * __this, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = __this->get_U3CIndexU3Ek__BackingField_2();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteCommand/Binding::set_Index(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void Binding_set_Index_m3995208946 (Binding_t2786839072 * __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___value0;
+		__this->set_U3CIndexU3Ek__BackingField_2(L_0);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.SQLiteConnection::.ctor(System.String,System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection__ctor_m3412307152 (SQLiteConnection_t3070079188 * __this, String_t* ___databasePath0, bool ___storeDateTimeAsTicks1, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___databasePath0;
+		bool L_1 = ___storeDateTimeAsTicks1;
+		SQLiteConnection__ctor_m593903775(__this, L_0, 6, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection::.ctor(System.String,SQLite4Unity3d.SQLiteOpenFlags,System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection__ctor_m593903775 (SQLiteConnection_t3070079188 * __this, String_t* ___databasePath0, int32_t ___openFlags1, bool ___storeDateTimeAsTicks2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection__ctor_m593903775_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	intptr_t V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	ByteU5BU5D_t4116647657* V_1 = NULL;
+	int32_t V_2 = 0;
+	{
+		Random_t108471755 * L_0 = (Random_t108471755 *)il2cpp_codegen_object_new(Random_t108471755_il2cpp_TypeInfo_var);
+		Random__ctor_m4122933043(L_0, /*hidden argument*/NULL);
+		__this->set__rand_7(L_0);
+		Object__ctor_m297566312(__this, /*hidden argument*/NULL);
+		String_t* L_1 = ___databasePath0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_2 = String_IsNullOrEmpty_m2969720369(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		ArgumentException_t132251570 * L_3 = (ArgumentException_t132251570 *)il2cpp_codegen_object_new(ArgumentException_t132251570_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m1216717135(L_3, _stringLiteral3659103397, _stringLiteral1967499511, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, NULL, SQLiteConnection__ctor_m593903775_RuntimeMethod_var);
+	}
+
+IL_002c:
+	{
+		String_t* L_4 = ___databasePath0;
+		SQLiteConnection_set_DatabasePath_m1228607167(__this, L_4, /*hidden argument*/NULL);
+		String_t* L_5 = SQLiteConnection_get_DatabasePath_m517910366(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var);
+		ByteU5BU5D_t4116647657* L_6 = SQLiteConnection_GetNullTerminatedUtf8_m3916213873(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
+		V_1 = L_6;
+		ByteU5BU5D_t4116647657* L_7 = V_1;
+		int32_t L_8 = ___openFlags1;
+		int32_t L_9 = SQLite3_Open_m3447767184(NULL /*static, unused*/, L_7, (intptr_t*)(&V_0), L_8, (intptr_t)(0), /*hidden argument*/NULL);
+		V_2 = L_9;
+		intptr_t L_10 = V_0;
+		SQLiteConnection_set_Handle_m1539251663(__this, L_10, /*hidden argument*/NULL);
+		int32_t L_11 = V_2;
+		if (!L_11)
+		{
+			goto IL_0078;
+		}
+	}
+	{
+		int32_t L_12 = V_2;
+		String_t* L_13 = SQLiteConnection_get_DatabasePath_m517910366(__this, /*hidden argument*/NULL);
+		int32_t L_14 = V_2;
+		int32_t L_15 = L_14;
+		RuntimeObject * L_16 = Box(Result_t1053832893_il2cpp_TypeInfo_var, &L_15);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_17 = String_Format_m2556382932(NULL /*static, unused*/, _stringLiteral848554039, L_13, L_16, /*hidden argument*/NULL);
+		SQLiteException_t1356363765 * L_18 = SQLiteException_New_m975542910(NULL /*static, unused*/, L_12, L_17, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_18, NULL, SQLiteConnection__ctor_m593903775_RuntimeMethod_var);
+	}
+
+IL_0078:
+	{
+		__this->set__open_0((bool)1);
+		bool L_19 = ___storeDateTimeAsTicks2;
+		SQLiteConnection_set_StoreDateTimeAsTicks_m3885514687(__this, L_19, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t881159249_il2cpp_TypeInfo_var);
+		TimeSpan_t881159249  L_20 = TimeSpan_FromSeconds_m4219356874(NULL /*static, unused*/, (0.1), /*hidden argument*/NULL);
+		SQLiteConnection_set_BusyTimeout_m1319296104(__this, L_20, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection::.cctor()
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection__cctor_m990044362 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection__cctor_m990044362_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	intptr_t V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	ColumnInfo_t2560133827 * V_1 = NULL;
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(intptr_t));
+		intptr_t L_0 = V_0;
+		((SQLiteConnection_t3070079188_StaticFields*)il2cpp_codegen_static_fields_for(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var))->set_NullHandle_9(L_0);
+		bool L_1 = ((SQLiteConnection_t3070079188_StaticFields*)il2cpp_codegen_static_fields_for(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var))->get__preserveDuringLinkMagic_14();
+		if (!L_1)
+		{
+			goto IL_0029;
+		}
+	}
+	{
+		ColumnInfo_t2560133827 * L_2 = (ColumnInfo_t2560133827 *)il2cpp_codegen_object_new(ColumnInfo_t2560133827_il2cpp_TypeInfo_var);
+		ColumnInfo__ctor_m3797747095(L_2, /*hidden argument*/NULL);
+		V_1 = L_2;
+		ColumnInfo_t2560133827 * L_3 = V_1;
+		NullCheck(L_3);
+		ColumnInfo_set_Name_m3211096544(L_3, _stringLiteral2681889827, /*hidden argument*/NULL);
+	}
+
+IL_0029:
+	{
+		return;
+	}
+}
+// System.IntPtr SQLite4Unity3d.SQLiteConnection::get_Handle()
+extern "C" IL2CPP_METHOD_ATTR intptr_t SQLiteConnection_get_Handle_m4185785638 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method)
+{
+	{
+		intptr_t L_0 = __this->get_U3CHandleU3Ek__BackingField_8();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection::set_Handle(System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_set_Handle_m1539251663 (SQLiteConnection_t3070079188 * __this, intptr_t ___value0, const RuntimeMethod* method)
+{
+	{
+		intptr_t L_0 = ___value0;
+		__this->set_U3CHandleU3Ek__BackingField_8(L_0);
+		return;
+	}
+}
+// System.String SQLite4Unity3d.SQLiteConnection::get_DatabasePath()
+extern "C" IL2CPP_METHOD_ATTR String_t* SQLiteConnection_get_DatabasePath_m517910366 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = __this->get_U3CDatabasePathU3Ek__BackingField_10();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection::set_DatabasePath(System.String)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_set_DatabasePath_m1228607167 (SQLiteConnection_t3070079188 * __this, String_t* ___value0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->set_U3CDatabasePathU3Ek__BackingField_10(L_0);
+		return;
+	}
+}
+// System.Boolean SQLite4Unity3d.SQLiteConnection::get_TimeExecution()
+extern "C" IL2CPP_METHOD_ATTR bool SQLiteConnection_get_TimeExecution_m2293937657 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = __this->get_U3CTimeExecutionU3Ek__BackingField_11();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection::set_TimeExecution(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_set_TimeExecution_m721306466 (SQLiteConnection_t3070079188 * __this, bool ___value0, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = ___value0;
+		__this->set_U3CTimeExecutionU3Ek__BackingField_11(L_0);
+		return;
+	}
+}
+// System.Boolean SQLite4Unity3d.SQLiteConnection::get_Trace()
+extern "C" IL2CPP_METHOD_ATTR bool SQLiteConnection_get_Trace_m4025894662 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = __this->get_U3CTraceU3Ek__BackingField_12();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection::set_Trace(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_set_Trace_m2717271997 (SQLiteConnection_t3070079188 * __this, bool ___value0, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = ___value0;
+		__this->set_U3CTraceU3Ek__BackingField_12(L_0);
+		return;
+	}
+}
+// System.Boolean SQLite4Unity3d.SQLiteConnection::get_StoreDateTimeAsTicks()
+extern "C" IL2CPP_METHOD_ATTR bool SQLiteConnection_get_StoreDateTimeAsTicks_m1334058394 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = __this->get_U3CStoreDateTimeAsTicksU3Ek__BackingField_13();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection::set_StoreDateTimeAsTicks(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_set_StoreDateTimeAsTicks_m3885514687 (SQLiteConnection_t3070079188 * __this, bool ___value0, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = ___value0;
+		__this->set_U3CStoreDateTimeAsTicksU3Ek__BackingField_13(L_0);
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection::EnableLoadExtension(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_EnableLoadExtension_m2804692883 (SQLiteConnection_t3070079188 * __this, int32_t ___onoff0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_EnableLoadExtension_m2804692883_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	String_t* V_1 = NULL;
+	{
+		intptr_t L_0 = SQLiteConnection_get_Handle_m4185785638(__this, /*hidden argument*/NULL);
+		int32_t L_1 = ___onoff0;
+		int32_t L_2 = SQLite3_EnableLoadExtension_m2149057872(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		int32_t L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_0027;
+		}
+	}
+	{
+		intptr_t L_4 = SQLiteConnection_get_Handle_m4185785638(__this, /*hidden argument*/NULL);
+		String_t* L_5 = SQLite3_GetErrmsg_m3570473851(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		V_1 = L_5;
+		int32_t L_6 = V_0;
+		String_t* L_7 = V_1;
+		SQLiteException_t1356363765 * L_8 = SQLiteException_New_m975542910(NULL /*static, unused*/, L_6, L_7, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_8, NULL, SQLiteConnection_EnableLoadExtension_m2804692883_RuntimeMethod_var);
+	}
+
+IL_0027:
+	{
+		return;
+	}
+}
+// System.Byte[] SQLite4Unity3d.SQLiteConnection::GetNullTerminatedUtf8(System.String)
+extern "C" IL2CPP_METHOD_ATTR ByteU5BU5D_t4116647657* SQLiteConnection_GetNullTerminatedUtf8_m3916213873 (RuntimeObject * __this /* static, unused */, String_t* ___s0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_GetNullTerminatedUtf8_m3916213873_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	ByteU5BU5D_t4116647657* V_1 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Encoding_t1523322056_il2cpp_TypeInfo_var);
+		Encoding_t1523322056 * L_0 = Encoding_get_UTF8_m1008486739(NULL /*static, unused*/, /*hidden argument*/NULL);
+		String_t* L_1 = ___s0;
+		NullCheck(L_0);
+		int32_t L_2 = VirtFuncInvoker1< int32_t, String_t* >::Invoke(6 /* System.Int32 System.Text.Encoding::GetByteCount(System.String) */, L_0, L_1);
+		V_0 = L_2;
+		int32_t L_3 = V_0;
+		ByteU5BU5D_t4116647657* L_4 = (ByteU5BU5D_t4116647657*)SZArrayNew(ByteU5BU5D_t4116647657_il2cpp_TypeInfo_var, (uint32_t)((int32_t)il2cpp_codegen_add((int32_t)L_3, (int32_t)1)));
+		V_1 = L_4;
+		Encoding_t1523322056 * L_5 = Encoding_get_UTF8_m1008486739(NULL /*static, unused*/, /*hidden argument*/NULL);
+		String_t* L_6 = ___s0;
+		String_t* L_7 = ___s0;
+		NullCheck(L_7);
+		int32_t L_8 = String_get_Length_m3847582255(L_7, /*hidden argument*/NULL);
+		ByteU5BU5D_t4116647657* L_9 = V_1;
+		NullCheck(L_5);
+		int32_t L_10 = VirtFuncInvoker5< int32_t, String_t*, int32_t, int32_t, ByteU5BU5D_t4116647657*, int32_t >::Invoke(9 /* System.Int32 System.Text.Encoding::GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32) */, L_5, L_6, 0, L_8, L_9, 0);
+		V_0 = L_10;
+		ByteU5BU5D_t4116647657* L_11 = V_1;
+		return L_11;
+	}
+}
+// System.TimeSpan SQLite4Unity3d.SQLiteConnection::get_BusyTimeout()
+extern "C" IL2CPP_METHOD_ATTR TimeSpan_t881159249  SQLiteConnection_get_BusyTimeout_m1534745776 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method)
+{
+	{
+		TimeSpan_t881159249  L_0 = __this->get__busyTimeout_1();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection::set_BusyTimeout(System.TimeSpan)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_set_BusyTimeout_m1319296104 (SQLiteConnection_t3070079188 * __this, TimeSpan_t881159249  ___value0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_set_BusyTimeout_m1319296104_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		TimeSpan_t881159249  L_0 = ___value0;
+		__this->set__busyTimeout_1(L_0);
+		intptr_t L_1 = SQLiteConnection_get_Handle_m4185785638(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var);
+		intptr_t L_2 = ((SQLiteConnection_t3070079188_StaticFields*)il2cpp_codegen_static_fields_for(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var))->get_NullHandle_9();
+		bool L_3 = IntPtr_op_Inequality_m3063970704(NULL /*static, unused*/, L_1, L_2, /*hidden argument*/NULL);
+		if (!L_3)
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		intptr_t L_4 = SQLiteConnection_get_Handle_m4185785638(__this, /*hidden argument*/NULL);
+		TimeSpan_t881159249 * L_5 = __this->get_address_of__busyTimeout_1();
+		double L_6 = TimeSpan_get_TotalMilliseconds_m2429771311((TimeSpan_t881159249 *)L_5, /*hidden argument*/NULL);
+		SQLite3_BusyTimeout_m2064827914(NULL /*static, unused*/, L_4, (((int32_t)((int32_t)L_6))), /*hidden argument*/NULL);
+	}
+
+IL_0034:
+	{
+		return;
+	}
+}
+// System.Collections.Generic.IEnumerable`1<SQLite4Unity3d.TableMapping> SQLite4Unity3d.SQLiteConnection::get_TableMappings()
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject* SQLiteConnection_get_TableMappings_m847118141 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_get_TableMappings_m847118141_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* G_B3_0 = NULL;
+	{
+		Dictionary_2_t2061655791 * L_0 = __this->get__tables_3();
+		if (!L_0)
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		Dictionary_2_t2061655791 * L_1 = __this->get__tables_3();
+		NullCheck(L_1);
+		ValueCollection_t3777700109 * L_2 = Dictionary_2_get_Values_m2477973787(L_1, /*hidden argument*/Dictionary_2_get_Values_m2477973787_RuntimeMethod_var);
+		G_B3_0 = ((RuntimeObject*)(L_2));
+		goto IL_0020;
+	}
+
+IL_001b:
+	{
+		RuntimeObject* L_3 = Enumerable_Empty_TisTableMapping_t2276399492_m3468073737(NULL /*static, unused*/, /*hidden argument*/Enumerable_Empty_TisTableMapping_t2276399492_m3468073737_RuntimeMethod_var);
+		G_B3_0 = L_3;
+	}
+
+IL_0020:
+	{
+		return G_B3_0;
+	}
+}
+// SQLite4Unity3d.TableMapping SQLite4Unity3d.SQLiteConnection::GetMapping(System.Type,SQLite4Unity3d.CreateFlags)
+extern "C" IL2CPP_METHOD_ATTR TableMapping_t2276399492 * SQLiteConnection_GetMapping_m1572423408 (SQLiteConnection_t3070079188 * __this, Type_t * ___type0, int32_t ___createFlags1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_GetMapping_m1572423408_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	TableMapping_t2276399492 * V_0 = NULL;
+	{
+		Dictionary_2_t2061655791 * L_0 = __this->get__mappings_2();
+		if (L_0)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		Dictionary_2_t2061655791 * L_1 = (Dictionary_2_t2061655791 *)il2cpp_codegen_object_new(Dictionary_2_t2061655791_il2cpp_TypeInfo_var);
+		Dictionary_2__ctor_m141581994(L_1, /*hidden argument*/Dictionary_2__ctor_m141581994_RuntimeMethod_var);
+		__this->set__mappings_2(L_1);
+	}
+
+IL_0016:
+	{
+		Dictionary_2_t2061655791 * L_2 = __this->get__mappings_2();
+		Type_t * L_3 = ___type0;
+		NullCheck(L_3);
+		String_t* L_4 = VirtFuncInvoker0< String_t* >::Invoke(18 /* System.String System.Type::get_FullName() */, L_3);
+		NullCheck(L_2);
+		bool L_5 = Dictionary_2_TryGetValue_m582811047(L_2, L_4, (TableMapping_t2276399492 **)(&V_0), /*hidden argument*/Dictionary_2_TryGetValue_m582811047_RuntimeMethod_var);
+		if (L_5)
+		{
+			goto IL_0048;
+		}
+	}
+	{
+		Type_t * L_6 = ___type0;
+		int32_t L_7 = ___createFlags1;
+		TableMapping_t2276399492 * L_8 = (TableMapping_t2276399492 *)il2cpp_codegen_object_new(TableMapping_t2276399492_il2cpp_TypeInfo_var);
+		TableMapping__ctor_m3995337602(L_8, L_6, L_7, /*hidden argument*/NULL);
+		V_0 = L_8;
+		Dictionary_2_t2061655791 * L_9 = __this->get__mappings_2();
+		Type_t * L_10 = ___type0;
+		NullCheck(L_10);
+		String_t* L_11 = VirtFuncInvoker0< String_t* >::Invoke(18 /* System.String System.Type::get_FullName() */, L_10);
+		TableMapping_t2276399492 * L_12 = V_0;
+		NullCheck(L_9);
+		Dictionary_2_set_Item_m722790113(L_9, L_11, L_12, /*hidden argument*/Dictionary_2_set_Item_m722790113_RuntimeMethod_var);
+	}
+
+IL_0048:
+	{
+		TableMapping_t2276399492 * L_13 = V_0;
+		return L_13;
+	}
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::CreateTable(System.Type,SQLite4Unity3d.CreateFlags)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_CreateTable_m3467815003 (SQLiteConnection_t3070079188 * __this, Type_t * ___ty0, int32_t ___createFlags1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_CreateTable_m3467815003_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	TableMapping_t2276399492 * V_0 = NULL;
+	String_t* V_1 = NULL;
+	RuntimeObject* V_2 = NULL;
+	String_t* V_3 = NULL;
+	int32_t V_4 = 0;
+	Dictionary_2_t1466052957 * V_5 = NULL;
+	Column_t1357940583 * V_6 = NULL;
+	ColumnU5BU5D_t4060676894* V_7 = NULL;
+	int32_t V_8 = 0;
+	IndexedAttribute_t384353508 * V_9 = NULL;
+	RuntimeObject* V_10 = NULL;
+	String_t* V_11 = NULL;
+	IndexInfo_t1680796658  V_12;
+	memset(&V_12, 0, sizeof(V_12));
+	IndexInfo_t1680796658  V_13;
+	memset(&V_13, 0, sizeof(V_13));
+	IndexedColumn_t3080689016  V_14;
+	memset(&V_14, 0, sizeof(V_14));
+	String_t* V_15 = NULL;
+	Enumerator_t1648229941  V_16;
+	memset(&V_16, 0, sizeof(V_16));
+	IndexInfo_t1680796658  V_17;
+	memset(&V_17, 0, sizeof(V_17));
+	StringU5BU5D_t1281789340* V_18 = NULL;
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+	String_t* G_B11_0 = NULL;
+	String_t* G_B10_0 = NULL;
+	List_1_t257796462 * G_B27_0 = NULL;
+	List_1_t257796462 * G_B26_0 = NULL;
+	RuntimeObject* G_B29_0 = NULL;
+	RuntimeObject* G_B28_0 = NULL;
+	{
+		Dictionary_2_t2061655791 * L_0 = __this->get__tables_3();
+		if (L_0)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		Dictionary_2_t2061655791 * L_1 = (Dictionary_2_t2061655791 *)il2cpp_codegen_object_new(Dictionary_2_t2061655791_il2cpp_TypeInfo_var);
+		Dictionary_2__ctor_m141581994(L_1, /*hidden argument*/Dictionary_2__ctor_m141581994_RuntimeMethod_var);
+		__this->set__tables_3(L_1);
+	}
+
+IL_0016:
+	{
+		Dictionary_2_t2061655791 * L_2 = __this->get__tables_3();
+		Type_t * L_3 = ___ty0;
+		NullCheck(L_3);
+		String_t* L_4 = VirtFuncInvoker0< String_t* >::Invoke(18 /* System.String System.Type::get_FullName() */, L_3);
+		NullCheck(L_2);
+		bool L_5 = Dictionary_2_TryGetValue_m582811047(L_2, L_4, (TableMapping_t2276399492 **)(&V_0), /*hidden argument*/Dictionary_2_TryGetValue_m582811047_RuntimeMethod_var);
+		if (L_5)
+		{
+			goto IL_0049;
+		}
+	}
+	{
+		Type_t * L_6 = ___ty0;
+		int32_t L_7 = ___createFlags1;
+		TableMapping_t2276399492 * L_8 = SQLiteConnection_GetMapping_m1572423408(__this, L_6, L_7, /*hidden argument*/NULL);
+		V_0 = L_8;
+		Dictionary_2_t2061655791 * L_9 = __this->get__tables_3();
+		Type_t * L_10 = ___ty0;
+		NullCheck(L_10);
+		String_t* L_11 = VirtFuncInvoker0< String_t* >::Invoke(18 /* System.String System.Type::get_FullName() */, L_10);
+		TableMapping_t2276399492 * L_12 = V_0;
+		NullCheck(L_9);
+		Dictionary_2_Add_m425274454(L_9, L_11, L_12, /*hidden argument*/Dictionary_2_Add_m425274454_RuntimeMethod_var);
+	}
+
+IL_0049:
+	{
+		TableMapping_t2276399492 * L_13 = V_0;
+		NullCheck(L_13);
+		String_t* L_14 = TableMapping_get_TableName_m271466374(L_13, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_15 = String_Concat_m3755062657(NULL /*static, unused*/, _stringLiteral2541060376, L_14, _stringLiteral3168227782, /*hidden argument*/NULL);
+		V_1 = L_15;
+		TableMapping_t2276399492 * L_16 = V_0;
+		NullCheck(L_16);
+		ColumnU5BU5D_t4060676894* L_17 = TableMapping_get_Columns_m2283845646(L_16, /*hidden argument*/NULL);
+		intptr_t L_18 = (intptr_t)SQLiteConnection_U3CCreateTableU3Em__0_m3477665872_RuntimeMethod_var;
+		Func_2_t2431212468 * L_19 = (Func_2_t2431212468 *)il2cpp_codegen_object_new(Func_2_t2431212468_il2cpp_TypeInfo_var);
+		Func_2__ctor_m492011138(L_19, __this, L_18, /*hidden argument*/Func_2__ctor_m492011138_RuntimeMethod_var);
+		RuntimeObject* L_20 = Enumerable_Select_TisColumn_t1357940583_TisString_t_m3321979519(NULL /*static, unused*/, (RuntimeObject*)(RuntimeObject*)L_17, L_19, /*hidden argument*/Enumerable_Select_TisColumn_t1357940583_TisString_t_m3321979519_RuntimeMethod_var);
+		V_2 = L_20;
+		RuntimeObject* L_21 = V_2;
+		StringU5BU5D_t1281789340* L_22 = Enumerable_ToArray_TisString_t_m4208096419(NULL /*static, unused*/, L_21, /*hidden argument*/Enumerable_ToArray_TisString_t_m4208096419_RuntimeMethod_var);
+		String_t* L_23 = String_Join_m2050845953(NULL /*static, unused*/, _stringLiteral3453007748, L_22, /*hidden argument*/NULL);
+		V_3 = L_23;
+		String_t* L_24 = V_1;
+		String_t* L_25 = V_3;
+		String_t* L_26 = String_Concat_m3937257545(NULL /*static, unused*/, L_24, L_25, /*hidden argument*/NULL);
+		V_1 = L_26;
+		String_t* L_27 = V_1;
+		String_t* L_28 = String_Concat_m3937257545(NULL /*static, unused*/, L_27, _stringLiteral3452614535, /*hidden argument*/NULL);
+		V_1 = L_28;
+		String_t* L_29 = V_1;
+		ObjectU5BU5D_t2843939325* L_30 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)0);
+		int32_t L_31 = SQLiteConnection_Execute_m2332690897(__this, L_29, L_30, /*hidden argument*/NULL);
+		V_4 = L_31;
+		int32_t L_32 = V_4;
+		if (L_32)
+		{
+			goto IL_00b9;
+		}
+	}
+	{
+		TableMapping_t2276399492 * L_33 = V_0;
+		SQLiteConnection_MigrateTable_m2841987575(__this, L_33, /*hidden argument*/NULL);
+	}
+
+IL_00b9:
+	{
+		Dictionary_2_t1466052957 * L_34 = (Dictionary_2_t1466052957 *)il2cpp_codegen_object_new(Dictionary_2_t1466052957_il2cpp_TypeInfo_var);
+		Dictionary_2__ctor_m2147951471(L_34, /*hidden argument*/Dictionary_2__ctor_m2147951471_RuntimeMethod_var);
+		V_5 = L_34;
+		TableMapping_t2276399492 * L_35 = V_0;
+		NullCheck(L_35);
+		ColumnU5BU5D_t4060676894* L_36 = TableMapping_get_Columns_m2283845646(L_35, /*hidden argument*/NULL);
+		V_7 = L_36;
+		V_8 = 0;
+		goto IL_01e7;
+	}
+
+IL_00d0:
+	{
+		ColumnU5BU5D_t4060676894* L_37 = V_7;
+		int32_t L_38 = V_8;
+		NullCheck(L_37);
+		int32_t L_39 = L_38;
+		Column_t1357940583 * L_40 = (L_37)->GetAt(static_cast<il2cpp_array_size_t>(L_39));
+		V_6 = L_40;
+		Column_t1357940583 * L_41 = V_6;
+		NullCheck(L_41);
+		RuntimeObject* L_42 = Column_get_Indices_m933483296(L_41, /*hidden argument*/NULL);
+		NullCheck(L_42);
+		RuntimeObject* L_43 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<!0> System.Collections.Generic.IEnumerable`1<SQLite4Unity3d.IndexedAttribute>::GetEnumerator() */, IEnumerable_1_t3659173693_il2cpp_TypeInfo_var, L_42);
+		V_10 = L_43;
+	}
+
+IL_00e5:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_01c1;
+		}
+
+IL_00ea:
+		{
+			RuntimeObject* L_44 = V_10;
+			NullCheck(L_44);
+			IndexedAttribute_t384353508 * L_45 = InterfaceFuncInvoker0< IndexedAttribute_t384353508 * >::Invoke(0 /* !0 System.Collections.Generic.IEnumerator`1<SQLite4Unity3d.IndexedAttribute>::get_Current() */, IEnumerator_1_t816923976_il2cpp_TypeInfo_var, L_44);
+			V_9 = L_45;
+			IndexedAttribute_t384353508 * L_46 = V_9;
+			NullCheck(L_46);
+			String_t* L_47 = IndexedAttribute_get_Name_m2341810600(L_46, /*hidden argument*/NULL);
+			String_t* L_48 = L_47;
+			G_B10_0 = L_48;
+			if (L_48)
+			{
+				G_B11_0 = L_48;
+				goto IL_0118;
+			}
+		}
+
+IL_0100:
+		{
+			TableMapping_t2276399492 * L_49 = V_0;
+			NullCheck(L_49);
+			String_t* L_50 = TableMapping_get_TableName_m271466374(L_49, /*hidden argument*/NULL);
+			Column_t1357940583 * L_51 = V_6;
+			NullCheck(L_51);
+			String_t* L_52 = Column_get_Name_m892990361(L_51, /*hidden argument*/NULL);
+			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+			String_t* L_53 = String_Concat_m3755062657(NULL /*static, unused*/, L_50, _stringLiteral3452614641, L_52, /*hidden argument*/NULL);
+			G_B11_0 = L_53;
+		}
+
+IL_0118:
+		{
+			V_11 = G_B11_0;
+			Dictionary_2_t1466052957 * L_54 = V_5;
+			String_t* L_55 = V_11;
+			NullCheck(L_54);
+			bool L_56 = Dictionary_2_TryGetValue_m384793566(L_54, L_55, (IndexInfo_t1680796658 *)(&V_12), /*hidden argument*/Dictionary_2_TryGetValue_m384793566_RuntimeMethod_var);
+			if (L_56)
+			{
+				goto IL_0171;
+			}
+		}
+
+IL_012a:
+		{
+			il2cpp_codegen_initobj((&V_13), sizeof(IndexInfo_t1680796658 ));
+			String_t* L_57 = V_11;
+			(&V_13)->set_IndexName_0(L_57);
+			TableMapping_t2276399492 * L_58 = V_0;
+			NullCheck(L_58);
+			String_t* L_59 = TableMapping_get_TableName_m271466374(L_58, /*hidden argument*/NULL);
+			(&V_13)->set_TableName_1(L_59);
+			IndexedAttribute_t384353508 * L_60 = V_9;
+			NullCheck(L_60);
+			bool L_61 = VirtFuncInvoker0< bool >::Invoke(4 /* System.Boolean SQLite4Unity3d.IndexedAttribute::get_Unique() */, L_60);
+			(&V_13)->set_Unique_2(L_61);
+			List_1_t257796462 * L_62 = (List_1_t257796462 *)il2cpp_codegen_object_new(List_1_t257796462_il2cpp_TypeInfo_var);
+			List_1__ctor_m2991042439(L_62, /*hidden argument*/List_1__ctor_m2991042439_RuntimeMethod_var);
+			(&V_13)->set_Columns_3(L_62);
+			IndexInfo_t1680796658  L_63 = V_13;
+			V_12 = L_63;
+			Dictionary_2_t1466052957 * L_64 = V_5;
+			String_t* L_65 = V_11;
+			IndexInfo_t1680796658  L_66 = V_12;
+			NullCheck(L_64);
+			Dictionary_2_Add_m3197316107(L_64, L_65, L_66, /*hidden argument*/Dictionary_2_Add_m3197316107_RuntimeMethod_var);
+		}
+
+IL_0171:
+		{
+			IndexedAttribute_t384353508 * L_67 = V_9;
+			NullCheck(L_67);
+			bool L_68 = VirtFuncInvoker0< bool >::Invoke(4 /* System.Boolean SQLite4Unity3d.IndexedAttribute::get_Unique() */, L_67);
+			bool L_69 = (&V_12)->get_Unique_2();
+			if ((((int32_t)L_68) == ((int32_t)L_69)))
+			{
+				goto IL_018f;
+			}
+		}
+
+IL_0184:
+		{
+			Exception_t * L_70 = (Exception_t *)il2cpp_codegen_object_new(Exception_t_il2cpp_TypeInfo_var);
+			Exception__ctor_m1152696503(L_70, _stringLiteral3896659014, /*hidden argument*/NULL);
+			IL2CPP_RAISE_MANAGED_EXCEPTION(L_70, NULL, SQLiteConnection_CreateTable_m3467815003_RuntimeMethod_var);
+		}
+
+IL_018f:
+		{
+			List_1_t257796462 * L_71 = (&V_12)->get_Columns_3();
+			il2cpp_codegen_initobj((&V_14), sizeof(IndexedColumn_t3080689016 ));
+			IndexedAttribute_t384353508 * L_72 = V_9;
+			NullCheck(L_72);
+			int32_t L_73 = IndexedAttribute_get_Order_m48377204(L_72, /*hidden argument*/NULL);
+			(&V_14)->set_Order_0(L_73);
+			Column_t1357940583 * L_74 = V_6;
+			NullCheck(L_74);
+			String_t* L_75 = Column_get_Name_m892990361(L_74, /*hidden argument*/NULL);
+			(&V_14)->set_ColumnName_1(L_75);
+			IndexedColumn_t3080689016  L_76 = V_14;
+			NullCheck(L_71);
+			List_1_Add_m1789417565(L_71, L_76, /*hidden argument*/List_1_Add_m1789417565_RuntimeMethod_var);
+		}
+
+IL_01c1:
+		{
+			RuntimeObject* L_77 = V_10;
+			NullCheck(L_77);
+			bool L_78 = InterfaceFuncInvoker0< bool >::Invoke(1 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t1853284238_il2cpp_TypeInfo_var, L_77);
+			if (L_78)
+			{
+				goto IL_00ea;
+			}
+		}
+
+IL_01cd:
+		{
+			IL2CPP_LEAVE(0x1E1, FINALLY_01d2);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_01d2;
+	}
+
+FINALLY_01d2:
+	{ // begin finally (depth: 1)
+		{
+			RuntimeObject* L_79 = V_10;
+			if (!L_79)
+			{
+				goto IL_01e0;
+			}
+		}
+
+IL_01d9:
+		{
+			RuntimeObject* L_80 = V_10;
+			NullCheck(L_80);
+			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t3640265483_il2cpp_TypeInfo_var, L_80);
+		}
+
+IL_01e0:
+		{
+			IL2CPP_END_FINALLY(466)
+		}
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(466)
+	{
+		IL2CPP_JUMP_TBL(0x1E1, IL_01e1)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_01e1:
+	{
+		int32_t L_81 = V_8;
+		V_8 = ((int32_t)il2cpp_codegen_add((int32_t)L_81, (int32_t)1));
+	}
+
+IL_01e7:
+	{
+		int32_t L_82 = V_8;
+		ColumnU5BU5D_t4060676894* L_83 = V_7;
+		NullCheck(L_83);
+		if ((((int32_t)L_82) < ((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_83)->max_length)))))))
+		{
+			goto IL_00d0;
+		}
+	}
+	{
+		Dictionary_2_t1466052957 * L_84 = V_5;
+		NullCheck(L_84);
+		KeyCollection_t1655728428 * L_85 = Dictionary_2_get_Keys_m172842089(L_84, /*hidden argument*/Dictionary_2_get_Keys_m172842089_RuntimeMethod_var);
+		NullCheck(L_85);
+		Enumerator_t1648229941  L_86 = KeyCollection_GetEnumerator_m3330635900(L_85, /*hidden argument*/KeyCollection_GetEnumerator_m3330635900_RuntimeMethod_var);
+		V_16 = L_86;
+	}
+
+IL_0200:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_0288;
+		}
+
+IL_0205:
+		{
+			String_t* L_87 = Enumerator_get_Current_m169089760((Enumerator_t1648229941 *)(&V_16), /*hidden argument*/Enumerator_get_Current_m169089760_RuntimeMethod_var);
+			V_15 = L_87;
+			Dictionary_2_t1466052957 * L_88 = V_5;
+			String_t* L_89 = V_15;
+			NullCheck(L_88);
+			IndexInfo_t1680796658  L_90 = Dictionary_2_get_Item_m2283669796(L_88, L_89, /*hidden argument*/Dictionary_2_get_Item_m2283669796_RuntimeMethod_var);
+			V_17 = L_90;
+			List_1_t257796462 * L_91 = (&V_17)->get_Columns_3();
+			IL2CPP_RUNTIME_CLASS_INIT(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var);
+			Func_2_t166798807 * L_92 = ((SQLiteConnection_t3070079188_StaticFields*)il2cpp_codegen_static_fields_for(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var))->get_U3CU3Ef__amU24cache0_15();
+			G_B26_0 = L_91;
+			if (L_92)
+			{
+				G_B27_0 = L_91;
+				goto IL_0238;
+			}
+		}
+
+IL_0227:
+		{
+			intptr_t L_93 = (intptr_t)SQLiteConnection_U3CCreateTableU3Em__1_m2252154560_RuntimeMethod_var;
+			Func_2_t166798807 * L_94 = (Func_2_t166798807 *)il2cpp_codegen_object_new(Func_2_t166798807_il2cpp_TypeInfo_var);
+			Func_2__ctor_m3081439098(L_94, NULL, L_93, /*hidden argument*/Func_2__ctor_m3081439098_RuntimeMethod_var);
+			IL2CPP_RUNTIME_CLASS_INIT(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var);
+			((SQLiteConnection_t3070079188_StaticFields*)il2cpp_codegen_static_fields_for(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var))->set_U3CU3Ef__amU24cache0_15(L_94);
+			G_B27_0 = G_B26_0;
+		}
+
+IL_0238:
+		{
+			IL2CPP_RUNTIME_CLASS_INIT(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var);
+			Func_2_t166798807 * L_95 = ((SQLiteConnection_t3070079188_StaticFields*)il2cpp_codegen_static_fields_for(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var))->get_U3CU3Ef__amU24cache0_15();
+			RuntimeObject* L_96 = Enumerable_OrderBy_TisIndexedColumn_t3080689016_TisInt32_t2950945753_m2211229744(NULL /*static, unused*/, G_B27_0, L_95, /*hidden argument*/Enumerable_OrderBy_TisIndexedColumn_t3080689016_TisInt32_t2950945753_m2211229744_RuntimeMethod_var);
+			Func_2_t3358271039 * L_97 = ((SQLiteConnection_t3070079188_StaticFields*)il2cpp_codegen_static_fields_for(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var))->get_U3CU3Ef__amU24cache1_16();
+			G_B28_0 = L_96;
+			if (L_97)
+			{
+				G_B29_0 = L_96;
+				goto IL_025a;
+			}
+		}
+
+IL_0249:
+		{
+			intptr_t L_98 = (intptr_t)SQLiteConnection_U3CCreateTableU3Em__2_m3964932566_RuntimeMethod_var;
+			Func_2_t3358271039 * L_99 = (Func_2_t3358271039 *)il2cpp_codegen_object_new(Func_2_t3358271039_il2cpp_TypeInfo_var);
+			Func_2__ctor_m1556317952(L_99, NULL, L_98, /*hidden argument*/Func_2__ctor_m1556317952_RuntimeMethod_var);
+			IL2CPP_RUNTIME_CLASS_INIT(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var);
+			((SQLiteConnection_t3070079188_StaticFields*)il2cpp_codegen_static_fields_for(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var))->set_U3CU3Ef__amU24cache1_16(L_99);
+			G_B29_0 = G_B28_0;
+		}
+
+IL_025a:
+		{
+			IL2CPP_RUNTIME_CLASS_INIT(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var);
+			Func_2_t3358271039 * L_100 = ((SQLiteConnection_t3070079188_StaticFields*)il2cpp_codegen_static_fields_for(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var))->get_U3CU3Ef__amU24cache1_16();
+			RuntimeObject* L_101 = Enumerable_Select_TisIndexedColumn_t3080689016_TisString_t_m2328209351(NULL /*static, unused*/, G_B29_0, L_100, /*hidden argument*/Enumerable_Select_TisIndexedColumn_t3080689016_TisString_t_m2328209351_RuntimeMethod_var);
+			StringU5BU5D_t1281789340* L_102 = Enumerable_ToArray_TisString_t_m4208096419(NULL /*static, unused*/, L_101, /*hidden argument*/Enumerable_ToArray_TisString_t_m4208096419_RuntimeMethod_var);
+			V_18 = L_102;
+			int32_t L_103 = V_4;
+			String_t* L_104 = V_15;
+			String_t* L_105 = (&V_17)->get_TableName_1();
+			StringU5BU5D_t1281789340* L_106 = V_18;
+			bool L_107 = (&V_17)->get_Unique_2();
+			int32_t L_108 = SQLiteConnection_CreateIndex_m4106815680(__this, L_104, L_105, L_106, L_107, /*hidden argument*/NULL);
+			V_4 = ((int32_t)il2cpp_codegen_add((int32_t)L_103, (int32_t)L_108));
+		}
+
+IL_0288:
+		{
+			bool L_109 = Enumerator_MoveNext_m2900741641((Enumerator_t1648229941 *)(&V_16), /*hidden argument*/Enumerator_MoveNext_m2900741641_RuntimeMethod_var);
+			if (L_109)
+			{
+				goto IL_0205;
+			}
+		}
+
+IL_0294:
+		{
+			IL2CPP_LEAVE(0x2A7, FINALLY_0299);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_0299;
+	}
+
+FINALLY_0299:
+	{ // begin finally (depth: 1)
+		Enumerator_Dispose_m1771143618((Enumerator_t1648229941 *)(&V_16), /*hidden argument*/Enumerator_Dispose_m1771143618_RuntimeMethod_var);
+		IL2CPP_END_FINALLY(665)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(665)
+	{
+		IL2CPP_JUMP_TBL(0x2A7, IL_02a7)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_02a7:
+	{
+		int32_t L_110 = V_4;
+		return L_110;
+	}
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::CreateIndex(System.String,System.String,System.String[],System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_CreateIndex_m4106815680 (SQLiteConnection_t3070079188 * __this, String_t* ___indexName0, String_t* ___tableName1, StringU5BU5D_t1281789340* ___columnNames2, bool ___unique3, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_CreateIndex_m4106815680_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	int32_t G_B2_0 = 0;
+	ObjectU5BU5D_t2843939325* G_B2_1 = NULL;
+	ObjectU5BU5D_t2843939325* G_B2_2 = NULL;
+	String_t* G_B2_3 = NULL;
+	int32_t G_B1_0 = 0;
+	ObjectU5BU5D_t2843939325* G_B1_1 = NULL;
+	ObjectU5BU5D_t2843939325* G_B1_2 = NULL;
+	String_t* G_B1_3 = NULL;
+	String_t* G_B3_0 = NULL;
+	int32_t G_B3_1 = 0;
+	ObjectU5BU5D_t2843939325* G_B3_2 = NULL;
+	ObjectU5BU5D_t2843939325* G_B3_3 = NULL;
+	String_t* G_B3_4 = NULL;
+	{
+		ObjectU5BU5D_t2843939325* L_0 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)4);
+		ObjectU5BU5D_t2843939325* L_1 = L_0;
+		String_t* L_2 = ___tableName1;
+		NullCheck(L_1);
+		ArrayElementTypeCheck (L_1, L_2);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_2);
+		ObjectU5BU5D_t2843939325* L_3 = L_1;
+		StringU5BU5D_t1281789340* L_4 = ___columnNames2;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_5 = String_Join_m2050845953(NULL /*static, unused*/, _stringLiteral1581555912, L_4, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		ArrayElementTypeCheck (L_3, L_5);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject *)L_5);
+		ObjectU5BU5D_t2843939325* L_6 = L_3;
+		bool L_7 = ___unique3;
+		G_B1_0 = 2;
+		G_B1_1 = L_6;
+		G_B1_2 = L_6;
+		G_B1_3 = _stringLiteral2345633357;
+		if (!L_7)
+		{
+			G_B2_0 = 2;
+			G_B2_1 = L_6;
+			G_B2_2 = L_6;
+			G_B2_3 = _stringLiteral2345633357;
+			goto IL_0030;
+		}
+	}
+	{
+		G_B3_0 = _stringLiteral379716803;
+		G_B3_1 = G_B1_0;
+		G_B3_2 = G_B1_1;
+		G_B3_3 = G_B1_2;
+		G_B3_4 = G_B1_3;
+		goto IL_0035;
+	}
+
+IL_0030:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_8 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_2();
+		G_B3_0 = L_8;
+		G_B3_1 = G_B2_0;
+		G_B3_2 = G_B2_1;
+		G_B3_3 = G_B2_2;
+		G_B3_4 = G_B2_3;
+	}
+
+IL_0035:
+	{
+		NullCheck(G_B3_2);
+		ArrayElementTypeCheck (G_B3_2, G_B3_0);
+		(G_B3_2)->SetAt(static_cast<il2cpp_array_size_t>(G_B3_1), (RuntimeObject *)G_B3_0);
+		ObjectU5BU5D_t2843939325* L_9 = G_B3_3;
+		String_t* L_10 = ___indexName0;
+		NullCheck(L_9);
+		ArrayElementTypeCheck (L_9, L_10);
+		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(3), (RuntimeObject *)L_10);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_11 = String_Format_m630303134(NULL /*static, unused*/, G_B3_4, L_9, /*hidden argument*/NULL);
+		V_0 = L_11;
+		String_t* L_12 = V_0;
+		ObjectU5BU5D_t2843939325* L_13 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)0);
+		int32_t L_14 = SQLiteConnection_Execute_m2332690897(__this, L_12, L_13, /*hidden argument*/NULL);
+		return L_14;
+	}
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::CreateIndex(System.String,System.String,System.String,System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_CreateIndex_m105413951 (SQLiteConnection_t3070079188 * __this, String_t* ___indexName0, String_t* ___tableName1, String_t* ___columnName2, bool ___unique3, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_CreateIndex_m105413951_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = ___indexName0;
+		String_t* L_1 = ___tableName1;
+		StringU5BU5D_t1281789340* L_2 = (StringU5BU5D_t1281789340*)SZArrayNew(StringU5BU5D_t1281789340_il2cpp_TypeInfo_var, (uint32_t)1);
+		StringU5BU5D_t1281789340* L_3 = L_2;
+		String_t* L_4 = ___columnName2;
+		NullCheck(L_3);
+		ArrayElementTypeCheck (L_3, L_4);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_4);
+		bool L_5 = ___unique3;
+		int32_t L_6 = SQLiteConnection_CreateIndex_m4106815680(__this, L_0, L_1, L_3, L_5, /*hidden argument*/NULL);
+		return L_6;
+	}
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::CreateIndex(System.String,System.String,System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_CreateIndex_m3641861941 (SQLiteConnection_t3070079188 * __this, String_t* ___tableName0, String_t* ___columnName1, bool ___unique2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_CreateIndex_m3641861941_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = ___tableName0;
+		String_t* L_1 = ___columnName1;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_2 = String_Concat_m3755062657(NULL /*static, unused*/, L_0, _stringLiteral3452614641, L_1, /*hidden argument*/NULL);
+		String_t* L_3 = ___tableName0;
+		String_t* L_4 = ___columnName1;
+		bool L_5 = ___unique2;
+		int32_t L_6 = SQLiteConnection_CreateIndex_m105413951(__this, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
+		return L_6;
+	}
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::CreateIndex(System.String,System.String[],System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_CreateIndex_m2192659173 (SQLiteConnection_t3070079188 * __this, String_t* ___tableName0, StringU5BU5D_t1281789340* ___columnNames1, bool ___unique2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_CreateIndex_m2192659173_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = ___tableName0;
+		StringU5BU5D_t1281789340* L_1 = ___columnNames1;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_2 = String_Join_m2050845953(NULL /*static, unused*/, _stringLiteral3452614641, L_1, /*hidden argument*/NULL);
+		String_t* L_3 = String_Concat_m3755062657(NULL /*static, unused*/, L_0, _stringLiteral3452614641, L_2, /*hidden argument*/NULL);
+		String_t* L_4 = ___tableName0;
+		StringU5BU5D_t1281789340* L_5 = ___columnNames1;
+		bool L_6 = ___unique2;
+		int32_t L_7 = SQLiteConnection_CreateIndex_m4106815680(__this, L_3, L_4, L_5, L_6, /*hidden argument*/NULL);
+		return L_7;
+	}
+}
+// System.Collections.Generic.List`1<SQLite4Unity3d.SQLiteConnection/ColumnInfo> SQLite4Unity3d.SQLiteConnection::GetTableInfo(System.String)
+extern "C" IL2CPP_METHOD_ATTR List_1_t4032208569 * SQLiteConnection_GetTableInfo_m2951949514 (SQLiteConnection_t3070079188 * __this, String_t* ___tableName0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_GetTableInfo_m2951949514_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	{
+		String_t* L_0 = ___tableName0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_1 = String_Concat_m3755062657(NULL /*static, unused*/, _stringLiteral3795689398, L_0, _stringLiteral3450976126, /*hidden argument*/NULL);
+		V_0 = L_1;
+		String_t* L_2 = V_0;
+		ObjectU5BU5D_t2843939325* L_3 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)0);
+		List_1_t4032208569 * L_4 = SQLiteConnection_Query_TisColumnInfo_t2560133827_m3769036285(__this, L_2, L_3, /*hidden argument*/SQLiteConnection_Query_TisColumnInfo_t2560133827_m3769036285_RuntimeMethod_var);
+		return L_4;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection::MigrateTable(SQLite4Unity3d.TableMapping)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_MigrateTable_m2841987575 (SQLiteConnection_t3070079188 * __this, TableMapping_t2276399492 * ___map0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_MigrateTable_m2841987575_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	List_1_t4032208569 * V_0 = NULL;
+	List_1_t2830015325 * V_1 = NULL;
+	Column_t1357940583 * V_2 = NULL;
+	ColumnU5BU5D_t4060676894* V_3 = NULL;
+	int32_t V_4 = 0;
+	bool V_5 = false;
+	ColumnInfo_t2560133827 * V_6 = NULL;
+	Enumerator_t1626485150  V_7;
+	memset(&V_7, 0, sizeof(V_7));
+	Column_t1357940583 * V_8 = NULL;
+	Enumerator_t424291906  V_9;
+	memset(&V_9, 0, sizeof(V_9));
+	String_t* V_10 = NULL;
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		TableMapping_t2276399492 * L_0 = ___map0;
+		NullCheck(L_0);
+		String_t* L_1 = TableMapping_get_TableName_m271466374(L_0, /*hidden argument*/NULL);
+		List_1_t4032208569 * L_2 = SQLiteConnection_GetTableInfo_m2951949514(__this, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		List_1_t2830015325 * L_3 = (List_1_t2830015325 *)il2cpp_codegen_object_new(List_1_t2830015325_il2cpp_TypeInfo_var);
+		List_1__ctor_m2000653768(L_3, /*hidden argument*/List_1__ctor_m2000653768_RuntimeMethod_var);
+		V_1 = L_3;
+		TableMapping_t2276399492 * L_4 = ___map0;
+		NullCheck(L_4);
+		ColumnU5BU5D_t4060676894* L_5 = TableMapping_get_Columns_m2283845646(L_4, /*hidden argument*/NULL);
+		V_3 = L_5;
+		V_4 = 0;
+		goto IL_0097;
+	}
+
+IL_0022:
+	{
+		ColumnU5BU5D_t4060676894* L_6 = V_3;
+		int32_t L_7 = V_4;
+		NullCheck(L_6);
+		int32_t L_8 = L_7;
+		Column_t1357940583 * L_9 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
+		V_2 = L_9;
+		V_5 = (bool)0;
+		List_1_t4032208569 * L_10 = V_0;
+		NullCheck(L_10);
+		Enumerator_t1626485150  L_11 = List_1_GetEnumerator_m306818921(L_10, /*hidden argument*/List_1_GetEnumerator_m306818921_RuntimeMethod_var);
+		V_7 = L_11;
+	}
+
+IL_0032:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_0064;
+		}
+
+IL_0037:
+		{
+			ColumnInfo_t2560133827 * L_12 = Enumerator_get_Current_m1385564250((Enumerator_t1626485150 *)(&V_7), /*hidden argument*/Enumerator_get_Current_m1385564250_RuntimeMethod_var);
+			V_6 = L_12;
+			Column_t1357940583 * L_13 = V_2;
+			NullCheck(L_13);
+			String_t* L_14 = Column_get_Name_m892990361(L_13, /*hidden argument*/NULL);
+			ColumnInfo_t2560133827 * L_15 = V_6;
+			NullCheck(L_15);
+			String_t* L_16 = ColumnInfo_get_Name_m850063639(L_15, /*hidden argument*/NULL);
+			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+			int32_t L_17 = String_Compare_m3203413707(NULL /*static, unused*/, L_14, L_16, 5, /*hidden argument*/NULL);
+			V_5 = (bool)((((int32_t)L_17) == ((int32_t)0))? 1 : 0);
+			bool L_18 = V_5;
+			if (!L_18)
+			{
+				goto IL_0064;
+			}
+		}
+
+IL_005f:
+		{
+			goto IL_0070;
+		}
+
+IL_0064:
+		{
+			bool L_19 = Enumerator_MoveNext_m985057225((Enumerator_t1626485150 *)(&V_7), /*hidden argument*/Enumerator_MoveNext_m985057225_RuntimeMethod_var);
+			if (L_19)
+			{
+				goto IL_0037;
+			}
+		}
+
+IL_0070:
+		{
+			IL2CPP_LEAVE(0x83, FINALLY_0075);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_0075;
+	}
+
+FINALLY_0075:
+	{ // begin finally (depth: 1)
+		Enumerator_Dispose_m1999119403((Enumerator_t1626485150 *)(&V_7), /*hidden argument*/Enumerator_Dispose_m1999119403_RuntimeMethod_var);
+		IL2CPP_END_FINALLY(117)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(117)
+	{
+		IL2CPP_JUMP_TBL(0x83, IL_0083)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_0083:
+	{
+		bool L_20 = V_5;
+		if (L_20)
+		{
+			goto IL_0091;
+		}
+	}
+	{
+		List_1_t2830015325 * L_21 = V_1;
+		Column_t1357940583 * L_22 = V_2;
+		NullCheck(L_21);
+		List_1_Add_m1767659314(L_21, L_22, /*hidden argument*/List_1_Add_m1767659314_RuntimeMethod_var);
+	}
+
+IL_0091:
+	{
+		int32_t L_23 = V_4;
+		V_4 = ((int32_t)il2cpp_codegen_add((int32_t)L_23, (int32_t)1));
+	}
+
+IL_0097:
+	{
+		int32_t L_24 = V_4;
+		ColumnU5BU5D_t4060676894* L_25 = V_3;
+		NullCheck(L_25);
+		if ((((int32_t)L_24) < ((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_25)->max_length)))))))
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		List_1_t2830015325 * L_26 = V_1;
+		NullCheck(L_26);
+		Enumerator_t424291906  L_27 = List_1_GetEnumerator_m3158774955(L_26, /*hidden argument*/List_1_GetEnumerator_m3158774955_RuntimeMethod_var);
+		V_9 = L_27;
+	}
+
+IL_00a9:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_00ea;
+		}
+
+IL_00ae:
+		{
+			Column_t1357940583 * L_28 = Enumerator_get_Current_m3377761755((Enumerator_t424291906 *)(&V_9), /*hidden argument*/Enumerator_get_Current_m3377761755_RuntimeMethod_var);
+			V_8 = L_28;
+			TableMapping_t2276399492 * L_29 = ___map0;
+			NullCheck(L_29);
+			String_t* L_30 = TableMapping_get_TableName_m271466374(L_29, /*hidden argument*/NULL);
+			Column_t1357940583 * L_31 = V_8;
+			bool L_32 = SQLiteConnection_get_StoreDateTimeAsTicks_m1334058394(__this, /*hidden argument*/NULL);
+			String_t* L_33 = Orm_SqlDecl_m2709905698(NULL /*static, unused*/, L_31, L_32, /*hidden argument*/NULL);
+			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+			String_t* L_34 = String_Concat_m2163913788(NULL /*static, unused*/, _stringLiteral2831778705, L_30, _stringLiteral4276912658, L_33, /*hidden argument*/NULL);
+			V_10 = L_34;
+			String_t* L_35 = V_10;
+			ObjectU5BU5D_t2843939325* L_36 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)0);
+			SQLiteConnection_Execute_m2332690897(__this, L_35, L_36, /*hidden argument*/NULL);
+		}
+
+IL_00ea:
+		{
+			bool L_37 = Enumerator_MoveNext_m1909543983((Enumerator_t424291906 *)(&V_9), /*hidden argument*/Enumerator_MoveNext_m1909543983_RuntimeMethod_var);
+			if (L_37)
+			{
+				goto IL_00ae;
+			}
+		}
+
+IL_00f6:
+		{
+			IL2CPP_LEAVE(0x109, FINALLY_00fb);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_00fb;
+	}
+
+FINALLY_00fb:
+	{ // begin finally (depth: 1)
+		Enumerator_Dispose_m4004210332((Enumerator_t424291906 *)(&V_9), /*hidden argument*/Enumerator_Dispose_m4004210332_RuntimeMethod_var);
+		IL2CPP_END_FINALLY(251)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(251)
+	{
+		IL2CPP_JUMP_TBL(0x109, IL_0109)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_0109:
+	{
+		return;
+	}
+}
+// SQLite4Unity3d.SQLiteCommand SQLite4Unity3d.SQLiteConnection::NewCommand()
+extern "C" IL2CPP_METHOD_ATTR SQLiteCommand_t3688707480 * SQLiteConnection_NewCommand_m875355521 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_NewCommand_m875355521_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		SQLiteCommand_t3688707480 * L_0 = (SQLiteCommand_t3688707480 *)il2cpp_codegen_object_new(SQLiteCommand_t3688707480_il2cpp_TypeInfo_var);
+		SQLiteCommand__ctor_m1824553444(L_0, __this, /*hidden argument*/NULL);
+		return L_0;
+	}
+}
+// SQLite4Unity3d.SQLiteCommand SQLite4Unity3d.SQLiteConnection::CreateCommand(System.String,System.Object[])
+extern "C" IL2CPP_METHOD_ATTR SQLiteCommand_t3688707480 * SQLiteConnection_CreateCommand_m41717563 (SQLiteConnection_t3070079188 * __this, String_t* ___cmdText0, ObjectU5BU5D_t2843939325* ___ps1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_CreateCommand_m41717563_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	SQLiteCommand_t3688707480 * V_0 = NULL;
+	RuntimeObject * V_1 = NULL;
+	ObjectU5BU5D_t2843939325* V_2 = NULL;
+	int32_t V_3 = 0;
+	{
+		bool L_0 = __this->get__open_0();
+		if (L_0)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		SQLiteException_t1356363765 * L_1 = SQLiteException_New_m975542910(NULL /*static, unused*/, 1, _stringLiteral2684379337, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, NULL, SQLiteConnection_CreateCommand_m41717563_RuntimeMethod_var);
+	}
+
+IL_0017:
+	{
+		SQLiteCommand_t3688707480 * L_2 = VirtFuncInvoker0< SQLiteCommand_t3688707480 * >::Invoke(5 /* SQLite4Unity3d.SQLiteCommand SQLite4Unity3d.SQLiteConnection::NewCommand() */, __this);
+		V_0 = L_2;
+		SQLiteCommand_t3688707480 * L_3 = V_0;
+		String_t* L_4 = ___cmdText0;
+		NullCheck(L_3);
+		SQLiteCommand_set_CommandText_m1328880820(L_3, L_4, /*hidden argument*/NULL);
+		ObjectU5BU5D_t2843939325* L_5 = ___ps1;
+		V_2 = L_5;
+		V_3 = 0;
+		goto IL_003d;
+	}
+
+IL_002e:
+	{
+		ObjectU5BU5D_t2843939325* L_6 = V_2;
+		int32_t L_7 = V_3;
+		NullCheck(L_6);
+		int32_t L_8 = L_7;
+		RuntimeObject * L_9 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
+		V_1 = L_9;
+		SQLiteCommand_t3688707480 * L_10 = V_0;
+		RuntimeObject * L_11 = V_1;
+		NullCheck(L_10);
+		SQLiteCommand_Bind_m3149550542(L_10, L_11, /*hidden argument*/NULL);
+		int32_t L_12 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_12, (int32_t)1));
+	}
+
+IL_003d:
+	{
+		int32_t L_13 = V_3;
+		ObjectU5BU5D_t2843939325* L_14 = V_2;
+		NullCheck(L_14);
+		if ((((int32_t)L_13) < ((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_14)->max_length)))))))
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		SQLiteCommand_t3688707480 * L_15 = V_0;
+		return L_15;
+	}
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::Execute(System.String,System.Object[])
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_Execute_m2332690897 (SQLiteConnection_t3070079188 * __this, String_t* ___query0, ObjectU5BU5D_t2843939325* ___args1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_Execute_m2332690897_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	SQLiteCommand_t3688707480 * V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		String_t* L_0 = ___query0;
+		ObjectU5BU5D_t2843939325* L_1 = ___args1;
+		SQLiteCommand_t3688707480 * L_2 = SQLiteConnection_CreateCommand_m41717563(__this, L_0, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		bool L_3 = SQLiteConnection_get_TimeExecution_m2293937657(__this, /*hidden argument*/NULL);
+		if (!L_3)
+		{
+			goto IL_0040;
+		}
+	}
+	{
+		Stopwatch_t305734070 * L_4 = __this->get__sw_4();
+		if (L_4)
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		Stopwatch_t305734070 * L_5 = (Stopwatch_t305734070 *)il2cpp_codegen_object_new(Stopwatch_t305734070_il2cpp_TypeInfo_var);
+		Stopwatch__ctor_m2673586837(L_5, /*hidden argument*/NULL);
+		__this->set__sw_4(L_5);
+	}
+
+IL_002a:
+	{
+		Stopwatch_t305734070 * L_6 = __this->get__sw_4();
+		NullCheck(L_6);
+		Stopwatch_Reset_m2784178933(L_6, /*hidden argument*/NULL);
+		Stopwatch_t305734070 * L_7 = __this->get__sw_4();
+		NullCheck(L_7);
+		Stopwatch_Start_m1142799187(L_7, /*hidden argument*/NULL);
+	}
+
+IL_0040:
+	{
+		SQLiteCommand_t3688707480 * L_8 = V_0;
+		NullCheck(L_8);
+		int32_t L_9 = SQLiteCommand_ExecuteNonQuery_m485096923(L_8, /*hidden argument*/NULL);
+		V_1 = L_9;
+		bool L_10 = SQLiteConnection_get_TimeExecution_m2293937657(__this, /*hidden argument*/NULL);
+		if (!L_10)
+		{
+			goto IL_0075;
+		}
+	}
+	{
+		Stopwatch_t305734070 * L_11 = __this->get__sw_4();
+		NullCheck(L_11);
+		Stopwatch_Stop_m1583564474(L_11, /*hidden argument*/NULL);
+		int64_t L_12 = __this->get__elapsedMilliseconds_5();
+		Stopwatch_t305734070 * L_13 = __this->get__sw_4();
+		NullCheck(L_13);
+		int64_t L_14 = Stopwatch_get_ElapsedMilliseconds_m1101465039(L_13, /*hidden argument*/NULL);
+		__this->set__elapsedMilliseconds_5(((int64_t)il2cpp_codegen_add((int64_t)L_12, (int64_t)L_14)));
+	}
+
+IL_0075:
+	{
+		int32_t L_15 = V_1;
+		return L_15;
+	}
+}
+// System.Collections.Generic.List`1<System.Object> SQLite4Unity3d.SQLiteConnection::Query(SQLite4Unity3d.TableMapping,System.String,System.Object[])
+extern "C" IL2CPP_METHOD_ATTR List_1_t257213610 * SQLiteConnection_Query_m3705838259 (SQLiteConnection_t3070079188 * __this, TableMapping_t2276399492 * ___map0, String_t* ___query1, ObjectU5BU5D_t2843939325* ___args2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_Query_m3705838259_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	SQLiteCommand_t3688707480 * V_0 = NULL;
+	{
+		String_t* L_0 = ___query1;
+		ObjectU5BU5D_t2843939325* L_1 = ___args2;
+		SQLiteCommand_t3688707480 * L_2 = SQLiteConnection_CreateCommand_m41717563(__this, L_0, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		SQLiteCommand_t3688707480 * L_3 = V_0;
+		TableMapping_t2276399492 * L_4 = ___map0;
+		NullCheck(L_3);
+		List_1_t257213610 * L_5 = SQLiteCommand_ExecuteQuery_TisRuntimeObject_m3433496489(L_3, L_4, /*hidden argument*/SQLiteCommand_ExecuteQuery_TisRuntimeObject_m3433496489_RuntimeMethod_var);
+		return L_5;
+	}
+}
+// System.Collections.Generic.IEnumerable`1<System.Object> SQLite4Unity3d.SQLiteConnection::DeferredQuery(SQLite4Unity3d.TableMapping,System.String,System.Object[])
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject* SQLiteConnection_DeferredQuery_m1348183606 (SQLiteConnection_t3070079188 * __this, TableMapping_t2276399492 * ___map0, String_t* ___query1, ObjectU5BU5D_t2843939325* ___args2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_DeferredQuery_m1348183606_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	SQLiteCommand_t3688707480 * V_0 = NULL;
+	{
+		String_t* L_0 = ___query1;
+		ObjectU5BU5D_t2843939325* L_1 = ___args2;
+		SQLiteCommand_t3688707480 * L_2 = SQLiteConnection_CreateCommand_m41717563(__this, L_0, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		SQLiteCommand_t3688707480 * L_3 = V_0;
+		TableMapping_t2276399492 * L_4 = ___map0;
+		NullCheck(L_3);
+		RuntimeObject* L_5 = SQLiteCommand_ExecuteDeferredQuery_TisRuntimeObject_m2260852394(L_3, L_4, /*hidden argument*/SQLiteCommand_ExecuteDeferredQuery_TisRuntimeObject_m2260852394_RuntimeMethod_var);
+		return L_5;
+	}
+}
+// System.Object SQLite4Unity3d.SQLiteConnection::Find(System.Object,SQLite4Unity3d.TableMapping)
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject * SQLiteConnection_Find_m880347942 (SQLiteConnection_t3070079188 * __this, RuntimeObject * ___pk0, TableMapping_t2276399492 * ___map1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_Find_m880347942_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		TableMapping_t2276399492 * L_0 = ___map1;
+		TableMapping_t2276399492 * L_1 = ___map1;
+		NullCheck(L_1);
+		String_t* L_2 = TableMapping_get_GetByPrimaryKeySql_m2330456509(L_1, /*hidden argument*/NULL);
+		ObjectU5BU5D_t2843939325* L_3 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_t2843939325* L_4 = L_3;
+		RuntimeObject * L_5 = ___pk0;
+		NullCheck(L_4);
+		ArrayElementTypeCheck (L_4, L_5);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_5);
+		List_1_t257213610 * L_6 = SQLiteConnection_Query_m3705838259(__this, L_0, L_2, L_4, /*hidden argument*/NULL);
+		RuntimeObject * L_7 = Enumerable_FirstOrDefault_TisRuntimeObject_m714693565(NULL /*static, unused*/, L_6, /*hidden argument*/Enumerable_FirstOrDefault_TisRuntimeObject_m714693565_RuntimeMethod_var);
+		return L_7;
+	}
+}
+// System.Boolean SQLite4Unity3d.SQLiteConnection::get_IsInTransaction()
+extern "C" IL2CPP_METHOD_ATTR bool SQLiteConnection_get_IsInTransaction_m3531288116 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = __this->get__transactionDepth_6();
+		return (bool)((((int32_t)L_0) > ((int32_t)0))? 1 : 0);
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection::BeginTransaction()
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_BeginTransaction_m4153052585 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_BeginTransaction_m4153052585_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t * V_0 = NULL;
+	SQLiteException_t1356363765 * V_1 = NULL;
+	int32_t V_2 = 0;
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		int32_t* L_0 = __this->get_address_of__transactionDepth_6();
+		int32_t L_1 = Interlocked_CompareExchange_m3023855514(NULL /*static, unused*/, (int32_t*)L_0, 1, 0, /*hidden argument*/NULL);
+		if (L_1)
+		{
+			goto IL_0094;
+		}
+	}
+
+IL_0012:
+	try
+	{ // begin try (depth: 1)
+		ObjectU5BU5D_t2843939325* L_2 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)0);
+		SQLiteConnection_Execute_m2332690897(__this, _stringLiteral3170806154, L_2, /*hidden argument*/NULL);
+		goto IL_008f;
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__exception_local = (Exception_t *)e.ex;
+		if(il2cpp_codegen_class_is_assignable_from (Exception_t_il2cpp_TypeInfo_var, il2cpp_codegen_object_class(e.ex)))
+			goto CATCH_0029;
+		throw e;
+	}
+
+CATCH_0029:
+	{ // begin catch(System.Exception)
+		{
+			V_0 = ((Exception_t *)__exception_local);
+			Exception_t * L_3 = V_0;
+			V_1 = ((SQLiteException_t1356363765 *)IsInstClass((RuntimeObject*)L_3, SQLiteException_t1356363765_il2cpp_TypeInfo_var));
+			SQLiteException_t1356363765 * L_4 = V_1;
+			if (!L_4)
+			{
+				goto IL_0081;
+			}
+		}
+
+IL_0037:
+		{
+			SQLiteException_t1356363765 * L_5 = V_1;
+			NullCheck(L_5);
+			int32_t L_6 = SQLiteException_get_Result_m3460608678(L_5, /*hidden argument*/NULL);
+			V_2 = L_6;
+			int32_t L_7 = V_2;
+			switch (((int32_t)il2cpp_codegen_subtract((int32_t)L_7, (int32_t)5)))
+			{
+				case 0:
+				{
+					goto IL_006f;
+				}
+				case 1:
+				{
+					goto IL_007c;
+				}
+				case 2:
+				{
+					goto IL_006f;
+				}
+				case 3:
+				{
+					goto IL_007c;
+				}
+				case 4:
+				{
+					goto IL_006f;
+				}
+				case 5:
+				{
+					goto IL_006f;
+				}
+				case 6:
+				{
+					goto IL_007c;
+				}
+				case 7:
+				{
+					goto IL_007c;
+				}
+				case 8:
+				{
+					goto IL_006f;
+				}
+			}
+		}
+
+IL_006a:
+		{
+			goto IL_007c;
+		}
+
+IL_006f:
+		{
+			SQLiteConnection_RollbackTo_m593030370(__this, (String_t*)NULL, (bool)1, /*hidden argument*/NULL);
+			goto IL_007c;
+		}
+
+IL_007c:
+		{
+			goto IL_008d;
+		}
+
+IL_0081:
+		{
+			int32_t* L_8 = __this->get_address_of__transactionDepth_6();
+			Interlocked_Decrement_m899158053(NULL /*static, unused*/, (int32_t*)L_8, /*hidden argument*/NULL);
+		}
+
+IL_008d:
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(__exception_local, NULL, SQLiteConnection_BeginTransaction_m4153052585_RuntimeMethod_var);
+		}
+	} // end catch (depth: 1)
+
+IL_008f:
+	{
+		goto IL_009f;
+	}
+
+IL_0094:
+	{
+		InvalidOperationException_t56020091 * L_9 = (InvalidOperationException_t56020091 *)il2cpp_codegen_object_new(InvalidOperationException_t56020091_il2cpp_TypeInfo_var);
+		InvalidOperationException__ctor_m237278729(L_9, _stringLiteral2183129361, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_9, NULL, SQLiteConnection_BeginTransaction_m4153052585_RuntimeMethod_var);
+	}
+
+IL_009f:
+	{
+		return;
+	}
+}
+// System.String SQLite4Unity3d.SQLiteConnection::SaveTransactionPoint()
+extern "C" IL2CPP_METHOD_ATTR String_t* SQLiteConnection_SaveTransactionPoint_m637039661 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_SaveTransactionPoint_m637039661_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	String_t* V_1 = NULL;
+	Exception_t * V_2 = NULL;
+	SQLiteException_t1356363765 * V_3 = NULL;
+	int32_t V_4 = 0;
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		int32_t* L_0 = __this->get_address_of__transactionDepth_6();
+		int32_t L_1 = Interlocked_Increment_m3548166048(NULL /*static, unused*/, (int32_t*)L_0, /*hidden argument*/NULL);
+		V_0 = ((int32_t)il2cpp_codegen_subtract((int32_t)L_1, (int32_t)1));
+		ObjectU5BU5D_t2843939325* L_2 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)4);
+		ObjectU5BU5D_t2843939325* L_3 = L_2;
+		NullCheck(L_3);
+		ArrayElementTypeCheck (L_3, _stringLiteral3452614637);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)_stringLiteral3452614637);
+		ObjectU5BU5D_t2843939325* L_4 = L_3;
+		Random_t108471755 * L_5 = __this->get__rand_7();
+		NullCheck(L_5);
+		int32_t L_6 = VirtFuncInvoker1< int32_t, int32_t >::Invoke(5 /* System.Int32 System.Random::Next(System.Int32) */, L_5, ((int32_t)32767));
+		int32_t L_7 = L_6;
+		RuntimeObject * L_8 = Box(Int32_t2950945753_il2cpp_TypeInfo_var, &L_7);
+		NullCheck(L_4);
+		ArrayElementTypeCheck (L_4, L_8);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject *)L_8);
+		ObjectU5BU5D_t2843939325* L_9 = L_4;
+		NullCheck(L_9);
+		ArrayElementTypeCheck (L_9, _stringLiteral3452614620);
+		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(2), (RuntimeObject *)_stringLiteral3452614620);
+		ObjectU5BU5D_t2843939325* L_10 = L_9;
+		int32_t L_11 = V_0;
+		int32_t L_12 = L_11;
+		RuntimeObject * L_13 = Box(Int32_t2950945753_il2cpp_TypeInfo_var, &L_12);
+		NullCheck(L_10);
+		ArrayElementTypeCheck (L_10, L_13);
+		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(3), (RuntimeObject *)L_13);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_14 = String_Concat_m2971454694(NULL /*static, unused*/, L_10, /*hidden argument*/NULL);
+		V_1 = L_14;
+	}
+
+IL_004b:
+	try
+	{ // begin try (depth: 1)
+		String_t* L_15 = V_1;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_16 = String_Concat_m3937257545(NULL /*static, unused*/, _stringLiteral2866910457, L_15, /*hidden argument*/NULL);
+		ObjectU5BU5D_t2843939325* L_17 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)0);
+		SQLiteConnection_Execute_m2332690897(__this, L_16, L_17, /*hidden argument*/NULL);
+		goto IL_00d0;
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__exception_local = (Exception_t *)e.ex;
+		if(il2cpp_codegen_class_is_assignable_from (Exception_t_il2cpp_TypeInfo_var, il2cpp_codegen_object_class(e.ex)))
+			goto CATCH_0068;
+		throw e;
+	}
+
+CATCH_0068:
+	{ // begin catch(System.Exception)
+		{
+			V_2 = ((Exception_t *)__exception_local);
+			Exception_t * L_18 = V_2;
+			V_3 = ((SQLiteException_t1356363765 *)IsInstClass((RuntimeObject*)L_18, SQLiteException_t1356363765_il2cpp_TypeInfo_var));
+			SQLiteException_t1356363765 * L_19 = V_3;
+			if (!L_19)
+			{
+				goto IL_00c2;
+			}
+		}
+
+IL_0076:
+		{
+			SQLiteException_t1356363765 * L_20 = V_3;
+			NullCheck(L_20);
+			int32_t L_21 = SQLiteException_get_Result_m3460608678(L_20, /*hidden argument*/NULL);
+			V_4 = L_21;
+			int32_t L_22 = V_4;
+			switch (((int32_t)il2cpp_codegen_subtract((int32_t)L_22, (int32_t)5)))
+			{
+				case 0:
+				{
+					goto IL_00b0;
+				}
+				case 1:
+				{
+					goto IL_00bd;
+				}
+				case 2:
+				{
+					goto IL_00b0;
+				}
+				case 3:
+				{
+					goto IL_00bd;
+				}
+				case 4:
+				{
+					goto IL_00b0;
+				}
+				case 5:
+				{
+					goto IL_00b0;
+				}
+				case 6:
+				{
+					goto IL_00bd;
+				}
+				case 7:
+				{
+					goto IL_00bd;
+				}
+				case 8:
+				{
+					goto IL_00b0;
+				}
+			}
+		}
+
+IL_00ab:
+		{
+			goto IL_00bd;
+		}
+
+IL_00b0:
+		{
+			SQLiteConnection_RollbackTo_m593030370(__this, (String_t*)NULL, (bool)1, /*hidden argument*/NULL);
+			goto IL_00bd;
+		}
+
+IL_00bd:
+		{
+			goto IL_00ce;
+		}
+
+IL_00c2:
+		{
+			int32_t* L_23 = __this->get_address_of__transactionDepth_6();
+			Interlocked_Decrement_m899158053(NULL /*static, unused*/, (int32_t*)L_23, /*hidden argument*/NULL);
+		}
+
+IL_00ce:
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(__exception_local, NULL, SQLiteConnection_SaveTransactionPoint_m637039661_RuntimeMethod_var);
+		}
+	} // end catch (depth: 1)
+
+IL_00d0:
+	{
+		String_t* L_24 = V_1;
+		return L_24;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection::Rollback()
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_Rollback_m328589351 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method)
+{
+	{
+		SQLiteConnection_RollbackTo_m593030370(__this, (String_t*)NULL, (bool)0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection::RollbackTo(System.String)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_RollbackTo_m736770688 (SQLiteConnection_t3070079188 * __this, String_t* ___savepoint0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___savepoint0;
+		SQLiteConnection_RollbackTo_m593030370(__this, L_0, (bool)0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection::RollbackTo(System.String,System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_RollbackTo_m593030370 (SQLiteConnection_t3070079188 * __this, String_t* ___savepoint0, bool ___noThrow1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_RollbackTo_m593030370_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+
+IL_0000:
+	try
+	{ // begin try (depth: 1)
+		{
+			String_t* L_0 = ___savepoint0;
+			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+			bool L_1 = String_IsNullOrEmpty_m2969720369(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+			if (!L_1)
+			{
+				goto IL_0034;
+			}
+		}
+
+IL_000b:
+		{
+			int32_t* L_2 = __this->get_address_of__transactionDepth_6();
+			int32_t L_3 = Interlocked_Exchange_m435211442(NULL /*static, unused*/, (int32_t*)L_2, 0, /*hidden argument*/NULL);
+			if ((((int32_t)L_3) <= ((int32_t)0)))
+			{
+				goto IL_002f;
+			}
+		}
+
+IL_001d:
+		{
+			ObjectU5BU5D_t2843939325* L_4 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)0);
+			SQLiteConnection_Execute_m2332690897(__this, _stringLiteral36711187, L_4, /*hidden argument*/NULL);
+		}
+
+IL_002f:
+		{
+			goto IL_0040;
+		}
+
+IL_0034:
+		{
+			String_t* L_5 = ___savepoint0;
+			SQLiteConnection_DoSavePointExecute_m3663436892(__this, L_5, _stringLiteral4223974518, /*hidden argument*/NULL);
+		}
+
+IL_0040:
+		{
+			goto IL_0053;
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__exception_local = (Exception_t *)e.ex;
+		if(il2cpp_codegen_class_is_assignable_from (SQLiteException_t1356363765_il2cpp_TypeInfo_var, il2cpp_codegen_object_class(e.ex)))
+			goto CATCH_0045;
+		throw e;
+	}
+
+CATCH_0045:
+	{ // begin catch(SQLite4Unity3d.SQLiteException)
+		{
+			bool L_6 = ___noThrow1;
+			if (L_6)
+			{
+				goto IL_004e;
+			}
+		}
+
+IL_004c:
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(__exception_local, NULL, SQLiteConnection_RollbackTo_m593030370_RuntimeMethod_var);
+		}
+
+IL_004e:
+		{
+			goto IL_0053;
+		}
+	} // end catch (depth: 1)
+
+IL_0053:
+	{
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection::Release(System.String)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_Release_m3551925781 (SQLiteConnection_t3070079188 * __this, String_t* ___savepoint0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_Release_m3551925781_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = ___savepoint0;
+		SQLiteConnection_DoSavePointExecute_m3663436892(__this, L_0, _stringLiteral232604126, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection::DoSavePointExecute(System.String,System.String)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_DoSavePointExecute_m3663436892 (SQLiteConnection_t3070079188 * __this, String_t* ___savepoint0, String_t* ___cmd1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_DoSavePointExecute_m3663436892_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	{
+		String_t* L_0 = ___savepoint0;
+		NullCheck(L_0);
+		int32_t L_1 = String_IndexOf_m363431711(L_0, ((int32_t)68), /*hidden argument*/NULL);
+		V_0 = L_1;
+		int32_t L_2 = V_0;
+		if ((((int32_t)L_2) < ((int32_t)2)))
+		{
+			goto IL_0067;
+		}
+	}
+	{
+		String_t* L_3 = ___savepoint0;
+		NullCheck(L_3);
+		int32_t L_4 = String_get_Length_m3847582255(L_3, /*hidden argument*/NULL);
+		int32_t L_5 = V_0;
+		if ((((int32_t)L_4) <= ((int32_t)((int32_t)il2cpp_codegen_add((int32_t)L_5, (int32_t)1)))))
+		{
+			goto IL_0067;
+		}
+	}
+	{
+		String_t* L_6 = ___savepoint0;
+		int32_t L_7 = V_0;
+		NullCheck(L_6);
+		String_t* L_8 = String_Substring_m2848979100(L_6, ((int32_t)il2cpp_codegen_add((int32_t)L_7, (int32_t)1)), /*hidden argument*/NULL);
+		bool L_9 = Int32_TryParse_m2404707562(NULL /*static, unused*/, L_8, (int32_t*)(&V_1), /*hidden argument*/NULL);
+		if (!L_9)
+		{
+			goto IL_0067;
+		}
+	}
+	{
+		int32_t L_10 = V_1;
+		if ((((int32_t)0) > ((int32_t)L_10)))
+		{
+			goto IL_0067;
+		}
+	}
+	{
+		int32_t L_11 = V_1;
+		int32_t L_12 = __this->get__transactionDepth_6();
+		if ((((int32_t)L_11) >= ((int32_t)L_12)))
+		{
+			goto IL_0067;
+		}
+	}
+	{
+		int32_t* L_13 = __this->get_address_of__transactionDepth_6();
+		int32_t L_14 = V_1;
+		IL2CPP_RUNTIME_CLASS_INIT(Thread_t2300836069_il2cpp_TypeInfo_var);
+		Thread_VolatileWrite_m1660207352(NULL /*static, unused*/, (int32_t*)L_13, L_14, /*hidden argument*/NULL);
+		String_t* L_15 = ___cmd1;
+		String_t* L_16 = ___savepoint0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_17 = String_Concat_m3937257545(NULL /*static, unused*/, L_15, L_16, /*hidden argument*/NULL);
+		ObjectU5BU5D_t2843939325* L_18 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)0);
+		SQLiteConnection_Execute_m2332690897(__this, L_17, L_18, /*hidden argument*/NULL);
+		return;
+	}
+
+IL_0067:
+	{
+		ArgumentException_t132251570 * L_19 = (ArgumentException_t132251570 *)il2cpp_codegen_object_new(ArgumentException_t132251570_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m1216717135(L_19, _stringLiteral746838790, _stringLiteral2864812057, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_19, NULL, SQLiteConnection_DoSavePointExecute_m3663436892_RuntimeMethod_var);
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection::Commit()
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_Commit_m1310776034 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_Commit_m1310776034_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		int32_t* L_0 = __this->get_address_of__transactionDepth_6();
+		int32_t L_1 = Interlocked_Exchange_m435211442(NULL /*static, unused*/, (int32_t*)L_0, 0, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0023;
+		}
+	}
+	{
+		ObjectU5BU5D_t2843939325* L_2 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)0);
+		SQLiteConnection_Execute_m2332690897(__this, _stringLiteral399103237, L_2, /*hidden argument*/NULL);
+	}
+
+IL_0023:
+	{
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection::RunInTransaction(System.Action)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_RunInTransaction_m2280780074 (SQLiteConnection_t3070079188 * __this, Action_t1264377477 * ___action0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_RunInTransaction_m2280780074_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+
+IL_0000:
+	try
+	{ // begin try (depth: 1)
+		String_t* L_0 = SQLiteConnection_SaveTransactionPoint_m637039661(__this, /*hidden argument*/NULL);
+		V_0 = L_0;
+		Action_t1264377477 * L_1 = ___action0;
+		NullCheck(L_1);
+		Action_Invoke_m937035532(L_1, /*hidden argument*/NULL);
+		String_t* L_2 = V_0;
+		SQLiteConnection_Release_m3551925781(__this, L_2, /*hidden argument*/NULL);
+		goto IL_0022;
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__exception_local = (Exception_t *)e.ex;
+		if(il2cpp_codegen_class_is_assignable_from (Exception_t_il2cpp_TypeInfo_var, il2cpp_codegen_object_class(e.ex)))
+			goto CATCH_0019;
+		throw e;
+	}
+
+CATCH_0019:
+	{ // begin catch(System.Exception)
+		SQLiteConnection_Rollback_m328589351(__this, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(__exception_local, NULL, SQLiteConnection_RunInTransaction_m2280780074_RuntimeMethod_var);
+	} // end catch (depth: 1)
+
+IL_0022:
+	{
+		return;
+	}
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::InsertAll(System.Collections.IEnumerable)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_InsertAll_m3331045845 (SQLiteConnection_t3070079188 * __this, RuntimeObject* ___objects0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_InsertAll_m3331045845_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CInsertAllU3Ec__AnonStorey0_t106977603 * V_0 = NULL;
+	{
+		U3CInsertAllU3Ec__AnonStorey0_t106977603 * L_0 = (U3CInsertAllU3Ec__AnonStorey0_t106977603 *)il2cpp_codegen_object_new(U3CInsertAllU3Ec__AnonStorey0_t106977603_il2cpp_TypeInfo_var);
+		U3CInsertAllU3Ec__AnonStorey0__ctor_m3930371309(L_0, /*hidden argument*/NULL);
+		V_0 = L_0;
+		U3CInsertAllU3Ec__AnonStorey0_t106977603 * L_1 = V_0;
+		RuntimeObject* L_2 = ___objects0;
+		NullCheck(L_1);
+		L_1->set_objects_0(L_2);
+		U3CInsertAllU3Ec__AnonStorey0_t106977603 * L_3 = V_0;
+		NullCheck(L_3);
+		L_3->set_U24this_2(__this);
+		U3CInsertAllU3Ec__AnonStorey0_t106977603 * L_4 = V_0;
+		NullCheck(L_4);
+		L_4->set_c_1(0);
+		U3CInsertAllU3Ec__AnonStorey0_t106977603 * L_5 = V_0;
+		intptr_t L_6 = (intptr_t)U3CInsertAllU3Ec__AnonStorey0_U3CU3Em__0_m2182591660_RuntimeMethod_var;
+		Action_t1264377477 * L_7 = (Action_t1264377477 *)il2cpp_codegen_object_new(Action_t1264377477_il2cpp_TypeInfo_var);
+		Action__ctor_m2994342681(L_7, L_5, L_6, /*hidden argument*/NULL);
+		SQLiteConnection_RunInTransaction_m2280780074(__this, L_7, /*hidden argument*/NULL);
+		U3CInsertAllU3Ec__AnonStorey0_t106977603 * L_8 = V_0;
+		NullCheck(L_8);
+		int32_t L_9 = L_8->get_c_1();
+		return L_9;
+	}
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::InsertAll(System.Collections.IEnumerable,System.String)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_InsertAll_m1562097560 (SQLiteConnection_t3070079188 * __this, RuntimeObject* ___objects0, String_t* ___extra1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_InsertAll_m1562097560_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CInsertAllU3Ec__AnonStorey1_t106977604 * V_0 = NULL;
+	{
+		U3CInsertAllU3Ec__AnonStorey1_t106977604 * L_0 = (U3CInsertAllU3Ec__AnonStorey1_t106977604 *)il2cpp_codegen_object_new(U3CInsertAllU3Ec__AnonStorey1_t106977604_il2cpp_TypeInfo_var);
+		U3CInsertAllU3Ec__AnonStorey1__ctor_m3930372398(L_0, /*hidden argument*/NULL);
+		V_0 = L_0;
+		U3CInsertAllU3Ec__AnonStorey1_t106977604 * L_1 = V_0;
+		RuntimeObject* L_2 = ___objects0;
+		NullCheck(L_1);
+		L_1->set_objects_0(L_2);
+		U3CInsertAllU3Ec__AnonStorey1_t106977604 * L_3 = V_0;
+		String_t* L_4 = ___extra1;
+		NullCheck(L_3);
+		L_3->set_extra_1(L_4);
+		U3CInsertAllU3Ec__AnonStorey1_t106977604 * L_5 = V_0;
+		NullCheck(L_5);
+		L_5->set_U24this_3(__this);
+		U3CInsertAllU3Ec__AnonStorey1_t106977604 * L_6 = V_0;
+		NullCheck(L_6);
+		L_6->set_c_2(0);
+		U3CInsertAllU3Ec__AnonStorey1_t106977604 * L_7 = V_0;
+		intptr_t L_8 = (intptr_t)U3CInsertAllU3Ec__AnonStorey1_U3CU3Em__0_m2182592683_RuntimeMethod_var;
+		Action_t1264377477 * L_9 = (Action_t1264377477 *)il2cpp_codegen_object_new(Action_t1264377477_il2cpp_TypeInfo_var);
+		Action__ctor_m2994342681(L_9, L_7, L_8, /*hidden argument*/NULL);
+		SQLiteConnection_RunInTransaction_m2280780074(__this, L_9, /*hidden argument*/NULL);
+		U3CInsertAllU3Ec__AnonStorey1_t106977604 * L_10 = V_0;
+		NullCheck(L_10);
+		int32_t L_11 = L_10->get_c_2();
+		return L_11;
+	}
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::InsertAll(System.Collections.IEnumerable,System.Type)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_InsertAll_m1256341055 (SQLiteConnection_t3070079188 * __this, RuntimeObject* ___objects0, Type_t * ___objType1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_InsertAll_m1256341055_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CInsertAllU3Ec__AnonStorey2_t106977601 * V_0 = NULL;
+	{
+		U3CInsertAllU3Ec__AnonStorey2_t106977601 * L_0 = (U3CInsertAllU3Ec__AnonStorey2_t106977601 *)il2cpp_codegen_object_new(U3CInsertAllU3Ec__AnonStorey2_t106977601_il2cpp_TypeInfo_var);
+		U3CInsertAllU3Ec__AnonStorey2__ctor_m3930366887(L_0, /*hidden argument*/NULL);
+		V_0 = L_0;
+		U3CInsertAllU3Ec__AnonStorey2_t106977601 * L_1 = V_0;
+		RuntimeObject* L_2 = ___objects0;
+		NullCheck(L_1);
+		L_1->set_objects_0(L_2);
+		U3CInsertAllU3Ec__AnonStorey2_t106977601 * L_3 = V_0;
+		Type_t * L_4 = ___objType1;
+		NullCheck(L_3);
+		L_3->set_objType_1(L_4);
+		U3CInsertAllU3Ec__AnonStorey2_t106977601 * L_5 = V_0;
+		NullCheck(L_5);
+		L_5->set_U24this_3(__this);
+		U3CInsertAllU3Ec__AnonStorey2_t106977601 * L_6 = V_0;
+		NullCheck(L_6);
+		L_6->set_c_2(0);
+		U3CInsertAllU3Ec__AnonStorey2_t106977601 * L_7 = V_0;
+		intptr_t L_8 = (intptr_t)U3CInsertAllU3Ec__AnonStorey2_U3CU3Em__0_m2182589614_RuntimeMethod_var;
+		Action_t1264377477 * L_9 = (Action_t1264377477 *)il2cpp_codegen_object_new(Action_t1264377477_il2cpp_TypeInfo_var);
+		Action__ctor_m2994342681(L_9, L_7, L_8, /*hidden argument*/NULL);
+		SQLiteConnection_RunInTransaction_m2280780074(__this, L_9, /*hidden argument*/NULL);
+		U3CInsertAllU3Ec__AnonStorey2_t106977601 * L_10 = V_0;
+		NullCheck(L_10);
+		int32_t L_11 = L_10->get_c_2();
+		return L_11;
+	}
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::Insert(System.Object)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_Insert_m2879703407 (SQLiteConnection_t3070079188 * __this, RuntimeObject * ___obj0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_Insert_m2879703407_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RuntimeObject * L_0 = ___obj0;
+		if (L_0)
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		return 0;
+	}
+
+IL_0008:
+	{
+		RuntimeObject * L_1 = ___obj0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_2 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_2();
+		RuntimeObject * L_3 = ___obj0;
+		NullCheck(L_3);
+		Type_t * L_4 = Object_GetType_m88164663(L_3, /*hidden argument*/NULL);
+		int32_t L_5 = SQLiteConnection_Insert_m2363025708(__this, L_1, L_2, L_4, /*hidden argument*/NULL);
+		return L_5;
+	}
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::InsertOrReplace(System.Object)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_InsertOrReplace_m188406952 (SQLiteConnection_t3070079188 * __this, RuntimeObject * ___obj0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_InsertOrReplace_m188406952_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RuntimeObject * L_0 = ___obj0;
+		if (L_0)
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		return 0;
+	}
+
+IL_0008:
+	{
+		RuntimeObject * L_1 = ___obj0;
+		RuntimeObject * L_2 = ___obj0;
+		NullCheck(L_2);
+		Type_t * L_3 = Object_GetType_m88164663(L_2, /*hidden argument*/NULL);
+		int32_t L_4 = SQLiteConnection_Insert_m2363025708(__this, L_1, _stringLiteral1606174207, L_3, /*hidden argument*/NULL);
+		return L_4;
+	}
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::Insert(System.Object,System.Type)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_Insert_m3887320025 (SQLiteConnection_t3070079188 * __this, RuntimeObject * ___obj0, Type_t * ___objType1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_Insert_m3887320025_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RuntimeObject * L_0 = ___obj0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_1 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_2();
+		Type_t * L_2 = ___objType1;
+		int32_t L_3 = SQLiteConnection_Insert_m2363025708(__this, L_0, L_1, L_2, /*hidden argument*/NULL);
+		return L_3;
+	}
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::InsertOrReplace(System.Object,System.Type)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_InsertOrReplace_m3908902057 (SQLiteConnection_t3070079188 * __this, RuntimeObject * ___obj0, Type_t * ___objType1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_InsertOrReplace_m3908902057_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RuntimeObject * L_0 = ___obj0;
+		Type_t * L_1 = ___objType1;
+		int32_t L_2 = SQLiteConnection_Insert_m2363025708(__this, L_0, _stringLiteral1606174207, L_1, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::Insert(System.Object,System.String)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_Insert_m317916960 (SQLiteConnection_t3070079188 * __this, RuntimeObject * ___obj0, String_t* ___extra1, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject * L_0 = ___obj0;
+		if (L_0)
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		return 0;
+	}
+
+IL_0008:
+	{
+		RuntimeObject * L_1 = ___obj0;
+		String_t* L_2 = ___extra1;
+		RuntimeObject * L_3 = ___obj0;
+		NullCheck(L_3);
+		Type_t * L_4 = Object_GetType_m88164663(L_3, /*hidden argument*/NULL);
+		int32_t L_5 = SQLiteConnection_Insert_m2363025708(__this, L_1, L_2, L_4, /*hidden argument*/NULL);
+		return L_5;
+	}
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::Insert(System.Object,System.String,System.Type)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_Insert_m2363025708 (SQLiteConnection_t3070079188 * __this, RuntimeObject * ___obj0, String_t* ___extra1, Type_t * ___objType2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_Insert_m2363025708_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	TableMapping_t2276399492 * V_0 = NULL;
+	PropertyInfo_t * V_1 = NULL;
+	bool V_2 = false;
+	ColumnU5BU5D_t4060676894* V_3 = NULL;
+	ObjectU5BU5D_t2843939325* V_4 = NULL;
+	int32_t V_5 = 0;
+	PreparedSqlLiteInsertCommand_t994658783 * V_6 = NULL;
+	int32_t V_7 = 0;
+	SQLiteException_t1356363765 * V_8 = NULL;
+	int64_t V_9 = 0;
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+	ColumnU5BU5D_t4060676894* G_B11_0 = NULL;
+	{
+		RuntimeObject * L_0 = ___obj0;
+		if (!L_0)
+		{
+			goto IL_000c;
+		}
+	}
+	{
+		Type_t * L_1 = ___objType2;
+		if (L_1)
+		{
+			goto IL_000e;
+		}
+	}
+
+IL_000c:
+	{
+		return 0;
+	}
+
+IL_000e:
+	{
+		Type_t * L_2 = ___objType2;
+		TableMapping_t2276399492 * L_3 = SQLiteConnection_GetMapping_m1572423408(__this, L_2, 0, /*hidden argument*/NULL);
+		V_0 = L_3;
+		TableMapping_t2276399492 * L_4 = V_0;
+		NullCheck(L_4);
+		Column_t1357940583 * L_5 = TableMapping_get_PK_m1996960091(L_4, /*hidden argument*/NULL);
+		if (!L_5)
+		{
+			goto IL_0078;
+		}
+	}
+	{
+		TableMapping_t2276399492 * L_6 = V_0;
+		NullCheck(L_6);
+		Column_t1357940583 * L_7 = TableMapping_get_PK_m1996960091(L_6, /*hidden argument*/NULL);
+		NullCheck(L_7);
+		bool L_8 = Column_get_IsAutoGuid_m1239656193(L_7, /*hidden argument*/NULL);
+		if (!L_8)
+		{
+			goto IL_0078;
+		}
+	}
+	{
+		Type_t * L_9 = ___objType2;
+		TableMapping_t2276399492 * L_10 = V_0;
+		NullCheck(L_10);
+		Column_t1357940583 * L_11 = TableMapping_get_PK_m1996960091(L_10, /*hidden argument*/NULL);
+		NullCheck(L_11);
+		String_t* L_12 = Column_get_PropertyName_m4271576104(L_11, /*hidden argument*/NULL);
+		NullCheck(L_9);
+		PropertyInfo_t * L_13 = Type_GetProperty_m3414567179(L_9, L_12, /*hidden argument*/NULL);
+		V_1 = L_13;
+		PropertyInfo_t * L_14 = V_1;
+		if (!L_14)
+		{
+			goto IL_0078;
+		}
+	}
+	{
+		PropertyInfo_t * L_15 = V_1;
+		RuntimeObject * L_16 = ___obj0;
+		NullCheck(L_15);
+		RuntimeObject * L_17 = VirtFuncInvoker2< RuntimeObject *, RuntimeObject *, ObjectU5BU5D_t2843939325* >::Invoke(23 /* System.Object System.Reflection.PropertyInfo::GetValue(System.Object,System.Object[]) */, L_15, L_16, (ObjectU5BU5D_t2843939325*)(ObjectU5BU5D_t2843939325*)NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Guid_t_il2cpp_TypeInfo_var);
+		Guid_t  L_18 = ((Guid_t_StaticFields*)il2cpp_codegen_static_fields_for(Guid_t_il2cpp_TypeInfo_var))->get_Empty_11();
+		Guid_t  L_19 = L_18;
+		RuntimeObject * L_20 = Box(Guid_t_il2cpp_TypeInfo_var, &L_19);
+		NullCheck(L_17);
+		bool L_21 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, L_17, L_20);
+		if (!L_21)
+		{
+			goto IL_0078;
+		}
+	}
+	{
+		PropertyInfo_t * L_22 = V_1;
+		RuntimeObject * L_23 = ___obj0;
+		IL2CPP_RUNTIME_CLASS_INIT(Guid_t_il2cpp_TypeInfo_var);
+		Guid_t  L_24 = Guid_NewGuid_m923091018(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Guid_t  L_25 = L_24;
+		RuntimeObject * L_26 = Box(Guid_t_il2cpp_TypeInfo_var, &L_25);
+		NullCheck(L_22);
+		VirtActionInvoker3< RuntimeObject *, RuntimeObject *, ObjectU5BU5D_t2843939325* >::Invoke(25 /* System.Void System.Reflection.PropertyInfo::SetValue(System.Object,System.Object,System.Object[]) */, L_22, L_23, L_26, (ObjectU5BU5D_t2843939325*)(ObjectU5BU5D_t2843939325*)NULL);
+	}
+
+IL_0078:
+	{
+		String_t* L_27 = ___extra1;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		int32_t L_28 = String_Compare_m3203413707(NULL /*static, unused*/, L_27, _stringLiteral1606174207, 5, /*hidden argument*/NULL);
+		V_2 = (bool)((((int32_t)L_28) == ((int32_t)0))? 1 : 0);
+		bool L_29 = V_2;
+		if (!L_29)
+		{
+			goto IL_0099;
+		}
+	}
+	{
+		TableMapping_t2276399492 * L_30 = V_0;
+		NullCheck(L_30);
+		ColumnU5BU5D_t4060676894* L_31 = TableMapping_get_InsertOrReplaceColumns_m298127152(L_30, /*hidden argument*/NULL);
+		G_B11_0 = L_31;
+		goto IL_009f;
+	}
+
+IL_0099:
+	{
+		TableMapping_t2276399492 * L_32 = V_0;
+		NullCheck(L_32);
+		ColumnU5BU5D_t4060676894* L_33 = TableMapping_get_InsertColumns_m899458969(L_32, /*hidden argument*/NULL);
+		G_B11_0 = L_33;
+	}
+
+IL_009f:
+	{
+		V_3 = G_B11_0;
+		ColumnU5BU5D_t4060676894* L_34 = V_3;
+		NullCheck(L_34);
+		ObjectU5BU5D_t2843939325* L_35 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_34)->max_length)))));
+		V_4 = L_35;
+		V_5 = 0;
+		goto IL_00c7;
+	}
+
+IL_00b2:
+	{
+		ObjectU5BU5D_t2843939325* L_36 = V_4;
+		int32_t L_37 = V_5;
+		ColumnU5BU5D_t4060676894* L_38 = V_3;
+		int32_t L_39 = V_5;
+		NullCheck(L_38);
+		int32_t L_40 = L_39;
+		Column_t1357940583 * L_41 = (L_38)->GetAt(static_cast<il2cpp_array_size_t>(L_40));
+		RuntimeObject * L_42 = ___obj0;
+		NullCheck(L_41);
+		RuntimeObject * L_43 = Column_GetValue_m3743332072(L_41, L_42, /*hidden argument*/NULL);
+		NullCheck(L_36);
+		ArrayElementTypeCheck (L_36, L_43);
+		(L_36)->SetAt(static_cast<il2cpp_array_size_t>(L_37), (RuntimeObject *)L_43);
+		int32_t L_44 = V_5;
+		V_5 = ((int32_t)il2cpp_codegen_add((int32_t)L_44, (int32_t)1));
+	}
+
+IL_00c7:
+	{
+		int32_t L_45 = V_5;
+		ObjectU5BU5D_t2843939325* L_46 = V_4;
+		NullCheck(L_46);
+		if ((((int32_t)L_45) < ((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_46)->max_length)))))))
+		{
+			goto IL_00b2;
+		}
+	}
+	{
+		TableMapping_t2276399492 * L_47 = V_0;
+		String_t* L_48 = ___extra1;
+		NullCheck(L_47);
+		PreparedSqlLiteInsertCommand_t994658783 * L_49 = TableMapping_GetInsertCommand_m2933871919(L_47, __this, L_48, /*hidden argument*/NULL);
+		V_6 = L_49;
+	}
+
+IL_00dc:
+	try
+	{ // begin try (depth: 1)
+		PreparedSqlLiteInsertCommand_t994658783 * L_50 = V_6;
+		ObjectU5BU5D_t2843939325* L_51 = V_4;
+		NullCheck(L_50);
+		int32_t L_52 = PreparedSqlLiteInsertCommand_ExecuteNonQuery_m2787388731(L_50, L_51, /*hidden argument*/NULL);
+		V_7 = L_52;
+		goto IL_011b;
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__exception_local = (Exception_t *)e.ex;
+		if(il2cpp_codegen_class_is_assignable_from (SQLiteException_t1356363765_il2cpp_TypeInfo_var, il2cpp_codegen_object_class(e.ex)))
+			goto CATCH_00ec;
+		throw e;
+	}
+
+CATCH_00ec:
+	{ // begin catch(SQLite4Unity3d.SQLiteException)
+		{
+			V_8 = ((SQLiteException_t1356363765 *)__exception_local);
+			intptr_t L_53 = SQLiteConnection_get_Handle_m4185785638(__this, /*hidden argument*/NULL);
+			int32_t L_54 = SQLite3_ExtendedErrCode_m1645503891(NULL /*static, unused*/, L_53, /*hidden argument*/NULL);
+			if ((!(((uint32_t)L_54) == ((uint32_t)((int32_t)1299)))))
+			{
+				goto IL_0119;
+			}
+		}
+
+IL_0103:
+		{
+			SQLiteException_t1356363765 * L_55 = V_8;
+			NullCheck(L_55);
+			int32_t L_56 = SQLiteException_get_Result_m3460608678(L_55, /*hidden argument*/NULL);
+			SQLiteException_t1356363765 * L_57 = V_8;
+			NullCheck(L_57);
+			String_t* L_58 = VirtFuncInvoker0< String_t* >::Invoke(6 /* System.String System.Exception::get_Message() */, L_57);
+			TableMapping_t2276399492 * L_59 = V_0;
+			RuntimeObject * L_60 = ___obj0;
+			NotNullConstraintViolationException_t3886364687 * L_61 = NotNullConstraintViolationException_New_m2067300247(NULL /*static, unused*/, L_56, L_58, L_59, L_60, /*hidden argument*/NULL);
+			IL2CPP_RAISE_MANAGED_EXCEPTION(L_61, NULL, SQLiteConnection_Insert_m2363025708_RuntimeMethod_var);
+		}
+
+IL_0119:
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(__exception_local, NULL, SQLiteConnection_Insert_m2363025708_RuntimeMethod_var);
+		}
+	} // end catch (depth: 1)
+
+IL_011b:
+	{
+		TableMapping_t2276399492 * L_62 = V_0;
+		NullCheck(L_62);
+		bool L_63 = TableMapping_get_HasAutoIncPK_m3789797898(L_62, /*hidden argument*/NULL);
+		if (!L_63)
+		{
+			goto IL_013c;
+		}
+	}
+	{
+		intptr_t L_64 = SQLiteConnection_get_Handle_m4185785638(__this, /*hidden argument*/NULL);
+		int64_t L_65 = SQLite3_LastInsertRowid_m192026105(NULL /*static, unused*/, L_64, /*hidden argument*/NULL);
+		V_9 = L_65;
+		TableMapping_t2276399492 * L_66 = V_0;
+		RuntimeObject * L_67 = ___obj0;
+		int64_t L_68 = V_9;
+		NullCheck(L_66);
+		TableMapping_SetAutoIncPK_m2643841799(L_66, L_67, L_68, /*hidden argument*/NULL);
+	}
+
+IL_013c:
+	{
+		int32_t L_69 = V_7;
+		return L_69;
+	}
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::Update(System.Object)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_Update_m766617629 (SQLiteConnection_t3070079188 * __this, RuntimeObject * ___obj0, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject * L_0 = ___obj0;
+		if (L_0)
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		return 0;
+	}
+
+IL_0008:
+	{
+		RuntimeObject * L_1 = ___obj0;
+		RuntimeObject * L_2 = ___obj0;
+		NullCheck(L_2);
+		Type_t * L_3 = Object_GetType_m88164663(L_2, /*hidden argument*/NULL);
+		int32_t L_4 = SQLiteConnection_Update_m3158265721(__this, L_1, L_3, /*hidden argument*/NULL);
+		return L_4;
+	}
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::Update(System.Object,System.Type)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_Update_m3158265721 (SQLiteConnection_t3070079188 * __this, RuntimeObject * ___obj0, Type_t * ___objType1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_Update_m3158265721_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CUpdateU3Ec__AnonStorey3_t445741020 * V_0 = NULL;
+	int32_t V_1 = 0;
+	TableMapping_t2276399492 * V_2 = NULL;
+	RuntimeObject* V_3 = NULL;
+	RuntimeObject* V_4 = NULL;
+	List_1_t257213610 * V_5 = NULL;
+	String_t* V_6 = NULL;
+	SQLiteException_t1356363765 * V_7 = NULL;
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+	RuntimeObject* G_B7_0 = NULL;
+	String_t* G_B7_1 = NULL;
+	String_t* G_B7_2 = NULL;
+	String_t* G_B7_3 = NULL;
+	RuntimeObject* G_B6_0 = NULL;
+	String_t* G_B6_1 = NULL;
+	String_t* G_B6_2 = NULL;
+	String_t* G_B6_3 = NULL;
+	{
+		U3CUpdateU3Ec__AnonStorey3_t445741020 * L_0 = (U3CUpdateU3Ec__AnonStorey3_t445741020 *)il2cpp_codegen_object_new(U3CUpdateU3Ec__AnonStorey3_t445741020_il2cpp_TypeInfo_var);
+		U3CUpdateU3Ec__AnonStorey3__ctor_m4095385256(L_0, /*hidden argument*/NULL);
+		V_0 = L_0;
+		U3CUpdateU3Ec__AnonStorey3_t445741020 * L_1 = V_0;
+		RuntimeObject * L_2 = ___obj0;
+		NullCheck(L_1);
+		L_1->set_obj_1(L_2);
+		V_1 = 0;
+		U3CUpdateU3Ec__AnonStorey3_t445741020 * L_3 = V_0;
+		NullCheck(L_3);
+		RuntimeObject * L_4 = L_3->get_obj_1();
+		if (!L_4)
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		Type_t * L_5 = ___objType1;
+		if (L_5)
+		{
+			goto IL_0022;
+		}
+	}
+
+IL_0020:
+	{
+		return 0;
+	}
+
+IL_0022:
+	{
+		Type_t * L_6 = ___objType1;
+		TableMapping_t2276399492 * L_7 = SQLiteConnection_GetMapping_m1572423408(__this, L_6, 0, /*hidden argument*/NULL);
+		V_2 = L_7;
+		U3CUpdateU3Ec__AnonStorey3_t445741020 * L_8 = V_0;
+		TableMapping_t2276399492 * L_9 = V_2;
+		NullCheck(L_9);
+		Column_t1357940583 * L_10 = TableMapping_get_PK_m1996960091(L_9, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		L_8->set_pk_0(L_10);
+		U3CUpdateU3Ec__AnonStorey3_t445741020 * L_11 = V_0;
+		NullCheck(L_11);
+		Column_t1357940583 * L_12 = L_11->get_pk_0();
+		if (L_12)
+		{
+			goto IL_005d;
+		}
+	}
+	{
+		TableMapping_t2276399492 * L_13 = V_2;
+		NullCheck(L_13);
+		String_t* L_14 = TableMapping_get_TableName_m271466374(L_13, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_15 = String_Concat_m3755062657(NULL /*static, unused*/, _stringLiteral3025885023, L_14, _stringLiteral342936192, /*hidden argument*/NULL);
+		NotSupportedException_t1314879016 * L_16 = (NotSupportedException_t1314879016 *)il2cpp_codegen_object_new(NotSupportedException_t1314879016_il2cpp_TypeInfo_var);
+		NotSupportedException__ctor_m2494070935(L_16, L_15, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_16, NULL, SQLiteConnection_Update_m3158265721_RuntimeMethod_var);
+	}
+
+IL_005d:
+	{
+		TableMapping_t2276399492 * L_17 = V_2;
+		NullCheck(L_17);
+		ColumnU5BU5D_t4060676894* L_18 = TableMapping_get_Columns_m2283845646(L_17, /*hidden argument*/NULL);
+		U3CUpdateU3Ec__AnonStorey3_t445741020 * L_19 = V_0;
+		intptr_t L_20 = (intptr_t)U3CUpdateU3Ec__AnonStorey3_U3CU3Em__0_m3028833688_RuntimeMethod_var;
+		Func_2_t681049744 * L_21 = (Func_2_t681049744 *)il2cpp_codegen_object_new(Func_2_t681049744_il2cpp_TypeInfo_var);
+		Func_2__ctor_m2046779456(L_21, L_19, L_20, /*hidden argument*/Func_2__ctor_m2046779456_RuntimeMethod_var);
+		RuntimeObject* L_22 = Enumerable_Where_TisColumn_t1357940583_m2456226527(NULL /*static, unused*/, (RuntimeObject*)(RuntimeObject*)L_18, L_21, /*hidden argument*/Enumerable_Where_TisColumn_t1357940583_m2456226527_RuntimeMethod_var);
+		V_3 = L_22;
+		RuntimeObject* L_23 = V_3;
+		U3CUpdateU3Ec__AnonStorey3_t445741020 * L_24 = V_0;
+		intptr_t L_25 = (intptr_t)U3CUpdateU3Ec__AnonStorey3_U3CU3Em__1_m1512522977_RuntimeMethod_var;
+		Func_2_t3663867943 * L_26 = (Func_2_t3663867943 *)il2cpp_codegen_object_new(Func_2_t3663867943_il2cpp_TypeInfo_var);
+		Func_2__ctor_m2503113929(L_26, L_24, L_25, /*hidden argument*/Func_2__ctor_m2503113929_RuntimeMethod_var);
+		RuntimeObject* L_27 = Enumerable_Select_TisColumn_t1357940583_TisRuntimeObject_m4152888076(NULL /*static, unused*/, L_23, L_26, /*hidden argument*/Enumerable_Select_TisColumn_t1357940583_TisRuntimeObject_m4152888076_RuntimeMethod_var);
+		V_4 = L_27;
+		RuntimeObject* L_28 = V_4;
+		List_1_t257213610 * L_29 = (List_1_t257213610 *)il2cpp_codegen_object_new(List_1_t257213610_il2cpp_TypeInfo_var);
+		List_1__ctor_m1328752868(L_29, L_28, /*hidden argument*/List_1__ctor_m1328752868_RuntimeMethod_var);
+		V_5 = L_29;
+		List_1_t257213610 * L_30 = V_5;
+		U3CUpdateU3Ec__AnonStorey3_t445741020 * L_31 = V_0;
+		NullCheck(L_31);
+		Column_t1357940583 * L_32 = L_31->get_pk_0();
+		U3CUpdateU3Ec__AnonStorey3_t445741020 * L_33 = V_0;
+		NullCheck(L_33);
+		RuntimeObject * L_34 = L_33->get_obj_1();
+		NullCheck(L_32);
+		RuntimeObject * L_35 = Column_GetValue_m3743332072(L_32, L_34, /*hidden argument*/NULL);
+		NullCheck(L_30);
+		List_1_Add_m3338814081(L_30, L_35, /*hidden argument*/List_1_Add_m3338814081_RuntimeMethod_var);
+		TableMapping_t2276399492 * L_36 = V_2;
+		NullCheck(L_36);
+		String_t* L_37 = TableMapping_get_TableName_m271466374(L_36, /*hidden argument*/NULL);
+		RuntimeObject* L_38 = V_3;
+		IL2CPP_RUNTIME_CLASS_INIT(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var);
+		Func_2_t2431212468 * L_39 = ((SQLiteConnection_t3070079188_StaticFields*)il2cpp_codegen_static_fields_for(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var))->get_U3CU3Ef__amU24cache2_17();
+		G_B6_0 = L_38;
+		G_B6_1 = _stringLiteral3452614532;
+		G_B6_2 = L_37;
+		G_B6_3 = _stringLiteral657609245;
+		if (L_39)
+		{
+			G_B7_0 = L_38;
+			G_B7_1 = _stringLiteral3452614532;
+			G_B7_2 = L_37;
+			G_B7_3 = _stringLiteral657609245;
+			goto IL_00d3;
+		}
+	}
+	{
+		intptr_t L_40 = (intptr_t)SQLiteConnection_U3CUpdateU3Em__3_m3878545526_RuntimeMethod_var;
+		Func_2_t2431212468 * L_41 = (Func_2_t2431212468 *)il2cpp_codegen_object_new(Func_2_t2431212468_il2cpp_TypeInfo_var);
+		Func_2__ctor_m492011138(L_41, NULL, L_40, /*hidden argument*/Func_2__ctor_m492011138_RuntimeMethod_var);
+		IL2CPP_RUNTIME_CLASS_INIT(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var);
+		((SQLiteConnection_t3070079188_StaticFields*)il2cpp_codegen_static_fields_for(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var))->set_U3CU3Ef__amU24cache2_17(L_41);
+		G_B7_0 = G_B6_0;
+		G_B7_1 = G_B6_1;
+		G_B7_2 = G_B6_2;
+		G_B7_3 = G_B6_3;
+	}
+
+IL_00d3:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var);
+		Func_2_t2431212468 * L_42 = ((SQLiteConnection_t3070079188_StaticFields*)il2cpp_codegen_static_fields_for(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var))->get_U3CU3Ef__amU24cache2_17();
+		RuntimeObject* L_43 = Enumerable_Select_TisColumn_t1357940583_TisString_t_m3321979519(NULL /*static, unused*/, G_B7_0, L_42, /*hidden argument*/Enumerable_Select_TisColumn_t1357940583_TisString_t_m3321979519_RuntimeMethod_var);
+		StringU5BU5D_t1281789340* L_44 = Enumerable_ToArray_TisString_t_m4208096419(NULL /*static, unused*/, L_43, /*hidden argument*/Enumerable_ToArray_TisString_t_m4208096419_RuntimeMethod_var);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_45 = String_Join_m2050845953(NULL /*static, unused*/, G_B7_1, L_44, /*hidden argument*/NULL);
+		U3CUpdateU3Ec__AnonStorey3_t445741020 * L_46 = V_0;
+		NullCheck(L_46);
+		Column_t1357940583 * L_47 = L_46->get_pk_0();
+		NullCheck(L_47);
+		String_t* L_48 = Column_get_Name_m892990361(L_47, /*hidden argument*/NULL);
+		String_t* L_49 = String_Format_m3339413201(NULL /*static, unused*/, G_B7_3, G_B7_2, L_45, L_48, /*hidden argument*/NULL);
+		V_6 = L_49;
+	}
+
+IL_00f9:
+	try
+	{ // begin try (depth: 1)
+		String_t* L_50 = V_6;
+		List_1_t257213610 * L_51 = V_5;
+		NullCheck(L_51);
+		ObjectU5BU5D_t2843939325* L_52 = List_1_ToArray_m4168020446(L_51, /*hidden argument*/List_1_ToArray_m4168020446_RuntimeMethod_var);
+		int32_t L_53 = SQLiteConnection_Execute_m2332690897(__this, L_50, L_52, /*hidden argument*/NULL);
+		V_1 = L_53;
+		goto IL_0145;
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__exception_local = (Exception_t *)e.ex;
+		if(il2cpp_codegen_class_is_assignable_from (SQLiteException_t1356363765_il2cpp_TypeInfo_var, il2cpp_codegen_object_class(e.ex)))
+			goto CATCH_010e;
+		throw e;
+	}
+
+CATCH_010e:
+	{ // begin catch(SQLite4Unity3d.SQLiteException)
+		{
+			V_7 = ((SQLiteException_t1356363765 *)__exception_local);
+			SQLiteException_t1356363765 * L_54 = V_7;
+			NullCheck(L_54);
+			int32_t L_55 = SQLiteException_get_Result_m3460608678(L_54, /*hidden argument*/NULL);
+			if ((!(((uint32_t)L_55) == ((uint32_t)((int32_t)19)))))
+			{
+				goto IL_0142;
+			}
+		}
+
+IL_011e:
+		{
+			intptr_t L_56 = SQLiteConnection_get_Handle_m4185785638(__this, /*hidden argument*/NULL);
+			int32_t L_57 = SQLite3_ExtendedErrCode_m1645503891(NULL /*static, unused*/, L_56, /*hidden argument*/NULL);
+			if ((!(((uint32_t)L_57) == ((uint32_t)((int32_t)1299)))))
+			{
+				goto IL_0142;
+			}
+		}
+
+IL_0133:
+		{
+			SQLiteException_t1356363765 * L_58 = V_7;
+			TableMapping_t2276399492 * L_59 = V_2;
+			U3CUpdateU3Ec__AnonStorey3_t445741020 * L_60 = V_0;
+			NullCheck(L_60);
+			RuntimeObject * L_61 = L_60->get_obj_1();
+			NotNullConstraintViolationException_t3886364687 * L_62 = NotNullConstraintViolationException_New_m4007323012(NULL /*static, unused*/, L_58, L_59, L_61, /*hidden argument*/NULL);
+			IL2CPP_RAISE_MANAGED_EXCEPTION(L_62, NULL, SQLiteConnection_Update_m3158265721_RuntimeMethod_var);
+		}
+
+IL_0142:
+		{
+			SQLiteException_t1356363765 * L_63 = V_7;
+			IL2CPP_RAISE_MANAGED_EXCEPTION(L_63, NULL, SQLiteConnection_Update_m3158265721_RuntimeMethod_var);
+		}
+	} // end catch (depth: 1)
+
+IL_0145:
+	{
+		int32_t L_64 = V_1;
+		return L_64;
+	}
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::UpdateAll(System.Collections.IEnumerable)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_UpdateAll_m1200051963 (SQLiteConnection_t3070079188 * __this, RuntimeObject* ___objects0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_UpdateAll_m1200051963_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CUpdateAllU3Ec__AnonStorey4_t1584503381 * V_0 = NULL;
+	{
+		U3CUpdateAllU3Ec__AnonStorey4_t1584503381 * L_0 = (U3CUpdateAllU3Ec__AnonStorey4_t1584503381 *)il2cpp_codegen_object_new(U3CUpdateAllU3Ec__AnonStorey4_t1584503381_il2cpp_TypeInfo_var);
+		U3CUpdateAllU3Ec__AnonStorey4__ctor_m240844993(L_0, /*hidden argument*/NULL);
+		V_0 = L_0;
+		U3CUpdateAllU3Ec__AnonStorey4_t1584503381 * L_1 = V_0;
+		RuntimeObject* L_2 = ___objects0;
+		NullCheck(L_1);
+		L_1->set_objects_0(L_2);
+		U3CUpdateAllU3Ec__AnonStorey4_t1584503381 * L_3 = V_0;
+		NullCheck(L_3);
+		L_3->set_U24this_2(__this);
+		U3CUpdateAllU3Ec__AnonStorey4_t1584503381 * L_4 = V_0;
+		NullCheck(L_4);
+		L_4->set_c_1(0);
+		U3CUpdateAllU3Ec__AnonStorey4_t1584503381 * L_5 = V_0;
+		intptr_t L_6 = (intptr_t)U3CUpdateAllU3Ec__AnonStorey4_U3CU3Em__0_m114741402_RuntimeMethod_var;
+		Action_t1264377477 * L_7 = (Action_t1264377477 *)il2cpp_codegen_object_new(Action_t1264377477_il2cpp_TypeInfo_var);
+		Action__ctor_m2994342681(L_7, L_5, L_6, /*hidden argument*/NULL);
+		SQLiteConnection_RunInTransaction_m2280780074(__this, L_7, /*hidden argument*/NULL);
+		U3CUpdateAllU3Ec__AnonStorey4_t1584503381 * L_8 = V_0;
+		NullCheck(L_8);
+		int32_t L_9 = L_8->get_c_1();
+		return L_9;
+	}
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::Delete(System.Object)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_Delete_m118892053 (SQLiteConnection_t3070079188 * __this, RuntimeObject * ___objectToDelete0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_Delete_m118892053_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	TableMapping_t2276399492 * V_0 = NULL;
+	Column_t1357940583 * V_1 = NULL;
+	String_t* V_2 = NULL;
+	{
+		RuntimeObject * L_0 = ___objectToDelete0;
+		NullCheck(L_0);
+		Type_t * L_1 = Object_GetType_m88164663(L_0, /*hidden argument*/NULL);
+		TableMapping_t2276399492 * L_2 = SQLiteConnection_GetMapping_m1572423408(__this, L_1, 0, /*hidden argument*/NULL);
+		V_0 = L_2;
+		TableMapping_t2276399492 * L_3 = V_0;
+		NullCheck(L_3);
+		Column_t1357940583 * L_4 = TableMapping_get_PK_m1996960091(L_3, /*hidden argument*/NULL);
+		V_1 = L_4;
+		Column_t1357940583 * L_5 = V_1;
+		if (L_5)
+		{
+			goto IL_0036;
+		}
+	}
+	{
+		TableMapping_t2276399492 * L_6 = V_0;
+		NullCheck(L_6);
+		String_t* L_7 = TableMapping_get_TableName_m271466374(L_6, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_8 = String_Concat_m3755062657(NULL /*static, unused*/, _stringLiteral2827757602, L_7, _stringLiteral342936192, /*hidden argument*/NULL);
+		NotSupportedException_t1314879016 * L_9 = (NotSupportedException_t1314879016 *)il2cpp_codegen_object_new(NotSupportedException_t1314879016_il2cpp_TypeInfo_var);
+		NotSupportedException__ctor_m2494070935(L_9, L_8, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_9, NULL, SQLiteConnection_Delete_m118892053_RuntimeMethod_var);
+	}
+
+IL_0036:
+	{
+		TableMapping_t2276399492 * L_10 = V_0;
+		NullCheck(L_10);
+		String_t* L_11 = TableMapping_get_TableName_m271466374(L_10, /*hidden argument*/NULL);
+		Column_t1357940583 * L_12 = V_1;
+		NullCheck(L_12);
+		String_t* L_13 = Column_get_Name_m892990361(L_12, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_14 = String_Format_m2556382932(NULL /*static, unused*/, _stringLiteral3172542015, L_11, L_13, /*hidden argument*/NULL);
+		V_2 = L_14;
+		String_t* L_15 = V_2;
+		ObjectU5BU5D_t2843939325* L_16 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_t2843939325* L_17 = L_16;
+		Column_t1357940583 * L_18 = V_1;
+		RuntimeObject * L_19 = ___objectToDelete0;
+		NullCheck(L_18);
+		RuntimeObject * L_20 = Column_GetValue_m3743332072(L_18, L_19, /*hidden argument*/NULL);
+		NullCheck(L_17);
+		ArrayElementTypeCheck (L_17, L_20);
+		(L_17)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_20);
+		int32_t L_21 = SQLiteConnection_Execute_m2332690897(__this, L_15, L_17, /*hidden argument*/NULL);
+		return L_21;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection::Finalize()
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_Finalize_m2194861994 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method)
+{
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+
+IL_0000:
+	try
+	{ // begin try (depth: 1)
+		VirtActionInvoker1< bool >::Invoke(6 /* System.Void SQLite4Unity3d.SQLiteConnection::Dispose(System.Boolean) */, __this, (bool)0);
+		IL2CPP_LEAVE(0x13, FINALLY_000c);
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_000c;
+	}
+
+FINALLY_000c:
+	{ // begin finally (depth: 1)
+		Object_Finalize_m3076187857(__this, /*hidden argument*/NULL);
+		IL2CPP_END_FINALLY(12)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(12)
+	{
+		IL2CPP_JUMP_TBL(0x13, IL_0013)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_0013:
+	{
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection::Dispose()
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_Dispose_m468722943 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method)
+{
+	{
+		VirtActionInvoker1< bool >::Invoke(6 /* System.Void SQLite4Unity3d.SQLiteConnection::Dispose(System.Boolean) */, __this, (bool)1);
+		GC_SuppressFinalize_m1177400158(NULL /*static, unused*/, __this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection::Dispose(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_Dispose_m1694121205 (SQLiteConnection_t3070079188 * __this, bool ___disposing0, const RuntimeMethod* method)
+{
+	{
+		SQLiteConnection_Close_m877720971(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection::Close()
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnection_Close_m877720971 (SQLiteConnection_t3070079188 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_Close_m877720971_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	TableMapping_t2276399492 * V_0 = NULL;
+	Enumerator_t2630549448  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	int32_t V_2 = 0;
+	String_t* V_3 = NULL;
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		bool L_0 = __this->get__open_0();
+		if (!L_0)
+		{
+			goto IL_00ac;
+		}
+	}
+	{
+		intptr_t L_1 = SQLiteConnection_get_Handle_m4185785638(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var);
+		intptr_t L_2 = ((SQLiteConnection_t3070079188_StaticFields*)il2cpp_codegen_static_fields_for(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var))->get_NullHandle_9();
+		bool L_3 = IntPtr_op_Inequality_m3063970704(NULL /*static, unused*/, L_1, L_2, /*hidden argument*/NULL);
+		if (!L_3)
+		{
+			goto IL_00ac;
+		}
+	}
+
+IL_0020:
+	try
+	{ // begin try (depth: 1)
+		{
+			Dictionary_2_t2061655791 * L_4 = __this->get__mappings_2();
+			if (!L_4)
+			{
+				goto IL_006e;
+			}
+		}
+
+IL_002b:
+		{
+			Dictionary_2_t2061655791 * L_5 = __this->get__mappings_2();
+			NullCheck(L_5);
+			ValueCollection_t3777700109 * L_6 = Dictionary_2_get_Values_m2477973787(L_5, /*hidden argument*/Dictionary_2_get_Values_m2477973787_RuntimeMethod_var);
+			NullCheck(L_6);
+			Enumerator_t2630549448  L_7 = ValueCollection_GetEnumerator_m2694154459(L_6, /*hidden argument*/ValueCollection_GetEnumerator_m2694154459_RuntimeMethod_var);
+			V_1 = L_7;
+		}
+
+IL_003c:
+		try
+		{ // begin try (depth: 2)
+			{
+				goto IL_004f;
+			}
+
+IL_0041:
+			{
+				TableMapping_t2276399492 * L_8 = Enumerator_get_Current_m361211096((Enumerator_t2630549448 *)(&V_1), /*hidden argument*/Enumerator_get_Current_m361211096_RuntimeMethod_var);
+				V_0 = L_8;
+				TableMapping_t2276399492 * L_9 = V_0;
+				NullCheck(L_9);
+				TableMapping_Dispose_m3451646384(L_9, /*hidden argument*/NULL);
+			}
+
+IL_004f:
+			{
+				bool L_10 = Enumerator_MoveNext_m132011260((Enumerator_t2630549448 *)(&V_1), /*hidden argument*/Enumerator_MoveNext_m132011260_RuntimeMethod_var);
+				if (L_10)
+				{
+					goto IL_0041;
+				}
+			}
+
+IL_005b:
+			{
+				IL2CPP_LEAVE(0x6E, FINALLY_0060);
+			}
+		} // end try (depth: 2)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__last_unhandled_exception = (Exception_t *)e.ex;
+			goto FINALLY_0060;
+		}
+
+FINALLY_0060:
+		{ // begin finally (depth: 2)
+			Enumerator_Dispose_m4215768123((Enumerator_t2630549448 *)(&V_1), /*hidden argument*/Enumerator_Dispose_m4215768123_RuntimeMethod_var);
+			IL2CPP_END_FINALLY(96)
+		} // end finally (depth: 2)
+		IL2CPP_CLEANUP(96)
+		{
+			IL2CPP_JUMP_TBL(0x6E, IL_006e)
+			IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+		}
+
+IL_006e:
+		{
+			intptr_t L_11 = SQLiteConnection_get_Handle_m4185785638(__this, /*hidden argument*/NULL);
+			int32_t L_12 = SQLite3_Close_m3192934511(NULL /*static, unused*/, L_11, /*hidden argument*/NULL);
+			V_2 = L_12;
+			int32_t L_13 = V_2;
+			if (!L_13)
+			{
+				goto IL_0094;
+			}
+		}
+
+IL_0080:
+		{
+			intptr_t L_14 = SQLiteConnection_get_Handle_m4185785638(__this, /*hidden argument*/NULL);
+			String_t* L_15 = SQLite3_GetErrmsg_m3570473851(NULL /*static, unused*/, L_14, /*hidden argument*/NULL);
+			V_3 = L_15;
+			int32_t L_16 = V_2;
+			String_t* L_17 = V_3;
+			SQLiteException_t1356363765 * L_18 = SQLiteException_New_m975542910(NULL /*static, unused*/, L_16, L_17, /*hidden argument*/NULL);
+			IL2CPP_RAISE_MANAGED_EXCEPTION(L_18, NULL, SQLiteConnection_Close_m877720971_RuntimeMethod_var);
+		}
+
+IL_0094:
+		{
+			IL2CPP_LEAVE(0xAC, FINALLY_0099);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_0099;
+	}
+
+FINALLY_0099:
+	{ // begin finally (depth: 1)
+		IL2CPP_RUNTIME_CLASS_INIT(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var);
+		intptr_t L_19 = ((SQLiteConnection_t3070079188_StaticFields*)il2cpp_codegen_static_fields_for(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var))->get_NullHandle_9();
+		SQLiteConnection_set_Handle_m1539251663(__this, L_19, /*hidden argument*/NULL);
+		__this->set__open_0((bool)0);
+		IL2CPP_END_FINALLY(153)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(153)
+	{
+		IL2CPP_JUMP_TBL(0xAC, IL_00ac)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_00ac:
+	{
+		return;
+	}
+}
+// System.String SQLite4Unity3d.SQLiteConnection::<CreateTable>m__0(SQLite4Unity3d.TableMapping/Column)
+extern "C" IL2CPP_METHOD_ATTR String_t* SQLiteConnection_U3CCreateTableU3Em__0_m3477665872 (SQLiteConnection_t3070079188 * __this, Column_t1357940583 * ___p0, const RuntimeMethod* method)
+{
+	{
+		Column_t1357940583 * L_0 = ___p0;
+		bool L_1 = SQLiteConnection_get_StoreDateTimeAsTicks_m1334058394(__this, /*hidden argument*/NULL);
+		String_t* L_2 = Orm_SqlDecl_m2709905698(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection::<CreateTable>m__1(SQLite4Unity3d.SQLiteConnection/IndexedColumn)
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteConnection_U3CCreateTableU3Em__1_m2252154560 (RuntimeObject * __this /* static, unused */, IndexedColumn_t3080689016  ___i0, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = (&___i0)->get_Order_0();
+		return L_0;
+	}
+}
+// System.String SQLite4Unity3d.SQLiteConnection::<CreateTable>m__2(SQLite4Unity3d.SQLiteConnection/IndexedColumn)
+extern "C" IL2CPP_METHOD_ATTR String_t* SQLiteConnection_U3CCreateTableU3Em__2_m3964932566 (RuntimeObject * __this /* static, unused */, IndexedColumn_t3080689016  ___i0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = (&___i0)->get_ColumnName_1();
+		return L_0;
+	}
+}
+// System.String SQLite4Unity3d.SQLiteConnection::<Update>m__3(SQLite4Unity3d.TableMapping/Column)
+extern "C" IL2CPP_METHOD_ATTR String_t* SQLiteConnection_U3CUpdateU3Em__3_m3878545526 (RuntimeObject * __this /* static, unused */, Column_t1357940583 * ___c0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteConnection_U3CUpdateU3Em__3_m3878545526_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Column_t1357940583 * L_0 = ___c0;
+		NullCheck(L_0);
+		String_t* L_1 = Column_get_Name_m892990361(L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_2 = String_Concat_m3755062657(NULL /*static, unused*/, _stringLiteral3452614526, L_1, _stringLiteral326347238, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey0::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void U3CInsertAllU3Ec__AnonStorey0__ctor_m3930371309 (U3CInsertAllU3Ec__AnonStorey0_t106977603 * __this, const RuntimeMethod* method)
+{
+	{
+		Object__ctor_m297566312(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey0::<>m__0()
+extern "C" IL2CPP_METHOD_ATTR void U3CInsertAllU3Ec__AnonStorey0_U3CU3Em__0_m2182591660 (U3CInsertAllU3Ec__AnonStorey0_t106977603 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (U3CInsertAllU3Ec__AnonStorey0_U3CU3Em__0_m2182591660_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject * V_0 = NULL;
+	RuntimeObject* V_1 = NULL;
+	RuntimeObject* V_2 = NULL;
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		RuntimeObject* L_0 = __this->get_objects_0();
+		NullCheck(L_0);
+		RuntimeObject* L_1 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.IEnumerator System.Collections.IEnumerable::GetEnumerator() */, IEnumerable_t1941168011_il2cpp_TypeInfo_var, L_0);
+		V_1 = L_1;
+	}
+
+IL_000c:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_0031;
+		}
+
+IL_0011:
+		{
+			RuntimeObject* L_2 = V_1;
+			NullCheck(L_2);
+			RuntimeObject * L_3 = InterfaceFuncInvoker0< RuntimeObject * >::Invoke(0 /* System.Object System.Collections.IEnumerator::get_Current() */, IEnumerator_t1853284238_il2cpp_TypeInfo_var, L_2);
+			V_0 = L_3;
+			int32_t L_4 = __this->get_c_1();
+			SQLiteConnection_t3070079188 * L_5 = __this->get_U24this_2();
+			RuntimeObject * L_6 = V_0;
+			NullCheck(L_5);
+			int32_t L_7 = SQLiteConnection_Insert_m2879703407(L_5, L_6, /*hidden argument*/NULL);
+			__this->set_c_1(((int32_t)il2cpp_codegen_add((int32_t)L_4, (int32_t)L_7)));
+		}
+
+IL_0031:
+		{
+			RuntimeObject* L_8 = V_1;
+			NullCheck(L_8);
+			bool L_9 = InterfaceFuncInvoker0< bool >::Invoke(1 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t1853284238_il2cpp_TypeInfo_var, L_8);
+			if (L_9)
+			{
+				goto IL_0011;
+			}
+		}
+
+IL_003c:
+		{
+			IL2CPP_LEAVE(0x55, FINALLY_0041);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_0041;
+	}
+
+FINALLY_0041:
+	{ // begin finally (depth: 1)
+		{
+			RuntimeObject* L_10 = V_1;
+			RuntimeObject* L_11 = ((RuntimeObject*)IsInst((RuntimeObject*)L_10, IDisposable_t3640265483_il2cpp_TypeInfo_var));
+			V_2 = L_11;
+			if (!L_11)
+			{
+				goto IL_0054;
+			}
+		}
+
+IL_004e:
+		{
+			RuntimeObject* L_12 = V_2;
+			NullCheck(L_12);
+			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t3640265483_il2cpp_TypeInfo_var, L_12);
+		}
+
+IL_0054:
+		{
+			IL2CPP_END_FINALLY(65)
+		}
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(65)
+	{
+		IL2CPP_JUMP_TBL(0x55, IL_0055)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_0055:
+	{
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey1::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void U3CInsertAllU3Ec__AnonStorey1__ctor_m3930372398 (U3CInsertAllU3Ec__AnonStorey1_t106977604 * __this, const RuntimeMethod* method)
+{
+	{
+		Object__ctor_m297566312(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey1::<>m__0()
+extern "C" IL2CPP_METHOD_ATTR void U3CInsertAllU3Ec__AnonStorey1_U3CU3Em__0_m2182592683 (U3CInsertAllU3Ec__AnonStorey1_t106977604 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (U3CInsertAllU3Ec__AnonStorey1_U3CU3Em__0_m2182592683_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject * V_0 = NULL;
+	RuntimeObject* V_1 = NULL;
+	RuntimeObject* V_2 = NULL;
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		RuntimeObject* L_0 = __this->get_objects_0();
+		NullCheck(L_0);
+		RuntimeObject* L_1 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.IEnumerator System.Collections.IEnumerable::GetEnumerator() */, IEnumerable_t1941168011_il2cpp_TypeInfo_var, L_0);
+		V_1 = L_1;
+	}
+
+IL_000c:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_0037;
+		}
+
+IL_0011:
+		{
+			RuntimeObject* L_2 = V_1;
+			NullCheck(L_2);
+			RuntimeObject * L_3 = InterfaceFuncInvoker0< RuntimeObject * >::Invoke(0 /* System.Object System.Collections.IEnumerator::get_Current() */, IEnumerator_t1853284238_il2cpp_TypeInfo_var, L_2);
+			V_0 = L_3;
+			int32_t L_4 = __this->get_c_2();
+			SQLiteConnection_t3070079188 * L_5 = __this->get_U24this_3();
+			RuntimeObject * L_6 = V_0;
+			String_t* L_7 = __this->get_extra_1();
+			NullCheck(L_5);
+			int32_t L_8 = SQLiteConnection_Insert_m317916960(L_5, L_6, L_7, /*hidden argument*/NULL);
+			__this->set_c_2(((int32_t)il2cpp_codegen_add((int32_t)L_4, (int32_t)L_8)));
+		}
+
+IL_0037:
+		{
+			RuntimeObject* L_9 = V_1;
+			NullCheck(L_9);
+			bool L_10 = InterfaceFuncInvoker0< bool >::Invoke(1 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t1853284238_il2cpp_TypeInfo_var, L_9);
+			if (L_10)
+			{
+				goto IL_0011;
+			}
+		}
+
+IL_0042:
+		{
+			IL2CPP_LEAVE(0x5B, FINALLY_0047);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_0047;
+	}
+
+FINALLY_0047:
+	{ // begin finally (depth: 1)
+		{
+			RuntimeObject* L_11 = V_1;
+			RuntimeObject* L_12 = ((RuntimeObject*)IsInst((RuntimeObject*)L_11, IDisposable_t3640265483_il2cpp_TypeInfo_var));
+			V_2 = L_12;
+			if (!L_12)
+			{
+				goto IL_005a;
+			}
+		}
+
+IL_0054:
+		{
+			RuntimeObject* L_13 = V_2;
+			NullCheck(L_13);
+			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t3640265483_il2cpp_TypeInfo_var, L_13);
+		}
+
+IL_005a:
+		{
+			IL2CPP_END_FINALLY(71)
+		}
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(71)
+	{
+		IL2CPP_JUMP_TBL(0x5B, IL_005b)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_005b:
+	{
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey2::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void U3CInsertAllU3Ec__AnonStorey2__ctor_m3930366887 (U3CInsertAllU3Ec__AnonStorey2_t106977601 * __this, const RuntimeMethod* method)
+{
+	{
+		Object__ctor_m297566312(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection/<InsertAll>c__AnonStorey2::<>m__0()
+extern "C" IL2CPP_METHOD_ATTR void U3CInsertAllU3Ec__AnonStorey2_U3CU3Em__0_m2182589614 (U3CInsertAllU3Ec__AnonStorey2_t106977601 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (U3CInsertAllU3Ec__AnonStorey2_U3CU3Em__0_m2182589614_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject * V_0 = NULL;
+	RuntimeObject* V_1 = NULL;
+	RuntimeObject* V_2 = NULL;
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		RuntimeObject* L_0 = __this->get_objects_0();
+		NullCheck(L_0);
+		RuntimeObject* L_1 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.IEnumerator System.Collections.IEnumerable::GetEnumerator() */, IEnumerable_t1941168011_il2cpp_TypeInfo_var, L_0);
+		V_1 = L_1;
+	}
+
+IL_000c:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_0037;
+		}
+
+IL_0011:
+		{
+			RuntimeObject* L_2 = V_1;
+			NullCheck(L_2);
+			RuntimeObject * L_3 = InterfaceFuncInvoker0< RuntimeObject * >::Invoke(0 /* System.Object System.Collections.IEnumerator::get_Current() */, IEnumerator_t1853284238_il2cpp_TypeInfo_var, L_2);
+			V_0 = L_3;
+			int32_t L_4 = __this->get_c_2();
+			SQLiteConnection_t3070079188 * L_5 = __this->get_U24this_3();
+			RuntimeObject * L_6 = V_0;
+			Type_t * L_7 = __this->get_objType_1();
+			NullCheck(L_5);
+			int32_t L_8 = SQLiteConnection_Insert_m3887320025(L_5, L_6, L_7, /*hidden argument*/NULL);
+			__this->set_c_2(((int32_t)il2cpp_codegen_add((int32_t)L_4, (int32_t)L_8)));
+		}
+
+IL_0037:
+		{
+			RuntimeObject* L_9 = V_1;
+			NullCheck(L_9);
+			bool L_10 = InterfaceFuncInvoker0< bool >::Invoke(1 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t1853284238_il2cpp_TypeInfo_var, L_9);
+			if (L_10)
+			{
+				goto IL_0011;
+			}
+		}
+
+IL_0042:
+		{
+			IL2CPP_LEAVE(0x5B, FINALLY_0047);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_0047;
+	}
+
+FINALLY_0047:
+	{ // begin finally (depth: 1)
+		{
+			RuntimeObject* L_11 = V_1;
+			RuntimeObject* L_12 = ((RuntimeObject*)IsInst((RuntimeObject*)L_11, IDisposable_t3640265483_il2cpp_TypeInfo_var));
+			V_2 = L_12;
+			if (!L_12)
+			{
+				goto IL_005a;
+			}
+		}
+
+IL_0054:
+		{
+			RuntimeObject* L_13 = V_2;
+			NullCheck(L_13);
+			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t3640265483_il2cpp_TypeInfo_var, L_13);
+		}
+
+IL_005a:
+		{
+			IL2CPP_END_FINALLY(71)
+		}
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(71)
+	{
+		IL2CPP_JUMP_TBL(0x5B, IL_005b)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_005b:
+	{
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.SQLiteConnection/<Update>c__AnonStorey3::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void U3CUpdateU3Ec__AnonStorey3__ctor_m4095385256 (U3CUpdateU3Ec__AnonStorey3_t445741020 * __this, const RuntimeMethod* method)
+{
+	{
+		Object__ctor_m297566312(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean SQLite4Unity3d.SQLiteConnection/<Update>c__AnonStorey3::<>m__0(SQLite4Unity3d.TableMapping/Column)
+extern "C" IL2CPP_METHOD_ATTR bool U3CUpdateU3Ec__AnonStorey3_U3CU3Em__0_m3028833688 (U3CUpdateU3Ec__AnonStorey3_t445741020 * __this, Column_t1357940583 * ___p0, const RuntimeMethod* method)
+{
+	{
+		Column_t1357940583 * L_0 = ___p0;
+		Column_t1357940583 * L_1 = __this->get_pk_0();
+		return (bool)((((int32_t)((((RuntimeObject*)(Column_t1357940583 *)L_0) == ((RuntimeObject*)(Column_t1357940583 *)L_1))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+	}
+}
+// System.Object SQLite4Unity3d.SQLiteConnection/<Update>c__AnonStorey3::<>m__1(SQLite4Unity3d.TableMapping/Column)
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject * U3CUpdateU3Ec__AnonStorey3_U3CU3Em__1_m1512522977 (U3CUpdateU3Ec__AnonStorey3_t445741020 * __this, Column_t1357940583 * ___c0, const RuntimeMethod* method)
+{
+	{
+		Column_t1357940583 * L_0 = ___c0;
+		RuntimeObject * L_1 = __this->get_obj_1();
+		NullCheck(L_0);
+		RuntimeObject * L_2 = Column_GetValue_m3743332072(L_0, L_1, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.SQLiteConnection/<UpdateAll>c__AnonStorey4::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void U3CUpdateAllU3Ec__AnonStorey4__ctor_m240844993 (U3CUpdateAllU3Ec__AnonStorey4_t1584503381 * __this, const RuntimeMethod* method)
+{
+	{
+		Object__ctor_m297566312(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection/<UpdateAll>c__AnonStorey4::<>m__0()
+extern "C" IL2CPP_METHOD_ATTR void U3CUpdateAllU3Ec__AnonStorey4_U3CU3Em__0_m114741402 (U3CUpdateAllU3Ec__AnonStorey4_t1584503381 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (U3CUpdateAllU3Ec__AnonStorey4_U3CU3Em__0_m114741402_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject * V_0 = NULL;
+	RuntimeObject* V_1 = NULL;
+	RuntimeObject* V_2 = NULL;
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		RuntimeObject* L_0 = __this->get_objects_0();
+		NullCheck(L_0);
+		RuntimeObject* L_1 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.IEnumerator System.Collections.IEnumerable::GetEnumerator() */, IEnumerable_t1941168011_il2cpp_TypeInfo_var, L_0);
+		V_1 = L_1;
+	}
+
+IL_000c:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_0031;
+		}
+
+IL_0011:
+		{
+			RuntimeObject* L_2 = V_1;
+			NullCheck(L_2);
+			RuntimeObject * L_3 = InterfaceFuncInvoker0< RuntimeObject * >::Invoke(0 /* System.Object System.Collections.IEnumerator::get_Current() */, IEnumerator_t1853284238_il2cpp_TypeInfo_var, L_2);
+			V_0 = L_3;
+			int32_t L_4 = __this->get_c_1();
+			SQLiteConnection_t3070079188 * L_5 = __this->get_U24this_2();
+			RuntimeObject * L_6 = V_0;
+			NullCheck(L_5);
+			int32_t L_7 = SQLiteConnection_Update_m766617629(L_5, L_6, /*hidden argument*/NULL);
+			__this->set_c_1(((int32_t)il2cpp_codegen_add((int32_t)L_4, (int32_t)L_7)));
+		}
+
+IL_0031:
+		{
+			RuntimeObject* L_8 = V_1;
+			NullCheck(L_8);
+			bool L_9 = InterfaceFuncInvoker0< bool >::Invoke(1 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t1853284238_il2cpp_TypeInfo_var, L_8);
+			if (L_9)
+			{
+				goto IL_0011;
+			}
+		}
+
+IL_003c:
+		{
+			IL2CPP_LEAVE(0x55, FINALLY_0041);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_0041;
+	}
+
+FINALLY_0041:
+	{ // begin finally (depth: 1)
+		{
+			RuntimeObject* L_10 = V_1;
+			RuntimeObject* L_11 = ((RuntimeObject*)IsInst((RuntimeObject*)L_10, IDisposable_t3640265483_il2cpp_TypeInfo_var));
+			V_2 = L_11;
+			if (!L_11)
+			{
+				goto IL_0054;
+			}
+		}
+
+IL_004e:
+		{
+			RuntimeObject* L_12 = V_2;
+			NullCheck(L_12);
+			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t3640265483_il2cpp_TypeInfo_var, L_12);
+		}
+
+IL_0054:
+		{
+			IL2CPP_END_FINALLY(65)
+		}
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(65)
+	{
+		IL2CPP_JUMP_TBL(0x55, IL_0055)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_0055:
+	{
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.SQLiteConnection/ColumnInfo::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void ColumnInfo__ctor_m3797747095 (ColumnInfo_t2560133827 * __this, const RuntimeMethod* method)
+{
+	{
+		Object__ctor_m297566312(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.String SQLite4Unity3d.SQLiteConnection/ColumnInfo::get_Name()
+extern "C" IL2CPP_METHOD_ATTR String_t* ColumnInfo_get_Name_m850063639 (ColumnInfo_t2560133827 * __this, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = __this->get_U3CNameU3Ek__BackingField_0();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection/ColumnInfo::set_Name(System.String)
+extern "C" IL2CPP_METHOD_ATTR void ColumnInfo_set_Name_m3211096544 (ColumnInfo_t2560133827 * __this, String_t* ___value0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->set_U3CNameU3Ek__BackingField_0(L_0);
+		return;
+	}
+}
+// System.Int32 SQLite4Unity3d.SQLiteConnection/ColumnInfo::get_notnull()
+extern "C" IL2CPP_METHOD_ATTR int32_t ColumnInfo_get_notnull_m4130447391 (ColumnInfo_t2560133827 * __this, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = __this->get_U3CnotnullU3Ek__BackingField_1();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnection/ColumnInfo::set_notnull(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void ColumnInfo_set_notnull_m2937402501 (ColumnInfo_t2560133827 * __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___value0;
+		__this->set_U3CnotnullU3Ek__BackingField_1(L_0);
+		return;
+	}
+}
+// System.String SQLite4Unity3d.SQLiteConnection/ColumnInfo::ToString()
+extern "C" IL2CPP_METHOD_ATTR String_t* ColumnInfo_ToString_m588936560 (ColumnInfo_t2560133827 * __this, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ColumnInfo_get_Name_m850063639(__this, /*hidden argument*/NULL);
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Conversion methods for marshalling of: SQLite4Unity3d.SQLiteConnection/IndexInfo
+extern "C" void IndexInfo_t1680796658_marshal_pinvoke(const IndexInfo_t1680796658& unmarshaled, IndexInfo_t1680796658_marshaled_pinvoke& marshaled)
+{
+	Exception_t* ___Columns_3Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'Columns' of type 'IndexInfo'.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___Columns_3Exception, NULL, NULL);
+}
+extern "C" void IndexInfo_t1680796658_marshal_pinvoke_back(const IndexInfo_t1680796658_marshaled_pinvoke& marshaled, IndexInfo_t1680796658& unmarshaled)
+{
+	Exception_t* ___Columns_3Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'Columns' of type 'IndexInfo'.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___Columns_3Exception, NULL, NULL);
+}
+// Conversion method for clean up from marshalling of: SQLite4Unity3d.SQLiteConnection/IndexInfo
+extern "C" void IndexInfo_t1680796658_marshal_pinvoke_cleanup(IndexInfo_t1680796658_marshaled_pinvoke& marshaled)
+{
+}
+// Conversion methods for marshalling of: SQLite4Unity3d.SQLiteConnection/IndexInfo
+extern "C" void IndexInfo_t1680796658_marshal_com(const IndexInfo_t1680796658& unmarshaled, IndexInfo_t1680796658_marshaled_com& marshaled)
+{
+	Exception_t* ___Columns_3Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'Columns' of type 'IndexInfo'.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___Columns_3Exception, NULL, NULL);
+}
+extern "C" void IndexInfo_t1680796658_marshal_com_back(const IndexInfo_t1680796658_marshaled_com& marshaled, IndexInfo_t1680796658& unmarshaled)
+{
+	Exception_t* ___Columns_3Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'Columns' of type 'IndexInfo'.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___Columns_3Exception, NULL, NULL);
+}
+// Conversion method for clean up from marshalling of: SQLite4Unity3d.SQLiteConnection/IndexInfo
+extern "C" void IndexInfo_t1680796658_marshal_com_cleanup(IndexInfo_t1680796658_marshaled_com& marshaled)
+{
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Conversion methods for marshalling of: SQLite4Unity3d.SQLiteConnection/IndexedColumn
+extern "C" void IndexedColumn_t3080689016_marshal_pinvoke(const IndexedColumn_t3080689016& unmarshaled, IndexedColumn_t3080689016_marshaled_pinvoke& marshaled)
+{
+	marshaled.___Order_0 = unmarshaled.get_Order_0();
+	marshaled.___ColumnName_1 = il2cpp_codegen_marshal_string(unmarshaled.get_ColumnName_1());
+}
+extern "C" void IndexedColumn_t3080689016_marshal_pinvoke_back(const IndexedColumn_t3080689016_marshaled_pinvoke& marshaled, IndexedColumn_t3080689016& unmarshaled)
+{
+	int32_t unmarshaled_Order_temp_0 = 0;
+	unmarshaled_Order_temp_0 = marshaled.___Order_0;
+	unmarshaled.set_Order_0(unmarshaled_Order_temp_0);
+	unmarshaled.set_ColumnName_1(il2cpp_codegen_marshal_string_result(marshaled.___ColumnName_1));
+}
+// Conversion method for clean up from marshalling of: SQLite4Unity3d.SQLiteConnection/IndexedColumn
+extern "C" void IndexedColumn_t3080689016_marshal_pinvoke_cleanup(IndexedColumn_t3080689016_marshaled_pinvoke& marshaled)
+{
+	il2cpp_codegen_marshal_free(marshaled.___ColumnName_1);
+	marshaled.___ColumnName_1 = NULL;
+}
+// Conversion methods for marshalling of: SQLite4Unity3d.SQLiteConnection/IndexedColumn
+extern "C" void IndexedColumn_t3080689016_marshal_com(const IndexedColumn_t3080689016& unmarshaled, IndexedColumn_t3080689016_marshaled_com& marshaled)
+{
+	marshaled.___Order_0 = unmarshaled.get_Order_0();
+	marshaled.___ColumnName_1 = il2cpp_codegen_marshal_bstring(unmarshaled.get_ColumnName_1());
+}
+extern "C" void IndexedColumn_t3080689016_marshal_com_back(const IndexedColumn_t3080689016_marshaled_com& marshaled, IndexedColumn_t3080689016& unmarshaled)
+{
+	int32_t unmarshaled_Order_temp_0 = 0;
+	unmarshaled_Order_temp_0 = marshaled.___Order_0;
+	unmarshaled.set_Order_0(unmarshaled_Order_temp_0);
+	unmarshaled.set_ColumnName_1(il2cpp_codegen_marshal_bstring_result(marshaled.___ColumnName_1));
+}
+// Conversion method for clean up from marshalling of: SQLite4Unity3d.SQLiteConnection/IndexedColumn
+extern "C" void IndexedColumn_t3080689016_marshal_com_cleanup(IndexedColumn_t3080689016_marshaled_com& marshaled)
+{
+	il2cpp_codegen_marshal_free_bstring(marshaled.___ColumnName_1);
+	marshaled.___ColumnName_1 = NULL;
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.SQLiteConnectionString::.ctor(System.String,System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnectionString__ctor_m2931556542 (SQLiteConnectionString_t3632030467 * __this, String_t* ___databasePath0, bool ___storeDateTimeAsTicks1, const RuntimeMethod* method)
+{
+	{
+		Object__ctor_m297566312(__this, /*hidden argument*/NULL);
+		String_t* L_0 = ___databasePath0;
+		SQLiteConnectionString_set_ConnectionString_m803767572(__this, L_0, /*hidden argument*/NULL);
+		bool L_1 = ___storeDateTimeAsTicks1;
+		SQLiteConnectionString_set_StoreDateTimeAsTicks_m3525391643(__this, L_1, /*hidden argument*/NULL);
+		String_t* L_2 = ___databasePath0;
+		SQLiteConnectionString_set_DatabasePath_m496957376(__this, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.String SQLite4Unity3d.SQLiteConnectionString::get_ConnectionString()
+extern "C" IL2CPP_METHOD_ATTR String_t* SQLiteConnectionString_get_ConnectionString_m2716555743 (SQLiteConnectionString_t3632030467 * __this, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = __this->get_U3CConnectionStringU3Ek__BackingField_0();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnectionString::set_ConnectionString(System.String)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnectionString_set_ConnectionString_m803767572 (SQLiteConnectionString_t3632030467 * __this, String_t* ___value0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->set_U3CConnectionStringU3Ek__BackingField_0(L_0);
+		return;
+	}
+}
+// System.String SQLite4Unity3d.SQLiteConnectionString::get_DatabasePath()
+extern "C" IL2CPP_METHOD_ATTR String_t* SQLiteConnectionString_get_DatabasePath_m683447762 (SQLiteConnectionString_t3632030467 * __this, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = __this->get_U3CDatabasePathU3Ek__BackingField_1();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnectionString::set_DatabasePath(System.String)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnectionString_set_DatabasePath_m496957376 (SQLiteConnectionString_t3632030467 * __this, String_t* ___value0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->set_U3CDatabasePathU3Ek__BackingField_1(L_0);
+		return;
+	}
+}
+// System.Boolean SQLite4Unity3d.SQLiteConnectionString::get_StoreDateTimeAsTicks()
+extern "C" IL2CPP_METHOD_ATTR bool SQLiteConnectionString_get_StoreDateTimeAsTicks_m2569780075 (SQLiteConnectionString_t3632030467 * __this, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = __this->get_U3CStoreDateTimeAsTicksU3Ek__BackingField_2();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteConnectionString::set_StoreDateTimeAsTicks(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteConnectionString_set_StoreDateTimeAsTicks_m3525391643 (SQLiteConnectionString_t3632030467 * __this, bool ___value0, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = ___value0;
+		__this->set_U3CStoreDateTimeAsTicksU3Ek__BackingField_2(L_0);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.SQLiteException::.ctor(SQLite4Unity3d.SQLite3/Result,System.String)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteException__ctor_m1199196893 (SQLiteException_t1356363765 * __this, int32_t ___r0, String_t* ___message1, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___message1;
+		Exception__ctor_m1152696503(__this, L_0, /*hidden argument*/NULL);
+		int32_t L_1 = ___r0;
+		SQLiteException_set_Result_m2403511823(__this, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// SQLite4Unity3d.SQLite3/Result SQLite4Unity3d.SQLiteException::get_Result()
+extern "C" IL2CPP_METHOD_ATTR int32_t SQLiteException_get_Result_m3460608678 (SQLiteException_t1356363765 * __this, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = __this->get_U3CResultU3Ek__BackingField_11();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.SQLiteException::set_Result(SQLite4Unity3d.SQLite3/Result)
+extern "C" IL2CPP_METHOD_ATTR void SQLiteException_set_Result_m2403511823 (SQLiteException_t1356363765 * __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___value0;
+		__this->set_U3CResultU3Ek__BackingField_11(L_0);
+		return;
+	}
+}
+// SQLite4Unity3d.SQLiteException SQLite4Unity3d.SQLiteException::New(SQLite4Unity3d.SQLite3/Result,System.String)
+extern "C" IL2CPP_METHOD_ATTR SQLiteException_t1356363765 * SQLiteException_New_m975542910 (RuntimeObject * __this /* static, unused */, int32_t ___r0, String_t* ___message1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (SQLiteException_New_m975542910_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		int32_t L_0 = ___r0;
+		String_t* L_1 = ___message1;
+		SQLiteException_t1356363765 * L_2 = (SQLiteException_t1356363765 *)il2cpp_codegen_object_new(SQLiteException_t1356363765_il2cpp_TypeInfo_var);
+		SQLiteException__ctor_m1199196893(L_2, L_0, L_1, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.TableAttribute::.ctor(System.String)
+extern "C" IL2CPP_METHOD_ATTR void TableAttribute__ctor_m3966067251 (TableAttribute_t3728577771 * __this, String_t* ___name0, const RuntimeMethod* method)
+{
+	{
+		Attribute__ctor_m1529526131(__this, /*hidden argument*/NULL);
+		String_t* L_0 = ___name0;
+		TableAttribute_set_Name_m2607600070(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.String SQLite4Unity3d.TableAttribute::get_Name()
+extern "C" IL2CPP_METHOD_ATTR String_t* TableAttribute_get_Name_m2385249559 (TableAttribute_t3728577771 * __this, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = __this->get_U3CNameU3Ek__BackingField_0();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.TableAttribute::set_Name(System.String)
+extern "C" IL2CPP_METHOD_ATTR void TableAttribute_set_Name_m2607600070 (TableAttribute_t3728577771 * __this, String_t* ___value0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->set_U3CNameU3Ek__BackingField_0(L_0);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.TableMapping::.ctor(System.Type,SQLite4Unity3d.CreateFlags)
+extern "C" IL2CPP_METHOD_ATTR void TableMapping__ctor_m3995337602 (TableMapping_t2276399492 * __this, Type_t * ___type0, int32_t ___createFlags1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (TableMapping__ctor_m3995337602_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	TableAttribute_t3728577771 * V_0 = NULL;
+	PropertyInfoU5BU5D_t1461822886* V_1 = NULL;
+	List_1_t2830015325 * V_2 = NULL;
+	PropertyInfo_t * V_3 = NULL;
+	PropertyInfoU5BU5D_t1461822886* V_4 = NULL;
+	int32_t V_5 = 0;
+	bool V_6 = false;
+	Column_t1357940583 * V_7 = NULL;
+	ColumnU5BU5D_t4060676894* V_8 = NULL;
+	int32_t V_9 = 0;
+	TableMapping_t2276399492 * G_B2_0 = NULL;
+	TableMapping_t2276399492 * G_B1_0 = NULL;
+	String_t* G_B3_0 = NULL;
+	TableMapping_t2276399492 * G_B3_1 = NULL;
+	{
+		Object__ctor_m297566312(__this, /*hidden argument*/NULL);
+		Type_t * L_0 = ___type0;
+		TableMapping_set_MappedType_m3778817337(__this, L_0, /*hidden argument*/NULL);
+		Type_t * L_1 = ___type0;
+		RuntimeTypeHandle_t3027515415  L_2 = { reinterpret_cast<intptr_t> (TableAttribute_t3728577771_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_3 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		ObjectU5BU5D_t2843939325* L_4 = VirtFuncInvoker2< ObjectU5BU5D_t2843939325*, Type_t *, bool >::Invoke(13 /* System.Object[] System.Reflection.MemberInfo::GetCustomAttributes(System.Type,System.Boolean) */, L_1, L_3, (bool)1);
+		RuntimeObject * L_5 = Enumerable_FirstOrDefault_TisRuntimeObject_m714693565(NULL /*static, unused*/, (RuntimeObject*)(RuntimeObject*)L_4, /*hidden argument*/Enumerable_FirstOrDefault_TisRuntimeObject_m714693565_RuntimeMethod_var);
+		V_0 = ((TableAttribute_t3728577771 *)CastclassClass((RuntimeObject*)L_5, TableAttribute_t3728577771_il2cpp_TypeInfo_var));
+		TableAttribute_t3728577771 * L_6 = V_0;
+		G_B1_0 = __this;
+		if (!L_6)
+		{
+			G_B2_0 = __this;
+			goto IL_003b;
+		}
+	}
+	{
+		TableAttribute_t3728577771 * L_7 = V_0;
+		NullCheck(L_7);
+		String_t* L_8 = TableAttribute_get_Name_m2385249559(L_7, /*hidden argument*/NULL);
+		G_B3_0 = L_8;
+		G_B3_1 = G_B1_0;
+		goto IL_0046;
+	}
+
+IL_003b:
+	{
+		Type_t * L_9 = TableMapping_get_MappedType_m562585678(__this, /*hidden argument*/NULL);
+		NullCheck(L_9);
+		String_t* L_10 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_9);
+		G_B3_0 = L_10;
+		G_B3_1 = G_B2_0;
+	}
+
+IL_0046:
+	{
+		NullCheck(G_B3_1);
+		TableMapping_set_TableName_m3725161048(G_B3_1, G_B3_0, /*hidden argument*/NULL);
+		Type_t * L_11 = TableMapping_get_MappedType_m562585678(__this, /*hidden argument*/NULL);
+		NullCheck(L_11);
+		PropertyInfoU5BU5D_t1461822886* L_12 = VirtFuncInvoker1< PropertyInfoU5BU5D_t1461822886*, int32_t >::Invoke(56 /* System.Reflection.PropertyInfo[] System.Type::GetProperties(System.Reflection.BindingFlags) */, L_11, ((int32_t)8212));
+		V_1 = L_12;
+		List_1_t2830015325 * L_13 = (List_1_t2830015325 *)il2cpp_codegen_object_new(List_1_t2830015325_il2cpp_TypeInfo_var);
+		List_1__ctor_m2000653768(L_13, /*hidden argument*/List_1__ctor_m2000653768_RuntimeMethod_var);
+		V_2 = L_13;
+		PropertyInfoU5BU5D_t1461822886* L_14 = V_1;
+		V_4 = L_14;
+		V_5 = 0;
+		goto IL_00b0;
+	}
+
+IL_006d:
+	{
+		PropertyInfoU5BU5D_t1461822886* L_15 = V_4;
+		int32_t L_16 = V_5;
+		NullCheck(L_15);
+		int32_t L_17 = L_16;
+		PropertyInfo_t * L_18 = (L_15)->GetAt(static_cast<il2cpp_array_size_t>(L_17));
+		V_3 = L_18;
+		PropertyInfo_t * L_19 = V_3;
+		RuntimeTypeHandle_t3027515415  L_20 = { reinterpret_cast<intptr_t> (IgnoreAttribute_t1003697248_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_21 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_20, /*hidden argument*/NULL);
+		NullCheck(L_19);
+		ObjectU5BU5D_t2843939325* L_22 = VirtFuncInvoker2< ObjectU5BU5D_t2843939325*, Type_t *, bool >::Invoke(13 /* System.Object[] System.Reflection.MemberInfo::GetCustomAttributes(System.Type,System.Boolean) */, L_19, L_21, (bool)1);
+		NullCheck(L_22);
+		V_6 = (bool)((((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_22)->max_length))))) > ((int32_t)0))? 1 : 0);
+		PropertyInfo_t * L_23 = V_3;
+		NullCheck(L_23);
+		bool L_24 = VirtFuncInvoker0< bool >::Invoke(16 /* System.Boolean System.Reflection.PropertyInfo::get_CanWrite() */, L_23);
+		if (!L_24)
+		{
+			goto IL_00aa;
+		}
+	}
+	{
+		bool L_25 = V_6;
+		if (L_25)
+		{
+			goto IL_00aa;
+		}
+	}
+	{
+		List_1_t2830015325 * L_26 = V_2;
+		PropertyInfo_t * L_27 = V_3;
+		int32_t L_28 = ___createFlags1;
+		Column_t1357940583 * L_29 = (Column_t1357940583 *)il2cpp_codegen_object_new(Column_t1357940583_il2cpp_TypeInfo_var);
+		Column__ctor_m4159236335(L_29, L_27, L_28, /*hidden argument*/NULL);
+		NullCheck(L_26);
+		List_1_Add_m1767659314(L_26, L_29, /*hidden argument*/List_1_Add_m1767659314_RuntimeMethod_var);
+	}
+
+IL_00aa:
+	{
+		int32_t L_30 = V_5;
+		V_5 = ((int32_t)il2cpp_codegen_add((int32_t)L_30, (int32_t)1));
+	}
+
+IL_00b0:
+	{
+		int32_t L_31 = V_5;
+		PropertyInfoU5BU5D_t1461822886* L_32 = V_4;
+		NullCheck(L_32);
+		if ((((int32_t)L_31) < ((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_32)->max_length)))))))
+		{
+			goto IL_006d;
+		}
+	}
+	{
+		List_1_t2830015325 * L_33 = V_2;
+		NullCheck(L_33);
+		ColumnU5BU5D_t4060676894* L_34 = List_1_ToArray_m318908896(L_33, /*hidden argument*/List_1_ToArray_m318908896_RuntimeMethod_var);
+		TableMapping_set_Columns_m1361145771(__this, L_34, /*hidden argument*/NULL);
+		ColumnU5BU5D_t4060676894* L_35 = TableMapping_get_Columns_m2283845646(__this, /*hidden argument*/NULL);
+		V_8 = L_35;
+		V_9 = 0;
+		goto IL_0118;
+	}
+
+IL_00d7:
+	{
+		ColumnU5BU5D_t4060676894* L_36 = V_8;
+		int32_t L_37 = V_9;
+		NullCheck(L_36);
+		int32_t L_38 = L_37;
+		Column_t1357940583 * L_39 = (L_36)->GetAt(static_cast<il2cpp_array_size_t>(L_38));
+		V_7 = L_39;
+		Column_t1357940583 * L_40 = V_7;
+		NullCheck(L_40);
+		bool L_41 = Column_get_IsAutoInc_m3625158064(L_40, /*hidden argument*/NULL);
+		if (!L_41)
+		{
+			goto IL_00fe;
+		}
+	}
+	{
+		Column_t1357940583 * L_42 = V_7;
+		NullCheck(L_42);
+		bool L_43 = Column_get_IsPK_m2082193636(L_42, /*hidden argument*/NULL);
+		if (!L_43)
+		{
+			goto IL_00fe;
+		}
+	}
+	{
+		Column_t1357940583 * L_44 = V_7;
+		__this->set__autoPk_5(L_44);
+	}
+
+IL_00fe:
+	{
+		Column_t1357940583 * L_45 = V_7;
+		NullCheck(L_45);
+		bool L_46 = Column_get_IsPK_m2082193636(L_45, /*hidden argument*/NULL);
+		if (!L_46)
+		{
+			goto IL_0112;
+		}
+	}
+	{
+		Column_t1357940583 * L_47 = V_7;
+		TableMapping_set_PK_m3417890792(__this, L_47, /*hidden argument*/NULL);
+	}
+
+IL_0112:
+	{
+		int32_t L_48 = V_9;
+		V_9 = ((int32_t)il2cpp_codegen_add((int32_t)L_48, (int32_t)1));
+	}
+
+IL_0118:
+	{
+		int32_t L_49 = V_9;
+		ColumnU5BU5D_t4060676894* L_50 = V_8;
+		NullCheck(L_50);
+		if ((((int32_t)L_49) < ((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_50)->max_length)))))))
+		{
+			goto IL_00d7;
+		}
+	}
+	{
+		Column_t1357940583 * L_51 = __this->get__autoPk_5();
+		TableMapping_set_HasAutoIncPK_m1448455158(__this, (bool)((((int32_t)((((RuntimeObject*)(Column_t1357940583 *)L_51) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0)) == ((int32_t)0))? 1 : 0), /*hidden argument*/NULL);
+		Column_t1357940583 * L_52 = TableMapping_get_PK_m1996960091(__this, /*hidden argument*/NULL);
+		if (!L_52)
+		{
+			goto IL_0166;
+		}
+	}
+	{
+		String_t* L_53 = TableMapping_get_TableName_m271466374(__this, /*hidden argument*/NULL);
+		Column_t1357940583 * L_54 = TableMapping_get_PK_m1996960091(__this, /*hidden argument*/NULL);
+		NullCheck(L_54);
+		String_t* L_55 = Column_get_Name_m892990361(L_54, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_56 = String_Format_m2556382932(NULL /*static, unused*/, _stringLiteral2489652646, L_53, L_55, /*hidden argument*/NULL);
+		TableMapping_set_GetByPrimaryKeySql_m1429920147(__this, L_56, /*hidden argument*/NULL);
+		goto IL_017c;
+	}
+
+IL_0166:
+	{
+		String_t* L_57 = TableMapping_get_TableName_m271466374(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_58 = String_Format_m2844511972(NULL /*static, unused*/, _stringLiteral1127816336, L_57, /*hidden argument*/NULL);
+		TableMapping_set_GetByPrimaryKeySql_m1429920147(__this, L_58, /*hidden argument*/NULL);
+	}
+
+IL_017c:
+	{
+		return;
+	}
+}
+// System.Type SQLite4Unity3d.TableMapping::get_MappedType()
+extern "C" IL2CPP_METHOD_ATTR Type_t * TableMapping_get_MappedType_m562585678 (TableMapping_t2276399492 * __this, const RuntimeMethod* method)
+{
+	{
+		Type_t * L_0 = __this->get_U3CMappedTypeU3Ek__BackingField_0();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.TableMapping::set_MappedType(System.Type)
+extern "C" IL2CPP_METHOD_ATTR void TableMapping_set_MappedType_m3778817337 (TableMapping_t2276399492 * __this, Type_t * ___value0, const RuntimeMethod* method)
+{
+	{
+		Type_t * L_0 = ___value0;
+		__this->set_U3CMappedTypeU3Ek__BackingField_0(L_0);
+		return;
+	}
+}
+// System.String SQLite4Unity3d.TableMapping::get_TableName()
+extern "C" IL2CPP_METHOD_ATTR String_t* TableMapping_get_TableName_m271466374 (TableMapping_t2276399492 * __this, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = __this->get_U3CTableNameU3Ek__BackingField_1();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.TableMapping::set_TableName(System.String)
+extern "C" IL2CPP_METHOD_ATTR void TableMapping_set_TableName_m3725161048 (TableMapping_t2276399492 * __this, String_t* ___value0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->set_U3CTableNameU3Ek__BackingField_1(L_0);
+		return;
+	}
+}
+// SQLite4Unity3d.TableMapping/Column[] SQLite4Unity3d.TableMapping::get_Columns()
+extern "C" IL2CPP_METHOD_ATTR ColumnU5BU5D_t4060676894* TableMapping_get_Columns_m2283845646 (TableMapping_t2276399492 * __this, const RuntimeMethod* method)
+{
+	{
+		ColumnU5BU5D_t4060676894* L_0 = __this->get_U3CColumnsU3Ek__BackingField_2();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.TableMapping::set_Columns(SQLite4Unity3d.TableMapping/Column[])
+extern "C" IL2CPP_METHOD_ATTR void TableMapping_set_Columns_m1361145771 (TableMapping_t2276399492 * __this, ColumnU5BU5D_t4060676894* ___value0, const RuntimeMethod* method)
+{
+	{
+		ColumnU5BU5D_t4060676894* L_0 = ___value0;
+		__this->set_U3CColumnsU3Ek__BackingField_2(L_0);
+		return;
+	}
+}
+// SQLite4Unity3d.TableMapping/Column SQLite4Unity3d.TableMapping::get_PK()
+extern "C" IL2CPP_METHOD_ATTR Column_t1357940583 * TableMapping_get_PK_m1996960091 (TableMapping_t2276399492 * __this, const RuntimeMethod* method)
+{
+	{
+		Column_t1357940583 * L_0 = __this->get_U3CPKU3Ek__BackingField_3();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.TableMapping::set_PK(SQLite4Unity3d.TableMapping/Column)
+extern "C" IL2CPP_METHOD_ATTR void TableMapping_set_PK_m3417890792 (TableMapping_t2276399492 * __this, Column_t1357940583 * ___value0, const RuntimeMethod* method)
+{
+	{
+		Column_t1357940583 * L_0 = ___value0;
+		__this->set_U3CPKU3Ek__BackingField_3(L_0);
+		return;
+	}
+}
+// System.String SQLite4Unity3d.TableMapping::get_GetByPrimaryKeySql()
+extern "C" IL2CPP_METHOD_ATTR String_t* TableMapping_get_GetByPrimaryKeySql_m2330456509 (TableMapping_t2276399492 * __this, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = __this->get_U3CGetByPrimaryKeySqlU3Ek__BackingField_4();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.TableMapping::set_GetByPrimaryKeySql(System.String)
+extern "C" IL2CPP_METHOD_ATTR void TableMapping_set_GetByPrimaryKeySql_m1429920147 (TableMapping_t2276399492 * __this, String_t* ___value0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->set_U3CGetByPrimaryKeySqlU3Ek__BackingField_4(L_0);
+		return;
+	}
+}
+// System.Boolean SQLite4Unity3d.TableMapping::get_HasAutoIncPK()
+extern "C" IL2CPP_METHOD_ATTR bool TableMapping_get_HasAutoIncPK_m3789797898 (TableMapping_t2276399492 * __this, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = __this->get_U3CHasAutoIncPKU3Ek__BackingField_8();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.TableMapping::set_HasAutoIncPK(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void TableMapping_set_HasAutoIncPK_m1448455158 (TableMapping_t2276399492 * __this, bool ___value0, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = ___value0;
+		__this->set_U3CHasAutoIncPKU3Ek__BackingField_8(L_0);
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.TableMapping::SetAutoIncPK(System.Object,System.Int64)
+extern "C" IL2CPP_METHOD_ATTR void TableMapping_SetAutoIncPK_m2643841799 (TableMapping_t2276399492 * __this, RuntimeObject * ___obj0, int64_t ___id1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (TableMapping_SetAutoIncPK_m2643841799_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Column_t1357940583 * L_0 = __this->get__autoPk_5();
+		if (!L_0)
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		Column_t1357940583 * L_1 = __this->get__autoPk_5();
+		RuntimeObject * L_2 = ___obj0;
+		int64_t L_3 = ___id1;
+		int64_t L_4 = L_3;
+		RuntimeObject * L_5 = Box(Int64_t3736567304_il2cpp_TypeInfo_var, &L_4);
+		Column_t1357940583 * L_6 = __this->get__autoPk_5();
+		NullCheck(L_6);
+		Type_t * L_7 = Column_get_ColumnType_m2188313396(L_6, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Convert_t2465617642_il2cpp_TypeInfo_var);
+		RuntimeObject * L_8 = Convert_ChangeType_m827193029(NULL /*static, unused*/, L_5, L_7, (RuntimeObject*)NULL, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		Column_SetValue_m789064993(L_1, L_2, L_8, /*hidden argument*/NULL);
+	}
+
+IL_002e:
+	{
+		return;
+	}
+}
+// SQLite4Unity3d.TableMapping/Column[] SQLite4Unity3d.TableMapping::get_InsertColumns()
+extern "C" IL2CPP_METHOD_ATTR ColumnU5BU5D_t4060676894* TableMapping_get_InsertColumns_m899458969 (TableMapping_t2276399492 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (TableMapping_get_InsertColumns_m899458969_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ColumnU5BU5D_t4060676894* G_B3_0 = NULL;
+	TableMapping_t2276399492 * G_B3_1 = NULL;
+	ColumnU5BU5D_t4060676894* G_B2_0 = NULL;
+	TableMapping_t2276399492 * G_B2_1 = NULL;
+	{
+		ColumnU5BU5D_t4060676894* L_0 = __this->get__insertColumns_6();
+		if (L_0)
+		{
+			goto IL_003e;
+		}
+	}
+	{
+		ColumnU5BU5D_t4060676894* L_1 = TableMapping_get_Columns_m2283845646(__this, /*hidden argument*/NULL);
+		Func_2_t681049744 * L_2 = ((TableMapping_t2276399492_StaticFields*)il2cpp_codegen_static_fields_for(TableMapping_t2276399492_il2cpp_TypeInfo_var))->get_U3CU3Ef__amU24cache0_11();
+		G_B2_0 = L_1;
+		G_B2_1 = __this;
+		if (L_2)
+		{
+			G_B3_0 = L_1;
+			G_B3_1 = __this;
+			goto IL_002a;
+		}
+	}
+	{
+		intptr_t L_3 = (intptr_t)TableMapping_U3Cget_InsertColumnsU3Em__0_m437155549_RuntimeMethod_var;
+		Func_2_t681049744 * L_4 = (Func_2_t681049744 *)il2cpp_codegen_object_new(Func_2_t681049744_il2cpp_TypeInfo_var);
+		Func_2__ctor_m2046779456(L_4, NULL, L_3, /*hidden argument*/Func_2__ctor_m2046779456_RuntimeMethod_var);
+		((TableMapping_t2276399492_StaticFields*)il2cpp_codegen_static_fields_for(TableMapping_t2276399492_il2cpp_TypeInfo_var))->set_U3CU3Ef__amU24cache0_11(L_4);
+		G_B3_0 = G_B2_0;
+		G_B3_1 = G_B2_1;
+	}
+
+IL_002a:
+	{
+		Func_2_t681049744 * L_5 = ((TableMapping_t2276399492_StaticFields*)il2cpp_codegen_static_fields_for(TableMapping_t2276399492_il2cpp_TypeInfo_var))->get_U3CU3Ef__amU24cache0_11();
+		RuntimeObject* L_6 = Enumerable_Where_TisColumn_t1357940583_m2456226527(NULL /*static, unused*/, (RuntimeObject*)(RuntimeObject*)G_B3_0, L_5, /*hidden argument*/Enumerable_Where_TisColumn_t1357940583_m2456226527_RuntimeMethod_var);
+		ColumnU5BU5D_t4060676894* L_7 = Enumerable_ToArray_TisColumn_t1357940583_m3879603138(NULL /*static, unused*/, L_6, /*hidden argument*/Enumerable_ToArray_TisColumn_t1357940583_m3879603138_RuntimeMethod_var);
+		NullCheck(G_B3_1);
+		G_B3_1->set__insertColumns_6(L_7);
+	}
+
+IL_003e:
+	{
+		ColumnU5BU5D_t4060676894* L_8 = __this->get__insertColumns_6();
+		return L_8;
+	}
+}
+// SQLite4Unity3d.TableMapping/Column[] SQLite4Unity3d.TableMapping::get_InsertOrReplaceColumns()
+extern "C" IL2CPP_METHOD_ATTR ColumnU5BU5D_t4060676894* TableMapping_get_InsertOrReplaceColumns_m298127152 (TableMapping_t2276399492 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (TableMapping_get_InsertOrReplaceColumns_m298127152_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		ColumnU5BU5D_t4060676894* L_0 = __this->get__insertOrReplaceColumns_7();
+		if (L_0)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		ColumnU5BU5D_t4060676894* L_1 = TableMapping_get_Columns_m2283845646(__this, /*hidden argument*/NULL);
+		ColumnU5BU5D_t4060676894* L_2 = Enumerable_ToArray_TisColumn_t1357940583_m3879603138(NULL /*static, unused*/, (RuntimeObject*)(RuntimeObject*)L_1, /*hidden argument*/Enumerable_ToArray_TisColumn_t1357940583_m3879603138_RuntimeMethod_var);
+		__this->set__insertOrReplaceColumns_7(L_2);
+	}
+
+IL_001c:
+	{
+		ColumnU5BU5D_t4060676894* L_3 = __this->get__insertOrReplaceColumns_7();
+		return L_3;
+	}
+}
+// SQLite4Unity3d.TableMapping/Column SQLite4Unity3d.TableMapping::FindColumnWithPropertyName(System.String)
+extern "C" IL2CPP_METHOD_ATTR Column_t1357940583 * TableMapping_FindColumnWithPropertyName_m2023843767 (TableMapping_t2276399492 * __this, String_t* ___propertyName0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (TableMapping_FindColumnWithPropertyName_m2023843767_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CFindColumnWithPropertyNameU3Ec__AnonStorey0_t3952487827 * V_0 = NULL;
+	Column_t1357940583 * V_1 = NULL;
+	{
+		U3CFindColumnWithPropertyNameU3Ec__AnonStorey0_t3952487827 * L_0 = (U3CFindColumnWithPropertyNameU3Ec__AnonStorey0_t3952487827 *)il2cpp_codegen_object_new(U3CFindColumnWithPropertyNameU3Ec__AnonStorey0_t3952487827_il2cpp_TypeInfo_var);
+		U3CFindColumnWithPropertyNameU3Ec__AnonStorey0__ctor_m1797408499(L_0, /*hidden argument*/NULL);
+		V_0 = L_0;
+		U3CFindColumnWithPropertyNameU3Ec__AnonStorey0_t3952487827 * L_1 = V_0;
+		String_t* L_2 = ___propertyName0;
+		NullCheck(L_1);
+		L_1->set_propertyName_0(L_2);
+		ColumnU5BU5D_t4060676894* L_3 = TableMapping_get_Columns_m2283845646(__this, /*hidden argument*/NULL);
+		U3CFindColumnWithPropertyNameU3Ec__AnonStorey0_t3952487827 * L_4 = V_0;
+		intptr_t L_5 = (intptr_t)U3CFindColumnWithPropertyNameU3Ec__AnonStorey0_U3CU3Em__0_m1008898867_RuntimeMethod_var;
+		Func_2_t681049744 * L_6 = (Func_2_t681049744 *)il2cpp_codegen_object_new(Func_2_t681049744_il2cpp_TypeInfo_var);
+		Func_2__ctor_m2046779456(L_6, L_4, L_5, /*hidden argument*/Func_2__ctor_m2046779456_RuntimeMethod_var);
+		Column_t1357940583 * L_7 = Enumerable_FirstOrDefault_TisColumn_t1357940583_m1244305018(NULL /*static, unused*/, (RuntimeObject*)(RuntimeObject*)L_3, L_6, /*hidden argument*/Enumerable_FirstOrDefault_TisColumn_t1357940583_m1244305018_RuntimeMethod_var);
+		V_1 = L_7;
+		Column_t1357940583 * L_8 = V_1;
+		return L_8;
+	}
+}
+// SQLite4Unity3d.TableMapping/Column SQLite4Unity3d.TableMapping::FindColumn(System.String)
+extern "C" IL2CPP_METHOD_ATTR Column_t1357940583 * TableMapping_FindColumn_m3777443186 (TableMapping_t2276399492 * __this, String_t* ___columnName0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (TableMapping_FindColumn_m3777443186_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CFindColumnU3Ec__AnonStorey1_t4099938701 * V_0 = NULL;
+	Column_t1357940583 * V_1 = NULL;
+	{
+		U3CFindColumnU3Ec__AnonStorey1_t4099938701 * L_0 = (U3CFindColumnU3Ec__AnonStorey1_t4099938701 *)il2cpp_codegen_object_new(U3CFindColumnU3Ec__AnonStorey1_t4099938701_il2cpp_TypeInfo_var);
+		U3CFindColumnU3Ec__AnonStorey1__ctor_m4279429018(L_0, /*hidden argument*/NULL);
+		V_0 = L_0;
+		U3CFindColumnU3Ec__AnonStorey1_t4099938701 * L_1 = V_0;
+		String_t* L_2 = ___columnName0;
+		NullCheck(L_1);
+		L_1->set_columnName_0(L_2);
+		ColumnU5BU5D_t4060676894* L_3 = TableMapping_get_Columns_m2283845646(__this, /*hidden argument*/NULL);
+		U3CFindColumnU3Ec__AnonStorey1_t4099938701 * L_4 = V_0;
+		intptr_t L_5 = (intptr_t)U3CFindColumnU3Ec__AnonStorey1_U3CU3Em__0_m3789328762_RuntimeMethod_var;
+		Func_2_t681049744 * L_6 = (Func_2_t681049744 *)il2cpp_codegen_object_new(Func_2_t681049744_il2cpp_TypeInfo_var);
+		Func_2__ctor_m2046779456(L_6, L_4, L_5, /*hidden argument*/Func_2__ctor_m2046779456_RuntimeMethod_var);
+		Column_t1357940583 * L_7 = Enumerable_FirstOrDefault_TisColumn_t1357940583_m1244305018(NULL /*static, unused*/, (RuntimeObject*)(RuntimeObject*)L_3, L_6, /*hidden argument*/Enumerable_FirstOrDefault_TisColumn_t1357940583_m1244305018_RuntimeMethod_var);
+		V_1 = L_7;
+		Column_t1357940583 * L_8 = V_1;
+		return L_8;
+	}
+}
+// SQLite4Unity3d.PreparedSqlLiteInsertCommand SQLite4Unity3d.TableMapping::GetInsertCommand(SQLite4Unity3d.SQLiteConnection,System.String)
+extern "C" IL2CPP_METHOD_ATTR PreparedSqlLiteInsertCommand_t994658783 * TableMapping_GetInsertCommand_m2933871919 (TableMapping_t2276399492 * __this, SQLiteConnection_t3070079188 * ___conn0, String_t* ___extra1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (TableMapping_GetInsertCommand_m2933871919_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		PreparedSqlLiteInsertCommand_t994658783 * L_0 = __this->get__insertCommand_9();
+		if (L_0)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		SQLiteConnection_t3070079188 * L_1 = ___conn0;
+		String_t* L_2 = ___extra1;
+		PreparedSqlLiteInsertCommand_t994658783 * L_3 = TableMapping_CreateInsertCommand_m3040181227(__this, L_1, L_2, /*hidden argument*/NULL);
+		__this->set__insertCommand_9(L_3);
+		String_t* L_4 = ___extra1;
+		__this->set__insertCommandExtra_10(L_4);
+		goto IL_0056;
+	}
+
+IL_0025:
+	{
+		String_t* L_5 = __this->get__insertCommandExtra_10();
+		String_t* L_6 = ___extra1;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_7 = String_op_Inequality_m215368492(NULL /*static, unused*/, L_5, L_6, /*hidden argument*/NULL);
+		if (!L_7)
+		{
+			goto IL_0056;
+		}
+	}
+	{
+		PreparedSqlLiteInsertCommand_t994658783 * L_8 = __this->get__insertCommand_9();
+		NullCheck(L_8);
+		PreparedSqlLiteInsertCommand_Dispose_m3430535342(L_8, /*hidden argument*/NULL);
+		SQLiteConnection_t3070079188 * L_9 = ___conn0;
+		String_t* L_10 = ___extra1;
+		PreparedSqlLiteInsertCommand_t994658783 * L_11 = TableMapping_CreateInsertCommand_m3040181227(__this, L_9, L_10, /*hidden argument*/NULL);
+		__this->set__insertCommand_9(L_11);
+		String_t* L_12 = ___extra1;
+		__this->set__insertCommandExtra_10(L_12);
+	}
+
+IL_0056:
+	{
+		PreparedSqlLiteInsertCommand_t994658783 * L_13 = __this->get__insertCommand_9();
+		return L_13;
+	}
+}
+// SQLite4Unity3d.PreparedSqlLiteInsertCommand SQLite4Unity3d.TableMapping::CreateInsertCommand(SQLite4Unity3d.SQLiteConnection,System.String)
+extern "C" IL2CPP_METHOD_ATTR PreparedSqlLiteInsertCommand_t994658783 * TableMapping_CreateInsertCommand_m3040181227 (TableMapping_t2276399492 * __this, SQLiteConnection_t3070079188 * ___conn0, String_t* ___extra1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (TableMapping_CreateInsertCommand_m3040181227_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ColumnU5BU5D_t4060676894* V_0 = NULL;
+	String_t* V_1 = NULL;
+	bool V_2 = false;
+	PreparedSqlLiteInsertCommand_t994658783 * V_3 = NULL;
+	ColumnU5BU5D_t4060676894* G_B8_0 = NULL;
+	String_t* G_B8_1 = NULL;
+	int32_t G_B8_2 = 0;
+	ObjectU5BU5D_t2843939325* G_B8_3 = NULL;
+	ObjectU5BU5D_t2843939325* G_B8_4 = NULL;
+	String_t* G_B8_5 = NULL;
+	ColumnU5BU5D_t4060676894* G_B7_0 = NULL;
+	String_t* G_B7_1 = NULL;
+	int32_t G_B7_2 = 0;
+	ObjectU5BU5D_t2843939325* G_B7_3 = NULL;
+	ObjectU5BU5D_t2843939325* G_B7_4 = NULL;
+	String_t* G_B7_5 = NULL;
+	ColumnU5BU5D_t4060676894* G_B10_0 = NULL;
+	String_t* G_B10_1 = NULL;
+	int32_t G_B10_2 = 0;
+	ObjectU5BU5D_t2843939325* G_B10_3 = NULL;
+	ObjectU5BU5D_t2843939325* G_B10_4 = NULL;
+	String_t* G_B10_5 = NULL;
+	ColumnU5BU5D_t4060676894* G_B9_0 = NULL;
+	String_t* G_B9_1 = NULL;
+	int32_t G_B9_2 = 0;
+	ObjectU5BU5D_t2843939325* G_B9_3 = NULL;
+	ObjectU5BU5D_t2843939325* G_B9_4 = NULL;
+	String_t* G_B9_5 = NULL;
+	{
+		ColumnU5BU5D_t4060676894* L_0 = TableMapping_get_InsertColumns_m899458969(__this, /*hidden argument*/NULL);
+		V_0 = L_0;
+		ColumnU5BU5D_t4060676894* L_1 = V_0;
+		bool L_2 = Enumerable_Any_TisColumn_t1357940583_m3531908650(NULL /*static, unused*/, (RuntimeObject*)(RuntimeObject*)L_1, /*hidden argument*/Enumerable_Any_TisColumn_t1357940583_m3531908650_RuntimeMethod_var);
+		if (L_2)
+		{
+			goto IL_004c;
+		}
+	}
+	{
+		ColumnU5BU5D_t4060676894* L_3 = TableMapping_get_Columns_m2283845646(__this, /*hidden argument*/NULL);
+		int32_t L_4 = Enumerable_Count_TisColumn_t1357940583_m1970071452(NULL /*static, unused*/, (RuntimeObject*)(RuntimeObject*)L_3, /*hidden argument*/Enumerable_Count_TisColumn_t1357940583_m1970071452_RuntimeMethod_var);
+		if ((!(((uint32_t)L_4) == ((uint32_t)1))))
+		{
+			goto IL_004c;
+		}
+	}
+	{
+		ColumnU5BU5D_t4060676894* L_5 = TableMapping_get_Columns_m2283845646(__this, /*hidden argument*/NULL);
+		NullCheck(L_5);
+		int32_t L_6 = 0;
+		Column_t1357940583 * L_7 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
+		NullCheck(L_7);
+		bool L_8 = Column_get_IsAutoInc_m3625158064(L_7, /*hidden argument*/NULL);
+		if (!L_8)
+		{
+			goto IL_004c;
+		}
+	}
+	{
+		String_t* L_9 = TableMapping_get_TableName_m271466374(__this, /*hidden argument*/NULL);
+		String_t* L_10 = ___extra1;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_11 = String_Format_m2556382932(NULL /*static, unused*/, _stringLiteral259320604, L_9, L_10, /*hidden argument*/NULL);
+		V_1 = L_11;
+		goto IL_00f1;
+	}
+
+IL_004c:
+	{
+		String_t* L_12 = ___extra1;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		int32_t L_13 = String_Compare_m3203413707(NULL /*static, unused*/, L_12, _stringLiteral1606174207, 5, /*hidden argument*/NULL);
+		V_2 = (bool)((((int32_t)L_13) == ((int32_t)0))? 1 : 0);
+		bool L_14 = V_2;
+		if (!L_14)
+		{
+			goto IL_0069;
+		}
+	}
+	{
+		ColumnU5BU5D_t4060676894* L_15 = TableMapping_get_InsertOrReplaceColumns_m298127152(__this, /*hidden argument*/NULL);
+		V_0 = L_15;
+	}
+
+IL_0069:
+	{
+		ObjectU5BU5D_t2843939325* L_16 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)4);
+		ObjectU5BU5D_t2843939325* L_17 = L_16;
+		String_t* L_18 = TableMapping_get_TableName_m271466374(__this, /*hidden argument*/NULL);
+		NullCheck(L_17);
+		ArrayElementTypeCheck (L_17, L_18);
+		(L_17)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_18);
+		ObjectU5BU5D_t2843939325* L_19 = L_17;
+		ColumnU5BU5D_t4060676894* L_20 = V_0;
+		Func_2_t2431212468 * L_21 = ((TableMapping_t2276399492_StaticFields*)il2cpp_codegen_static_fields_for(TableMapping_t2276399492_il2cpp_TypeInfo_var))->get_U3CU3Ef__amU24cache1_12();
+		G_B7_0 = L_20;
+		G_B7_1 = _stringLiteral3452614532;
+		G_B7_2 = 1;
+		G_B7_3 = L_19;
+		G_B7_4 = L_19;
+		G_B7_5 = _stringLiteral1234799759;
+		if (L_21)
+		{
+			G_B8_0 = L_20;
+			G_B8_1 = _stringLiteral3452614532;
+			G_B8_2 = 1;
+			G_B8_3 = L_19;
+			G_B8_4 = L_19;
+			G_B8_5 = _stringLiteral1234799759;
+			goto IL_009d;
+		}
+	}
+	{
+		intptr_t L_22 = (intptr_t)TableMapping_U3CCreateInsertCommandU3Em__1_m1652305147_RuntimeMethod_var;
+		Func_2_t2431212468 * L_23 = (Func_2_t2431212468 *)il2cpp_codegen_object_new(Func_2_t2431212468_il2cpp_TypeInfo_var);
+		Func_2__ctor_m492011138(L_23, NULL, L_22, /*hidden argument*/Func_2__ctor_m492011138_RuntimeMethod_var);
+		((TableMapping_t2276399492_StaticFields*)il2cpp_codegen_static_fields_for(TableMapping_t2276399492_il2cpp_TypeInfo_var))->set_U3CU3Ef__amU24cache1_12(L_23);
+		G_B8_0 = G_B7_0;
+		G_B8_1 = G_B7_1;
+		G_B8_2 = G_B7_2;
+		G_B8_3 = G_B7_3;
+		G_B8_4 = G_B7_4;
+		G_B8_5 = G_B7_5;
+	}
+
+IL_009d:
+	{
+		Func_2_t2431212468 * L_24 = ((TableMapping_t2276399492_StaticFields*)il2cpp_codegen_static_fields_for(TableMapping_t2276399492_il2cpp_TypeInfo_var))->get_U3CU3Ef__amU24cache1_12();
+		RuntimeObject* L_25 = Enumerable_Select_TisColumn_t1357940583_TisString_t_m3321979519(NULL /*static, unused*/, (RuntimeObject*)(RuntimeObject*)G_B8_0, L_24, /*hidden argument*/Enumerable_Select_TisColumn_t1357940583_TisString_t_m3321979519_RuntimeMethod_var);
+		StringU5BU5D_t1281789340* L_26 = Enumerable_ToArray_TisString_t_m4208096419(NULL /*static, unused*/, L_25, /*hidden argument*/Enumerable_ToArray_TisString_t_m4208096419_RuntimeMethod_var);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_27 = String_Join_m2050845953(NULL /*static, unused*/, G_B8_1, L_26, /*hidden argument*/NULL);
+		NullCheck(G_B8_3);
+		ArrayElementTypeCheck (G_B8_3, L_27);
+		(G_B8_3)->SetAt(static_cast<il2cpp_array_size_t>(G_B8_2), (RuntimeObject *)L_27);
+		ObjectU5BU5D_t2843939325* L_28 = G_B8_4;
+		ColumnU5BU5D_t4060676894* L_29 = V_0;
+		Func_2_t2431212468 * L_30 = ((TableMapping_t2276399492_StaticFields*)il2cpp_codegen_static_fields_for(TableMapping_t2276399492_il2cpp_TypeInfo_var))->get_U3CU3Ef__amU24cache2_13();
+		G_B9_0 = L_29;
+		G_B9_1 = _stringLiteral3452614532;
+		G_B9_2 = 2;
+		G_B9_3 = L_28;
+		G_B9_4 = L_28;
+		G_B9_5 = G_B8_5;
+		if (L_30)
+		{
+			G_B10_0 = L_29;
+			G_B10_1 = _stringLiteral3452614532;
+			G_B10_2 = 2;
+			G_B10_3 = L_28;
+			G_B10_4 = L_28;
+			G_B10_5 = G_B8_5;
+			goto IL_00d2;
+		}
+	}
+	{
+		intptr_t L_31 = (intptr_t)TableMapping_U3CCreateInsertCommandU3Em__2_m1847088434_RuntimeMethod_var;
+		Func_2_t2431212468 * L_32 = (Func_2_t2431212468 *)il2cpp_codegen_object_new(Func_2_t2431212468_il2cpp_TypeInfo_var);
+		Func_2__ctor_m492011138(L_32, NULL, L_31, /*hidden argument*/Func_2__ctor_m492011138_RuntimeMethod_var);
+		((TableMapping_t2276399492_StaticFields*)il2cpp_codegen_static_fields_for(TableMapping_t2276399492_il2cpp_TypeInfo_var))->set_U3CU3Ef__amU24cache2_13(L_32);
+		G_B10_0 = G_B9_0;
+		G_B10_1 = G_B9_1;
+		G_B10_2 = G_B9_2;
+		G_B10_3 = G_B9_3;
+		G_B10_4 = G_B9_4;
+		G_B10_5 = G_B9_5;
+	}
+
+IL_00d2:
+	{
+		Func_2_t2431212468 * L_33 = ((TableMapping_t2276399492_StaticFields*)il2cpp_codegen_static_fields_for(TableMapping_t2276399492_il2cpp_TypeInfo_var))->get_U3CU3Ef__amU24cache2_13();
+		RuntimeObject* L_34 = Enumerable_Select_TisColumn_t1357940583_TisString_t_m3321979519(NULL /*static, unused*/, (RuntimeObject*)(RuntimeObject*)G_B10_0, L_33, /*hidden argument*/Enumerable_Select_TisColumn_t1357940583_TisString_t_m3321979519_RuntimeMethod_var);
+		StringU5BU5D_t1281789340* L_35 = Enumerable_ToArray_TisString_t_m4208096419(NULL /*static, unused*/, L_34, /*hidden argument*/Enumerable_ToArray_TisString_t_m4208096419_RuntimeMethod_var);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_36 = String_Join_m2050845953(NULL /*static, unused*/, G_B10_1, L_35, /*hidden argument*/NULL);
+		NullCheck(G_B10_3);
+		ArrayElementTypeCheck (G_B10_3, L_36);
+		(G_B10_3)->SetAt(static_cast<il2cpp_array_size_t>(G_B10_2), (RuntimeObject *)L_36);
+		ObjectU5BU5D_t2843939325* L_37 = G_B10_4;
+		String_t* L_38 = ___extra1;
+		NullCheck(L_37);
+		ArrayElementTypeCheck (L_37, L_38);
+		(L_37)->SetAt(static_cast<il2cpp_array_size_t>(3), (RuntimeObject *)L_38);
+		String_t* L_39 = String_Format_m630303134(NULL /*static, unused*/, G_B10_5, L_37, /*hidden argument*/NULL);
+		V_1 = L_39;
+	}
+
+IL_00f1:
+	{
+		SQLiteConnection_t3070079188 * L_40 = ___conn0;
+		PreparedSqlLiteInsertCommand_t994658783 * L_41 = (PreparedSqlLiteInsertCommand_t994658783 *)il2cpp_codegen_object_new(PreparedSqlLiteInsertCommand_t994658783_il2cpp_TypeInfo_var);
+		PreparedSqlLiteInsertCommand__ctor_m2520792582(L_41, L_40, /*hidden argument*/NULL);
+		V_3 = L_41;
+		PreparedSqlLiteInsertCommand_t994658783 * L_42 = V_3;
+		String_t* L_43 = V_1;
+		NullCheck(L_42);
+		PreparedSqlLiteInsertCommand_set_CommandText_m1234740154(L_42, L_43, /*hidden argument*/NULL);
+		PreparedSqlLiteInsertCommand_t994658783 * L_44 = V_3;
+		return L_44;
+	}
+}
+// System.Void SQLite4Unity3d.TableMapping::Dispose()
+extern "C" IL2CPP_METHOD_ATTR void TableMapping_Dispose_m3451646384 (TableMapping_t2276399492 * __this, const RuntimeMethod* method)
+{
+	{
+		PreparedSqlLiteInsertCommand_t994658783 * L_0 = __this->get__insertCommand_9();
+		if (!L_0)
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		PreparedSqlLiteInsertCommand_t994658783 * L_1 = __this->get__insertCommand_9();
+		NullCheck(L_1);
+		PreparedSqlLiteInsertCommand_Dispose_m3430535342(L_1, /*hidden argument*/NULL);
+		__this->set__insertCommand_9((PreparedSqlLiteInsertCommand_t994658783 *)NULL);
+	}
+
+IL_001d:
+	{
+		return;
+	}
+}
+// System.Boolean SQLite4Unity3d.TableMapping::<get_InsertColumns>m__0(SQLite4Unity3d.TableMapping/Column)
+extern "C" IL2CPP_METHOD_ATTR bool TableMapping_U3Cget_InsertColumnsU3Em__0_m437155549 (RuntimeObject * __this /* static, unused */, Column_t1357940583 * ___c0, const RuntimeMethod* method)
+{
+	{
+		Column_t1357940583 * L_0 = ___c0;
+		NullCheck(L_0);
+		bool L_1 = Column_get_IsAutoInc_m3625158064(L_0, /*hidden argument*/NULL);
+		return (bool)((((int32_t)L_1) == ((int32_t)0))? 1 : 0);
+	}
+}
+// System.String SQLite4Unity3d.TableMapping::<CreateInsertCommand>m__1(SQLite4Unity3d.TableMapping/Column)
+extern "C" IL2CPP_METHOD_ATTR String_t* TableMapping_U3CCreateInsertCommandU3Em__1_m1652305147 (RuntimeObject * __this /* static, unused */, Column_t1357940583 * ___c0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (TableMapping_U3CCreateInsertCommandU3Em__1_m1652305147_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Column_t1357940583 * L_0 = ___c0;
+		NullCheck(L_0);
+		String_t* L_1 = Column_get_Name_m892990361(L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_2 = String_Concat_m3755062657(NULL /*static, unused*/, _stringLiteral3452614526, L_1, _stringLiteral3452614526, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
+// System.String SQLite4Unity3d.TableMapping::<CreateInsertCommand>m__2(SQLite4Unity3d.TableMapping/Column)
+extern "C" IL2CPP_METHOD_ATTR String_t* TableMapping_U3CCreateInsertCommandU3Em__2_m1847088434 (RuntimeObject * __this /* static, unused */, Column_t1357940583 * ___c0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (TableMapping_U3CCreateInsertCommandU3Em__2_m1847088434_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		return _stringLiteral3452614545;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.TableMapping/<FindColumn>c__AnonStorey1::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void U3CFindColumnU3Ec__AnonStorey1__ctor_m4279429018 (U3CFindColumnU3Ec__AnonStorey1_t4099938701 * __this, const RuntimeMethod* method)
+{
+	{
+		Object__ctor_m297566312(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean SQLite4Unity3d.TableMapping/<FindColumn>c__AnonStorey1::<>m__0(SQLite4Unity3d.TableMapping/Column)
+extern "C" IL2CPP_METHOD_ATTR bool U3CFindColumnU3Ec__AnonStorey1_U3CU3Em__0_m3789328762 (U3CFindColumnU3Ec__AnonStorey1_t4099938701 * __this, Column_t1357940583 * ___c0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (U3CFindColumnU3Ec__AnonStorey1_U3CU3Em__0_m3789328762_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Column_t1357940583 * L_0 = ___c0;
+		NullCheck(L_0);
+		String_t* L_1 = Column_get_Name_m892990361(L_0, /*hidden argument*/NULL);
+		String_t* L_2 = __this->get_columnName_0();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_3 = String_op_Equality_m920492651(NULL /*static, unused*/, L_1, L_2, /*hidden argument*/NULL);
+		return L_3;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.TableMapping/<FindColumnWithPropertyName>c__AnonStorey0::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void U3CFindColumnWithPropertyNameU3Ec__AnonStorey0__ctor_m1797408499 (U3CFindColumnWithPropertyNameU3Ec__AnonStorey0_t3952487827 * __this, const RuntimeMethod* method)
+{
+	{
+		Object__ctor_m297566312(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean SQLite4Unity3d.TableMapping/<FindColumnWithPropertyName>c__AnonStorey0::<>m__0(SQLite4Unity3d.TableMapping/Column)
+extern "C" IL2CPP_METHOD_ATTR bool U3CFindColumnWithPropertyNameU3Ec__AnonStorey0_U3CU3Em__0_m1008898867 (U3CFindColumnWithPropertyNameU3Ec__AnonStorey0_t3952487827 * __this, Column_t1357940583 * ___c0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (U3CFindColumnWithPropertyNameU3Ec__AnonStorey0_U3CU3Em__0_m1008898867_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Column_t1357940583 * L_0 = ___c0;
+		NullCheck(L_0);
+		String_t* L_1 = Column_get_PropertyName_m4271576104(L_0, /*hidden argument*/NULL);
+		String_t* L_2 = __this->get_propertyName_0();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_3 = String_op_Equality_m920492651(NULL /*static, unused*/, L_1, L_2, /*hidden argument*/NULL);
+		return L_3;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.TableMapping/Column::.ctor(System.Reflection.PropertyInfo,SQLite4Unity3d.CreateFlags)
+extern "C" IL2CPP_METHOD_ATTR void Column__ctor_m4159236335 (Column_t1357940583 * __this, PropertyInfo_t * ___prop0, int32_t ___createFlags1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Column__ctor_m4159236335_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ColumnAttribute_t3583764011 * V_0 = NULL;
+	bool V_1 = false;
+	Column_t1357940583 * G_B2_0 = NULL;
+	Column_t1357940583 * G_B1_0 = NULL;
+	String_t* G_B3_0 = NULL;
+	Column_t1357940583 * G_B3_1 = NULL;
+	Type_t * G_B5_0 = NULL;
+	Column_t1357940583 * G_B5_1 = NULL;
+	Type_t * G_B4_0 = NULL;
+	Column_t1357940583 * G_B4_1 = NULL;
+	Column_t1357940583 * G_B10_0 = NULL;
+	Column_t1357940583 * G_B6_0 = NULL;
+	Column_t1357940583 * G_B8_0 = NULL;
+	Column_t1357940583 * G_B7_0 = NULL;
+	int32_t G_B9_0 = 0;
+	Column_t1357940583 * G_B9_1 = NULL;
+	int32_t G_B11_0 = 0;
+	Column_t1357940583 * G_B11_1 = NULL;
+	int32_t G_B15_0 = 0;
+	int32_t G_B17_0 = 0;
+	Column_t1357940583 * G_B19_0 = NULL;
+	Column_t1357940583 * G_B18_0 = NULL;
+	int32_t G_B20_0 = 0;
+	Column_t1357940583 * G_B20_1 = NULL;
+	Column_t1357940583 * G_B22_0 = NULL;
+	Column_t1357940583 * G_B21_0 = NULL;
+	int32_t G_B23_0 = 0;
+	Column_t1357940583 * G_B23_1 = NULL;
+	Column_t1357940583 * G_B30_0 = NULL;
+	Column_t1357940583 * G_B29_0 = NULL;
+	int32_t G_B31_0 = 0;
+	Column_t1357940583 * G_B31_1 = NULL;
+	{
+		Object__ctor_m297566312(__this, /*hidden argument*/NULL);
+		PropertyInfo_t * L_0 = ___prop0;
+		RuntimeTypeHandle_t3027515415  L_1 = { reinterpret_cast<intptr_t> (ColumnAttribute_t3583764011_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_2 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		ObjectU5BU5D_t2843939325* L_3 = VirtFuncInvoker2< ObjectU5BU5D_t2843939325*, Type_t *, bool >::Invoke(13 /* System.Object[] System.Reflection.MemberInfo::GetCustomAttributes(System.Type,System.Boolean) */, L_0, L_2, (bool)1);
+		RuntimeObject * L_4 = Enumerable_FirstOrDefault_TisRuntimeObject_m714693565(NULL /*static, unused*/, (RuntimeObject*)(RuntimeObject*)L_3, /*hidden argument*/Enumerable_FirstOrDefault_TisRuntimeObject_m714693565_RuntimeMethod_var);
+		V_0 = ((ColumnAttribute_t3583764011 *)CastclassClass((RuntimeObject*)L_4, ColumnAttribute_t3583764011_il2cpp_TypeInfo_var));
+		PropertyInfo_t * L_5 = ___prop0;
+		__this->set__prop_0(L_5);
+		ColumnAttribute_t3583764011 * L_6 = V_0;
+		G_B1_0 = __this;
+		if (L_6)
+		{
+			G_B2_0 = __this;
+			goto IL_003b;
+		}
+	}
+	{
+		PropertyInfo_t * L_7 = ___prop0;
+		NullCheck(L_7);
+		String_t* L_8 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_7);
+		G_B3_0 = L_8;
+		G_B3_1 = G_B1_0;
+		goto IL_0041;
+	}
+
+IL_003b:
+	{
+		ColumnAttribute_t3583764011 * L_9 = V_0;
+		NullCheck(L_9);
+		String_t* L_10 = ColumnAttribute_get_Name_m1252734108(L_9, /*hidden argument*/NULL);
+		G_B3_0 = L_10;
+		G_B3_1 = G_B2_0;
+	}
+
+IL_0041:
+	{
+		NullCheck(G_B3_1);
+		Column_set_Name_m3544316257(G_B3_1, G_B3_0, /*hidden argument*/NULL);
+		PropertyInfo_t * L_11 = ___prop0;
+		NullCheck(L_11);
+		Type_t * L_12 = VirtFuncInvoker0< Type_t * >::Invoke(17 /* System.Type System.Reflection.PropertyInfo::get_PropertyType() */, L_11);
+		Type_t * L_13 = Nullable_GetUnderlyingType_m3905033790(NULL /*static, unused*/, L_12, /*hidden argument*/NULL);
+		Type_t * L_14 = L_13;
+		G_B4_0 = L_14;
+		G_B4_1 = __this;
+		if (L_14)
+		{
+			G_B5_0 = L_14;
+			G_B5_1 = __this;
+			goto IL_005f;
+		}
+	}
+	{
+		PropertyInfo_t * L_15 = ___prop0;
+		NullCheck(L_15);
+		Type_t * L_16 = VirtFuncInvoker0< Type_t * >::Invoke(17 /* System.Type System.Reflection.PropertyInfo::get_PropertyType() */, L_15);
+		G_B5_0 = L_16;
+		G_B5_1 = G_B4_1;
+	}
+
+IL_005f:
+	{
+		NullCheck(G_B5_1);
+		Column_set_ColumnType_m3888550940(G_B5_1, G_B5_0, /*hidden argument*/NULL);
+		PropertyInfo_t * L_17 = ___prop0;
+		String_t* L_18 = Orm_Collation_m2000210213(NULL /*static, unused*/, L_17, /*hidden argument*/NULL);
+		Column_set_Collation_m3153081185(__this, L_18, /*hidden argument*/NULL);
+		PropertyInfo_t * L_19 = ___prop0;
+		bool L_20 = Orm_IsPK_m1915115011(NULL /*static, unused*/, L_19, /*hidden argument*/NULL);
+		G_B6_0 = __this;
+		if (L_20)
+		{
+			G_B10_0 = __this;
+			goto IL_009e;
+		}
+	}
+	{
+		int32_t L_21 = ___createFlags1;
+		G_B7_0 = G_B6_0;
+		if ((!(((uint32_t)((int32_t)((int32_t)L_21&(int32_t)1))) == ((uint32_t)1))))
+		{
+			G_B8_0 = G_B6_0;
+			goto IL_009b;
+		}
+	}
+	{
+		PropertyInfo_t * L_22 = ___prop0;
+		NullCheck(L_22);
+		String_t* L_23 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_22);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		int32_t L_24 = String_Compare_m3203413707(NULL /*static, unused*/, L_23, _stringLiteral3454449639, 5, /*hidden argument*/NULL);
+		G_B9_0 = ((((int32_t)L_24) == ((int32_t)0))? 1 : 0);
+		G_B9_1 = G_B7_0;
+		goto IL_009c;
+	}
+
+IL_009b:
+	{
+		G_B9_0 = 0;
+		G_B9_1 = G_B8_0;
+	}
+
+IL_009c:
+	{
+		G_B11_0 = G_B9_0;
+		G_B11_1 = G_B9_1;
+		goto IL_009f;
+	}
+
+IL_009e:
+	{
+		G_B11_0 = 1;
+		G_B11_1 = G_B10_0;
+	}
+
+IL_009f:
+	{
+		NullCheck(G_B11_1);
+		Column_set_IsPK_m4119222481(G_B11_1, (bool)G_B11_0, /*hidden argument*/NULL);
+		PropertyInfo_t * L_25 = ___prop0;
+		bool L_26 = Orm_IsAutoInc_m1378547954(NULL /*static, unused*/, L_25, /*hidden argument*/NULL);
+		if (L_26)
+		{
+			goto IL_00c5;
+		}
+	}
+	{
+		bool L_27 = Column_get_IsPK_m2082193636(__this, /*hidden argument*/NULL);
+		if (!L_27)
+		{
+			goto IL_00c2;
+		}
+	}
+	{
+		int32_t L_28 = ___createFlags1;
+		G_B15_0 = ((((int32_t)((int32_t)((int32_t)L_28&(int32_t)4))) == ((int32_t)4))? 1 : 0);
+		goto IL_00c3;
+	}
+
+IL_00c2:
+	{
+		G_B15_0 = 0;
+	}
+
+IL_00c3:
+	{
+		G_B17_0 = G_B15_0;
+		goto IL_00c6;
+	}
+
+IL_00c5:
+	{
+		G_B17_0 = 1;
+	}
+
+IL_00c6:
+	{
+		V_1 = (bool)G_B17_0;
+		bool L_29 = V_1;
+		G_B18_0 = __this;
+		if (!L_29)
+		{
+			G_B19_0 = __this;
+			goto IL_00e2;
+		}
+	}
+	{
+		Type_t * L_30 = Column_get_ColumnType_m2188313396(__this, /*hidden argument*/NULL);
+		RuntimeTypeHandle_t3027515415  L_31 = { reinterpret_cast<intptr_t> (Guid_t_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_32 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_31, /*hidden argument*/NULL);
+		G_B20_0 = ((((RuntimeObject*)(Type_t *)L_30) == ((RuntimeObject*)(Type_t *)L_32))? 1 : 0);
+		G_B20_1 = G_B18_0;
+		goto IL_00e3;
+	}
+
+IL_00e2:
+	{
+		G_B20_0 = 0;
+		G_B20_1 = G_B19_0;
+	}
+
+IL_00e3:
+	{
+		NullCheck(G_B20_1);
+		Column_set_IsAutoGuid_m3143679467(G_B20_1, (bool)G_B20_0, /*hidden argument*/NULL);
+		bool L_33 = V_1;
+		G_B21_0 = __this;
+		if (!L_33)
+		{
+			G_B22_0 = __this;
+			goto IL_00fa;
+		}
+	}
+	{
+		bool L_34 = Column_get_IsAutoGuid_m1239656193(__this, /*hidden argument*/NULL);
+		G_B23_0 = ((((int32_t)L_34) == ((int32_t)0))? 1 : 0);
+		G_B23_1 = G_B21_0;
+		goto IL_00fb;
+	}
+
+IL_00fa:
+	{
+		G_B23_0 = 0;
+		G_B23_1 = G_B22_0;
+	}
+
+IL_00fb:
+	{
+		NullCheck(G_B23_1);
+		Column_set_IsAutoInc_m2623478080(G_B23_1, (bool)G_B23_0, /*hidden argument*/NULL);
+		PropertyInfo_t * L_35 = ___prop0;
+		RuntimeObject* L_36 = Orm_GetIndices_m2972767871(NULL /*static, unused*/, L_35, /*hidden argument*/NULL);
+		Column_set_Indices_m1885054196(__this, L_36, /*hidden argument*/NULL);
+		RuntimeObject* L_37 = Column_get_Indices_m933483296(__this, /*hidden argument*/NULL);
+		bool L_38 = Enumerable_Any_TisIndexedAttribute_t384353508_m3570228897(NULL /*static, unused*/, L_37, /*hidden argument*/Enumerable_Any_TisIndexedAttribute_t384353508_m3570228897_RuntimeMethod_var);
+		if (L_38)
+		{
+			goto IL_015a;
+		}
+	}
+	{
+		bool L_39 = Column_get_IsPK_m2082193636(__this, /*hidden argument*/NULL);
+		if (L_39)
+		{
+			goto IL_015a;
+		}
+	}
+	{
+		int32_t L_40 = ___createFlags1;
+		if ((!(((uint32_t)((int32_t)((int32_t)L_40&(int32_t)2))) == ((uint32_t)2))))
+		{
+			goto IL_015a;
+		}
+	}
+	{
+		String_t* L_41 = Column_get_Name_m892990361(__this, /*hidden argument*/NULL);
+		NullCheck(L_41);
+		bool L_42 = String_EndsWith_m2637493491(L_41, _stringLiteral3454449639, 5, /*hidden argument*/NULL);
+		if (!L_42)
+		{
+			goto IL_015a;
+		}
+	}
+	{
+		IndexedAttributeU5BU5D_t476100365* L_43 = (IndexedAttributeU5BU5D_t476100365*)SZArrayNew(IndexedAttributeU5BU5D_t476100365_il2cpp_TypeInfo_var, (uint32_t)1);
+		IndexedAttributeU5BU5D_t476100365* L_44 = L_43;
+		IndexedAttribute_t384353508 * L_45 = (IndexedAttribute_t384353508 *)il2cpp_codegen_object_new(IndexedAttribute_t384353508_il2cpp_TypeInfo_var);
+		IndexedAttribute__ctor_m1705656832(L_45, /*hidden argument*/NULL);
+		NullCheck(L_44);
+		ArrayElementTypeCheck (L_44, L_45);
+		(L_44)->SetAt(static_cast<il2cpp_array_size_t>(0), (IndexedAttribute_t384353508 *)L_45);
+		Column_set_Indices_m1885054196(__this, (RuntimeObject*)(RuntimeObject*)L_44, /*hidden argument*/NULL);
+	}
+
+IL_015a:
+	{
+		bool L_46 = Column_get_IsPK_m2082193636(__this, /*hidden argument*/NULL);
+		G_B29_0 = __this;
+		if (L_46)
+		{
+			G_B30_0 = __this;
+			goto IL_016e;
+		}
+	}
+	{
+		PropertyInfo_t * L_47 = ___prop0;
+		bool L_48 = Orm_IsMarkedNotNull_m3213728455(NULL /*static, unused*/, L_47, /*hidden argument*/NULL);
+		G_B31_0 = ((int32_t)(L_48));
+		G_B31_1 = G_B29_0;
+		goto IL_016f;
+	}
+
+IL_016e:
+	{
+		G_B31_0 = 1;
+		G_B31_1 = G_B30_0;
+	}
+
+IL_016f:
+	{
+		NullCheck(G_B31_1);
+		Column_set_IsNullable_m3568119008(G_B31_1, (bool)((((int32_t)G_B31_0) == ((int32_t)0))? 1 : 0), /*hidden argument*/NULL);
+		PropertyInfo_t * L_49 = ___prop0;
+		Nullable_1_t378540539  L_50 = Orm_MaxStringLength_m1394593579(NULL /*static, unused*/, L_49, /*hidden argument*/NULL);
+		Column_set_MaxStringLength_m3353773535(__this, L_50, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.String SQLite4Unity3d.TableMapping/Column::get_Name()
+extern "C" IL2CPP_METHOD_ATTR String_t* Column_get_Name_m892990361 (Column_t1357940583 * __this, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = __this->get_U3CNameU3Ek__BackingField_1();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.TableMapping/Column::set_Name(System.String)
+extern "C" IL2CPP_METHOD_ATTR void Column_set_Name_m3544316257 (Column_t1357940583 * __this, String_t* ___value0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->set_U3CNameU3Ek__BackingField_1(L_0);
+		return;
+	}
+}
+// System.String SQLite4Unity3d.TableMapping/Column::get_PropertyName()
+extern "C" IL2CPP_METHOD_ATTR String_t* Column_get_PropertyName_m4271576104 (Column_t1357940583 * __this, const RuntimeMethod* method)
+{
+	{
+		PropertyInfo_t * L_0 = __this->get__prop_0();
+		NullCheck(L_0);
+		String_t* L_1 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
+		return L_1;
+	}
+}
+// System.Type SQLite4Unity3d.TableMapping/Column::get_ColumnType()
+extern "C" IL2CPP_METHOD_ATTR Type_t * Column_get_ColumnType_m2188313396 (Column_t1357940583 * __this, const RuntimeMethod* method)
+{
+	{
+		Type_t * L_0 = __this->get_U3CColumnTypeU3Ek__BackingField_2();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.TableMapping/Column::set_ColumnType(System.Type)
+extern "C" IL2CPP_METHOD_ATTR void Column_set_ColumnType_m3888550940 (Column_t1357940583 * __this, Type_t * ___value0, const RuntimeMethod* method)
+{
+	{
+		Type_t * L_0 = ___value0;
+		__this->set_U3CColumnTypeU3Ek__BackingField_2(L_0);
+		return;
+	}
+}
+// System.String SQLite4Unity3d.TableMapping/Column::get_Collation()
+extern "C" IL2CPP_METHOD_ATTR String_t* Column_get_Collation_m3582061121 (Column_t1357940583 * __this, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = __this->get_U3CCollationU3Ek__BackingField_3();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.TableMapping/Column::set_Collation(System.String)
+extern "C" IL2CPP_METHOD_ATTR void Column_set_Collation_m3153081185 (Column_t1357940583 * __this, String_t* ___value0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->set_U3CCollationU3Ek__BackingField_3(L_0);
+		return;
+	}
+}
+// System.Boolean SQLite4Unity3d.TableMapping/Column::get_IsAutoInc()
+extern "C" IL2CPP_METHOD_ATTR bool Column_get_IsAutoInc_m3625158064 (Column_t1357940583 * __this, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = __this->get_U3CIsAutoIncU3Ek__BackingField_4();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.TableMapping/Column::set_IsAutoInc(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void Column_set_IsAutoInc_m2623478080 (Column_t1357940583 * __this, bool ___value0, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = ___value0;
+		__this->set_U3CIsAutoIncU3Ek__BackingField_4(L_0);
+		return;
+	}
+}
+// System.Boolean SQLite4Unity3d.TableMapping/Column::get_IsAutoGuid()
+extern "C" IL2CPP_METHOD_ATTR bool Column_get_IsAutoGuid_m1239656193 (Column_t1357940583 * __this, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = __this->get_U3CIsAutoGuidU3Ek__BackingField_5();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.TableMapping/Column::set_IsAutoGuid(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void Column_set_IsAutoGuid_m3143679467 (Column_t1357940583 * __this, bool ___value0, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = ___value0;
+		__this->set_U3CIsAutoGuidU3Ek__BackingField_5(L_0);
+		return;
+	}
+}
+// System.Boolean SQLite4Unity3d.TableMapping/Column::get_IsPK()
+extern "C" IL2CPP_METHOD_ATTR bool Column_get_IsPK_m2082193636 (Column_t1357940583 * __this, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = __this->get_U3CIsPKU3Ek__BackingField_6();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.TableMapping/Column::set_IsPK(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void Column_set_IsPK_m4119222481 (Column_t1357940583 * __this, bool ___value0, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = ___value0;
+		__this->set_U3CIsPKU3Ek__BackingField_6(L_0);
+		return;
+	}
+}
+// System.Collections.Generic.IEnumerable`1<SQLite4Unity3d.IndexedAttribute> SQLite4Unity3d.TableMapping/Column::get_Indices()
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject* Column_get_Indices_m933483296 (Column_t1357940583 * __this, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject* L_0 = __this->get_U3CIndicesU3Ek__BackingField_7();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.TableMapping/Column::set_Indices(System.Collections.Generic.IEnumerable`1<SQLite4Unity3d.IndexedAttribute>)
+extern "C" IL2CPP_METHOD_ATTR void Column_set_Indices_m1885054196 (Column_t1357940583 * __this, RuntimeObject* ___value0, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject* L_0 = ___value0;
+		__this->set_U3CIndicesU3Ek__BackingField_7(L_0);
+		return;
+	}
+}
+// System.Boolean SQLite4Unity3d.TableMapping/Column::get_IsNullable()
+extern "C" IL2CPP_METHOD_ATTR bool Column_get_IsNullable_m280325304 (Column_t1357940583 * __this, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = __this->get_U3CIsNullableU3Ek__BackingField_8();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.TableMapping/Column::set_IsNullable(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void Column_set_IsNullable_m3568119008 (Column_t1357940583 * __this, bool ___value0, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = ___value0;
+		__this->set_U3CIsNullableU3Ek__BackingField_8(L_0);
+		return;
+	}
+}
+// System.Nullable`1<System.Int32> SQLite4Unity3d.TableMapping/Column::get_MaxStringLength()
+extern "C" IL2CPP_METHOD_ATTR Nullable_1_t378540539  Column_get_MaxStringLength_m2359220591 (Column_t1357940583 * __this, const RuntimeMethod* method)
+{
+	{
+		Nullable_1_t378540539  L_0 = __this->get_U3CMaxStringLengthU3Ek__BackingField_9();
+		return L_0;
+	}
+}
+// System.Void SQLite4Unity3d.TableMapping/Column::set_MaxStringLength(System.Nullable`1<System.Int32>)
+extern "C" IL2CPP_METHOD_ATTR void Column_set_MaxStringLength_m3353773535 (Column_t1357940583 * __this, Nullable_1_t378540539  ___value0, const RuntimeMethod* method)
+{
+	{
+		Nullable_1_t378540539  L_0 = ___value0;
+		__this->set_U3CMaxStringLengthU3Ek__BackingField_9(L_0);
+		return;
+	}
+}
+// System.Void SQLite4Unity3d.TableMapping/Column::SetValue(System.Object,System.Object)
+extern "C" IL2CPP_METHOD_ATTR void Column_SetValue_m789064993 (Column_t1357940583 * __this, RuntimeObject * ___obj0, RuntimeObject * ___val1, const RuntimeMethod* method)
+{
+	{
+		PropertyInfo_t * L_0 = __this->get__prop_0();
+		RuntimeObject * L_1 = ___obj0;
+		RuntimeObject * L_2 = ___val1;
+		NullCheck(L_0);
+		VirtActionInvoker3< RuntimeObject *, RuntimeObject *, ObjectU5BU5D_t2843939325* >::Invoke(25 /* System.Void System.Reflection.PropertyInfo::SetValue(System.Object,System.Object,System.Object[]) */, L_0, L_1, L_2, (ObjectU5BU5D_t2843939325*)(ObjectU5BU5D_t2843939325*)NULL);
+		return;
+	}
+}
+// System.Object SQLite4Unity3d.TableMapping/Column::GetValue(System.Object)
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Column_GetValue_m3743332072 (Column_t1357940583 * __this, RuntimeObject * ___obj0, const RuntimeMethod* method)
+{
+	{
+		PropertyInfo_t * L_0 = __this->get__prop_0();
+		RuntimeObject * L_1 = ___obj0;
+		NullCheck(L_0);
+		RuntimeObject * L_2 = VirtFuncInvoker2< RuntimeObject *, RuntimeObject *, ObjectU5BU5D_t2843939325* >::Invoke(23 /* System.Object System.Reflection.PropertyInfo::GetValue(System.Object,System.Object[]) */, L_0, L_1, (ObjectU5BU5D_t2843939325*)(ObjectU5BU5D_t2843939325*)NULL);
+		return L_2;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SQLite4Unity3d.UniqueAttribute::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void UniqueAttribute__ctor_m1426200019 (UniqueAttribute_t47190802 * __this, const RuntimeMethod* method)
+{
+	{
+		IndexedAttribute__ctor_m1705656832(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean SQLite4Unity3d.UniqueAttribute::get_Unique()
+extern "C" IL2CPP_METHOD_ATTR bool UniqueAttribute_get_Unique_m387719978 (UniqueAttribute_t47190802 * __this, const RuntimeMethod* method)
+{
+	{
+		return (bool)1;
+	}
+}
+// System.Void SQLite4Unity3d.UniqueAttribute::set_Unique(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void UniqueAttribute_set_Unique_m3938494807 (UniqueAttribute_t47190802 * __this, bool ___value0, const RuntimeMethod* method)
+{
+	{
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // System.Void packt.FoodyGO.Controllers.CatchSceneController::.ctor()
 extern "C" IL2CPP_METHOD_ATTR void CatchSceneController__ctor_m2090299183 (CatchSceneController_t4077466895 * __this, const RuntimeMethod* method)
 {
 	{
 		MonoBehaviour__ctor_m1579109191(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void packt.FoodyGO.Controllers.CatchSceneController::Start()
+extern "C" IL2CPP_METHOD_ATTR void CatchSceneController_Start_m3089443235 (CatchSceneController_t4077466895 * __this, const RuntimeMethod* method)
+{
+	{
 		return;
 	}
 }
@@ -20045,8 +36921,199 @@ IL_002b:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void packt.FoodyGO.Database.DatabaseVersion::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void DatabaseVersion__ctor_m3835686796 (DatabaseVersion_t3084738200 * __this, const RuntimeMethod* method)
+{
+	{
+		Object__ctor_m297566312(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.String packt.FoodyGO.Database.DatabaseVersion::get_Version()
+extern "C" IL2CPP_METHOD_ATTR String_t* DatabaseVersion_get_Version_m2461075180 (DatabaseVersion_t3084738200 * __this, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = __this->get_U3CVersionU3Ek__BackingField_0();
+		return L_0;
+	}
+}
+// System.Void packt.FoodyGO.Database.DatabaseVersion::set_Version(System.String)
+extern "C" IL2CPP_METHOD_ATTR void DatabaseVersion_set_Version_m3782741465 (DatabaseVersion_t3084738200 * __this, String_t* ___value0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->set_U3CVersionU3Ek__BackingField_0(L_0);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // System.Void packt.FoodyGO.Database.Monster::.ctor()
 extern "C" IL2CPP_METHOD_ATTR void Monster__ctor_m3815700999 (Monster_t1773341114 * __this, const RuntimeMethod* method)
+{
+	{
+		Object__ctor_m297566312(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Int32 packt.FoodyGO.Database.Monster::get_Id()
+extern "C" IL2CPP_METHOD_ATTR int32_t Monster_get_Id_m3591870569 (Monster_t1773341114 * __this, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = __this->get_U3CIdU3Ek__BackingField_0();
+		return L_0;
+	}
+}
+// System.Void packt.FoodyGO.Database.Monster::set_Id(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void Monster_set_Id_m1745329057 (Monster_t1773341114 * __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___value0;
+		__this->set_U3CIdU3Ek__BackingField_0(L_0);
+		return;
+	}
+}
+// System.String packt.FoodyGO.Database.Monster::get_Name()
+extern "C" IL2CPP_METHOD_ATTR String_t* Monster_get_Name_m1651679322 (Monster_t1773341114 * __this, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = __this->get_U3CNameU3Ek__BackingField_1();
+		return L_0;
+	}
+}
+// System.Void packt.FoodyGO.Database.Monster::set_Name(System.String)
+extern "C" IL2CPP_METHOD_ATTR void Monster_set_Name_m288663463 (Monster_t1773341114 * __this, String_t* ___value0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->set_U3CNameU3Ek__BackingField_1(L_0);
+		return;
+	}
+}
+// System.Int32 packt.FoodyGO.Database.Monster::get_Level()
+extern "C" IL2CPP_METHOD_ATTR int32_t Monster_get_Level_m793340504 (Monster_t1773341114 * __this, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = __this->get_U3CLevelU3Ek__BackingField_2();
+		return L_0;
+	}
+}
+// System.Void packt.FoodyGO.Database.Monster::set_Level(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void Monster_set_Level_m3399875111 (Monster_t1773341114 * __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___value0;
+		__this->set_U3CLevelU3Ek__BackingField_2(L_0);
+		return;
+	}
+}
+// System.Int32 packt.FoodyGO.Database.Monster::get_Power()
+extern "C" IL2CPP_METHOD_ATTR int32_t Monster_get_Power_m2475516986 (Monster_t1773341114 * __this, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = __this->get_U3CPowerU3Ek__BackingField_3();
+		return L_0;
+	}
+}
+// System.Void packt.FoodyGO.Database.Monster::set_Power(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void Monster_set_Power_m3200394756 (Monster_t1773341114 * __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___value0;
+		__this->set_U3CPowerU3Ek__BackingField_3(L_0);
+		return;
+	}
+}
+// System.String packt.FoodyGO.Database.Monster::get_Skills()
+extern "C" IL2CPP_METHOD_ATTR String_t* Monster_get_Skills_m1288394513 (Monster_t1773341114 * __this, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = __this->get_U3CSkillsU3Ek__BackingField_4();
+		return L_0;
+	}
+}
+// System.Void packt.FoodyGO.Database.Monster::set_Skills(System.String)
+extern "C" IL2CPP_METHOD_ATTR void Monster_set_Skills_m3705665767 (Monster_t1773341114 * __this, String_t* ___value0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->set_U3CSkillsU3Ek__BackingField_4(L_0);
+		return;
+	}
+}
+// System.Double packt.FoodyGO.Database.Monster::get_CaughtTimestamp()
+extern "C" IL2CPP_METHOD_ATTR double Monster_get_CaughtTimestamp_m391251609 (Monster_t1773341114 * __this, const RuntimeMethod* method)
+{
+	{
+		double L_0 = __this->get_U3CCaughtTimestampU3Ek__BackingField_5();
+		return L_0;
+	}
+}
+// System.Void packt.FoodyGO.Database.Monster::set_CaughtTimestamp(System.Double)
+extern "C" IL2CPP_METHOD_ATTR void Monster_set_CaughtTimestamp_m2029288212 (Monster_t1773341114 * __this, double ___value0, const RuntimeMethod* method)
+{
+	{
+		double L_0 = ___value0;
+		__this->set_U3CCaughtTimestampU3Ek__BackingField_5(L_0);
+		return;
+	}
+}
+// System.String packt.FoodyGO.Database.Monster::ToString()
+extern "C" IL2CPP_METHOD_ATTR String_t* Monster_ToString_m2623965871 (Monster_t1773341114 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Monster_ToString_m2623965871_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		ObjectU5BU5D_t2843939325* L_0 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)4);
+		ObjectU5BU5D_t2843939325* L_1 = L_0;
+		String_t* L_2 = Monster_get_Name_m1651679322(__this, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		ArrayElementTypeCheck (L_1, L_2);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_2);
+		ObjectU5BU5D_t2843939325* L_3 = L_1;
+		int32_t L_4 = Monster_get_Level_m793340504(__this, /*hidden argument*/NULL);
+		int32_t L_5 = L_4;
+		RuntimeObject * L_6 = Box(Int32_t2950945753_il2cpp_TypeInfo_var, &L_5);
+		NullCheck(L_3);
+		ArrayElementTypeCheck (L_3, L_6);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject *)L_6);
+		ObjectU5BU5D_t2843939325* L_7 = L_3;
+		int32_t L_8 = Monster_get_Power_m2475516986(__this, /*hidden argument*/NULL);
+		int32_t L_9 = L_8;
+		RuntimeObject * L_10 = Box(Int32_t2950945753_il2cpp_TypeInfo_var, &L_9);
+		NullCheck(L_7);
+		ArrayElementTypeCheck (L_7, L_10);
+		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(2), (RuntimeObject *)L_10);
+		ObjectU5BU5D_t2843939325* L_11 = L_7;
+		String_t* L_12 = Monster_get_Skills_m1288394513(__this, /*hidden argument*/NULL);
+		NullCheck(L_11);
+		ArrayElementTypeCheck (L_11, L_12);
+		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(3), (RuntimeObject *)L_12);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_13 = String_Format_m630303134(NULL /*static, unused*/, _stringLiteral2012523567, L_11, /*hidden argument*/NULL);
+		return L_13;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void packt.FoodyGO.Database.MonsterSpawnLocation::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void MonsterSpawnLocation__ctor_m3958958467 (MonsterSpawnLocation_t266612420 * __this, const RuntimeMethod* method)
 {
 	{
 		Object__ctor_m297566312(__this, /*hidden argument*/NULL);
@@ -21741,7 +38808,7 @@ extern "C" IL2CPP_METHOD_ATTR void CollisionReaction_OnCollisionReaction_m373418
 		Vector3_t3722313464  L_9 = V_2;
 		Quaternion_t2301928331  L_10 = V_1;
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		Transform_t3600365921 * L_11 = Object_Instantiate_TisTransform_t3600365921_m1831857851(NULL /*static, unused*/, L_8, L_9, L_10, /*hidden argument*/Object_Instantiate_TisTransform_t3600365921_m1831857851_RuntimeMethod_var);
+		Transform_t3600365921 * L_11 = Object_Instantiate_TisTransform_t3600365921_m3253087558(NULL /*static, unused*/, L_8, L_9, L_10, /*hidden argument*/Object_Instantiate_TisTransform_t3600365921_m3253087558_RuntimeMethod_var);
 		V_3 = L_11;
 		Transform_t3600365921 * L_12 = V_3;
 		NullCheck(L_12);
@@ -22847,6 +39914,536 @@ extern "C" IL2CPP_METHOD_ATTR void OnRedrawEvent_EndInvoke_m366446419 (OnRedrawE
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void packt.FoodyGO.Services.InventoryService::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void InventoryService__ctor_m2392319503 (InventoryService_t3990436451 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (InventoryService__ctor_m2392319503_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		__this->set_DatabaseName_5(_stringLiteral3501676180);
+		__this->set_DatabaseVersion_6(_stringLiteral311822863);
+		Singleton_1__ctor_m177044237(__this, /*hidden argument*/Singleton_1__ctor_m177044237_RuntimeMethod_var);
+		return;
+	}
+}
+// System.Void packt.FoodyGO.Services.InventoryService::Start()
+extern "C" IL2CPP_METHOD_ATTR void InventoryService_Start_m2942322615 (InventoryService_t3990436451 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (InventoryService_Start_m2942322615_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	String_t* V_1 = NULL;
+	String_t* V_2 = NULL;
+	{
+		String_t* L_0 = Application_get_persistentDataPath_m1428108154(NULL /*static, unused*/, /*hidden argument*/NULL);
+		String_t* L_1 = __this->get_DatabaseName_5();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_2 = String_Format_m2556382932(NULL /*static, unused*/, _stringLiteral246767658, L_0, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		String_t* L_3 = V_0;
+		bool L_4 = File_Exists_m3943585060(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+		if (L_4)
+		{
+			goto IL_0059;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t3317548046_il2cpp_TypeInfo_var);
+		Debug_Log_m4051431634(NULL /*static, unused*/, _stringLiteral2368312492, /*hidden argument*/NULL);
+		String_t* L_5 = Application_get_dataPath_m4232621142(NULL /*static, unused*/, /*hidden argument*/NULL);
+		String_t* L_6 = __this->get_DatabaseName_5();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_7 = String_Concat_m3755062657(NULL /*static, unused*/, L_5, _stringLiteral3972439919, L_6, /*hidden argument*/NULL);
+		V_1 = L_7;
+		String_t* L_8 = V_1;
+		String_t* L_9 = V_0;
+		File_Copy_m497281780(NULL /*static, unused*/, L_8, L_9, /*hidden argument*/NULL);
+		Debug_Log_m4051431634(NULL /*static, unused*/, _stringLiteral1274756140, /*hidden argument*/NULL);
+		__this->set_newDatabase_7((bool)1);
+	}
+
+IL_0059:
+	{
+		String_t* L_10 = V_0;
+		V_2 = L_10;
+		String_t* L_11 = V_2;
+		SQLiteConnection_t3070079188 * L_12 = (SQLiteConnection_t3070079188 *)il2cpp_codegen_object_new(SQLiteConnection_t3070079188_il2cpp_TypeInfo_var);
+		SQLiteConnection__ctor_m593903775(L_12, L_11, 6, (bool)0, /*hidden argument*/NULL);
+		__this->set__connection_8(L_12);
+		String_t* L_13 = V_2;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_14 = String_Concat_m3937257545(NULL /*static, unused*/, _stringLiteral2260534010, L_13, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t3317548046_il2cpp_TypeInfo_var);
+		Debug_Log_m4051431634(NULL /*static, unused*/, L_14, /*hidden argument*/NULL);
+		bool L_15 = __this->get_newDatabase_7();
+		if (!L_15)
+		{
+			goto IL_008f;
+		}
+	}
+	{
+		InventoryService_CreateDB_m2324099992(__this, /*hidden argument*/NULL);
+		goto IL_0095;
+	}
+
+IL_008f:
+	{
+		InventoryService_CheckForUpgrade_m2488230913(__this, /*hidden argument*/NULL);
+	}
+
+IL_0095:
+	{
+		return;
+	}
+}
+// System.Void packt.FoodyGO.Services.InventoryService::CheckForUpgrade()
+extern "C" IL2CPP_METHOD_ATTR void InventoryService_CheckForUpgrade_m2488230913 (InventoryService_t3990436451 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (InventoryService_CheckForUpgrade_m2488230913_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	Exception_t * V_1 = NULL;
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+
+IL_0000:
+	try
+	{ // begin try (depth: 1)
+		{
+			String_t* L_0 = InventoryService_GetDatabaseVersion_m3845499507(__this, /*hidden argument*/NULL);
+			V_0 = L_0;
+			String_t* L_1 = V_0;
+			bool L_2 = InventoryService_CheckDBVersion_m3986741618(__this, L_1, /*hidden argument*/NULL);
+			if (!L_2)
+			{
+				goto IL_0040;
+			}
+		}
+
+IL_0013:
+		{
+			ObjectU5BU5D_t2843939325* L_3 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)2);
+			ObjectU5BU5D_t2843939325* L_4 = L_3;
+			String_t* L_5 = V_0;
+			NullCheck(L_4);
+			ArrayElementTypeCheck (L_4, L_5);
+			(L_4)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_5);
+			ObjectU5BU5D_t2843939325* L_6 = L_4;
+			String_t* L_7 = __this->get_DatabaseVersion_6();
+			NullCheck(L_6);
+			ArrayElementTypeCheck (L_6, L_7);
+			(L_6)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject *)L_7);
+			IL2CPP_RUNTIME_CLASS_INIT(Debug_t3317548046_il2cpp_TypeInfo_var);
+			Debug_LogFormat_m309087137(NULL /*static, unused*/, _stringLiteral3278461159, L_6, /*hidden argument*/NULL);
+			InventoryService_UpgradeDB_m245382953(__this, /*hidden argument*/NULL);
+			Debug_Log_m4051431634(NULL /*static, unused*/, _stringLiteral2377852224, /*hidden argument*/NULL);
+		}
+
+IL_0040:
+		{
+			goto IL_0070;
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__exception_local = (Exception_t *)e.ex;
+		if(il2cpp_codegen_class_is_assignable_from (Exception_t_il2cpp_TypeInfo_var, il2cpp_codegen_object_class(e.ex)))
+			goto CATCH_0045;
+		throw e;
+	}
+
+CATCH_0045:
+	{ // begin catch(System.Exception)
+		V_1 = ((Exception_t *)__exception_local);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t3317548046_il2cpp_TypeInfo_var);
+		Debug_LogError_m2850623458(NULL /*static, unused*/, _stringLiteral2437232471, /*hidden argument*/NULL);
+		Exception_t * L_8 = V_1;
+		NullCheck(L_8);
+		String_t* L_9 = VirtFuncInvoker0< String_t* >::Invoke(6 /* System.String System.Exception::get_Message() */, L_8);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_10 = String_Concat_m3937257545(NULL /*static, unused*/, _stringLiteral4084842504, L_9, /*hidden argument*/NULL);
+		Debug_LogError_m2850623458(NULL /*static, unused*/, L_10, /*hidden argument*/NULL);
+		InventoryService_CreateDB_m2324099992(__this, /*hidden argument*/NULL);
+		goto IL_0070;
+	} // end catch (depth: 1)
+
+IL_0070:
+	{
+		return;
+	}
+}
+// System.Boolean packt.FoodyGO.Services.InventoryService::CheckDBVersion(System.String)
+extern "C" IL2CPP_METHOD_ATTR bool InventoryService_CheckDBVersion_m3986741618 (InventoryService_t3990436451 * __this, String_t* ___version0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (InventoryService_CheckDBVersion_m3986741618_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	StringU5BU5D_t1281789340* V_0 = NULL;
+	StringU5BU5D_t1281789340* V_1 = NULL;
+	int32_t V_2 = 0;
+	{
+		String_t* L_0 = ___version0;
+		CharU5BU5D_t3528271667* L_1 = (CharU5BU5D_t3528271667*)SZArrayNew(CharU5BU5D_t3528271667_il2cpp_TypeInfo_var, (uint32_t)1);
+		CharU5BU5D_t3528271667* L_2 = L_1;
+		NullCheck(L_2);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppChar)((int32_t)46));
+		NullCheck(L_0);
+		StringU5BU5D_t1281789340* L_3 = String_Split_m3646115398(L_0, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		String_t* L_4 = __this->get_DatabaseVersion_6();
+		CharU5BU5D_t3528271667* L_5 = (CharU5BU5D_t3528271667*)SZArrayNew(CharU5BU5D_t3528271667_il2cpp_TypeInfo_var, (uint32_t)1);
+		CharU5BU5D_t3528271667* L_6 = L_5;
+		NullCheck(L_6);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppChar)((int32_t)46));
+		NullCheck(L_4);
+		StringU5BU5D_t1281789340* L_7 = String_Split_m3646115398(L_4, L_6, /*hidden argument*/NULL);
+		V_1 = L_7;
+		StringU5BU5D_t1281789340* L_8 = V_0;
+		NullCheck(L_8);
+		StringU5BU5D_t1281789340* L_9 = V_1;
+		NullCheck(L_9);
+		if ((((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_8)->max_length))))) == ((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_9)->max_length)))))))
+		{
+			goto IL_003f;
+		}
+	}
+	{
+		ApplicationException_t2339761290 * L_10 = (ApplicationException_t2339761290 *)il2cpp_codegen_object_new(ApplicationException_t2339761290_il2cpp_TypeInfo_var);
+		ApplicationException__ctor_m2517758450(L_10, _stringLiteral3616882139, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_10, NULL, InventoryService_CheckDBVersion_m3986741618_RuntimeMethod_var);
+	}
+
+IL_003f:
+	{
+		V_2 = 0;
+		goto IL_0061;
+	}
+
+IL_0046:
+	{
+		StringU5BU5D_t1281789340* L_11 = V_0;
+		int32_t L_12 = V_2;
+		NullCheck(L_11);
+		int32_t L_13 = L_12;
+		String_t* L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
+		int32_t L_15 = Int32_Parse_m1033611559(NULL /*static, unused*/, L_14, /*hidden argument*/NULL);
+		StringU5BU5D_t1281789340* L_16 = V_1;
+		int32_t L_17 = V_2;
+		NullCheck(L_16);
+		int32_t L_18 = L_17;
+		String_t* L_19 = (L_16)->GetAt(static_cast<il2cpp_array_size_t>(L_18));
+		int32_t L_20 = Int32_Parse_m1033611559(NULL /*static, unused*/, L_19, /*hidden argument*/NULL);
+		if ((((int32_t)L_15) >= ((int32_t)L_20)))
+		{
+			goto IL_005d;
+		}
+	}
+	{
+		return (bool)1;
+	}
+
+IL_005d:
+	{
+		int32_t L_21 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_21, (int32_t)1));
+	}
+
+IL_0061:
+	{
+		int32_t L_22 = V_2;
+		StringU5BU5D_t1281789340* L_23 = V_0;
+		NullCheck(L_23);
+		if ((((int32_t)L_22) < ((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_23)->max_length)))))))
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		return (bool)0;
+	}
+}
+// System.Void packt.FoodyGO.Services.InventoryService::CreateDB()
+extern "C" IL2CPP_METHOD_ATTR void InventoryService_CreateDB_m2324099992 (InventoryService_t3990436451 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (InventoryService_CreateDB_m2324099992_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	List_1_t4032208569 * V_0 = NULL;
+	List_1_t4032208569 * V_1 = NULL;
+	DatabaseVersion_t3084738200 * V_2 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t3317548046_il2cpp_TypeInfo_var);
+		Debug_Log_m4051431634(NULL /*static, unused*/, _stringLiteral1082368474, /*hidden argument*/NULL);
+		SQLiteConnection_t3070079188 * L_0 = __this->get__connection_8();
+		NullCheck(L_0);
+		List_1_t4032208569 * L_1 = SQLiteConnection_GetTableInfo_m2951949514(L_0, _stringLiteral44895381, /*hidden argument*/NULL);
+		V_0 = L_1;
+		List_1_t4032208569 * L_2 = V_0;
+		NullCheck(L_2);
+		int32_t L_3 = List_1_get_Count_m4098183465(L_2, /*hidden argument*/List_1_get_Count_m4098183465_RuntimeMethod_var);
+		if ((((int32_t)L_3) <= ((int32_t)0)))
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		SQLiteConnection_t3070079188 * L_4 = __this->get__connection_8();
+		NullCheck(L_4);
+		SQLiteConnection_DropTable_TisMonster_t1773341114_m814443095(L_4, /*hidden argument*/SQLiteConnection_DropTable_TisMonster_t1773341114_m814443095_RuntimeMethod_var);
+	}
+
+IL_0033:
+	{
+		SQLiteConnection_t3070079188 * L_5 = __this->get__connection_8();
+		NullCheck(L_5);
+		SQLiteConnection_CreateTable_TisMonster_t1773341114_m1425502898(L_5, 0, /*hidden argument*/SQLiteConnection_CreateTable_TisMonster_t1773341114_m1425502898_RuntimeMethod_var);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t3317548046_il2cpp_TypeInfo_var);
+		Debug_Log_m4051431634(NULL /*static, unused*/, _stringLiteral198758068, /*hidden argument*/NULL);
+		SQLiteConnection_t3070079188 * L_6 = __this->get__connection_8();
+		NullCheck(L_6);
+		List_1_t4032208569 * L_7 = SQLiteConnection_GetTableInfo_m2951949514(L_6, _stringLiteral590886238, /*hidden argument*/NULL);
+		V_1 = L_7;
+		List_1_t4032208569 * L_8 = V_1;
+		NullCheck(L_8);
+		int32_t L_9 = List_1_get_Count_m4098183465(L_8, /*hidden argument*/List_1_get_Count_m4098183465_RuntimeMethod_var);
+		if ((((int32_t)L_9) <= ((int32_t)0)))
+		{
+			goto IL_0073;
+		}
+	}
+	{
+		SQLiteConnection_t3070079188 * L_10 = __this->get__connection_8();
+		NullCheck(L_10);
+		SQLiteConnection_DropTable_TisDatabaseVersion_t3084738200_m2303863307(L_10, /*hidden argument*/SQLiteConnection_DropTable_TisDatabaseVersion_t3084738200_m2303863307_RuntimeMethod_var);
+	}
+
+IL_0073:
+	{
+		SQLiteConnection_t3070079188 * L_11 = __this->get__connection_8();
+		NullCheck(L_11);
+		SQLiteConnection_CreateTable_TisDatabaseVersion_t3084738200_m1245700543(L_11, 0, /*hidden argument*/SQLiteConnection_CreateTable_TisDatabaseVersion_t3084738200_m1245700543_RuntimeMethod_var);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t3317548046_il2cpp_TypeInfo_var);
+		Debug_Log_m4051431634(NULL /*static, unused*/, _stringLiteral854875510, /*hidden argument*/NULL);
+		SQLiteConnection_t3070079188 * L_12 = __this->get__connection_8();
+		DatabaseVersion_t3084738200 * L_13 = (DatabaseVersion_t3084738200 *)il2cpp_codegen_object_new(DatabaseVersion_t3084738200_il2cpp_TypeInfo_var);
+		DatabaseVersion__ctor_m3835686796(L_13, /*hidden argument*/NULL);
+		V_2 = L_13;
+		DatabaseVersion_t3084738200 * L_14 = V_2;
+		String_t* L_15 = __this->get_DatabaseVersion_6();
+		NullCheck(L_14);
+		DatabaseVersion_set_Version_m3782741465(L_14, L_15, /*hidden argument*/NULL);
+		DatabaseVersion_t3084738200 * L_16 = V_2;
+		NullCheck(L_12);
+		SQLiteConnection_Insert_m2879703407(L_12, L_16, /*hidden argument*/NULL);
+		String_t* L_17 = __this->get_DatabaseVersion_6();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_18 = String_Concat_m3937257545(NULL /*static, unused*/, _stringLiteral2698589578, L_17, /*hidden argument*/NULL);
+		Debug_Log_m4051431634(NULL /*static, unused*/, L_18, /*hidden argument*/NULL);
+		Debug_Log_m4051431634(NULL /*static, unused*/, _stringLiteral18648674, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void packt.FoodyGO.Services.InventoryService::UpgradeDB()
+extern "C" IL2CPP_METHOD_ATTR void InventoryService_UpgradeDB_m245382953 (InventoryService_t3990436451 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (InventoryService_UpgradeDB_m245382953_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	TableQuery_1_t298633438 * V_0 = NULL;
+	List_1_t3245415856 * V_1 = NULL;
+	Monster_t1773341114 * V_2 = NULL;
+	RuntimeObject* V_3 = NULL;
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = -1;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		SQLiteConnection_t3070079188 * L_0 = __this->get__connection_8();
+		NullCheck(L_0);
+		TableQuery_1_t298633438 * L_1 = SQLiteConnection_Table_TisMonster_t1773341114_m1106896334(L_0, /*hidden argument*/SQLiteConnection_Table_TisMonster_t1773341114_m1106896334_RuntimeMethod_var);
+		V_0 = L_1;
+		List_1_t3245415856 * L_2 = (List_1_t3245415856 *)il2cpp_codegen_object_new(List_1_t3245415856_il2cpp_TypeInfo_var);
+		List_1__ctor_m2739036410(L_2, /*hidden argument*/List_1__ctor_m2739036410_RuntimeMethod_var);
+		V_1 = L_2;
+		TableQuery_1_t298633438 * L_3 = V_0;
+		NullCheck(L_3);
+		RuntimeObject* L_4 = TableQuery_1_GetEnumerator_m3445400550(L_3, /*hidden argument*/TableQuery_1_GetEnumerator_m3445400550_RuntimeMethod_var);
+		V_3 = L_4;
+	}
+
+IL_0019:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_002c;
+		}
+
+IL_001e:
+		{
+			RuntimeObject* L_5 = V_3;
+			NullCheck(L_5);
+			Monster_t1773341114 * L_6 = InterfaceFuncInvoker0< Monster_t1773341114 * >::Invoke(0 /* !0 System.Collections.Generic.IEnumerator`1<packt.FoodyGO.Database.Monster>::get_Current() */, IEnumerator_1_t2205911582_il2cpp_TypeInfo_var, L_5);
+			V_2 = L_6;
+			List_1_t3245415856 * L_7 = V_1;
+			Monster_t1773341114 * L_8 = V_2;
+			NullCheck(L_7);
+			List_1_Add_m548652276(L_7, L_8, /*hidden argument*/List_1_Add_m548652276_RuntimeMethod_var);
+		}
+
+IL_002c:
+		{
+			RuntimeObject* L_9 = V_3;
+			NullCheck(L_9);
+			bool L_10 = InterfaceFuncInvoker0< bool >::Invoke(1 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t1853284238_il2cpp_TypeInfo_var, L_9);
+			if (L_10)
+			{
+				goto IL_001e;
+			}
+		}
+
+IL_0037:
+		{
+			IL2CPP_LEAVE(0x49, FINALLY_003c);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_003c;
+	}
+
+FINALLY_003c:
+	{ // begin finally (depth: 1)
+		{
+			RuntimeObject* L_11 = V_3;
+			if (!L_11)
+			{
+				goto IL_0048;
+			}
+		}
+
+IL_0042:
+		{
+			RuntimeObject* L_12 = V_3;
+			NullCheck(L_12);
+			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t3640265483_il2cpp_TypeInfo_var, L_12);
+		}
+
+IL_0048:
+		{
+			IL2CPP_END_FINALLY(60)
+		}
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(60)
+	{
+		IL2CPP_JUMP_TBL(0x49, IL_0049)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_0049:
+	{
+		InventoryService_CreateDB_m2324099992(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t3317548046_il2cpp_TypeInfo_var);
+		Debug_Log_m4051431634(NULL /*static, unused*/, _stringLiteral3634305103, /*hidden argument*/NULL);
+		SQLiteConnection_t3070079188 * L_13 = __this->get__connection_8();
+		List_1_t3245415856 * L_14 = V_1;
+		NullCheck(L_13);
+		SQLiteConnection_InsertAll_m3331045845(L_13, L_14, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.String packt.FoodyGO.Services.InventoryService::GetDatabaseVersion()
+extern "C" IL2CPP_METHOD_ATTR String_t* InventoryService_GetDatabaseVersion_m3845499507 (InventoryService_t3990436451 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (InventoryService_GetDatabaseVersion_m3845499507_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		SQLiteConnection_t3070079188 * L_0 = __this->get__connection_8();
+		NullCheck(L_0);
+		TableQuery_1_t1610030524 * L_1 = SQLiteConnection_Table_TisDatabaseVersion_t3084738200_m3988505200(L_0, /*hidden argument*/SQLiteConnection_Table_TisDatabaseVersion_t3084738200_m3988505200_RuntimeMethod_var);
+		NullCheck(L_1);
+		DatabaseVersion_t3084738200 * L_2 = TableQuery_1_FirstOrDefault_m2673836966(L_1, /*hidden argument*/TableQuery_1_FirstOrDefault_m2673836966_RuntimeMethod_var);
+		NullCheck(L_2);
+		String_t* L_3 = DatabaseVersion_get_Version_m2461075180(L_2, /*hidden argument*/NULL);
+		return L_3;
+	}
+}
+// packt.FoodyGO.Database.Monster packt.FoodyGO.Services.InventoryService::CreateMonster()
+extern "C" IL2CPP_METHOD_ATTR Monster_t1773341114 * InventoryService_CreateMonster_m887761791 (InventoryService_t3990436451 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (InventoryService_CreateMonster_m887761791_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Monster_t1773341114 * V_0 = NULL;
+	Monster_t1773341114 * V_1 = NULL;
+	{
+		Monster_t1773341114 * L_0 = (Monster_t1773341114 *)il2cpp_codegen_object_new(Monster_t1773341114_il2cpp_TypeInfo_var);
+		Monster__ctor_m3815700999(L_0, /*hidden argument*/NULL);
+		V_1 = L_0;
+		Monster_t1773341114 * L_1 = V_1;
+		NullCheck(L_1);
+		Monster_set_Name_m288663463(L_1, _stringLiteral2327128955, /*hidden argument*/NULL);
+		Monster_t1773341114 * L_2 = V_1;
+		NullCheck(L_2);
+		Monster_set_Level_m3399875111(L_2, 2, /*hidden argument*/NULL);
+		Monster_t1773341114 * L_3 = V_1;
+		NullCheck(L_3);
+		Monster_set_Power_m3200394756(L_3, ((int32_t)10), /*hidden argument*/NULL);
+		Monster_t1773341114 * L_4 = V_1;
+		NullCheck(L_4);
+		Monster_set_Skills_m3705665767(L_4, _stringLiteral2748939550, /*hidden argument*/NULL);
+		Monster_t1773341114 * L_5 = V_1;
+		V_0 = L_5;
+		SQLiteConnection_t3070079188 * L_6 = __this->get__connection_8();
+		Monster_t1773341114 * L_7 = V_0;
+		NullCheck(L_6);
+		SQLiteConnection_Insert_m2879703407(L_6, L_7, /*hidden argument*/NULL);
+		Monster_t1773341114 * L_8 = V_0;
+		return L_8;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // System.Void packt.FoodyGO.Services.MonsterService::.ctor()
 extern "C" IL2CPP_METHOD_ATTR void MonsterService__ctor_m2133538562 (MonsterService_t815911722 * __this, const RuntimeMethod* method)
 {
@@ -22874,8 +40471,8 @@ extern "C" IL2CPP_METHOD_ATTR void MonsterService_Start_m4188006700 (MonsterServ
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		List_1_t3245415856 * L_0 = (List_1_t3245415856 *)il2cpp_codegen_object_new(List_1_t3245415856_il2cpp_TypeInfo_var);
-		List_1__ctor_m2739036410(L_0, /*hidden argument*/List_1__ctor_m2739036410_RuntimeMethod_var);
+		List_1_t1738687162 * L_0 = (List_1_t1738687162 *)il2cpp_codegen_object_new(List_1_t1738687162_il2cpp_TypeInfo_var);
+		List_1__ctor_m852104221(L_0, /*hidden argument*/List_1__ctor_m852104221_RuntimeMethod_var);
 		__this->set_monsters_16(L_0);
 		RuntimeObject* L_1 = MonsterService_CleanupMonsters_m384123468(__this, /*hidden argument*/NULL);
 		MonoBehaviour_StartCoroutine_m3411253000(__this, L_1, /*hidden argument*/NULL);
@@ -22897,8 +40494,8 @@ extern "C" IL2CPP_METHOD_ATTR void MonsterService_GpsLocationService_OnMapRedraw
 		il2cpp_codegen_initialize_method (MonsterService_GpsLocationService_OnMapRedraw_m1591494870_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	Monster_t1773341114 * V_0 = NULL;
-	Enumerator_t839692437  V_1;
+	MonsterSpawnLocation_t266612420 * V_0 = NULL;
+	Enumerator_t3627931039  V_1;
 	memset(&V_1, 0, sizeof(V_1));
 	Vector3_t3722313464  V_2;
 	memset(&V_2, 0, sizeof(V_2));
@@ -22909,9 +40506,9 @@ extern "C" IL2CPP_METHOD_ATTR void MonsterService_GpsLocationService_OnMapRedraw
 	int32_t __leave_target = -1;
 	NO_UNUSED_WARNING (__leave_target);
 	{
-		List_1_t3245415856 * L_0 = __this->get_monsters_16();
+		List_1_t1738687162 * L_0 = __this->get_monsters_16();
 		NullCheck(L_0);
-		Enumerator_t839692437  L_1 = List_1_GetEnumerator_m950486139(L_0, /*hidden argument*/List_1_GetEnumerator_m950486139_RuntimeMethod_var);
+		Enumerator_t3627931039  L_1 = List_1_GetEnumerator_m2444197496(L_0, /*hidden argument*/List_1_GetEnumerator_m2444197496_RuntimeMethod_var);
 		V_1 = L_1;
 	}
 
@@ -22924,9 +40521,9 @@ IL_000c:
 
 IL_0011:
 		{
-			Monster_t1773341114 * L_2 = Enumerator_get_Current_m2446182823((Enumerator_t839692437 *)(&V_1), /*hidden argument*/Enumerator_get_Current_m2446182823_RuntimeMethod_var);
+			MonsterSpawnLocation_t266612420 * L_2 = Enumerator_get_Current_m1763690911((Enumerator_t3627931039 *)(&V_1), /*hidden argument*/Enumerator_get_Current_m1763690911_RuntimeMethod_var);
 			V_0 = L_2;
-			Monster_t1773341114 * L_3 = V_0;
+			MonsterSpawnLocation_t266612420 * L_3 = V_0;
 			NullCheck(L_3);
 			GameObject_t1113636619 * L_4 = L_3->get_gameObject_5();
 			IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
@@ -22939,19 +40536,19 @@ IL_0011:
 
 IL_002a:
 		{
-			Monster_t1773341114 * L_6 = V_0;
+			MonsterSpawnLocation_t266612420 * L_6 = V_0;
 			NullCheck(L_6);
 			MapLocation_t4058015206 * L_7 = L_6->get_location_0();
 			NullCheck(L_7);
 			float L_8 = L_7->get_Longitude_1();
-			Monster_t1773341114 * L_9 = V_0;
+			MonsterSpawnLocation_t266612420 * L_9 = V_0;
 			NullCheck(L_9);
 			MapLocation_t4058015206 * L_10 = L_9->get_location_0();
 			NullCheck(L_10);
 			float L_11 = L_10->get_Latitude_0();
 			Vector3_t3722313464  L_12 = MonsterService_ConvertToWorldSpace_m2681085689(__this, L_8, L_11, /*hidden argument*/NULL);
 			V_2 = L_12;
-			Monster_t1773341114 * L_13 = V_0;
+			MonsterSpawnLocation_t266612420 * L_13 = V_0;
 			NullCheck(L_13);
 			GameObject_t1113636619 * L_14 = L_13->get_gameObject_5();
 			NullCheck(L_14);
@@ -22963,7 +40560,7 @@ IL_002a:
 
 IL_0058:
 		{
-			bool L_17 = Enumerator_MoveNext_m1538013277((Enumerator_t839692437 *)(&V_1), /*hidden argument*/Enumerator_MoveNext_m1538013277_RuntimeMethod_var);
+			bool L_17 = Enumerator_MoveNext_m3937889501((Enumerator_t3627931039 *)(&V_1), /*hidden argument*/Enumerator_MoveNext_m3937889501_RuntimeMethod_var);
 			if (L_17)
 			{
 				goto IL_0011;
@@ -22983,7 +40580,7 @@ IL_0064:
 
 FINALLY_0069:
 	{ // begin finally (depth: 1)
-		Enumerator_Dispose_m169051511((Enumerator_t839692437 *)(&V_1), /*hidden argument*/Enumerator_Dispose_m169051511_RuntimeMethod_var);
+		Enumerator_Dispose_m865491697((Enumerator_t3627931039 *)(&V_1), /*hidden argument*/Enumerator_Dispose_m865491697_RuntimeMethod_var);
 		IL2CPP_END_FINALLY(105)
 	} // end finally (depth: 1)
 	IL2CPP_CLEANUP(105)
@@ -23079,12 +40676,12 @@ extern "C" IL2CPP_METHOD_ATTR void MonsterService_CheckMonsters_m969227813 (Mons
 	}
 	float V_0 = 0.0f;
 	float V_1 = 0.0f;
-	Monster_t1773341114 * V_2 = NULL;
-	Monster_t1773341114 * V_3 = NULL;
+	MonsterSpawnLocation_t266612420 * V_2 = NULL;
+	MonsterSpawnLocation_t266612420 * V_3 = NULL;
 	MapLocation_t4058015206 * V_4 = NULL;
 	double V_5 = 0.0;
-	Monster_t1773341114 * V_6 = NULL;
-	Enumerator_t839692437  V_7;
+	MonsterSpawnLocation_t266612420 * V_6 = NULL;
+	Enumerator_t3627931039  V_7;
 	memset(&V_7, 0, sizeof(V_7));
 	float V_8 = 0.0f;
 	int32_t V_9 = 0;
@@ -23117,28 +40714,28 @@ extern "C" IL2CPP_METHOD_ATTR void MonsterService_CheckMonsters_m969227813 (Mons
 		float L_10 = __this->get_longitudeSpawnOffset_9();
 		float L_11 = Random_Range_m2202990745(NULL /*static, unused*/, ((-L_9)), L_10, /*hidden argument*/NULL);
 		V_1 = ((float)il2cpp_codegen_add((float)L_8, (float)L_11));
-		Monster_t1773341114 * L_12 = (Monster_t1773341114 *)il2cpp_codegen_object_new(Monster_t1773341114_il2cpp_TypeInfo_var);
-		Monster__ctor_m3815700999(L_12, /*hidden argument*/NULL);
+		MonsterSpawnLocation_t266612420 * L_12 = (MonsterSpawnLocation_t266612420 *)il2cpp_codegen_object_new(MonsterSpawnLocation_t266612420_il2cpp_TypeInfo_var);
+		MonsterSpawnLocation__ctor_m3958958467(L_12, /*hidden argument*/NULL);
 		V_3 = L_12;
-		Monster_t1773341114 * L_13 = V_3;
+		MonsterSpawnLocation_t266612420 * L_13 = V_3;
 		float L_14 = V_1;
 		float L_15 = V_0;
 		MapLocation_t4058015206 * L_16 = (MapLocation_t4058015206 *)il2cpp_codegen_object_new(MapLocation_t4058015206_il2cpp_TypeInfo_var);
 		MapLocation__ctor_m2782308986(L_16, L_14, L_15, /*hidden argument*/NULL);
 		NullCheck(L_13);
 		L_13->set_location_0(L_16);
-		Monster_t1773341114 * L_17 = V_3;
+		MonsterSpawnLocation_t266612420 * L_17 = V_3;
 		GPSLocationService_t3603565903 * L_18 = __this->get_gpsLocationService_4();
 		NullCheck(L_18);
 		double L_19 = L_18->get_PlayerTimestamp_21();
 		NullCheck(L_17);
 		L_17->set_spawnTimestamp_2(L_19);
-		Monster_t1773341114 * L_20 = V_3;
+		MonsterSpawnLocation_t266612420 * L_20 = V_3;
 		V_2 = L_20;
-		List_1_t3245415856 * L_21 = __this->get_monsters_16();
-		Monster_t1773341114 * L_22 = V_2;
+		List_1_t1738687162 * L_21 = __this->get_monsters_16();
+		MonsterSpawnLocation_t266612420 * L_22 = V_2;
 		NullCheck(L_21);
-		List_1_Add_m548652276(L_21, L_22, /*hidden argument*/List_1_Add_m548652276_RuntimeMethod_var);
+		List_1_Add_m2526584691(L_21, L_22, /*hidden argument*/List_1_Add_m2526584691_RuntimeMethod_var);
 	}
 
 IL_0080:
@@ -23154,9 +40751,9 @@ IL_0080:
 		V_4 = L_27;
 		double L_28 = Epoch_get_Now_m1854578769(NULL /*static, unused*/, /*hidden argument*/NULL);
 		V_5 = L_28;
-		List_1_t3245415856 * L_29 = __this->get_monsters_16();
+		List_1_t1738687162 * L_29 = __this->get_monsters_16();
 		NullCheck(L_29);
-		Enumerator_t839692437  L_30 = List_1_GetEnumerator_m950486139(L_29, /*hidden argument*/List_1_GetEnumerator_m950486139_RuntimeMethod_var);
+		Enumerator_t3627931039  L_30 = List_1_GetEnumerator_m2444197496(L_29, /*hidden argument*/List_1_GetEnumerator_m2444197496_RuntimeMethod_var);
 		V_7 = L_30;
 	}
 
@@ -23169,15 +40766,15 @@ IL_00b1:
 
 IL_00b6:
 		{
-			Monster_t1773341114 * L_31 = Enumerator_get_Current_m2446182823((Enumerator_t839692437 *)(&V_7), /*hidden argument*/Enumerator_get_Current_m2446182823_RuntimeMethod_var);
+			MonsterSpawnLocation_t266612420 * L_31 = Enumerator_get_Current_m1763690911((Enumerator_t3627931039 *)(&V_7), /*hidden argument*/Enumerator_get_Current_m1763690911_RuntimeMethod_var);
 			V_6 = L_31;
-			Monster_t1773341114 * L_32 = V_6;
+			MonsterSpawnLocation_t266612420 * L_32 = V_6;
 			NullCheck(L_32);
 			MapLocation_t4058015206 * L_33 = L_32->get_location_0();
 			MapLocation_t4058015206 * L_34 = V_4;
 			float L_35 = MathG_Distance_m2463804703(NULL /*static, unused*/, L_33, L_34, /*hidden argument*/NULL);
 			V_8 = L_35;
-			Monster_t1773341114 * L_36 = V_6;
+			MonsterSpawnLocation_t266612420 * L_36 = V_6;
 			NullCheck(L_36);
 			MapLocation_t4058015206 * L_37 = L_36->get_location_0();
 			MapLocation_t4058015206 * L_38 = V_4;
@@ -23191,14 +40788,14 @@ IL_00b6:
 
 IL_00e8:
 		{
-			Monster_t1773341114 * L_41 = V_6;
+			MonsterSpawnLocation_t266612420 * L_41 = V_6;
 			double L_42 = V_5;
 			NullCheck(L_41);
 			L_41->set_lastSeenTimestamp_4(L_42);
-			Monster_t1773341114 * L_43 = V_6;
+			MonsterSpawnLocation_t266612420 * L_43 = V_6;
 			NullCheck(L_43);
 			L_43->set_footstepRange_6(4);
-			Monster_t1773341114 * L_44 = V_6;
+			MonsterSpawnLocation_t266612420 * L_44 = V_6;
 			NullCheck(L_44);
 			GameObject_t1113636619 * L_45 = L_44->get_gameObject_5();
 			IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
@@ -23228,7 +40825,7 @@ IL_010b:
 			ArrayElementTypeCheck (L_53, _stringLiteral4176026750);
 			(L_53)->SetAt(static_cast<il2cpp_array_size_t>(2), (RuntimeObject *)_stringLiteral4176026750);
 			ObjectU5BU5D_t2843939325* L_54 = L_53;
-			Monster_t1773341114 * L_55 = V_6;
+			MonsterSpawnLocation_t266612420 * L_55 = V_6;
 			NullCheck(L_55);
 			double L_56 = L_55->get_spawnTimestamp_2();
 			double L_57 = L_56;
@@ -23239,14 +40836,14 @@ IL_010b:
 			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 			String_t* L_59 = String_Concat_m2971454694(NULL /*static, unused*/, L_54, /*hidden argument*/NULL);
 			MonoBehaviour_print_m330341231(NULL /*static, unused*/, L_59, /*hidden argument*/NULL);
-			Monster_t1773341114 * L_60 = V_6;
-			MonsterService_SpawnMonster_m2465396457(__this, L_60, /*hidden argument*/NULL);
+			MonsterSpawnLocation_t266612420 * L_60 = V_6;
+			MonsterService_SpawnMonster_m1405257628(__this, L_60, /*hidden argument*/NULL);
 			goto IL_015e;
 		}
 
 IL_0151:
 		{
-			Monster_t1773341114 * L_61 = V_6;
+			MonsterSpawnLocation_t266612420 * L_61 = V_6;
 			NullCheck(L_61);
 			GameObject_t1113636619 * L_62 = L_61->get_gameObject_5();
 			NullCheck(L_62);
@@ -23260,7 +40857,7 @@ IL_015e:
 
 IL_0163:
 		{
-			Monster_t1773341114 * L_63 = V_6;
+			MonsterSpawnLocation_t266612420 * L_63 = V_6;
 			NullCheck(L_63);
 			MapLocation_t4058015206 * L_64 = L_63->get_location_0();
 			MapLocation_t4058015206 * L_65 = V_4;
@@ -23274,14 +40871,14 @@ IL_0163:
 
 IL_017c:
 		{
-			Monster_t1773341114 * L_68 = V_6;
+			MonsterSpawnLocation_t266612420 * L_68 = V_6;
 			double L_69 = V_5;
 			NullCheck(L_68);
 			L_68->set_lastHeardTimestamp_3(L_69);
 			float L_70 = V_8;
 			int32_t L_71 = MonsterService_CalculateFootstepRange_m3447776341(__this, L_70, /*hidden argument*/NULL);
 			V_9 = L_71;
-			Monster_t1773341114 * L_72 = V_6;
+			MonsterSpawnLocation_t266612420 * L_72 = V_6;
 			int32_t L_73 = V_9;
 			NullCheck(L_72);
 			L_72->set_footstepRange_6(L_73);
@@ -23295,7 +40892,7 @@ IL_017c:
 
 IL_01ae:
 		{
-			Monster_t1773341114 * L_78 = V_6;
+			MonsterSpawnLocation_t266612420 * L_78 = V_6;
 			NullCheck(L_78);
 			GameObject_t1113636619 * L_79 = L_78->get_gameObject_5();
 			IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
@@ -23308,7 +40905,7 @@ IL_01ae:
 
 IL_01c0:
 		{
-			Monster_t1773341114 * L_81 = V_6;
+			MonsterSpawnLocation_t266612420 * L_81 = V_6;
 			NullCheck(L_81);
 			GameObject_t1113636619 * L_82 = L_81->get_gameObject_5();
 			NullCheck(L_82);
@@ -23317,7 +40914,7 @@ IL_01c0:
 
 IL_01cd:
 		{
-			bool L_83 = Enumerator_MoveNext_m1538013277((Enumerator_t839692437 *)(&V_7), /*hidden argument*/Enumerator_MoveNext_m1538013277_RuntimeMethod_var);
+			bool L_83 = Enumerator_MoveNext_m3937889501((Enumerator_t3627931039 *)(&V_7), /*hidden argument*/Enumerator_MoveNext_m3937889501_RuntimeMethod_var);
 			if (L_83)
 			{
 				goto IL_00b6;
@@ -23337,7 +40934,7 @@ IL_01d9:
 
 FINALLY_01de:
 	{ // begin finally (depth: 1)
-		Enumerator_Dispose_m169051511((Enumerator_t839692437 *)(&V_7), /*hidden argument*/Enumerator_Dispose_m169051511_RuntimeMethod_var);
+		Enumerator_Dispose_m865491697((Enumerator_t3627931039 *)(&V_7), /*hidden argument*/Enumerator_Dispose_m865491697_RuntimeMethod_var);
 		IL2CPP_END_FINALLY(478)
 	} // end finally (depth: 1)
 	IL2CPP_CLEANUP(478)
@@ -23440,13 +41037,13 @@ extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  MonsterService_ConvertToWorld
 		return L_18;
 	}
 }
-// System.Void packt.FoodyGO.Services.MonsterService::SpawnMonster(packt.FoodyGO.Database.Monster)
-extern "C" IL2CPP_METHOD_ATTR void MonsterService_SpawnMonster_m2465396457 (MonsterService_t815911722 * __this, Monster_t1773341114 * ___monster0, const RuntimeMethod* method)
+// System.Void packt.FoodyGO.Services.MonsterService::SpawnMonster(packt.FoodyGO.Database.MonsterSpawnLocation)
+extern "C" IL2CPP_METHOD_ATTR void MonsterService_SpawnMonster_m1405257628 (MonsterService_t815911722 * __this, MonsterSpawnLocation_t266612420 * ___monster0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (MonsterService_SpawnMonster_m2465396457_MetadataUsageId);
+		il2cpp_codegen_initialize_method (MonsterService_SpawnMonster_m1405257628_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	float V_0 = 0.0f;
@@ -23457,13 +41054,13 @@ extern "C" IL2CPP_METHOD_ATTR void MonsterService_SpawnMonster_m2465396457 (Mons
 	memset(&V_3, 0, sizeof(V_3));
 	MonsterController_t3352166224 * V_4 = NULL;
 	{
-		Monster_t1773341114 * L_0 = ___monster0;
+		MonsterSpawnLocation_t266612420 * L_0 = ___monster0;
 		NullCheck(L_0);
 		MapLocation_t4058015206 * L_1 = L_0->get_location_0();
 		NullCheck(L_1);
 		float L_2 = L_1->get_Longitude_1();
 		V_0 = L_2;
-		Monster_t1773341114 * L_3 = ___monster0;
+		MonsterSpawnLocation_t266612420 * L_3 = ___monster0;
 		NullCheck(L_3);
 		MapLocation_t4058015206 * L_4 = L_3->get_location_0();
 		NullCheck(L_4);
@@ -23479,7 +41076,7 @@ extern "C" IL2CPP_METHOD_ATTR void MonsterService_SpawnMonster_m2465396457 (Mons
 		IL2CPP_RUNTIME_CLASS_INIT(Quaternion_t2301928331_il2cpp_TypeInfo_var);
 		Quaternion_t2301928331  L_11 = Quaternion_AngleAxis_m1767165696(NULL /*static, unused*/, (((float)((float)L_9))), L_10, /*hidden argument*/NULL);
 		V_3 = L_11;
-		Monster_t1773341114 * L_12 = ___monster0;
+		MonsterSpawnLocation_t266612420 * L_12 = ___monster0;
 		GameObject_t1113636619 * L_13 = __this->get_monsterPrefab_5();
 		Vector3_t3722313464  L_14 = V_2;
 		Quaternion_t2301928331  L_15 = V_3;
@@ -23487,14 +41084,14 @@ extern "C" IL2CPP_METHOD_ATTR void MonsterService_SpawnMonster_m2465396457 (Mons
 		GameObject_t1113636619 * L_16 = Object_Instantiate_TisGameObject_t1113636619_m2517112845(NULL /*static, unused*/, L_13, L_14, L_15, /*hidden argument*/Object_Instantiate_TisGameObject_t1113636619_m2517112845_RuntimeMethod_var);
 		NullCheck(L_12);
 		L_12->set_gameObject_5(L_16);
-		Monster_t1773341114 * L_17 = ___monster0;
+		MonsterSpawnLocation_t266612420 * L_17 = ___monster0;
 		NullCheck(L_17);
 		GameObject_t1113636619 * L_18 = L_17->get_gameObject_5();
 		NullCheck(L_18);
 		MonsterController_t3352166224 * L_19 = GameObject_AddComponent_TisMonsterController_t3352166224_m2844562169(L_18, /*hidden argument*/GameObject_AddComponent_TisMonsterController_t3352166224_m2844562169_RuntimeMethod_var);
 		V_4 = L_19;
 		MonsterController_t3352166224 * L_20 = V_4;
-		Monster_t1773341114 * L_21 = ___monster0;
+		MonsterSpawnLocation_t266612420 * L_21 = ___monster0;
 		NullCheck(L_20);
 		L_20->set_monsterDataObject_6(L_21);
 		MonsterController_t3352166224 * L_22 = V_4;
@@ -23530,7 +41127,7 @@ extern "C" IL2CPP_METHOD_ATTR bool U3CCleanupMonstersU3Ec__Iterator0_MoveNext_m3
 	}
 	uint32_t V_0 = 0;
 	int32_t V_1 = 0;
-	Monster_t1773341114 * V_2 = NULL;
+	MonsterSpawnLocation_t266612420 * V_2 = NULL;
 	{
 		int32_t L_0 = __this->get_U24PC_5();
 		V_0 = L_0;
@@ -23558,9 +41155,9 @@ IL_0021:
 		__this->set_U3CnowU3E__1_0(L_2);
 		MonsterService_t815911722 * L_3 = __this->get_U24this_2();
 		NullCheck(L_3);
-		List_1_t3245415856 * L_4 = L_3->get_monsters_16();
+		List_1_t1738687162 * L_4 = L_3->get_monsters_16();
 		NullCheck(L_4);
-		MonsterU5BU5D_t2415199775* L_5 = List_1_ToArray_m2752040289(L_4, /*hidden argument*/List_1_ToArray_m2752040289_RuntimeMethod_var);
+		MonsterSpawnLocationU5BU5D_t422840749* L_5 = List_1_ToArray_m172353444(L_4, /*hidden argument*/List_1_ToArray_m172353444_RuntimeMethod_var);
 		__this->set_U3ClistU3E__1_1(L_5);
 		V_1 = 0;
 		goto IL_00b3;
@@ -23568,11 +41165,11 @@ IL_0021:
 
 IL_0049:
 	{
-		MonsterU5BU5D_t2415199775* L_6 = __this->get_U3ClistU3E__1_1();
+		MonsterSpawnLocationU5BU5D_t422840749* L_6 = __this->get_U3ClistU3E__1_1();
 		int32_t L_7 = V_1;
 		NullCheck(L_6);
 		int32_t L_8 = L_7;
-		Monster_t1773341114 * L_9 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
+		MonsterSpawnLocation_t266612420 * L_9 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
 		NullCheck(L_9);
 		double L_10 = L_9->get_spawnTimestamp_2();
 		MonsterService_t815911722 * L_11 = __this->get_U24this_2();
@@ -23585,14 +41182,14 @@ IL_0049:
 		}
 	}
 	{
-		MonsterU5BU5D_t2415199775* L_14 = __this->get_U3ClistU3E__1_1();
+		MonsterSpawnLocationU5BU5D_t422840749* L_14 = __this->get_U3ClistU3E__1_1();
 		int32_t L_15 = V_1;
 		NullCheck(L_14);
 		int32_t L_16 = L_15;
-		Monster_t1773341114 * L_17 = (L_14)->GetAt(static_cast<il2cpp_array_size_t>(L_16));
+		MonsterSpawnLocation_t266612420 * L_17 = (L_14)->GetAt(static_cast<il2cpp_array_size_t>(L_16));
 		V_2 = L_17;
 		MonoBehaviour_print_m330341231(NULL /*static, unused*/, _stringLiteral3707908787, /*hidden argument*/NULL);
-		Monster_t1773341114 * L_18 = V_2;
+		MonsterSpawnLocation_t266612420 * L_18 = V_2;
 		NullCheck(L_18);
 		GameObject_t1113636619 * L_19 = L_18->get_gameObject_5();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
@@ -23603,7 +41200,7 @@ IL_0049:
 		}
 	}
 	{
-		Monster_t1773341114 * L_21 = V_2;
+		MonsterSpawnLocation_t266612420 * L_21 = V_2;
 		NullCheck(L_21);
 		GameObject_t1113636619 * L_22 = L_21->get_gameObject_5();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
@@ -23614,10 +41211,10 @@ IL_009d:
 	{
 		MonsterService_t815911722 * L_23 = __this->get_U24this_2();
 		NullCheck(L_23);
-		List_1_t3245415856 * L_24 = L_23->get_monsters_16();
-		Monster_t1773341114 * L_25 = V_2;
+		List_1_t1738687162 * L_24 = L_23->get_monsters_16();
+		MonsterSpawnLocation_t266612420 * L_25 = V_2;
 		NullCheck(L_24);
-		List_1_Remove_m1125353432(L_24, L_25, /*hidden argument*/List_1_Remove_m1125353432_RuntimeMethod_var);
+		List_1_Remove_m1818201010(L_24, L_25, /*hidden argument*/List_1_Remove_m1818201010_RuntimeMethod_var);
 	}
 
 IL_00af:
@@ -23629,7 +41226,7 @@ IL_00af:
 IL_00b3:
 	{
 		int32_t L_27 = V_1;
-		MonsterU5BU5D_t2415199775* L_28 = __this->get_U3ClistU3E__1_1();
+		MonsterSpawnLocationU5BU5D_t422840749* L_28 = __this->get_U3ClistU3E__1_1();
 		NullCheck(L_28);
 		if ((((int32_t)L_27) < ((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_28)->max_length)))))))
 		{
@@ -24515,7 +42112,7 @@ extern "C" IL2CPP_METHOD_ATTR void ThrowTouchPad_ThrowObject_m2926779027 (ThrowT
 
 IL_010e:
 	{
-		MonoBehaviour_Invoke_m4227543964(__this, _stringLiteral747355815, (5.0f), /*hidden argument*/NULL);
+		MonoBehaviour_Invoke_m4227543964(__this, _stringLiteral747355815, (2.0f), /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -24780,8 +42377,8 @@ extern "C" IL2CPP_METHOD_ATTR void FootstepTracker_Update_m3138465250 (FootstepT
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
-	Monster_t1773341114 * V_1 = NULL;
-	Enumerator_t839692437  V_2;
+	MonsterSpawnLocation_t266612420 * V_1 = NULL;
+	Enumerator_t3627931039  V_2;
 	memset(&V_2, 0, sizeof(V_2));
 	Exception_t * __last_unhandled_exception = 0;
 	NO_UNUSED_WARNING (__last_unhandled_exception);
@@ -24802,7 +42399,7 @@ extern "C" IL2CPP_METHOD_ATTR void FootstepTracker_Update_m3138465250 (FootstepT
 	{
 		MonsterService_t815911722 * L_2 = __this->get_monsterService_4();
 		NullCheck(L_2);
-		List_1_t3245415856 * L_3 = L_2->get_monsters_16();
+		List_1_t1738687162 * L_3 = L_2->get_monsters_16();
 		if (!L_3)
 		{
 			goto IL_0121;
@@ -24811,9 +42408,9 @@ extern "C" IL2CPP_METHOD_ATTR void FootstepTracker_Update_m3138465250 (FootstepT
 	{
 		MonsterService_t815911722 * L_4 = __this->get_monsterService_4();
 		NullCheck(L_4);
-		List_1_t3245415856 * L_5 = L_4->get_monsters_16();
+		List_1_t1738687162 * L_5 = L_4->get_monsters_16();
 		NullCheck(L_5);
-		int32_t L_6 = List_1_get_Count_m3454857760(L_5, /*hidden argument*/List_1_get_Count_m3454857760_RuntimeMethod_var);
+		int32_t L_6 = List_1_get_Count_m1035611094(L_5, /*hidden argument*/List_1_get_Count_m1035611094_RuntimeMethod_var);
 		if ((((int32_t)L_6) <= ((int32_t)0)))
 		{
 			goto IL_0121;
@@ -24822,9 +42419,9 @@ extern "C" IL2CPP_METHOD_ATTR void FootstepTracker_Update_m3138465250 (FootstepT
 	{
 		MonsterService_t815911722 * L_7 = __this->get_monsterService_4();
 		NullCheck(L_7);
-		List_1_t3245415856 * L_8 = L_7->get_monsters_16();
+		List_1_t1738687162 * L_8 = L_7->get_monsters_16();
 		NullCheck(L_8);
-		Enumerator_t839692437  L_9 = List_1_GetEnumerator_m950486139(L_8, /*hidden argument*/List_1_GetEnumerator_m950486139_RuntimeMethod_var);
+		Enumerator_t3627931039  L_9 = List_1_GetEnumerator_m2444197496(L_8, /*hidden argument*/List_1_GetEnumerator_m2444197496_RuntimeMethod_var);
 		V_2 = L_9;
 	}
 
@@ -24837,9 +42434,9 @@ IL_004a:
 
 IL_004f:
 		{
-			Monster_t1773341114 * L_10 = Enumerator_get_Current_m2446182823((Enumerator_t839692437 *)(&V_2), /*hidden argument*/Enumerator_get_Current_m2446182823_RuntimeMethod_var);
+			MonsterSpawnLocation_t266612420 * L_10 = Enumerator_get_Current_m1763690911((Enumerator_t3627931039 *)(&V_2), /*hidden argument*/Enumerator_get_Current_m1763690911_RuntimeMethod_var);
 			V_1 = L_10;
-			Monster_t1773341114 * L_11 = V_1;
+			MonsterSpawnLocation_t266612420 * L_11 = V_1;
 			NullCheck(L_11);
 			int32_t L_12 = L_11->get_footstepRange_6();
 			int32_t L_13 = V_0;
@@ -24850,7 +42447,7 @@ IL_004f:
 
 IL_0064:
 		{
-			bool L_15 = Enumerator_MoveNext_m1538013277((Enumerator_t839692437 *)(&V_2), /*hidden argument*/Enumerator_MoveNext_m1538013277_RuntimeMethod_var);
+			bool L_15 = Enumerator_MoveNext_m3937889501((Enumerator_t3627931039 *)(&V_2), /*hidden argument*/Enumerator_MoveNext_m3937889501_RuntimeMethod_var);
 			if (L_15)
 			{
 				goto IL_004f;
@@ -24870,7 +42467,7 @@ IL_0070:
 
 FINALLY_0075:
 	{ // begin finally (depth: 1)
-		Enumerator_Dispose_m169051511((Enumerator_t839692437 *)(&V_2), /*hidden argument*/Enumerator_Dispose_m169051511_RuntimeMethod_var);
+		Enumerator_Dispose_m865491697((Enumerator_t3627931039 *)(&V_2), /*hidden argument*/Enumerator_Dispose_m865491697_RuntimeMethod_var);
 		IL2CPP_END_FINALLY(117)
 	} // end finally (depth: 1)
 	IL2CPP_CLEANUP(117)

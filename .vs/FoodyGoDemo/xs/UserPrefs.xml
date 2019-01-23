@@ -1,19 +1,26 @@
 ﻿<Properties StartupConfiguration="{93F041BF-8376-3FCE-5B03-3A0AAB6EBF52}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/FoodyGo/Scripts/Database/Monster.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/FoodyGo/Scripts/Managers/Singleton.cs">
     <Files>
-      <File FileName="Assets/FoodyGo/Scripts/Controllers/MonsterController.cs" Line="1" Column="1" />
-      <File FileName="Assets/FoodyGo/Scripts/Services/MonsterService.cs" Line="1" Column="1" />
-      <File FileName="Assets/FoodyGo/Scripts/Services/InventoryService.cs" Line="209" Column="44" />
-      <File FileName="Assets/FoodyGo/Scripts/Controllers/CatchSceneController.cs" Line="1" Column="1" />
-      <File FileName="Assets/FoodyGo/Scripts/Services/MonsterFactory.cs" Line="34" Column="27" />
-      <File FileName="Assets/FoodyGo/Scripts/Database/Monster.cs" Line="12" Column="18" />
+      <File FileName="Assets/FoodyGo/Scripts/Controllers/CatchSceneController.cs" Line="89" Column="94" />
+      <File FileName="Assets/FoodyGo/Scripts/Controllers/InventorySceneController.cs" Line="13" Column="16" />
+      <File FileName="Assets/FoodyGo/Scripts/UI/InventoryItem.cs" Line="19" Column="1" />
+      <File FileName="Assets/FoodyGo/Scripts/Services/GPSLocationService.cs" Line="1" Column="1" />
+      <File FileName="Assets/FoodyGo/Scripts/Managers/Singleton.cs" Line="30" Column="26" />
+      <File FileName="Assets/FoodyGo/Scripts/Services/MonsterService.cs" Line="124" Column="1" />
+      <File FileName="Assets/FoodyGo/Scripts/Controllers/CharacterGPSCompassController.cs" Line="34" Column="1" />
+      <File FileName="Assets/FoodyGo/Scripts/Mapping/GoogleMapUtils.cs" Line="21" Column="1" />
+      <File FileName="Assets/FoodyGo/Scripts/Services/GooglePlacesAPIService.cs" Line="1" Column="1" />
+      <File FileName="Assets/CUDLR/Scripts/Console.cs" Line="109" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/yiheng/Documents/Unity相关/FoodyGoDemo/Assets/FoodyGo/Scripts/Mapping/GoogleMapTile.cs" relfile="Assets/FoodyGo/Scripts/Mapping/GoogleMapTile.cs" line="114" column="13" />
+      <Breakpoint file="/Users/yiheng/Documents/Unity相关/FoodyGoDemo/Assets/FoodyGo/Scripts/UI/InventoryItem.cs" relfile="Assets/FoodyGo/Scripts/UI/InventoryItem.cs" line="18" column="1" />
+      <Breakpoint file="/Users/yiheng/Documents/Unity相关/FoodyGoDemo/Assets/FoodyGo/Scripts/Services/GooglePlacesAPIService.cs" relfile="Assets/FoodyGo/Scripts/Services/GooglePlacesAPIService.cs" line="49" column="1" />
+      <Breakpoint file="/Users/yiheng/Documents/Unity相关/FoodyGoDemo/Assets/FoodyGo/Scripts/Services/GooglePlacesAPIService.cs" relfile="Assets/FoodyGo/Scripts/Services/GooglePlacesAPIService.cs" line="28" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

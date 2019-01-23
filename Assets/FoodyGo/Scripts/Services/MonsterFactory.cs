@@ -1,40 +1,48 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using packt.FoodyGO.Database;
 
 namespace packt.FoodyGO.Services
 {
-    public static class MonsterFactory 
+    public static class MonsterFactory
     {
         public static string[] names = {
-            "大厨",
-            "鸭子",
-            "培根",
-            "牛腩",
-            "酱油", 
-            "酱汁"
-        };
+            "Chef",
+            "Child",
+            "Sous",
+            "Poulet",
+            "Duck",
+            "Slice",
+            "Sauce",
+            "Bacon",
+            "Benedict",
+            "Beef",
+            "Sage"
+            };
 
         public static string[] skills =
         {
-            "法式",
-            "中餐",
-            "寿司",
-            "早餐",
-            "汉堡",
-            "墨西哥卷",
-            "意呆利",
-            "印度菜",
-            "泰国咖喱",
-            "Subway"
+            "French",
+            "Chinese",
+            "Sushi",
+            "Breakfast",
+            "Hamburger",
+            "Indian",
+            "BBQ",
+            "Mexican",
+            "Cajun",
+            "Thai",
+            "Italian",
+            "Fish",
+            "Beef",
+            "Bacon",
+            "Hog",
+            "Chicken"
         };
 
-        public static int power = 10;
-        public static int level = 10;
-
-
-        public static Monster CreatRandomMonster()
+        public static int power = 1;
+        public static int level = 1;        
+        
+        public static Monster CreateRandomMonster()
         {
             var monster = new Monster
             {
@@ -46,20 +54,16 @@ namespace packt.FoodyGO.Services
             return monster;
         }
 
+        private static string BuildSkills()
+        {
+            var max = skills.Length - 1;
+            return skills[Random.Range(0, max)] + "," + skills[Random.Range(0, max)];
+        }
 
-        public static string BuildName()
+        private static string BuildName()
         {
             var max = names.Length - 1;
             return names[Random.Range(0, max)] + " " + names[Random.Range(0, max)];
         }
-
-        public static string BuildSkills()
-        {
-            var max = skills.Length - 1;
-            return skills[Random.Range(0, max)] + ", " + skills[Random.Range(0, max)];
-        }
     }
 }
-
-
-

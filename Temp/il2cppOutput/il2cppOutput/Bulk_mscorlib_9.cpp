@@ -13735,6 +13735,10 @@ extern "C" IL2CPP_METHOD_ATTR double Double_Parse_m1135962389 (RuntimeObject * _
 extern "C" IL2CPP_METHOD_ATTR bool Double_IsPositiveInfinity_m1245619811 (RuntimeObject * __this /* static, unused */, double ___d0, const RuntimeMethod* method);
 // System.Void System.OverflowException::.ctor()
 extern "C" IL2CPP_METHOD_ATTR void OverflowException__ctor_m4029085969 (OverflowException_t2020128637 * __this, const RuntimeMethod* method);
+// System.Boolean System.Double::Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Boolean,System.Double&,System.Exception&)
+extern "C" IL2CPP_METHOD_ATTR bool Double_Parse_m2152196909 (RuntimeObject * __this /* static, unused */, String_t* ___s0, int32_t ___style1, RuntimeObject* ___provider2, bool ___tryParse3, double* ___result4, Exception_t ** ___exc5, const RuntimeMethod* method);
+// System.Boolean System.Single::TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Single&)
+extern "C" IL2CPP_METHOD_ATTR bool Single_TryParse_m1572008725 (RuntimeObject * __this /* static, unused */, String_t* ___s0, int32_t ___style1, RuntimeObject* ___provider2, float* ___result3, const RuntimeMethod* method);
 // System.String System.NumberFormatter::NumberToString(System.Single,System.IFormatProvider)
 extern "C" IL2CPP_METHOD_ATTR String_t* NumberFormatter_NumberToString_m567544656 (RuntimeObject * __this /* static, unused */, float ___value0, RuntimeObject* ___fp1, const RuntimeMethod* method);
 // System.String System.Single::ToString()
@@ -27236,6 +27240,67 @@ IL_0037:
 		return (((float)((float)L_7)));
 	}
 }
+// System.Boolean System.Single::TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Single&)
+extern "C" IL2CPP_METHOD_ATTR bool Single_TryParse_m1572008725 (RuntimeObject * __this /* static, unused */, String_t* ___s0, int32_t ___style1, RuntimeObject* ___provider2, float* ___result3, const RuntimeMethod* method)
+{
+	double V_0 = 0.0;
+	Exception_t * V_1 = NULL;
+	{
+		String_t* L_0 = ___s0;
+		int32_t L_1 = ___style1;
+		RuntimeObject* L_2 = ___provider2;
+		bool L_3 = Double_Parse_m2152196909(NULL /*static, unused*/, L_0, L_1, L_2, (bool)1, (double*)(&V_0), (Exception_t **)(&V_1), /*hidden argument*/NULL);
+		if (L_3)
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		float* L_4 = ___result3;
+		*((float*)(L_4)) = (float)(0.0f);
+		return (bool)0;
+	}
+
+IL_001b:
+	{
+		double L_5 = V_0;
+		if ((!(((double)((double)il2cpp_codegen_subtract((double)L_5, (double)(3.4028234663852886E+38)))) > ((double)(3.6147112457961776E+29)))))
+		{
+			goto IL_0048;
+		}
+	}
+	{
+		double L_6 = V_0;
+		bool L_7 = Double_IsPositiveInfinity_m1245619811(NULL /*static, unused*/, L_6, /*hidden argument*/NULL);
+		if (L_7)
+		{
+			goto IL_0048;
+		}
+	}
+	{
+		float* L_8 = ___result3;
+		*((float*)(L_8)) = (float)(0.0f);
+		return (bool)0;
+	}
+
+IL_0048:
+	{
+		float* L_9 = ___result3;
+		double L_10 = V_0;
+		*((float*)(L_9)) = (float)(((float)((float)L_10)));
+		return (bool)1;
+	}
+}
+// System.Boolean System.Single::TryParse(System.String,System.Single&)
+extern "C" IL2CPP_METHOD_ATTR bool Single_TryParse_m4264970052 (RuntimeObject * __this /* static, unused */, String_t* ___s0, float* ___result1, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___s0;
+		float* L_1 = ___result1;
+		bool L_2 = Single_TryParse_m1572008725(NULL /*static, unused*/, L_0, ((int32_t)511), (RuntimeObject*)NULL, (float*)L_1, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
 // System.String System.Single::ToString()
 extern "C" IL2CPP_METHOD_ATTR String_t* Single_ToString_m3947131094 (float* __this, const RuntimeMethod* method)
 {
@@ -27361,12 +27426,40 @@ extern "C" IL2CPP_METHOD_ATTR void StackOverflowException__ctor_m3777153282 (Sta
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void System.String::.ctor(System.Char*)
+extern "C" IL2CPP_METHOD_ATTR void String__ctor_m767024435 (String_t* __this, Il2CppChar* ___value0, const RuntimeMethod* method)
+{
+	typedef void (*String__ctor_m767024435_ftn) (String_t*, Il2CppChar*);
+	using namespace il2cpp::icalls;
+	 ((String__ctor_m767024435_ftn)mscorlib::System::String::RedirectToCreateString) (__this, ___value0);
+}
 // System.Void System.String::.ctor(System.Char*,System.Int32,System.Int32)
 extern "C" IL2CPP_METHOD_ATTR void String__ctor_m1266423354 (String_t* __this, Il2CppChar* ___value0, int32_t ___startIndex1, int32_t ___length2, const RuntimeMethod* method)
 {
 	typedef void (*String__ctor_m1266423354_ftn) (String_t*, Il2CppChar*, int32_t, int32_t);
 	using namespace il2cpp::icalls;
 	 ((String__ctor_m1266423354_ftn)mscorlib::System::String::RedirectToCreateString) (__this, ___value0, ___startIndex1, ___length2);
+}
+// System.Void System.String::.ctor(System.SByte*)
+extern "C" IL2CPP_METHOD_ATTR void String__ctor_m3684298660 (String_t* __this, int8_t* ___value0, const RuntimeMethod* method)
+{
+	typedef void (*String__ctor_m3684298660_ftn) (String_t*, int8_t*);
+	using namespace il2cpp::icalls;
+	 ((String__ctor_m3684298660_ftn)mscorlib::System::String::RedirectToCreateString) (__this, ___value0);
+}
+// System.Void System.String::.ctor(System.SByte*,System.Int32,System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void String__ctor_m3705509333 (String_t* __this, int8_t* ___value0, int32_t ___startIndex1, int32_t ___length2, const RuntimeMethod* method)
+{
+	typedef void (*String__ctor_m3705509333_ftn) (String_t*, int8_t*, int32_t, int32_t);
+	using namespace il2cpp::icalls;
+	 ((String__ctor_m3705509333_ftn)mscorlib::System::String::RedirectToCreateString) (__this, ___value0, ___startIndex1, ___length2);
+}
+// System.Void System.String::.ctor(System.SByte*,System.Int32,System.Int32,System.Text.Encoding)
+extern "C" IL2CPP_METHOD_ATTR void String__ctor_m1348094059 (String_t* __this, int8_t* ___value0, int32_t ___startIndex1, int32_t ___length2, Encoding_t1523322056 * ___enc3, const RuntimeMethod* method)
+{
+	typedef void (*String__ctor_m1348094059_ftn) (String_t*, int8_t*, int32_t, int32_t, Encoding_t1523322056 *);
+	using namespace il2cpp::icalls;
+	 ((String__ctor_m1348094059_ftn)mscorlib::System::String::RedirectToCreateString) (__this, ___value0, ___startIndex1, ___length2, ___enc3);
 }
 // System.Void System.String::.ctor(System.Char[],System.Int32,System.Int32)
 extern "C" IL2CPP_METHOD_ATTR void String__ctor_m1926862525 (String_t* __this, CharU5BU5D_t3528271667* ___value0, int32_t ___startIndex1, int32_t ___length2, const RuntimeMethod* method)
@@ -43335,7 +43428,7 @@ IL_00a6:
 			{
 				Type_t * L_9 = V_1;
 				NullCheck(L_9);
-				RuntimeObject * L_10 = VirtFuncInvoker8< RuntimeObject *, String_t*, int32_t, Binder_t2999457153 *, RuntimeObject *, ObjectU5BU5D_t2843939325*, ParameterModifierU5BU5D_t2943407543*, CultureInfo_t4157843068 *, StringU5BU5D_t1281789340* >::Invoke(77 /* System.Object System.Type::InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[]) */, L_9, _stringLiteral3624839647, ((int32_t)4120), (Binder_t2999457153 *)NULL, NULL, (ObjectU5BU5D_t2843939325*)(ObjectU5BU5D_t2843939325*)NULL, (ParameterModifierU5BU5D_t2943407543*)(ParameterModifierU5BU5D_t2943407543*)NULL, (CultureInfo_t4157843068 *)NULL, (StringU5BU5D_t1281789340*)(StringU5BU5D_t1281789340*)NULL);
+				RuntimeObject * L_10 = VirtFuncInvoker8< RuntimeObject *, String_t*, int32_t, Binder_t2999457153 *, RuntimeObject *, ObjectU5BU5D_t2843939325*, ParameterModifierU5BU5D_t2943407543*, CultureInfo_t4157843068 *, StringU5BU5D_t1281789340* >::Invoke(78 /* System.Object System.Type::InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[]) */, L_9, _stringLiteral3624839647, ((int32_t)4120), (Binder_t2999457153 *)NULL, NULL, (ObjectU5BU5D_t2843939325*)(ObjectU5BU5D_t2843939325*)NULL, (ParameterModifierU5BU5D_t2943407543*)(ParameterModifierU5BU5D_t2943407543*)NULL, (CultureInfo_t4157843068 *)NULL, (StringU5BU5D_t1281789340*)(StringU5BU5D_t1281789340*)NULL);
 				V_2 = L_10;
 				RuntimeObject * L_11 = V_2;
 				if (L_11)
@@ -43417,7 +43510,7 @@ IL_00fc:
 				RuntimeObject * L_14 = V_2;
 				ObjectU5BU5D_t2843939325* L_15 = ___args1;
 				NullCheck(L_12);
-				RuntimeObject * L_16 = VirtFuncInvoker8< RuntimeObject *, String_t*, int32_t, Binder_t2999457153 *, RuntimeObject *, ObjectU5BU5D_t2843939325*, ParameterModifierU5BU5D_t2943407543*, CultureInfo_t4157843068 *, StringU5BU5D_t1281789340* >::Invoke(77 /* System.Object System.Type::InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[]) */, L_12, L_13, ((int32_t)276), (Binder_t2999457153 *)NULL, L_14, L_15, (ParameterModifierU5BU5D_t2943407543*)(ParameterModifierU5BU5D_t2943407543*)NULL, (CultureInfo_t4157843068 *)NULL, (StringU5BU5D_t1281789340*)(StringU5BU5D_t1281789340*)NULL);
+				RuntimeObject * L_16 = VirtFuncInvoker8< RuntimeObject *, String_t*, int32_t, Binder_t2999457153 *, RuntimeObject *, ObjectU5BU5D_t2843939325*, ParameterModifierU5BU5D_t2943407543*, CultureInfo_t4157843068 *, StringU5BU5D_t1281789340* >::Invoke(78 /* System.Object System.Type::InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[]) */, L_12, L_13, ((int32_t)276), (Binder_t2999457153 *)NULL, L_14, L_15, (ParameterModifierU5BU5D_t2943407543*)(ParameterModifierU5BU5D_t2943407543*)NULL, (CultureInfo_t4157843068 *)NULL, (StringU5BU5D_t1281789340*)(StringU5BU5D_t1281789340*)NULL);
 				V_3 = L_16;
 				IL2CPP_LEAVE(0x13F, FINALLY_0138);
 			}

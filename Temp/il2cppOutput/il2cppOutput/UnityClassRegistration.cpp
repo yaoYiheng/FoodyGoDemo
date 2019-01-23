@@ -102,7 +102,7 @@ class BuoyancyEffector2D;
 class PlatformEffector2D; 
 class PointEffector2D; 
 class SurfaceEffector2D; 
-class FlareLayer; 
+class FlareLayer; template <> void RegisterUnityClass<FlareLayer>(const char*);
 class GUIElement; template <> void RegisterUnityClass<GUIElement>(const char*);
 namespace TextRenderingPrivate { class GUIText; } template <> void RegisterUnityClass<TextRenderingPrivate::GUIText>(const char*);
 class GUITexture; 
@@ -151,7 +151,7 @@ class VideoPlayer;
 class WindZone; 
 namespace UI { class CanvasRenderer; } template <> void RegisterUnityClass<UI::CanvasRenderer>(const char*);
 class Collider; template <> void RegisterUnityClass<Collider>(const char*);
-class BoxCollider; 
+class BoxCollider; template <> void RegisterUnityClass<BoxCollider>(const char*);
 class CapsuleCollider; template <> void RegisterUnityClass<CapsuleCollider>(const char*);
 class CharacterController; template <> void RegisterUnityClass<CharacterController>(const char*);
 class MeshCollider; template <> void RegisterUnityClass<MeshCollider>(const char*);
@@ -205,7 +205,7 @@ class AudioMixerGroup;
 class AudioMixerGroupController; 
 class AudioMixerSnapshot; 
 class AudioMixerSnapshotController; 
-class Avatar; 
+class Avatar; template <> void RegisterUnityClass<Avatar>(const char*);
 class AvatarMask; 
 class BillboardAsset; 
 class ComputeShader; 
@@ -222,11 +222,11 @@ class AnimationClip; template <> void RegisterUnityClass<AnimationClip>(const ch
 class PreviewAnimationClip; 
 class NavMeshData; 
 class OcclusionCullingData; 
-class PhysicMaterial; 
+class PhysicMaterial; template <> void RegisterUnityClass<PhysicMaterial>(const char*);
 class PhysicsMaterial2D; 
 class PreloadData; template <> void RegisterUnityClass<PreloadData>(const char*);
 class RuntimeAnimatorController; template <> void RegisterUnityClass<RuntimeAnimatorController>(const char*);
-class AnimatorController; 
+class AnimatorController; template <> void RegisterUnityClass<AnimatorController>(const char*);
 class AnimatorOverrideController; template <> void RegisterUnityClass<AnimatorOverrideController>(const char*);
 class SampleClip; template <> void RegisterUnityClass<SampleClip>(const char*);
 class AudioClip; template <> void RegisterUnityClass<AudioClip>(const char*);
@@ -290,7 +290,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 87 non stripped classes
+	//Total: 92 non stripped classes
 	//0. Camera
 	RegisterUnityClass<Camera>("Core");
 	//1. Behaviour
@@ -447,23 +447,33 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<CloudWebServicesManager>("CloudWebServices");
 	//77. UnityAnalyticsManager
 	RegisterUnityClass<UnityAnalyticsManager>("UnityAnalytics");
-	//78. Motion
-	RegisterUnityClass<Motion>("Animation");
-	//79. AnimationClip
-	RegisterUnityClass<AnimationClip>("Animation");
-	//80. LightProbes
-	RegisterUnityClass<LightProbes>("Core");
-	//81. LevelGameManager
+	//78. LevelGameManager
 	RegisterUnityClass<LevelGameManager>("Core");
-	//82. LightmapSettings
+	//79. LightmapSettings
 	RegisterUnityClass<LightmapSettings>("Core");
-	//83. RenderSettings
+	//80. RenderSettings
 	RegisterUnityClass<RenderSettings>("Core");
-	//84. SkinnedMeshRenderer
+	//81. Motion
+	RegisterUnityClass<Motion>("Animation");
+	//82. AnimationClip
+	RegisterUnityClass<AnimationClip>("Animation");
+	//83. AnimatorController
+	RegisterUnityClass<AnimatorController>("Animation");
+	//84. BoxCollider
+	RegisterUnityClass<BoxCollider>("Physics");
+	//85. FlareLayer
+	RegisterUnityClass<FlareLayer>("Core");
+	//86. SkinnedMeshRenderer
 	RegisterUnityClass<SkinnedMeshRenderer>("Core");
-	//85. MeshCollider
+	//87. MeshCollider
 	RegisterUnityClass<MeshCollider>("Physics");
-	//86. NavMeshSettings
+	//88. PhysicMaterial
+	RegisterUnityClass<PhysicMaterial>("Physics");
+	//89. Avatar
+	RegisterUnityClass<Avatar>("Animation");
+	//90. LightProbes
+	RegisterUnityClass<LightProbes>("Core");
+	//91. NavMeshSettings
 	RegisterUnityClass<NavMeshSettings>("AI");
 
 }

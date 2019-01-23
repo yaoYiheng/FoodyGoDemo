@@ -115,6 +115,7 @@ extern const uint32_t WWW_UnEscapeURL_m2827350915_MetadataUsageId;
 extern const uint32_t WWW_WaitUntilDoneIfPossible_m2855479680_MetadataUsageId;
 extern const uint32_t WWW_get_bytes_m3061182897_MetadataUsageId;
 extern const uint32_t WWW_get_error_m3055313367_MetadataUsageId;
+extern const uint32_t WWW_get_text_m898164367_MetadataUsageId;
 struct CertificateHandler_t2739891000_marshaled_com;
 struct DownloadHandler_t2937767557_marshaled_com;
 struct UnityWebRequest_t463507806_marshaled_com;
@@ -1464,6 +1465,8 @@ extern "C" IL2CPP_METHOD_ATTR int64_t UnityWebRequest_get_responseCode_m10908304
 extern "C" IL2CPP_METHOD_ATTR String_t* WWW_GetStatusCodeName_m3580893459 (WWW_t3688466362 * __this, int64_t ___statusCode0, const RuntimeMethod* method);
 // System.String System.String::Format(System.String,System.Object,System.Object)
 extern "C" IL2CPP_METHOD_ATTR String_t* String_Format_m2556382932 (RuntimeObject * __this /* static, unused */, String_t* p0, RuntimeObject * p1, RuntimeObject * p2, const RuntimeMethod* method);
+// System.String UnityEngine.Networking.DownloadHandler::get_text()
+extern "C" IL2CPP_METHOD_ATTR String_t* DownloadHandler_get_text_m2427232382 (DownloadHandler_t2937767557 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Texture2D::.ctor(System.Int32,System.Int32)
 extern "C" IL2CPP_METHOD_ATTR void Texture2D__ctor_m373113269 (Texture2D_t3840446185 * __this, int32_t p0, int32_t p1, const RuntimeMethod* method);
 // System.Boolean UnityEngine.ImageConversion::LoadImage(UnityEngine.Texture2D,System.Byte[],System.Boolean)
@@ -1719,6 +1722,76 @@ IL_0012:
 	{
 		bool L_2 = V_0;
 		return L_2;
+	}
+}
+// System.String UnityEngine.WWW::get_text()
+extern "C" IL2CPP_METHOD_ATTR String_t* WWW_get_text_m898164367 (WWW_t3688466362 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (WWW_get_text_m898164367_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	DownloadHandler_t2937767557 * V_1 = NULL;
+	{
+		bool L_0 = WWW_WaitUntilDoneIfPossible_m2855479680(__this, /*hidden argument*/NULL);
+		if (L_0)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		V_0 = _stringLiteral757602046;
+		goto IL_005b;
+	}
+
+IL_0017:
+	{
+		UnityWebRequest_t463507806 * L_1 = __this->get__uwr_0();
+		NullCheck(L_1);
+		bool L_2 = UnityWebRequest_get_isNetworkError_m1231611882(L_1, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_0032;
+		}
+	}
+	{
+		V_0 = _stringLiteral757602046;
+		goto IL_005b;
+	}
+
+IL_0032:
+	{
+		UnityWebRequest_t463507806 * L_3 = __this->get__uwr_0();
+		NullCheck(L_3);
+		DownloadHandler_t2937767557 * L_4 = UnityWebRequest_get_downloadHandler_m534911913(L_3, /*hidden argument*/NULL);
+		V_1 = L_4;
+		DownloadHandler_t2937767557 * L_5 = V_1;
+		if (L_5)
+		{
+			goto IL_004f;
+		}
+	}
+	{
+		V_0 = _stringLiteral757602046;
+		goto IL_005b;
+	}
+
+IL_004f:
+	{
+		DownloadHandler_t2937767557 * L_6 = V_1;
+		NullCheck(L_6);
+		String_t* L_7 = DownloadHandler_get_text_m2427232382(L_6, /*hidden argument*/NULL);
+		V_0 = L_7;
+		goto IL_005b;
+	}
+
+IL_005b:
+	{
+		String_t* L_8 = V_0;
+		return L_8;
 	}
 }
 // UnityEngine.Texture2D UnityEngine.WWW::CreateTextureFromDownloadedData(System.Boolean)

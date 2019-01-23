@@ -17,7 +17,8 @@ namespace packt.FoodyGO.Services
         private SQLiteConnection _connection;
         
         // Use this for initialization
-        void Start()
+        //use Awake instead of Start for earlier initialization
+        void Awake()
         {
 #if UNITY_EDITOR
         var dbPath = string.Format(@"Assets/StreamingAssets/{0}", DatabaseName);
@@ -154,61 +155,32 @@ namespace packt.FoodyGO.Services
             return _connection.Table<DatabaseVersion>().FirstOrDefault().Version;
         }
 
-        //public Monster CreateMonster()
-        //{
-        //    var m = new Monster
-        //    {
-        //        Name = "Chef Child",
-        //        Level = 2,
-        //        Power = 10,
-        //        Skills = "French"
-        //    };
-        //    _connection.Insert(m);
-        //    return m;
-        //}
-
-
-        public Monster CreatMonster(Monster monster)
+        public Monster CreateMonster(Monster m)
         {
-            var id = _connection.Insert(monster);
-            monster.Id = id;
-
-            return monster;
+            var id = _connection.Insert(m);
+            m.Id = id;
+            return m;
         }
 
-        /// <summary>
-        /// 读取单个怪物
-        /// </summary>
-        /// <returns>The monster.</returns>
-        /// <param name="id">Identifier.</param>
         public Monster ReadMonster(int id)
         {
-            return _connection.Table<Monster>().Where(m => m.Id == id).FirstOrDefault();
+            return _connection.Table<Monster>()
+                .Where(m => m.Id == id).FirstOrDefault();
         }
 
-        //读取所有怪物
         public IEnumerable<Monster> ReadMonsters()
         {
             return _connection.Table<Monster>();
         }
-        //更新
-        public int UpgradeMonster(Monster monster)
-        {
-            if (monster.Id == 0)
-            {
-                Monster m = CreatMonster(monster);
-                return m.Id;
 
-            }
-            return _connection.Update(monster);
+        public int UpdateMonster(Monster m)
+        {
+            return _connection.Update(m);
         }
 
-
-        public int DeleteMonster(Monster monster)
+        public int DeleteMonster(Monster m)
         {
-            if (monster.Id == 0) return - 1;
-
-            return _connection.Delete(monster);
+            return _connection.Delete(m);
         }
 
     }

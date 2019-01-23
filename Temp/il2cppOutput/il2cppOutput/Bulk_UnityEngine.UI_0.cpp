@@ -1173,7 +1173,7 @@ extern const RuntimeMethod* List_1_Add_m3700962105_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_Clear_m1143167521_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_Clear_m2198735466_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_Clear_m2418118317_RuntimeMethod_var;
-extern const RuntimeMethod* List_1_Clear_m2500309205_RuntimeMethod_var;
+extern const RuntimeMethod* List_1_Clear_m2881798211_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_Clear_m3276020514_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_Clear_m3532589229_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_Contains_m403158780_RuntimeMethod_var;
@@ -17284,7 +17284,7 @@ inline int32_t List_1_get_Count_m2812834599 (List_1_t2585711361 * __this, const 
 	return ((  int32_t (*) (List_1_t2585711361 *, const RuntimeMethod*))List_1_get_Count_m2934127733_gshared)(__this, method);
 }
 // System.Void System.Collections.Generic.List`1<UnityEngine.GameObject>::Clear()
-inline void List_1_Clear_m2500309205 (List_1_t2585711361 * __this, const RuntimeMethod* method)
+inline void List_1_Clear_m2881798211 (List_1_t2585711361 * __this, const RuntimeMethod* method)
 {
 	((  void (*) (List_1_t2585711361 *, const RuntimeMethod*))List_1_Clear_m3697625829_gshared)(__this, method);
 }
@@ -20817,7 +20817,7 @@ IL_0042:
 		NullCheck(L_16);
 		List_1_t2585711361 * L_17 = L_16->get_hovered_9();
 		NullCheck(L_17);
-		List_1_Clear_m2500309205(L_17, /*hidden argument*/List_1_Clear_m2500309205_RuntimeMethod_var);
+		List_1_Clear_m2881798211(L_17, /*hidden argument*/List_1_Clear_m2881798211_RuntimeMethod_var);
 		GameObject_t1113636619 * L_18 = ___newEnterTarget1;
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
 		bool L_19 = Object_op_Equality_m1810815630(NULL /*static, unused*/, L_18, (Object_t631007953 *)NULL, /*hidden argument*/NULL);

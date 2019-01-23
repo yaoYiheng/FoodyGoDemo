@@ -36713,7 +36713,7 @@ extern "C" IL2CPP_METHOD_ATTR MethodBase_t * CADMethodCallMessage_GetMethod_m177
 		V_1 = L_1;
 		Type_t * L_2 = V_1;
 		NullCheck(L_2);
-		bool L_3 = VirtFuncInvoker0< bool >::Invoke(82 /* System.Boolean System.Type::get_IsGenericType() */, L_2);
+		bool L_3 = VirtFuncInvoker0< bool >::Invoke(83 /* System.Boolean System.Type::get_IsGenericType() */, L_2);
 		if (L_3)
 		{
 			goto IL_0024;
@@ -36722,7 +36722,7 @@ extern "C" IL2CPP_METHOD_ATTR MethodBase_t * CADMethodCallMessage_GetMethod_m177
 	{
 		Type_t * L_4 = V_1;
 		NullCheck(L_4);
-		bool L_5 = VirtFuncInvoker0< bool >::Invoke(80 /* System.Boolean System.Type::get_IsGenericTypeDefinition() */, L_4);
+		bool L_5 = VirtFuncInvoker0< bool >::Invoke(81 /* System.Boolean System.Type::get_IsGenericTypeDefinition() */, L_4);
 		if (!L_5)
 		{
 			goto IL_0035;

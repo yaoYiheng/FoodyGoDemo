@@ -70,7 +70,9 @@
     <Compile Include="Assets\FoodyGo\Scripts\Controllers\CatchSceneController.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\Controllers\CharacterGPSCompassController.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\Controllers\CharacterGPSCopmassController.cs" />
+    <Compile Include="Assets\FoodyGo\Scripts\Controllers\InventorySceneController.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\Controllers\MonsterController.cs" />
+    <Compile Include="Assets\FoodyGo\Scripts\Controllers\PlacesController.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\Database\DatabaseVersion.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\Database\Monster.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\Database\SQLite.cs" />
@@ -82,6 +84,7 @@
     <Compile Include="Assets\FoodyGo\Scripts\Mapping\MathG.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\PhysicsExt\CollisionAction.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\PhysicsExt\CollisionReaction.cs" />
+    <Compile Include="Assets\FoodyGo\Scripts\Services\GooglePlacesAPIService.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\Services\GPSLocationService.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\Services\InventoryService.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\Services\MonsterFactory.cs" />
@@ -90,7 +93,12 @@
     <Compile Include="Assets\FoodyGo\Scripts\TouchInput\ThrowTouchPad.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\UI\CameraTextureOnRawImage.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\UI\FootstepTracker.cs" />
+    <Compile Include="Assets\FoodyGo\Scripts\UI\HomeButton.cs" />
+    <Compile Include="Assets\FoodyGo\Scripts\UI\InventoryContent.cs" />
+    <Compile Include="Assets\FoodyGo\Scripts\UI\InventoryItem.cs" />
+    <Compile Include="Assets\FoodyGo\Scripts\UI\MonsterInventoryItem.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\Utils\Epoch.cs" />
+    <Compile Include="Assets\FoodyGo\Scripts\Utils\TinyJson.cs" />
     <None Include="Assets\Elementals\Readme.txt" />
     <None Include="Assets\Max\Document\readme.txt" />
     <Reference Include="UnityEditor.StandardEvents">

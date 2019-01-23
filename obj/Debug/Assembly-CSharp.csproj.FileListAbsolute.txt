@@ -250,3 +250,4 @@
 /Users/yiheng/Documents/Unity相关/FoodyGoDemo/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache
 /Users/yiheng/Documents/Unity相关/FoodyGoDemo/obj/Debug/Assembly-CSharp.dll
 /Users/yiheng/Documents/Unity相关/FoodyGoDemo/obj/Debug/Assembly-CSharp.pdb
+/Users/yiheng/Documents/Unity相关/FoodyGoDemo/Temp/bin/Debug/Assembly-CSharp-firstpass.pdb

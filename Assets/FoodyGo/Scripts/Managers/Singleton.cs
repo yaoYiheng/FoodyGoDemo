@@ -6,7 +6,10 @@ namespace packt.FoodyGO.Managers
     public abstract class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     {
         private static T _instance;
-
+        //protected virtual void Awake()
+        //{
+        //    _instance = this as T;
+        //}
         public static T Instance
         {
             get
@@ -38,4 +41,5 @@ namespace packt.FoodyGO.Managers
             }
         }
     }
+    
 }

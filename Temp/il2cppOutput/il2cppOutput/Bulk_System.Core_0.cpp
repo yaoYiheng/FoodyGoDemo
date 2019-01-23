@@ -234,6 +234,8 @@ struct ObjectDisposedException_t21392786;
 struct ObjectU5BU5D_t2843939325;
 // System.Reflection.Emit.UnmanagedMarshal
 struct UnmanagedMarshal_t984015687;
+// System.Reflection.FieldInfo
+struct FieldInfo_t;
 // System.Reflection.MemberFilter
 struct MemberFilter_t426314064;
 // System.Reflection.MemberInfo
@@ -244,6 +246,8 @@ struct MethodBase_t;
 struct MethodInfo_t;
 // System.Reflection.ParameterInfo
 struct ParameterInfo_t1861056598;
+// System.Reflection.PropertyInfo
+struct PropertyInfo_t;
 // System.Runtime.CompilerServices.ExtensionAttribute
 struct ExtensionAttribute_t1723066603;
 // System.Security.Cryptography.Aes
@@ -343,33 +347,45 @@ extern String_t* _stringLiteral161500116;
 extern String_t* _stringLiteral1672143317;
 extern String_t* _stringLiteral1810271857;
 extern String_t* _stringLiteral1811332746;
+extern String_t* _stringLiteral18249897;
+extern String_t* _stringLiteral2025020366;
 extern String_t* _stringLiteral2053830539;
+extern String_t* _stringLiteral2077913984;
 extern String_t* _stringLiteral2088427141;
 extern String_t* _stringLiteral2091341596;
 extern String_t* _stringLiteral2101785501;
 extern String_t* _stringLiteral2136391555;
 extern String_t* _stringLiteral2153550409;
 extern String_t* _stringLiteral2167393519;
+extern String_t* _stringLiteral2191586598;
 extern String_t* _stringLiteral2212699745;
 extern String_t* _stringLiteral2260015710;
 extern String_t* _stringLiteral227245301;
+extern String_t* _stringLiteral2282716040;
 extern String_t* _stringLiteral2387040967;
+extern String_t* _stringLiteral2401610308;
 extern String_t* _stringLiteral2495112056;
 extern String_t* _stringLiteral251636811;
 extern String_t* _stringLiteral2585275424;
 extern String_t* _stringLiteral2609825863;
+extern String_t* _stringLiteral2690405135;
 extern String_t* _stringLiteral2713363123;
 extern String_t* _stringLiteral289204851;
+extern String_t* _stringLiteral2962044487;
 extern String_t* _stringLiteral2993467114;
+extern String_t* _stringLiteral3009079190;
 extern String_t* _stringLiteral3073595182;
+extern String_t* _stringLiteral3110369597;
 extern String_t* _stringLiteral3133858467;
 extern String_t* _stringLiteral3152468735;
 extern String_t* _stringLiteral3181813962;
 extern String_t* _stringLiteral3188105535;
+extern String_t* _stringLiteral3243520166;
 extern String_t* _stringLiteral3246833729;
 extern String_t* _stringLiteral3266137301;
 extern String_t* _stringLiteral327508185;
 extern String_t* _stringLiteral335008478;
+extern String_t* _stringLiteral3372390906;
 extern String_t* _stringLiteral339086443;
 extern String_t* _stringLiteral3430552138;
 extern String_t* _stringLiteral3450124154;
@@ -406,6 +422,7 @@ extern String_t* _stringLiteral3478177746;
 extern String_t* _stringLiteral3482834024;
 extern String_t* _stringLiteral3495190937;
 extern String_t* _stringLiteral356329547;
+extern String_t* _stringLiteral3610891033;
 extern String_t* _stringLiteral3647647696;
 extern String_t* _stringLiteral3672279257;
 extern String_t* _stringLiteral3695872217;
@@ -424,7 +441,9 @@ extern String_t* _stringLiteral569374059;
 extern String_t* _stringLiteral742876383;
 extern String_t* _stringLiteral836742166;
 extern String_t* _stringLiteral89615844;
+extern String_t* _stringLiteral897330846;
 extern String_t* _stringLiteral911713584;
+extern String_t* _stringLiteral928723642;
 extern String_t* _stringLiteral943589392;
 extern String_t* _stringLiteral967860007;
 extern const RuntimeMethod* Action_1__ctor_m1086995192_RuntimeMethod_var;
@@ -432,6 +451,7 @@ extern const RuntimeMethod* Action_1__ctor_m2050332088_RuntimeMethod_var;
 extern const RuntimeMethod* Action_1__ctor_m521837620_RuntimeMethod_var;
 extern const RuntimeMethod* Action_1__ctor_m757341569_RuntimeMethod_var;
 extern const RuntimeMethod* AesTransform__ctor_m3143546745_RuntimeMethod_var;
+extern const RuntimeMethod* Check_SourceAndKeyElementSelectors_m4285999668_RuntimeMethod_var;
 extern const RuntimeMethod* Check_SourceAndKeySelector_m1202955589_RuntimeMethod_var;
 extern const RuntimeMethod* Check_SourceAndPredicate_m2332465641_RuntimeMethod_var;
 extern const RuntimeMethod* Check_SourceAndSelector_m4013530551_RuntimeMethod_var;
@@ -446,8 +466,16 @@ extern const RuntimeMethod* ExpressionVisitor_VisitList_TisMemberBinding_t265491
 extern const RuntimeMethod* ExpressionVisitor_VisitList_TisParameterExpression_t1118422084_m3269433003_RuntimeMethod_var;
 extern const RuntimeMethod* ExpressionVisitor_Visit_m3238193698_RuntimeMethod_var;
 extern const RuntimeMethod* Expression_BinaryCoreCheck_m695859152_RuntimeMethod_var;
+extern const RuntimeMethod* Expression_CheckLambda_m3787444653_RuntimeMethod_var;
+extern const RuntimeMethod* Expression_CheckNonGenericMethod_m3227574805_RuntimeMethod_var;
+extern const RuntimeMethod* Expression_CheckNotVoid_m1390322664_RuntimeMethod_var;
 extern const RuntimeMethod* Expression_ConditionalBinaryCheck_m3166675632_RuntimeMethod_var;
+extern const RuntimeMethod* Expression_Constant_m374760797_RuntimeMethod_var;
+extern const RuntimeMethod* Expression_Field_m3561580611_RuntimeMethod_var;
 extern const RuntimeMethod* Expression_MakeBoolBinary_m2487244413_RuntimeMethod_var;
+extern const RuntimeMethod* Expression_Parameter_m4117869331_RuntimeMethod_var;
+extern const RuntimeMethod* Expression_Property_m493981664_RuntimeMethod_var;
+extern const RuntimeMethod* Expression_Quote_m2632568450_RuntimeMethod_var;
 extern const RuntimeMethod* ReadOnlyCollection_1_get_Count_m2443279563_RuntimeMethod_var;
 extern const RuntimeMethod* ReadOnlyCollection_1_get_Count_m2483166938_RuntimeMethod_var;
 extern const RuntimeMethod* ReadOnlyCollection_1_get_Count_m3216249872_RuntimeMethod_var;
@@ -467,12 +495,15 @@ extern const RuntimeMethod* SymmetricTransform_Transform_m1683494363_RuntimeMeth
 extern const RuntimeMethod* SymmetricTransform__ctor_m2693628991_RuntimeMethod_var;
 extern const RuntimeType* Boolean_t97287965_0_0_0_var;
 extern const RuntimeType* Byte_t1134296376_0_0_0_var;
+extern const RuntimeType* Delegate_t1188392813_0_0_0_var;
 extern const RuntimeType* Double_t594665363_0_0_0_var;
+extern const RuntimeType* Expression_t1588164026_0_0_0_var;
 extern const RuntimeType* Int16_t2552820387_0_0_0_var;
 extern const RuntimeType* Int32_t2950945753_0_0_0_var;
 extern const RuntimeType* Int64_t3736567304_0_0_0_var;
 extern const RuntimeType* Nullable_1_t1819850047_0_0_0_var;
 extern const RuntimeType* Nullable_1_t3772285925_0_0_0_var;
+extern const RuntimeType* RuntimeObject_0_0_0_var;
 extern const RuntimeType* SByte_t1669577662_0_0_0_var;
 extern const RuntimeType* Single_t1397266774_0_0_0_var;
 extern const RuntimeType* UInt16_t2177724958_0_0_0_var;
@@ -487,6 +518,7 @@ extern const uint32_t AesTransform_SubByte_m3350159546_MetadataUsageId;
 extern const uint32_t AesTransform__cctor_m2567644034_MetadataUsageId;
 extern const uint32_t AesTransform__ctor_m3143546745_MetadataUsageId;
 extern const uint32_t Aes__ctor_m178909601_MetadataUsageId;
+extern const uint32_t Check_SourceAndKeyElementSelectors_m4285999668_MetadataUsageId;
 extern const uint32_t Check_SourceAndKeySelector_m1202955589_MetadataUsageId;
 extern const uint32_t Check_SourceAndPredicate_m2332465641_MetadataUsageId;
 extern const uint32_t Check_SourceAndSelector_m4013530551_MetadataUsageId;
@@ -524,7 +556,14 @@ extern const uint32_t ExpressionVisitor_VisitExpressionList_m2907260662_Metadata
 extern const uint32_t ExpressionVisitor_Visit_m3238193698_MetadataUsageId;
 extern const uint32_t Expression_AndAlso_m2696956330_MetadataUsageId;
 extern const uint32_t Expression_BinaryCoreCheck_m695859152_MetadataUsageId;
+extern const uint32_t Expression_CheckLambda_m3787444653_MetadataUsageId;
+extern const uint32_t Expression_CheckNonGenericMethod_m3227574805_MetadataUsageId;
+extern const uint32_t Expression_CheckNotVoid_m1390322664_MetadataUsageId;
 extern const uint32_t Expression_ConditionalBinaryCheck_m3166675632_MetadataUsageId;
+extern const uint32_t Expression_Constant_m3269986673_MetadataUsageId;
+extern const uint32_t Expression_Constant_m374760797_MetadataUsageId;
+extern const uint32_t Expression_Equal_m883203998_MetadataUsageId;
+extern const uint32_t Expression_Field_m3561580611_MetadataUsageId;
 extern const uint32_t Expression_GetBinaryOperator_m1302083445_MetadataUsageId;
 extern const uint32_t Expression_GetBooleanOperator_m4007840489_MetadataUsageId;
 extern const uint32_t Expression_GetFalseOperator_m875335054_MetadataUsageId;
@@ -533,6 +572,11 @@ extern const uint32_t Expression_GetUnaryOperator_m1923824418_MetadataUsageId;
 extern const uint32_t Expression_IsInt_m894215614_MetadataUsageId;
 extern const uint32_t Expression_IsNumber_m471167658_MetadataUsageId;
 extern const uint32_t Expression_MakeBoolBinary_m2487244413_MetadataUsageId;
+extern const uint32_t Expression_Parameter_m4117869331_MetadataUsageId;
+extern const uint32_t Expression_Property_m493981664_MetadataUsageId;
+extern const uint32_t Expression_Quote_m2632568450_MetadataUsageId;
+extern const uint32_t Extensions_GetInvokeMethod_m2591588064_MetadataUsageId;
+extern const uint32_t Extensions_IsExpression_m3809696797_MetadataUsageId;
 extern const uint32_t Extensions_IsNullable_m780193409_MetadataUsageId;
 extern const uint32_t Extensions_MakeNullableType_m1960133478_MetadataUsageId;
 extern const uint32_t KeyBuilder_IV_m3340234014_MetadataUsageId;
@@ -556,6 +600,7 @@ struct ByteU5BU5D_t4116647657;
 struct ObjectU5BU5D_t2843939325;
 struct MethodInfoU5BU5D_t2572182361;
 struct ParameterInfoU5BU5D_t390618515;
+struct PropertyInfoU5BU5D_t1461822886;
 struct KeySizesU5BU5D_t722666473;
 struct TypeU5BU5D_t3940880105;
 struct UInt32U5BU5D_t2770800703;
@@ -1861,6 +1906,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // MONOTODOATTRIBUTE_T4131080583_H
+#ifndef FIELDINFO_T_H
+#define FIELDINFO_T_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Reflection.FieldInfo
+struct  FieldInfo_t  : public MemberInfo_t
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // FIELDINFO_T_H
 #ifndef METHODBASE_T_H
 #define METHODBASE_T_H
 #ifdef __clang__
@@ -1881,6 +1946,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // METHODBASE_T_H
+#ifndef PROPERTYINFO_T_H
+#define PROPERTYINFO_T_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Reflection.PropertyInfo
+struct  PropertyInfo_t  : public MemberInfo_t
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PROPERTYINFO_T_H
 #ifndef EXTENSIONATTRIBUTE_T1723066603_H
 #define EXTENSIONATTRIBUTE_T1723066603_H
 #ifdef __clang__
@@ -4345,6 +4430,43 @@ public:
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
 	}
 };
+// System.Reflection.PropertyInfo[]
+struct PropertyInfoU5BU5D_t1461822886  : public RuntimeArray
+{
+public:
+	ALIGN_FIELD (8) PropertyInfo_t * m_Items[1];
+
+public:
+	inline PropertyInfo_t * GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline PropertyInfo_t ** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, PropertyInfo_t * value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+	inline PropertyInfo_t * GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline PropertyInfo_t ** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, PropertyInfo_t * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
 // System.Type[]
 struct TypeU5BU5D_t3940880105  : public RuntimeArray
 {
@@ -4456,12 +4578,12 @@ public:
 };
 
 
-// System.Void System.Action`1<System.Object>::.ctor(System.Object,System.IntPtr)
-extern "C" IL2CPP_METHOD_ATTR void Action_1__ctor_m118522912_gshared (Action_1_t3252573759 * __this, RuntimeObject * p0, intptr_t p1, const RuntimeMethod* method);
 // System.Int32 System.Collections.ObjectModel.ReadOnlyCollection`1<System.Object>::get_Count()
 extern "C" IL2CPP_METHOD_ATTR int32_t ReadOnlyCollection_1_get_Count_m3533048922_gshared (ReadOnlyCollection_1_t4292682451 * __this, const RuntimeMethod* method);
 // !0 System.Collections.ObjectModel.ReadOnlyCollection`1<System.Object>::get_Item(System.Int32)
 extern "C" IL2CPP_METHOD_ATTR RuntimeObject * ReadOnlyCollection_1_get_Item_m3234599553_gshared (ReadOnlyCollection_1_t4292682451 * __this, int32_t p0, const RuntimeMethod* method);
+// System.Void System.Action`1<System.Object>::.ctor(System.Object,System.IntPtr)
+extern "C" IL2CPP_METHOD_ATTR void Action_1__ctor_m118522912_gshared (Action_1_t3252573759 * __this, RuntimeObject * p0, intptr_t p1, const RuntimeMethod* method);
 
 // System.String System.String::Format(System.String,System.Object[])
 extern "C" IL2CPP_METHOD_ATTR String_t* String_Format_m630303134 (RuntimeObject * __this /* static, unused */, String_t* p0, ObjectU5BU5D_t2843939325* p1, const RuntimeMethod* method);
@@ -4591,6 +4713,50 @@ extern "C" IL2CPP_METHOD_ATTR void ArgumentException__ctor_m1312628991 (Argument
 extern "C" IL2CPP_METHOD_ATTR MethodInfo_t * Expression_GetTrueOperator_m3643910251 (RuntimeObject * __this /* static, unused */, Type_t * ___self0, const RuntimeMethod* method);
 // System.Reflection.MethodInfo System.Linq.Expressions.Expression::GetFalseOperator(System.Type)
 extern "C" IL2CPP_METHOD_ATTR MethodInfo_t * Expression_GetFalseOperator_m875335054 (RuntimeObject * __this /* static, unused */, Type_t * ___self0, const RuntimeMethod* method);
+// System.Linq.Expressions.BinaryExpression System.Linq.Expressions.Expression::Equal(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Boolean,System.Reflection.MethodInfo)
+extern "C" IL2CPP_METHOD_ATTR BinaryExpression_t77573129 * Expression_Equal_m883203998 (RuntimeObject * __this /* static, unused */, Expression_t1588164026 * ___left0, Expression_t1588164026 * ___right1, bool ___liftToNull2, MethodInfo_t * ___method3, const RuntimeMethod* method);
+// System.Void System.Linq.Expressions.ConstantExpression::.ctor(System.Object,System.Type)
+extern "C" IL2CPP_METHOD_ATTR void ConstantExpression__ctor_m150340203 (ConstantExpression_t3613654278 * __this, RuntimeObject * ___value0, Type_t * ___type1, const RuntimeMethod* method);
+// System.Type System.Object::GetType()
+extern "C" IL2CPP_METHOD_ATTR Type_t * Object_GetType_m88164663 (RuntimeObject * __this, const RuntimeMethod* method);
+// System.Linq.Expressions.ConstantExpression System.Linq.Expressions.Expression::Constant(System.Object,System.Type)
+extern "C" IL2CPP_METHOD_ATTR ConstantExpression_t3613654278 * Expression_Constant_m374760797 (RuntimeObject * __this /* static, unused */, RuntimeObject * ___value0, Type_t * ___type1, const RuntimeMethod* method);
+// System.Void System.ArgumentException::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void ArgumentException__ctor_m3698743796 (ArgumentException_t132251570 * __this, const RuntimeMethod* method);
+// System.Boolean System.Reflection.FieldInfo::get_IsStatic()
+extern "C" IL2CPP_METHOD_ATTR bool FieldInfo_get_IsStatic_m3482711189 (FieldInfo_t * __this, const RuntimeMethod* method);
+// System.Void System.Linq.Expressions.MemberExpression::.ctor(System.Linq.Expressions.Expression,System.Reflection.MemberInfo,System.Type)
+extern "C" IL2CPP_METHOD_ATTR void MemberExpression__ctor_m4019112431 (MemberExpression_t2956213603 * __this, Expression_t1588164026 * ___expression0, MemberInfo_t * ___member1, Type_t * ___type2, const RuntimeMethod* method);
+// System.Reflection.MethodInfo System.Linq.Expressions.Extensions::GetInvokeMethod(System.Type)
+extern "C" IL2CPP_METHOD_ATTR MethodInfo_t * Extensions_GetInvokeMethod_m2591588064 (RuntimeObject * __this /* static, unused */, Type_t * ___self0, const RuntimeMethod* method);
+// System.Int32 System.Collections.ObjectModel.ReadOnlyCollection`1<System.Linq.Expressions.ParameterExpression>::get_Count()
+inline int32_t ReadOnlyCollection_1_get_Count_m3216249872 (ReadOnlyCollection_1_t2330998371 * __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (ReadOnlyCollection_1_t2330998371 *, const RuntimeMethod*))ReadOnlyCollection_1_get_Count_m3533048922_gshared)(__this, method);
+}
+// !0 System.Collections.ObjectModel.ReadOnlyCollection`1<System.Linq.Expressions.ParameterExpression>::get_Item(System.Int32)
+inline ParameterExpression_t1118422084 * ReadOnlyCollection_1_get_Item_m1189576603 (ReadOnlyCollection_1_t2330998371 * __this, int32_t p0, const RuntimeMethod* method)
+{
+	return ((  ParameterExpression_t1118422084 * (*) (ReadOnlyCollection_1_t2330998371 *, int32_t, const RuntimeMethod*))ReadOnlyCollection_1_get_Item_m3234599553_gshared)(__this, p0, method);
+}
+// System.Boolean System.Linq.Expressions.Expression::CanAssign(System.Type,System.Type)
+extern "C" IL2CPP_METHOD_ATTR bool Expression_CanAssign_m2137729393 (RuntimeObject * __this /* static, unused */, Type_t * ___target0, Type_t * ___source1, const RuntimeMethod* method);
+// System.String System.String::Format(System.String,System.Object,System.Object)
+extern "C" IL2CPP_METHOD_ATTR String_t* String_Format_m2556382932 (RuntimeObject * __this /* static, unused */, String_t* p0, RuntimeObject * p1, RuntimeObject * p2, const RuntimeMethod* method);
+// System.Boolean System.Linq.Expressions.Extensions::IsExpression(System.Type)
+extern "C" IL2CPP_METHOD_ATTR bool Extensions_IsExpression_m3809696797 (RuntimeObject * __this /* static, unused */, Type_t * ___self0, const RuntimeMethod* method);
+// System.Linq.Expressions.UnaryExpression System.Linq.Expressions.Expression::Quote(System.Linq.Expressions.Expression)
+extern "C" IL2CPP_METHOD_ATTR UnaryExpression_t3914580921 * Expression_Quote_m2632568450 (RuntimeObject * __this /* static, unused */, Expression_t1588164026 * ___expression0, const RuntimeMethod* method);
+// System.Void System.Linq.Expressions.Expression::CheckNotVoid(System.Type)
+extern "C" IL2CPP_METHOD_ATTR void Expression_CheckNotVoid_m1390322664 (RuntimeObject * __this /* static, unused */, Type_t * ___type0, const RuntimeMethod* method);
+// System.Void System.Linq.Expressions.ParameterExpression::.ctor(System.Type,System.String)
+extern "C" IL2CPP_METHOD_ATTR void ParameterExpression__ctor_m1083457433 (ParameterExpression_t1118422084 * __this, Type_t * ___type0, String_t* ___name1, const RuntimeMethod* method);
+// System.Void System.Linq.Expressions.Expression::CheckNonGenericMethod(System.Reflection.MethodBase)
+extern "C" IL2CPP_METHOD_ATTR void Expression_CheckNonGenericMethod_m3227574805 (RuntimeObject * __this /* static, unused */, MethodBase_t * ___method0, const RuntimeMethod* method);
+// System.Reflection.PropertyInfo System.Linq.Expressions.Expression::GetAssociatedProperty(System.Reflection.MethodInfo)
+extern "C" IL2CPP_METHOD_ATTR PropertyInfo_t * Expression_GetAssociatedProperty_m3680799355 (RuntimeObject * __this /* static, unused */, MethodInfo_t * ___method0, const RuntimeMethod* method);
+// System.Void System.Linq.Expressions.UnaryExpression::.ctor(System.Linq.Expressions.ExpressionType,System.Linq.Expressions.Expression,System.Type)
+extern "C" IL2CPP_METHOD_ATTR void UnaryExpression__ctor_m2387618479 (UnaryExpression_t3914580921 * __this, int32_t ___node_type0, Expression_t1588164026 * ___operand1, Type_t * ___type2, const RuntimeMethod* method);
 // System.Void System.Linq.Expressions.ExpressionVisitor::.ctor()
 extern "C" IL2CPP_METHOD_ATTR void ExpressionVisitor__ctor_m583967485 (ExpressionVisitor_t1561124052 * __this, const RuntimeMethod* method);
 // System.Void System.Text.StringBuilder::.ctor()
@@ -4641,8 +4807,6 @@ extern "C" IL2CPP_METHOD_ATTR Type_t * TypeBinaryExpression_get_TypeOperand_m354
 extern "C" IL2CPP_METHOD_ATTR RuntimeObject * ConstantExpression_get_Value_m1505431025 (ConstantExpression_t3613654278 * __this, const RuntimeMethod* method);
 // System.Boolean System.Linq.Expressions.ExpressionPrinter::HasStringRepresentation(System.Object)
 extern "C" IL2CPP_METHOD_ATTR bool ExpressionPrinter_HasStringRepresentation_m1491716173 (RuntimeObject * __this /* static, unused */, RuntimeObject * ___obj0, const RuntimeMethod* method);
-// System.Type System.Object::GetType()
-extern "C" IL2CPP_METHOD_ATTR Type_t * Object_GetType_m88164663 (RuntimeObject * __this, const RuntimeMethod* method);
 // System.Linq.Expressions.Expression System.Linq.Expressions.ConditionalExpression::get_Test()
 extern "C" IL2CPP_METHOD_ATTR Expression_t1588164026 * ConditionalExpression_get_Test_m2318551020 (ConditionalExpression_t1874387742 * __this, const RuntimeMethod* method);
 // System.Linq.Expressions.Expression System.Linq.Expressions.ConditionalExpression::get_IfTrue()
@@ -4681,20 +4845,10 @@ inline void Action_1__ctor_m521837620 (Action_1_t2854954556 * __this, RuntimeObj
 }
 // System.Collections.ObjectModel.ReadOnlyCollection`1<System.Linq.Expressions.ParameterExpression> System.Linq.Expressions.LambdaExpression::get_Parameters()
 extern "C" IL2CPP_METHOD_ATTR ReadOnlyCollection_1_t2330998371 * LambdaExpression_get_Parameters_m3130715867 (LambdaExpression_t3131094331 * __this, const RuntimeMethod* method);
-// System.Int32 System.Collections.ObjectModel.ReadOnlyCollection`1<System.Linq.Expressions.ParameterExpression>::get_Count()
-inline int32_t ReadOnlyCollection_1_get_Count_m3216249872 (ReadOnlyCollection_1_t2330998371 * __this, const RuntimeMethod* method)
-{
-	return ((  int32_t (*) (ReadOnlyCollection_1_t2330998371 *, const RuntimeMethod*))ReadOnlyCollection_1_get_Count_m3533048922_gshared)(__this, method);
-}
 // System.Void System.Action`1<System.Linq.Expressions.ParameterExpression>::.ctor(System.Object,System.IntPtr)
 inline void Action_1__ctor_m757341569 (Action_1_t1290889679 * __this, RuntimeObject * p0, intptr_t p1, const RuntimeMethod* method)
 {
 	((  void (*) (Action_1_t1290889679 *, RuntimeObject *, intptr_t, const RuntimeMethod*))Action_1__ctor_m118522912_gshared)(__this, p0, p1, method);
-}
-// !0 System.Collections.ObjectModel.ReadOnlyCollection`1<System.Linq.Expressions.ParameterExpression>::get_Item(System.Int32)
-inline ParameterExpression_t1118422084 * ReadOnlyCollection_1_get_Item_m1189576603 (ReadOnlyCollection_1_t2330998371 * __this, int32_t p0, const RuntimeMethod* method)
-{
-	return ((  ParameterExpression_t1118422084 * (*) (ReadOnlyCollection_1_t2330998371 *, int32_t, const RuntimeMethod*))ReadOnlyCollection_1_get_Item_m3234599553_gshared)(__this, p0, method);
 }
 // System.Linq.Expressions.Expression System.Linq.Expressions.LambdaExpression::get_Body()
 extern "C" IL2CPP_METHOD_ATTR Expression_t1588164026 * LambdaExpression_get_Body_m872577278 (LambdaExpression_t3131094331 * __this, const RuntimeMethod* method);
@@ -4753,6 +4907,8 @@ extern "C" IL2CPP_METHOD_ATTR bool Extensions_IsGenericInstanceOf_m2766332956 (R
 extern "C" IL2CPP_METHOD_ATTR bool Extensions_ArrayTypeIsAssignableTo_m2248005716 (RuntimeObject * __this /* static, unused */, Type_t * ___type0, Type_t * ___candidate1, const RuntimeMethod* method);
 // System.Type System.Linq.Expressions.Extensions::GetFirstGenericArgument(System.Type)
 extern "C" IL2CPP_METHOD_ATTR Type_t * Extensions_GetFirstGenericArgument_m3471114155 (RuntimeObject * __this /* static, unused */, Type_t * ___self0, const RuntimeMethod* method);
+// System.Reflection.MethodInfo System.Type::GetMethod(System.String,System.Reflection.BindingFlags)
+extern "C" IL2CPP_METHOD_ATTR MethodInfo_t * Type_GetMethod_m1197120913 (Type_t * __this, String_t* p0, int32_t p1, const RuntimeMethod* method);
 // System.Boolean System.Type::get_IsArray()
 extern "C" IL2CPP_METHOD_ATTR bool Type_get_IsArray_m2591212821 (Type_t * __this, const RuntimeMethod* method);
 // System.String System.Linq.Expressions.ExpressionPrinter::ToString(System.Linq.Expressions.MemberBinding)
@@ -7134,6 +7290,61 @@ IL_0022:
 		return;
 	}
 }
+// System.Void System.Linq.Check::SourceAndKeyElementSelectors(System.Object,System.Object,System.Object)
+extern "C" IL2CPP_METHOD_ATTR void Check_SourceAndKeyElementSelectors_m4285999668 (RuntimeObject * __this /* static, unused */, RuntimeObject * ___source0, RuntimeObject * ___keySelector1, RuntimeObject * ___elementSelector2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Check_SourceAndKeyElementSelectors_m4285999668_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RuntimeObject * L_0 = ___source0;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_1 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_1, _stringLiteral4294193667, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, NULL, Check_SourceAndKeyElementSelectors_m4285999668_RuntimeMethod_var);
+	}
+
+IL_0011:
+	{
+		RuntimeObject * L_2 = ___keySelector1;
+		if (L_2)
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_3 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_3, _stringLiteral2212699745, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, NULL, Check_SourceAndKeyElementSelectors_m4285999668_RuntimeMethod_var);
+	}
+
+IL_0022:
+	{
+		RuntimeObject * L_4 = ___elementSelector2;
+		if (L_4)
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_5 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_5, _stringLiteral3009079190, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_5, NULL, Check_SourceAndKeyElementSelectors_m4285999668_RuntimeMethod_var);
+	}
+
+IL_0033:
+	{
+		return;
+	}
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -7244,6 +7455,17 @@ extern "C" IL2CPP_METHOD_ATTR Expression_t1588164026 * ConditionalExpression_get
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void System.Linq.Expressions.ConstantExpression::.ctor(System.Object,System.Type)
+extern "C" IL2CPP_METHOD_ATTR void ConstantExpression__ctor_m150340203 (ConstantExpression_t3613654278 * __this, RuntimeObject * ___value0, Type_t * ___type1, const RuntimeMethod* method)
+{
+	{
+		Type_t * L_0 = ___type1;
+		Expression__ctor_m2516416328(__this, ((int32_t)9), L_0, /*hidden argument*/NULL);
+		RuntimeObject * L_1 = ___value0;
+		__this->set_value_2(L_1);
+		return;
+	}
+}
 // System.Object System.Linq.Expressions.ConstantExpression::get_Value()
 extern "C" IL2CPP_METHOD_ATTR RuntimeObject * ConstantExpression_get_Value_m1505431025 (ConstantExpression_t3613654278 * __this, const RuntimeMethod* method)
 {
@@ -8679,6 +8901,840 @@ IL_0094:
 	{
 		MethodInfo_t * L_30 = ___method3;
 		return L_30;
+	}
+}
+// System.Linq.Expressions.BinaryExpression System.Linq.Expressions.Expression::Equal(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
+extern "C" IL2CPP_METHOD_ATTR BinaryExpression_t77573129 * Expression_Equal_m2971419205 (RuntimeObject * __this /* static, unused */, Expression_t1588164026 * ___left0, Expression_t1588164026 * ___right1, const RuntimeMethod* method)
+{
+	{
+		Expression_t1588164026 * L_0 = ___left0;
+		Expression_t1588164026 * L_1 = ___right1;
+		BinaryExpression_t77573129 * L_2 = Expression_Equal_m883203998(NULL /*static, unused*/, L_0, L_1, (bool)0, (MethodInfo_t *)NULL, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
+// System.Linq.Expressions.BinaryExpression System.Linq.Expressions.Expression::Equal(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Boolean,System.Reflection.MethodInfo)
+extern "C" IL2CPP_METHOD_ATTR BinaryExpression_t77573129 * Expression_Equal_m883203998 (RuntimeObject * __this /* static, unused */, Expression_t1588164026 * ___left0, Expression_t1588164026 * ___right1, bool ___liftToNull2, MethodInfo_t * ___method3, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Expression_Equal_m883203998_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Expression_t1588164026 * L_0 = ___left0;
+		Expression_t1588164026 * L_1 = ___right1;
+		MethodInfo_t * L_2 = ___method3;
+		MethodInfo_t * L_3 = Expression_BinaryCoreCheck_m695859152(NULL /*static, unused*/, _stringLiteral3482834024, L_0, L_1, L_2, /*hidden argument*/NULL);
+		___method3 = L_3;
+		Expression_t1588164026 * L_4 = ___left0;
+		Expression_t1588164026 * L_5 = ___right1;
+		bool L_6 = ___liftToNull2;
+		MethodInfo_t * L_7 = ___method3;
+		BinaryExpression_t77573129 * L_8 = Expression_MakeBoolBinary_m2487244413(NULL /*static, unused*/, ((int32_t)13), L_4, L_5, L_6, L_7, /*hidden argument*/NULL);
+		return L_8;
+	}
+}
+// System.Linq.Expressions.ConstantExpression System.Linq.Expressions.Expression::Constant(System.Object)
+extern "C" IL2CPP_METHOD_ATTR ConstantExpression_t3613654278 * Expression_Constant_m3269986673 (RuntimeObject * __this /* static, unused */, RuntimeObject * ___value0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Expression_Constant_m3269986673_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RuntimeObject * L_0 = ___value0;
+		if (L_0)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		RuntimeTypeHandle_t3027515415  L_1 = { reinterpret_cast<intptr_t> (RuntimeObject_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_2 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		ConstantExpression_t3613654278 * L_3 = (ConstantExpression_t3613654278 *)il2cpp_codegen_object_new(ConstantExpression_t3613654278_il2cpp_TypeInfo_var);
+		ConstantExpression__ctor_m150340203(L_3, NULL, L_2, /*hidden argument*/NULL);
+		return L_3;
+	}
+
+IL_0017:
+	{
+		RuntimeObject * L_4 = ___value0;
+		RuntimeObject * L_5 = ___value0;
+		NullCheck(L_5);
+		Type_t * L_6 = Object_GetType_m88164663(L_5, /*hidden argument*/NULL);
+		ConstantExpression_t3613654278 * L_7 = Expression_Constant_m374760797(NULL /*static, unused*/, L_4, L_6, /*hidden argument*/NULL);
+		return L_7;
+	}
+}
+// System.Linq.Expressions.ConstantExpression System.Linq.Expressions.Expression::Constant(System.Object,System.Type)
+extern "C" IL2CPP_METHOD_ATTR ConstantExpression_t3613654278 * Expression_Constant_m374760797 (RuntimeObject * __this /* static, unused */, RuntimeObject * ___value0, Type_t * ___type1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Expression_Constant_m374760797_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Type_t * L_0 = ___type1;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_1 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_1, _stringLiteral3243520166, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, NULL, Expression_Constant_m374760797_RuntimeMethod_var);
+	}
+
+IL_0011:
+	{
+		RuntimeObject * L_2 = ___value0;
+		if (L_2)
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		Type_t * L_3 = ___type1;
+		NullCheck(L_3);
+		bool L_4 = Type_get_IsValueType_m3108065642(L_3, /*hidden argument*/NULL);
+		if (!L_4)
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		Type_t * L_5 = ___type1;
+		bool L_6 = Extensions_IsNullable_m780193409(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
+		if (L_6)
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		ArgumentException_t132251570 * L_7 = (ArgumentException_t132251570 *)il2cpp_codegen_object_new(ArgumentException_t132251570_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m3698743796(L_7, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_7, NULL, Expression_Constant_m374760797_RuntimeMethod_var);
+	}
+
+IL_0033:
+	{
+		goto IL_0065;
+	}
+
+IL_0038:
+	{
+		Type_t * L_8 = ___type1;
+		NullCheck(L_8);
+		bool L_9 = Type_get_IsValueType_m3108065642(L_8, /*hidden argument*/NULL);
+		if (!L_9)
+		{
+			goto IL_004e;
+		}
+	}
+	{
+		Type_t * L_10 = ___type1;
+		bool L_11 = Extensions_IsNullable_m780193409(NULL /*static, unused*/, L_10, /*hidden argument*/NULL);
+		if (L_11)
+		{
+			goto IL_0065;
+		}
+	}
+
+IL_004e:
+	{
+		RuntimeObject * L_12 = ___value0;
+		NullCheck(L_12);
+		Type_t * L_13 = Object_GetType_m88164663(L_12, /*hidden argument*/NULL);
+		Type_t * L_14 = ___type1;
+		bool L_15 = Extensions_IsAssignableTo_m3054773707(NULL /*static, unused*/, L_13, L_14, /*hidden argument*/NULL);
+		if (L_15)
+		{
+			goto IL_0065;
+		}
+	}
+	{
+		ArgumentException_t132251570 * L_16 = (ArgumentException_t132251570 *)il2cpp_codegen_object_new(ArgumentException_t132251570_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m3698743796(L_16, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_16, NULL, Expression_Constant_m374760797_RuntimeMethod_var);
+	}
+
+IL_0065:
+	{
+		RuntimeObject * L_17 = ___value0;
+		Type_t * L_18 = ___type1;
+		ConstantExpression_t3613654278 * L_19 = (ConstantExpression_t3613654278 *)il2cpp_codegen_object_new(ConstantExpression_t3613654278_il2cpp_TypeInfo_var);
+		ConstantExpression__ctor_m150340203(L_19, L_17, L_18, /*hidden argument*/NULL);
+		return L_19;
+	}
+}
+// System.Linq.Expressions.MemberExpression System.Linq.Expressions.Expression::Field(System.Linq.Expressions.Expression,System.Reflection.FieldInfo)
+extern "C" IL2CPP_METHOD_ATTR MemberExpression_t2956213603 * Expression_Field_m3561580611 (RuntimeObject * __this /* static, unused */, Expression_t1588164026 * ___expression0, FieldInfo_t * ___field1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Expression_Field_m3561580611_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		FieldInfo_t * L_0 = ___field1;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_1 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_1, _stringLiteral3110369597, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, NULL, Expression_Field_m3561580611_RuntimeMethod_var);
+	}
+
+IL_0011:
+	{
+		FieldInfo_t * L_2 = ___field1;
+		NullCheck(L_2);
+		bool L_3 = FieldInfo_get_IsStatic_m3482711189(L_2, /*hidden argument*/NULL);
+		if (L_3)
+		{
+			goto IL_0053;
+		}
+	}
+	{
+		Expression_t1588164026 * L_4 = ___expression0;
+		if (L_4)
+		{
+			goto IL_002d;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_5 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_5, _stringLiteral928723642, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_5, NULL, Expression_Field_m3561580611_RuntimeMethod_var);
+	}
+
+IL_002d:
+	{
+		Expression_t1588164026 * L_6 = ___expression0;
+		NullCheck(L_6);
+		Type_t * L_7 = Expression_get_Type_m3318651915(L_6, /*hidden argument*/NULL);
+		FieldInfo_t * L_8 = ___field1;
+		NullCheck(L_8);
+		Type_t * L_9 = VirtFuncInvoker0< Type_t * >::Invoke(6 /* System.Type System.Reflection.MemberInfo::get_DeclaringType() */, L_8);
+		bool L_10 = Extensions_IsAssignableTo_m3054773707(NULL /*static, unused*/, L_7, L_9, /*hidden argument*/NULL);
+		if (L_10)
+		{
+			goto IL_004e;
+		}
+	}
+	{
+		ArgumentException_t132251570 * L_11 = (ArgumentException_t132251570 *)il2cpp_codegen_object_new(ArgumentException_t132251570_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m1312628991(L_11, _stringLiteral3110369597, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_11, NULL, Expression_Field_m3561580611_RuntimeMethod_var);
+	}
+
+IL_004e:
+	{
+		goto IL_0064;
+	}
+
+IL_0053:
+	{
+		Expression_t1588164026 * L_12 = ___expression0;
+		if (!L_12)
+		{
+			goto IL_0064;
+		}
+	}
+	{
+		ArgumentException_t132251570 * L_13 = (ArgumentException_t132251570 *)il2cpp_codegen_object_new(ArgumentException_t132251570_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m1312628991(L_13, _stringLiteral928723642, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_13, NULL, Expression_Field_m3561580611_RuntimeMethod_var);
+	}
+
+IL_0064:
+	{
+		Expression_t1588164026 * L_14 = ___expression0;
+		FieldInfo_t * L_15 = ___field1;
+		FieldInfo_t * L_16 = ___field1;
+		NullCheck(L_16);
+		Type_t * L_17 = VirtFuncInvoker0< Type_t * >::Invoke(16 /* System.Type System.Reflection.FieldInfo::get_FieldType() */, L_16);
+		MemberExpression_t2956213603 * L_18 = (MemberExpression_t2956213603 *)il2cpp_codegen_object_new(MemberExpression_t2956213603_il2cpp_TypeInfo_var);
+		MemberExpression__ctor_m4019112431(L_18, L_14, L_15, L_17, /*hidden argument*/NULL);
+		return L_18;
+	}
+}
+// System.Boolean System.Linq.Expressions.Expression::CanAssign(System.Type,System.Type)
+extern "C" IL2CPP_METHOD_ATTR bool Expression_CanAssign_m2137729393 (RuntimeObject * __this /* static, unused */, Type_t * ___target0, Type_t * ___source1, const RuntimeMethod* method)
+{
+	{
+		Type_t * L_0 = ___target0;
+		NullCheck(L_0);
+		bool L_1 = Type_get_IsValueType_m3108065642(L_0, /*hidden argument*/NULL);
+		Type_t * L_2 = ___source1;
+		NullCheck(L_2);
+		bool L_3 = Type_get_IsValueType_m3108065642(L_2, /*hidden argument*/NULL);
+		if (!((int32_t)((int32_t)L_1^(int32_t)L_3)))
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0014:
+	{
+		Type_t * L_4 = ___source1;
+		Type_t * L_5 = ___target0;
+		bool L_6 = Extensions_IsAssignableTo_m3054773707(NULL /*static, unused*/, L_4, L_5, /*hidden argument*/NULL);
+		return L_6;
+	}
+}
+// System.Linq.Expressions.Expression System.Linq.Expressions.Expression::CheckLambda(System.Type,System.Linq.Expressions.Expression,System.Collections.ObjectModel.ReadOnlyCollection`1<System.Linq.Expressions.ParameterExpression>)
+extern "C" IL2CPP_METHOD_ATTR Expression_t1588164026 * Expression_CheckLambda_m3787444653 (RuntimeObject * __this /* static, unused */, Type_t * ___delegateType0, Expression_t1588164026 * ___body1, ReadOnlyCollection_1_t2330998371 * ___parameters2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Expression_CheckLambda_m3787444653_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	MethodInfo_t * V_0 = NULL;
+	ParameterInfoU5BU5D_t390618515* V_1 = NULL;
+	int32_t V_2 = 0;
+	ParameterExpression_t1118422084 * V_3 = NULL;
+	{
+		Type_t * L_0 = ___delegateType0;
+		RuntimeTypeHandle_t3027515415  L_1 = { reinterpret_cast<intptr_t> (Delegate_t1188392813_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_2 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		bool L_3 = VirtFuncInvoker1< bool, Type_t * >::Invoke(39 /* System.Boolean System.Type::IsSubclassOf(System.Type) */, L_0, L_2);
+		if (L_3)
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		ArgumentException_t132251570 * L_4 = (ArgumentException_t132251570 *)il2cpp_codegen_object_new(ArgumentException_t132251570_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m1312628991(L_4, _stringLiteral3610891033, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_4, NULL, Expression_CheckLambda_m3787444653_RuntimeMethod_var);
+	}
+
+IL_0020:
+	{
+		Type_t * L_5 = ___delegateType0;
+		MethodInfo_t * L_6 = Extensions_GetInvokeMethod_m2591588064(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		MethodInfo_t * L_7 = V_0;
+		if (L_7)
+		{
+			goto IL_003d;
+		}
+	}
+	{
+		ArgumentException_t132251570 * L_8 = (ArgumentException_t132251570 *)il2cpp_codegen_object_new(ArgumentException_t132251570_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m1216717135(L_8, _stringLiteral2077913984, _stringLiteral3610891033, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_8, NULL, Expression_CheckLambda_m3787444653_RuntimeMethod_var);
+	}
+
+IL_003d:
+	{
+		MethodInfo_t * L_9 = V_0;
+		NullCheck(L_9);
+		ParameterInfoU5BU5D_t390618515* L_10 = VirtFuncInvoker0< ParameterInfoU5BU5D_t390618515* >::Invoke(14 /* System.Reflection.ParameterInfo[] System.Reflection.MethodBase::GetParameters() */, L_9);
+		V_1 = L_10;
+		ParameterInfoU5BU5D_t390618515* L_11 = V_1;
+		NullCheck(L_11);
+		ReadOnlyCollection_1_t2330998371 * L_12 = ___parameters2;
+		NullCheck(L_12);
+		int32_t L_13 = ReadOnlyCollection_1_get_Count_m3216249872(L_12, /*hidden argument*/ReadOnlyCollection_1_get_Count_m3216249872_RuntimeMethod_var);
+		if ((((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_11)->max_length))))) == ((int32_t)L_13)))
+		{
+			goto IL_0068;
+		}
+	}
+	{
+		Type_t * L_14 = ___delegateType0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_15 = String_Format_m2844511972(NULL /*static, unused*/, _stringLiteral897330846, L_14, /*hidden argument*/NULL);
+		ArgumentException_t132251570 * L_16 = (ArgumentException_t132251570 *)il2cpp_codegen_object_new(ArgumentException_t132251570_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m1216717135(L_16, L_15, _stringLiteral3610891033, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_16, NULL, Expression_CheckLambda_m3787444653_RuntimeMethod_var);
+	}
+
+IL_0068:
+	{
+		V_2 = 0;
+		goto IL_00c2;
+	}
+
+IL_006f:
+	{
+		ReadOnlyCollection_1_t2330998371 * L_17 = ___parameters2;
+		int32_t L_18 = V_2;
+		NullCheck(L_17);
+		ParameterExpression_t1118422084 * L_19 = ReadOnlyCollection_1_get_Item_m1189576603(L_17, L_18, /*hidden argument*/ReadOnlyCollection_1_get_Item_m1189576603_RuntimeMethod_var);
+		V_3 = L_19;
+		ParameterExpression_t1118422084 * L_20 = V_3;
+		if (L_20)
+		{
+			goto IL_0088;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_21 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_21, _stringLiteral3372390906, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_21, NULL, Expression_CheckLambda_m3787444653_RuntimeMethod_var);
+	}
+
+IL_0088:
+	{
+		ParameterExpression_t1118422084 * L_22 = V_3;
+		NullCheck(L_22);
+		Type_t * L_23 = Expression_get_Type_m3318651915(L_22, /*hidden argument*/NULL);
+		ParameterInfoU5BU5D_t390618515* L_24 = V_1;
+		int32_t L_25 = V_2;
+		NullCheck(L_24);
+		int32_t L_26 = L_25;
+		ParameterInfo_t1861056598 * L_27 = (L_24)->GetAt(static_cast<il2cpp_array_size_t>(L_26));
+		NullCheck(L_27);
+		Type_t * L_28 = VirtFuncInvoker0< Type_t * >::Invoke(6 /* System.Type System.Reflection.ParameterInfo::get_ParameterType() */, L_27);
+		bool L_29 = Expression_CanAssign_m2137729393(NULL /*static, unused*/, L_23, L_28, /*hidden argument*/NULL);
+		if (L_29)
+		{
+			goto IL_00be;
+		}
+	}
+	{
+		ParameterInfoU5BU5D_t390618515* L_30 = V_1;
+		int32_t L_31 = V_2;
+		NullCheck(L_30);
+		int32_t L_32 = L_31;
+		ParameterInfo_t1861056598 * L_33 = (L_30)->GetAt(static_cast<il2cpp_array_size_t>(L_32));
+		NullCheck(L_33);
+		Type_t * L_34 = VirtFuncInvoker0< Type_t * >::Invoke(6 /* System.Type System.Reflection.ParameterInfo::get_ParameterType() */, L_33);
+		ParameterExpression_t1118422084 * L_35 = V_3;
+		NullCheck(L_35);
+		Type_t * L_36 = Expression_get_Type_m3318651915(L_35, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_37 = String_Format_m2556382932(NULL /*static, unused*/, _stringLiteral2962044487, L_34, L_36, /*hidden argument*/NULL);
+		ArgumentException_t132251570 * L_38 = (ArgumentException_t132251570 *)il2cpp_codegen_object_new(ArgumentException_t132251570_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m1312628991(L_38, L_37, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_38, NULL, Expression_CheckLambda_m3787444653_RuntimeMethod_var);
+	}
+
+IL_00be:
+	{
+		int32_t L_39 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_39, (int32_t)1));
+	}
+
+IL_00c2:
+	{
+		int32_t L_40 = V_2;
+		ParameterInfoU5BU5D_t390618515* L_41 = V_1;
+		NullCheck(L_41);
+		if ((((int32_t)L_40) < ((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_41)->max_length)))))))
+		{
+			goto IL_006f;
+		}
+	}
+	{
+		MethodInfo_t * L_42 = V_0;
+		NullCheck(L_42);
+		Type_t * L_43 = VirtFuncInvoker0< Type_t * >::Invoke(31 /* System.Type System.Reflection.MethodInfo::get_ReturnType() */, L_42);
+		RuntimeTypeHandle_t3027515415  L_44 = { reinterpret_cast<intptr_t> (Void_t1185182177_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_45 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_44, /*hidden argument*/NULL);
+		if ((((RuntimeObject*)(Type_t *)L_43) == ((RuntimeObject*)(Type_t *)L_45)))
+		{
+			goto IL_0129;
+		}
+	}
+	{
+		MethodInfo_t * L_46 = V_0;
+		NullCheck(L_46);
+		Type_t * L_47 = VirtFuncInvoker0< Type_t * >::Invoke(31 /* System.Type System.Reflection.MethodInfo::get_ReturnType() */, L_46);
+		Expression_t1588164026 * L_48 = ___body1;
+		NullCheck(L_48);
+		Type_t * L_49 = Expression_get_Type_m3318651915(L_48, /*hidden argument*/NULL);
+		bool L_50 = Expression_CanAssign_m2137729393(NULL /*static, unused*/, L_47, L_49, /*hidden argument*/NULL);
+		if (L_50)
+		{
+			goto IL_0129;
+		}
+	}
+	{
+		MethodInfo_t * L_51 = V_0;
+		NullCheck(L_51);
+		Type_t * L_52 = VirtFuncInvoker0< Type_t * >::Invoke(31 /* System.Type System.Reflection.MethodInfo::get_ReturnType() */, L_51);
+		bool L_53 = Extensions_IsExpression_m3809696797(NULL /*static, unused*/, L_52, /*hidden argument*/NULL);
+		if (!L_53)
+		{
+			goto IL_010d;
+		}
+	}
+	{
+		Expression_t1588164026 * L_54 = ___body1;
+		UnaryExpression_t3914580921 * L_55 = Expression_Quote_m2632568450(NULL /*static, unused*/, L_54, /*hidden argument*/NULL);
+		return L_55;
+	}
+
+IL_010d:
+	{
+		Expression_t1588164026 * L_56 = ___body1;
+		NullCheck(L_56);
+		Type_t * L_57 = Expression_get_Type_m3318651915(L_56, /*hidden argument*/NULL);
+		MethodInfo_t * L_58 = V_0;
+		NullCheck(L_58);
+		Type_t * L_59 = VirtFuncInvoker0< Type_t * >::Invoke(31 /* System.Type System.Reflection.MethodInfo::get_ReturnType() */, L_58);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_60 = String_Format_m2556382932(NULL /*static, unused*/, _stringLiteral2191586598, L_57, L_59, /*hidden argument*/NULL);
+		ArgumentException_t132251570 * L_61 = (ArgumentException_t132251570 *)il2cpp_codegen_object_new(ArgumentException_t132251570_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m1312628991(L_61, L_60, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_61, NULL, Expression_CheckLambda_m3787444653_RuntimeMethod_var);
+	}
+
+IL_0129:
+	{
+		Expression_t1588164026 * L_62 = ___body1;
+		return L_62;
+	}
+}
+// System.Void System.Linq.Expressions.Expression::CheckNonGenericMethod(System.Reflection.MethodBase)
+extern "C" IL2CPP_METHOD_ATTR void Expression_CheckNonGenericMethod_m3227574805 (RuntimeObject * __this /* static, unused */, MethodBase_t * ___method0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Expression_CheckNonGenericMethod_m3227574805_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		MethodBase_t * L_0 = ___method0;
+		NullCheck(L_0);
+		bool L_1 = VirtFuncInvoker0< bool >::Invoke(28 /* System.Boolean System.Reflection.MethodBase::get_IsGenericMethodDefinition() */, L_0);
+		if (L_1)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		MethodBase_t * L_2 = ___method0;
+		NullCheck(L_2);
+		bool L_3 = VirtFuncInvoker0< bool >::Invoke(27 /* System.Boolean System.Reflection.MethodBase::get_ContainsGenericParameters() */, L_2);
+		if (!L_3)
+		{
+			goto IL_0021;
+		}
+	}
+
+IL_0016:
+	{
+		ArgumentException_t132251570 * L_4 = (ArgumentException_t132251570 *)il2cpp_codegen_object_new(ArgumentException_t132251570_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m1312628991(L_4, _stringLiteral18249897, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_4, NULL, Expression_CheckNonGenericMethod_m3227574805_RuntimeMethod_var);
+	}
+
+IL_0021:
+	{
+		return;
+	}
+}
+// System.Void System.Linq.Expressions.Expression::CheckNotVoid(System.Type)
+extern "C" IL2CPP_METHOD_ATTR void Expression_CheckNotVoid_m1390322664 (RuntimeObject * __this /* static, unused */, Type_t * ___type0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Expression_CheckNotVoid_m1390322664_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Type_t * L_0 = ___type0;
+		RuntimeTypeHandle_t3027515415  L_1 = { reinterpret_cast<intptr_t> (Void_t1185182177_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_2 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		if ((!(((RuntimeObject*)(Type_t *)L_0) == ((RuntimeObject*)(Type_t *)L_2))))
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		ArgumentException_t132251570 * L_3 = (ArgumentException_t132251570 *)il2cpp_codegen_object_new(ArgumentException_t132251570_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m1312628991(L_3, _stringLiteral2690405135, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, NULL, Expression_CheckNotVoid_m1390322664_RuntimeMethod_var);
+	}
+
+IL_001b:
+	{
+		return;
+	}
+}
+// System.Linq.Expressions.ParameterExpression System.Linq.Expressions.Expression::Parameter(System.Type,System.String)
+extern "C" IL2CPP_METHOD_ATTR ParameterExpression_t1118422084 * Expression_Parameter_m4117869331 (RuntimeObject * __this /* static, unused */, Type_t * ___type0, String_t* ___name1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Expression_Parameter_m4117869331_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Type_t * L_0 = ___type0;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_1 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_1, _stringLiteral3243520166, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, NULL, Expression_Parameter_m4117869331_RuntimeMethod_var);
+	}
+
+IL_0011:
+	{
+		Type_t * L_2 = ___type0;
+		Expression_CheckNotVoid_m1390322664(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		Type_t * L_3 = ___type0;
+		String_t* L_4 = ___name1;
+		ParameterExpression_t1118422084 * L_5 = (ParameterExpression_t1118422084 *)il2cpp_codegen_object_new(ParameterExpression_t1118422084_il2cpp_TypeInfo_var);
+		ParameterExpression__ctor_m1083457433(L_5, L_3, L_4, /*hidden argument*/NULL);
+		return L_5;
+	}
+}
+// System.Linq.Expressions.MemberExpression System.Linq.Expressions.Expression::Property(System.Linq.Expressions.Expression,System.Reflection.MethodInfo)
+extern "C" IL2CPP_METHOD_ATTR MemberExpression_t2956213603 * Expression_Property_m493981664 (RuntimeObject * __this /* static, unused */, Expression_t1588164026 * ___expression0, MethodInfo_t * ___propertyAccessor1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Expression_Property_m493981664_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	PropertyInfo_t * V_0 = NULL;
+	{
+		MethodInfo_t * L_0 = ___propertyAccessor1;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_1 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_1, _stringLiteral2025020366, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, NULL, Expression_Property_m493981664_RuntimeMethod_var);
+	}
+
+IL_0011:
+	{
+		MethodInfo_t * L_2 = ___propertyAccessor1;
+		Expression_CheckNonGenericMethod_m3227574805(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		MethodInfo_t * L_3 = ___propertyAccessor1;
+		NullCheck(L_3);
+		bool L_4 = MethodBase_get_IsStatic_m2399864271(L_3, /*hidden argument*/NULL);
+		if (L_4)
+		{
+			goto IL_0054;
+		}
+	}
+	{
+		Expression_t1588164026 * L_5 = ___expression0;
+		if (L_5)
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_6 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_6, _stringLiteral928723642, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_6, NULL, Expression_Property_m493981664_RuntimeMethod_var);
+	}
+
+IL_0033:
+	{
+		Expression_t1588164026 * L_7 = ___expression0;
+		NullCheck(L_7);
+		Type_t * L_8 = Expression_get_Type_m3318651915(L_7, /*hidden argument*/NULL);
+		MethodInfo_t * L_9 = ___propertyAccessor1;
+		NullCheck(L_9);
+		Type_t * L_10 = VirtFuncInvoker0< Type_t * >::Invoke(6 /* System.Type System.Reflection.MemberInfo::get_DeclaringType() */, L_9);
+		bool L_11 = Extensions_IsAssignableTo_m3054773707(NULL /*static, unused*/, L_8, L_10, /*hidden argument*/NULL);
+		if (L_11)
+		{
+			goto IL_0054;
+		}
+	}
+	{
+		ArgumentException_t132251570 * L_12 = (ArgumentException_t132251570 *)il2cpp_codegen_object_new(ArgumentException_t132251570_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m1312628991(L_12, _stringLiteral928723642, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_12, NULL, Expression_Property_m493981664_RuntimeMethod_var);
+	}
+
+IL_0054:
+	{
+		MethodInfo_t * L_13 = ___propertyAccessor1;
+		PropertyInfo_t * L_14 = Expression_GetAssociatedProperty_m3680799355(NULL /*static, unused*/, L_13, /*hidden argument*/NULL);
+		V_0 = L_14;
+		PropertyInfo_t * L_15 = V_0;
+		if (L_15)
+		{
+			goto IL_0072;
+		}
+	}
+	{
+		MethodInfo_t * L_16 = ___propertyAccessor1;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_17 = String_Format_m2844511972(NULL /*static, unused*/, _stringLiteral2282716040, L_16, /*hidden argument*/NULL);
+		ArgumentException_t132251570 * L_18 = (ArgumentException_t132251570 *)il2cpp_codegen_object_new(ArgumentException_t132251570_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m1312628991(L_18, L_17, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_18, NULL, Expression_Property_m493981664_RuntimeMethod_var);
+	}
+
+IL_0072:
+	{
+		Expression_t1588164026 * L_19 = ___expression0;
+		PropertyInfo_t * L_20 = V_0;
+		PropertyInfo_t * L_21 = V_0;
+		NullCheck(L_21);
+		Type_t * L_22 = VirtFuncInvoker0< Type_t * >::Invoke(17 /* System.Type System.Reflection.PropertyInfo::get_PropertyType() */, L_21);
+		MemberExpression_t2956213603 * L_23 = (MemberExpression_t2956213603 *)il2cpp_codegen_object_new(MemberExpression_t2956213603_il2cpp_TypeInfo_var);
+		MemberExpression__ctor_m4019112431(L_23, L_19, L_20, L_22, /*hidden argument*/NULL);
+		return L_23;
+	}
+}
+// System.Reflection.PropertyInfo System.Linq.Expressions.Expression::GetAssociatedProperty(System.Reflection.MethodInfo)
+extern "C" IL2CPP_METHOD_ATTR PropertyInfo_t * Expression_GetAssociatedProperty_m3680799355 (RuntimeObject * __this /* static, unused */, MethodInfo_t * ___method0, const RuntimeMethod* method)
+{
+	PropertyInfo_t * V_0 = NULL;
+	PropertyInfoU5BU5D_t1461822886* V_1 = NULL;
+	int32_t V_2 = 0;
+	{
+		MethodInfo_t * L_0 = ___method0;
+		if (L_0)
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		return (PropertyInfo_t *)NULL;
+	}
+
+IL_0008:
+	{
+		MethodInfo_t * L_1 = ___method0;
+		NullCheck(L_1);
+		Type_t * L_2 = VirtFuncInvoker0< Type_t * >::Invoke(6 /* System.Type System.Reflection.MemberInfo::get_DeclaringType() */, L_1);
+		NullCheck(L_2);
+		PropertyInfoU5BU5D_t1461822886* L_3 = VirtFuncInvoker1< PropertyInfoU5BU5D_t1461822886*, int32_t >::Invoke(57 /* System.Reflection.PropertyInfo[] System.Type::GetProperties(System.Reflection.BindingFlags) */, L_2, ((int32_t)124));
+		V_1 = L_3;
+		V_2 = 0;
+		goto IL_004d;
+	}
+
+IL_001d:
+	{
+		PropertyInfoU5BU5D_t1461822886* L_4 = V_1;
+		int32_t L_5 = V_2;
+		NullCheck(L_4);
+		int32_t L_6 = L_5;
+		PropertyInfo_t * L_7 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
+		V_0 = L_7;
+		MethodInfo_t * L_8 = ___method0;
+		PropertyInfo_t * L_9 = V_0;
+		NullCheck(L_9);
+		MethodInfo_t * L_10 = VirtFuncInvoker1< MethodInfo_t *, bool >::Invoke(20 /* System.Reflection.MethodInfo System.Reflection.PropertyInfo::GetGetMethod(System.Boolean) */, L_9, (bool)1);
+		NullCheck(L_8);
+		bool L_11 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, L_8, L_10);
+		if (!L_11)
+		{
+			goto IL_0035;
+		}
+	}
+	{
+		PropertyInfo_t * L_12 = V_0;
+		return L_12;
+	}
+
+IL_0035:
+	{
+		MethodInfo_t * L_13 = ___method0;
+		PropertyInfo_t * L_14 = V_0;
+		NullCheck(L_14);
+		MethodInfo_t * L_15 = VirtFuncInvoker1< MethodInfo_t *, bool >::Invoke(22 /* System.Reflection.MethodInfo System.Reflection.PropertyInfo::GetSetMethod(System.Boolean) */, L_14, (bool)1);
+		NullCheck(L_13);
+		bool L_16 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, L_13, L_15);
+		if (!L_16)
+		{
+			goto IL_0049;
+		}
+	}
+	{
+		PropertyInfo_t * L_17 = V_0;
+		return L_17;
+	}
+
+IL_0049:
+	{
+		int32_t L_18 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_18, (int32_t)1));
+	}
+
+IL_004d:
+	{
+		int32_t L_19 = V_2;
+		PropertyInfoU5BU5D_t1461822886* L_20 = V_1;
+		NullCheck(L_20);
+		if ((((int32_t)L_19) < ((int32_t)(((int32_t)((int32_t)(((RuntimeArray *)L_20)->max_length)))))))
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		return (PropertyInfo_t *)NULL;
+	}
+}
+// System.Linq.Expressions.UnaryExpression System.Linq.Expressions.Expression::Quote(System.Linq.Expressions.Expression)
+extern "C" IL2CPP_METHOD_ATTR UnaryExpression_t3914580921 * Expression_Quote_m2632568450 (RuntimeObject * __this /* static, unused */, Expression_t1588164026 * ___expression0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Expression_Quote_m2632568450_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Expression_t1588164026 * L_0 = ___expression0;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_1 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_1, _stringLiteral928723642, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, NULL, Expression_Quote_m2632568450_RuntimeMethod_var);
+	}
+
+IL_0011:
+	{
+		Expression_t1588164026 * L_2 = ___expression0;
+		Expression_t1588164026 * L_3 = ___expression0;
+		NullCheck(L_3);
+		Type_t * L_4 = Object_GetType_m88164663(L_3, /*hidden argument*/NULL);
+		UnaryExpression_t3914580921 * L_5 = (UnaryExpression_t3914580921 *)il2cpp_codegen_object_new(UnaryExpression_t3914580921_il2cpp_TypeInfo_var);
+		UnaryExpression__ctor_m2387618479(L_5, ((int32_t)40), L_2, L_4, /*hidden argument*/NULL);
+		return L_5;
 	}
 }
 // System.Boolean System.Linq.Expressions.Expression::IsInt(System.Type)
@@ -11067,7 +12123,7 @@ extern "C" IL2CPP_METHOD_ATTR bool Extensions_IsGenericInstanceOf_m2766332956 (R
 	{
 		Type_t * L_0 = ___self0;
 		NullCheck(L_0);
-		bool L_1 = VirtFuncInvoker0< bool >::Invoke(82 /* System.Boolean System.Type::get_IsGenericType() */, L_0);
+		bool L_1 = VirtFuncInvoker0< bool >::Invoke(83 /* System.Boolean System.Type::get_IsGenericType() */, L_0);
 		if (L_1)
 		{
 			goto IL_000d;
@@ -11081,7 +12137,7 @@ IL_000d:
 	{
 		Type_t * L_2 = ___self0;
 		NullCheck(L_2);
-		Type_t * L_3 = VirtFuncInvoker0< Type_t * >::Invoke(81 /* System.Type System.Type::GetGenericTypeDefinition() */, L_2);
+		Type_t * L_3 = VirtFuncInvoker0< Type_t * >::Invoke(82 /* System.Type System.Type::GetGenericTypeDefinition() */, L_2);
 		Type_t * L_4 = ___type1;
 		return (bool)((((RuntimeObject*)(Type_t *)L_3) == ((RuntimeObject*)(Type_t *)L_4))? 1 : 0);
 	}
@@ -11125,6 +12181,47 @@ IL_001e:
 		return (bool)G_B3_0;
 	}
 }
+// System.Boolean System.Linq.Expressions.Extensions::IsExpression(System.Type)
+extern "C" IL2CPP_METHOD_ATTR bool Extensions_IsExpression_m3809696797 (RuntimeObject * __this /* static, unused */, Type_t * ___self0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Extensions_IsExpression_m3809696797_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t G_B3_0 = 0;
+	{
+		Type_t * L_0 = ___self0;
+		RuntimeTypeHandle_t3027515415  L_1 = { reinterpret_cast<intptr_t> (Expression_t1588164026_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_2 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		if ((((RuntimeObject*)(Type_t *)L_0) == ((RuntimeObject*)(Type_t *)L_2)))
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		Type_t * L_3 = ___self0;
+		RuntimeTypeHandle_t3027515415  L_4 = { reinterpret_cast<intptr_t> (Expression_t1588164026_0_0_0_var) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_5 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		bool L_6 = VirtFuncInvoker1< bool, Type_t * >::Invoke(39 /* System.Boolean System.Type::IsSubclassOf(System.Type) */, L_3, L_5);
+		G_B3_0 = ((int32_t)(L_6));
+		goto IL_0023;
+	}
+
+IL_0022:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_0023:
+	{
+		return (bool)G_B3_0;
+	}
+}
 // System.Boolean System.Linq.Expressions.Extensions::IsAssignableTo(System.Type,System.Type)
 extern "C" IL2CPP_METHOD_ATTR bool Extensions_IsAssignableTo_m3054773707 (RuntimeObject * __this /* static, unused */, Type_t * ___self0, Type_t * ___type1, const RuntimeMethod* method)
 {
@@ -11163,7 +12260,7 @@ extern "C" IL2CPP_METHOD_ATTR Type_t * Extensions_GetFirstGenericArgument_m34711
 	{
 		Type_t * L_0 = ___self0;
 		NullCheck(L_0);
-		TypeU5BU5D_t3940880105* L_1 = VirtFuncInvoker0< TypeU5BU5D_t3940880105* >::Invoke(78 /* System.Type[] System.Type::GetGenericArguments() */, L_0);
+		TypeU5BU5D_t3940880105* L_1 = VirtFuncInvoker0< TypeU5BU5D_t3940880105* >::Invoke(79 /* System.Type[] System.Type::GetGenericArguments() */, L_0);
 		NullCheck(L_1);
 		int32_t L_2 = 0;
 		Type_t * L_3 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
@@ -11190,7 +12287,7 @@ extern "C" IL2CPP_METHOD_ATTR Type_t * Extensions_MakeNullableType_m1960133478 (
 		ArrayElementTypeCheck (L_3, L_4);
 		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(0), (Type_t *)L_4);
 		NullCheck(L_1);
-		Type_t * L_5 = VirtFuncInvoker1< Type_t *, TypeU5BU5D_t3940880105* >::Invoke(83 /* System.Type System.Type::MakeGenericType(System.Type[]) */, L_1, L_3);
+		Type_t * L_5 = VirtFuncInvoker1< Type_t *, TypeU5BU5D_t3940880105* >::Invoke(84 /* System.Type System.Type::MakeGenericType(System.Type[]) */, L_1, L_3);
 		return L_5;
 	}
 }
@@ -11222,6 +12319,22 @@ IL_0016:
 IL_0017:
 	{
 		return G_B3_0;
+	}
+}
+// System.Reflection.MethodInfo System.Linq.Expressions.Extensions::GetInvokeMethod(System.Type)
+extern "C" IL2CPP_METHOD_ATTR MethodInfo_t * Extensions_GetInvokeMethod_m2591588064 (RuntimeObject * __this /* static, unused */, Type_t * ___self0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Extensions_GetInvokeMethod_m2591588064_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Type_t * L_0 = ___self0;
+		NullCheck(L_0);
+		MethodInfo_t * L_1 = Type_GetMethod_m1197120913(L_0, _stringLiteral2401610308, ((int32_t)20), /*hidden argument*/NULL);
+		return L_1;
 	}
 }
 // System.Boolean System.Linq.Expressions.Extensions::ArrayTypeIsAssignableTo(System.Type,System.Type)
@@ -11312,6 +12425,19 @@ extern "C" IL2CPP_METHOD_ATTR ReadOnlyCollection_1_t2800740313 * InvocationExpre
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void System.Linq.Expressions.LambdaExpression::.ctor(System.Type,System.Linq.Expressions.Expression,System.Collections.ObjectModel.ReadOnlyCollection`1<System.Linq.Expressions.ParameterExpression>)
+extern "C" IL2CPP_METHOD_ATTR void LambdaExpression__ctor_m731497957 (LambdaExpression_t3131094331 * __this, Type_t * ___delegateType0, Expression_t1588164026 * ___body1, ReadOnlyCollection_1_t2330998371 * ___parameters2, const RuntimeMethod* method)
+{
+	{
+		Type_t * L_0 = ___delegateType0;
+		Expression__ctor_m2516416328(__this, ((int32_t)18), L_0, /*hidden argument*/NULL);
+		Expression_t1588164026 * L_1 = ___body1;
+		__this->set_body_2(L_1);
+		ReadOnlyCollection_1_t2330998371 * L_2 = ___parameters2;
+		__this->set_parameters_3(L_2);
+		return;
+	}
+}
 // System.Linq.Expressions.Expression System.Linq.Expressions.LambdaExpression::get_Body()
 extern "C" IL2CPP_METHOD_ATTR Expression_t1588164026 * LambdaExpression_get_Body_m872577278 (LambdaExpression_t3131094331 * __this, const RuntimeMethod* method)
 {
@@ -11416,6 +12542,19 @@ extern "C" IL2CPP_METHOD_ATTR String_t* MemberBinding_ToString_m2825554407 (Memb
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void System.Linq.Expressions.MemberExpression::.ctor(System.Linq.Expressions.Expression,System.Reflection.MemberInfo,System.Type)
+extern "C" IL2CPP_METHOD_ATTR void MemberExpression__ctor_m4019112431 (MemberExpression_t2956213603 * __this, Expression_t1588164026 * ___expression0, MemberInfo_t * ___member1, Type_t * ___type2, const RuntimeMethod* method)
+{
+	{
+		Type_t * L_0 = ___type2;
+		Expression__ctor_m2516416328(__this, ((int32_t)23), L_0, /*hidden argument*/NULL);
+		Expression_t1588164026 * L_1 = ___expression0;
+		__this->set_expression_2(L_1);
+		MemberInfo_t * L_2 = ___member1;
+		__this->set_member_3(L_2);
+		return;
+	}
+}
 // System.Linq.Expressions.Expression System.Linq.Expressions.MemberExpression::get_Expression()
 extern "C" IL2CPP_METHOD_ATTR Expression_t1588164026 * MemberExpression_get_Expression_m2281151650 (MemberExpression_t2956213603 * __this, const RuntimeMethod* method)
 {
@@ -11568,6 +12707,17 @@ extern "C" IL2CPP_METHOD_ATTR ReadOnlyCollection_1_t297610732 * NewExpression_ge
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void System.Linq.Expressions.ParameterExpression::.ctor(System.Type,System.String)
+extern "C" IL2CPP_METHOD_ATTR void ParameterExpression__ctor_m1083457433 (ParameterExpression_t1118422084 * __this, Type_t * ___type0, String_t* ___name1, const RuntimeMethod* method)
+{
+	{
+		Type_t * L_0 = ___type0;
+		Expression__ctor_m2516416328(__this, ((int32_t)38), L_0, /*hidden argument*/NULL);
+		String_t* L_1 = ___name1;
+		__this->set_name_2(L_1);
+		return;
+	}
+}
 // System.String System.Linq.Expressions.ParameterExpression::get_Name()
 extern "C" IL2CPP_METHOD_ATTR String_t* ParameterExpression_get_Name_m1531348536 (ParameterExpression_t1118422084 * __this, const RuntimeMethod* method)
 {
@@ -11608,6 +12758,18 @@ extern "C" IL2CPP_METHOD_ATTR Type_t * TypeBinaryExpression_get_TypeOperand_m354
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void System.Linq.Expressions.UnaryExpression::.ctor(System.Linq.Expressions.ExpressionType,System.Linq.Expressions.Expression,System.Type)
+extern "C" IL2CPP_METHOD_ATTR void UnaryExpression__ctor_m2387618479 (UnaryExpression_t3914580921 * __this, int32_t ___node_type0, Expression_t1588164026 * ___operand1, Type_t * ___type2, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___node_type0;
+		Type_t * L_1 = ___type2;
+		Expression__ctor_m2516416328(__this, L_0, L_1, /*hidden argument*/NULL);
+		Expression_t1588164026 * L_2 = ___operand1;
+		__this->set_operand_2(L_2);
+		return;
+	}
+}
 // System.Linq.Expressions.Expression System.Linq.Expressions.UnaryExpression::get_Operand()
 extern "C" IL2CPP_METHOD_ATTR Expression_t1588164026 * UnaryExpression_get_Operand_m4259740027 (UnaryExpression_t3914580921 * __this, const RuntimeMethod* method)
 {

@@ -43,7 +43,7 @@ namespace packt.FoodyGO.Mapping
 
 		[Header("GPS Settings")]
 		[Tooltip("GPS service used to locate world center")]
-		public GPSLocationService gpsLocationService;
+		
         private double lastGPSUpdate;
 
 		// Use this for initialization
@@ -56,13 +56,13 @@ namespace packt.FoodyGO.Mapping
 		void Update ()
 		{
 			//check if a new location has been acquired
-            if (gpsLocationService != null &&
-                gpsLocationService.IsServiceStarted && 
-                lastGPSUpdate < gpsLocationService.Timestamp)
+            if (GPSLocationService.Instance != null &&
+                GPSLocationService.Instance.IsServiceStarted && 
+                lastGPSUpdate < GPSLocationService.Instance.Timestamp)
             {
-                lastGPSUpdate = gpsLocationService.Timestamp;
-                worldCenterLocation.Latitude = gpsLocationService.Latitude;
-                worldCenterLocation.Longitude = gpsLocationService.Longitude;
+                lastGPSUpdate = GPSLocationService.Instance.Timestamp;
+                worldCenterLocation.Latitude = GPSLocationService.Instance.Latitude;
+                worldCenterLocation.Longitude = GPSLocationService.Instance.Longitude;
                 print("GoogleMapTile refreshing map texture");
                 RefreshMapTile();
             }
@@ -93,14 +93,14 @@ namespace packt.FoodyGO.Mapping
             queryString += "&style=element:geometry|invert_lightness:true|weight:3.1|hue:0x00ffd5";
             queryString += "&style=element:labels|visibility:off";
 
-            //queryString += "&key={your API key here}";
+            queryString += "&key=AIzaSyBlr9fIHQ4C4lL76oL4Reh6AJpMvU9UzWM";
 
             //check if script is on a mobile device and using a location service 
             var usingSensor = false;
 #if MOBILE_INPUT
             usingSensor = Input.location.isEnabledByUser 
 							&& Input.location.status == LocationServiceStatus.Running 
-							&& gpsLocationService !=null;
+							&& GPSLocationService.Instance !=null;
 #endif
 			queryString += "&sensor=" + (usingSensor ? "true" : "false");
 
@@ -115,6 +115,7 @@ namespace packt.FoodyGO.Mapping
 
 			//finally, we request the image
 			var req = new WWW(GOOGLE_MAPS_URL + "?" + queryString);
+            print(req);
 			//yield until the service responds
 			yield return req;
 			//first destroy the old texture first
@@ -124,7 +125,7 @@ namespace packt.FoodyGO.Mapping
             print(string.Format("Tile {0}x{1} textured", TileOffset.x, TileOffset.y));
             if(TileOffset.x == 0 && TileOffset.y == 0)
             {
-                gpsLocationService.MapRedrawn();
+                GPSLocationService.Instance.MapRedrawn();
             }
         }
 	}
